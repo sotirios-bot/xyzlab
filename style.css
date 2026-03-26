@@ -130,12 +130,18 @@ ul { list-style: none; }
 }
 
 .logo {
-  font-size: 1.45rem;
-  font-weight: 900;
-  letter-spacing: -.02em;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
 }
-.logo-xyz { color: var(--primary); }
-.logo-lab { color: var(--dark); }
+.logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+/* Fallback text (hidden when image loads) */
+.logo-xyz { color: var(--primary); display: none; }
+.logo-lab { color: var(--dark); display: none; }
 
 .nav-links {
   display: flex;
