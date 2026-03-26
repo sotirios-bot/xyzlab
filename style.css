@@ -337,7 +337,7 @@ ul { list-style: none; }
 
 .courses-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -388,13 +388,6 @@ ul { list-style: none; }
 }
 .course-link:hover { gap: .65rem; }
 
-.course-card--wide {
-  grid-column: 1 / -1;
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
-}
-.course-wide-content { flex: 1; }
 
 /* ============================================================
    WHY US
@@ -738,6 +731,8 @@ ul { list-style: none; }
     gap: 3rem;
   }
 
+  .courses-grid { grid-template-columns: repeat(2, 1fr); }
+
   .hero { padding: 4rem 0; }
   .hero-text { text-align: center; }
   .hero-text h1 { font-size: 2.4rem; }
@@ -775,7 +770,6 @@ ul { list-style: none; }
   .nav-wrapper { position: relative; }
 
   .courses-grid { grid-template-columns: 1fr; }
-  .course-card--wide { flex-direction: column; }
 
   .form-row { grid-template-columns: 1fr; }
 
