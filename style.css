@@ -144,12 +144,6 @@ ul { list-style: none; }
   height: 46px;
   mix-blend-mode: multiply;
 }
-/* Footer logo — white/light version on dark bg */
-.footer .logo-img {
-  height: 36px;
-  filter: brightness(0) invert(1);
-  opacity: .9;
-}
 /* Fallback text (hidden when image loads) */
 .logo-xyz { color: var(--primary); display: none; }
 .logo-lab { color: var(--dark); display: none; }
