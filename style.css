@@ -545,10 +545,11 @@ ul { list-style: none; }
   background: var(--white);
   border: 1.5px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 2rem;
+  padding: 1.75rem 2rem;
   display: flex;
-  flex-direction: column;
-  gap: .75rem;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.25rem;
   transition: box-shadow var(--transition), border-color var(--transition), transform var(--transition);
 }
 .contact-card:hover {
@@ -568,16 +569,17 @@ ul { list-style: none; }
 }
 .contact-card strong {
   display: block;
-  font-size: .78rem;
+  font-size: .75rem;
   font-weight: 700;
   letter-spacing: .06em;
   text-transform: uppercase;
   color: var(--mid);
+  margin-bottom: .3rem;
 }
 .contact-card p {
-  font-size: .92rem;
+  font-size: .93rem;
   color: var(--dark-2);
-  line-height: 1.65;
+  line-height: 1.6;
 }
 .contact-card a { color: var(--primary); font-weight: 500; }
 .contact-card a:hover { opacity: .8; }
