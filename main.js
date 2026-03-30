@@ -17,43 +17,35 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
 
-// Contact form – Formspree submission
-// Sign up at formspree.io and replace YOUR_FORM_ID with your endpoint ID
-const FORMSPREE_ID = 'YOUR_FORM_ID';
+// Contact form – mailto (no backend required, sends via visitor's email client)
 const form = document.querySelector('.contact-form');
 if (form) {
-  form.addEventListener('submit', async e => {
+  form.addEventListener('submit', e => {
     e.preventDefault();
+    const name     = form.querySelector('#name').value.trim();
+    const email    = form.querySelector('#email').value.trim();
+    const interest = form.querySelector('#interest').value || 'General Enquiry';
+    const message  = form.querySelector('#message').value.trim();
+
+    const subject = encodeURIComponent('XYZ Lab Enquiry: ' + interest);
+    const body    = encodeURIComponent(
+      'Name: ' + name +
+      '\nEmail: ' + email +
+      '\nInterest: ' + interest +
+      '\n\nMessage:\n' + message
+    );
+
+    window.location.href = 'mailto:hello@xyzlab.com?subject=' + subject + '&body=' + body;
+
     const btn = form.querySelector('button[type="submit"]');
-    btn.textContent = 'Sending…';
+    btn.textContent = 'Opening your email app…';
+    btn.style.background = '#069e8e';
     btn.disabled = true;
-    try {
-      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      });
-      if (res.ok) {
-        btn.textContent = 'Message Sent! ✓';
-        btn.style.background = '#069e8e';
-        form.reset();
-        setTimeout(() => {
-          btn.textContent = 'Send Message';
-          btn.style.background = '';
-          btn.disabled = false;
-        }, 3000);
-      } else {
-        throw new Error('Submission failed');
-      }
-    } catch {
-      btn.textContent = 'Something went wrong — try again';
-      btn.style.background = '#e53e3e';
+    setTimeout(() => {
+      btn.textContent = 'Send Message';
+      btn.style.background = '';
       btn.disabled = false;
-      setTimeout(() => {
-        btn.textContent = 'Send Message';
-        btn.style.background = '';
-      }, 3000);
-    }
+    }, 3000);
   });
 }
 
