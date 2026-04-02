@@ -377,6 +377,11 @@ ul { list-style: none; }
   justify-content: center;
   margin-bottom: 1.2rem;
   overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+a.course-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 14px rgba(0,0,0,.12);
 }
 
 .course-card h3 {
