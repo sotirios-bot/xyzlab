@@ -246,8 +246,10 @@ ul { list-style: none; }
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 1rem;
   padding: 1.5rem;
+  align-items: stretch;
 }
 
 .hero-blob {
@@ -269,8 +271,12 @@ ul { list-style: none; }
   background: var(--white);
   border-radius: var(--radius);
   box-shadow: var(--shadow-lg);
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transition: transform var(--transition), box-shadow var(--transition);
 }
 .hero-card:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,.15); }
@@ -279,14 +285,7 @@ ul { list-style: none; }
 .hero-card p { font-weight: 800; font-size: 1.15rem; color: var(--dark); margin-bottom: .25rem; }
 .hero-card span { font-size: .78rem; color: var(--mid); font-weight: 500; }
 
-/* 2×2 grid stagger: right column shifted down for visual rhythm */
-.card-1 { margin-bottom: .5rem; }
-.card-2 { margin-top: 1.5rem; }
-.card-3 { margin-top: -.5rem; }
-.card-4 { margin-top: 1rem; }
-
-/* blob spans full grid */
-.hero-visual .hero-blob { grid-column: 1 / -1; }
+/* blob is absolutely positioned, no grid column needed */
 
 /* ============================================================
    TRUSTED BY
