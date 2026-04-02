@@ -244,10 +244,9 @@ ul { list-style: none; }
 /* Hero visual */
 .hero-visual {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  justify-content: center;
   padding: 1.5rem;
 }
 
@@ -281,9 +280,14 @@ ul { list-style: none; }
 .hero-card p { font-weight: 800; font-size: 1.15rem; color: var(--dark); margin-bottom: .25rem; }
 .hero-card span { font-size: .78rem; color: var(--mid); font-weight: 500; }
 
-.card-1 { align-self: flex-start; margin-top: 1rem; }
-.card-2 { align-self: center; }
-.card-3 { align-self: flex-end; margin-bottom: 1rem; }
+/* 2×2 grid stagger: right column shifted down for visual rhythm */
+.card-1 { margin-bottom: .5rem; }
+.card-2 { margin-top: 1.5rem; }
+.card-3 { margin-top: -.5rem; }
+.card-4 { margin-top: 1rem; }
+
+/* blob spans full grid */
+.hero-visual .hero-blob { grid-column: 1 / -1; }
 
 /* ============================================================
    TRUSTED BY
@@ -745,7 +749,8 @@ a.course-icon:hover {
 
   .footer-links { grid-template-columns: 1fr; gap: 1.75rem; }
 
-  .hero-card { min-width: 120px; }
+  .hero-card { min-width: unset; }
+  .hero-visual { gap: .75rem; padding: 1rem; }
 
   .courses { padding: 4rem 0; }
   .why { padding: 4rem 0; }
