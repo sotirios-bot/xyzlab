@@ -595,8 +595,8 @@ ul { list-style: none; }
 
 .footer-inner {
   display: grid;
-  grid-template-columns: 1.6fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 1fr 2.8fr;
+  gap: 3rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid rgba(255,255,255,.1);
 }
@@ -606,9 +606,9 @@ ul { list-style: none; }
 }
 .footer-brand .logo-lab { color: rgba(255,255,255,.85); }
 .footer-brand p {
-  font-size: .9rem;
-  line-height: 1.7;
-  max-width: 360px;
+  font-size: .88rem;
+  line-height: 1.65;
+  max-width: 260px;
   margin-bottom: 1.5rem;
 }
 
@@ -634,8 +634,19 @@ ul { list-style: none; }
 }
 
 .footer-links {
-  display: flex;
-  gap: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1.6fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.footer-col-wide ul {
+  columns: 2;
+  column-gap: 1.25rem;
+  display: block;
+}
+.footer-col-wide ul li {
+  break-inside: avoid;
+  margin-bottom: .6rem;
 }
 
 .footer-col h4 {
@@ -694,6 +705,12 @@ ul { list-style: none; }
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+  }
+  .footer-col-wide ul { columns: 1; }
 }
 
 /* Mobile: ≤ 700px */
@@ -721,7 +738,7 @@ ul { list-style: none; }
 
   .contact-cards { grid-template-columns: 1fr; }
 
-  .footer-links { flex-direction: column; gap: 2rem; }
+  .footer-links { grid-template-columns: 1fr; gap: 1.75rem; }
 
   .hero-card { min-width: 120px; }
 
