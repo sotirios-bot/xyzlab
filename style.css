@@ -1141,3 +1141,277 @@ ul { list-style: none; }
   .hero-actions { flex-direction: column; align-items: center; }
   .btn { width: 100%; max-width: 260px; }
 }
+
+/* ============================================================
+   REPORT PAGE
+   ============================================================ */
+
+/* Report mockup visual */
+.report-mockup {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+  z-index: 1;
+}
+.report-mockup-header {
+  background: var(--dark);
+  padding: .65rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .72rem;
+  color: rgba(255,255,255,.5);
+  letter-spacing: .03em;
+}
+.report-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.2);
+}
+.report-dot:nth-child(1) { background: #ff5f57; }
+.report-dot:nth-child(2) { background: #febc2e; }
+.report-dot:nth-child(3) { background: #28c840; }
+.report-mockup-header span { margin-left: .5rem; }
+
+.report-mockup-body { padding: 1.25rem; }
+
+.report-kpi-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .75rem;
+  margin-bottom: 1.25rem;
+}
+.report-kpi {
+  background: var(--light);
+  border-radius: var(--radius);
+  padding: .75rem;
+  display: flex;
+  flex-direction: column;
+  gap: .15rem;
+}
+.report-kpi-label {
+  font-size: .67rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--mid);
+}
+.report-kpi-value {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--dark);
+}
+.report-kpi-delta {
+  font-size: .7rem;
+  font-weight: 700;
+}
+.report-kpi-delta.up { color: #16a34a; }
+.report-kpi-delta.down { color: #dc2626; }
+
+.report-bar-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: .4rem;
+  height: 80px;
+  margin-bottom: 1.25rem;
+  padding: 0 .25rem;
+}
+.report-bar {
+  flex: 1;
+  background: var(--primary-light);
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: .2rem;
+  transition: background var(--transition);
+}
+.report-bar.active { background: var(--primary); }
+.report-bar span {
+  font-size: .58rem;
+  color: var(--mid);
+  margin-top: .3rem;
+}
+.report-bar.active span { color: var(--white); }
+
+.report-row-list {
+  display: flex;
+  flex-direction: column;
+  gap: .45rem;
+}
+.report-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .45rem .6rem;
+  background: var(--light);
+  border-radius: 8px;
+  font-size: .78rem;
+  font-weight: 500;
+  color: var(--dark-2);
+}
+.report-tag {
+  font-size: .68rem;
+  font-weight: 700;
+  padding: .2rem .55rem;
+  border-radius: 50px;
+}
+.report-tag.good { background: #dcfce7; color: #16a34a; }
+.report-tag.warn { background: #fef9c3; color: #a16207; }
+
+/* Stats strip */
+.report-stats-strip {
+  background: var(--dark);
+  padding: 2.5rem 0;
+}
+.report-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+.report-stat-num {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--primary);
+  letter-spacing: -.02em;
+}
+.report-stat-label {
+  display: block;
+  font-size: .82rem;
+  color: rgba(255,255,255,.55);
+  margin-top: .2rem;
+}
+
+/* What's included */
+.report-includes {
+  padding: 6rem 0;
+  background: var(--white);
+}
+.includes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 3rem;
+  margin-top: .5rem;
+}
+.include-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.include-check {
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .75rem;
+  font-weight: 900;
+  margin-top: .1rem;
+}
+.include-item strong {
+  display: block;
+  font-size: .97rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: .3rem;
+}
+.include-item p {
+  font-size: .88rem;
+  color: var(--mid);
+  line-height: 1.6;
+}
+
+/* Who it's for */
+.report-who {
+  padding: 6rem 0;
+  background: var(--light);
+}
+.report-who-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.report-who-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  transition: box-shadow var(--transition), border-color var(--transition), transform var(--transition);
+}
+.report-who-card:hover {
+  box-shadow: var(--shadow);
+  border-color: var(--primary);
+  transform: translateY(-3px);
+}
+.report-who-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.report-who-card h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: .5rem;
+}
+.report-who-card p {
+  font-size: .9rem;
+  color: var(--mid);
+  line-height: 1.65;
+}
+
+/* Form section */
+.report-form-section {
+  padding: 6rem 0;
+  background: var(--white);
+}
+.form-embed-placeholder {
+  max-width: 640px;
+  margin: 0 auto;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-lg);
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .75rem;
+}
+.form-embed-placeholder p {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--dark);
+}
+.form-embed-placeholder span {
+  font-size: .88rem;
+  color: var(--mid);
+}
+
+/* Report page responsive */
+@media (max-width: 900px) {
+  .report-stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .includes-grid { grid-template-columns: 1fr; gap: 0; }
+  .report-who-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+  .report-mockup { max-width: 100%; }
+}
+@media (max-width: 700px) {
+  .report-stats-strip { padding: 2rem 0; }
+  .report-stats-grid { grid-template-columns: repeat(2, 1fr); gap: .75rem; }
+  .report-includes,
+  .report-who,
+  .report-form-section { padding: 4rem 0; }
+}
