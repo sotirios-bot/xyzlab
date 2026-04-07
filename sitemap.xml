@@ -10,27 +10,27 @@
 
   <!-- Courses -->
   <url>
-    <loc>https://xyzlab.com/google-ads/</loc>
+    <loc>https://xyzlab.com/google-ads-course/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://xyzlab.com/meta-ads/</loc>
+    <loc>https://xyzlab.com/meta-ads-course/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://xyzlab.com/seo/</loc>
+    <loc>https://xyzlab.com/seo-aio-course/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://xyzlab.com/marketing-analytics/</loc>
+    <loc>https://xyzlab.com/ai-marketing-analytics-course/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://xyzlab.com/content-creation/</loc>
+    <loc>https://xyzlab.com/ai-content-creation-course/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -74,47 +74,52 @@
 
   <!-- Templates -->
   <url>
-    <loc>https://xyzlab.com/google-ads-report/</loc>
+    <loc>https://xyzlab.com/google-ads-report-template/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://xyzlab.com/seo-report/</loc>
+    <loc>https://xyzlab.com/seo-report-template/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://xyzlab.com/google-analytics-report/</loc>
+    <loc>https://xyzlab.com/google-analytics-report-template/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://xyzlab.com/meta-ads-report/</loc>
+    <loc>https://xyzlab.com/meta-ads-report-template/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://xyzlab.com/tiktok-ads-report/</loc>
+    <loc>https://xyzlab.com/tiktok-ads-report-template/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://xyzlab.com/linkedin-ads-report/</loc>
+    <loc>https://xyzlab.com/ecommerce-report-template/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://xyzlab.com/ecommerce-report/</loc>
+    <loc>https://xyzlab.com/link-building-report-template/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://xyzlab.com/email-marketing-report/</loc>
+    <loc>https://xyzlab.com/email-marketing-report-template/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://xyzlab.com/link-building-report/</loc>
+    <loc>https://xyzlab.com/linkedin-ads-report-template/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://xyzlab.com/social-media-calendar-template/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -125,11 +130,6 @@
   </url>
   <url>
     <loc>https://xyzlab.com/on-page-seo-template/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://xyzlab.com/social-media-calendar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
