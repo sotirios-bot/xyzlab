@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI for Google Ads – XYZ Lab</title>
+  <meta name="description" content="Master AI-powered Google Ads — write better copy, automate bidding, and maximise every dollar you spend." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../course.css" />
+</head>
+<body>
+
+  <header class="nav-wrapper">
+    <nav class="nav container">
+      <a href="../" class="logo"><img src="../XYZLab.gif" alt="XYZ Lab" class="logo-img" /></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="../#courses">Courses</a></li>
+        <li><a href="../#prompt-libraries">Prompt Libraries</a></li>
+        <li><a href="../#about">About</a></li>
+        <li><a href="../#contact">Contact</a></li>
+        <li><a href="../#contact" class="btn btn-primary btn-sm">Get Started</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="course-hero">
+    <div class="container course-hero-inner">
+      <div class="course-hero-text">
+        <a href="../#courses" class="back-link">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          All Courses
+        </a>
+        <div class="badge" style="margin-top:1rem;">Paid Search</div>
+        <h1>Crush Google Ads<br /><span class="highlight">with AI</span></h1>
+        <p class="hero-sub">Master AI-powered campaign strategy, ad copywriting, and bidding automation to maximise every dollar you spend on Google.</p>
+        <div class="course-meta-row">
+          <div class="meta-pill"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2l1.5 4.5H14l-3.75 2.75 1.5 4.5L8 11 4.25 13.75l1.5-4.5L2 6.5h4.5z" stroke="#08bfad" stroke-width="1.4" stroke-linejoin="round"/></svg>AI-First</div>
+          <div class="meta-pill"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2a4 4 0 0 1 0 8A4 4 0 0 1 8 2zM3 14c0-2.2 2.24-4 5-4s5 1.8 5 4" stroke="#08bfad" stroke-width="1.5" stroke-linecap="round"/></svg>All Levels</div>
+          <div class="meta-pill"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M8 3l5 5-5 5" stroke="#08bfad" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Live Training</div>
+        </div>
+        <div class="hero-actions" style="margin-top:2rem;">
+          <a href="../#contact" class="btn btn-primary">Enrol Now</a>
+          <a href="#curriculum" class="btn btn-outline">See Curriculum</a>
+        </div>
+      </div>
+      <div class="course-hero-card">
+        <div class="preview-card">
+          <div class="preview-icon">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none"><rect width="56" height="56" rx="16" fill="#e8faf9"/><path d="M14 38l9-14 7 10 5-7 7 11" stroke="#08bfad" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="42" cy="17" r="5" fill="#08bfad" opacity=".25"/></svg>
+          </div>
+          <h3>What you'll build</h3>
+          <ul class="build-list">
+            <li><span class="dot"></span>AI-First Google Ads Strategy</li>
+            <li><span class="dot"></span>AI Keyword Research and Intent Mapping</li>
+            <li><span class="dot"></span>AI Ad Copywriting for RSA</li>
+            <li><span class="dot"></span>AI-Generated Reports</li>
+            <li><span class="dot"></span>AI-Powered Campaign Optimisation</li>
+          </ul>
+          <div class="preview-cta">
+            <a href="../#contact" class="btn btn-primary btn-full">Enrol Now</a>
+            <p class="preview-note">Questions? <a href="https://wa.me/6594260742">Chat on WhatsApp</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI CHAT -->
+  <section class="ai-chat-section" id="ask-ai" data-context="google-ads">
+    <div class="container">
+      <div class="chat-layout">
+        <div class="chat-intro">
+          <div class="badge">AI Assistant</div>
+          <h2>Ask About This Course</h2>
+          <p>Have questions about the AI for Google Ads training? Ask our AI — get instant answers about content, prerequisites, and how to enrol.</p>
+          <div class="chat-suggestions" id="chatSuggestions"></div>
+        </div>
+        <div class="chat-window">
+          <div class="chat-messages" id="chatMessages"></div>
+          <div class="chat-inputrow">
+            <input type="text" id="chatInput" class="chat-input" placeholder="Ask about this course…" autocomplete="off" />
+            <button id="chatSend" class="chat-send" aria-label="Send">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M15.75 9L2.25 2.25l3.375 6.75-3.375 6.75L15.75 9z" fill="currentColor"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="outcomes">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">What You'll Learn</div>
+        <h2>AI-Powered Google Ads Campaigns</h2>
+        <p>Every module is built around real campaign outcomes. You leave each session with strategies you can apply the same day.</p>
+      </div>
+      <div class="outcomes-grid">
+        <div class="outcome-card"><div class="outcome-icon">&#128269;</div><h4>AI Keyword Research</h4><p>Uncover high-intent keywords your competitors miss using AI clustering, intent mapping, and automated search term analysis.</p></div>
+        <div class="outcome-card"><div class="outcome-icon">&#128640;</div><h4>AI Campaign Creation</h4><p>Build well-structured Google Ads campaigns faster with AI guiding your account architecture, ad groups, and targeting setup.</p></div>
+        <div class="outcome-card"><div class="outcome-icon">&#9999;&#65039;</div><h4>AI Ad Copywriting and Assets</h4><p>Generate dozens of high-CTR RSA headlines, descriptions, and creative assets in minutes using AI prompting frameworks.</p></div>
+        <div class="outcome-card"><div class="outcome-icon">&#9889;</div><h4>Performance Max Optimisation</h4><p>Set up and optimise PMax and AI Max campaigns with AI-generated assets, audience signals, and search theme strategies.</p></div>
+        <div class="outcome-card"><div class="outcome-icon">&#128202;</div><h4>AI Powered Reports</h4><p>Build automated reporting dashboards that pull live Google Ads data and surface insights and recommendations without manual work.</p></div>
+        <div class="outcome-card"><div class="outcome-icon">&#127993;</div><h4>AI Powered Campaign Optimisation</h4><p>Use AI to audit campaigns, identify wasted spend, improve Quality Scores, and build ongoing optimisation workflows that run faster than any manual process.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="for-who">
+    <div class="container for-who-inner">
+      <div class="for-who-text">
+        <div class="badge">Who This Is For</div>
+        <h2>For Anyone Running or Managing Google Ads</h2>
+        <p>Whether you're managing your own campaigns or client accounts, AI gives you an unfair advantage over competitors still doing everything manually.</p>
+        <div class="for-who-cards">
+          <div class="fw-card"><span>&#128188;</span><div><strong>Business Owners</strong><p>Stop wasting ad spend. Use AI to run smarter campaigns with a fraction of the effort.</p></div></div>
+          <div class="fw-card"><span>&#128293;</span><div><strong>PPC Managers</strong><p>Handle more accounts, improve performance, and impress clients with AI-powered insights.</p></div></div>
+          <div class="fw-card"><span>&#127968;</span><div><strong>Ecommerce Brands</strong><p>Scale Shopping and PMax campaigns profitably with AI bidding and creative automation.</p></div></div>
+          <div class="fw-card"><span>&#128640;</span><div><strong>Agency Teams</strong><p>Streamline campaign creation and reporting across all your Google Ads accounts.</p></div></div>
+        </div>
+      </div>
+      <div class="for-who-visual" aria-hidden="true">
+        <div class="code-window">
+          <div class="code-titlebar"><span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span><span class="code-filename">ad-copy.js</span></div>
+          <div class="code-body">
+            <p><span class="token-comment">// AI prompt to Claude:</span></p>
+            <p><span class="token-string">"Write 15 RSA headlines for a</span></p>
+            <p><span class="token-string"> Singapore plumber targeting</span></p>
+            <p><span class="token-string"> 'emergency plumber' keyword"</span></p>
+            <br />
+            <p><span class="token-comment">// Output (instant) ✓</span></p>
+            <p><span class="token-keyword">const</span> <span class="token-var">headlines</span> = [</p>
+            <p>&nbsp;&nbsp;<span class="token-string">"24/7 Emergency Plumber SG"</span>,</p>
+            <p>&nbsp;&nbsp;<span class="token-string">"Fixed in 60 Min or Free"</span>,</p>
+            <p>&nbsp;&nbsp;<span class="token-string">"Call Now, We're On Our Way"</span>,</p>
+            <p>&nbsp;&nbsp;<span class="token-comment">// +12 more...</span></p>
+            <p>];</p>
+            <br />
+            <p><span class="token-comment">// CTR improved +38% 🚀</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="curriculum" id="curriculum">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-secondary">Curriculum</div>
+        <h2>What You'll Learn</h2>
+        <p>Five focused modules built around the AI workflows that actually move the needle in Google Ads.</p>
+      </div>
+      <div class="curriculum-list">
+        <div class="module module-flat">
+          <div class="module-summary"><span class="module-num">01</span><span class="module-title">AI-First Google Ads Strategy</span></div>
+          <div class="module-body"><ul><li>Why AI changes everything about paid search</li><li>Account structure best practices for AI bidding</li><li>Setting up your AI toolkit (Claude, ChatGPT + Google Ads)</li></ul></div>
+        </div>
+        <div class="module module-flat">
+          <div class="module-summary"><span class="module-num">02</span><span class="module-title">AI Keyword Research and Intent Mapping</span></div>
+          <div class="module-body"><ul><li>Using AI to cluster keywords by intent</li><li>Negative keyword mining with AI analysis</li><li>Search term reports + AI-powered expansion</li></ul></div>
+        </div>
+        <div class="module module-flat">
+          <div class="module-summary"><span class="module-num">03</span><span class="module-title">AI Ad Copywriting for RSA</span></div>
+          <div class="module-body"><ul><li>Prompting frameworks for high-CTR headlines</li><li>Generating 50+ ad variations in minutes</li><li>Testing and iterating with AI assistance</li></ul></div>
+        </div>
+        <div class="module module-flat">
+          <div class="module-summary"><span class="module-num">04</span><span class="module-title">AI-Generated Reports</span></div>
+          <div class="module-body"><ul><li>Building automated Google Ads dashboards with Looker Studio</li><li>Using AI to write performance commentary and recommendations</li><li>Scheduling and sharing reports that update automatically</li></ul></div>
+        </div>
+        <div class="module module-flat">
+          <div class="module-summary"><span class="module-num">05</span><span class="module-title">AI-Powered Campaign Optimisation</span></div>
+          <div class="module-body"><ul><li>Smart Bidding strategy selection with AI modelling</li><li>PMax and AI Max campaign setup and asset generation</li><li>Ongoing optimisation workflows using AI audits and insights</li></ul></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tools-section">
+    <div class="container">
+      <div class="section-header"><div class="badge">Tools You'll Use</div><h2>The Best AI Stack for Google Ads</h2></div>
+      <div class="tools-grid">
+        <div class="tool-pill">Google Ads</div><div class="tool-pill">Claude</div><div class="tool-pill">ChatGPT</div><div class="tool-pill">Google Analytics 4</div><div class="tool-pill">Looker Studio</div><div class="tool-pill">SEMrush</div><div class="tool-pill">Google Keyword Planner</div><div class="tool-pill">SpyFu</div><div class="tool-pill">Google Ads Scripts</div><div class="tool-pill">Google Sheets AI</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">FAQ</div>
+        <h2>Your Questions Answered</h2>
+        <p>Everything you need to know about the AI for Google Ads live training.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary class="faq-question"><span>Is this a live in-person course?</span><span class="faq-chevron" aria-hidden="true">&#8964;</span></summary>
+          <div class="faq-answer"><p>Yes — this is a <strong>live, in-person training</strong> held at our Singapore office. You get hands-on practice with real campaigns and direct feedback from the trainer. No pre-recorded videos.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question"><span>Do I need an active Google Ads account?</span><span class="faq-chevron" aria-hidden="true">&#8964;</span></summary>
+          <div class="faq-answer"><p>Having an active account is helpful but not required. We'll use live campaign examples throughout the training, and you can apply everything to your own account immediately after.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question"><span>What experience level is this course for?</span><span class="faq-chevron" aria-hidden="true">&#8964;</span></summary>
+          <div class="faq-answer"><p>The course is designed for <strong>all levels</strong> — from marketers who have run a few campaigns to experienced PPC managers looking to integrate AI into their workflow. We cover foundations before diving into advanced AI techniques.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question"><span>What do I need to bring?</span><span class="faq-chevron" aria-hidden="true">&#8964;</span></summary>
+          <div class="faq-answer"><p>Just bring your laptop and a willingness to learn. All training materials, templates, and access to AI tools are provided during the session. You'll leave with a complete resource pack.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question"><span>How many people are in each session?</span><span class="faq-chevron" aria-hidden="true">&#8964;</span></summary>
+          <div class="faq-answer"><p>Sessions are kept <strong>small (max 12 participants)</strong> to ensure everyone gets individual attention and the trainer can address your specific account challenges.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question"><span>When is the next session?</span><span class="faq-chevron" aria-hidden="true">&#8964;</span></summary>
+          <div class="faq-answer"><p>Sessions run regularly throughout the year. <a href="../#contact">Contact us</a> or WhatsApp <a href="https://wa.me/6594260742">+65 9426 0742</a> for the current schedule and to reserve your spot.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container cta-inner">
+      <h2>Ready to make every click count?</h2>
+      <p>Stop guessing. Start using AI to run smarter Google Ads campaigns that scale.</p>
+      <a href="../#contact" class="btn btn-white">Enrol Now</a>
+    </div>
+  </section>
+
+  <section class="other-courses">
+    <div class="container">
+      <div class="section-header"><h2>Explore Other Courses</h2></div>
+      <div class="courses-grid courses-grid--3">
+        <article class="course-card">
+          <a href="../meta-ads/" class="course-icon" style="background:#fff8ec;" tabindex="-1"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#fff8ec"/><circle cx="16" cy="16" r="7" stroke="#fec55c" stroke-width="2.2"/><path d="M16 9v7l4 4" stroke="#fec55c" stroke-width="2.2" stroke-linecap="round"/></svg></a>
+          <h3>AI for Meta Ads</h3><p>Build smarter audiences and generate creatives at scale with AI.</p>
+          <a href="../meta-ads/" class="course-link">Learn more &#8594;</a>
+        </article>
+        <article class="course-card">
+          <a href="../marketing-analytics/" class="course-icon" style="background:#e8faf9;" tabindex="-1"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#e8faf9"/><rect x="8" y="18" width="3" height="6" rx="1" fill="#08bfad"/><rect x="13" y="13" width="3" height="11" rx="1" fill="#08bfad" opacity=".7"/><rect x="18" y="9" width="3" height="15" rx="1" fill="#08bfad" opacity=".4"/><rect x="23" y="14" width="3" height="10" rx="1" fill="#08bfad"/></svg></a>
+          <h3>AI for Marketing Analytics</h3><p>Automate reporting and uncover insights with AI-powered dashboards.</p>
+          <a href="../marketing-analytics/" class="course-link">Learn more &#8594;</a>
+        </article>
+        <article class="course-card">
+          <a href="../content-creation/" class="course-icon" style="background:#e8faf9;" tabindex="-1"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#e8faf9"/><path d="M9 12h14M9 16h10M9 20h12" stroke="#08bfad" stroke-width="2.2" stroke-linecap="round"/></svg></a>
+          <h3>AI Content Creation</h3><p>Master AI writing, image generation, and video workflows.</p>
+          <a href="../content-creation/" class="course-link">Learn more &#8594;</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p>Hands-on AI marketing training in Singapore. Work smarter, grow faster with AI.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/seridis/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@xyzl" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="../google-ads/">AI for Google Ads</a></li>
+            <li><a href="../meta-ads/">AI for Meta Ads</a></li>
+            <li><a href="../seo/">AI for SEO</a></li>
+            <li><a href="../marketing-analytics/">Analytics</a></li>
+            <li><a href="../content-creation/">AI Content Creation</a></li>
+            <li><a href="../vibe-coding/">Vibe Coding</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col-wide">
+          <h4>Templates</h4>
+          <ul>
+            <li><a href="../google-ads-report/">Google Ads Report</a></li>
+            <li><a href="../seo-report/">SEO Report</a></li>
+            <li><a href="../google-analytics-report/">Google Analytics</a></li>
+            <li><a href="../meta-ads-report/">Meta Ads Report</a></li>
+            <li><a href="../tiktok-ads-report/">TikTok Ads Report</a></li>
+            <li><a href="../linkedin-ads-report/">LinkedIn Ads Report</a></li>
+            <li><a href="../ecommerce-report/">E-Commerce Report</a></li>
+            <li><a href="../email-marketing-report/">Email Marketing</a></li>
+            <li><a href="../link-building-report/">Link Building</a></li>
+            <li><a href="../google-ads-editor-template/">Google Ads Editor</a></li>
+            <li><a href="../on-page-seo-template/">On-Page SEO</a></li>
+            <li><a href="../social-media-calendar/">Social Media Calendar</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Checklists</h4>
+          <ul>
+            <li><a href="../on-page-seo-checklist/">On-Page SEO</a></li>
+            <li><a href="../seo-aio-checklist/">SEO &amp; AIO</a></li>
+            <li><a href="../google-analytics-checklist/">Google Analytics</a></li>
+            <li><a href="../google-ads-checklist/">Google Ads</a></li>
+            <li><a href="../meta-ads-checklist/">Meta Ads</a></li>
+            <li><a href="../website-launch-checklist/">Website Launch</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Prompt Libraries</h4>
+          <ul>
+            <li><a href="../google-ads-prompt-library/">Google Ads</a></li>
+            <li><a href="../meta-ads-prompt-library/">Meta Ads</a></li>
+            <li><a href="../tiktok-ads-prompt-library/">TikTok Ads</a></li>
+            <li><a href="../google-analytics-prompt-library/">Google Analytics</a></li>
+            <li><a href="../seo-prompt-library/">SEO</a></li>
+            <li><a href="../content-prompt-library/">Content Generation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../#about">About</a></li>
+            <li><a href="../#contact">Contact</a></li>
+            <li><a href="mailto:hello@xyzlab.com">hello@xyzlab.com</a></li>
+            <li><a href="https://wa.me/6594260742">+65 9426 0742</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> XYZ Lab. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../config.js"></script>
+  <script src="../chat.js"></script>
+  <script src="../main.js"></script>
+</body>
+</html>
