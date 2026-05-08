@@ -40,6 +40,102 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Google Ads Skills -->
+  <url>
+    <loc>https://xyzlab.com/google-ads-campaign-setup-skill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xyzlab.com/google-ads-search-terms-skill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xyzlab.com/google-ads-target-cpa-skill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xyzlab.com/google-ads-budget-reallocation-skill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xyzlab.com/google-ads-ad-copies-skill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xyzlab.com/google-ads-reporting-skill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Meta Ads Skills -->
+  <url>
+    <loc>https://xyzlab.com/meta-ads-campaign-planning-skill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xyzlab.com/meta-ads-optimiser-skill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xyzlab.com/meta-ads-creative-ideas-skill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xyzlab.com/meta-ads-budget-reallocation-skill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xyzlab.com/meta-ads-creative-fatigue-skill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xyzlab.com/meta-ads-reporting-skill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Marketing Analytics Skills -->
+  <url>
+    <loc>https://xyzlab.com/google-analytics-report-skill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xyzlab.com/ecommerce-analysis-skill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xyzlab.com/meta-ads-analytics-report-skill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xyzlab.com/google-ads-analytics-report-skill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xyzlab.com/tiktok-ads-report-skill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xyzlab.com/content-marketing-report-skill/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Prompt Libraries -->
   <url>
     <loc>https://xyzlab.com/google-ads-prompt-library/</loc>
