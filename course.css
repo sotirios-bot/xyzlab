@@ -262,7 +262,7 @@
   cursor: pointer;
   list-style: none;
   background: var(--white);
-  user-select: none;
+  user-select: text;
   transition: background var(--transition);
 }
 .module-summary::-webkit-details-marker { display: none; }
