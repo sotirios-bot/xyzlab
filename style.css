@@ -642,7 +642,7 @@ a.course-icon:hover {
 
 .footer-links {
   display: grid;
-  grid-template-columns: 1fr 1.6fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
 }
 
@@ -714,7 +714,7 @@ a.course-icon:hover {
   }
 
   .footer-links {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.75rem;
   }
   .footer-col-wide ul { columns: 1; }
@@ -745,7 +745,7 @@ a.course-icon:hover {
 
   .contact-cards { grid-template-columns: 1fr; }
 
-  .footer-links { grid-template-columns: 1fr; gap: 1.75rem; }
+  .footer-links { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
 
   .hero-card { min-width: unset; }
   .hero-visual { gap: .75rem; padding: 1rem; }

@@ -11,7 +11,7 @@
 
 .course-hero-inner {
   display: grid;
-  grid-template-columns: 1fr 380px;
+  grid-template-columns: 1fr 440px;
   gap: 4rem;
   align-items: start;
 }
@@ -377,7 +377,7 @@
   }
   .course-hero-card {
     position: static;
-    max-width: 480px;
+    max-width: 100%;
   }
   .outcomes-grid {
     grid-template-columns: repeat(2, 1fr);
