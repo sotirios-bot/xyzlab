@@ -202,6 +202,15 @@ ul { list-style: none; }
   z-index: 300;
   list-style: none;
 }
+/* Invisible bridge fills the gap so hover isn't lost when cursor moves down */
+.nav-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+}
 .nav-has-dropdown:hover .nav-dropdown {
   display: block;
 }
