@@ -164,6 +164,61 @@ ul { list-style: none; }
 .nav-links a.btn-primary,
 .nav-links a.btn-primary:hover { color: var(--white); }
 
+/* Dropdown nav */
+.nav-has-dropdown {
+  position: relative;
+}
+.nav-has-dropdown > a {
+  display: flex;
+  align-items: center;
+  gap: .35rem;
+}
+.nav-caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  flex-shrink: 0;
+  transition: transform var(--transition);
+  margin-top: 1px;
+}
+.nav-has-dropdown:hover .nav-caret {
+  transform: rotate(180deg);
+}
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 28px rgba(0,0,0,.11);
+  padding: .4rem 0;
+  min-width: 210px;
+  z-index: 300;
+  list-style: none;
+}
+.nav-has-dropdown:hover .nav-dropdown {
+  display: block;
+}
+.nav-dropdown li a {
+  display: block;
+  padding: .55rem 1.2rem;
+  font-size: .86rem;
+  font-weight: 500;
+  color: var(--dark-2);
+  white-space: nowrap;
+  transition: background var(--transition), color var(--transition);
+}
+.nav-dropdown li a:hover {
+  background: var(--light);
+  color: var(--primary);
+}
+
 /* Hamburger */
 .nav-toggle {
   display: none;
@@ -740,6 +795,30 @@ a.course-icon:hover {
   .nav-links a { font-size: 1rem; color: var(--dark); }
 
   .nav-wrapper { position: relative; }
+
+  /* Mobile dropdowns: always visible, indented */
+  .nav-has-dropdown > a { gap: .4rem; }
+  .nav-caret { display: none; }
+  .nav-dropdown {
+    display: block;
+    position: static;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    padding: .25rem 0 0 1rem;
+    min-width: 0;
+    border-left: 2px solid var(--border);
+    margin-top: .4rem;
+  }
+  .nav-dropdown li a {
+    font-size: .9rem;
+    color: var(--mid);
+    padding: .3rem .5rem;
+    white-space: normal;
+  }
+  .nav-dropdown li a:hover { background: transparent; color: var(--primary); }
 
   .courses-grid { grid-template-columns: 1fr; }
 
