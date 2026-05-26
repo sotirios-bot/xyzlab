@@ -57,7 +57,7 @@ ul { list-style: none; }
   gap: .5rem;
   padding: .75rem 1.75rem;
   border-radius: 50px;
-  font-size: .95rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   border: 2px solid transparent;
@@ -94,11 +94,11 @@ ul { list-style: none; }
 /* ---------- Badge ---------- */
 .badge {
   display: inline-block;
-  padding: .3rem .9rem;
+  padding: .35rem 1rem;
   background: var(--primary-light);
   color: var(--primary-dark);
   border-radius: 50px;
-  font-size: .78rem;
+  font-size: .82rem;
   font-weight: 700;
   letter-spacing: .04em;
   text-transform: uppercase;
@@ -412,7 +412,7 @@ ul { list-style: none; }
 }
 .section-header p {
   color: var(--mid);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
 }
 
 .courses-grid {
@@ -463,15 +463,22 @@ a.course-icon:hover {
   margin-bottom: 1.2rem;
 }
 .course-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  margin-top: .5rem;
+  padding: .42rem 1.1rem;
+  border: 1.5px solid var(--primary);
+  border-radius: 50px;
   font-size: .88rem;
   font-weight: 600;
   color: var(--primary);
-  transition: gap var(--transition);
-  display: inline-flex;
-  align-items: center;
-  gap: .35rem;
+  transition: background var(--transition), color var(--transition);
 }
-.course-link:hover { gap: .65rem; }
+.course-link:hover {
+  background: var(--primary);
+  color: var(--white);
+}
 
 
 /* ============================================================
@@ -588,6 +595,10 @@ a.course-icon:hover {
   margin-bottom: .75rem;
   letter-spacing: -.02em;
 }
+.cta-banner .highlight {
+  color: var(--secondary);
+}
+.cta-banner .highlight::after { display: none; }
 .cta-banner p {
   color: rgba(255,255,255,.85);
   font-size: 1.05rem;
@@ -734,7 +745,7 @@ a.course-icon:hover {
   gap: .6rem;
 }
 .footer-col a {
-  font-size: .88rem;
+  font-size: .93rem;
   color: rgba(255,255,255,.6);
   transition: color var(--transition);
 }
@@ -1030,7 +1041,7 @@ a.course-icon:hover {
 }
 .faq-answer p {
   padding-top: 1rem;
-  font-size: .92rem;
+  font-size: 1rem;
   color: var(--mid);
   line-height: 1.7;
   margin: 0;
