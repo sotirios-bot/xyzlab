@@ -420,6 +420,9 @@ ul { list-style: none; }
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
+.courses-grid--4 {
+  grid-template-columns: repeat(4, 1fr) !important;
+}
 
 .course-card {
   background: var(--white);
@@ -773,6 +776,7 @@ a.course-icon:hover {
   .contact-cards { grid-template-columns: repeat(2, 1fr); }
 
   .courses-grid { grid-template-columns: repeat(2, 1fr); }
+  .courses-grid--4 { grid-template-columns: repeat(2, 1fr) !important; }
 
   .hero { padding: 4rem 0; }
   .hero-text { text-align: center; }
@@ -841,6 +845,7 @@ a.course-icon:hover {
   .nav-dropdown li a:hover { background: transparent; color: var(--primary); }
 
   .courses-grid { grid-template-columns: 1fr; }
+  .courses-grid--4 { grid-template-columns: repeat(2, 1fr) !important; }
 
   .contact-cards { grid-template-columns: 1fr; }
 
