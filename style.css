@@ -437,6 +437,30 @@ ul { list-style: none; }
   border-color: var(--primary);
 }
 
+.course-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.course-bullets li {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  padding-left: 1.25rem;
+  position: relative;
+  line-height: 1.5;
+}
+.course-bullets li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
 .course-icon {
   width: 52px;
   height: 52px;
