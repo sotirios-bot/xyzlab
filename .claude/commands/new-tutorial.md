@@ -19,22 +19,22 @@ options (2 neutral placeholders — user will use Other):
 - label: "Use Other to enter", description: "Type the exact slug from the list above"
 
 **Q2 — Tutorial title**
-question: "Tutorial title — type it exactly in Other."
-options (2 neutral placeholders — user will use Other):
-- label: "Title field", description: "Type your title in Other"
-- label: "Use Other to enter", description: "No suggestions provided"
+question: "Tutorial title — type the exact title in the Other field below."
+options (tool requires 2 minimum — do NOT make these look like selectable suggestions):
+- label: "↓ Do not select — type in Other", description: "Text input only"
+- label: "↓ No choices here", description: "Text input only"
 
 **Q3 — YouTube video URL**
-question: "YouTube video URL — paste it in Other."
-options (2 neutral placeholders — user will use Other):
-- label: "Video URL field", description: "Paste the URL in Other"
-- label: "Use Other to enter", description: "No suggestions provided"
+question: "YouTube video URL — paste the full URL in the Other field below."
+options (tool requires 2 minimum — do NOT make these look like selectable suggestions):
+- label: "↓ Do not select — paste in Other", description: "Text input only"
+- label: "↓ No choices here", description: "Text input only"
 
 **Q4 — Page slug + Steps**
-question: "Type in Other: Line 1 = page URL slug (the part after /pillar/). Line 2 onwards = one step per line."
-options (2 neutral placeholders — user will use Other):
-- label: "Slug + steps field", description: "Type slug on line 1, steps from line 2"
-- label: "Use Other to enter", description: "No suggestions provided"
+question: "Type in the Other field: Line 1 = page URL slug (e.g. call-assets). Lines 2 onwards = one step per line."
+options (tool requires 2 minimum — do NOT make these look like selectable suggestions):
+- label: "↓ Do not select — type in Other", description: "Text input only"
+- label: "↓ No choices here", description: "Text input only"
 
 ## Step 2 — Parse the inputs
 
