@@ -4,46 +4,45 @@ Build a new video tutorial page for the XYZ Lab site.
 
 ## Step 1 — Collect details via form
 
-Use the `AskUserQuestion` tool with EXACTLY these 4 questions.
+Use the `AskUserQuestion` tool with EXACTLY 2 calls.
 
 **CRITICAL RULES — follow without exception:**
-- DO NOT add any content suggestions, format hints, or example values in options
+- DO NOT add content suggestions, format hints, or example values in options
 - DO NOT pre-fill or guess any field
-- Options for Q2/Q3/Q4 must be neutral labels only — user will always use Other
-- All 15 pillar slugs must appear in Q1's question text so user sees them in one view
+- The 2 required options per question are there only because the tool forces it — label them clearly as non-choices
+- User will always type their answer in the Other field
 
-**Q1 — Pillar page**
-question: "Which pillar page does this tutorial belong to? Available: google-ads · google-ads-editor · meta-ads · tiktok-ads · microsoft-ads · linkedin-ads · pinterest-ads · reddit-ads · google-analytics · google-tag-manager · data-studio · claude · chatgpt · seo · shopify — Type your choice in Other."
-options (2 neutral placeholders — user will use Other):
-- label: "Pillar list shown above", description: "Type your pillar slug in Other"
-- label: "Use Other to enter", description: "Type the exact slug from the list above"
+**Call 1 — Page details (4 questions, one field each)**
 
-**Q2 — Tutorial title**
-question: "Tutorial title — type the exact title in the Other field below."
-options (tool requires 2 minimum — do NOT make these look like selectable suggestions):
-- label: "↓ Do not select — type in Other", description: "Text input only"
-- label: "↓ No choices here", description: "Text input only"
+Q1 — Pillar page:
+question: "Pillar page — Available: google-ads · google-ads-editor · meta-ads · tiktok-ads · microsoft-ads · linkedin-ads · pinterest-ads · reddit-ads · google-analytics · google-tag-manager · data-studio · claude · chatgpt · seo · shopify"
+options: label "↓ type in Other", description "required placeholder" | label "↓ no choice to make", description "type in Other below"
 
-**Q3 — YouTube video URL**
-question: "YouTube video URL — paste the full URL in the Other field below."
-options (tool requires 2 minimum — do NOT make these look like selectable suggestions):
-- label: "↓ Do not select — paste in Other", description: "Text input only"
-- label: "↓ No choices here", description: "Text input only"
+Q2 — Title:
+question: "Tutorial title"
+options: label "↓ type in Other", description "required placeholder" | label "↓ no choice to make", description "type in Other below"
 
-**Q4 — Page slug + Steps**
-question: "Type in the Other field: Line 1 = page URL slug (e.g. call-assets). Lines 2 onwards = one step per line."
-options (tool requires 2 minimum — do NOT make these look like selectable suggestions):
-- label: "↓ Do not select — type in Other", description: "Text input only"
-- label: "↓ No choices here", description: "Text input only"
+Q3 — YouTube video URL:
+question: "YouTube video URL"
+options: label "↓ paste in Other", description "required placeholder" | label "↓ no choice to make", description "paste in Other below"
+
+Q4 — Page URL slug:
+question: "Page URL slug (the part after /pillar-name/, e.g. sitelinks)"
+options: label "↓ type in Other", description "required placeholder" | label "↓ no choice to make", description "type in Other below"
+
+**Call 2 — Steps (1 question)**
+
+Q1 — Steps:
+question: "Step-by-step instructions — one step per line"
+options: label "↓ paste in Other", description "required placeholder" | label "↓ no choice to make", description "paste in Other below"
 
 ## Step 2 — Parse the inputs
 
-From the answers extract:
-- `pillar_slug` — exact slug typed (e.g. `google-ads`)
-- `title` — exact text typed, no modification
-- `page_slug` — line 1 of Q4 answer, strip leading slash if present
-- `video_id` — extract from YouTube URL (youtu.be/VIDEO_ID or watch?v=VIDEO_ID)
-- `steps` — lines 2 onwards from Q4 answer, strip leading emoji/numbers
+- `pillar_slug` — Q1 answer from Call 1
+- `title` — Q2 answer from Call 1, exact text, no modification
+- `video_id` — extract from Q3 answer (youtu.be/VIDEO_ID or watch?v=VIDEO_ID)
+- `page_slug` — Q4 answer from Call 1, strip leading slash if present
+- `steps` — each line from Call 2, strip leading emoji/numbers
 
 ## Step 3 — Generate the page
 
