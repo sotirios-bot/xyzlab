@@ -4,35 +4,46 @@ Build a new video tutorial page for the XYZ Lab site.
 
 ## Step 1 — Collect details via form
 
-Use the `AskUserQuestion` tool with these questions:
+Use the `AskUserQuestion` tool with EXACTLY these 4 questions.
 
-**Q1 — Pillar page** (which pillar does this tutorial belong to?)
-Options:
-- PPC — description: "google-ads · google-ads-editor · meta-ads · tiktok-ads · microsoft-ads · linkedin-ads · pinterest-ads · reddit-ads"
-- Analytics — description: "google-analytics · google-tag-manager · data-studio"
-- AI Tools — description: "claude · chatgpt"
-- SEO & eCommerce — description: "seo · shopify"
+**CRITICAL RULES — follow without exception:**
+- DO NOT add any content suggestions, format hints, or example values in options
+- DO NOT pre-fill or guess any field
+- Options for Q2/Q3/Q4 must be neutral labels only — user will always use Other
+- All 15 pillar slugs must appear in Q1's question text so user sees them in one view
 
-**Q2 — Title + URL + Video** (ask user to type three lines via "Other"):
-- Line 1: pillar slug (e.g. google-ads)
-- Line 2: tutorial title (e.g. How to Add Call Assets in Google Ads)
-- Line 3: page slug (e.g. call-assets)
-Options: show one format-hint option + "Other"
+**Q1 — Pillar page**
+question: "Which pillar page does this tutorial belong to? Available: google-ads · google-ads-editor · meta-ads · tiktok-ads · microsoft-ads · linkedin-ads · pinterest-ads · reddit-ads · google-analytics · google-tag-manager · data-studio · claude · chatgpt · seo · shopify — Type your choice in Other."
+options (2 neutral placeholders — user will use Other):
+- label: "Pillar list shown above", description: "Type your pillar slug in Other"
+- label: "Use Other to enter", description: "Type the exact slug from the list above"
+
+**Q2 — Tutorial title**
+question: "Tutorial title — type it exactly in Other."
+options (2 neutral placeholders — user will use Other):
+- label: "Title field", description: "Type your title in Other"
+- label: "Use Other to enter", description: "No suggestions provided"
 
 **Q3 — YouTube video URL**
-Options: two format examples + "Other" for them to paste actual URL
+question: "YouTube video URL — paste it in Other."
+options (2 neutral placeholders — user will use Other):
+- label: "Video URL field", description: "Paste the URL in Other"
+- label: "Use Other to enter", description: "No suggestions provided"
 
-**Q4 — Step-by-step instructions**
-Options: one format hint + "Other" for them to paste all steps
+**Q4 — Page slug + Steps**
+question: "Type in Other: Line 1 = page URL slug (the part after /pillar/). Line 2 onwards = one step per line."
+options (2 neutral placeholders — user will use Other):
+- label: "Slug + steps field", description: "Type slug on line 1, steps from line 2"
+- label: "Use Other to enter", description: "No suggestions provided"
 
 ## Step 2 — Parse the inputs
 
 From the answers extract:
-- `pillar_slug` — e.g. `google-ads`
-- `title` — exact H1 text
-- `page_slug` — URL segment, fix any typos (e.g. "tacking" → "tracking")
+- `pillar_slug` — exact slug typed (e.g. `google-ads`)
+- `title` — exact text typed, no modification
+- `page_slug` — line 1 of Q4 answer, strip leading slash if present
 - `video_id` — extract from YouTube URL (youtu.be/VIDEO_ID or watch?v=VIDEO_ID)
-- `steps` — list of step strings
+- `steps` — lines 2 onwards from Q4 answer, strip leading emoji/numbers
 
 ## Step 3 — Generate the page
 
