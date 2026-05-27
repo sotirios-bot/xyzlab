@@ -228,6 +228,75 @@ ul { list-style: none; }
   color: var(--primary);
 }
 
+/* Mega menu (Tutorials dropdown) */
+.nav-mega {
+  display: none;
+  flex-direction: row;
+  gap: 0;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 28px rgba(0,0,0,.11);
+  padding: 1.4rem 1rem;
+  z-index: 300;
+  min-width: 640px;
+}
+.nav-mega::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+}
+.nav-has-dropdown:hover .nav-mega {
+  display: flex;
+}
+.mega-col {
+  flex: 1;
+  padding: 0 1.1rem;
+  border-left: 1px solid var(--border);
+}
+.mega-col:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+.mega-col:last-child {
+  padding-right: 0;
+}
+.mega-label {
+  display: block;
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--text-light);
+  margin-bottom: .55rem;
+  padding-bottom: .35rem;
+  border-bottom: 1px solid var(--border);
+}
+.mega-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mega-col ul li a {
+  display: block;
+  padding: .28rem 0;
+  font-size: .86rem;
+  font-weight: 500;
+  color: var(--dark-2);
+  white-space: nowrap;
+  transition: color var(--transition);
+}
+.mega-col ul li a:hover {
+  color: var(--primary);
+}
+
 /* Hamburger */
 .nav-toggle {
   display: none;
@@ -867,6 +936,40 @@ a.course-icon:hover {
     white-space: normal;
   }
   .nav-dropdown li a:hover { background: transparent; color: var(--primary); }
+
+  /* Mega menu on mobile: stack columns vertically */
+  .nav-mega {
+    display: block;
+    position: static;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    padding: .25rem 0 0 1rem;
+    min-width: 0;
+    border-left: 2px solid var(--border);
+    margin-top: .4rem;
+  }
+  .mega-col {
+    border-left: none;
+    padding: 0;
+    margin-bottom: .6rem;
+  }
+  .mega-label {
+    font-size: .7rem;
+    padding: .15rem 0 .15rem .5rem;
+    margin-bottom: .2rem;
+    border-bottom: none;
+    color: var(--primary);
+  }
+  .mega-col ul li a {
+    font-size: .9rem;
+    color: var(--mid);
+    padding: .25rem .5rem;
+    white-space: normal;
+  }
+  .mega-col ul li a:hover { color: var(--primary); }
 
   .courses-grid { grid-template-columns: 1fr; }
   .courses-grid--4 { grid-template-columns: repeat(2, 1fr) !important; }
