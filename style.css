@@ -1038,9 +1038,9 @@ a.course-icon:hover {
 .video-wrapper {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%;
   max-width: 960px;
   margin: 0 auto;
+  aspect-ratio: 16 / 9;
 }
 .video-wrapper iframe {
   position: absolute;
