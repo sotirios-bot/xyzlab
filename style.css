@@ -1127,9 +1127,10 @@ a.course-icon:hover {
 }
 .playlist-section .section-header h2 a {
   color: var(--primary);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
-.playlist-section .section-header h2 a:hover { text-decoration: underline; }
+.playlist-section .section-header h2 a:hover { opacity: .8; }
 
 /* Tutorial link list (replaces embedded video) */
 .tutorial-list {
