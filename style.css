@@ -1014,6 +1014,40 @@ a.course-icon:hover {
   .issue-card p { padding-left: 0; }
 }
 
+/* Coaching CTA callout (above Tally form) */
+.coaching-cta {
+  padding: 4rem 0 0;
+  background: var(--light);
+}
+.coaching-cta-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  background: var(--primary-light);
+  border: 1.5px solid var(--primary);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.coaching-cta-text h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: .4rem;
+  letter-spacing: -.02em;
+}
+.coaching-cta-text p {
+  font-size: .96rem;
+  color: var(--mid);
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .coaching-cta-inner { flex-direction: column; text-align: center; padding: 1.75rem 1.5rem; gap: 1.25rem; }
+  .coaching-cta { padding: 3rem 0 0; }
+}
+
 /* Coaching / Tally section */
 .coaching-section {
   padding: 6rem 0;
@@ -1068,6 +1102,9 @@ a.course-icon:hover {
 
 .float-yt { background: #ff0000; }
 .float-yt:hover { background: #cc0000; }
+
+.float-coaching { background: var(--primary); }
+.float-coaching:hover { background: var(--primary-dark); }
 
 @media (max-width: 500px) {
   .floating-actions { right: .85rem; bottom: 1.25rem; }
