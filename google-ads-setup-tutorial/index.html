@@ -140,20 +140,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <!-- STEPS -->
-  <section class="curriculum" id="steps">
+  <section class="outcomes" id="steps">
     <div class="container">
       <div class="section-header">
         <div class="badge badge-secondary">Step by Step</div>
         <h2>How to Follow Along</h2>
         <p>Use these steps alongside the video to get your campaign live faster.</p>
       </div>
-      <div class="curriculum-list">
-        <div class="module module-flat">
-          <div class="module-summary">
-            <span class="module-num">01</span>
-            <span class="module-title">Gather your business details</span>
-          </div>
-          <div class="module-body">
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Gather your business details</h4>
             <ul>
               <li>Write down your industry, products or services, target audience, and geographic locations.</li>
               <li>Set a clear monthly budget and primary campaign goal (leads, sales, or traffic).</li>
@@ -161,12 +159,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </ul>
           </div>
         </div>
-        <div class="module module-flat">
-          <div class="module-summary">
-            <span class="module-num">02</span>
-            <span class="module-title">Open the Google Ads Campaign Setup Skill</span>
-          </div>
-          <div class="module-body">
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Open the Google Ads Campaign Setup Skill</h4>
             <ul>
               <li>Open Claude and navigate to the Google Ads Campaign Setup Skill in your XYZ Lab account.</li>
               <li>Paste your business details into the prompt exactly as shown in the video.</li>
@@ -174,12 +170,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </ul>
           </div>
         </div>
-        <div class="module module-flat">
-          <div class="module-summary">
-            <span class="module-num">03</span>
-            <span class="module-title">Review the AI output</span>
-          </div>
-          <div class="module-body">
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Review the AI output</h4>
             <ul>
               <li>Read through the generated campaign structure — campaigns, ad groups, and keywords.</li>
               <li>Check that budget splits and bid strategy recommendations match your goals.</li>
@@ -187,12 +181,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </ul>
           </div>
         </div>
-        <div class="module module-flat">
-          <div class="module-summary">
-            <span class="module-num">04</span>
-            <span class="module-title">Build the campaign in Google Ads</span>
-          </div>
-          <div class="module-body">
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h4>Build the campaign in Google Ads</h4>
             <ul>
               <li>Log into your Google Ads account and create a new campaign for each type (Brand, Generic, Competitor).</li>
               <li>Copy in the keyword lists from the AI output, organised by match type.</li>
@@ -200,12 +192,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </ul>
           </div>
         </div>
-        <div class="module module-flat">
-          <div class="module-summary">
-            <span class="module-num">05</span>
-            <span class="module-title">Set bid strategy and launch</span>
-          </div>
-          <div class="module-body">
+        <div class="step-item">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <h4>Set bid strategy and launch</h4>
             <ul>
               <li>Apply the recommended bid strategy — usually Maximise Conversions to start, then shift to Target CPA once you have enough data.</li>
               <li>Set up conversion tracking before publishing (Google Ads won't optimise without it).</li>
@@ -218,44 +208,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <!-- COMMON ISSUES -->
-  <section class="faq" id="common-issues" style="background:var(--light);">
+  <section class="for-who" id="common-issues">
     <div class="container">
       <div class="section-header">
         <div class="badge">Common Issues</div>
         <h2>Troubleshooting Google Ads Setup</h2>
-        <p>Answers to the most frequent problems people run into when setting up campaigns.</p>
+        <p>The most frequent problems people run into — and how to fix them.</p>
       </div>
-      <div class="faq-list">
-        <details class="faq-item" open>
-          <summary class="faq-question"><span>My campaigns aren't getting impressions after launch</span><span class="faq-chevron" aria-hidden="true">&#8964;</span></summary>
-          <div class="faq-answer">
-            <p>Check that your campaigns are enabled and not paused. Then confirm your keywords aren't too restrictive — if you're using exact match only, try adding broad match modified or phrase match keywords. Also check that your location targeting matches where your audience actually is, and ensure your daily budget is at least 3–5x your target CPC.</p>
-          </div>
-        </details>
-        <details class="faq-item">
-          <summary class="faq-question"><span>Google Ads keeps disapproving my ads</span><span class="faq-chevron" aria-hidden="true">&#8964;</span></summary>
-          <div class="faq-answer">
-            <p>Most disapprovals come from policy violations in ad copy — check for excessive capitalisation, misleading claims, or missing required landing page information. If you're advertising a regulated industry (finance, health, legal), you may need to complete additional verification steps before your ads can run.</p>
-          </div>
-        </details>
-        <details class="faq-item">
-          <summary class="faq-question"><span>Conversion tracking isn't recording any conversions</span><span class="faq-chevron" aria-hidden="true">&#8964;</span></summary>
-          <div class="faq-answer">
-            <p>Use Google Tag Assistant to verify the conversion tag fires on your thank-you or confirmation page. Common issues include the tag placed on the wrong page, GTM not publishing after the tag was added, or the conversion action set to "Every click" instead of "One per click" which can inflate numbers. Test with an actual conversion before relying on the data.</p>
-          </div>
-        </details>
-        <details class="faq-item">
-          <summary class="faq-question"><span>My CPC is much higher than expected</span><span class="faq-chevron" aria-hidden="true">&#8964;</span></summary>
-          <div class="faq-answer">
-            <p>High CPC usually means low Quality Score. Check your ad relevance and landing page experience scores in the Keywords tab. Ensure the keyword, ad headline, and landing page all share the same core message. Pause low-performing keywords and consolidate your budget into tighter, higher-intent ad groups.</p>
-          </div>
-        </details>
-        <details class="faq-item">
-          <summary class="faq-question"><span>The AI output doesn't match my industry or business type</span><span class="faq-chevron" aria-hidden="true">&#8964;</span></summary>
-          <div class="faq-answer">
-            <p>This usually means the input prompt needs more specificity. Try adding your exact product names, target customer profile, and specific USPs rather than just the industry name. The more context you give the AI, the more tailored and accurate the campaign structure will be. Refer to step 1 above for what to include.</p>
-          </div>
-        </details>
+      <div class="issues-list">
+        <div class="issue-card">
+          <h4><span class="issue-num">1</span>My campaigns aren't getting impressions after launch</h4>
+          <p>Check that your campaigns are enabled and not paused. Then confirm your keywords aren't too restrictive — if you're using exact match only, try adding phrase match keywords. Also check that your location targeting matches where your audience actually is, and ensure your daily budget is at least 3–5x your target CPC.</p>
+        </div>
+        <div class="issue-card">
+          <h4><span class="issue-num">2</span>Google Ads keeps disapproving my ads</h4>
+          <p>Most disapprovals come from policy violations in ad copy — check for excessive capitalisation, misleading claims, or missing required landing page information. If you're advertising a regulated industry (finance, health, legal), you may need to complete additional verification steps before your ads can run.</p>
+        </div>
+        <div class="issue-card">
+          <h4><span class="issue-num">3</span>Conversion tracking isn't recording any conversions</h4>
+          <p>Use Google Tag Assistant to verify the conversion tag fires on your thank-you or confirmation page. Common issues include the tag placed on the wrong page, GTM not publishing after the tag was added, or the conversion action set to "Every click" instead of "One per click" which can inflate numbers.</p>
+        </div>
+        <div class="issue-card">
+          <h4><span class="issue-num">4</span>My CPC is much higher than expected</h4>
+          <p>High CPC usually means low Quality Score. Check your ad relevance and landing page experience scores in the Keywords tab. Ensure the keyword, ad headline, and landing page all share the same core message. Pause low-performing keywords and consolidate your budget into tighter, higher-intent ad groups.</p>
+        </div>
+        <div class="issue-card">
+          <h4><span class="issue-num">5</span>The AI output doesn't match my industry or business type</h4>
+          <p>This usually means the input prompt needs more specificity. Try adding your exact product names, target customer profile, and specific USPs rather than just the industry name. The more context you give the AI, the more tailored and accurate the campaign structure will be. Refer to step 1 above for what to include.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -276,7 +256,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- RELATED TUTORIALS -->
   <section class="other-courses" style="background:var(--white);">
     <div class="container">
-      <div class="section-header"><h2>Related Google Ads Skills</h2></div>
+      <div class="section-header"><h2>Related Tutorials</h2></div>
       <div class="courses-grid courses-grid--3">
         <article class="course-card">
           <a href="../google-ads-campaign-setup-skill/" class="course-icon" style="background:#e8faf9;" tabindex="-1">
@@ -303,14 +283,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="../google-ads-ad-copies-skill/" class="course-link">Use This Skill &#8594;</a>
         </article>
       </div>
-    </div>
-  </section>
-
-  <section class="cta-banner">
-    <div class="container cta-inner">
-      <h2>Want to get more done with <span class="highlight">AI</span>?</h2>
-      <p>Explore all Google Ads Skills and start producing better outputs in less time — starting today.</p>
-      <a href="../#google-ads-skills" class="btn btn-white">See All Google Ads Skills</a>
     </div>
   </section>
 
