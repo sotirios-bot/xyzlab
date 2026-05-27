@@ -902,6 +902,85 @@ a.course-icon:hover {
   display: block;
 }
 
+/* ============================================================
+   PILLAR PAGES  (/google-ads/, /meta-ads/, etc.)
+   ============================================================ */
+.pillar-hero {
+  background: linear-gradient(135deg, #f0fdfb 0%, #fffdf4 100%);
+  padding: 5rem 0 4rem;
+}
+.pillar-hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -.03em;
+  margin: .5rem 0 1.25rem;
+  max-width: 720px;
+}
+.pillar-hero .hero-sub {
+  font-size: 1.1rem;
+  color: var(--mid);
+  max-width: 580px;
+  margin-bottom: 2rem;
+}
+
+/* Tutorial card — thumbnail variant */
+.tutorial-card {
+  padding: 0;
+  overflow: hidden;
+}
+.tutorial-card .card-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+.tutorial-card h3 { font-size: 1rem; }
+.tutorial-thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #0d1b2a;
+  position: relative;
+  flex-shrink: 0;
+}
+.tutorial-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .3s ease;
+}
+.tutorial-card:hover .tutorial-thumb img { transform: scale(1.04); }
+.play-icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0);
+  transition: background .2s;
+}
+.play-icon svg { transition: transform .2s; }
+.tutorial-card:hover .play-icon { background: rgba(0,0,0,.12); }
+.tutorial-card:hover .play-icon svg { transform: scale(1.1); }
+
+/* Playlist section */
+.playlist-section {
+  padding: 6rem 0;
+  background: #0d1b2a;
+}
+.playlist-section .section-header h2 { color: var(--white); }
+.playlist-section .section-header p { color: rgba(255,255,255,.6); }
+.playlist-section .badge {
+  background: rgba(255,255,255,.1);
+  color: var(--white);
+  border-color: rgba(255,255,255,.2);
+}
+
+@media (max-width: 700px) {
+  .pillar-hero { padding: 3rem 0 2.5rem; }
+  .playlist-section { padding: 4rem 0; }
+}
+
 /* Steps list (tutorial page) */
 .steps-list {
   display: flex;
