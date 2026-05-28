@@ -49,5 +49,6 @@
   <url><loc>https://xyzlab.com/google-ads/sitelinks/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://xyzlab.com/google-ads/search-themes-pmax/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://xyzlab.com/google-ads/ai-generated-assets/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://xyzlab.com/google-ads/developer-token/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
 </urlset>
