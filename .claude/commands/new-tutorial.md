@@ -15,7 +15,7 @@ Use the `AskUserQuestion` tool with EXACTLY 2 calls.
 **Call 1 — Page details (4 questions, one field each)**
 
 Q1 — Pillar page:
-question: "Pillar page — Available: google-ads · google-ads-editor · meta-ads · tiktok-ads · microsoft-ads · linkedin-ads · pinterest-ads · reddit-ads · google-analytics · google-tag-manager · data-studio · claude · chatgpt · seo · shopify"
+question: "Pillar page — Available: google-ads · google-ads-editor · meta-ads · tiktok-ads · microsoft-ads · linkedin-ads · pinterest-ads · reddit-ads · google-analytics · google-tag-manager · data-studio · claude · chatgpt · google-search-console · bing-webmaster-tools · shopify"
 options: label "↓ type in Other", description "required placeholder" | label "↓ no choice to make", description "type in Other below"
 
 Q2 — Title:
@@ -82,7 +82,8 @@ Pillar playlist IDs for the iframe:
 - data-studio: PLCRsBzkyVfUXt5QOGCdzWW3ZDcXMXK2yA
 - claude: PLCRsBzkyVfUUX2m1wdR5FL29UqdY1Cfdy
 - chatgpt: PLCRsBzkyVfUWQvMd7LP-ck4x0YMGmudbw
-- seo: PLCRsBzkyVfUWB7NDT9m9lky-3YoprGp1D
+- google-search-console: PLCRsBzkyVfUX4Obp-oztYxTzmF2Zhr9HC
+- bing-webmaster-tools: PLCRsBzkyVfUXZ2cur4YmtNjG0iyCQjsH8
 - shopify: PLCRsBzkyVfUVKcCtGW_3Bei4jZgyj31Si
 
 ## Step 4 — Update pillar page tutorial list
