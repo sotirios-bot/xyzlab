@@ -127,6 +127,7 @@ ul { list-style: none; }
   align-items: center;
   justify-content: space-between;
   height: 68px;
+  position: relative;
 }
 
 .logo {
@@ -239,15 +240,16 @@ ul { list-style: none; }
 }
 .nav-dropdown:not(.nav-mega) a:hover { color: var(--primary); background: var(--light); }
 
-/* Mega menu */
+/* Mega menu — anchored to .nav container width, not the individual li */
+.nav-has-dropdown:has(> .nav-mega) { position: static; }
 .nav-mega {
   left: 0;
+  right: 0;
   transform: translateY(-6px);
-  min-width: 600px;
   padding: 1.4rem 1.6rem;
   display: flex;
   gap: 2rem;
-  border-radius: 12px;
+  border-radius: 0 0 12px 12px;
 }
 .nav-has-dropdown:hover > .nav-mega,
 .nav-has-dropdown:focus-within > .nav-mega { transform: translateY(0); }
