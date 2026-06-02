@@ -91,6 +91,20 @@ ul { list-style: none; }
 .btn-sm { padding: .5rem 1.25rem; font-size: .875rem; }
 .btn-full { width: 100%; }
 
+/* ---------- Breadcrumb ---------- */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .84rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+.breadcrumb a { color: var(--primary); font-weight: 500; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb-sep { color: var(--mid); opacity: .6; }
+.breadcrumb-current { color: var(--dark); font-weight: 500; }
+
 /* ---------- Badge ---------- */
 .badge {
   display: inline-block;
@@ -217,6 +231,16 @@ ul { list-style: none; }
   pointer-events: none;
   transition: opacity .18s ease, transform .18s ease, visibility .18s;
   z-index: 300;
+}
+
+/* Invisible bridge: fills the gap between nav item and dropdown so hover isn't lost as the cursor moves down */
+.nav-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
 }
 
 .nav-has-dropdown:hover > .nav-dropdown,
@@ -875,6 +899,190 @@ a.course-icon:hover {
   .why { padding: 4rem 0; }
   .contact { padding: 4rem 0; }
   .cta-banner { padding: 3.5rem 0; }
+}
+
+/* ============================================================
+   COURSE-BULLETS  (pillar "more tutorials" grid)
+   ============================================================ */
+.course-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+.course-bullets li {
+  font-size: .875rem;
+  color: var(--mid);
+  padding-left: 1.25rem;
+  position: relative;
+  line-height: 1.5;
+}
+.course-bullets li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: .8rem;
+}
+
+/* ============================================================
+   PILLAR PAGES  (/google-ads/, /meta-ads/, etc.)
+   ============================================================ */
+.pillar-hero {
+  background: linear-gradient(135deg, #f0fdfb 0%, #fffdf4 100%);
+  padding: 5rem 0 4rem;
+}
+.pillar-hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -.03em;
+  margin: .5rem 0 1.25rem;
+  max-width: 720px;
+}
+.pillar-hero .hero-sub {
+  font-size: 1.1rem;
+  color: var(--mid);
+  max-width: 580px;
+  margin-bottom: 2rem;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+}
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.playlist-section {
+  padding: 6rem 0;
+  background: #0d1b2a;
+}
+.playlist-section .section-header h2 { color: var(--white); }
+.playlist-section .section-header p { color: rgba(255,255,255,.6); }
+.playlist-section .badge {
+  background: rgba(255,255,255,.1);
+  color: var(--white);
+}
+.playlist-section .section-header h2 a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.playlist-section .section-header h2 a:hover { opacity: .8; }
+
+.tutorial-list {
+  max-width: 760px;
+  margin: 2.5rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+.tutorial-list-item {
+  display: grid;
+  grid-template-columns: 44px 1fr 28px;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: var(--radius);
+  color: var(--white);
+  text-decoration: none;
+  transition: background var(--transition), border-color var(--transition);
+}
+.tutorial-list-item:hover {
+  background: rgba(8,191,173,.15);
+  border-color: var(--primary);
+}
+.tli-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(8,191,173,.15);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.tli-icon svg { display: block; }
+.tli-body { min-width: 0; }
+.tli-title {
+  font-weight: 600;
+  font-size: .97rem;
+  color: var(--white);
+  display: block;
+}
+.tli-desc {
+  font-size: .82rem;
+  color: rgba(255,255,255,.55);
+  margin-top: .2rem;
+  display: block;
+}
+.tli-arrow {
+  color: var(--primary);
+  font-size: 1.1rem;
+  text-align: right;
+}
+
+/* Coaching CTA box (above Tally form) */
+.coaching-cta {
+  padding: 4rem 0 0;
+  background: var(--light);
+}
+.coaching-cta-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  background: var(--primary-light);
+  border: 1.5px solid var(--primary);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.coaching-cta-text h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: .4rem;
+  letter-spacing: -.02em;
+}
+.coaching-cta-text p {
+  font-size: .96rem;
+  color: var(--mid);
+  margin: 0;
+}
+
+/* Tally coaching section */
+.coaching-section {
+  padding: 6rem 0;
+  background: var(--light);
+}
+.coaching-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  .pillar-hero { padding: 3rem 0 2.5rem; }
+  .playlist-section { padding: 4rem 0; }
+  .coaching-cta-inner { flex-direction: column; text-align: center; padding: 1.75rem 1.5rem; gap: 1.25rem; }
+  .coaching-cta { padding: 3rem 0 0; }
+  .coaching-section { padding: 4rem 0; }
 }
 
 /* ============================================================
