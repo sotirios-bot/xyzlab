@@ -121,6 +121,7 @@
   <url><loc>https://xyzlab.com/google-analytics/view-urls-pages-and-screens/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://xyzlab.com/google-analytics/unassigned-traffic/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://xyzlab.com/google-analytics/referral-sources/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://xyzlab.com/google-analytics/what-is-unassigned/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Meta Ads Video Tutorials -->
   <url><loc>https://xyzlab.com/meta-ads/track-events-meta-pixel/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
