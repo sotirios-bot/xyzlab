@@ -134,6 +134,9 @@
   <url><loc>https://xyzlab.com/google-tag-manager/setup-reddit-ads-pixel/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://xyzlab.com/google-tag-manager/give-access-gtm/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
+  <!-- Data Studio Video Tutorials -->
+  <url><loc>https://xyzlab.com/data-studio/meta-ads-report/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
   <!-- Google Ads Editor Video Tutorials -->
   <url><loc>https://xyzlab.com/google-ads-editor/bulk-upload-campaigns/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://xyzlab.com/google-ads-editor/bulk-upload-responsive-search-ads/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
