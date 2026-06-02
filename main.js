@@ -10,11 +10,34 @@ toggle.addEventListener('click', () => {
   toggle.setAttribute('aria-expanded', isOpen);
 });
 
-navLinks.querySelectorAll('a').forEach(link => {
+// Mobile: tap dropdown parent link to toggle sub-menu instead of navigating
+navLinks.querySelectorAll('.nav-has-dropdown > a').forEach(link => {
+  link.addEventListener('click', e => {
+    if (window.innerWidth <= 700) {
+      e.preventDefault();
+      const parent = link.closest('.nav-has-dropdown');
+      const wasOpen = parent.classList.contains('mobile-open');
+      navLinks.querySelectorAll('.nav-has-dropdown').forEach(el => el.classList.remove('mobile-open'));
+      if (!wasOpen) parent.classList.add('mobile-open');
+    }
+  });
+});
+
+navLinks.querySelectorAll('.nav-dropdown a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');
     toggle.setAttribute('aria-expanded', 'false');
+    navLinks.querySelectorAll('.nav-has-dropdown').forEach(el => el.classList.remove('mobile-open'));
   });
+});
+
+navLinks.querySelectorAll('a:not(.nav-has-dropdown > a)').forEach(link => {
+  if (!link.closest('.nav-dropdown')) {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  }
 });
 
 // Contact form – mailto (no backend required, sends via visitor's email client)
