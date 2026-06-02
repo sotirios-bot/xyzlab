@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WXGTNNN');</script>
+<!-- End Google Tag Manager -->
+  <link rel="icon" type="image/png" href="../../favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn how to set up the Meta Pixel using the Google Tag Manager Meta Pixel Template step-by-step. Copy your Pixel ID from Events Manager and deploy it via GTM in minutes." />
+  <link rel="canonical" href="https://xyzlab.com/meta-ads/meta-pixel-template-tag-manager/" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:url" content="https://xyzlab.com/meta-ads/meta-pixel-template-tag-manager/" />
+  <meta property="og:title" content="Setup Meta Pixel with Google Tag Manager Meta Pixel Template | XYZ Lab" />
+  <meta property="og:description" content="Learn how to set up the Meta Pixel using the Google Tag Manager Meta Pixel Template step-by-step. Copy your Pixel ID from Events Manager and deploy it via GTM in minutes." />
+  <meta property="og:image" content="https://img.youtube.com/vi/iRuvTaMlj8Q/maxresdefault.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Setup Meta Pixel with Google Tag Manager Meta Pixel Template | XYZ Lab" />
+  <meta name="twitter:description" content="Learn how to set up the Meta Pixel using the Google Tag Manager Meta Pixel Template step-by-step. Copy your Pixel ID from Events Manager and deploy it via GTM in minutes." />
+  <meta name="twitter:image" content="https://img.youtube.com/vi/iRuvTaMlj8Q/maxresdefault.jpg" />
+  <title>Setup Meta Pixel with Google Tag Manager Meta Pixel Template | XYZ Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../../course.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Setup Meta Pixel with Google Tag Manager Meta Pixel Template",
+    "description": "Step-by-step tutorial showing how to install the Meta Pixel via Google Tag Manager using the community Meta Pixel Template — from copying your Pixel ID in Events Manager to publishing the tag.",
+    "thumbnailUrl": "https://img.youtube.com/vi/iRuvTaMlj8Q/maxresdefault.jpg",
+    "uploadDate": "2026-06-02",
+    "embedUrl": "https://www.youtube.com/embed/iRuvTaMlj8Q",
+    "contentUrl": "https://www.youtube.com/watch?v=iRuvTaMlj8Q",
+    "publisher": {
+      "@type": "Organization",
+      "name": "XYZ Lab",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://xyzlab.com/XYZLab.gif"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXGTNNN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <!-- NAV -->
+  <header class="nav-wrapper">
+    <nav class="nav container">
+      <a href="../../" class="logo">
+        <img src="../../XYZLab.gif" alt="XYZ Lab" class="logo-img" />
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li class="nav-has-dropdown">
+          <a href="../../#courses">Courses <span class="nav-caret" aria-hidden="true"></span></a>
+          <ul class="nav-dropdown">
+            <li><a href="../../google-ads-course/">AI for Google Ads</a></li>
+            <li><a href="../../meta-ads-course/">AI for Meta Ads</a></li>
+            <li><a href="../../seo-aio-course/">AI for SEO</a></li>
+            <li><a href="../../ai-marketing-analytics-course/">AI for Marketing Analytics</a></li>
+            <li><a href="../../ai-content-creation-course/">AI Content Creation</a></li>
+            <li><a href="../../vibe-coding-course/">Vibe Coding with AI</a></li>
+          </ul>
+        </li>
+        <li class="nav-has-dropdown">
+          <a href="../../#tutorials">Tutorials <span class="nav-caret" aria-hidden="true"></span></a>
+          <div class="nav-dropdown nav-mega">
+            <div class="mega-col">
+              <span class="mega-label">PPC</span>
+              <ul>
+                <li><a href="../../google-ads/">Google Ads</a></li>
+                <li><a href="../../google-ads-editor/">Google Ads Editor</a></li>
+                <li><a href="../../meta-ads/">Meta Ads</a></li>
+                <li><a href="../../tiktok-ads/">TikTok Ads</a></li>
+                <li><a href="../../microsoft-ads/">Microsoft Ads</a></li>
+                <li><a href="../../pinterest-ads/">Pinterest Ads</a></li>
+                <li><a href="../../reddit-ads/">Reddit Ads</a></li>
+                <li><a href="../../linkedin-ads/">LinkedIn Ads</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">Analytics</span>
+              <ul>
+                <li><a href="../../google-analytics/">Google Analytics</a></li>
+                <li><a href="../../google-tag-manager/">Google Tag Manager</a></li>
+                <li><a href="../../data-studio/">Data Studio</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">AI Tools</span>
+              <ul>
+                <li><a href="../../claude/">Claude AI</a></li>
+                <li><a href="../../chatgpt/">ChatGPT</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">SEO</span>
+              <ul>
+                <li><a href="../../google-search-console/">Google Search Console</a></li>
+                <li><a href="../../bing-webmaster-tools/">Bing Webmaster Tools</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">eCommerce</span>
+              <ul>
+                <li><a href="../../shopify/">Shopify</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>        <li><a href="../../#contact">Contact</a></li>
+        <li><a href="#coaching" class="btn btn-primary btn-sm">Book Coaching</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="video-tutorial-hero">
+    <div class="container tutorial-hero-inner">
+      <nav class="breadcrumb">
+        <a href="../../">Home</a>
+        <span class="breadcrumb-sep">&#8250;</span>
+        <a href="../">Meta Ads Tutorials</a>
+        <span class="breadcrumb-sep">&#8250;</span>
+        <span class="breadcrumb-current">Meta Pixel via GTM Template</span>
+      </nav>
+      <h1>Setup Meta Pixel with <span class="highlight">Google Tag Manager</span> Meta Pixel Template</h1>
+      <p class="hero-sub">Watch the step-by-step walkthrough below, then follow along with the guide to install the Meta Pixel on your website using the GTM community Meta Pixel Template — no manual code required.</p>
+      <div style="margin-top:1.75rem;">
+        <a href="#steps" class="btn btn-primary">Follow the Steps</a>
+        <a href="#coaching" class="btn btn-outline">Book Coaching</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO EMBED -->
+  <div class="video-container">
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/iRuvTaMlj8Q?list=PLCRsBzkyVfUVo5Ho0gwnhIKDeJcZEE99k&rel=0&modestbranding=1"
+        title="Setup Meta Pixel with Google Tag Manager Meta Pixel Template"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- STEPS -->
+  <section class="outcomes" id="steps">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-secondary">Step by Step</div>
+        <h2>Setup Meta Pixel with <span class="highlight">Google Tag Manager</span> Meta Pixel Template</h2>
+        <p>Follow these steps alongside the video to install your Meta Pixel via GTM.</p>
+      </div>
+      <div class="steps-list">
+
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Login to Meta Business Suite or Meta Business Manager</h4>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Navigate to Events Manager, then Datasets</h4>
+            <ul>
+              <li>In the left-hand menu, go to <strong>Events Manager</strong></li>
+              <li>Your Meta Pixel appears as a Dataset under the connected ad account</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Copy your Meta Pixel ID</h4>
+            <ul>
+              <li>Click on your Pixel / Dataset to open it</li>
+              <li>Copy the <strong>Pixel ID</strong> (a numeric string, e.g. 1234567890123)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h4>Navigate to Google Tag Manager</h4>
+            <ul>
+              <li>Open your GTM container for the website where you want to install the Pixel</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <h4>Create a new Tag</h4>
+            <ul>
+              <li>In the left-hand menu, click <strong>Tags</strong> then <strong>New</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">6</div>
+          <div class="step-content">
+            <h4>Select Templates and search for Meta Pixel</h4>
+            <ul>
+              <li>Click <strong>Tag Configuration</strong>, then click the <strong>Discover more tag types in the Community Template Gallery</strong> link</li>
+              <li>Search for <strong>Meta Pixel</strong> in the Template Gallery</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">7</div>
+          <div class="step-content">
+            <h4>Select the Meta Pixel Template and add it to your Workspace</h4>
+            <ul>
+              <li>Click on the <strong>Meta Pixel</strong> template result</li>
+              <li>Click <strong>Add to Workspace</strong> and approve the required permissions</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">8</div>
+          <div class="step-content">
+            <h4>Paste your Meta Pixel ID</h4>
+            <ul>
+              <li>The Meta Pixel tag configuration will now appear</li>
+              <li>Paste the Pixel ID you copied from Events Manager into the <strong>Pixel ID</strong> field</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">9</div>
+          <div class="step-content">
+            <h4>Click on Triggering and select All Pages</h4>
+            <ul>
+              <li>Scroll down to the <strong>Triggering</strong> section and click the trigger area</li>
+              <li>Select <strong>All Pages</strong> so the Pixel fires on every page of your website</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">10</div>
+          <div class="step-content">
+            <h4>Save, Submit and Publish</h4>
+            <ul>
+              <li>Click <strong>Save</strong> to save the tag</li>
+              <li>Click <strong>Submit</strong> in the top-right corner, add a version description (e.g. "Add Meta Pixel"), and click <strong>Publish</strong></li>
+              <li>Verify the Pixel is firing by using the <strong>Meta Pixel Helper</strong> Chrome extension on your website</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COACHING CTA -->
+  <section class="coaching-cta">
+    <div class="container">
+      <div class="coaching-cta-inner">
+        <div class="coaching-cta-text">
+          <h3>Need 1-on-1 help with Meta Ads tracking?</h3>
+          <p>Book a 90-minute coaching session and we'll set up your Meta Pixel and events together!</p>
+        </div>
+        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about setting up Meta Pixel via Google Tag Manager.</p>
+      </div>
+      <div class="faq-list">
+
+        <details class="faq-item" open>
+          <summary class="faq-question">
+            <span>Why use the GTM Meta Pixel Template instead of installing the base code manually?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>The <strong>GTM Meta Pixel Template</strong> lets you install and manage your Pixel entirely within Google Tag Manager — no direct access to your website's code is needed. It also makes it easier to update the Pixel in the future and keeps all your tracking in one place, alongside your Google tags, consent settings, and other third-party scripts.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Where do I find my Meta Pixel ID?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Go to <strong>Meta Business Suite &gt; Events Manager &gt; Datasets</strong>. Click on your Pixel — the Pixel ID is the number displayed next to the Pixel name (e.g. 1234567890123). If you manage multiple ad accounts, make sure you are viewing the correct account before copying the ID.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Does the Meta Pixel Template support event tracking?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Yes. The template supports both the <strong>PageView</strong> base event (fired on All Pages) and standard events such as <strong>ViewContent</strong>, <strong>AddToCart</strong>, <strong>Lead</strong>, and <strong>Purchase</strong>. You can create additional tags using the same template, each with a different event type and a more specific trigger (e.g. a thank-you page URL for Purchase events).</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>How do I verify that the Meta Pixel is firing correctly?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Install the <strong>Meta Pixel Helper</strong> Chrome extension. Visit your website after publishing the GTM container — the extension will show a green pixel icon if the Pixel is firing correctly on the page. You can also check <strong>Events Manager &gt; Test Events</strong> in Meta to see real-time events coming through from your browser.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Can I use the same Meta Pixel on multiple websites?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Yes, technically — but it is <strong>not recommended</strong>. Using one Pixel across multiple domains mixes audience and conversion data, making it harder to optimise campaigns for each website separately. Best practice is to create a separate Pixel (Dataset) for each website so your ad account audiences and conversion events remain clean and accurate.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Does the Meta Pixel fire even without the Conversions API?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Yes. The browser-side Pixel (via GTM) fires independently of the Conversions API (CAPI). However, because browser tracking is increasingly blocked by ad blockers and iOS privacy restrictions, <strong>Meta recommends using both</strong> together for maximum signal coverage. The browser Pixel alone is still a valid starting point before adding server-side tracking.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED TUTORIALS -->
+  <section class="outcomes" style="background:var(--white);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-secondary">Keep Learning</div>
+        <h2>Related <span class="highlight">Meta Ads Tutorials</span></h2>
+        <p>More step-by-step guides to get more from your Meta Ads campaigns.</p>
+      </div>
+      <div class="courses-grid">
+
+        <article class="course-card">
+          <a href="../track-events-meta-pixel/" class="course-icon" tabindex="-1" style="background:#fff3e0;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#fff3e0"/><rect x="8" y="8" width="7" height="7" rx="2" stroke="#fec55c" stroke-width="2"/><rect x="17" y="8" width="7" height="7" rx="2" stroke="#fec55c" stroke-width="2" opacity=".5"/><rect x="8" y="17" width="7" height="7" rx="2" stroke="#fec55c" stroke-width="2" opacity=".5"/><rect x="17" y="17" width="7" height="7" rx="2" stroke="#fec55c" stroke-width="2" opacity=".3"/></svg>
+          </a>
+          <h3><a href="../track-events-meta-pixel/">Track Events with Meta Pixel</a></h3>
+          <ul class="course-bullets">
+            <li>Fire standard events like Lead and Purchase</li>
+            <li>Track key user actions on your website</li>
+            <li>Improve Meta Ads optimisation signals</li>
+          </ul>
+          <a href="../track-events-meta-pixel/" class="course-link">Watch Tutorial &#8594;</a>
+        </article>
+
+        <article class="course-card">
+          <a href="../link-whatsapp/" class="course-icon" tabindex="-1" style="background:#fff3e0;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#fff3e0"/><path d="M16 8a8 8 0 0 1 6.93 12l.74 3.6-3.6-.73A8 8 0 1 1 16 8z" stroke="#fec55c" stroke-width="2" stroke-linejoin="round"/><path d="M13 13.5c.5 3 5 5.5 6 5.5" stroke="#fec55c" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </a>
+          <h3><a href="../link-whatsapp/">How to Link WhatsApp to Meta Ads</a></h3>
+          <ul class="course-bullets">
+            <li>Connect WhatsApp to your Meta ad account</li>
+            <li>Drive leads directly into WhatsApp</li>
+            <li>Set up Click-to-WhatsApp campaigns</li>
+          </ul>
+          <a href="../link-whatsapp/" class="course-link">Watch Tutorial &#8594;</a>
+        </article>
+
+        <article class="course-card">
+          <a href="../../google-tag-manager/" class="course-icon" tabindex="-1" style="background:#e8faf9;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#e8faf9"/><path d="M10 16l4-4 4 4 4-4" stroke="#08bfad" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <h3><a href="../../google-tag-manager/">Google Tag Manager Tutorials</a></h3>
+          <ul class="course-bullets">
+            <li>Set up tracking without coding</li>
+            <li>Configure triggers and tags</li>
+            <li>Track conversion events accurately</li>
+          </ul>
+          <a href="../../google-tag-manager/" class="course-link">Explore &#8594;</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Get Personal Help</div>
+        <h2>Book a <span class="highlight">1-on-1 Coaching Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute coaching session and we'll set it up together.</p>
+      </div>
+      <iframe data-tally-src="https://tally.so/embed/RGVaXv?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1" frameborder="0" marginheight="0" marginwidth="0" title="Book a 90-Minute Digital Marketing Coaching Session"></iframe>
+      <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p>Hands-On, AI-First Digital Marketing Training. Work Smarter with AI.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/seridis/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@xyzl" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="../../google-ads-course/">AI for Google Ads</a></li>
+            <li><a href="../../meta-ads-course/">AI for Meta Ads</a></li>
+            <li><a href="../../seo-aio-course/">AI for SEO</a></li>
+            <li><a href="../../ai-marketing-analytics-course/">Analytics</a></li>
+            <li><a href="../../ai-content-creation-course/">AI Content Creation</a></li>
+            <li><a href="../../vibe-coding-course/">Vibe Coding</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>PPC</h4>
+          <ul>
+            <li><a href="../../google-ads/">Google Ads</a></li>
+            <li><a href="../../google-ads-editor/">Google Ads Editor</a></li>
+            <li><a href="../../meta-ads/">Meta Ads</a></li>
+            <li><a href="../../tiktok-ads/">TikTok Ads</a></li>
+            <li><a href="../../microsoft-ads/">Microsoft Ads</a></li>
+            <li><a href="../../pinterest-ads/">Pinterest Ads</a></li>
+            <li><a href="../../reddit-ads/">Reddit Ads</a></li>
+            <li><a href="../../linkedin-ads/">LinkedIn Ads</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Analytics</h4>
+          <ul>
+            <li><a href="../../google-analytics/">Google Analytics</a></li>
+            <li><a href="../../google-tag-manager/">Google Tag Manager</a></li>
+            <li><a href="../../data-studio/">Data Studio</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>AI Tools</h4>
+          <ul>
+            <li><a href="../../claude/">Claude AI</a></li>
+            <li><a href="../../chatgpt/">ChatGPT</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>SEO</h4>
+          <ul>
+            <li><a href="../../google-search-console/">Google Search Console</a></li>
+            <li><a href="../../bing-webmaster-tools/">Bing Webmaster Tools</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>eCommerce</h4>
+          <ul>
+            <li><a href="../../shopify/">Shopify</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../../#contact">Contact</a></li>
+            <li><a href="mailto:hello@xyzlab.com">hello@xyzlab.com</a></li>
+            <li><a href="https://wa.me/6594260742">+65 9426 0742</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> XYZ Lab. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../main.js"></script>
+</body>
+</html>
