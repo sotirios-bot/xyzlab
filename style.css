@@ -228,7 +228,6 @@ ul { list-style: none; }
   padding: .5rem 0;
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
   transition: opacity .18s ease, transform .18s ease, visibility .18s;
   z-index: 300;
 }
@@ -247,7 +246,6 @@ ul { list-style: none; }
 .nav-has-dropdown:focus-within > .nav-dropdown {
   opacity: 1;
   visibility: visible;
-  pointer-events: auto;
   transform: translateX(-50%) translateY(0);
 }
 
