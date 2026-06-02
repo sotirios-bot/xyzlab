@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WXGTNNN');</script>
+<!-- End Google Tag Manager -->
+  <link rel="icon" type="image/png" href="../../favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn how to setup events in Google Analytics GA4 using Google Tag Manager. Create a GA4 Event tag, find your Measurement ID, configure triggers, and publish your container." />
+  <link rel="canonical" href="https://xyzlab.com/google-analytics/setup-events/" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:url" content="https://xyzlab.com/google-analytics/setup-events/" />
+  <meta property="og:title" content="Setup Events in Google Analytics (GA4) | XYZ Lab" />
+  <meta property="og:description" content="Learn how to setup events in Google Analytics GA4 using Google Tag Manager. Create a GA4 Event tag, find your Measurement ID, configure triggers, and publish your container." />
+  <meta property="og:image" content="https://img.youtube.com/vi/Wf3DztFZxYc/maxresdefault.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Setup Events in Google Analytics (GA4) | XYZ Lab" />
+  <meta name="twitter:description" content="Learn how to setup events in Google Analytics GA4 using Google Tag Manager. Create a GA4 Event tag, find your Measurement ID, configure triggers, and publish your container." />
+  <meta name="twitter:image" content="https://img.youtube.com/vi/Wf3DztFZxYc/maxresdefault.jpg" />
+  <title>Setup Events in Google Analytics (GA4) | XYZ Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../../course.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Setup Events in Google Analytics (GA4)",
+    "description": "Step-by-step tutorial showing how to set up GA4 events using Google Tag Manager — from creating a GA4 Event tag and finding your Measurement ID to configuring triggers and publishing the container.",
+    "thumbnailUrl": "https://img.youtube.com/vi/Wf3DztFZxYc/maxresdefault.jpg",
+    "uploadDate": "2026-05-29",
+    "embedUrl": "https://www.youtube.com/embed/Wf3DztFZxYc",
+    "contentUrl": "https://www.youtube.com/watch?v=Wf3DztFZxYc",
+    "publisher": {
+      "@type": "Organization",
+      "name": "XYZ Lab",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://xyzlab.com/XYZLab.gif"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXGTNNN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <!-- NAV -->
+  <header class="nav-wrapper">
+    <nav class="nav container">
+      <a href="../../" class="logo">
+        <img src="../../XYZLab.gif" alt="XYZ Lab" class="logo-img" />
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li class="nav-has-dropdown">
+          <a href="../../#courses">Courses <span class="nav-caret" aria-hidden="true"></span></a>
+          <ul class="nav-dropdown">
+            <li><a href="../../google-ads-course/">AI for Google Ads</a></li>
+            <li><a href="../../meta-ads-course/">AI for Meta Ads</a></li>
+            <li><a href="../../seo-aio-course/">AI for SEO</a></li>
+            <li><a href="../../ai-marketing-analytics-course/">AI for Marketing Analytics</a></li>
+            <li><a href="../../ai-content-creation-course/">AI Content Creation</a></li>
+            <li><a href="../../vibe-coding-course/">Vibe Coding with AI</a></li>
+          </ul>
+        </li>
+        <li class="nav-has-dropdown">
+          <a href="../../#topics">Tutorials <span class="nav-caret" aria-hidden="true"></span></a>
+          <div class="nav-dropdown nav-mega">
+            <div class="mega-col">
+              <span class="mega-label">PPC</span>
+              <ul>
+                <li><a href="../../google-ads/">Google Ads</a></li>
+                <li><a href="../../google-ads-editor/">Google Ads Editor</a></li>
+                <li><a href="../../meta-ads/">Meta Ads</a></li>
+                <li><a href="../../tiktok-ads/">TikTok Ads</a></li>
+                <li><a href="../../microsoft-ads/">Microsoft Ads</a></li>
+                <li><a href="../../pinterest-ads/">Pinterest Ads</a></li>
+                <li><a href="../../reddit-ads/">Reddit Ads</a></li>
+                <li><a href="../../linkedin-ads/">LinkedIn Ads</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">Analytics</span>
+              <ul>
+                <li><a href="../../google-analytics/">Google Analytics</a></li>
+                <li><a href="../../google-tag-manager/">Google Tag Manager</a></li>
+                <li><a href="../../data-studio/">Data Studio</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">AI Tools</span>
+              <ul>
+                <li><a href="../../claude/">Claude AI</a></li>
+                <li><a href="../../chatgpt/">ChatGPT</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">SEO</span>
+              <ul>
+                <li><a href="../../google-search-console/">Google Search Console</a></li>
+                <li><a href="../../bing-webmaster-tools/">Bing Webmaster Tools</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">eCommerce</span>
+              <ul>
+                <li><a href="../../shopify/">Shopify</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>        <li><a href="../../#contact">Contact</a></li>
+        <li><a href="#coaching" class="btn btn-primary btn-sm">Book Coaching</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="video-tutorial-hero">
+    <div class="container tutorial-hero-inner">
+      <nav class="breadcrumb">
+        <a href="../../">Home</a>
+        <span class="breadcrumb-sep">&#8250;</span>
+        <a href="../">Google Analytics Tutorials</a>
+        <span class="breadcrumb-sep">&#8250;</span>
+        <span class="breadcrumb-current">Setup GA4 Events</span>
+      </nav>
+      <h1>Setup <span class="highlight">Events</span> in Google Analytics (GA4)</h1>
+      <p class="hero-sub">Learn how to set up custom GA4 events using Google Tag Manager — from creating the tag and locating your Measurement ID to configuring triggers and publishing your container.</p>
+      <div style="margin-top:1.75rem;">
+        <a href="#steps" class="btn btn-primary">Follow the Steps</a>
+        <a href="#coaching" class="btn btn-outline">Book Coaching</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO EMBED -->
+  <div class="video-container">
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/Wf3DztFZxYc?list=PLCRsBzkyVfUWnJ44nfHLs48NIMe2Bfxoh&rel=0&modestbranding=1"
+        title="Setup Events in Google Analytics (GA4)"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- STEPS -->
+  <section class="outcomes" id="steps">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-secondary">Step by Step</div>
+        <h2>Setup Events in Google Analytics (GA4)</h2>
+        <p>Follow these steps alongside the video to set up GA4 events via Google Tag Manager.</p>
+      </div>
+      <div class="steps-list">
+
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Navigate to your Google Tag Manager container</h4>
+            <ul>
+              <li>Go to <strong>tagmanager.google.com</strong> and select the container for the website you want to track</li>
+              <li>Make sure you're working in the correct container — GTM containers are site-specific</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Create a New Tag</h4>
+            <ul>
+              <li>In the left sidebar, click <strong>Tags</strong>, then click <strong>New</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Name your Tag</h4>
+            <ul>
+              <li>Give your tag a clear, descriptive name — for example: <strong>GA4 Event — Button Click</strong></li>
+              <li>A consistent naming convention makes it easier to manage tags as your container grows</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h4>Click on Tag Configuration</h4>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <h4>Select Google Analytics &rarr; Google Analytics: GA4 Event</h4>
+            <ul>
+              <li>This tag type sends a custom event to your GA4 property every time the trigger fires</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">6</div>
+          <div class="step-content">
+            <h4>Paste your Measurement ID</h4>
+            <ul>
+              <li>Your Measurement ID connects this tag to the correct GA4 property</li>
+              <li>To find it: go to <strong>Google Analytics</strong> &rarr; <strong>Admin</strong> &rarr; <strong>Data Streams</strong> &rarr; select your data stream &rarr; copy the <strong>Measurement ID</strong> (format: <code>G-XXXXXXXXXX</code>)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">7</div>
+          <div class="step-content">
+            <h4>Name your Event (do not use spaces)</h4>
+            <ul>
+              <li>The event name is what will appear in your GA4 reports — for example: <strong>button_click</strong>, <strong>form_submit</strong>, <strong>file_download</strong></li>
+              <li>Use underscores instead of spaces; event names are case-sensitive in GA4</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">8</div>
+          <div class="step-content">
+            <h4>Select Triggering</h4>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">9</div>
+          <div class="step-content">
+            <h4>Choose your Trigger type</h4>
+            <ul>
+              <li>Common trigger types include: <strong>Click — All Elements</strong>, <strong>Click — Just Links</strong>, <strong>Form Submission</strong>, <strong>Page View</strong>, and <strong>Custom Event</strong></li>
+              <li>Choose the type that matches the user action you want to track</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">10</div>
+          <div class="step-content">
+            <h4>Configure your trigger conditions</h4>
+            <ul>
+              <li>Set conditions to ensure the trigger only fires on the correct elements or pages — for example, fire only when the clicked element has a specific class or ID</li>
+              <li>Use GTM's Preview mode to test your trigger before saving</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">11</div>
+          <div class="step-content">
+            <h4>Save and Submit &amp; Publish your container</h4>
+            <ul>
+              <li>Click <strong>Save</strong> to save the tag</li>
+              <li>Click <strong>Submit</strong> in the top-right corner, add a version name and description, then click <strong>Publish</strong> to push the changes live</li>
+              <li>Changes will not be active on your site until you publish — don't forget this step</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COACHING CTA -->
+  <section class="coaching-cta">
+    <div class="container">
+      <div class="coaching-cta-inner">
+        <div class="coaching-cta-text">
+          <h3>Need 1-on-1 help with Google Analytics?</h3>
+          <p>Book a 90-minute coaching session and we'll set up your GA4 events and tracking together!</p>
+        </div>
+        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about setting up events in Google Analytics GA4.</p>
+      </div>
+      <div class="faq-list">
+
+        <details class="faq-item" open>
+          <summary class="faq-question">
+            <span>What is the difference between automatic events and custom events in GA4?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>GA4 automatically collects a set of <strong>standard events</strong> (like <code>page_view</code>, <code>session_start</code>, and <code>first_visit</code>) without any configuration. <strong>Enhanced measurement</strong> can automatically track scrolls, outbound clicks, file downloads, and video engagement. <strong>Custom events</strong> — set up via GTM or gtag.js — let you track any user interaction that GA4 doesn't capture automatically, such as button clicks, form submissions, or specific page interactions.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Why can't I use spaces in GA4 event names?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>GA4 event names must follow specific naming rules: they can only contain letters, numbers, and underscores, and must start with a letter. Spaces are not allowed. Using underscores instead of spaces (e.g. <code>button_click</code> instead of <code>button click</code>) keeps your event names consistent and compatible with GA4's reporting and BigQuery export. Event names are also <strong>case-sensitive</strong> — <code>Button_Click</code> and <code>button_click</code> would appear as two separate events.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Where do I find my GA4 Measurement ID?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>In Google Analytics, go to <strong>Admin</strong> (bottom-left gear icon) &rarr; <strong>Data Streams</strong> (under your property) &rarr; click your web data stream &rarr; your <strong>Measurement ID</strong> appears in the top-right corner in the format <code>G-XXXXXXXXXX</code>. Copy this and paste it into the GA4 Event tag in Google Tag Manager.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>How do I verify my GA4 events are firing correctly?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Use two tools: <strong>GTM Preview mode</strong> (click Preview in GTM before publishing) to confirm your tag fires on the correct trigger, and <strong>GA4 DebugView</strong> (Admin &rarr; DebugView) to see events arriving in real-time from your browser. You can also check the GA4 <strong>Realtime report</strong> to see events populating within a few seconds of them firing.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Do I need to mark GA4 events as conversions?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Not all events need to be conversions — only the ones that represent meaningful business actions (e.g. form submissions, purchases, phone clicks). In GA4, go to <strong>Admin &rarr; Events</strong> and toggle <strong>Mark as conversion</strong> next to any event you want to count as a conversion. Conversion events can then be imported into Google Ads for smart bidding optimisation.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What happens if I forget to publish my GTM container?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>If you save your tag and trigger in GTM but don't publish the container, the changes only exist in your GTM workspace — they are <strong>not live on your website</strong>. Your GA4 property won't receive the new events. Always click <strong>Submit &rarr; Publish</strong> after saving your tags to push them to your live site. You can use Preview mode first to test without going live.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED TUTORIALS -->
+  <section class="outcomes" style="background:var(--white);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-secondary">Keep Learning</div>
+        <h2>Related <span class="highlight">Analytics Tutorials</span></h2>
+        <p>More step-by-step guides to set up accurate tracking and reporting.</p>
+      </div>
+      <div class="courses-grid">
+
+        <article class="course-card">
+          <a href="../" class="course-icon" tabindex="-1" style="background:#e8faf9;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#e8faf9"/><rect x="8" y="18" width="3" height="6" rx="1" fill="#08bfad"/><rect x="13" y="13" width="3" height="11" rx="1" fill="#08bfad" opacity=".7"/><rect x="18" y="9" width="3" height="15" rx="1" fill="#08bfad" opacity=".4"/><rect x="23" y="14" width="3" height="10" rx="1" fill="#08bfad"/></svg>
+          </a>
+          <h3><a href="../">Google Analytics Tutorials</a></h3>
+          <ul class="course-bullets">
+            <li>Understand your analytics data</li>
+            <li>Build actionable reports</li>
+            <li>Make smarter marketing decisions</li>
+          </ul>
+          <a href="../" class="course-link">Explore &#8594;</a>
+        </article>
+
+        <article class="course-card">
+          <a href="../../google-tag-manager/" class="course-icon" tabindex="-1" style="background:#fff3e0;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#fff3e0"/><path d="M10 16l4-4 4 4 4-4" stroke="#fec55c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <h3><a href="../../google-tag-manager/">Google Tag Manager Tutorials</a></h3>
+          <ul class="course-bullets">
+            <li>Set up tracking without coding</li>
+            <li>Configure triggers and tags</li>
+            <li>Track conversion events accurately</li>
+          </ul>
+          <a href="../../google-tag-manager/" class="course-link">Explore &#8594;</a>
+        </article>
+
+        <article class="course-card">
+          <a href="../../ai-marketing-analytics-course/" class="course-icon" tabindex="-1" style="background:#e8faf9;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#e8faf9"/><path d="M16 8l2.5 5 5.5.8-4 3.9.95 5.5L16 20.5l-4.95 2.7.95-5.5-4-3.9 5.5-.8z" stroke="#08bfad" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </a>
+          <h3><a href="../../ai-marketing-analytics-course/">AI for Marketing Analytics Course</a></h3>
+          <ul class="course-bullets">
+            <li>Use AI to analyse your marketing data</li>
+            <li>Build automated reporting workflows</li>
+            <li>Make faster, smarter decisions with AI</li>
+          </ul>
+          <a href="../../ai-marketing-analytics-course/" class="course-link">Explore &#8594;</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Get Personal Help</div>
+        <h2>Book a <span class="highlight">1-on-1 Coaching Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute coaching session and we'll set it up together.</p>
+      </div>
+      <iframe data-tally-src="https://tally.so/embed/RGVaXv?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1" frameborder="0" marginheight="0" marginwidth="0" title="Book a 90-Minute Digital Marketing Coaching Session"></iframe>
+      <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p>Hands-On, AI-First Digital Marketing Training. Work Smarter with AI.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/seridis/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@xyzl" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="../../google-ads-course/">AI for Google Ads</a></li>
+            <li><a href="../../meta-ads-course/">AI for Meta Ads</a></li>
+            <li><a href="../../seo-aio-course/">AI for SEO</a></li>
+            <li><a href="../../ai-marketing-analytics-course/">Analytics</a></li>
+            <li><a href="../../ai-content-creation-course/">AI Content Creation</a></li>
+            <li><a href="../../vibe-coding-course/">Vibe Coding</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>PPC</h4>
+          <ul>
+            <li><a href="../../google-ads/">Google Ads</a></li>
+            <li><a href="../../google-ads-editor/">Google Ads Editor</a></li>
+            <li><a href="../../meta-ads/">Meta Ads</a></li>
+            <li><a href="../../tiktok-ads/">TikTok Ads</a></li>
+            <li><a href="../../microsoft-ads/">Microsoft Ads</a></li>
+            <li><a href="../../pinterest-ads/">Pinterest Ads</a></li>
+            <li><a href="../../reddit-ads/">Reddit Ads</a></li>
+            <li><a href="../../linkedin-ads/">LinkedIn Ads</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Analytics</h4>
+          <ul>
+            <li><a href="../../google-analytics/">Google Analytics</a></li>
+            <li><a href="../../google-tag-manager/">Google Tag Manager</a></li>
+            <li><a href="../../data-studio/">Data Studio</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>AI Tools</h4>
+          <ul>
+            <li><a href="../../claude/">Claude AI</a></li>
+            <li><a href="../../chatgpt/">ChatGPT</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>SEO</h4>
+          <ul>
+            <li><a href="../../google-search-console/">Google Search Console</a></li>
+            <li><a href="../../bing-webmaster-tools/">Bing Webmaster Tools</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>eCommerce</h4>
+          <ul>
+            <li><a href="../../shopify/">Shopify</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../../#contact">Contact</a></li>
+            <li><a href="mailto:hello@xyzlab.com">hello@xyzlab.com</a></li>
+            <li><a href="https://wa.me/6594260742">+65 9426 0742</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> XYZ Lab. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../main.js"></script>
+</body>
+</html>
