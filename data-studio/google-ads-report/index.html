@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WXGTNNN');</script>
+<!-- End Google Tag Manager -->
+  <link rel="icon" type="image/png" href="../../favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn how to create a Google Ads report in Looker Studio (Data Studio) step-by-step. Connect your Google Ads account, build scorecards, charts, and tables to track campaign performance." />
+  <link rel="canonical" href="https://xyzlab.com/data-studio/google-ads-report/" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:url" content="https://xyzlab.com/data-studio/google-ads-report/" />
+  <meta property="og:title" content="Create Google Ads Report in Data Studio | XYZ Lab" />
+  <meta property="og:description" content="Learn how to create a Google Ads report in Looker Studio (Data Studio) step-by-step. Connect your Google Ads account, build scorecards, charts, and tables to track campaign performance." />
+  <meta property="og:image" content="https://img.youtube.com/vi/K7JSenLDgQ0/maxresdefault.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Create Google Ads Report in Data Studio | XYZ Lab" />
+  <meta name="twitter:description" content="Learn how to create a Google Ads report in Looker Studio (Data Studio) step-by-step." />
+  <meta name="twitter:image" content="https://img.youtube.com/vi/K7JSenLDgQ0/maxresdefault.jpg" />
+  <title>Create Google Ads Report in Data Studio | XYZ Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../../course.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Create Google Ads Report in Data Studio",
+    "description": "Step-by-step tutorial showing how to connect Google Ads to Looker Studio and build a complete campaign performance report with scorecards, time series charts, and a campaign breakdown table.",
+    "thumbnailUrl": "https://img.youtube.com/vi/K7JSenLDgQ0/maxresdefault.jpg",
+    "uploadDate": "2026-06-03",
+    "embedUrl": "https://www.youtube.com/embed/K7JSenLDgQ0",
+    "contentUrl": "https://www.youtube.com/watch?v=K7JSenLDgQ0",
+    "publisher": {
+      "@type": "Organization",
+      "name": "XYZ Lab",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://xyzlab.com/XYZLab.gif"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXGTNNN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <!-- NAV -->
+  <header class="nav-wrapper">
+    <nav class="nav container">
+      <a href="../../" class="logo">
+        <img src="../../XYZLab.gif" alt="XYZ Lab" class="logo-img" />
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li class="nav-has-dropdown">
+          <a href="../../#courses">Courses <span class="nav-caret" aria-hidden="true"></span></a>
+          <ul class="nav-dropdown">
+            <li><a href="../../google-ads-course/">AI for Google Ads</a></li>
+            <li><a href="../../meta-ads-course/">AI for Meta Ads</a></li>
+            <li><a href="../../seo-aio-course/">AI for SEO</a></li>
+            <li><a href="../../ai-marketing-analytics-course/">AI for Marketing Analytics</a></li>
+            <li><a href="../../ai-content-creation-course/">AI Content Creation</a></li>
+            <li><a href="../../vibe-coding-course/">Vibe Coding with AI</a></li>
+          </ul>
+        </li>
+        <li class="nav-has-dropdown">
+          <a href="../../#topics">Tutorials <span class="nav-caret" aria-hidden="true"></span></a>
+          <div class="nav-dropdown nav-mega">
+            <div class="mega-col">
+              <span class="mega-label">PPC</span>
+              <ul>
+                <li><a href="../../google-ads/">Google Ads</a></li>
+                <li><a href="../../google-ads-editor/">Google Ads Editor</a></li>
+                <li><a href="../../meta-ads/">Meta Ads</a></li>
+                <li><a href="../../tiktok-ads/">TikTok Ads</a></li>
+                <li><a href="../../microsoft-ads/">Microsoft Ads</a></li>
+                <li><a href="../../pinterest-ads/">Pinterest Ads</a></li>
+                <li><a href="../../reddit-ads/">Reddit Ads</a></li>
+                <li><a href="../../linkedin-ads/">LinkedIn Ads</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">Analytics</span>
+              <ul>
+                <li><a href="../../google-analytics/">Google Analytics</a></li>
+                <li><a href="../../google-tag-manager/">Google Tag Manager</a></li>
+                <li><a href="../../data-studio/">Data Studio</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">AI Tools</span>
+              <ul>
+                <li><a href="../../claude/">Claude AI</a></li>
+                <li><a href="../../chatgpt/">ChatGPT</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">SEO</span>
+              <ul>
+                <li><a href="../../google-search-console/">Google Search Console</a></li>
+                <li><a href="../../bing-webmaster-tools/">Bing Webmaster Tools</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">eCommerce</span>
+              <ul>
+                <li><a href="../../shopify/">Shopify</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>        <li><a href="../../#contact">Contact</a></li>
+        <li><a href="#coaching" class="btn btn-primary btn-sm">Book Coaching</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="video-tutorial-hero">
+    <div class="container tutorial-hero-inner">
+      <nav class="breadcrumb">
+        <a href="../../">Home</a>
+        <span class="breadcrumb-sep">&#8250;</span>
+        <a href="../">Data Studio Tutorials</a>
+        <span class="breadcrumb-sep">&#8250;</span>
+        <span class="breadcrumb-current">Google Ads Report</span>
+      </nav>
+      <h1>Create a <span class="highlight">Google Ads Report</span> in Data Studio</h1>
+      <p class="hero-sub">Watch the step-by-step walkthrough below, then follow along to connect your Google Ads account to Looker Studio and build a complete campaign performance report.</p>
+      <div style="margin-top:1.75rem;">
+        <a href="#steps" class="btn btn-primary">Follow the Steps</a>
+        <a href="#coaching" class="btn btn-outline">Book Coaching</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO EMBED -->
+  <div class="video-container">
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/K7JSenLDgQ0?list=PLCRsBzkyVfUXt5QOGCdzWW3ZDcXMXK2yA&rel=0&modestbranding=1"
+        title="Create Google Ads Report in Data Studio"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- STEPS -->
+  <section class="outcomes" id="steps">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-secondary">Step by Step</div>
+        <h2>Create a Google Ads Report in Data Studio</h2>
+        <p>Follow these steps alongside the video to build your Google Ads performance report in Looker Studio.</p>
+      </div>
+      <div class="steps-list">
+
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Open Looker Studio and create a new blank report</h4>
+            <ul>
+              <li>Go to <strong>lookerstudio.google.com</strong> and sign in with your Google account</li>
+              <li>Click the <strong>+</strong> button or <strong>Blank Report</strong> to start a new report</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Add your Google Ads data source</h4>
+            <ul>
+              <li>In the <strong>Add data to report</strong> panel, search for and select <strong>Google Ads</strong></li>
+              <li>Authorize access to your Google Ads account if prompted</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Select your Google Ads account and click Add to Report</h4>
+            <ul>
+              <li>Choose the account (or MCC sub-account) you want to report on</li>
+              <li>Click <strong>Add</strong> to connect the data source to your report</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h4>Add a date range control</h4>
+            <ul>
+              <li>Go to <strong>Insert → Date range control</strong> to make the report interactive</li>
+              <li>This lets you and your clients filter the entire report by any date range</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <h4>Add scorecards for key metrics</h4>
+            <ul>
+              <li>Go to <strong>Insert → Scorecard</strong> and add one for each metric: <strong>Clicks, Impressions, Cost, Conversions, CTR, CPC</strong></li>
+              <li>Configure the comparison period to show month-over-month or year-over-year changes</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">6</div>
+          <div class="step-content">
+            <h4>Add a time series chart to visualize performance over time</h4>
+            <ul>
+              <li>Go to <strong>Insert → Time series chart</strong></li>
+              <li>Set the dimension to <strong>Date</strong> and the metric to <strong>Clicks</strong> or <strong>Cost</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">7</div>
+          <div class="step-content">
+            <h4>Add a campaign breakdown table</h4>
+            <ul>
+              <li>Go to <strong>Insert → Table</strong></li>
+              <li>Set the dimension to <strong>Campaign</strong> and add metrics: <strong>Clicks, Cost, Conversions, Cost/Conv.</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">8</div>
+          <div class="step-content">
+            <h4>Customize layout, colours and branding</h4>
+            <ul>
+              <li>Use the <strong>Theme and layout</strong> panel to set brand colours and fonts</li>
+              <li>Add a title, logo, and any annotations to improve readability</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">9</div>
+          <div class="step-content">
+            <h4>Share the report with clients or stakeholders</h4>
+            <ul>
+              <li>Click <strong>Share</strong> in the top-right to invite viewers by email</li>
+              <li>Or click <strong>Manage access → Get link</strong> to generate a shareable URL</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COACHING CTA -->
+  <section class="coaching-cta">
+    <div class="container">
+      <div class="coaching-cta-inner">
+        <div class="coaching-cta-text">
+          <h3>Need 1-on-1 help with Data Studio?</h3>
+          <p>Book a 90-minute coaching session and we'll build your Looker Studio report together!</p>
+        </div>
+        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about creating Google Ads reports in Looker Studio (Data Studio).</p>
+      </div>
+      <div class="faq-list">
+
+        <details class="faq-item" open>
+          <summary class="faq-question">
+            <span>What data can I pull into a Google Ads report in Looker Studio?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Looker Studio's native Google Ads connector gives you access to a wide range of dimensions and metrics including <strong>Clicks, Impressions, Cost, CTR, Average CPC, Conversions, Conversion Rate, Cost per Conversion, ROAS</strong>, and breakdowns by Campaign, Ad Group, Ad, Keyword, Device, and more. You can combine multiple metrics on the same chart to create rich, actionable dashboards.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Do I need a special connector for Google Ads in Looker Studio?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>No. Looker Studio includes a <strong>native Google Ads connector</strong> at no cost — just select it from the data source panel and authorize access to your account. There are also third-party connectors (e.g. Supermetrics, Porter Metrics) that offer additional features like multi-account blending or historical data beyond Google's default limits, but the native connector is sufficient for most standard reports.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What are the most important metrics to include in a Google Ads report?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>The core metrics for most Google Ads reports are: <strong>Impressions</strong> (reach), <strong>Clicks</strong> (traffic), <strong>CTR</strong> (ad relevance), <strong>Average CPC</strong> (cost efficiency), <strong>Cost</strong> (spend), <strong>Conversions</strong> (results), and <strong>Cost per Conversion</strong> (ROI). For ecommerce accounts, also include <strong>Conversion Value</strong> and <strong>ROAS</strong>. Displaying these as scorecards at the top and a time series chart below gives a clear overview at a glance.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Can I create a Google Ads report for multiple accounts?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Yes. If you have a <strong>Manager Account (MCC)</strong>, you can connect it as the data source and then use a filter or a dropdown control to switch between individual sub-accounts. Alternatively, you can add multiple Google Ads data sources to the same report and use blended data or separate pages per account.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>How do I add a comparison period to my Google Ads report?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>On any scorecard or chart, open the <strong>Style</strong> panel and enable <strong>Show comparison</strong>. You can compare to the previous period, the same period last year, or a custom date range. The date range control on your report also has a built-in <strong>comparison date range</strong> option that applies to the entire report when enabled.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Can I share my Looker Studio Google Ads report with clients?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Yes. Click <strong>Share</strong> in the top-right corner and invite clients by email as <strong>Viewers</strong>. Alternatively, generate a <strong>shareable link</strong> that anyone with the link can view — no Google account required if you set access to "Anyone with the link." You can also schedule automated <strong>email delivery</strong> so clients receive a PDF snapshot of the report on a regular cadence.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED TUTORIALS -->
+  <section class="outcomes" style="background:var(--white);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-secondary">Keep Learning</div>
+        <h2>Related <span class="highlight">Data Studio Tutorials</span></h2>
+        <p>More step-by-step guides to build better marketing dashboards in Looker Studio.</p>
+      </div>
+      <div class="courses-grid">
+
+        <article class="course-card">
+          <a href="../meta-ads-report/" class="course-icon" tabindex="-1" style="background:#e8faf9;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#e8faf9"/><rect x="8" y="18" width="3" height="6" rx="1" fill="#08bfad"/><rect x="13" y="13" width="3" height="11" rx="1" fill="#08bfad" opacity=".7"/><rect x="18" y="9" width="3" height="15" rx="1" fill="#08bfad" opacity=".4"/><rect x="23" y="14" width="3" height="10" rx="1" fill="#08bfad"/></svg>
+          </a>
+          <h3><a href="../meta-ads-report/">Meta Ads Report in Data Studio</a></h3>
+          <ul class="course-bullets">
+            <li>Connect Facebook Ads to Looker Studio</li>
+            <li>Build a Meta campaign performance dashboard</li>
+            <li>Share automated reports with clients</li>
+          </ul>
+          <a href="../meta-ads-report/" class="course-link">Watch Tutorial &#8594;</a>
+        </article>
+
+        <article class="course-card">
+          <a href="../google-analytics-website-report/" class="course-icon" tabindex="-1" style="background:#fff3e0;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#fff3e0"/><rect x="8" y="8" width="16" height="3" rx="1.5" fill="#fec55c" opacity=".4"/><rect x="8" y="14" width="12" height="3" rx="1.5" fill="#fec55c" opacity=".7"/><rect x="8" y="20" width="9" height="3" rx="1.5" fill="#fec55c"/></svg>
+          </a>
+          <h3><a href="../google-analytics-website-report/">Create Google Analytics Website Report in Data Studio</a></h3>
+          <ul class="course-bullets">
+            <li>Connect GA4 to Looker Studio</li>
+            <li>Build a complete website performance dashboard</li>
+            <li>Track sessions, pages and channels</li>
+          </ul>
+          <a href="../google-analytics-website-report/" class="course-link">Watch Tutorial &#8594;</a>
+        </article>
+
+        <article class="course-card">
+          <a href="../date-range-comparison/" class="course-icon" tabindex="-1" style="background:#e8faf9;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#e8faf9"/><rect x="8" y="8" width="7" height="7" rx="2" stroke="#08bfad" stroke-width="2"/><rect x="17" y="8" width="7" height="7" rx="2" stroke="#08bfad" stroke-width="2" opacity=".5"/><rect x="8" y="17" width="16" height="3" rx="1.5" fill="#08bfad" opacity=".3"/></svg>
+          </a>
+          <h3><a href="../date-range-comparison/">Date Range Comparison in Data Studio</a></h3>
+          <ul class="course-bullets">
+            <li>Compare periods side-by-side in reports</li>
+            <li>Show month-over-month and year-over-year changes</li>
+            <li>Make reports more insightful for clients</li>
+          </ul>
+          <a href="../date-range-comparison/" class="course-link">Watch Tutorial &#8594;</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Get Personal Help</div>
+        <h2>Book a <span class="highlight">1-on-1 Coaching Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute coaching session and we'll set it up together.</p>
+      </div>
+      <iframe data-tally-src="https://tally.so/embed/RGVaXv?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1" frameborder="0" marginheight="0" marginwidth="0" title="Book a 90-Minute Digital Marketing Coaching Session"></iframe>
+      <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p>Hands-On, AI-First Digital Marketing Training. Work Smarter with AI.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/seridis/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@xyzl" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="../../google-ads-course/">AI for Google Ads</a></li>
+            <li><a href="../../meta-ads-course/">AI for Meta Ads</a></li>
+            <li><a href="../../seo-aio-course/">AI for SEO</a></li>
+            <li><a href="../../ai-marketing-analytics-course/">Analytics</a></li>
+            <li><a href="../../ai-content-creation-course/">AI Content Creation</a></li>
+            <li><a href="../../vibe-coding-course/">Vibe Coding</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>PPC</h4>
+          <ul>
+            <li><a href="../../google-ads/">Google Ads</a></li>
+            <li><a href="../../google-ads-editor/">Google Ads Editor</a></li>
+            <li><a href="../../meta-ads/">Meta Ads</a></li>
+            <li><a href="../../tiktok-ads/">TikTok Ads</a></li>
+            <li><a href="../../microsoft-ads/">Microsoft Ads</a></li>
+            <li><a href="../../pinterest-ads/">Pinterest Ads</a></li>
+            <li><a href="../../reddit-ads/">Reddit Ads</a></li>
+            <li><a href="../../linkedin-ads/">LinkedIn Ads</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Analytics</h4>
+          <ul>
+            <li><a href="../../google-analytics/">Google Analytics</a></li>
+            <li><a href="../../google-tag-manager/">Google Tag Manager</a></li>
+            <li><a href="../../data-studio/">Data Studio</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>AI Tools</h4>
+          <ul>
+            <li><a href="../../claude/">Claude AI</a></li>
+            <li><a href="../../chatgpt/">ChatGPT</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>SEO</h4>
+          <ul>
+            <li><a href="../../google-search-console/">Google Search Console</a></li>
+            <li><a href="../../bing-webmaster-tools/">Bing Webmaster Tools</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>eCommerce</h4>
+          <ul>
+            <li><a href="../../shopify/">Shopify</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../../#contact">Contact</a></li>
+            <li><a href="mailto:hello@xyzlab.com">hello@xyzlab.com</a></li>
+            <li><a href="https://wa.me/6594260742">+65 9426 0742</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> XYZ Lab. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../main.js"></script>
+</body>
+</html>
