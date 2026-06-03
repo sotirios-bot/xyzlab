@@ -88,6 +88,7 @@
   <url><loc>https://xyzlab.com/meta-ads/link-to-claude/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://xyzlab.com/meta-ads/link-whatsapp/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://xyzlab.com/meta-ads/change-history/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://xyzlab.com/meta-ads/download-invoices/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Google Tag Manager Video Tutorials -->
   <url><loc>https://xyzlab.com/google-tag-manager/setup-gtm-wix/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
