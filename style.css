@@ -1117,6 +1117,109 @@ a.course-icon:hover {
 }
 
 /* ============================================================
+   VIDEO CONTAINER (tutorial pages)
+   ============================================================ */
+.video-container {
+  background: var(--dark);
+  padding: 3rem 1.5rem;
+}
+
+/* ============================================================
+   STEPS LIST (tutorial pages)
+   ============================================================ */
+.steps-list {
+  max-width: 760px;
+  margin: 2.5rem auto 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  position: relative;
+  padding-bottom: 2.25rem;
+}
+
+/* vertical connector line between steps */
+.step-item:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 19px;
+  top: 40px;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+
+.step-num {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: .9rem;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 0 4px var(--primary-light);
+}
+
+.step-content {
+  flex: 1;
+  padding-top: .55rem;
+  padding-bottom: .25rem;
+}
+
+.step-content h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 0 0 .6rem;
+  line-height: 1.35;
+}
+
+.step-content ul {
+  margin: .5rem 0 0;
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.step-content ul li {
+  font-size: .93rem;
+  color: var(--mid);
+  line-height: 1.55;
+}
+
+.step-content ul li strong { color: var(--dark); font-weight: 600; }
+
+.step-content ul li code {
+  background: var(--light);
+  border: 1px solid var(--border);
+  padding: .1em .45em;
+  border-radius: 4px;
+  font-size: .83em;
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', monospace;
+  word-break: break-all;
+}
+
+@media (max-width: 700px) {
+  .video-container { padding: 2rem 0; }
+  .step-item { gap: 1rem; padding-bottom: 1.75rem; }
+  .step-num { width: 34px; height: 34px; min-width: 34px; font-size: .82rem; }
+  .step-item:not(:last-child)::before { left: 16px; top: 34px; }
+  .step-content h4 { font-size: .97rem; }
+}
+
+/* ============================================================
    AI CHAT SECTION
    ============================================================ */
 .ai-chat-section {
