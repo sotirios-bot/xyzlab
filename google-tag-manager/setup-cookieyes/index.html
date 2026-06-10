@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WXGTNNN');</script>
+<!-- End Google Tag Manager -->
+  <link rel="icon" type="image/png" href="../../favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn how to install CookieYes with Google Tag Manager step-by-step. Use the CookieYes Community Template to add a GDPR-compliant cookie consent banner to your website via GTM." />
+  <link rel="canonical" href="https://xyzlab.com/google-tag-manager/setup-cookieyes/" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:url" content="https://xyzlab.com/google-tag-manager/setup-cookieyes/" />
+  <meta property="og:title" content="Install CookieYes with Google Tag Manager | XYZ Lab" />
+  <meta property="og:description" content="Learn how to install CookieYes with Google Tag Manager step-by-step. Use the CookieYes Community Template to add a GDPR-compliant cookie consent banner to your website via GTM." />
+  <meta property="og:image" content="https://img.youtube.com/vi/KJsO4pV9dX0/maxresdefault.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Install CookieYes with Google Tag Manager | XYZ Lab" />
+  <meta name="twitter:description" content="Learn how to install CookieYes with Google Tag Manager step-by-step." />
+  <meta name="twitter:image" content="https://img.youtube.com/vi/KJsO4pV9dX0/maxresdefault.jpg" />
+  <title>Install CookieYes with Google Tag Manager | XYZ Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../../course.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Install CookieYes with Google Tag Manager",
+    "description": "Step-by-step tutorial showing how to create a CookieYes account, copy your website key, and use the CookieYes Community Template in Google Tag Manager to add a GDPR-compliant cookie consent banner to your website.",
+    "thumbnailUrl": "https://img.youtube.com/vi/KJsO4pV9dX0/maxresdefault.jpg",
+    "uploadDate": "2026-06-10",
+    "embedUrl": "https://www.youtube.com/embed/KJsO4pV9dX0",
+    "contentUrl": "https://www.youtube.com/watch?v=KJsO4pV9dX0",
+    "publisher": {
+      "@type": "Organization",
+      "name": "XYZ Lab",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://xyzlab.com/XYZLab.gif"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXGTNNN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <!-- NAV -->
+  <header class="nav-wrapper">
+    <nav class="nav container">
+      <a href="../../" class="logo">
+        <img src="../../XYZLab.gif" alt="XYZ Lab" class="logo-img" />
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li class="nav-has-dropdown">
+          <a href="../../#courses">Courses <span class="nav-caret" aria-hidden="true"></span></a>
+          <ul class="nav-dropdown">
+            <li><a href="../../google-ads-course/">AI for Google Ads</a></li>
+            <li><a href="../../meta-ads-course/">AI for Meta Ads</a></li>
+            <li><a href="../../seo-aio-course/">AI for SEO</a></li>
+            <li><a href="../../ai-marketing-analytics-course/">AI for Marketing Analytics</a></li>
+            <li><a href="../../ai-content-creation-course/">AI Content Creation</a></li>
+            <li><a href="../../vibe-coding-course/">Vibe Coding with AI</a></li>
+          </ul>
+        </li>
+        <li class="nav-has-dropdown">
+          <a href="../../#topics">Tutorials <span class="nav-caret" aria-hidden="true"></span></a>
+          <div class="nav-dropdown nav-mega">
+            <div class="mega-col">
+              <span class="mega-label">PPC</span>
+              <ul>
+                <li><a href="../../google-ads/">Google Ads</a></li>
+                <li><a href="../../google-ads-editor/">Google Ads Editor</a></li>
+                <li><a href="../../meta-ads/">Meta Ads</a></li>
+                <li><a href="../../tiktok-ads/">TikTok Ads</a></li>
+                <li><a href="../../microsoft-ads/">Microsoft Ads</a></li>
+                <li><a href="../../pinterest-ads/">Pinterest Ads</a></li>
+                <li><a href="../../reddit-ads/">Reddit Ads</a></li>
+                <li><a href="../../linkedin-ads/">LinkedIn Ads</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">Analytics</span>
+              <ul>
+                <li><a href="../../google-analytics/">Google Analytics</a></li>
+                <li><a href="../../google-tag-manager/">Google Tag Manager</a></li>
+                <li><a href="../../data-studio/">Data Studio</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">AI Tools</span>
+              <ul>
+                <li><a href="../../claude/">Claude AI</a></li>
+                <li><a href="../../chatgpt/">ChatGPT</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">SEO</span>
+              <ul>
+                <li><a href="../../google-search-console/">Google Search Console</a></li>
+                <li><a href="../../bing-webmaster-tools/">Bing Webmaster Tools</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">eCommerce</span>
+              <ul>
+                <li><a href="../../shopify/">Shopify</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">Web Builders</span>
+              <ul>
+                <li><a href="../../wix/">Wix</a></li>
+                <li><a href="../../go-high-level/">Go High Level</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>        <li><a href="../../#contact">Contact</a></li>
+        <li><a href="#coaching" class="btn btn-primary btn-sm">Book Coaching</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="video-tutorial-hero">
+    <div class="container tutorial-hero-inner">
+      <nav class="breadcrumb">
+        <a href="../../">Home</a>
+        <span class="breadcrumb-sep">&#8250;</span>
+        <a href="../">Google Tag Manager Tutorials</a>
+        <span class="breadcrumb-sep">&#8250;</span>
+        <span class="breadcrumb-current">Install CookieYes</span>
+      </nav>
+      <h1>Install <span class="highlight">CookieYes</span> with Google Tag Manager</h1>
+      <p class="hero-sub">Watch the step-by-step walkthrough below, then follow along with the guide to create a CookieYes account and use the GTM Community Template to add a GDPR-compliant cookie consent banner to your website.</p>
+      <div style="margin-top:1.75rem;">
+        <a href="#steps" class="btn btn-primary">Follow the Steps</a>
+        <a href="#coaching" class="btn btn-outline">Book Coaching</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO EMBED -->
+  <div class="video-container">
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/KJsO4pV9dX0?list=PLCRsBzkyVfUXqTjJUoZ1O1tSMhKoknMDN&rel=0&modestbranding=1"
+        title="Install CookieYes with Google Tag Manager"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- STEPS -->
+  <section class="outcomes" id="steps">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-secondary">Step by Step</div>
+        <h2>Install CookieYes with Google Tag Manager</h2>
+        <p>Follow these steps alongside the video to set up CookieYes via GTM.</p>
+      </div>
+      <div class="steps-list">
+
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Create a CookieYes account</h4>
+            <ul>
+              <li>Go to <a href="https://www.cookieyes.com/" target="_blank" rel="noopener">cookieyes.com</a> and sign up — a free plan is available that covers basic cookie consent for smaller websites</li>
+              <li>During setup, enter your website URL when prompted so CookieYes can scan your site and categorise the cookies it finds</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Copy your Website key</h4>
+            <ul>
+              <li>Inside your CookieYes dashboard, navigate to <strong>Settings</strong> or the installation section</li>
+              <li>Copy your unique <strong>Website key</strong> — you will need this in GTM to connect the template to your CookieYes account</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Navigate to Google Tag Manager</h4>
+            <ul>
+              <li>Go to <a href="https://tagmanager.google.com/" target="_blank" rel="noopener">tagmanager.google.com</a> and open the container for the website where you want to install CookieYes</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h4>Create a new Tag and give it a name</h4>
+            <ul>
+              <li>In the left navigation, click <strong>Tags</strong> then <strong>New</strong></li>
+              <li>Give the tag a clear name — for example <em>CookieYes</em> — so it is easy to identify in your container</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <h4>Open the Community Template Gallery</h4>
+            <ul>
+              <li>Click on <strong>Tag Configuration</strong> to open the tag type selector</li>
+              <li>Scroll down and click <strong>Discover more tag types in the Community Template Gallery</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">6</div>
+          <div class="step-content">
+            <h4>Search for the CookieYes template</h4>
+            <ul>
+              <li>In the Community Template Gallery search bar, type <strong>CookieYes</strong></li>
+              <li>Click on the official CookieYes template from the results</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">7</div>
+          <div class="step-content">
+            <h4>Add the template to your workspace</h4>
+            <ul>
+              <li>Click <strong>Add to workspace</strong> and accept the permissions the template requires</li>
+              <li>The CookieYes tag configuration panel will now open inside your new tag</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">8</div>
+          <div class="step-content">
+            <h4>Paste your Website key</h4>
+            <ul>
+              <li>In the CookieYes tag configuration, paste the <strong>Website key</strong> you copied from your CookieYes dashboard in Step 2</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">9</div>
+          <div class="step-content">
+            <h4>Open the Default Consent Settings</h4>
+            <ul>
+              <li>Scroll down in the tag configuration and expand the <strong>Default Consent Settings</strong> section</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">10</div>
+          <div class="step-content">
+            <h4>Click "Add Setting"</h4>
+            <ul>
+              <li>Click <strong>Add Setting</strong> to add consent state defaults for each consent type (analytics, advertising, functionality, etc.)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">11</div>
+          <div class="step-content">
+            <h4>Disable everything and keep Regions as "All"</h4>
+            <ul>
+              <li>Set every consent type to <strong>Denied</strong> (disabled) — this ensures all tracking is blocked by default until the user gives explicit consent, which is required under GDPR and similar privacy laws</li>
+              <li>Leave the <strong>Regions</strong> field set to <strong>All</strong> so the default denied state applies globally to all visitors</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-num">12</div>
+          <div class="step-content">
+            <h4>Set the Trigger to "Consent Initialization — All Pages"</h4>
+            <ul>
+              <li>Click <strong>Triggering</strong> at the bottom of the tag and select <strong>Consent Initialization - All Pages</strong></li>
+              <li>This special trigger fires before any other tags load, ensuring the consent state is established on every page before any tracking scripts run</li>
+              <li>Click <strong>Save</strong>, then <strong>Submit</strong> and <strong>Publish</strong> your container to push CookieYes live</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COACHING CTA -->
+  <section class="coaching-cta">
+    <div class="container">
+      <div class="coaching-cta-inner">
+        <div class="coaching-cta-text">
+          <h3>Need 1-on-1 help with Google Tag Manager?</h3>
+          <p>Book a 90-minute coaching session and we'll set up and optimise your GTM account together!</p>
+        </div>
+        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about installing CookieYes with Google Tag Manager.</p>
+      </div>
+      <div class="faq-list">
+
+        <details class="faq-item" open>
+          <summary class="faq-question">
+            <span>Why do I need a cookie consent banner like CookieYes?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Privacy laws like <strong>GDPR</strong> (EU), <strong>CCPA</strong> (California), and <strong>LGPD</strong> (Brazil) require websites to obtain explicit user consent before placing non-essential cookies — such as analytics and advertising cookies — on a visitor's device. A cookie consent banner handles this by presenting users with a clear accept or decline option, recording their consent, and integrating with tools like GTM to block or allow tracking scripts based on that choice. Failing to comply can result in significant fines.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What is the "Consent Initialization — All Pages" trigger in GTM?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>The <strong>Consent Initialization — All Pages</strong> trigger is a special GTM trigger that fires before the standard Page View trigger and before any other tags load. This ensures that the CookieYes consent state is established first, so that when GTM later checks whether it has permission to fire analytics or advertising tags, the correct consent signal is already in place. Using any other trigger (like All Pages) would risk firing before consent is set, which defeats the purpose of a consent management platform.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Why should I set all Default Consent Settings to "Denied"?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Setting all consent types to <strong>Denied</strong> by default implements the principle of <em>consent by default</em> — no tracking occurs until the user actively accepts cookies. This is the GDPR-compliant approach. The CookieYes banner will then update the consent state to "Granted" for categories the user accepts, and GTM's Consent Mode will allow the relevant tags to fire. If you set defaults to Granted, tracking would begin before the user has given consent, which is illegal under GDPR for non-essential cookies.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Do I need to publish the GTM container after setting up the CookieYes tag?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Yes. Changes in GTM only go live when you <strong>Submit</strong> and <strong>Publish</strong> a new container version. Until you publish, the CookieYes tag exists only in your workspace and will not appear on your live website. After saving the tag, click <strong>Submit</strong> in the top right of GTM, add a version name and description, then click <strong>Publish</strong> to push the changes to production.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Will CookieYes block my Google Analytics and Google Ads tags automatically?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>CookieYes works with GTM's <strong>Consent Mode</strong> to control when tags fire. For this to work, your Google Analytics and Google Ads tags must be configured with the appropriate consent checks in GTM — for example, requiring <code>analytics_storage</code> consent before the GA4 tag fires. Most modern GA4 and Google Ads tag templates in GTM support Consent Mode natively. You will need to review each tag's consent settings to ensure it respects the signals sent by CookieYes.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What is the difference between the free and paid CookieYes plans?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>The <strong>free plan</strong> covers one website and provides basic cookie consent functionality including automatic cookie scanning, a customisable banner, and GTM integration — sufficient for most small websites. <strong>Paid plans</strong> add features such as multiple domains, advanced banner customisation, geo-targeting (showing the banner only to visitors from specific regions), consent logs for audit purposes, and support for Google Consent Mode v2. If you need to comply with GDPR across multiple websites or require detailed consent records, a paid plan may be necessary.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED TUTORIALS -->
+  <section class="outcomes" style="background:var(--white);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-secondary">Keep Learning</div>
+        <h2>Related <span class="highlight">Tutorials</span></h2>
+        <p>More step-by-step guides to get the most out of Google Tag Manager.</p>
+      </div>
+      <div class="courses-grid">
+
+        <article class="course-card">
+          <a href="../find-tracking-code-id/" class="course-icon" tabindex="-1" style="background:#e8faf9;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#e8faf9"/><rect x="9" y="9" width="14" height="14" rx="3" stroke="#08bfad" stroke-width="2"/><path d="M13 16h6M16 13v6" stroke="#08bfad" stroke-width="2" stroke-linecap="round"/></svg>
+          </a>
+          <h3><a href="../find-tracking-code-id/">Find Google Tag Manager Tracking Code and ID</a></h3>
+          <ul class="course-bullets">
+            <li>Locate your GTM container ID</li>
+            <li>Copy the head and body snippets</li>
+            <li>Install GTM on any website</li>
+          </ul>
+          <a href="../find-tracking-code-id/" class="course-link">Watch Tutorial &#8594;</a>
+        </article>
+
+        <article class="course-card">
+          <a href="../give-access-gtm/" class="course-icon" tabindex="-1" style="background:#fff3e0;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#fff3e0"/><circle cx="16" cy="13" r="4" stroke="#fec55c" stroke-width="2"/><path d="M8 25c0-4 3.6-7 8-7s8 3 8 7" stroke="#fec55c" stroke-width="2" stroke-linecap="round"/></svg>
+          </a>
+          <h3><a href="../give-access-gtm/">Add Users (Give Access) to Google Tag Manager</a></h3>
+          <ul class="course-bullets">
+            <li>Invite team members or an agency</li>
+            <li>Set account or container-level access</li>
+            <li>Manage user permissions in GTM</li>
+          </ul>
+          <a href="../give-access-gtm/" class="course-link">Watch Tutorial &#8594;</a>
+        </article>
+
+        <article class="course-card">
+          <a href="../" class="course-icon" tabindex="-1" style="background:#e8faf9;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#e8faf9"/><path d="M10 16l4-4 4 4 4-4" stroke="#08bfad" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <h3><a href="../">Google Tag Manager Tutorials</a></h3>
+          <ul class="course-bullets">
+            <li>Set up tracking without coding</li>
+            <li>Configure triggers and tags</li>
+            <li>Track conversion events accurately</li>
+          </ul>
+          <a href="../" class="course-link">Explore &#8594;</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Get Personal Help</div>
+        <h2>Book a <span class="highlight">1-on-1 Coaching Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute coaching session and we'll set it up together.</p>
+      </div>
+      <iframe data-tally-src="https://tally.so/embed/RGVaXv?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1" frameborder="0" marginheight="0" marginwidth="0" title="Book a 90-Minute Digital Marketing Coaching Session"></iframe>
+      <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p>Hands-On, AI-First Digital Marketing Training. Work Smarter with AI.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/seridis/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@xyzl" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="../../google-ads-course/">AI for Google Ads</a></li>
+            <li><a href="../../meta-ads-course/">AI for Meta Ads</a></li>
+            <li><a href="../../seo-aio-course/">AI for SEO</a></li>
+            <li><a href="../../ai-marketing-analytics-course/">Analytics</a></li>
+            <li><a href="../../ai-content-creation-course/">AI Content Creation</a></li>
+            <li><a href="../../vibe-coding-course/">Vibe Coding</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>PPC</h4>
+          <ul>
+            <li><a href="../../google-ads/">Google Ads</a></li>
+            <li><a href="../../google-ads-editor/">Google Ads Editor</a></li>
+            <li><a href="../../meta-ads/">Meta Ads</a></li>
+            <li><a href="../../tiktok-ads/">TikTok Ads</a></li>
+            <li><a href="../../microsoft-ads/">Microsoft Ads</a></li>
+            <li><a href="../../pinterest-ads/">Pinterest Ads</a></li>
+            <li><a href="../../reddit-ads/">Reddit Ads</a></li>
+            <li><a href="../../linkedin-ads/">LinkedIn Ads</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Analytics</h4>
+          <ul>
+            <li><a href="../../google-analytics/">Google Analytics</a></li>
+            <li><a href="../../google-tag-manager/">Google Tag Manager</a></li>
+            <li><a href="../../data-studio/">Data Studio</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>AI Tools</h4>
+          <ul>
+            <li><a href="../../claude/">Claude AI</a></li>
+            <li><a href="../../chatgpt/">ChatGPT</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>SEO</h4>
+          <ul>
+            <li><a href="../../google-search-console/">Google Search Console</a></li>
+            <li><a href="../../bing-webmaster-tools/">Bing Webmaster Tools</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>eCommerce</h4>
+          <ul>
+            <li><a href="../../shopify/">Shopify</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Web Builders</h4>
+          <ul>
+            <li><a href="../../wix/">Wix</a></li>
+            <li><a href="../../go-high-level/">Go High Level</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../../#contact">Contact</a></li>
+            <li><a href="mailto:hello@xyzlab.com">hello@xyzlab.com</a></li>
+            <li><a href="https://wa.me/6594260742">+65 9426 0742</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> XYZ Lab. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../main.js"></script>
+</body>
+</html>
