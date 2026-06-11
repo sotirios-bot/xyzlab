@@ -76,6 +76,10 @@
   <url><loc>https://xyzlab.com/wix/change-homepage/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://xyzlab.com/wix/image-alt-text/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
+  <!-- Pillar Pages — Social Media -->
+  <url><loc>https://xyzlab.com/linkedin/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://xyzlab.com/youtube/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+
   <!-- Google Ads Video Tutorials -->
   <url><loc>https://xyzlab.com/google-ads/tracking-template/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://xyzlab.com/google-ads/lead-form/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
