@@ -123,10 +123,11 @@
       document.title = D.channel + ' Benchmarks in ' + country + (isAll ? '' : ' for ' + industry) + ' (' + D.updated + ') | XYZ Lab';
 
       if (D.columns) {
-        /* ── Generic column mode (SEO, etc.) ─────────────────── */
+        /* ── Generic column mode (SEO, TikTok Ads, etc.) ────── */
         theadEl.innerHTML = '<tr><th class="col-ind">Industry</th>' +
           D.columns.map(function (col) {
-            return '<th>' + col.head + (col.subhead ? '<br><span class="col-curr">' + col.subhead + '</span>' : '') + '</th>';
+            var sub = col.subheadCurrCode ? (curr ? curr.code : '') : col.subhead;
+            return '<th>' + col.head + (sub ? '<br><span class="col-curr">' + sub + '</span>' : '') + '</th>';
           }).join('') + '</tr>';
 
         tbodyEl.innerHTML = D.industries.map(function (ind, idx) {
@@ -201,7 +202,9 @@
     function buildCSV(country) {
       var curr = D.currencies ? D.currencies[country] : null;
       if (D.columns) {
-        var hdr  = ['Industry'].concat(D.columns.map(function (c) { return c.head; })).join(',');
+        var hdr  = ['Industry'].concat(D.columns.map(function (c) {
+          return c.subheadCurrCode && curr ? c.head + ' (' + curr.code + ')' : c.head;
+        })).join(',');
         var rows = D.industries.map(function (ind) {
           var d = D.data[country][ind];
           return ['"' + ind + '"'].concat(D.columns.map(function (col) {
@@ -226,7 +229,9 @@
     function buildTSV(country) {
       var curr = D.currencies ? D.currencies[country] : null;
       if (D.columns) {
-        var hdr  = ['Industry'].concat(D.columns.map(function (c) { return c.head; })).join('\t');
+        var hdr  = ['Industry'].concat(D.columns.map(function (c) {
+          return c.subheadCurrCode && curr ? c.head + ' (' + curr.code + ')' : c.head;
+        })).join('\t');
         var rows = D.industries.map(function (ind) {
           var d = D.data[country][ind];
           return [ind].concat(D.columns.map(function (col) {
