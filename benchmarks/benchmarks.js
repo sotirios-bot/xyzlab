@@ -66,8 +66,20 @@
       } else {
         if (paywallEl) paywallEl.style.display = 'flex';
         if (gateWrap)  gateWrap.classList.add('is-locked');
-        if (copyBtn) { copyBtn.disabled = true; copyBtn.title = 'Unlock to copy'; }
-        if (dlBtn)   { dlBtn.disabled   = true; dlBtn.title   = 'Unlock to download'; }
+        if (copyBtn) { copyBtn.disabled = true; }
+        if (dlBtn)   { dlBtn.disabled   = true; }
+        // Inject hover tooltips with Stripe link
+        [copyBtn, dlBtn].forEach(function (btn) {
+          if (!btn || btn.parentElement.classList.contains('bm-btn-tip-wrap')) return;
+          var wrap = document.createElement('div');
+          wrap.className = 'bm-btn-tip-wrap';
+          btn.parentNode.insertBefore(wrap, btn);
+          wrap.appendChild(btn);
+          var tip = document.createElement('span');
+          tip.className = 'bm-btn-tip';
+          tip.innerHTML = '&#128274; <a href="' + G.stripeUrl + '">Unlock for ' + G.price + '</a> to use';
+          wrap.appendChild(tip);
+        });
       }
     }
 
