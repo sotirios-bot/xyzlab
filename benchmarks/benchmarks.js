@@ -4,8 +4,9 @@
     var D = window.BENCHMARK_DATA;
     if (!D) return;
 
-    var G = window.BENCHMARK_GATE; // optional — set per channel page
+    var G        = window.BENCHMARK_GATE; // optional — set per channel page
     var FREE_ROWS = 8;
+    var hasCPM   = !D.hideCPM;
 
     /* ── Unlock state ───────────────────────────────────────────── */
     var isUnlocked = !G;
@@ -68,7 +69,7 @@
         if (gateWrap)  gateWrap.classList.add('is-locked');
         if (copyBtn) { copyBtn.disabled = true; }
         if (dlBtn)   { dlBtn.disabled   = true; }
-        // Inject hover tooltips with Stripe link
+        // Inject hover tooltips linking to paywall card
         [copyBtn, dlBtn].forEach(function (btn) {
           if (!btn || btn.parentElement.classList.contains('bm-btn-tip-wrap')) return;
           var wrap = document.createElement('div');
@@ -117,14 +118,14 @@
       history.replaceState({}, '', url);
 
       h1El.innerHTML    = D.channel + ' Benchmarks in <span class="highlight">' + country + '</span>' + (isAll ? '' : ' for ' + industry);
-      subEl.textContent = 'Average ' + D.channel + ' (Facebook & Instagram Ads) performance in ' + country + (isAll ? ' across all industries' : ' for the ' + industry + ' industry') + '. Figures in ' + curr.code + ' (' + curr.sym.trim() + ').';
+      subEl.textContent = 'Average ' + D.channel + (D.channelDesc ? ' (' + D.channelDesc + ')' : '') + ' performance in ' + country + (isAll ? ' across all industries' : ' for the ' + industry + ' industry') + '. Figures in ' + curr.code + ' (' + curr.sym.trim() + ').';
       document.title    = D.channel + ' Benchmarks in ' + country + (isAll ? '' : ' for ' + industry) + ' (' + D.updated + ') | XYZ Lab';
 
       theadEl.innerHTML = '<tr>' +
         '<th class="col-ind">Industry</th>' +
         '<th>CTR</th>' +
         '<th>CPC<br><span class="col-curr">' + curr.code + '</span></th>' +
-        '<th>CPM<br><span class="col-curr">' + curr.code + '</span></th>' +
+        (hasCPM ? '<th>CPM<br><span class="col-curr">' + curr.code + '</span></th>' : '') +
         '<th>Conv.&nbsp;Rate</th>' +
         '<th>CPA<br><span class="col-curr">' + curr.code + '</span></th>' +
         '<th>ROAS <span class="roas-tip" title="Return on ad spend — indicative average. Actual ROAS varies significantly by product margin and average order value.">&#9432;</span></th>' +
@@ -141,7 +142,7 @@
           '<td class="col-ind">' + ind + '</td>' +
           '<td>' + pct(d.ctr) + '</td>' +
           '<td>' + money(d.cpc, curr.sym, curr.noDecimal) + '</td>' +
-          '<td>' + money(d.cpm, curr.sym, curr.noDecimal) + '</td>' +
+          (hasCPM ? '<td>' + money(d.cpm, curr.sym, curr.noDecimal) + '</td>' : '') +
           '<td>' + pct(d.conv_rate) + '</td>' +
           '<td>' + money(d.cpa, curr.sym, curr.noDecimal) + '</td>' +
           '<td>' + d.roas.toFixed(2) + 'x</td>' +
@@ -157,29 +158,39 @@
     }
 
     /* ── Formatters ─────────────────────────────────────────────── */
-    function pct(v)           { return v.toFixed(2) + '%'; }
+    function pct(v)            { return v.toFixed(2) + '%'; }
     function money(v, sym, nd) { return (nd || v >= 100) ? sym + Math.round(v) : sym + v.toFixed(2); }
-    function slugify(s)    { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''); }
+    function slugify(s)        { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''); }
 
     /* ── Data builders ──────────────────────────────────────────── */
     function buildCSV(country) {
       var curr = D.currencies[country];
-      var hdr  = ['Industry', 'CTR', 'CPC (' + curr.code + ')', 'CPM (' + curr.code + ')', 'Conv. Rate', 'CPA (' + curr.code + ')', 'ROAS'].join(',');
+      var cols = ['Industry', 'CTR', 'CPC (' + curr.code + ')'];
+      if (hasCPM) cols.push('CPM (' + curr.code + ')');
+      cols.push('Conv. Rate', 'CPA (' + curr.code + ')', 'ROAS');
       var rows = D.industries.map(function (ind) {
         var d = D.data[country][ind];
-        return ['"' + ind + '"', pct(d.ctr), money(d.cpc, '', curr.noDecimal), money(d.cpm, '', curr.noDecimal), pct(d.conv_rate), money(d.cpa, '', curr.noDecimal), d.roas.toFixed(2) + 'x'].join(',');
+        var cells = ['"' + ind + '"', pct(d.ctr), money(d.cpc, '', curr.noDecimal)];
+        if (hasCPM) cells.push(money(d.cpm, '', curr.noDecimal));
+        cells.push(pct(d.conv_rate), money(d.cpa, '', curr.noDecimal), d.roas.toFixed(2) + 'x');
+        return cells.join(',');
       });
-      return hdr + '\n' + rows.join('\n');
+      return cols.join(',') + '\n' + rows.join('\n');
     }
 
     function buildTSV(country) {
       var curr = D.currencies[country];
-      var hdr  = ['Industry', 'CTR', 'CPC (' + curr.code + ')', 'CPM (' + curr.code + ')', 'Conv. Rate', 'CPA (' + curr.code + ')', 'ROAS'].join('\t');
+      var cols = ['Industry', 'CTR', 'CPC (' + curr.code + ')'];
+      if (hasCPM) cols.push('CPM (' + curr.code + ')');
+      cols.push('Conv. Rate', 'CPA (' + curr.code + ')', 'ROAS');
       var rows = D.industries.map(function (ind) {
         var d = D.data[country][ind];
-        return [ind, pct(d.ctr), money(d.cpc, curr.sym, curr.noDecimal), money(d.cpm, curr.sym, curr.noDecimal), pct(d.conv_rate), money(d.cpa, curr.sym, curr.noDecimal), d.roas.toFixed(2) + 'x'].join('\t');
+        var cells = [ind, pct(d.ctr), money(d.cpc, curr.sym, curr.noDecimal)];
+        if (hasCPM) cells.push(money(d.cpm, curr.sym, curr.noDecimal));
+        cells.push(pct(d.conv_rate), money(d.cpa, curr.sym, curr.noDecimal), d.roas.toFixed(2) + 'x');
+        return cells.join('\t');
       });
-      return hdr + '\n' + rows.join('\n');
+      return cols.join('\t') + '\n' + rows.join('\n');
     }
 
     /* ── Downloads ──────────────────────────────────────────────── */

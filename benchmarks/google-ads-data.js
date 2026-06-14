@@ -1,7 +1,8 @@
 (function () {
   function r(v, d) { return Math.round(v * Math.pow(10, d)) / Math.pow(10, d); }
 
-  var BASE_CTR = 1.11, BASE_CPC = 0.97, BASE_CONV = 9.21, BASE_ROAS = 3.21;
+  // Google Ads Search averages (cross-industry baseline)
+  var BASE_CTR = 3.51, BASE_CPC = 2.69, BASE_CONV = 4.40, BASE_ROAS = 4.10;
 
   var countries = {
     'Argentina':    { ctm: 0.90, cpcm: 412.0,  convm: 0.72, roasm: 0.78, sym: 'AR$',  code: 'ARS' },
@@ -46,43 +47,43 @@
   // Array of [name, cpc_mult, ctr_mult, conv_mult, roas_mult]
   var industries = [
     ['All Industries',                         1.00, 1.00, 1.00, 1.00],
-    ['Apparel (E-Commerce)',                   0.72, 1.35, 1.18, 1.32],
-    ['Automotive',                             1.88, 0.72, 0.48, 0.85],
-    ['Banking & Finance',                      2.15, 0.62, 0.65, 0.78],
-    ['Beauty & Salons',                        0.78, 1.22, 1.12, 1.45],
-    ['Crypto & Web3',                          1.92, 0.85, 0.55, 0.72],
-    ['Dating',                                 1.15, 1.18, 1.85, 1.25],
-    ['Education',                              0.92, 0.82, 0.98, 1.05],
-    ['Electronics (E-Commerce)',               1.12, 0.98, 0.88, 0.95],
-    ['Entertainment & Media',                  0.58, 1.48, 1.42, 1.15],
-    ['Fitness & Gyms',                         0.85, 1.15, 0.92, 1.18],
-    ['Flights',                                1.32, 0.88, 0.42, 1.85],
-    ['Food & Beverage',                        0.62, 1.25, 1.35, 1.55],
-    ['Furniture & Home Décor (E-Commerce)',    1.18, 0.95, 0.72, 0.92],
-    ['Gaming',                                 0.68, 1.42, 1.28, 1.35],
-    ['Healthcare',                             1.68, 0.75, 0.72, 0.88],
-    ['Health & Wellness (E-Commerce)',         0.92, 1.12, 1.05, 1.28],
-    ['Home Appliances (E-Commerce)',           1.22, 0.88, 0.78, 0.88],
-    ['Home Services',                          1.52, 0.78, 0.65, 0.95],
-    ['Hotels',                                 1.28, 0.92, 0.58, 1.95],
-    ['Insurance',                              2.52, 0.55, 0.52, 0.72],
-    ['Jewelry & Accessories (E-Commerce)',     1.08, 1.15, 0.85, 1.42],
-    ['Jobs & Recruitment',                     1.42, 0.88, 1.05, 0.82],
-    ['Legal',                                  2.82, 0.52, 0.45, 0.68],
-    ['Logistics',                              1.58, 0.72, 0.68, 0.88],
-    ['Moving & Cleaning Services',             1.48, 0.82, 0.75, 1.05],
-    ['Non-Profit & Charity',                   0.45, 1.32, 1.65, 1.15],
-    ['Online Courses & EdTech',                0.82, 1.05, 1.15, 1.22],
-    ['Pet Products (E-Commerce)',              0.72, 1.28, 1.22, 1.38],
-    ['Property',                               1.95, 0.68, 0.42, 0.75],
-    ['Restaurants & Food Delivery',            0.65, 1.32, 1.45, 1.65],
-    ['Skincare (E-Commerce)',                  0.88, 1.25, 1.12, 1.35],
-    ['Software & SaaS',                        1.72, 0.82, 0.75, 0.92],
-    ['Sports & Outdoors (E-Commerce)',         0.82, 1.18, 1.08, 1.25],
-    ['Subscription Boxes',                     0.75, 1.22, 1.18, 1.42],
-    ['Toys & Baby (E-Commerce)',               0.68, 1.35, 1.25, 1.32],
-    ['Travel',                                 1.15, 0.95, 0.48, 1.75],
-    ['Wedding & Events',                       1.12, 1.08, 0.62, 1.15]
+    ['Apparel (E-Commerce)',                   0.68, 1.28, 1.15, 1.28],
+    ['Automotive',                             2.12, 0.68, 0.52, 0.88],
+    ['Banking & Finance',                      2.85, 0.58, 0.62, 0.80],
+    ['Beauty & Salons',                        0.82, 1.18, 1.08, 1.38],
+    ['Crypto & Web3',                          2.15, 0.78, 0.48, 0.70],
+    ['Dating',                                 1.08, 1.12, 1.72, 1.20],
+    ['Education',                              0.88, 0.92, 1.05, 1.08],
+    ['Electronics (E-Commerce)',               1.18, 0.95, 0.82, 0.92],
+    ['Entertainment & Media',                  0.62, 1.42, 1.38, 1.12],
+    ['Fitness & Gyms',                         0.92, 1.08, 0.88, 1.15],
+    ['Flights',                                1.45, 0.85, 0.38, 1.88],
+    ['Food & Beverage',                        0.68, 1.22, 1.28, 1.52],
+    ['Furniture & Home Décor (E-Commerce)',    1.22, 0.92, 0.68, 0.90],
+    ['Gaming',                                 0.72, 1.38, 1.22, 1.30],
+    ['Healthcare',                             1.92, 0.72, 0.68, 0.85],
+    ['Health & Wellness (E-Commerce)',         0.95, 1.08, 1.02, 1.25],
+    ['Home Appliances (E-Commerce)',           1.28, 0.85, 0.75, 0.85],
+    ['Home Services',                          1.68, 0.75, 0.62, 0.92],
+    ['Hotels',                                 1.35, 0.88, 0.55, 1.92],
+    ['Insurance',                              3.12, 0.52, 0.48, 0.75],
+    ['Jewelry & Accessories (E-Commerce)',     1.12, 1.10, 0.82, 1.38],
+    ['Jobs & Recruitment',                     1.52, 0.85, 1.02, 0.80],
+    ['Legal',                                  3.45, 0.48, 0.42, 0.65],
+    ['Logistics',                              1.65, 0.70, 0.65, 0.85],
+    ['Moving & Cleaning Services',             1.55, 0.78, 0.72, 1.02],
+    ['Non-Profit & Charity',                   0.48, 1.28, 1.58, 1.12],
+    ['Online Courses & EdTech',                0.85, 1.02, 1.12, 1.18],
+    ['Pet Products (E-Commerce)',              0.75, 1.22, 1.18, 1.32],
+    ['Property',                               2.08, 0.65, 0.38, 0.72],
+    ['Restaurants & Food Delivery',            0.70, 1.28, 1.42, 1.60],
+    ['Skincare (E-Commerce)',                  0.92, 1.20, 1.08, 1.32],
+    ['Software & SaaS',                        1.88, 0.78, 0.72, 0.90],
+    ['Sports & Outdoors (E-Commerce)',         0.85, 1.15, 1.05, 1.22],
+    ['Subscription Boxes',                     0.78, 1.18, 1.15, 1.38],
+    ['Toys & Baby (E-Commerce)',               0.72, 1.30, 1.22, 1.28],
+    ['Travel',                                 1.22, 0.92, 0.45, 1.72],
+    ['Wedding & Events',                       1.18, 1.05, 0.58, 1.12]
   ];
 
   var data = {};
@@ -104,9 +105,10 @@
   });
 
   window.BENCHMARK_DATA = {
-    channel:     'Meta Ads',
-    channelDesc: 'Facebook & Instagram Ads',
-    channelSlug: 'meta-ads',
+    channel:     'Google Ads',
+    channelDesc: 'Search, Shopping & Display',
+    channelSlug: 'google-ads',
+    hideCPM:     true,
     updated:     'Q2 2026',
     countries:   countryNames,
     currencies:  (function () {
