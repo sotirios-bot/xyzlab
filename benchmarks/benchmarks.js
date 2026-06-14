@@ -45,7 +45,7 @@
 
       var loc = isAll ? '' : ' for ' + industry;
       h1El.innerHTML = D.channel + ' Benchmarks in <span class="highlight">' + country + '</span>' + (isAll ? '' : ' for ' + industry);
-      subEl.textContent = 'Average ' + D.channel + ' performance in ' + country + (isAll ? ' across all industries' : ' for the ' + industry + ' industry') + ' — ' + D.updated + '. Figures in ' + curr.code + ' (' + curr.sym.trim() + ').';
+      subEl.textContent = 'Average ' + D.channel + ' (Facebook & Instagram Ads) performance in ' + country + (isAll ? ' across all industries' : ' for the ' + industry + ' industry') + '. Figures in ' + curr.code + ' (' + curr.sym.trim() + ').';
       document.title = D.channel + ' Benchmarks in ' + country + loc + ' (' + D.updated + ') | XYZ Lab';
 
       theadEl.innerHTML = '<tr><th class="col-ind">Industry</th><th>CTR</th><th>CPC<br><span class="col-curr">' + curr.code + '</span></th><th>CPM<br><span class="col-curr">' + curr.code + '</span></th><th>Conv.&nbsp;Rate</th><th>CPA<br><span class="col-curr">' + curr.code + '</span></th><th>ROAS <span class="roas-tip" title="Return on ad spend — indicative average. Actual ROAS varies significantly by product margin and average order value.">&#9432;</span></th></tr>';
