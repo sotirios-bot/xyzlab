@@ -57,12 +57,15 @@
 
     function applyGateUI() {
       if (!G) return;
+      var gateWrap = document.querySelector('.bm-gate-wrap');
       if (isUnlocked) {
         if (paywallEl) paywallEl.style.display = 'none';
+        if (gateWrap)  gateWrap.classList.remove('is-locked');
         if (copyBtn)   copyBtn.disabled = false;
         if (dlBtn)     dlBtn.disabled   = false;
       } else {
         if (paywallEl) paywallEl.style.display = 'flex';
+        if (gateWrap)  gateWrap.classList.add('is-locked');
         if (copyBtn) { copyBtn.disabled = true; copyBtn.title = 'Unlock to copy'; }
         if (dlBtn)   { dlBtn.disabled   = true; dlBtn.title   = 'Unlock to download'; }
       }
