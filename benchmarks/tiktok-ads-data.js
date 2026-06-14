@@ -127,11 +127,11 @@
     industries:  industryNames,
     columns: [
       { key: 'ctr', head: 'CTR',          fmt: 'pct'   },
-      { key: 'cpc', head: 'CPC',          fmt: 'money', subheadCurrCode: true },
-      { key: 'cpm', head: 'CPM',          fmt: 'money', subheadCurrCode: true },
-      { key: 'cpv', head: 'CPV',          fmt: 'money', subheadCurrCode: true },
+      { key: 'cpc', head: 'CPC',          fmt: 'money' },
+      { key: 'cpm', head: 'CPM',          fmt: 'money' },
+      { key: 'cpv', head: 'CPV',          fmt: 'money' },
       { key: 'cvr', head: 'Conv. Rate',   fmt: 'pct'   },
-      { key: 'cpa', head: 'CPA',          fmt: 'money', subheadCurrCode: true }
+      { key: 'cpa', head: 'CPA',          fmt: 'money' }
     ],
     data: data
   };

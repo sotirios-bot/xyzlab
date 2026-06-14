@@ -25,6 +25,11 @@
       }
     }
 
+    /* ── Country pill styles ────────────────────────────────────── */
+    var _s = document.createElement('style');
+    _s.textContent = '.bm-cpill{display:inline-flex;align-items:center;gap:4px;background:rgba(8,191,173,.12);color:var(--primary);border:1.5px solid rgba(8,191,173,.3);border-radius:6px;padding:.05rem .5rem .15rem;font:inherit;font-weight:800;font-size:inherit;line-height:inherit;vertical-align:baseline;cursor:pointer;transition:background .15s,border-color .15s;}.bm-cpill:hover{background:rgba(8,191,173,.22);border-color:var(--primary);}.bm-cpill-caret{font-size:.6em;opacity:.75;}';
+    document.head.appendChild(_s);
+
     /* ── DOM refs ───────────────────────────────────────────────── */
     var countryEl  = document.getElementById('bm-country');
     var industryEl = document.getElementById('bm-industry');
@@ -100,6 +105,14 @@
     countryEl.addEventListener('change', render);
     industryEl.addEventListener('change', render);
 
+    /* ── Country pill click → focus dropdown ────────────────────── */
+    h1El.addEventListener('click', function (e) {
+      var pill = e.target.closest ? e.target.closest('.bm-cpill') : null;
+      if (!pill) return;
+      countryEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      setTimeout(function () { countryEl.focus(); }, 380);
+    });
+
     function render() {
       var country  = countryEl.value;
       var industry = industryEl.value;
@@ -116,7 +129,7 @@
       url.searchParams.set('industry', industry);
       history.replaceState({}, '', url);
 
-      h1El.innerHTML = D.channel + ' Benchmarks in <span class="highlight">' + country + '</span>' + (isAll ? '' : ' for ' + industry);
+      h1El.innerHTML = D.channel + ' Benchmarks in <button class="bm-cpill" title="Click to change country">' + country + ' <span class="bm-cpill-caret">&#9660;</span></button>' + (isAll ? '' : ' for ' + industry);
       subEl.textContent = 'Average ' + D.channel + (D.channelDesc ? ' (' + D.channelDesc + ')' : '') +
         ' performance in ' + country + (isAll ? ' across all industries' : ' for the ' + industry + ' industry') +
         (curr ? '. Figures in ' + curr.code + ' (' + curr.sym.trim() + ').' : '.');
@@ -147,10 +160,10 @@
         theadEl.innerHTML = '<tr>' +
           '<th class="col-ind">Industry</th>' +
           '<th>CTR</th>' +
-          '<th>CPC<br><span class="col-curr">' + curr.code + '</span></th>' +
-          (hasCPM ? '<th>CPM<br><span class="col-curr">' + curr.code + '</span></th>' : '') +
+          '<th>CPC</th>' +
+          (hasCPM ? '<th>CPM</th>' : '') +
           '<th>Conv.&nbsp;Rate</th>' +
-          '<th>CPA<br><span class="col-curr">' + curr.code + '</span></th>' +
+          '<th>CPA</th>' +
           '<th>ROAS <span class="roas-tip" title="Return on ad spend — indicative average. Actual ROAS varies significantly by product margin and average order value.">&#9432;</span></th>' +
           '</tr>';
 
