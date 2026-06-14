@@ -149,6 +149,7 @@
   <url><loc>https://xyzlab.com/meta-ads/benchmarks/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://xyzlab.com/seo/benchmarks/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://xyzlab.com/tiktok-ads/benchmarks/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xyzlab.com/linkedin-ads/benchmarks/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Meta Ads Video Tutorials -->
   <url><loc>https://xyzlab.com/meta-ads/track-events-meta-pixel/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
