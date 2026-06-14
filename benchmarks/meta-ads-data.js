@@ -1,0 +1,89 @@
+(function () {
+  function r(v, d) { return Math.round(v * Math.pow(10, d)) / Math.pow(10, d); }
+
+  var BASE_CTR = 1.11, BASE_CPC = 0.97, BASE_CONV = 9.21, BASE_ROAS = 3.21;
+
+  var countries = {
+    'USA':       { ctm: 1.00, cpcm: 1.00, convm: 1.00, roasm: 1.00, sym: '$',    code: 'USD' },
+    'UK':        { ctm: 0.95, cpcm: 0.61, convm: 0.98, roasm: 0.96, sym: '£',    code: 'GBP' },
+    'Canada':    { ctm: 0.97, cpcm: 1.18, convm: 0.96, roasm: 0.94, sym: 'CA$',  code: 'CAD' },
+    'Australia': { ctm: 0.95, cpcm: 1.24, convm: 0.94, roasm: 0.92, sym: 'AU$',  code: 'AUD' },
+    'Germany':   { ctm: 0.88, cpcm: 0.62, convm: 0.91, roasm: 0.89, sym: '€',    code: 'EUR' },
+    'UAE':       { ctm: 0.82, cpcm: 3.12, convm: 0.87, roasm: 0.86, sym: 'AED ', code: 'AED' }
+  };
+
+  // Array of [name, cpc_mult, ctr_mult, conv_mult, roas_mult]
+  var industries = [
+    ['All Industries',                         1.00, 1.00, 1.00, 1.00],
+    ['Apparel (E-Commerce)',                   0.72, 1.35, 1.18, 1.32],
+    ['Automotive',                             1.88, 0.72, 0.48, 0.85],
+    ['Banking & Finance',                      2.15, 0.62, 0.65, 0.78],
+    ['Beauty & Salons',                        0.78, 1.22, 1.12, 1.45],
+    ['Crypto & Web3',                          1.92, 0.85, 0.55, 0.72],
+    ['Dating',                                 1.15, 1.18, 1.85, 1.25],
+    ['Education',                              0.92, 0.82, 0.98, 1.05],
+    ['Electronics (E-Commerce)',               1.12, 0.98, 0.88, 0.95],
+    ['Entertainment & Media',                  0.58, 1.48, 1.42, 1.15],
+    ['Fitness & Gyms',                         0.85, 1.15, 0.92, 1.18],
+    ['Flights',                                1.32, 0.88, 0.42, 1.85],
+    ['Food & Beverage',                        0.62, 1.25, 1.35, 1.55],
+    ['Furniture & Home Décor (E-Commerce)',    1.18, 0.95, 0.72, 0.92],
+    ['Gaming',                                 0.68, 1.42, 1.28, 1.35],
+    ['Healthcare',                             1.68, 0.75, 0.72, 0.88],
+    ['Health & Wellness (E-Commerce)',         0.92, 1.12, 1.05, 1.28],
+    ['Home Appliances (E-Commerce)',           1.22, 0.88, 0.78, 0.88],
+    ['Home Services',                          1.52, 0.78, 0.65, 0.95],
+    ['Hotels',                                 1.28, 0.92, 0.58, 1.95],
+    ['Insurance',                              2.52, 0.55, 0.52, 0.72],
+    ['Jewelry & Accessories (E-Commerce)',     1.08, 1.15, 0.85, 1.42],
+    ['Jobs & Recruitment',                     1.42, 0.88, 1.05, 0.82],
+    ['Legal',                                  2.82, 0.52, 0.45, 0.68],
+    ['Logistics',                              1.58, 0.72, 0.68, 0.88],
+    ['Moving & Cleaning Services',             1.48, 0.82, 0.75, 1.05],
+    ['Non-Profit & Charity',                   0.45, 1.32, 1.65, 1.15],
+    ['Online Courses & EdTech',                0.82, 1.05, 1.15, 1.22],
+    ['Pet Products (E-Commerce)',              0.72, 1.28, 1.22, 1.38],
+    ['Property',                               1.95, 0.68, 0.42, 0.75],
+    ['Restaurants & Food Delivery',            0.65, 1.32, 1.45, 1.65],
+    ['Skincare (E-Commerce)',                  0.88, 1.25, 1.12, 1.35],
+    ['Software & SaaS',                        1.72, 0.82, 0.75, 0.92],
+    ['Sports & Outdoors (E-Commerce)',         0.82, 1.18, 1.08, 1.25],
+    ['Subscription Boxes',                     0.75, 1.22, 1.18, 1.42],
+    ['Toys & Baby (E-Commerce)',               0.68, 1.35, 1.25, 1.32],
+    ['Travel',                                 1.15, 0.95, 0.48, 1.75],
+    ['Wedding & Events',                       1.12, 1.08, 0.62, 1.15]
+  ];
+
+  var data = {};
+  var countryNames = Object.keys(countries);
+  var industryNames = industries.map(function(i){return i[0];});
+
+  countryNames.forEach(function(cname) {
+    var cm = countries[cname];
+    data[cname] = {};
+    industries.forEach(function(ind) {
+      var iname=ind[0], cpc_m=ind[1], ctr_m=ind[2], conv_m=ind[3], roas_m=ind[4];
+      var ctr  = r(BASE_CTR  * cm.ctm   * ctr_m,  2);
+      var cpc  = r(BASE_CPC  * cm.cpcm  * cpc_m,  2);
+      var cpm  = r(cpc * ctr * 10,                 2);
+      var conv = r(BASE_CONV * cm.convm * conv_m,  2);
+      var cpa  = r(cpc / (conv / 100),             2);
+      var roas = r(BASE_ROAS * cm.roasm * roas_m,  2);
+      data[cname][iname] = {ctr:ctr, cpc:cpc, cpm:cpm, conv_rate:conv, cpa:cpa, roas:roas};
+    });
+  });
+
+  window.BENCHMARK_DATA = {
+    channel:     'Meta Ads',
+    channelSlug: 'meta-ads',
+    updated:     'Q2 2026',
+    countries:   countryNames,
+    currencies:  (function(){
+      var o={};
+      countryNames.forEach(function(c){o[c]={sym:countries[c].sym, code:countries[c].code};});
+      return o;
+    })(),
+    industries:  industryNames,
+    data:        data
+  };
+})();
