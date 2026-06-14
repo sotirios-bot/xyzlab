@@ -27,10 +27,7 @@
     'UAE':          { ctm: 0.82, cpcm: 3.12,  convm: 0.87, roasm: 0.86, sym: 'AED ', code: 'AED' }
   };
 
-  var PINNED = ['USA', 'UK', 'Canada', 'Australia', 'Germany'];
-  var countryNames = PINNED.concat(
-    Object.keys(countries).filter(function (c) { return PINNED.indexOf(c) === -1; }).sort()
-  );
+  var countryNames = Object.keys(countries).sort();
 
   // Array of [name, cpc_mult, ctr_mult, conv_mult, roas_mult]
   var industries = [
