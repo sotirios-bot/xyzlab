@@ -69,7 +69,6 @@
         if (gateWrap)  gateWrap.classList.add('is-locked');
         if (copyBtn) { copyBtn.disabled = true; }
         if (dlBtn)   { dlBtn.disabled   = true; }
-        // Inject hover tooltips linking to paywall card
         [copyBtn, dlBtn].forEach(function (btn) {
           if (!btn || btn.parentElement.classList.contains('bm-btn-tip-wrap')) return;
           var wrap = document.createElement('div');
@@ -104,7 +103,7 @@
     function render() {
       var country  = countryEl.value;
       var industry = industryEl.value;
-      var curr     = D.currencies[country];
+      var curr     = D.currencies ? D.currencies[country] : null;
       var isAll    = industry === 'All Industries';
 
       if (isUnlocked) {
@@ -117,37 +116,61 @@
       url.searchParams.set('industry', industry);
       history.replaceState({}, '', url);
 
-      h1El.innerHTML    = D.channel + ' Benchmarks in <span class="highlight">' + country + '</span>' + (isAll ? '' : ' for ' + industry);
-      subEl.textContent = 'Average ' + D.channel + (D.channelDesc ? ' (' + D.channelDesc + ')' : '') + ' performance in ' + country + (isAll ? ' across all industries' : ' for the ' + industry + ' industry') + '. Figures in ' + curr.code + ' (' + curr.sym.trim() + ').';
-      document.title    = D.channel + ' Benchmarks in ' + country + (isAll ? '' : ' for ' + industry) + ' (' + D.updated + ') | XYZ Lab';
+      h1El.innerHTML = D.channel + ' Benchmarks in <span class="highlight">' + country + '</span>' + (isAll ? '' : ' for ' + industry);
+      subEl.textContent = 'Average ' + D.channel + (D.channelDesc ? ' (' + D.channelDesc + ')' : '') +
+        ' performance in ' + country + (isAll ? ' across all industries' : ' for the ' + industry + ' industry') +
+        (curr ? '. Figures in ' + curr.code + ' (' + curr.sym.trim() + ').' : '.');
+      document.title = D.channel + ' Benchmarks in ' + country + (isAll ? '' : ' for ' + industry) + ' (' + D.updated + ') | XYZ Lab';
 
-      theadEl.innerHTML = '<tr>' +
-        '<th class="col-ind">Industry</th>' +
-        '<th>CTR</th>' +
-        '<th>CPC<br><span class="col-curr">' + curr.code + '</span></th>' +
-        (hasCPM ? '<th>CPM<br><span class="col-curr">' + curr.code + '</span></th>' : '') +
-        '<th>Conv.&nbsp;Rate</th>' +
-        '<th>CPA<br><span class="col-curr">' + curr.code + '</span></th>' +
-        '<th>ROAS <span class="roas-tip" title="Return on ad spend — indicative average. Actual ROAS varies significantly by product margin and average order value.">&#9432;</span></th>' +
-        '</tr>';
+      if (D.columns) {
+        /* ── Generic column mode (SEO, etc.) ─────────────────── */
+        theadEl.innerHTML = '<tr><th class="col-ind">Industry</th>' +
+          D.columns.map(function (col) {
+            return '<th>' + col.head + (col.subhead ? '<br><span class="col-curr">' + col.subhead + '</span>' : '') + '</th>';
+          }).join('') + '</tr>';
 
-      tbodyEl.innerHTML = D.industries.map(function (ind, idx) {
-        var d       = D.data[country][ind];
-        var locked  = !isUnlocked && G && idx >= FREE_ROWS;
-        var classes = [];
-        if (ind === industry) classes.push('bm-hi');
-        if (locked)           classes.push('bm-blurred');
-        var cls = classes.length ? ' class="' + classes.join(' ') + '"' : '';
-        return '<tr' + cls + '>' +
-          '<td class="col-ind">' + ind + '</td>' +
-          '<td>' + pct(d.ctr) + '</td>' +
-          '<td>' + money(d.cpc, curr.sym, curr.noDecimal) + '</td>' +
-          (hasCPM ? '<td>' + money(d.cpm, curr.sym, curr.noDecimal) + '</td>' : '') +
-          '<td>' + pct(d.conv_rate) + '</td>' +
-          '<td>' + money(d.cpa, curr.sym, curr.noDecimal) + '</td>' +
-          '<td>' + d.roas.toFixed(2) + 'x</td>' +
+        tbodyEl.innerHTML = D.industries.map(function (ind, idx) {
+          var d       = D.data[country][ind];
+          var locked  = !isUnlocked && G && idx >= FREE_ROWS;
+          var classes = [];
+          if (ind === industry) classes.push('bm-hi');
+          if (locked)           classes.push('bm-blurred');
+          var cls = classes.length ? ' class="' + classes.join(' ') + '"' : '';
+          return '<tr' + cls + '><td class="col-ind">' + ind + '</td>' +
+            D.columns.map(function (col) {
+              return '<td>' + formatCell(d[col.key], col, curr) + '</td>';
+            }).join('') + '</tr>';
+        }).join('');
+      } else {
+        /* ── PPC column mode (Meta Ads, Google Ads, etc.) ────── */
+        theadEl.innerHTML = '<tr>' +
+          '<th class="col-ind">Industry</th>' +
+          '<th>CTR</th>' +
+          '<th>CPC<br><span class="col-curr">' + curr.code + '</span></th>' +
+          (hasCPM ? '<th>CPM<br><span class="col-curr">' + curr.code + '</span></th>' : '') +
+          '<th>Conv.&nbsp;Rate</th>' +
+          '<th>CPA<br><span class="col-curr">' + curr.code + '</span></th>' +
+          '<th>ROAS <span class="roas-tip" title="Return on ad spend — indicative average. Actual ROAS varies significantly by product margin and average order value.">&#9432;</span></th>' +
           '</tr>';
-      }).join('');
+
+        tbodyEl.innerHTML = D.industries.map(function (ind, idx) {
+          var d       = D.data[country][ind];
+          var locked  = !isUnlocked && G && idx >= FREE_ROWS;
+          var classes = [];
+          if (ind === industry) classes.push('bm-hi');
+          if (locked)           classes.push('bm-blurred');
+          var cls = classes.length ? ' class="' + classes.join(' ') + '"' : '';
+          return '<tr' + cls + '>' +
+            '<td class="col-ind">' + ind + '</td>' +
+            '<td>' + pct(d.ctr) + '</td>' +
+            '<td>' + money(d.cpc, curr.sym, curr.noDecimal) + '</td>' +
+            (hasCPM ? '<td>' + money(d.cpm, curr.sym, curr.noDecimal) + '</td>' : '') +
+            '<td>' + pct(d.conv_rate) + '</td>' +
+            '<td>' + money(d.cpa, curr.sym, curr.noDecimal) + '</td>' +
+            '<td>' + d.roas.toFixed(2) + 'x</td>' +
+            '</tr>';
+        }).join('');
+      }
 
       if (countLbl) countLbl.textContent = D.industries.length + ' industries';
 
@@ -160,11 +183,33 @@
     /* ── Formatters ─────────────────────────────────────────────── */
     function pct(v)            { return v.toFixed(2) + '%'; }
     function money(v, sym, nd) { return (nd || v >= 100) ? sym + Math.round(v) : sym + v.toFixed(2); }
+    function numFmt(v)         { return Math.round(v).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
     function slugify(s)        { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''); }
+
+    function formatCell(v, col, curr) {
+      switch (col.fmt) {
+        case 'pct':   return pct(v);
+        case 'money': return money(v, curr ? curr.sym : '', curr ? curr.noDecimal : false);
+        case 'num':   return numFmt(v);
+        case 'score': return Math.round(v).toString();
+        case 'roas':  return v.toFixed(2) + 'x';
+        default:      return String(v);
+      }
+    }
 
     /* ── Data builders ──────────────────────────────────────────── */
     function buildCSV(country) {
-      var curr = D.currencies[country];
+      var curr = D.currencies ? D.currencies[country] : null;
+      if (D.columns) {
+        var hdr  = ['Industry'].concat(D.columns.map(function (c) { return c.head; })).join(',');
+        var rows = D.industries.map(function (ind) {
+          var d = D.data[country][ind];
+          return ['"' + ind + '"'].concat(D.columns.map(function (col) {
+            return formatCell(d[col.key], col, null);
+          })).join(',');
+        });
+        return hdr + '\n' + rows.join('\n');
+      }
       var cols = ['Industry', 'CTR', 'CPC (' + curr.code + ')'];
       if (hasCPM) cols.push('CPM (' + curr.code + ')');
       cols.push('Conv. Rate', 'CPA (' + curr.code + ')', 'ROAS');
@@ -179,7 +224,17 @@
     }
 
     function buildTSV(country) {
-      var curr = D.currencies[country];
+      var curr = D.currencies ? D.currencies[country] : null;
+      if (D.columns) {
+        var hdr  = ['Industry'].concat(D.columns.map(function (c) { return c.head; })).join('\t');
+        var rows = D.industries.map(function (ind) {
+          var d = D.data[country][ind];
+          return [ind].concat(D.columns.map(function (col) {
+            return formatCell(d[col.key], col, null);
+          })).join('\t');
+        });
+        return hdr + '\n' + rows.join('\n');
+      }
       var cols = ['Industry', 'CTR', 'CPC (' + curr.code + ')'];
       if (hasCPM) cols.push('CPM (' + curr.code + ')');
       cols.push('Conv. Rate', 'CPA (' + curr.code + ')', 'ROAS');
