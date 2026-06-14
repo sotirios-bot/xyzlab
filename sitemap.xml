@@ -144,6 +144,9 @@
   <url><loc>https://xyzlab.com/google-analytics/track-pinterest-traffic/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://xyzlab.com/google-analytics/track-facebook-traffic/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
+  <!-- Meta Ads Benchmarks -->
+  <url><loc>https://xyzlab.com/meta-ads/benchmarks/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
   <!-- Meta Ads Video Tutorials -->
   <url><loc>https://xyzlab.com/meta-ads/track-events-meta-pixel/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://xyzlab.com/meta-ads/meta-pixel-template-tag-manager/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
