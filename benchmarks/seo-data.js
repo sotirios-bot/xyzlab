@@ -118,9 +118,9 @@
     countries:   countryNames,
     industries:  industryNames,
     columns: [
-      { key: 'traffic',   head: 'Avg Monthly Organic Traffic', fmt: 'num'   },
-      { key: 'ctr',       head: 'Organic CTR',                 fmt: 'pct'   },
-      { key: 'backlinks', head: 'Backlinks Needed for P1',     fmt: 'num'   },
+      { key: 'traffic',   head: 'Monthly Organic Traffic', fmt: 'num'   },
+      { key: 'ctr',       head: 'Organic CTR',             fmt: 'pct'   },
+      { key: 'backlinks', head: 'Backlinks for P1',        fmt: 'num'   },
       { key: 'kd',        head: 'Keyword Difficulty',          subhead: '/ 100', fmt: 'score' },
       { key: 'da',        head: 'Domain Authority',            subhead: '/ 100', fmt: 'score' }
     ],
