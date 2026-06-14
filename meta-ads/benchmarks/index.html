@@ -72,6 +72,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 #bm-copy:disabled, #bm-download:disabled { opacity:.4; cursor:not-allowed; }
 .bm-btn-tip-wrap { position:relative; display:inline-block; }
 .bm-btn-tip { visibility:hidden; opacity:0; position:absolute; bottom:calc(100% + 8px); left:50%; transform:translateX(-50%); background:#1e293b; color:#fff; padding:.45rem .9rem; border-radius:6px; white-space:nowrap; font-size:.8rem; font-weight:500; transition:opacity .15s; z-index:200; pointer-events:none; }
+.bm-btn-tip::before { content:''; position:absolute; bottom:-8px; left:-10px; right:-10px; height:8px; }
 .bm-btn-tip::after { content:''; position:absolute; top:100%; left:50%; transform:translateX(-50%); border:5px solid transparent; border-top-color:#1e293b; }
 .bm-btn-tip-wrap:hover .bm-btn-tip { visibility:visible; opacity:1; pointer-events:auto; }
 .bm-btn-tip a { color:var(--secondary); font-weight:700; text-decoration:none; }
