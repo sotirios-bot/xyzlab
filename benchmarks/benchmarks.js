@@ -25,9 +25,9 @@
       }
     }
 
-    /* ── Country pill styles ────────────────────────────────────── */
+    /* ── Inline country select styles ──────────────────────────── */
     var _s = document.createElement('style');
-    _s.textContent = '.bm-cpill{display:inline-flex;align-items:center;gap:4px;background:rgba(8,191,173,.12);color:var(--primary);border:1.5px solid rgba(8,191,173,.3);border-radius:6px;padding:.05rem .5rem .15rem;font:inherit;font-weight:800;font-size:inherit;line-height:inherit;vertical-align:baseline;cursor:pointer;transition:background .15s,border-color .15s;}.bm-cpill:hover{background:rgba(8,191,173,.22);border-color:var(--primary);}.bm-cpill-caret{font-size:.6em;opacity:.75;}';
+    _s.textContent = 'select.bm-cpill{display:inline-block;appearance:none;-webkit-appearance:none;background-color:rgba(8,191,173,.12);background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%226%22%20viewBox%3D%220%200%2010%206%22%3E%3Cpath%20d%3D%22M0%200l5%206%205-6z%22%20fill%3D%22%2308bfad%22%2F%3E%3C%2Fsvg%3E");background-repeat:no-repeat;background-position:right .55rem center;color:var(--primary);border:1.5px solid rgba(8,191,173,.35);border-radius:6px;padding:.05rem 1.8rem .15rem .55rem;font:inherit;font-weight:800;font-size:inherit;line-height:inherit;vertical-align:baseline;cursor:pointer;transition:background-color .15s,border-color .15s;}select.bm-cpill:hover{background-color:rgba(8,191,173,.22);border-color:var(--primary);}select.bm-cpill:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(8,191,173,.15);}';
     document.head.appendChild(_s);
 
     /* ── DOM refs ───────────────────────────────────────────────── */
@@ -105,12 +105,12 @@
     countryEl.addEventListener('change', render);
     industryEl.addEventListener('change', render);
 
-    /* ── Country pill click → focus dropdown ────────────────────── */
-    h1El.addEventListener('click', function (e) {
-      var pill = e.target.closest ? e.target.closest('.bm-cpill') : null;
-      if (!pill) return;
-      countryEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      setTimeout(function () { countryEl.focus(); }, 380);
+    /* ── Inline country select → sync + re-render ───────────────── */
+    h1El.addEventListener('change', function (e) {
+      if (e.target.classList && e.target.classList.contains('bm-cpill')) {
+        countryEl.value = e.target.value;
+        render();
+      }
     });
 
     function render() {
@@ -129,7 +129,8 @@
       url.searchParams.set('industry', industry);
       history.replaceState({}, '', url);
 
-      h1El.innerHTML = D.channel + ' Benchmarks in <button class="bm-cpill" title="Click to change country">' + country + ' <span class="bm-cpill-caret">&#9660;</span></button>' + (isAll ? '' : ' for ' + industry);
+      var pillOpts = D.countries.map(function (c) { return '<option value="' + c + '"' + (c === country ? ' selected' : '') + '>' + c + '</option>'; }).join('');
+      h1El.innerHTML = D.channel + ' Benchmarks in <select class="bm-cpill">' + pillOpts + '</select>' + (isAll ? '' : ' for ' + industry);
       subEl.textContent = 'Average ' + D.channel + (D.channelDesc ? ' (' + D.channelDesc + ')' : '') +
         ' performance in ' + country + (isAll ? ' across all industries' : ' for the ' + industry + ' industry') +
         (curr ? '. Figures in ' + curr.code + ' (' + curr.sym.trim() + ').' : '.');
