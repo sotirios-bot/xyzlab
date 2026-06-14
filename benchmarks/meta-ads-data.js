@@ -4,13 +4,33 @@
   var BASE_CTR = 1.11, BASE_CPC = 0.97, BASE_CONV = 9.21, BASE_ROAS = 3.21;
 
   var countries = {
-    'USA':       { ctm: 1.00, cpcm: 1.00, convm: 1.00, roasm: 1.00, sym: '$',    code: 'USD' },
-    'UK':        { ctm: 0.95, cpcm: 0.61, convm: 0.98, roasm: 0.96, sym: '£',    code: 'GBP' },
-    'Canada':    { ctm: 0.97, cpcm: 1.18, convm: 0.96, roasm: 0.94, sym: 'CA$',  code: 'CAD' },
-    'Australia': { ctm: 0.95, cpcm: 1.24, convm: 0.94, roasm: 0.92, sym: 'AU$',  code: 'AUD' },
-    'Germany':   { ctm: 0.88, cpcm: 0.62, convm: 0.91, roasm: 0.89, sym: '€',    code: 'EUR' },
-    'UAE':       { ctm: 0.82, cpcm: 3.12, convm: 0.87, roasm: 0.86, sym: 'AED ', code: 'AED' }
+    'USA':          { ctm: 1.00, cpcm: 1.00,  convm: 1.00, roasm: 1.00, sym: '$',    code: 'USD' },
+    'UK':           { ctm: 0.95, cpcm: 0.61,  convm: 0.98, roasm: 0.96, sym: '£',    code: 'GBP' },
+    'Canada':       { ctm: 0.97, cpcm: 1.18,  convm: 0.96, roasm: 0.94, sym: 'CA$',  code: 'CAD' },
+    'Australia':    { ctm: 0.95, cpcm: 1.24,  convm: 0.94, roasm: 0.92, sym: 'AU$',  code: 'AUD' },
+    'Germany':      { ctm: 0.88, cpcm: 0.62,  convm: 0.91, roasm: 0.89, sym: '€',    code: 'EUR' },
+    'Bahrain':      { ctm: 0.80, cpcm: 0.169, convm: 0.84, roasm: 0.83, sym: 'BHD ', code: 'BHD' },
+    'France':       { ctm: 0.90, cpcm: 0.506, convm: 0.89, roasm: 0.87, sym: '€',    code: 'EUR' },
+    'Hong Kong':    { ctm: 0.88, cpcm: 4.301, convm: 0.91, roasm: 0.90, sym: 'HK$',  code: 'HKD' },
+    'Italy':        { ctm: 0.88, cpcm: 0.386, convm: 0.86, roasm: 0.85, sym: '€',    code: 'EUR' },
+    'Japan':        { ctm: 0.82, cpcm: 72.0,  convm: 0.88, roasm: 0.88, sym: '¥',    code: 'JPY', noDecimal: true },
+    'Netherlands':  { ctm: 0.93, cpcm: 0.552, convm: 0.92, roasm: 0.90, sym: '€',    code: 'EUR' },
+    'New Zealand':  { ctm: 0.94, cpcm: 1.122, convm: 0.93, roasm: 0.91, sym: 'NZ$',  code: 'NZD' },
+    'Poland':       { ctm: 0.85, cpcm: 1.134, convm: 0.84, roasm: 0.88, sym: 'zł',   code: 'PLN' },
+    'Qatar':        { ctm: 0.82, cpcm: 2.111, convm: 0.86, roasm: 0.85, sym: 'QAR ', code: 'QAR' },
+    'Saudi Arabia': { ctm: 0.80, cpcm: 1.950, convm: 0.85, roasm: 0.84, sym: 'SAR ', code: 'SAR' },
+    'Singapore':    { ctm: 0.90, cpcm: 0.837, convm: 0.93, roasm: 0.92, sym: 'S$',   code: 'SGD' },
+    'South Korea':  { ctm: 0.85, cpcm: 567.0, convm: 0.90, roasm: 0.89, sym: '₩',    code: 'KRW', noDecimal: true },
+    'Spain':        { ctm: 0.92, cpcm: 0.368, convm: 0.88, roasm: 0.86, sym: '€',    code: 'EUR' },
+    'Thailand':     { ctm: 0.78, cpcm: 7.700, convm: 0.82, roasm: 0.85, sym: '฿',    code: 'THB' },
+    'Turkiye':      { ctm: 0.82, cpcm: 5.760, convm: 0.80, roasm: 0.80, sym: '₺',    code: 'TRY' },
+    'UAE':          { ctm: 0.82, cpcm: 3.12,  convm: 0.87, roasm: 0.86, sym: 'AED ', code: 'AED' }
   };
+
+  var PINNED = ['USA', 'UK', 'Canada', 'Australia', 'Germany'];
+  var countryNames = PINNED.concat(
+    Object.keys(countries).filter(function (c) { return PINNED.indexOf(c) === -1; }).sort()
+  );
 
   // Array of [name, cpc_mult, ctr_mult, conv_mult, roas_mult]
   var industries = [
@@ -55,21 +75,20 @@
   ];
 
   var data = {};
-  var countryNames = Object.keys(countries);
-  var industryNames = industries.map(function(i){return i[0];});
+  var industryNames = industries.map(function (i) { return i[0]; });
 
-  countryNames.forEach(function(cname) {
+  countryNames.forEach(function (cname) {
     var cm = countries[cname];
     data[cname] = {};
-    industries.forEach(function(ind) {
-      var iname=ind[0], cpc_m=ind[1], ctr_m=ind[2], conv_m=ind[3], roas_m=ind[4];
+    industries.forEach(function (ind) {
+      var iname = ind[0], cpc_m = ind[1], ctr_m = ind[2], conv_m = ind[3], roas_m = ind[4];
       var ctr  = r(BASE_CTR  * cm.ctm   * ctr_m,  2);
       var cpc  = r(BASE_CPC  * cm.cpcm  * cpc_m,  2);
       var cpm  = r(cpc * ctr * 10,                 2);
       var conv = r(BASE_CONV * cm.convm * conv_m,  2);
       var cpa  = r(cpc / (conv / 100),             2);
       var roas = r(BASE_ROAS * cm.roasm * roas_m,  2);
-      data[cname][iname] = {ctr:ctr, cpc:cpc, cpm:cpm, conv_rate:conv, cpa:cpa, roas:roas};
+      data[cname][iname] = { ctr: ctr, cpc: cpc, cpm: cpm, conv_rate: conv, cpa: cpa, roas: roas };
     });
   });
 
@@ -78,9 +97,11 @@
     channelSlug: 'meta-ads',
     updated:     'Q2 2026',
     countries:   countryNames,
-    currencies:  (function(){
-      var o={};
-      countryNames.forEach(function(c){o[c]={sym:countries[c].sym, code:countries[c].code};});
+    currencies:  (function () {
+      var o = {};
+      countryNames.forEach(function (c) {
+        o[c] = { sym: countries[c].sym, code: countries[c].code, noDecimal: !!countries[c].noDecimal };
+      });
       return o;
     })(),
     industries:  industryNames,

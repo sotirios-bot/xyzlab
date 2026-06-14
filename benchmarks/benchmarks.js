@@ -106,6 +106,11 @@
       var curr     = D.currencies[country];
       var isAll    = industry === 'All Industries';
 
+      if (isUnlocked) {
+        if (copyBtn) copyBtn.disabled = false;
+        if (dlBtn)   dlBtn.disabled   = false;
+      }
+
       var url = new URL(window.location.href);
       url.searchParams.set('country', country);
       url.searchParams.set('industry', industry);
@@ -135,10 +140,10 @@
         return '<tr' + cls + '>' +
           '<td class="col-ind">' + ind + '</td>' +
           '<td>' + pct(d.ctr) + '</td>' +
-          '<td>' + money(d.cpc, curr.sym) + '</td>' +
-          '<td>' + money(d.cpm, curr.sym) + '</td>' +
+          '<td>' + money(d.cpc, curr.sym, curr.noDecimal) + '</td>' +
+          '<td>' + money(d.cpm, curr.sym, curr.noDecimal) + '</td>' +
           '<td>' + pct(d.conv_rate) + '</td>' +
-          '<td>' + money(d.cpa, curr.sym) + '</td>' +
+          '<td>' + money(d.cpa, curr.sym, curr.noDecimal) + '</td>' +
           '<td>' + d.roas.toFixed(2) + 'x</td>' +
           '</tr>';
       }).join('');
@@ -152,8 +157,8 @@
     }
 
     /* ── Formatters ─────────────────────────────────────────────── */
-    function pct(v)        { return v.toFixed(2) + '%'; }
-    function money(v, sym) { return v >= 100 ? sym + Math.round(v) : sym + v.toFixed(2); }
+    function pct(v)           { return v.toFixed(2) + '%'; }
+    function money(v, sym, nd) { return (nd || v >= 100) ? sym + Math.round(v) : sym + v.toFixed(2); }
     function slugify(s)    { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''); }
 
     /* ── Data builders ──────────────────────────────────────────── */
@@ -162,7 +167,7 @@
       var hdr  = ['Industry', 'CTR', 'CPC (' + curr.code + ')', 'CPM (' + curr.code + ')', 'Conv. Rate', 'CPA (' + curr.code + ')', 'ROAS'].join(',');
       var rows = D.industries.map(function (ind) {
         var d = D.data[country][ind];
-        return ['"' + ind + '"', pct(d.ctr), money(d.cpc, ''), money(d.cpm, ''), pct(d.conv_rate), money(d.cpa, ''), d.roas.toFixed(2) + 'x'].join(',');
+        return ['"' + ind + '"', pct(d.ctr), money(d.cpc, '', curr.noDecimal), money(d.cpm, '', curr.noDecimal), pct(d.conv_rate), money(d.cpa, '', curr.noDecimal), d.roas.toFixed(2) + 'x'].join(',');
       });
       return hdr + '\n' + rows.join('\n');
     }
@@ -172,7 +177,7 @@
       var hdr  = ['Industry', 'CTR', 'CPC (' + curr.code + ')', 'CPM (' + curr.code + ')', 'Conv. Rate', 'CPA (' + curr.code + ')', 'ROAS'].join('\t');
       var rows = D.industries.map(function (ind) {
         var d = D.data[country][ind];
-        return [ind, pct(d.ctr), money(d.cpc, curr.sym), money(d.cpm, curr.sym), pct(d.conv_rate), money(d.cpa, curr.sym), d.roas.toFixed(2) + 'x'].join('\t');
+        return [ind, pct(d.ctr), money(d.cpc, curr.sym, curr.noDecimal), money(d.cpm, curr.sym, curr.noDecimal), pct(d.conv_rate), money(d.cpa, curr.sym, curr.noDecimal), d.roas.toFixed(2) + 'x'].join('\t');
       });
       return hdr + '\n' + rows.join('\n');
     }
