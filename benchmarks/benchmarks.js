@@ -77,7 +77,7 @@
           wrap.appendChild(btn);
           var tip = document.createElement('span');
           tip.className = 'bm-btn-tip';
-          tip.innerHTML = '&#128274; <a href="' + G.stripeUrl + '">Unlock for ' + G.price + '</a> to use';
+          tip.innerHTML = '&#128274; <a href="#bm-paywall">Unlock for ' + G.price + '</a> to use';
           wrap.appendChild(tip);
         });
       }
