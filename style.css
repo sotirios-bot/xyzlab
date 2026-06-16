@@ -1067,6 +1067,15 @@ a.course-icon:hover {
   font-size: 1.1rem;
   text-align: right;
 }
+.tl-group-label {
+  font-size: .72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  color: var(--primary);
+  padding: 1.5rem 0 .25rem;
+}
+.tl-group-label:first-child { padding-top: 0; }
 
 /* Coaching CTA box (above Tally form) */
 .coaching-cta {
