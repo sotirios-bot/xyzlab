@@ -54,7 +54,7 @@
     });
 
     var urlP = new URLSearchParams(window.location.search);
-    var pc = urlP.get('country'), pi = urlP.get('industry');
+    var pc = window.BENCHMARK_COUNTRY || urlP.get('country'), pi = urlP.get('industry');
     if (pc && D.countries.indexOf(pc) !== -1) countryEl.value = pc;
     if (pi && D.industries.indexOf(pi) !== -1) industryEl.value = pi;
 
@@ -124,13 +124,17 @@
         if (dlBtn)   dlBtn.disabled   = false;
       }
 
-      var url = new URL(window.location.href);
-      url.searchParams.set('country', country);
-      url.searchParams.set('industry', industry);
-      history.replaceState({}, '', url);
+      if (!window.BENCHMARK_STATIC_URL) {
+        var url = new URL(window.location.href);
+        url.searchParams.set('country', country);
+        url.searchParams.set('industry', industry);
+        history.replaceState({}, '', url);
+      }
 
-      var pillOpts = D.countries.map(function (c) { return '<option value="' + c + '"' + (c === country ? ' selected' : '') + '>' + c + '</option>'; }).join('');
-      h1El.innerHTML = D.channel + ' Benchmarks in <select class="bm-cpill">' + pillOpts + '</select>' + (isAll ? '' : ' for ' + industry);
+      if (!window.BENCHMARK_STATIC_H1) {
+        var pillOpts = D.countries.map(function (c) { return '<option value="' + c + '"' + (c === country ? ' selected' : '') + '>' + c + '</option>'; }).join('');
+        h1El.innerHTML = D.channel + ' Benchmarks in <select class="bm-cpill">' + pillOpts + '</select>' + (isAll ? '' : ' for ' + industry);
+      }
       subEl.textContent = 'Average ' + D.channel + (D.channelDesc ? ' (' + D.channelDesc + ')' : '') +
         ' performance in ' + country + (isAll ? ' across all industries' : ' for the ' + industry + ' industry') +
         (curr ? '. Figures in ' + curr.code + ' (' + curr.sym.trim() + ').' : '.');
