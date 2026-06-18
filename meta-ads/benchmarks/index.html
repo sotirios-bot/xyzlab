@@ -12,89 +12,57 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
   <link rel="icon" type="image/png" href="../../favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Free Meta Ads benchmarks by country and industry — CTR, CPC, CPM, conversion rate, CPA and ROAS for USA, UK, Canada, Australia, Germany and UAE." />
+  <meta name="description" content="Meta Ads benchmarks by country and industry — CTR, CPC, CPM, conversion rate, CPA and ROAS for 35 countries in local currency. Select your country to view localised benchmark data." />
   <link rel="canonical" href="https://xyzlab.com/meta-ads/benchmarks/" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://xyzlab.com/meta-ads/benchmarks/" />
-  <meta property="og:title" content="Meta Ads Benchmarks by Country and Industry (Q2 2026) | XYZ Lab" />
-  <meta property="og:description" content="Free Meta Ads benchmarks by country and industry — CTR, CPC, CPM, conversion rate, CPA and ROAS for USA, UK, Canada, Australia, Germany and UAE." />
+  <meta property="og:title" content="Meta Ads Benchmarks by Country &amp; Industry (Q2 2026) | XYZ Lab" />
+  <meta property="og:description" content="Meta Ads benchmarks by country and industry — CTR, CPC, CPM, conversion rate, CPA and ROAS for 35 countries in local currency. Select your country to view localised benchmark data." />
   <meta property="og:image" content="https://xyzlab.com/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Meta Ads Benchmarks by Country and Industry (Q2 2026) | XYZ Lab" />
-  <meta name="twitter:description" content="Free Meta Ads benchmarks by country and industry — CTR, CPC, CPM, conversion rate, CPA and ROAS for USA, UK, Canada, Australia, Germany and UAE." />
+  <meta name="twitter:title" content="Meta Ads Benchmarks by Country &amp; Industry (Q2 2026) | XYZ Lab" />
+  <meta name="twitter:description" content="Meta Ads benchmarks by country and industry — CTR, CPC, CPM, conversion rate, CPA and ROAS for 35 countries in local currency." />
   <meta name="twitter:image" content="https://xyzlab.com/og-image.jpg" />
-  <title>Meta Ads Benchmarks by Country and Industry (Q2 2026) | XYZ Lab</title>
+  <title>Meta Ads Benchmarks by Country &amp; Industry (Q2 2026) | XYZ Lab</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../style.css" />
   <link rel="stylesheet" href="../../course.css" />
   <style>
-.bm-filters { display:flex; flex-wrap:wrap; gap:1rem; align-items:center; margin-bottom:1.5rem; }
-.bm-filters select { padding:.6rem 1rem; border:1.5px solid #e2e8f0; border-radius:8px; font-family:inherit; font-size:.95rem; font-weight:500; background:#fff; color:#1a202c; cursor:pointer; min-width:180px; }
-.bm-filters select:focus { outline:none; border-color:var(--primary); box-shadow:0 0 0 3px rgba(8,191,173,.12); }
-.bm-actions { display:flex; flex-wrap:wrap; gap:.75rem; margin-bottom:1.5rem; }
-.bm-actions button { padding:.55rem 1.1rem; border:1.5px solid var(--primary); border-radius:8px; font-family:inherit; font-size:.875rem; font-weight:600; cursor:pointer; transition:all .18s; }
-.btn-copy { background:#fff; color:var(--primary); }
-.btn-copy:hover { background:var(--primary); color:#fff; }
-.btn-dl { background:var(--primary); color:#fff; }
-.btn-dl:hover { background:#07a99a; }
-.bm-wrap { overflow-x:auto; border:1px solid #e2e8f0; border-radius:12px; }
-.bm-table { width:100%; border-collapse:collapse; font-size:.875rem; white-space:nowrap; }
-.bm-table thead th { position:sticky; top:0; background:#f8fafc; padding:.75rem 1rem; text-align:left; font-size:.78rem; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:#64748b; border-bottom:2px solid #e2e8f0; }
-.bm-table thead th:not(.col-ind) { text-align:right; }
-.bm-table td { padding:.65rem 1rem; border-bottom:1px solid #f1f5f9; color:#374151; }
-.bm-table td:not(.col-ind) { text-align:right; font-variant-numeric:tabular-nums; }
-.bm-table tbody tr:last-child td { border-bottom:none; }
-.bm-table tbody tr:hover { background:#f8fafc; }
-.bm-table tbody tr.bm-hi { background:#f0fdfb !important; }
-.bm-table tbody tr.bm-hi td:first-child { font-weight:700; color:var(--primary); border-left:3px solid var(--primary); }
-.col-ind { min-width:220px; white-space:normal; }
-.col-curr { font-size:.7rem; font-weight:500; color:#94a3b8; display:block; }
-.roas-tip { cursor:help; color:#94a3b8; font-size:.8rem; }
-.bm-meta { font-size:.8rem; color:#94a3b8; margin-bottom:1rem; }
-.bm-note { margin-top:1.5rem; padding:1rem 1.25rem; background:#f8fafc; border-left:3px solid var(--primary); border-radius:0 8px 8px 0; font-size:.85rem; color:#64748b; }
-@media(max-width:640px){.bm-filters select{min-width:140px;} .col-ind{min-width:160px;}}
-/* Gate */
-.bm-blurred td { filter:blur(5px); user-select:none; pointer-events:none; }
-.bm-gate-wrap { position:relative; }
-.bm-paywall { display:none; flex-direction:column; align-items:center; margin-top:1.25rem; background:#f8fafc; border:1.5px solid #e2e8f0; border-radius:12px; padding:2.25rem 1.5rem; text-align:center; }
-.bm-paywall-box { text-align:center; max-width:460px; }
-.bm-paywall-box h3 { font-size:1.25rem; font-weight:800; color:#1a202c; margin:0 0 .5rem; }
-.bm-paywall-box p  { font-size:.9rem; color:#64748b; margin:0 0 1rem; }
-.bm-perks { list-style:none; padding:0; margin:0 0 1.25rem; text-align:left; display:inline-block; }
-.bm-perks li { font-size:.875rem; color:#374151; padding:.2rem 0; }
-.bm-perks li::before { content:'✓ '; color:var(--primary); font-weight:700; }
-.bm-unlock-btn { display:inline-block; padding:.75rem 2rem; font-size:1rem; font-weight:700; border-radius:8px; background:var(--primary); color:#fff !important; text-decoration:none; transition:background .18s; }
-.bm-unlock-btn:hover { background:#07a99a; }
-.bm-already-paid { margin-top:.85rem; font-size:.8rem; color:#94a3b8; }
-.bm-already-paid a { color:var(--primary); text-decoration:underline; }
-#bm-copy:disabled, #bm-download:disabled { opacity:.4; cursor:not-allowed; }
-.bm-btn-tip-wrap { position:relative; display:inline-block; }
-.bm-btn-tip { visibility:hidden; opacity:0; position:absolute; bottom:calc(100% + 8px); left:50%; transform:translateX(-50%); background:#1e293b; color:#fff; padding:.45rem .9rem; border-radius:6px; white-space:nowrap; font-size:.8rem; font-weight:500; transition:opacity .15s; z-index:200; pointer-events:none; }
-.bm-btn-tip::before { content:''; position:absolute; bottom:-8px; left:-10px; right:-10px; height:8px; }
-.bm-btn-tip::after { content:''; position:absolute; top:100%; left:50%; transform:translateX(-50%); border:5px solid transparent; border-top-color:#1e293b; }
-.bm-btn-tip-wrap:hover .bm-btn-tip { visibility:visible; opacity:1; pointer-events:auto; }
-.bm-btn-tip a { color:var(--secondary); font-weight:700; text-decoration:none; }
-.bm-btn-tip a:hover { text-decoration:underline; }
-/* Success banner */
-.bm-success { display:none; align-items:center; gap:1rem; background:#f0fdfb; border:1.5px solid var(--primary); border-radius:10px; padding:1rem 1.25rem; margin-bottom:1.5rem; transition:opacity .7s ease; }
-.bm-success-icon { flex-shrink:0; width:36px; height:36px; background:var(--primary); border-radius:50%; display:flex; align-items:center; justify-content:center; }
-.bm-success-icon svg { display:block; }
-.bm-success strong { display:block; color:#0f766e; font-size:.95rem; margin-bottom:.2rem; }
-.bm-success p { margin:0; font-size:.82rem; color:#64748b; }
+.bm-pillar-intro { max-width:720px; margin:0 auto 3rem; text-align:center; }
+.bm-pillar-intro p { font-size:1.05rem; color:#64748b; line-height:1.7; }
+.bm-regions { display:flex; flex-direction:column; gap:2.5rem; }
+.bm-region-label { font-size:.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#94a3b8; margin:0 0 1rem; }
+.bm-country-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:.75rem; }
+.bm-country-card { display:flex; align-items:center; gap:.75rem; padding:.85rem 1rem; background:#fff; border:1.5px solid #e2e8f0; border-radius:10px; text-decoration:none; transition:border-color .18s,box-shadow .18s; }
+.bm-country-card:hover { border-color:var(--primary); box-shadow:0 4px 16px rgba(8,191,173,.1); }
+.bm-country-flag { font-size:1.5rem; line-height:1; flex-shrink:0; }
+.bm-country-info { display:flex; flex-direction:column; gap:.1rem; }
+.bm-country-name { font-size:.9rem; font-weight:700; color:#1a202c; }
+.bm-country-curr { font-size:.75rem; color:#94a3b8; font-weight:500; }
+.bm-what { background:#f8fafc; border-radius:16px; padding:2.5rem; margin-top:3rem; }
+.bm-what h3 { font-size:1.2rem; font-weight:800; color:#1a202c; margin:0 0 .75rem; }
+.bm-what p { font-size:.92rem; color:#64748b; line-height:1.7; margin:0 0 .75rem; }
+.bm-what p:last-child { margin:0; }
+.bm-metrics { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:1rem; margin-top:2rem; }
+.bm-metric { background:#fff; border:1.5px solid #e2e8f0; border-radius:10px; padding:1rem 1.25rem; }
+.bm-metric-label { font-size:.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:#94a3b8; margin:0 0 .3rem; }
+.bm-metric-name { font-size:.9rem; font-weight:700; color:#1a202c; }
+.bm-metric-desc { font-size:.78rem; color:#64748b; margin:.2rem 0 0; line-height:1.5; }
+@media(max-width:640px){ .bm-country-grid{grid-template-columns:1fr 1fr;} .bm-metrics{grid-template-columns:1fr 1fr;} }
   </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-  <script>
-    window.BENCHMARK_GATE = {
-      storageKey: 'bm_meta_unlocked',
-      stripeUrl:  'https://buy.stripe.com/6oU8wQ1yVc744OP3Ww3Je06',
-      price:      '$9.99',
-      supportEmail: 'hello@xyzlab.com'
-    };
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "Meta Ads Benchmarks by Country and Industry (Q2 2026)",
+    "description": "Meta Ads (Facebook & Instagram) average CTR, CPC, CPM, conversion rate, CPA and ROAS benchmarks for 35 countries and 38 industries. Q2 2026 industry aggregates in local currency.",
+    "publisher": { "@type": "Organization", "name": "XYZ Lab", "url": "https://xyzlab.com" },
+    "url": "https://xyzlab.com/meta-ads/benchmarks/",
+    "keywords": ["Meta Ads benchmarks", "Facebook Ads benchmarks", "Instagram Ads benchmarks", "CPC benchmarks", "CPM benchmarks", "ROAS benchmarks"]
+  }
   </script>
-  <script src="../../benchmarks/meta-ads-data.js"></script>
-  <script src="../../benchmarks/benchmarks.js"></script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -210,82 +178,234 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="breadcrumb-sep">&#8250;</span>
         <span class="breadcrumb-current">Benchmarks</span>
       </nav>
-      <h1 id="bm-h1">Meta Ads Benchmarks in <span class="highlight">USA</span></h1>
-      <p class="hero-sub" id="bm-sub">Average Meta Ads performance (Facebook &amp; Instagram Ads) in USA across all industries. Figures in USD ($).</p>
+      <h1>Meta Ads <span class="highlight">Benchmarks</span> by Country &amp; Industry</h1>
+      <p class="hero-sub">Average Meta Ads (Facebook &amp; Instagram) CTR, CPC, CPM, conversion rate, CPA and ROAS across 38 industries for 35 countries — all figures in local currency. Select your country below.</p>
       <div style="margin-top:1.75rem;">
-        <a href="#benchmarks" class="btn btn-primary">View Benchmarks</a>
+        <a href="#countries" class="btn btn-primary">Select Your Country</a>
         <a href="#coaching" class="btn btn-outline">Book Coaching</a>
       </div>
     </div>
   </section>
 
-  <!-- BENCHMARKS -->
-  <section class="outcomes" id="benchmarks">
+  <!-- COUNTRY GRID -->
+  <section class="outcomes" id="countries">
     <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Meta Ads Benchmarks</div>
-        <h2>Meta Ads Benchmarks by Country &amp; Industry</h2>
-        <p>Select a country and industry to view benchmark data. All figures update instantly.</p>
+        <div class="badge badge-secondary">Q2 2026</div>
+        <h2>Select Your <span class="highlight">Country</span></h2>
+        <p>38 industries &bull; CTR &bull; CPC &bull; CPM &bull; Conversion Rate &bull; CPA &bull; ROAS &bull; Local currency</p>
       </div>
 
-      <div class="bm-filters">
+      <div class="bm-regions">
+
         <div>
-          <label for="bm-country" style="display:block;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#64748b;margin-bottom:.35rem;">Country</label>
-          <select id="bm-country"></select>
+          <p class="bm-region-label">English-Speaking Markets</p>
+          <div class="bm-country-grid">
+            <a href="australia/" class="bm-country-card">
+              <span class="bm-country-flag">🇦🇺</span>
+              <span class="bm-country-info"><span class="bm-country-name">Australia</span><span class="bm-country-curr">AUD (AU$)</span></span>
+            </a>
+            <a href="canada/" class="bm-country-card">
+              <span class="bm-country-flag">🇨🇦</span>
+              <span class="bm-country-info"><span class="bm-country-name">Canada</span><span class="bm-country-curr">CAD (CA$)</span></span>
+            </a>
+            <a href="ireland/" class="bm-country-card">
+              <span class="bm-country-flag">🇮🇪</span>
+              <span class="bm-country-info"><span class="bm-country-name">Ireland</span><span class="bm-country-curr">EUR (€)</span></span>
+            </a>
+            <a href="new-zealand/" class="bm-country-card">
+              <span class="bm-country-flag">🇳🇿</span>
+              <span class="bm-country-info"><span class="bm-country-name">New Zealand</span><span class="bm-country-curr">NZD (NZ$)</span></span>
+            </a>
+            <a href="south-africa/" class="bm-country-card">
+              <span class="bm-country-flag">🇿🇦</span>
+              <span class="bm-country-info"><span class="bm-country-name">South Africa</span><span class="bm-country-curr">ZAR (R)</span></span>
+            </a>
+            <a href="united-kingdom/" class="bm-country-card">
+              <span class="bm-country-flag">🇬🇧</span>
+              <span class="bm-country-info"><span class="bm-country-name">United Kingdom</span><span class="bm-country-curr">GBP (£)</span></span>
+            </a>
+            <a href="united-states/" class="bm-country-card">
+              <span class="bm-country-flag">🇺🇸</span>
+              <span class="bm-country-info"><span class="bm-country-name">United States</span><span class="bm-country-curr">USD ($)</span></span>
+            </a>
+          </div>
         </div>
+
         <div>
-          <label for="bm-industry" style="display:block;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#64748b;margin-bottom:.35rem;">Industry</label>
-          <select id="bm-industry"></select>
+          <p class="bm-region-label">Europe</p>
+          <div class="bm-country-grid">
+            <a href="denmark/" class="bm-country-card">
+              <span class="bm-country-flag">🇩🇰</span>
+              <span class="bm-country-info"><span class="bm-country-name">Denmark</span><span class="bm-country-curr">DKK</span></span>
+            </a>
+            <a href="france/" class="bm-country-card">
+              <span class="bm-country-flag">🇫🇷</span>
+              <span class="bm-country-info"><span class="bm-country-name">France</span><span class="bm-country-curr">EUR (€)</span></span>
+            </a>
+            <a href="germany/" class="bm-country-card">
+              <span class="bm-country-flag">🇩🇪</span>
+              <span class="bm-country-info"><span class="bm-country-name">Germany</span><span class="bm-country-curr">EUR (€)</span></span>
+            </a>
+            <a href="italy/" class="bm-country-card">
+              <span class="bm-country-flag">🇮🇹</span>
+              <span class="bm-country-info"><span class="bm-country-name">Italy</span><span class="bm-country-curr">EUR (€)</span></span>
+            </a>
+            <a href="netherlands/" class="bm-country-card">
+              <span class="bm-country-flag">🇳🇱</span>
+              <span class="bm-country-info"><span class="bm-country-name">Netherlands</span><span class="bm-country-curr">EUR (€)</span></span>
+            </a>
+            <a href="norway/" class="bm-country-card">
+              <span class="bm-country-flag">🇳🇴</span>
+              <span class="bm-country-info"><span class="bm-country-name">Norway</span><span class="bm-country-curr">NOK</span></span>
+            </a>
+            <a href="poland/" class="bm-country-card">
+              <span class="bm-country-flag">🇵🇱</span>
+              <span class="bm-country-info"><span class="bm-country-name">Poland</span><span class="bm-country-curr">PLN (zł)</span></span>
+            </a>
+            <a href="spain/" class="bm-country-card">
+              <span class="bm-country-flag">🇪🇸</span>
+              <span class="bm-country-info"><span class="bm-country-name">Spain</span><span class="bm-country-curr">EUR (€)</span></span>
+            </a>
+            <a href="sweden/" class="bm-country-card">
+              <span class="bm-country-flag">🇸🇪</span>
+              <span class="bm-country-info"><span class="bm-country-name">Sweden</span><span class="bm-country-curr">SEK</span></span>
+            </a>
+            <a href="switzerland/" class="bm-country-card">
+              <span class="bm-country-flag">🇨🇭</span>
+              <span class="bm-country-info"><span class="bm-country-name">Switzerland</span><span class="bm-country-curr">CHF</span></span>
+            </a>
+            <a href="turkiye/" class="bm-country-card">
+              <span class="bm-country-flag">🇹🇷</span>
+              <span class="bm-country-info"><span class="bm-country-name">Türkiye</span><span class="bm-country-curr">TRY (₺)</span></span>
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Success banner (shown after Stripe redirect) -->
-      <div id="bm-success" class="bm-success">
-        <div class="bm-success-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
         <div>
-          <strong>Payment confirmed — your download is starting now</strong>
-          <p>A ZIP file with all 35 countries is downloading. The full table is now unlocked below.</p>
+          <p class="bm-region-label">Asia Pacific</p>
+          <div class="bm-country-grid">
+            <a href="hong-kong/" class="bm-country-card">
+              <span class="bm-country-flag">🇭🇰</span>
+              <span class="bm-country-info"><span class="bm-country-name">Hong Kong</span><span class="bm-country-curr">HKD (HK$)</span></span>
+            </a>
+            <a href="india/" class="bm-country-card">
+              <span class="bm-country-flag">🇮🇳</span>
+              <span class="bm-country-info"><span class="bm-country-name">India</span><span class="bm-country-curr">INR (₹)</span></span>
+            </a>
+            <a href="indonesia/" class="bm-country-card">
+              <span class="bm-country-flag">🇮🇩</span>
+              <span class="bm-country-info"><span class="bm-country-name">Indonesia</span><span class="bm-country-curr">IDR (Rp)</span></span>
+            </a>
+            <a href="japan/" class="bm-country-card">
+              <span class="bm-country-flag">🇯🇵</span>
+              <span class="bm-country-info"><span class="bm-country-name">Japan</span><span class="bm-country-curr">JPY (¥)</span></span>
+            </a>
+            <a href="malaysia/" class="bm-country-card">
+              <span class="bm-country-flag">🇲🇾</span>
+              <span class="bm-country-info"><span class="bm-country-name">Malaysia</span><span class="bm-country-curr">MYR (RM)</span></span>
+            </a>
+            <a href="philippines/" class="bm-country-card">
+              <span class="bm-country-flag">🇵🇭</span>
+              <span class="bm-country-info"><span class="bm-country-name">Philippines</span><span class="bm-country-curr">PHP (₱)</span></span>
+            </a>
+            <a href="singapore/" class="bm-country-card">
+              <span class="bm-country-flag">🇸🇬</span>
+              <span class="bm-country-info"><span class="bm-country-name">Singapore</span><span class="bm-country-curr">SGD (S$)</span></span>
+            </a>
+            <a href="south-korea/" class="bm-country-card">
+              <span class="bm-country-flag">🇰🇷</span>
+              <span class="bm-country-info"><span class="bm-country-name">South Korea</span><span class="bm-country-curr">KRW (₩)</span></span>
+            </a>
+            <a href="thailand/" class="bm-country-card">
+              <span class="bm-country-flag">🇹🇭</span>
+              <span class="bm-country-info"><span class="bm-country-name">Thailand</span><span class="bm-country-curr">THB (฿)</span></span>
+            </a>
+            <a href="vietnam/" class="bm-country-card">
+              <span class="bm-country-flag">🇻🇳</span>
+              <span class="bm-country-info"><span class="bm-country-name">Vietnam</span><span class="bm-country-curr">VND (₫)</span></span>
+            </a>
+          </div>
         </div>
-      </div>
 
-      <div class="bm-actions">
-        <button id="bm-copy" class="btn-copy">Copy Table</button>
-        <button id="bm-download" class="btn-dl">&#8595; Download All Countries (ZIP)</button>
-      </div>
-
-      <p class="bm-meta"><span id="bm-count"></span> industries shown &nbsp;&bull;&nbsp; Source: XYZ Lab industry aggregates &nbsp;&bull;&nbsp; <span id="bm-updated">Q2 2026</span></p>
-
-      <div class="bm-gate-wrap">
-        <div class="bm-wrap">
-          <table class="bm-table">
-            <thead id="bm-thead"></thead>
-            <tbody id="bm-tbody"></tbody>
-          </table>
+        <div>
+          <p class="bm-region-label">Americas</p>
+          <div class="bm-country-grid">
+            <a href="argentina/" class="bm-country-card">
+              <span class="bm-country-flag">🇦🇷</span>
+              <span class="bm-country-info"><span class="bm-country-name">Argentina</span><span class="bm-country-curr">ARS (AR$)</span></span>
+            </a>
+            <a href="brazil/" class="bm-country-card">
+              <span class="bm-country-flag">🇧🇷</span>
+              <span class="bm-country-info"><span class="bm-country-name">Brazil</span><span class="bm-country-curr">BRL (R$)</span></span>
+            </a>
+            <a href="mexico/" class="bm-country-card">
+              <span class="bm-country-flag">🇲🇽</span>
+              <span class="bm-country-info"><span class="bm-country-name">Mexico</span><span class="bm-country-curr">MXN (MX$)</span></span>
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Paywall card (shown below table when locked) -->
-      <div id="bm-paywall" class="bm-paywall">
-        <div class="bm-paywall-box">
-          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" style="margin:0 auto .75rem;display:block;"><rect x="3" y="11" width="18" height="11" rx="2" stroke="#08bfad" stroke-width="1.8"/><path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#08bfad" stroke-width="1.8" stroke-linecap="round"/></svg>
-          <h3>Unlock All 38 Industries</h3>
-          <p>8 of 38 industries shown above. Unlock the full table + instant ZIP download for all 35 countries.</p>
-          <ul class="bm-perks">
-            <li>All 38 industries — full table unlocked</li>
-            <li>35 countries in local currency</li>
-            <li>CTR, CPC, CPM, Conversion Rate, CPA &amp; ROAS</li>
-            <li>Instant ZIP download — all countries in one file</li>
-            <li>Copy table to paste into Google Sheets or Excel</li>
-          </ul>
-          <a href="https://buy.stripe.com/6oU8wQ1yVc744OP3Ww3Je06" class="bm-unlock-btn">Unlock for $9.99 &rarr;</a>
-          <p class="bm-already-paid">Already paid but lost access? <a href="mailto:hello@xyzlab.com?subject=Meta%20Ads%20Benchmarks%20%E2%80%94%20Restore%20Access">Email us to restore</a></p>
+        <div>
+          <p class="bm-region-label">Middle East</p>
+          <div class="bm-country-grid">
+            <a href="bahrain/" class="bm-country-card">
+              <span class="bm-country-flag">🇧🇭</span>
+              <span class="bm-country-info"><span class="bm-country-name">Bahrain</span><span class="bm-country-curr">BHD</span></span>
+            </a>
+            <a href="qatar/" class="bm-country-card">
+              <span class="bm-country-flag">🇶🇦</span>
+              <span class="bm-country-info"><span class="bm-country-name">Qatar</span><span class="bm-country-curr">QAR</span></span>
+            </a>
+            <a href="saudi-arabia/" class="bm-country-card">
+              <span class="bm-country-flag">🇸🇦</span>
+              <span class="bm-country-info"><span class="bm-country-name">Saudi Arabia</span><span class="bm-country-curr">SAR</span></span>
+            </a>
+            <a href="uae/" class="bm-country-card">
+              <span class="bm-country-flag">🇦🇪</span>
+              <span class="bm-country-info"><span class="bm-country-name">UAE</span><span class="bm-country-curr">AED</span></span>
+            </a>
+          </div>
         </div>
+
       </div>
 
-      <div class="bm-note">
-        <strong>Methodology:</strong> Benchmarks are industry aggregates compiled from anonymised campaign data and published industry reports (Q2 2026). Figures represent medians across multiple advertisers and campaign types. Individual results will vary based on audience quality, creative, offer, and account structure. ROAS (&#9432;) is particularly variable — treat it as directional only.
+      <div class="bm-what">
+        <h3>What are Meta Ads benchmarks?</h3>
+        <p>Meta Ads benchmarks are industry median performance figures — CTR, CPC, CPM, conversion rate, CPA and ROAS — aggregated across thousands of Facebook and Instagram campaigns. They give you a reference point to evaluate whether your own campaigns are performing above, at, or below industry norms in your market.</p>
+        <p>All figures are shown in local currency and adjusted for country-level audience competition. A retailer in Australia comparing to US benchmarks in USD would get misleading results — these pages show you the right numbers for your market.</p>
+        <div class="bm-metrics">
+          <div class="bm-metric">
+            <p class="bm-metric-label">CTR</p>
+            <p class="bm-metric-name">Click-Through Rate</p>
+            <p class="bm-metric-desc">Clicks ÷ impressions. Measures creative and audience relevance.</p>
+          </div>
+          <div class="bm-metric">
+            <p class="bm-metric-label">CPC</p>
+            <p class="bm-metric-name">Cost Per Click</p>
+            <p class="bm-metric-desc">Average cost for one link click. Driven by audience competition and creative quality.</p>
+          </div>
+          <div class="bm-metric">
+            <p class="bm-metric-label">CPM</p>
+            <p class="bm-metric-name">Cost Per 1,000 Impressions</p>
+            <p class="bm-metric-desc">Auction cost to reach 1,000 people. Key metric for awareness campaigns.</p>
+          </div>
+          <div class="bm-metric">
+            <p class="bm-metric-label">Conv. Rate</p>
+            <p class="bm-metric-name">Conversion Rate</p>
+            <p class="bm-metric-desc">Conversions ÷ clicks. Reflects landing page and offer effectiveness.</p>
+          </div>
+          <div class="bm-metric">
+            <p class="bm-metric-label">CPA</p>
+            <p class="bm-metric-name">Cost Per Acquisition</p>
+            <p class="bm-metric-desc">CPC ÷ conversion rate. The cost to acquire one customer or lead.</p>
+          </div>
+          <div class="bm-metric">
+            <p class="bm-metric-label">ROAS</p>
+            <p class="bm-metric-name">Return on Ad Spend</p>
+            <p class="bm-metric-desc">Revenue ÷ ad spend. Highly variable — treat as directional only.</p>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -316,41 +436,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <details class="faq-item" open>
           <summary class="faq-question">
-            <span>What are Meta Ads benchmarks and why do they matter?</span>
+            <span>Why do Meta Ads benchmarks differ by country?</span>
             <span class="faq-chevron" aria-hidden="true">&#8964;</span>
           </summary>
           <div class="faq-answer">
-            <p>Benchmarks are industry median performance figures — CTR, CPC, CPM, conversion rate, CPA, and ROAS — aggregated across thousands of Meta Ads campaigns. They give you a reference point to evaluate whether your own campaigns are performing above, at, or below industry norms. If your CPC is twice the benchmark for your industry, that's a signal to test new creative or audiences. If your conversion rate exceeds the benchmark, it confirms your landing page or offer is strong.</p>
+            <p>Meta Ads runs a CPM-based auction — costs are driven by audience size, advertiser competition, and local purchasing power. The USA has the highest CPM globally due to dense advertiser competition and high consumer value per click. Markets like Germany, UK, and Australia see elevated CPMs in their local currencies. Emerging markets have lower CPMs but also lower average order values. Comparing your campaigns to benchmarks in your own country and currency gives you the most actionable signal.</p>
           </div>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            <span>How do I use these benchmarks to improve my campaigns?</span>
+            <span>What is a good CTR for Meta Ads?</span>
             <span class="faq-chevron" aria-hidden="true">&#8964;</span>
           </summary>
           <div class="faq-answer">
-            <p>Start by comparing your key metrics (CPC, CPA, ROAS) against the benchmark for your country and industry. Focus first on the metrics furthest from the benchmark. A high CPA vs. the benchmark usually points to weak creative, broad targeting, or a poor landing page. A low CTR suggests your ad creative or hook isn't resonating. Use these figures as diagnostic signals, not targets.</p>
+            <p>A good CTR for Meta Ads (link clicks) is typically 1–2%, with a cross-industry average of around 1.1%. Meta CTRs are lower than Google Search because users are in a browsing mindset rather than actively searching. Entertainment, dating and gaming tend to see higher CTRs; insurance, B2B and property tend to see lower ones. Video view-through rates and engagement rates are separate metrics with their own benchmarks.</p>
           </div>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            <span>Why do benchmarks differ so much between countries?</span>
+            <span>What is a good CPM for Meta Ads?</span>
             <span class="faq-chevron" aria-hidden="true">&#8964;</span>
           </summary>
           <div class="faq-answer">
-            <p>Audience size, advertiser competition, and local purchasing power all affect Meta Ads costs. The USA has the highest advertiser density, pushing CPMs and CPCs up. Markets like Germany tend to have higher privacy expectations and lower click-through rates. UAE shows lower CPCs in USD terms but higher CPA due to smaller addressable audiences and higher consideration cycles. These differences make it essential to use country-specific benchmarks rather than global averages.</p>
+            <p>Meta Ads CPMs vary significantly by country, audience, placement and season. The US average CPM is around $8–$12 across all industries. UK and Australian markets run $4–$8, while European CPMs in EUR tend to be lower. Q4 sees CPMs spike 30–50% above annual averages due to holiday advertiser competition. CPMs are lower on Audience Network and Reels placements compared to Facebook Feed.</p>
           </div>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            <span>Why is ROAS marked as indicative?</span>
+            <span>How should I use these benchmarks to improve my Meta Ads?</span>
             <span class="faq-chevron" aria-hidden="true">&#8964;</span>
           </summary>
           <div class="faq-answer">
-            <p>ROAS depends heavily on your average order value (AOV) and product margin — two factors that vary enormously within the same industry. A jewellery brand with a $500 AOV will see very different ROAS figures from one selling $20 items, even if their CPA is identical. For this reason, ROAS benchmarks should be treated as directional — they show the range typical campaigns achieve, not a target you should optimise toward directly.</p>
+            <p>Start by comparing your CPC, conversion rate and CPA against the benchmark for your country and industry. A CPC above benchmark usually means your creative hook isn't resonating — test new ad formats, copy angles or visuals. A conversion rate below benchmark points to landing page or offer issues. A CPA above benchmark could be audience targeting, creative fatigue or a funnel problem. Use benchmarks as diagnostic signals to prioritise where to focus optimisation effort.</p>
           </div>
         </details>
 
@@ -360,72 +480,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="faq-chevron" aria-hidden="true">&#8964;</span>
           </summary>
           <div class="faq-answer">
-            <p>Benchmarks are reviewed and updated quarterly. Meta Ads costs fluctuate with seasonality (Q4 is typically the most expensive due to holiday competition), platform algorithm changes, and macroeconomic factors. Always check the 'Last updated' date on this page and cross-reference with your own account data for the most accurate picture.</p>
+            <p>Benchmarks are reviewed and updated quarterly. The current data reflects Q2 2026 industry aggregates compiled from anonymised campaign data and published industry reports. Individual results will vary based on audience quality, creative performance, offer, account structure and Meta algorithm changes.</p>
           </div>
         </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Which Meta Ads metrics should I prioritise?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>It depends on your campaign objective. For awareness campaigns, focus on CPM and CTR. For lead generation, track CPA and conversion rate. For eCommerce, ROAS and CPA are your primary indicators. CPC is a useful diagnostic across all campaign types — a rising CPC with stable CTR usually means increasing competition in your audience.</p>
-          </div>
-        </details>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- RELATED TUTORIALS -->
-  <section class="outcomes" style="background:var(--white);">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge badge-secondary">Keep Learning</div>
-        <h2>Related <span class="highlight">Meta Ads Tutorials</span></h2>
-        <p>More step-by-step guides to get more from your Meta Ads campaigns.</p>
-      </div>
-      <div class="courses-grid">
-
-        <article class="course-card">
-          <a href="../utm-tags/" class="course-icon" tabindex="-1" style="background:#e8faf9;">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#e8faf9"/><rect x="8" y="8" width="16" height="3" rx="1.5" fill="#08bfad" opacity=".4"/><rect x="8" y="14" width="16" height="3" rx="1.5" fill="#08bfad" opacity=".7"/><rect x="8" y="20" width="10" height="3" rx="1.5" fill="#08bfad"/></svg>
-          </a>
-          <h3><a href="../utm-tags/">How to Add UTM Tags to Meta Ads</a></h3>
-          <ul class="course-bullets">
-            <li>Track campaign performance in GA4</li>
-            <li>Auto-tag your Meta Ads campaigns</li>
-            <li>Identify which ads drive real conversions</li>
-          </ul>
-          <a href="../utm-tags/" class="course-link">Watch Tutorial &#8594;</a>
-        </article>
-
-        <article class="course-card">
-          <a href="../track-custom-conversions/" class="course-icon" tabindex="-1" style="background:#fff3e0;">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#fff3e0"/><path d="M10 16l4-4 4 4 4-4" stroke="#fec55c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <h3><a href="../track-custom-conversions/">Track Custom Conversions in Meta Ads</a></h3>
-          <ul class="course-bullets">
-            <li>Set up conversion events without code</li>
-            <li>Track form fills, purchases and signups</li>
-            <li>Optimise campaigns for the right actions</li>
-          </ul>
-          <a href="../track-custom-conversions/" class="course-link">Watch Tutorial &#8594;</a>
-        </article>
-
-        <article class="course-card">
-          <a href="../lead-generation-campaign/" class="course-icon" tabindex="-1" style="background:#e8faf9;">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#e8faf9"/><rect x="8" y="18" width="3" height="6" rx="1" fill="#08bfad"/><rect x="13" y="13" width="3" height="11" rx="1" fill="#08bfad" opacity=".7"/><rect x="18" y="9" width="3" height="15" rx="1" fill="#08bfad" opacity=".4"/><rect x="23" y="14" width="3" height="10" rx="1" fill="#08bfad"/></svg>
-          </a>
-          <h3><a href="../lead-generation-campaign/">Create a Meta Ads Lead Generation Campaign</a></h3>
-          <ul class="course-bullets">
-            <li>Build a lead gen campaign from scratch</li>
-            <li>Use native lead forms</li>
-            <li>Reduce cost per lead with the right targeting</li>
-          </ul>
-          <a href="../lead-generation-campaign/" class="course-link">Watch Tutorial &#8594;</a>
-        </article>
 
       </div>
     </div>
@@ -458,20 +515,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       <div class="footer-links">
-        <div class="footer-col">
-          <h4>Courses</h4>
-          <ul>
+        <div class="footer-col"><h4>Courses</h4><ul>
             <li><a href="../../google-ads-course/">AI for Google Ads</a></li>
             <li><a href="../../meta-ads-course/">AI for Meta Ads</a></li>
             <li><a href="../../seo-aio-course/">AI for SEO</a></li>
             <li><a href="../../ai-marketing-analytics-course/">Analytics</a></li>
             <li><a href="../../ai-content-creation-course/">AI Content Creation</a></li>
             <li><a href="../../vibe-coding-course/">Vibe Coding</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>PPC</h4>
-          <ul>
+        </ul></div>
+        <div class="footer-col"><h4>PPC</h4><ul>
             <li><a href="../../google-ads/">Google Ads</a></li>
             <li><a href="../../google-ads-editor/">Google Ads Editor</a></li>
             <li><a href="../../meta-ads/">Meta Ads</a></li>
@@ -480,33 +532,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li><a href="../../pinterest-ads/">Pinterest Ads</a></li>
             <li><a href="../../reddit-ads/">Reddit Ads</a></li>
             <li><a href="../../linkedin-ads/">LinkedIn Ads</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Analytics</h4>
-          <ul>
+        </ul></div>
+        <div class="footer-col"><h4>Analytics</h4><ul>
             <li><a href="../../google-analytics/">Google Analytics</a></li>
             <li><a href="../../google-tag-manager/">Google Tag Manager</a></li>
             <li><a href="../../data-studio/">Data Studio</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>AI Tools</h4>
-          <ul>
+        </ul></div>
+        <div class="footer-col"><h4>AI Tools</h4><ul>
             <li><a href="../../claude/">Claude AI</a></li>
             <li><a href="../../chatgpt/">ChatGPT</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>SEO</h4>
-          <ul>
+        </ul></div>
+        <div class="footer-col"><h4>SEO</h4><ul>
             <li><a href="../../google-search-console/">Google Search Console</a></li>
             <li><a href="../../bing-webmaster-tools/">Bing Webmaster Tools</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Benchmarks</h4>
-          <ul>
+        </ul></div>
+        <div class="footer-col"><h4>Benchmarks</h4><ul>
             <li><a href="/meta-ads/benchmarks/">Meta Ads</a></li>
             <li><a href="/google-ads/benchmarks/">Google Ads</a></li>
             <li><a href="/seo/benchmarks/">SEO</a></li>
@@ -515,35 +555,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li><a href="/reddit-ads/benchmarks/">Reddit Ads</a></li>
             <li><a href="/shopify/benchmarks/">Shopify</a></li>
           <li><a href="/email-marketing/benchmarks/">Email Marketing</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>eCommerce</h4>
-          <ul>
+        </ul></div>
+        <div class="footer-col"><h4>eCommerce</h4><ul>
             <li><a href="../../shopify/">Shopify</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Web Builders</h4>
-          <ul>
+        </ul></div>
+        <div class="footer-col"><h4>Web Builders</h4><ul>
             <li><a href="../../wix/">Wix</a></li><li><a href="../../go-high-level/">Go High Level</a></li><li><a href="../../godaddy/">GoDaddy</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Social Media</h4>
-          <ul>
+        </ul></div>
+        <div class="footer-col"><h4>Social Media</h4><ul>
             <li><a href="../../linkedin/">LinkedIn</a></li>
             <li><a href="../../youtube/">YouTube</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul>
+        </ul></div>
+        <div class="footer-col"><h4>Company</h4><ul>
             <li><a href="../../#contact">Contact</a></li>
             <li><a href="mailto:hello@xyzlab.com">hello@xyzlab.com</a></li>
             <li><a href="https://wa.me/6594260742">+65 9426 0742</a></li>
-          </ul>
-        </div>
+        </ul></div>
       </div>
     </div>
     <div class="footer-bottom">
