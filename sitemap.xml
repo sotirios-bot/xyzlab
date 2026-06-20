@@ -81,6 +81,7 @@
   <url><loc>https://xyzlab.com/data-studio/course/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://xyzlab.com/data-studio/combo-charts/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://xyzlab.com/data-studio/format-scorecard-comparisons/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://xyzlab.com/data-studio/style-combo-charts/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Pillar Pages — AI Tools -->
   <url><loc>https://xyzlab.com/claude/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
