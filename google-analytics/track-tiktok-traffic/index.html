@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does TikTok traffic appear in Google Analytics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TikTok traffic typically appears as tiktok.com / referral or l.tiktok.com / referral in the Session source / medium dimension. The l.tiktok.com domain is TikTok's link redirector — clicks from TikTok bio links or in-app links often route through it. In the default channel group view, this traffic falls under the Referral channel rather than a dedicated Social channel, unless you customise your channel groupings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is my TikTok traffic showing as Direct or Unassigned in GA4?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TikTok's in-app browser sometimes strips referrer information when a user opens a link, which means GA4 cannot identify the traffic source and assigns it to Direct or Unassigned instead. To fix this, add UTM parameters (utm_source=tiktok&utm_medium=social) to any links you place in your TikTok bio or ads. This ensures GA4 always correctly attributes the session to TikTok regardless of how the link was opened."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between TikTok organic traffic and TikTok Ads traffic in GA4?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Organic TikTok traffic (clicks from your profile bio link or video links) appears as tiktok.com / referral. TikTok Ads traffic tracked via UTM parameters will show the values you configured in your ad URLs — for example tiktok / cpc if you used utm_source=tiktok&utm_medium=cpc. TikTok's own pixel can also send data to GA4 via integrations, but the Traffic Acquisition report specifically reflects what GA4 collects from page visits."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why don't I see any TikTok traffic in my reports?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If no TikTok traffic appears, the most common reasons are: you don't have a clickable link in your TikTok profile or content, your date range is too short, or TikTok's in-app browser is stripping referrer data and the traffic is appearing under Direct instead. Try extending the date range to the last 90 days and also searching for l.tiktok (the link redirector domain) in the same report to catch all variations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I add TikTok as a social channel in GA4?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GA4's default channel groupings may classify TikTok referral traffic under Referral rather than Organic Social. To fix this, go to Admin → Data display → Channel groups and edit the Organic Social channel rule to include tiktok.com and l.tiktok.com as matching source domains. This ensures TikTok organic traffic is correctly grouped alongside other social platforms."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I track TikTok traffic alongside Instagram and other social platforms?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Use the Traffic Acquisition report with the Session source / medium dimension and search for each platform individually — tiktok, instagram, facebook, linkedin — or remove the search filter entirely to see all sources ranked by sessions. You can also build a custom Looker Studio (Data Studio) report that segments all your social traffic sources in one view for easy comparison."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

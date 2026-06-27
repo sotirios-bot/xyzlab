@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why does the URL slug have to be exactly \"error404\"?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "WIX Studio is hard-coded to look for a page with the URL slug /error404 when a visitor navigates to a page that doesn't exist. If you use any other slug, Wix will show its default generic 404 page instead of your custom design."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does this work on WIX Studio and regular WIX Editor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Both WIX Studio and the classic Wix Editor support the custom 404 page via the /error404 slug. The steps for setting the URL slug are the same in both editors — found under Page SEO Basics."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I put on my custom 404 page?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A good 404 page keeps visitors on your site instead of bouncing. Include: a clear message explaining the page wasn't found, a link back to your homepage, links to your most popular pages, a search bar if you have one, and optionally your brand's personality or a fun graphic to soften the experience."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will my custom 404 page appear in search results?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. When a visitor or Googlebot hits a URL that doesn't exist, the server correctly returns a 404 HTTP status code — your custom design is what the visitor sees, but search engines know it's a 404 and will not index it. Make sure you don't accidentally noindex it or redirect away from it, as that would interfere with the 404 behaviour."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I hide the custom 404 page from my site menu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. In WIX Studio you can hide any page from the site menu without affecting how it functions. Go to Pages, click the three-dot menu next to your 404 page, and toggle Hide from Menu. Visitors will still see it when they land on a broken URL."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to republish every time I edit my 404 page?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Like any other Wix page, changes to your 404 page only go live after you Publish your website. Edits you make in the editor are saved as drafts and won't appear to visitors until you hit the Publish button."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

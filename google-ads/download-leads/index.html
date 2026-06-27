@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between CSV and CSV for CRM?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both formats export your lead data as a comma-separated file, but they differ in structure. The standard CSV includes all submission fields in a straightforward spreadsheet layout — ideal for reviewing leads manually. CSV for CRM formats the data to align with common CRM import templates, making it easier to upload directly into platforms like Salesforce or HubSpot without reformatting columns."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does Google Ads store lead form submissions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google Ads stores lead form submissions for 30 days. After that, submissions are permanently deleted and cannot be recovered. It is important to download your leads regularly — ideally daily or weekly — to ensure you do not lose any contact data before the retention window expires."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I automate lead downloads instead of doing it manually?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Google Ads allows you to connect your lead form directly to a CRM or webhook via the Lead delivery settings when creating or editing the lead form asset. This sends new submissions automatically to your CRM in real time — eliminating the need for manual CSV exports. Popular integrations include Google Sheets (via Zapier), HubSpot, Salesforce, and Mailchimp."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why can I not see any leads to download?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If no leads appear under your lead form asset, the most common reasons are: the lead form has not received any submissions yet, the 30-day retention window has passed and submissions have expired, or the lead form is attached to a campaign that is paused or has no impressions. Check that your campaign is active and that the lead form asset is approved and enabled at the campaign or ad group level."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do downloaded leads include a timestamp?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Each row in the exported CSV includes a submission date and time (in UTC) alongside the form fields the user completed. This makes it easy to sort and filter leads by recency and to identify peak submission periods for your campaigns."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can multiple people access and download leads from the same account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, any user with Standard or Admin access to the Google Ads account can navigate to Assets &gt; Lead form and download submissions. Read-only users cannot download leads. If you want to give a team member access to leads without granting broader account access, the CRM integration route (automated delivery to a shared tool) is usually a better option."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

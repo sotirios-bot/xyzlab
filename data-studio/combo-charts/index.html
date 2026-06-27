@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a combo chart in Data Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A combo chart combines two chart types — typically bars and a line — in a single visual. Each series can be assigned to its own Y-axis (left or right), which lets you compare metrics that have very different scales, such as ad spend (bars, left axis) alongside ROAS (line, right axis), without one series dwarfing the other."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When should I use a combo chart instead of a regular bar or line chart?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use a combo chart when you want to show two related but differently scaled metrics together — for example, clicks (volume, in the thousands) and CTR (percentage, between 0–10%). Plotting them on a single axis would make one metric unreadable. The dual-axis combo chart solves this by giving each metric its own scale while keeping the relationship visible at a glance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I add more than two series to a combo chart?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Data Studio allows you to add multiple metrics, each configured as an individual series in the Style panel. You can assign each series to either the left or right axis and choose its type (bar or line) independently. Keep in mind that adding too many series can make the chart hard to read — two or three well-chosen metrics usually communicate most clearly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I change the colour of each series in a combo chart?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In the Style panel, each series has a colour swatch next to its label. Click the swatch to open the colour picker and choose a custom colour. Using contrasting colours for bars and lines (e.g. blue bars and an orange line) makes it easier for viewers to immediately distinguish between the two metrics."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does my combo chart look wrong when I switch from Setup to Style?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The most common issue is that series order in the Style panel matches the order metrics were added in Setup. If you added your metrics in the wrong order, Series #1 in Style will correspond to the first metric in Setup — not necessarily the one you expected. You can reorder metrics in the Setup panel by dragging them, then re-style each series."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use a combo chart with a date dimension for trend reporting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, and this is one of the most powerful use cases. Set your dimension to Date and your metrics to something like daily spend (bars) and daily ROAS (line). This gives you a timeline view where you can immediately see whether efficiency rises or falls as spend increases — which is exactly what most marketing reports need."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

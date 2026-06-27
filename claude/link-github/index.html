@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why do I need to connect GitHub to Claude Code?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Connecting GitHub lets Claude Code read your existing repositories and push new code and commits directly from a session. Without the GitHub connection, Claude Code can still write code in a temporary Cloud environment, but it cannot persist changes to your repositories or deploy to services like GitHub Pages. The connection is required to build and ship real projects."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What permissions does Claude Code request when I connect GitHub?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Claude Code requests OAuth access to your GitHub account to read repository contents and push commits. During the authorisation step on GitHub, you can choose to grant access to all repositories or restrict it to specific repositories only. Restricting to specific repos is recommended if you want to limit Claude Code's access to just the projects you are actively working on."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a paid GitHub account to use Claude Code?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. A free GitHub account is sufficient to connect to Claude Code and host public repositories on GitHub Pages. Paid GitHub plans are only needed if you want private repositories (though GitHub's free tier now includes unlimited private repos) or advanced team features. For most website-building and personal projects, the free tier is all you need."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I disconnect GitHub from Claude Code later?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You can revoke Claude Code's access to GitHub at any time from two places: in Claude Code's Settings → Connectors (remove the connection), and on the GitHub side under Settings → Applications → Authorized OAuth Apps (revoke access). Either approach immediately removes Claude Code's ability to read or push to your repositories."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I connect GitHub to a new Claude Code session?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Once GitHub is connected at the account level in Settings, the connection is available across all your Claude Code sessions. When you start a new session and select a Cloud environment, you can choose an existing GitHub repository as the working directory. Claude Code will clone it, make changes, and push commits back to GitHub as the session progresses."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use Claude Code with a GitHub organisation repository?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, provided the GitHub organisation allows OAuth app access. During authorisation, you will see an option to grant access to organisations you belong to. Some organisations require an admin to approve third-party OAuth apps — if access is blocked, contact your GitHub organisation admin to approve the Claude Code OAuth application."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

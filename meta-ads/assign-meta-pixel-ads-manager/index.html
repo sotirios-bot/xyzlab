@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why do I need to assign my Meta Pixel to my ad account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Meta Pixel (Dataset) must be explicitly assigned to an ad account before it can be used for conversion tracking or creating custom audiences in that account. Without the assignment, the pixel data is collected but cannot be used to optimise campaigns or measure conversions. This is managed at the Business Manager level under Business Settings → Data Sources → Datasets."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between a Meta Pixel and a Dataset?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Meta rebranded the Meta Pixel as a Dataset to reflect its expanded role — a Dataset can receive data not only from the browser pixel but also from server-side events (Conversions API), mobile app events, and offline conversions, all in one unified data source. The pixel code you install on your website still works the same way; the Dataset is simply the container that holds all these event data streams together."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I assign the same Meta Pixel to multiple ad accounts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. A single Meta Pixel (Dataset) can be assigned to multiple ad accounts within the same Business Manager. This is useful for agencies managing several clients from one business portfolio, or businesses running ads from different ad accounts but tracking conversions on a single website. Repeat the \"Assign assets\" process for each additional ad account you want to connect."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why can't I see the Datasets option in Business Settings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There are two common reasons: you may not have Admin access to the Business Manager — only admins can manage data sources and assign them to ad accounts. Alternatively, if no pixel has been created yet, the Datasets section may appear empty. Make sure you are logged into the correct Business Manager account and that a pixel has been created before attempting the assignment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I check that my Meta Pixel is correctly assigned and firing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After assigning the pixel, go to Events Manager in Meta Business Manager and select your Dataset. The Overview tab shows recent event activity — if the pixel is installed on your site and assigned correctly, you should see events appearing here. You can also install the Meta Pixel Helper Chrome extension to verify the pixel is firing on your website pages in real time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can an agency assign a client's Meta Pixel to their own ad account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, but only if the agency has been granted access to the client's Business Manager and has at least Admin permissions on it. The pixel must be owned by (or shared with) the Business Manager that contains the ad account. Best practice is for the client to own their pixel within their own Business Manager, and then share access to the agency — this ensures the client retains ownership of their data."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

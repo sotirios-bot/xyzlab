@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between a Meta pixel event and a custom conversion?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A pixel event (e.g. Lead, Purchase, ViewContent) is a standardised action tracked directly on your website using the Meta pixel or the Event Setup Tool. A custom conversion is a rule you define in Events Manager — typically based on a URL visit — that groups or filters pixel data into a specific conversion you care about. Custom conversions are useful when you want to track thank-you pages or specific URL paths without touching any code."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to install the Meta pixel before using the Event Setup Tool?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The Meta pixel base code must already be installed on the page before the Event Setup Tool can work. The tool loads a live preview of your page and injects event tracking by identifying clickable elements — it requires the pixel to be present to fire the events correctly. If the pixel is not installed, use Meta's Partner Integrations (such as Google Tag Manager) to install it first."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which event type should I use — Lead, Contact, or a custom event?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use Meta's standard event types whenever possible, as they are recognised by Meta's algorithm for campaign optimisation. Use Lead for form submissions or enquiries, Contact for contact button clicks (phone, WhatsApp), Purchase for completed transactions, and CompleteRegistration for sign-ups. Custom events are available for non-standard actions but may have limited optimisation support."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I verify that my Meta pixel event is firing correctly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Install the Meta Pixel Helper Chrome extension, then visit the page where your event is set up and trigger the action (e.g. click the button). The extension will show a green tick and the event name if it fires correctly. You can also check Events Manager → Test Events to see real-time event activity from your browser session."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use a custom conversion as a campaign optimisation goal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Once created, your custom conversion will appear as an option in the Conversion event field when setting up a Conversions campaign in Meta Ads Manager. Meta will then optimise your ad delivery to show ads to people most likely to complete that specific action. For best performance, ensure your custom conversion has received at least 50 events in the past 7 days before optimising toward it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the iOS 14 impact on Meta pixel tracking?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Apple's iOS 14+ App Tracking Transparency framework allows users to opt out of cross-site tracking, which limits how the Meta pixel can track conversions from iOS users. To mitigate this, Meta introduced the Conversions API (CAPI), which sends event data server-side rather than relying solely on the browser. Setting up domain verification and aggregated event measurement in Events Manager is also recommended to maximise the data you can receive and use for optimisation."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

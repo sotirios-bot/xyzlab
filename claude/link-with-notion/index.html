@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What can Claude do once Notion is connected?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Once Notion is linked, Claude can read your pages, search across your workspace, summarise notes, answer questions based on your content, and help you draft updates or new pages. You interact with your Notion data conversationally — no need to copy and paste content between apps."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Claude write to or edit my Notion pages?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The capabilities depend on the permissions you grant during the Notion authorisation flow. At minimum, Claude can read your content. If you grant write access, Claude may also be able to create or update pages depending on the integration's current feature set. Check the Notion connector settings in Claude for the full list of enabled actions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a paid Claude plan to use Connectors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Connectors (including the Notion integration) are available on Claude Pro and Team plans. Free plan users generally cannot access third-party connectors. Check Claude's current plan comparison page for the latest feature availability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which Notion pages does Claude have access to?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "During the authorisation flow, Notion lets you select specific pages or your entire workspace to share with Claude. You are in full control — Claude only sees the pages you explicitly grant access to. You can revoke or update this access at any time from your Notion settings under Connected apps."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I disconnect Notion from Claude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To disconnect, go to Settings → Connectors in Claude and remove the Notion connection. You can also revoke access from within Notion itself by going to Settings → Connections and removing Claude from the list of connected apps. Either action will immediately cut off Claude's access to your Notion workspace."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my Notion data safe when connected to Claude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Anthropic accesses your Notion data only to respond to your requests in Claude — your content is not used to train AI models. Data is handled according to Anthropic's privacy policy and Notion's API terms. For sensitive workspaces, consider granting access only to specific pages rather than your entire workspace during the authorisation step."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does \"Unassigned\" mean in Google Analytics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Unassigned is the channel group GA4 uses when a session's source/medium combination doesn't match any of the default channel definitions. Unlike UA's \"(Other)\" bucket, Unassigned in GA4 means the traffic genuinely couldn't be categorised — most often because UTM parameters are missing, incomplete, or don't align with Google's channel rules for manual traffic sources."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the most common causes of Unassigned traffic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The most frequent causes are: missing UTM tags on paid campaigns (e.g. emails or social posts without utm_source and utm_medium); UTM values that don't match GA4's channel definitions (e.g. utm_medium=social_paid instead of paid_social); cross-domain tracking issues that break the referral chain; and server-side or API-imported events sent without session-level attribution data."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I fix Unassigned traffic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "First, identify the sources using the method in this tutorial. Then for each source: add or correct UTM parameters to match GA4's channel definitions (e.g. use utm_medium=cpc for paid search, utm_medium=email for email campaigns); configure channel group rules in GA4 Admin → Data display → Channel groups to capture custom source/medium values; and ensure cross-domain tracking is configured if traffic crosses multiple domains."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Unassigned traffic the same as Direct traffic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Direct traffic is specifically sessions where GA4 receives no referrer and no UTM parameters — a user typed the URL directly or used a bookmark. Unassigned is different: it means GA4 did receive source/medium information but couldn't match it to any known channel group. Both are data quality issues, but they have different root causes and different fixes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I create a custom channel group to capture Unassigned traffic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. In GA4, go to Admin → Data display → Channel groups and create a new channel group (or edit the default one). You can add rules that match specific source/medium combinations from your Unassigned bucket and assign them to meaningful channel names. This is the recommended long-term fix when you can't change the UTM parameters at the source (e.g. third-party platforms)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will fixing Unassigned traffic change historical data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on the fix. Updating UTM parameters only affects future traffic — historical sessions that were tagged incorrectly remain Unassigned. However, creating or editing a custom channel group in GA4 Admin does apply retroactively to historical data, because channel groupings are calculated at query time rather than at data collection time. This makes channel group rules a powerful way to reclassify past Unassigned sessions without re-tagging campaigns."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

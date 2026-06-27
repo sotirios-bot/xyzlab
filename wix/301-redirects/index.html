@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a 301 redirect and why is it important in Wix?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A 301 redirect is a permanent redirect that tells browsers and search engines that a URL has moved to a new location. When you change a page URL, delete a page, or restructure your Wix site, a 301 redirect ensures that visitors who click old links (from search results, social media, or backlinks) are automatically sent to the correct new page — instead of seeing a 404 error. It also transfers most of the original page's SEO authority to the new URL."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do 301 redirects in Wix pass SEO link equity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. A properly set up 301 redirect passes the majority of a page's link equity (PageRank) to the destination URL. This means any backlinks pointing to your old URL will continue to benefit your new URL in Google's rankings. For this reason, 301 redirects are the recommended approach whenever you change a page URL or move content permanently."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between a 301 and a 302 redirect?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A 301 redirect signals that the move is permanent — search engines will update their index to point to the new URL and transfer link equity. A 302 redirect signals that the move is temporary — search engines keep the original URL in their index and do not fully transfer link equity. Use 301 for permanent URL changes and 302 only when you genuinely intend to restore the original URL in the future."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to republish my Wix site after adding a redirect?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. URL redirects created in the Wix URL Redirect Manager take effect immediately without needing to republish your website. This is different from design or content changes, which require a full publish. You can add, edit, and delete redirects at any time from the dashboard and they will go live instantly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I redirect an old URL to a page on a completely different domain in Wix?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Wix URL Redirect Manager supports cross-domain redirects — you can enter a full external URL (including https://) as the destination. This is useful if you are migrating content to a new domain or redirecting an old page to a partner website. For the old URL field, you still enter only the slug (the path after your domain)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take Google to recognise a 301 redirect added in Wix?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The redirect works for users immediately. For Google to update its index and transfer ranking signals, it typically takes anywhere from a few days to a few weeks depending on how often Googlebot crawls your site. You can speed up the process by submitting the new URL in Google Search Console › URL Inspection and requesting indexing. Submitting an updated sitemap also helps Google discover the change faster."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

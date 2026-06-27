@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between account-level and campaign-level conversion goals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Account-level goals apply to every campaign in your account by default — if you set \"Purchase\" and \"Lead\" as account goals, all campaigns optimise toward both. Campaign-level goals let you override that for a specific campaign so it only counts and optimises for the conversions you choose. This is essential when running mixed campaigns — for example, a lead generation campaign that should ignore purchase events, or a brand awareness campaign that only counts video views."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will changing conversion goals reset my campaign's Smart Bidding learning period?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, changing the conversion actions a campaign optimises for can trigger a re-learning period for Smart Bidding strategies like Target CPA or Target ROAS. Google's algorithm needs to relearn which users are most likely to complete the newly selected conversions. The learning period typically lasts 1–2 weeks — expect some fluctuation in performance during this time before bids stabilise."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I set different conversion goals for different campaigns in the same account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, that is exactly what campaign-specific conversion goals enable. Each campaign can have its own set of conversion actions — for example, a Search campaign optimising for form submissions while a Shopping campaign optimises for purchases and a YouTube campaign optimises for video engagement. This gives you granular control over how each campaign's bidding strategy behaves."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which conversion actions are available to select at the campaign level?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All active conversion actions in your Google Ads account are available to select, including those created via the Google Ads tag, Google Analytics import, app tracking, phone call tracking, and any manually created actions. If you don't see a conversion action you expect, check that it is set to active and has the Include in Conversions setting enabled in your account's Conversion Actions settings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I switch a campaign back to account default goals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Switching back to Account default removes the campaign-specific override — the campaign will again optimise toward all conversion actions included in your account-level goals. This change can also trigger a brief re-learning period for Smart Bidding, as the algorithm adjusts back to optimising for a broader or different set of conversions. Review your account-level goals first to confirm they align with what you want this campaign to target."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I change conversion goals for multiple campaigns at once?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. In the Campaigns view, you can tick the checkbox next to multiple campaigns and then use the Edit → Update conversion goals option to apply the same conversion goal settings across all selected campaigns simultaneously. This is a useful time-saver when restructuring a large account or rolling out a new conversion strategy across a set of campaigns at once."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

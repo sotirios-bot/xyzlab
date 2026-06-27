@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What format does my spreadsheet need to be in for Google Ads Editor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your spreadsheet should use column headers that match Google Ads Editor's field names, such as Campaign, Ad Group, Keyword, Match Type, Max CPC, and Status. You can work in Excel or Google Sheets — simply copy the data (including headers) and paste it directly into the Make Multiple Changes dialog. Editor will attempt to auto-map the columns."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does bulk uploading via Editor push changes live immediately?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No — changes imported through the Make Multiple Changes feature are staged locally in Google Ads Editor first. You can review, adjust, or discard them before clicking Post Changes to push them live to your Google Ads account. This gives you a safety net to catch errors before they go live."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I bulk upload ads and extensions as well as keywords?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Google Ads Editor supports bulk uploads for most entity types — including responsive search ads, sitelinks, callouts, and more. Navigate to the relevant section in the left panel (e.g., Ads, Sitelinks), then use Make Multiple Changes to paste in your data. Each entity type has its own required columns."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if Google Ads Editor can't recognise a column?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If Editor cannot automatically map a column, it will show a dropdown in the column mapping screen where you can manually select the correct field. Columns that don't match any known field can be set to Ignore so they don't cause errors. Always review the column mapping carefully before clicking Process."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use bulk upload to edit existing campaigns, or only create new ones?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both. If a campaign or keyword in your spreadsheet already exists in your account (matched by name), Editor will update it with the new values. If it doesn't exist, Editor will create it. This makes bulk upload useful for both initial campaign builds and large-scale edits to existing structures."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a limit to how many keywords I can bulk upload at once?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google Ads Editor can handle very large uploads — accounts with hundreds of thousands of keywords are supported. However, very large pastes may take a moment to process. For best performance, break extremely large uploads (e.g., 100,000+ rows) into smaller batches and post each batch before moving to the next."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

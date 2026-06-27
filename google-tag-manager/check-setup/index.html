@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is GTM Preview mode?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GTM Preview mode is a debugging tool built into Google Tag Manager. When you click Preview, it launches Tag Assistant — a companion tool that connects to your website in a special debug session. It lets you see in real time which tags are firing, which triggers are activating, and what data layer values are present, without affecting what live users see on your site."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does \"Tag Assistant connected\" mean?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "\"Tag Assistant connected\" means that GTM has successfully established a debug session with your website. It confirms that the GTM snippet is present and loading on the page you entered. If you see this message, the base GTM installation is working — you can then check inside Tag Assistant to confirm your individual tags and triggers are firing as expected."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is Tag Assistant not connecting to my website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If Tag Assistant fails to connect, the most common causes are: (1) GTM is not installed on the page — the snippet may be missing or only on some pages; (2) a browser extension (ad blocker, privacy tool) is blocking the GTM script — try in an incognito window with extensions disabled; (3) the page is behind a login or firewall that Tag Assistant cannot access; (4) the GTM snippet is placed incorrectly — it should appear immediately after the opening &lt;body&gt; tag."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I find and verify my GTM container ID?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your GTM container ID is displayed in the top-right corner of your GTM workspace and looks like GTM-XXXXXXX. In Tag Assistant, the container ID is shown in the summary panel once connected. If the IDs don't match, the wrong GTM snippet has been pasted into the site — the site may be loading a different account's container. Copy the correct snippet from Admin &gt; Install Google Tag Manager in your GTM account and replace the one on the site."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I check inside Tag Assistant after connecting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Once connected, check: (1) Container ID — confirm it matches your GTM account; (2) Page View event — this should always appear in the activity log on load; (3) Tags fired — any tags set to fire on \"All Pages\" should appear as fired (green); (4) Tags not fired — investigate these to understand why their trigger conditions were not met; (5) Data Layer — check that the expected variables are present if you are using custom events or eCommerce tracking."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does GTM Preview mode affect live website visitors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. GTM Preview mode only affects your own browser session — it uses a special debug cookie that is not present for regular visitors. Live users will not see the Tag Assistant panel, and any unpublished container changes you are testing in Preview will not be visible to them. Preview mode is completely safe to use on a live production website."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

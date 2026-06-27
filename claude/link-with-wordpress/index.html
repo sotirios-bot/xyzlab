@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What can Claude do once WordPress is connected?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Once WordPress is linked, Claude can read, create, and edit posts and pages on your site. You can ask Claude to draft new blog posts, update existing content, retrieve published articles, or manage your site's content without leaving the Claude interface. This makes it a powerful tool for content teams and solo creators alike."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does this work with self-hosted WordPress (WordPress.org)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The WordPress connector in Claude works with WordPress.com sites and self-hosted WordPress.org sites that have the necessary REST API access enabled. Most modern WordPress installations have the REST API enabled by default. Check your WordPress site's settings or ask your hosting provider if you're unsure whether the API is accessible."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a paid Claude plan to use Connectors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Connectors (including the WordPress integration) are available on Claude Pro and Team plans. Free plan users generally cannot access third-party connectors. Check Claude's current plan comparison page for the latest feature availability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Claude publish posts directly to my WordPress site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, depending on the permissions granted during setup. Claude can typically create posts as drafts or publish them directly based on the access level you authorise. For most workflows, it's safer to have Claude create drafts that you review and publish manually — giving you a final quality check before anything goes live."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I disconnect WordPress from Claude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To disconnect, go to Settings → Connectors in Claude and remove the WordPress connection. You can also revoke access from your WordPress admin panel under Users → Your Profile → Applications (for WordPress.com) or by removing the connected application from your site's settings. Either action immediately cuts off Claude's access to your WordPress site."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my WordPress site data safe when connected to Claude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Anthropic accesses your WordPress data only to respond to your requests in Claude — your site content is not used to train AI models. The connection uses OAuth or application passwords, meaning your WordPress admin credentials are never directly exposed to Claude. Always review the permission scopes during the authorisation step and grant only the access your workflow requires."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

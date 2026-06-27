@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a Customer List in Google Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Customer List (also called Customer Match) is a targeting feature in Google Ads that lets you upload your own customer data — such as email addresses, phone numbers, or postal addresses — to create a custom audience. Google matches this data against signed-in Google users so you can target or exclude your existing customers across Search, YouTube, Gmail, and Display campaigns."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What file format do I need to upload a customer list?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google Ads requires your customer data to be in a CSV file. The file should have a header row (e.g. Email Address) followed by one entry per row. Emails should be plain text — Google hashes the data automatically during upload. You can also include phone numbers and postal addresses in the same file using the appropriate column headers from Google's template."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take for a customer list to become active?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After uploading, Google typically takes up to 48 hours to process and match your list. The segment status will show as \"Populating\" during this time and will update once matching is complete. The match rate depends on how many of your uploaded emails are associated with active Google accounts — a match rate of 30–50% is common for most lists."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the minimum list size required?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google requires a minimum of 1,000 matched users before a customer list can be used for targeting. If your list matches fewer than 1,000 users, the segment will not be available for targeting (though you can still use it for bid adjustments in some cases). Upload as large a list as possible to maximise your matched audience size."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use customer lists for both targeting and exclusions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Customer lists can be applied as targeting segments (to show ads only to people on your list) or as exclusions (to suppress ads for existing customers). A common use case is to exclude current customers from prospecting campaigns to avoid wasted spend, while running separate retention or upsell campaigns targeting only your existing customer base."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I ensure customer data is handled safely?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google hashes all uploaded customer data (SHA-256 encryption) before matching — your raw email addresses are never stored by Google after processing. You must also comply with Google's Customer Match policy, which requires that you have permission to use the data and that you disclose its use to your customers. Always ensure your privacy policy covers the use of customer data for advertising purposes."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

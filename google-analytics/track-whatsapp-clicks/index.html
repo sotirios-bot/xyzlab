@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why do I need to enable Click Variables before setting up the trigger?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GTM's built-in Click Variables (Click URL, Click Text, Click Classes, etc.) are disabled by default. The Just Links trigger uses the Click URL variable to compare each link click against your WhatsApp URL condition. Without enabling Click Variables first, GTM can't read the URL of the clicked link, so your trigger condition will never match and the tag won't fire."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What WhatsApp URL format should I use in the trigger?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The most common WhatsApp link formats are https://wa.me/PHONENUMBER and https://api.whatsapp.com/send?phone=PHONENUMBER. The easiest approach is to set the trigger condition to Click URL contains wa.me — this will match any WhatsApp link on your site regardless of the phone number or extra parameters. If you have multiple WhatsApp numbers and want to track them separately, use the exact full URL for each."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why use \"Just Links\" instead of \"All Elements\" as the trigger type?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Just Links fires only when an &lt;a href&gt; anchor tag is clicked, which is the correct element type for outbound links like WhatsApp. It also waits for the link navigation to register before sending the tag — important for outbound links that open WhatsApp. All Elements fires for any click on any element and may miss outbound link navigation timing. Use Just Links for all outbound link tracking."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I verify the event is arriving in GA4 after publishing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After publishing your GTM container, click the WhatsApp link on your live website from a browser where you have GA4 open. Check GA4 &rarr; Reports &rarr; Realtime to see the event appear within a few seconds, or go to Admin &rarr; DebugView for a detailed view of events firing from your device. The event will appear under the name you set (e.g. whatsapp_click)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use the WhatsApp click event as a conversion in Google Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Once the WhatsApp click event is appearing in GA4, go to GA4 &rarr; Admin &rarr; Events and toggle Mark as conversion next to your event. Then in Google Ads &rarr; Tools &rarr; Conversions, import the conversion from Google Analytics. This lets Google Ads smart bidding optimise for WhatsApp contacts as a conversion action."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "My tag isn't firing in Tag Assistant — what should I check?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The most common causes are: (1) Click Variables not enabled — go back and enable them, then republish; (2) URL mismatch — check the exact Click URL value shown in Tag Assistant for your link click and compare it to your trigger condition; (3) Link opens in a new tab — enable the Check Validation option in your Just Links trigger to handle new-tab links; (4) Container not published after enabling Click Variables."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

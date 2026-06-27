@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What can Claude do once Stripe is connected?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Once Stripe is linked, Claude can query your payment data conversationally — look up customer records, retrieve recent transactions, check subscription statuses, view refund history, and summarise revenue metrics. Instead of navigating the Stripe dashboard manually, you can simply ask Claude for the information you need."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Claude create or modify Stripe records?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The available actions depend on the permissions you grant during the Stripe authorisation flow. The integration is primarily designed for read access — querying customers, payments, and subscriptions. Write operations such as issuing refunds or creating invoices may be available depending on the current feature set. Review the permission scopes carefully during setup and grant only the access your workflow requires."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a paid Claude plan to use Connectors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Connectors (including the Stripe integration) are available on Claude Pro and Team plans. Free plan users generally cannot access third-party connectors. Check Claude's current plan comparison page for the latest feature availability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which Stripe account does Claude connect to?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Claude connects to whichever Stripe account you are logged into during the authorisation flow. If you manage multiple Stripe accounts, make sure you're logged into the correct one before completing the setup. You can disconnect and reconnect at any time to switch accounts via Settings → Connectors in Claude."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I disconnect Stripe from Claude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To disconnect, go to Settings → Connectors in Claude and remove the Stripe connection. You can also revoke access from within Stripe by going to Settings → Connected applications and removing Claude from the list. Either action immediately cuts off Claude's access to your Stripe data."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my Stripe payment data safe when connected to Claude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Anthropic accesses your Stripe data only to respond to your requests in Claude — your payment and customer data is not used to train AI models. The connection uses OAuth, so your Stripe API keys and credentials are never directly exposed to Claude. Always review the permission scopes during authorisation and grant only the access your workflow requires."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

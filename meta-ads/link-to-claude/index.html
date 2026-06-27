@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is MCP and why does it matter for Meta Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MCP (Model Context Protocol) is an open standard that lets AI models like Claude connect to external tools and data sources. By connecting the Meta Ads MCP to Claude, you give Claude direct access to your campaign data — so instead of manually exporting reports, you can ask Claude to analyse performance, identify trends, suggest optimisations, and even make changes to your campaigns through natural conversation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which Claude plan do I need to use MCP connectors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MCP connectors (also called Integrations) are available on Claude Pro, Team, and Enterprise plans. They are not available on the free tier. If you don't see the Connectors option in Settings, check your current plan and upgrade if needed to access this feature."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What can I ask Claude to do once Meta Ads is connected?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Once connected, Claude can read your campaign data in real time. You can ask it to pull performance reports, compare campaigns by ROAS or CPA, identify underperforming ad sets, suggest budget reallocations, write new ad copy, and more. The Meta Ads MCP also supports write actions — meaning Claude can pause campaigns, adjust budgets, or update targeting directly in your account when you instruct it to."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it safe to give Claude access to my Meta Ads account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The connection uses Meta's official OAuth authorisation flow — Claude never sees your password and access is granted through Meta's standard permissions system, the same way you'd connect any third-party tool. You can revoke access at any time from your Meta Business Settings under Apps &amp; Integrations. It is good practice to only connect ad accounts that are relevant and to review what actions Claude takes before confirming them."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I connect multiple Meta Ads accounts to Claude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. During the authorisation step you can select multiple ad accounts from your Meta Business Manager. This is especially useful for agencies managing several clients — you can switch between accounts within the same conversation or ask Claude to compare performance across accounts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I disconnect Meta Ads from Claude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Go to Claude Settings → Connectors, find the Meta Ads MCP connector, and click Disconnect or Delete. To fully revoke access from Meta's side, go to your Meta Business Settings, navigate to Apps &amp; Integrations, find Claude, and remove its permissions. Both steps together ensure the connection is fully terminated."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

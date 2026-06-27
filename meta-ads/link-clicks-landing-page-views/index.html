@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why is my Landing Page Views count always lower than Link Clicks?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This is normal. Link Clicks are recorded client-side the moment someone taps the ad, while Landing Page Views require the destination page to fully load and the Meta Pixel to fire. Drop-off between the two can happen due to slow page speed, users closing the browser before the page loads, ad blockers preventing the Pixel from firing, or connectivity issues on mobile. A large gap (e.g. more than 30–40%) is a signal to investigate your page load speed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which metric should I use to optimise a Traffic campaign?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When running a Traffic campaign to a website or landing page, set your optimisation event to Landing Page Views. This tells Meta to find people most likely to fully load your page — a higher-quality audience than those who merely click. Link Clicks optimisation is more appropriate when the destination is Messenger or WhatsApp, where no page load occurs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need the Meta Pixel installed to track Landing Page Views?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Landing Page Views require the Meta Pixel (or Conversions API) to be installed on the destination page. The Pixel fires a PageView event when the page loads, which Meta counts as a Landing Page View. Without the Pixel, Meta can only count Link Clicks. If your Pixel is not installed or is firing incorrectly, Landing Page Views will be zero or significantly under-reported."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I see both Link Clicks and Landing Page Views in Ads Manager?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. In Meta Ads Manager, click Columns &gt; Customise Columns and add both Link Clicks and Landing Page Views to your view. Comparing them side by side lets you quickly spot any campaigns with a high click-to-view drop-off, which points to page speed or Pixel issues worth investigating."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does landing page speed affect my Meta Ads performance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, significantly. When Meta optimises for Landing Page Views, it rewards advertisers whose pages load quickly by delivering ads to more people. A slow landing page increases the gap between Link Clicks and Landing Page Views, raises your effective cost per visit, and reduces conversion rates. Aim for a page load time under 3 seconds — tools like Google PageSpeed Insights can help identify and fix speed issues."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I use Link Clicks or Landing Page Views for a WhatsApp campaign?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use Link Clicks for WhatsApp campaigns. When someone clicks a Click-to-WhatsApp ad, the WhatsApp conversation opens directly — no landing page loads and no Pixel fires. Landing Page Views will register zero for these campaigns. Link Clicks accurately measures engagement for click-to-message destinations like WhatsApp and Messenger."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

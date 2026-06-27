@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What format should my customer list be in for TikTok Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TikTok Ads accepts CSV or TXT files for customer list uploads. The recommended approach is to use TikTok's official upload template, which ensures your data columns (such as email, phone, IDFA/GAID) are formatted correctly. Email addresses are the most commonly used identifier and typically yield the highest match rates."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many contacts do I need to upload a customer list to TikTok Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TikTok requires a minimum of 1,000 email addresses in your upload file to create a Customer File audience. However, for effective ad delivery you typically need at least 1,000 matched users after TikTok processes the file. If your matched audience falls below this threshold, enable Audience Enhancement to let TikTok expand the audience with similar users."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Audience Enhancement in TikTok Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Audience Enhancement is a TikTok feature that automatically expands your uploaded customer audience by finding additional users who share similar characteristics. It is particularly useful when your customer list produces a matched audience smaller than 5,000 people, which would otherwise limit ad delivery. Toggle it on during the audience creation step to unlock better reach without changing your targeting intent."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does TikTok match my customer list to users?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TikTok hashes your uploaded identifiers (email addresses, phone numbers, etc.) locally before transmitting them to its servers. The hashed values are then compared against TikTok's user database to find matches. Your raw data is never stored by TikTok. Match rates typically range from 20% to 50% depending on the quality of your data and how many of your contacts have TikTok accounts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I create a Lookalike Audience from my Customer List on TikTok Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Once your Custom Audience is created and has enough matched users, you can use it as a source audience for a TikTok Lookalike Audience. Go to Audience Manager › Create Audience › Lookalike Audience and select your customer list as the source. TikTok will identify new users on the platform who closely resemble your existing customers, helping you scale to high-quality cold audiences."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take for a TikTok Ads Customer Audience to be ready?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TikTok typically processes a customer list upload within 30 minutes to a few hours, though it can occasionally take up to 24 hours for large files. The audience will show a status of Populating during processing and will switch to Ready once it can be used in campaigns. You will receive a notification in Ads Manager when the audience is available."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

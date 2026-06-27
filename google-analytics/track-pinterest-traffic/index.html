@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does Pinterest traffic appear in Google Analytics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pinterest traffic typically appears as pinterest.com / referral or pinterest.com / social in the Session source / medium dimension. Organic clicks from Pins link directly to your website, while Pinterest Ads traffic will appear with whatever UTM parameters you've configured in your campaign URLs. In GA4's default channel groupings, Pinterest traffic usually falls under Referral or Organic Social depending on your channel rules."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is my Pinterest traffic not showing in Google Analytics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The most common reasons are: your Pins don't link to your website, your date range is too short to show any visits, or the volume of traffic from Pinterest is very low. Pinterest is a discovery platform where results compound over time, so try extending your date range to the last 90 or 180 days. Also check whether traffic might be attributed to Direct if the referrer was stripped — adding UTM parameters (utm_source=pinterest&utm_medium=social) to your Pin links prevents this."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What UTM parameters should I use for Pinterest links?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For organic Pins, a standard setup is: utm_source=pinterest&utm_medium=social&utm_campaign=your-campaign-name. For Pinterest Ads, use the platform's built-in UTM tracking or add: utm_source=pinterest&utm_medium=cpc&utm_campaign=your-campaign-name. Adding UTM parameters ensures GA4 always attributes the session correctly, regardless of how the link is opened — especially important since Pinterest's app can sometimes strip the referrer header."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Pinterest organic and Pinterest Ads traffic in GA4?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Without UTM parameters, both organic and paid Pinterest traffic appear as pinterest.com / referral, making them indistinguishable. To separate them, add UTM tags to your ad URLs (utm_medium=cpc for paid, utm_medium=social for organic). Pinterest Ads Manager also has an auto-tagging option that can append UTM parameters automatically — check your campaign settings to enable it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I add Pinterest to the Organic Social channel in GA4?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GA4 may classify Pinterest referral traffic under Referral rather than Organic Social. To fix this, go to Admin → Data display → Channel groups, edit the Organic Social channel rule, and add pinterest.com as a matching source domain. This ensures Pinterest organic traffic is grouped alongside Facebook, Instagram, and other social platforms in your channel-level reports."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I track Pinterest traffic alongside other social media platforms in one report?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. In the Traffic Acquisition report, remove the search filter to see all sources ranked by sessions. You can compare Pinterest, Instagram, TikTok, and other platforms side by side using the Session source / medium dimension. For a dedicated social media overview, build a custom Looker Studio (Data Studio) report that filters for all major social sources, making it easy to monitor and compare them on a single dashboard."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

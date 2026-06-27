@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where exactly do I find my Meta Pixel ID in Events Manager?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In Events Manager, your Pixel ID appears in two places: (1) directly below the dataset name on the main Events Manager overview screen — it is the short numeric code shown in smaller text beneath your Pixel's name; and (2) inside the dataset, under Settings, where the full Pixel ID is displayed alongside the install instructions. The ID is the same in both locations — it is a 15–16 digit number unique to your Pixel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the Meta Pixel ID the same as the Dataset ID?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Meta rebranded the Pixel as a Dataset in Events Manager as part of their push toward server-side tracking and the Conversions API. The Pixel ID and the Dataset ID refer to the same unique identifier — the numeric code that links your tracking data to your Meta Business account. Whether you see it labelled \"Pixel ID\" or \"Dataset ID\" depends on your interface version, but the number is the same."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I have more than one Meta Pixel ID for the same business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You can create multiple Pixels (Datasets) within the same Meta Business account — for example, one Pixel per website or one per brand. However, Meta recommends using a single Pixel per website and tracking multiple event types through that one Pixel, rather than installing multiple Pixels on the same site. Using multiple Pixels on one site can cause duplicate event reporting and make campaign optimisation less effective."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What do I need the Pixel ID for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your Pixel ID is required in several scenarios: installing the Meta Pixel base code manually on your website, connecting it to a third-party platform (such as Shopify, Wix, or Go High Level), setting up the Conversions API for server-side tracking, assigning the Pixel to an ad account in Meta Ads Manager, and configuring tracking tools like Google Tag Manager or CookieYes. Any time a platform asks for your \"Pixel ID\" or \"Facebook Pixel ID\", this is the number you provide."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if I cannot find my Pixel in Events Manager?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If your Pixel does not appear in Events Manager, there are a few possible reasons: you may be logged into the wrong Business account (check the Business account selector at the top), the Pixel may not have been created yet (click Connect data sources to create one), or you may not have the correct permissions to view it (ask the Business account owner to grant you access). You can also search for your Pixel by entering your website URL in the Events Manager search bar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use the same Pixel ID across multiple ad accounts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. A single Pixel can be assigned to multiple ad accounts, which is useful when an agency manages ads on behalf of a business — the Pixel lives in the business's account and is shared with the agency's ad account. To assign a Pixel to an ad account, go to Events Manager &gt; Your Pixel &gt; Settings and use the Ad accounts section to add or remove ad accounts that have access to the Pixel's data."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

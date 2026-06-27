@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a Google Ads conversion action?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A conversion action is a specific customer activity you want to track — such as a form submission, phone call, purchase, or thank-you page visit. When someone completes that action after clicking your ad, Google Ads records it as a conversion. This data powers Smart Bidding strategies like Target CPA and Target ROAS, so accurate conversion tracking is essential for campaign performance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need Google Tag Manager to set up conversions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No — you can also install the conversion snippet directly on your website. However, using Google Tag Manager is recommended because it lets you deploy and update tags without touching your website code. It also makes it easier to manage multiple tracking tags (Google Ads, Meta Pixel, GA4) from one place."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where do I find my Conversion ID and Conversion Label?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After creating your conversion action in Google Ads, navigate to Goals → Conversions → Summary, click on your conversion action, then select Tag setup → Use Google Tag Manager. Google Ads will display both your Conversion ID (a number like 123456789) and your Conversion Label (a short alphanumeric string). Copy both into your GTM tag configuration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What trigger should I use in Google Tag Manager?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The trigger should fire at the moment the conversion happens. Common setups include: a Page View trigger filtered to your thank-you or confirmation URL (e.g. /thank-you), a Click trigger on a button or phone number, or a Form Submission trigger. Choose the trigger type that matches how your conversion is defined."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I verify that my Google Ads conversion is tracking correctly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use GTM Preview mode to simulate a conversion and confirm your tag fires on the correct trigger. You can also install the Google Tag Assistant Chrome extension to see conversion tags firing in real-time. In Google Ads, the conversion status will change from Unverified to Recording within 24–48 hours once a real conversion is tracked."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I track multiple conversion actions in the same account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You can create as many conversion actions as needed — for example, separate actions for form submissions, phone calls, and purchases. Each conversion action gets its own Conversion ID/Label pair, and you create a separate GTM tag for each one. You can then control which conversions are used for Smart Bidding at the campaign level using Campaign Conversion Goals."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

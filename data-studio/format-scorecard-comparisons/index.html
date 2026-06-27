@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a scorecard comparison in Data Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A scorecard comparison adds a secondary value and a percentage change indicator below the main metric on a scorecard. It lets viewers immediately see whether a metric is up or down compared to a previous period, a target, or another metric — without needing to cross-reference a separate chart or table."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What comparison date range options are available?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Data Studio offers several built-in comparison date ranges including Previous period (same duration, immediately before), Previous year (same dates one year ago), and Same period last year. The most commonly used is Previous period, which automatically adjusts to match whatever date range the report's date control is set to."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I compare a metric against a target or budget instead of a date period?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In the Setup panel under Other comparison options, select Value and enter your target number. This is useful for KPI scorecards where you want to show how actual performance compares to a fixed goal — for example, showing that 1,200 leads were generated against a target of 1,000."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I reverse the colour logic so that a decrease shows as green?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. In the Style panel under Comparison fields, there is a toggle to reverse the colour direction. This is essential for cost metrics like CPA or CPC — a decrease in cost is a positive result, so you want it to display in green even though the value went down."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between showing percentage change and absolute difference?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Percentage change shows how much a metric moved relative to the comparison value (e.g. +15%). Absolute difference shows the raw numerical change (e.g. +180 conversions). You can display both simultaneously in Data Studio. Absolute difference is often more meaningful for stakeholders who think in units rather than percentages."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the comparison update automatically when the date range filter changes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. When you use Previous period as the comparison type, it automatically recalculates whenever the report's date range control is adjusted. So if a viewer changes the date filter from \"last 7 days\" to \"last 30 days\", the comparison value updates to reflect the prior 30-day period automatically — no manual reconfiguration needed."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

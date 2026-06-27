@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Meta Audience Network?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Meta Audience Network is a collection of third-party mobile apps, games, and websites where Meta can show your ads outside of Facebook and Instagram. Publishers in the Audience Network integrate Meta's ad SDK, and Meta uses its targeting data to show relevant ads to users across those external apps. While it can increase reach at lower CPMs, the quality and viewability of Audience Network traffic is generally considered lower than Facebook and Instagram placements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why would I want to exclude Audience Network?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Common reasons to exclude Audience Network include: lower-quality traffic with higher bounce rates, accidental clicks in mobile apps (especially games), difficulty verifying where your ads actually appeared, and brand safety concerns about appearing on unknown third-party apps. If you're running direct-response campaigns and tracking conversions carefully, excluding Audience Network often improves your cost per result from higher-intent placements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will excluding Audience Network increase my CPM?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — Audience Network typically has lower CPMs than Facebook and Instagram because it serves ads on cheaper third-party inventory. Removing it from your placements reduces your available impression volume, which can push your CPM slightly higher on the remaining placements. However, many advertisers find that the improvement in traffic quality and conversion rate more than offsets the higher CPM, resulting in a lower overall cost per conversion."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does this setting apply to all campaigns or just one ad set?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Placement controls are set at the ad set level, so you need to apply them individually to each ad set. There is no account-level setting to exclude Audience Network globally. If you have multiple ad sets across multiple campaigns, you will need to edit each one separately. When creating new ad sets, remember to add the exclusion before publishing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Advantage+ placements and Manual placements?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Advantage+ placements (formerly Automatic Placements) lets Meta's algorithm choose the best placements to show your ads for the lowest cost — including Audience Network. Manual placements lets you hand-pick exactly which platforms and placements are eligible. Using Placement controls within Advantage+ placements is a middle ground: you keep Meta's optimisation but exclude specific placement types like Audience Network apps and sites."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I exclude specific apps or websites within Audience Network instead of all of them?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Meta offers a Block list feature in Business Settings where you can upload a list of specific domains and app bundle IDs you want to exclude from Audience Network. This is useful if you want to keep Audience Network active but prevent your ads from showing on specific low-quality or brand-unsafe publishers. Go to Business Settings &gt; Brand safety &gt; Blocklists to set this up."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

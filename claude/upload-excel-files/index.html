@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why do I need to save as CSV instead of uploading the Excel file directly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Claude reads data most reliably from plain text formats like CSV. Excel files (.xlsx) can contain multiple sheets, formatting, formulas, and merged cells that Claude may not interpret correctly. Saving as CSV UTF-8 strips out the formatting and gives Claude clean, flat data that it can read, analyse, and reason about accurately. If your Excel file has multiple sheets, save each one as a separate CSV."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What kinds of analysis can Claude do with my spreadsheet data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Claude can summarise data, calculate totals and averages, identify top and bottom performers, spot trends over time, compare segments, flag anomalies, and answer specific questions about your dataset. For example: \"What is the average order value by region?\" or \"Which product had the highest growth month-over-month?\" Claude works best when your column names clearly describe what each column contains."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How large a CSV file can I upload to Claude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Claude can handle reasonably large CSV files, but very large datasets (tens of thousands of rows or more) may exceed Claude's context window. For best results, filter or summarise your data before uploading — for example, upload only the date range or product category you want to analyse. Claude Pro subscribers have larger context windows and can handle bigger files than the free plan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does \"CSV UTF-8 comma delimited\" mean and why does it matter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CSV stands for Comma-Separated Values — a simple text format where each row is on a new line and each column is separated by a comma. UTF-8 is a text encoding that correctly handles international characters, accented letters, and special symbols. Using CSV UTF-8 ensures Claude reads your data without garbled characters, especially if your file contains names, currencies, or text in languages other than English."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Claude edit or write data back to my spreadsheet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Claude cannot directly edit your original file, but it can generate new data, create transformed tables, and produce output you can copy back into Excel. For example, you can ask Claude to calculate a new column, reformat data, or produce a summary table — then copy the result back into your spreadsheet. If you have Google Drive connected to Claude, you may also be able to work with Sheets directly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my data safe when I upload a CSV to Claude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Anthropic processes uploaded files as part of your conversation. By default, Claude does not retain file contents between separate conversations. However, if you are uploading sensitive or confidential data, check Anthropic's privacy policy and your organisation's data handling guidelines before uploading. For sensitive datasets, consider anonymising or redacting personally identifiable information before sharing with any AI tool."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

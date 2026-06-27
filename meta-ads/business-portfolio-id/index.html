@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the Meta Business Portfolio ID?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Meta Business Portfolio ID (formerly called Business Manager ID) is a unique numeric identifier assigned to your Meta Business account. It represents the top-level business entity that contains your ad accounts, pages, pixels, and other assets. You need this ID when connecting third-party tools, setting up API integrations, granting partner access, or contacting Meta support about your account."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between a Business Portfolio ID and an Ad Account ID?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Business Portfolio ID identifies your overall Business Manager account — the top-level container for all your assets. The Ad Account ID (which starts with act_) identifies a specific ad account within that Business Manager. A single Business Manager can contain multiple ad accounts. When integrating with APIs or tools, you may need both IDs — the Business ID for account-level access and the Ad Account ID for campaign-level access."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where else can I find my Business Manager ID?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Besides the Business Info page in Business Settings, your Business Manager ID also appears in the URL when you are logged into Business Manager — look for the numeric ID in the browser address bar (e.g. business.facebook.com/&lt;your-business-id&gt;/). It is also displayed when you hover over your Business Manager name in the account switcher at the top of the screen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do I need my Business Portfolio ID?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Common use cases include: granting a partner agency access to your assets, setting up Meta API or Conversions API integrations that require your Business ID, connecting third-party tools such as CRMs or analytics platforms, and providing it to Meta support when raising a case. Some platforms (e.g. Shopify, WooCommerce) also ask for this ID during the Meta channel setup process."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I have more than one Business Manager (Business Portfolio)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. A single personal Facebook account can be associated with multiple Business Managers. However, Meta limits the number of Business Managers you can create (typically 2 per personal account). If you manage clients, best practice is to have one Business Manager per client or to use a single agency Business Manager and request access to client Business Managers rather than creating new ones. Each Business Manager has its own unique Portfolio ID."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Business Manager and Business Portfolio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There is no functional difference — Business Portfolio is simply the new name Meta has given to what was previously called Business Manager. Meta renamed it to better reflect that it is a portfolio of business assets (ad accounts, pages, pixels, etc.) rather than just a management interface. The underlying ID and functionality remain the same; only the terminology has changed in Meta's interface and documentation."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

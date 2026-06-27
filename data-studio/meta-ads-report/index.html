@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why use Google Sheets instead of connecting Meta Ads directly to Looker Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Meta doesn't have an official native connector for Looker Studio. Third-party Meta Ads connectors exist but typically cost money and require ongoing subscriptions. Using Google Sheets as an intermediary is free, gives you full control over your data structure, and lets you clean or transform the data before it reaches Looker Studio. It's the most reliable and cost-effective approach for most advertisers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I keep my Looker Studio report up to date with fresh Meta Ads data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The easiest way is to append new rows to your Google Sheets file regularly — either manually by exporting fresh data from Ads Manager, or automatically using a Google Sheets add-on or a tool like Supermetrics, Google Analytics Sheets add-on, or a Zapier/Make automation. Looker Studio reads the sheet at query time, so any new data added to the sheet will appear in the report automatically without any changes to the report itself."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What metrics should I include in a Meta Ads Looker Studio report?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The most useful metrics to include are: Impressions, Reach, Clicks, CTR, Spend, CPM, CPC, Results (conversions), Cost per Result, and ROAS (if you have revenue data). For ecommerce, add Purchase Value and ROAS. For lead gen, add Lead Volume and Cost per Lead. Organise the report by campaign, then ad set, with a date range selector so you can compare periods."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I share the Looker Studio report with my client?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Click Share in the top right of Looker Studio and choose your sharing option: Invite specific people (they need a Google account), Get link for anyone with the URL (no login required), or Schedule email delivery to send automatic PDF snapshots to clients on a regular cadence. For client reporting, the \"View\" link option is the most common — clients can interact with filters and date ranges without being able to edit the report."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Looker Studio free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — Looker Studio is completely free to use. Google rebranded it from Google Data Studio to Looker Studio in 2022, but the core product remains free with no limits on the number of reports, pages, or data sources you can create. Looker Studio Pro is a paid tier aimed at enterprise teams that adds features like team workspaces and SLAs, but the free version is more than sufficient for most marketers and agencies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I blend Meta Ads data with Google Analytics data in Looker Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Looker Studio supports data blending — you can combine data from multiple sources (e.g. Meta Ads from Google Sheets + Google Analytics via the native GA4 connector) into a single chart using a common dimension like Date. This lets you create a cross-channel view showing paid social spend alongside website sessions, conversions, and revenue in one report. Use Resource → Manage blended data to set up blends."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

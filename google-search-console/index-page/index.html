@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How long does it take for a page to be indexed after requesting indexing in GSC?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After clicking Request Indexing, most pages are crawled and indexed within a few hours to 48 hours. However, this is not guaranteed — it depends on your site's crawl budget, the quality of the page, and how busy Google's crawl queue is. High-authority sites with frequently updated content tend to get indexed faster. You can check the status at any time by running the URL through the URL Inspection tool again."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I request indexing for pages that are already on Google?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. If you have made significant changes to a page that is already indexed — such as updating the content, changing the title or meta description, or fixing an issue — you should request re-indexing so Google picks up the latest version of the page. Without requesting re-indexing, Google may not recrawl the page for days or weeks depending on your crawl schedule."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why would Google not index a page even after I request indexing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Several factors can prevent a page from being indexed: the page may have a noindex meta tag or HTTP header, it could be blocked by robots.txt, it might have thin or duplicate content that Google considers low quality, or there could be a crawl error preventing Googlebot from accessing the page. The URL Inspection tool will usually show the reason why a page is not indexed — check the Coverage section of the report for details and fix any issues before requesting indexing again."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a limit to how many indexing requests I can make in Google Search Console?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Google limits indexing requests to approximately 10–12 per day per property. This means the URL Inspection indexing request tool is best used for individual high-priority pages — such as a new blog post, a landing page, or a page you have just updated — rather than trying to index an entire site all at once. For bulk indexing of many pages at once, submitting or updating your sitemap is the recommended approach."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between requesting indexing via URL Inspection and submitting a sitemap?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Requesting indexing via the URL Inspection tool sends a direct signal to Google to prioritise crawling a specific page — it is best for individual new or recently updated pages. Submitting a sitemap tells Google about all the pages on your site at once, and Google will crawl them according to its own schedule and crawl budget. For the best coverage, do both: submit your sitemap so Google knows about all your pages, and use URL Inspection for pages where you need faster indexing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I check if my page is currently indexed by Google?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The easiest way is to use the URL Inspection tool in Google Search Console — paste the page's URL and look for the \"URL is on Google\" status. You can also do a quick check by searching site:yourdomain.com/your-page-path in Google — if the page appears in the results, it is indexed. Note that the site: operator may not be 100% reliable for recently indexed pages, so URL Inspection in GSC is the most accurate method."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

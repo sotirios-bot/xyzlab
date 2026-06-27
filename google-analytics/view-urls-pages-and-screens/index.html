@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why does Google Analytics show page titles instead of URLs by default?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GA4's Pages and Screens report defaults to the Page title and screen class dimension because page titles are typically more readable than raw URL paths. However, titles are not always unique — two different pages can share the same title — so switching to Page path and screen class gives you more precise, URL-level data for analysis."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between \"Page path\" and \"Page path + query string\"?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Page path and screen class shows only the path portion of the URL (e.g. /products/shoes/), stripping query parameters. Page path + query string includes any URL parameters (e.g. /products/shoes/?color=red). Use page path for a clean, consolidated view; use page path + query string when you need to analyse the impact of URL parameters such as campaign tags or filter selections."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I make \"Page path and screen class\" the default view for this report?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GA4 does not currently save the dimension selection as a persistent default for standard reports. You will need to switch the dimension each time you open the report, or use the Explore section to build a custom exploration that defaults to the dimension and metrics you prefer — which you can save and reuse."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do some page paths show \"(not set)\"?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "(not set) appears when GA4 receives an event without a valid page path value — this can happen with app screen views, server-side events, or misconfigured tracking. Check your GA4 implementation to ensure the page_location parameter is being sent with every page view event, and verify that your Google Tag or gtag.js snippet is firing correctly across all pages."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I see both the page title and URL in the same report?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — in the Explore section you can add both Page title and Page path and screen class as dimensions in a free-form exploration, letting you see titles and URLs side by side. In the standard Pages and Screens report you can only display one primary dimension at a time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does switching the dimension affect the metrics shown?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No — the metrics (views, users, sessions, engagement rate, etc.) stay the same. Switching the dimension only changes how the data is grouped and labelled. If multiple page titles map to a single URL path, you may see the numbers consolidate slightly when switching from title to path view, since what was previously split across titles is now grouped under a single URL."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the Google Ads Tag and why do I need to verify it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Google Ads Tag (also called the Google tag or gtag.js) is a snippet of code that tracks visitor activity on your website after they click your ads. It powers remarketing audiences and conversion tracking. If it's not firing correctly, Google Ads won't receive the data it needs to optimise your campaigns — so verifying it's working is a critical first step."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Google Tag Assistant and is it free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google Tag Assistant is a free Chrome browser extension made by Google. It detects all Google tags (Google Ads, Analytics, GTM, etc.) on any webpage you visit and shows whether each tag is firing correctly, with colour-coded indicators: green for working, red for errors. You can install it from the Chrome Web Store at no cost."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does it mean if the tag shows a red or orange icon in Tag Assistant?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A red icon usually means the tag has a critical error — it may be misfiring or blocked. An orange icon means there are non-critical warnings, such as duplicate tags or minor configuration issues. Click on the tag in Tag Assistant to see the specific error message and what needs to be fixed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I find my Google Tag ID to compare it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In Google Ads, navigate to Tools → Data Manager, then click the 3 dots next to your Google Tag and select Manage. Your Tag ID will be displayed — it starts with AW- followed by a number. Make sure this matches the ID shown in Tag Assistant or in your GTM tag configuration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between checking via Tag Assistant vs GTM Preview?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tag Assistant is best when your Google tag was installed directly on your website (hardcoded into the HTML). GTM Preview mode is best when your Google tag is deployed through Google Tag Manager — it shows not just whether the tag fired, but also which GTM trigger caused it to fire, making it easier to debug trigger conditions and tag settings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "My tag is showing as fired — does that mean conversions are being tracked?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not necessarily. The Google Ads Tag firing means the base tag is installed and running. But conversion tracking requires a separate conversion event tag (or event snippet) that fires on specific actions — like a thank-you page load or a button click. Use Google Ads → Goals → Conversions to check your conversion actions and verify they are receiving data."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

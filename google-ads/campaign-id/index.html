@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a Campaign ID in Google Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Campaign ID is a unique numeric identifier that Google Ads assigns to every campaign when it is created. Unlike the campaign name, the ID never changes — even if you rename or copy the campaign. It is used in tracking templates, the Google Ads API, Data Studio connectors, and any external tool that needs to reference a specific campaign unambiguously."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I use the Campaign ID in a URL tracking template?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use the ValueTrack parameter {campaignid} in your tracking template — Google automatically replaces it with the Campaign ID at click time. A typical UTM template looks like: {lpurl}?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign={campaignid}. This lets you see the exact Campaign ID in Google Analytics and match it back to the campaign name in your reports."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the Campaign ID the same as the Campaign Name?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The Campaign Name is a human-readable label you choose and can change at any time. The Campaign ID is a system-generated number that is permanent and unique across all Google Ads accounts. When building reliable integrations or reports, always use the Campaign ID rather than the name — names can be duplicated or edited, but IDs never change."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I find the Campaign ID in the browser URL?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. When you click into a campaign in the Google Ads interface, the URL in your browser bar contains the Campaign ID as a parameter (e.g., campaignId=123456789). This is a quick way to find the ID without needing to modify columns — just navigate to the campaign and copy the number from the URL."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I change or reset a Campaign ID?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Campaign IDs are assigned by Google and cannot be changed or reset. If you duplicate a campaign, the copy receives a new unique ID. Deleting and recreating a campaign also generates a new ID — the original ID is permanently retired. This is why it is important to record Campaign IDs if you use them in external tracking or reporting systems."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I find Ad Group IDs and Ad IDs the same way?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The same Modify Columns process works at every level of the hierarchy. Navigate to Ad Groups and add the Ad Group ID column, or go to Ads and add the Ad ID column. ValueTrack parameters such as {adgroupid} and {creative} work the same way in tracking templates for finer-grained reporting."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

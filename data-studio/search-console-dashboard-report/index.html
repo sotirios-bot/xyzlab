@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can I connect Google Search Console directly to Looker Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Looker Studio has a native Google Search Console connector — no third-party tool or Google Sheets export needed. When adding a data source, search for \"Google Search Console\", grant access, and select your property. The connector supports both Site Impression and URL Impression table types."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Site Impression and URL Impression?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Site Impression aggregates data at the site level and lets you break it down by Query, Country, Device, or Search Type. URL Impression shows data at the individual page (URL) level and supports the same dimensions plus Landing Page. Use URL Impression when you need page-specific performance data."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How far back does the Search Console data go in Looker Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Google Search Console connector reflects the same data retention as Search Console itself — up to 16 months of historical data. Keep in mind that GSC data typically has a 2–3 day lag, so the most recent days may show incomplete numbers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I add multiple Search Console properties to the same report?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You can add multiple data sources to a single Looker Studio report — one per property. To compare properties side by side, use Blend Data to merge them, or simply add separate charts for each data source and segment the report by property."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does my CTR show as a decimal instead of a percentage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "By default, CTR is stored as a decimal (e.g. 0.05 = 5%). To display it as a percentage in your charts, select the CTR metric in the SET-UP panel, click the pencil icon to edit the field, and change the Type to Percent. This formats it correctly across all charts in the report."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I share the Looker Studio report with a client who doesn't have GSC access?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. When you share the report, you can choose to use Owner's credentials for the data source — this means viewers see the data using your GSC access, without needing their own. Go to Resource &gt; Manage added data sources, edit the connector, and switch credentials to Owner's credentials."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

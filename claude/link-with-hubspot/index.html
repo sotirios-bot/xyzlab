@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What can Claude do once HubSpot is connected?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Once HubSpot is linked, Claude can search your CRM, look up contact details, retrieve deal statuses, pull company information, and help you draft follow-up emails or meeting notes based on your HubSpot data. You interact with your CRM conversationally — no need to switch between apps."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Claude create or update records in HubSpot?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The available actions depend on the permissions granted during the HubSpot authorisation flow and the current feature set of the integration. Claude can typically read CRM data such as contacts, deals, and companies. Write capabilities (creating or updating records) may also be available — check the HubSpot connector settings in Claude for the full list of enabled actions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a paid Claude plan to use Connectors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Connectors (including the HubSpot integration) are available on Claude Pro and Team plans. Free plan users generally cannot access third-party connectors. Check Claude's current plan comparison page for the latest feature availability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which HubSpot portal does Claude connect to?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "During the authorisation flow, HubSpot lets you choose which portal (account) to connect if you have access to multiple. Claude will only access the portal you select during the setup. You can disconnect and reconnect to a different portal at any time from Settings → Connectors in Claude."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I disconnect HubSpot from Claude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To disconnect, go to Settings → Connectors in Claude and remove the HubSpot connection. You can also revoke access from within HubSpot by going to Settings → Integrations → Connected Apps and removing Claude from the list. Either action will immediately cut off Claude's access to your HubSpot data."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my HubSpot CRM data safe when connected to Claude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Anthropic accesses your HubSpot data only to respond to your requests in Claude — your CRM data is not used to train AI models. Data is handled in accordance with Anthropic's privacy policy and HubSpot's API terms of service. For sensitive accounts, review the permission scopes requested during the authorisation step before granting access."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the Meta Pixel and why do I need it on my Wix site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Meta Pixel is a snippet of code (or in Wix's case, a native integration) that tracks visitor actions on your website — such as page views, button clicks, purchases, and form submissions. It sends this data back to Meta Ads so you can measure the performance of your Facebook and Instagram ad campaigns, build custom audiences for retargeting, and enable conversion-optimised bidding strategies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between the Meta Pixel and the Conversions API (CAPI)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Meta Pixel fires in the browser (client-side), which means it can be blocked by ad blockers or browser privacy settings. The Conversions API (CAPI) sends event data directly from Wix's server to Meta, bypassing the browser entirely. Using both together gives you more complete and accurate tracking. Wix's native integration connects both simultaneously when you use the Marketing Integrations method."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which events does Wix track automatically after connecting the Meta Pixel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After connecting via Marketing Integrations, Wix automatically fires standard Meta events including PageView, ViewContent, AddToCart, InitiateCheckout, and Purchase for ecommerce stores. Lead and contact form submissions can also be tracked. You do not need to add any custom code — Wix handles the event mapping based on your site's activity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I verify that the Meta Pixel is firing correctly on my Wix site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Install the Meta Pixel Helper Chrome extension and visit your live Wix website. The extension will show you which Pixel is firing and which events are being triggered on each page. You can also check the Events Manager in Meta Business Suite — look for recent activity on your Pixel to confirm events are coming through correctly after connecting via Wix."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a Meta Business Manager account to connect the Pixel to Wix?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The Pixel must be created inside a Meta Business Portfolio (formerly Business Manager) and linked to an ad account. When you authorise Wix during the connection process, you will need to log in with a Facebook account that has admin access to the Business Portfolio containing your Pixel. If your Pixel is only under a personal ad account, you may need to migrate it to a Business Portfolio first."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I use the Wix native integration or Google Tag Manager to install the Meta Pixel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Wix native integration is the simplest option — it requires no code, automatically includes CAPI, and maps standard ecommerce events out of the box. Use Google Tag Manager instead if you need custom event tracking, want a single tag management layer for multiple tools, or need more granular control over what fires and when. For most Wix users, the native integration is the fastest and most reliable starting point."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between account-level and container-level access in GTM?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Account-level access grants permissions across all containers within that GTM account. Container-level access restricts the user to a single container only. If you are sharing access with an agency or contractor who should only work on one website, use container-level access to limit their reach. Account administrators can see and manage every container in the account."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What permissions should I give to an agency or freelancer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For most agency or freelancer scenarios, grant container-level Edit access. This allows them to create and modify tags, triggers, and variables, but they cannot publish changes to your live site — your team retains final control over what goes live. If you trust them to publish independently, upgrade to Publish access. Avoid giving full account-level Administrator access unless absolutely necessary."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the user need a Google account to be added to GTM?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. GTM access is tied to a Google account. The email address you enter must be a Google account (Gmail or a Google Workspace email). If the person you are inviting does not have a Google account, they will need to create one before they can accept the invitation and log in."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I remove a user from Google Tag Manager?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Go to Admin → User Management (at either the account or container level), find the user in the list, click on their name, and select Remove user. This immediately revokes their access — they will no longer be able to log in to your GTM account or container. It is good practice to remove users promptly when they no longer need access."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I have multiple users with Publish access?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, there is no limit on the number of users with Publish access. However, it is best practice to limit Publish access to a small number of trusted team members, since publishing a container immediately affects your live website. Use the Approve permission level for users who should be able to submit changes for review but not publish directly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will the user receive a notification when I add them?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GTM does not send an automatic email invitation — the user is granted access immediately upon saving. You will need to notify them manually (by email or message) and share the account or container name so they can navigate to it. They can access it by logging into tagmanager.google.com with the Google account you added."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

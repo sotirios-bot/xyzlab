@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What are UTM tags and why do I need them in Meta Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "UTM tags (Urchin Tracking Module) are small snippets of text appended to your landing page URL that tell Google Analytics where your traffic came from. Without them, Meta Ads traffic often appears in GA4 under \"Direct\" or gets misclassified, making it impossible to accurately measure which campaigns are driving results. UTM tags let you see the exact source, medium, campaign, and content that generated each visit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What UTM parameters should I use for Meta Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To ensure GA4 classifies Meta Ads traffic under the Paid Social channel, use values that match Google's default channel grouping rules. A common setup is: utm_source=facebook (or instagram), utm_medium=paid-social (or cpc), and utm_campaign=your-campaign-name. Check Google's official channel grouping guide to confirm the exact regex rules for Paid Social."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are UTM tags case-sensitive?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — UTM tags are fully case-sensitive in Google Analytics 4. Facebook, facebook, and FACEBOOK will be treated as three separate sources, splitting your data across multiple rows. Always use lowercase for all UTM parameter values to keep your reporting clean and consistent."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between adding UTM parameters directly vs using the URL Builder?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both approaches result in the same tagged URL — the difference is how you build it. Adding parameters directly in Meta Ads via the URL Parameters field keeps your destination URL clean and lets Meta append the tags automatically. The GA4 Campaign URL Builder is a visual tool that assembles the full tagged URL for you, which is then pasted into Meta Ads Manager — useful if you want to double-check the final URL before using it or prefer a guided form."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I check if my UTM tags are working in Google Analytics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After publishing your ad, click it yourself (from a non-admin browser or incognito window) and check the URL in the address bar — your UTM parameters should be visible. In GA4, go to Reports &gt; Acquisition &gt; Traffic Acquisition and look for your campaign in the Session Source / Medium or Session Campaign dimensions. Data can take up to 24 hours to appear fully."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will adding UTM tags affect my Meta Ads delivery or performance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. UTM tags are purely for analytics tracking and have no effect on how Meta delivers your ads or how your campaigns perform. They are invisible to users and do not change the destination page experience. Adding or updating UTM parameters does not trigger an ad re-review."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

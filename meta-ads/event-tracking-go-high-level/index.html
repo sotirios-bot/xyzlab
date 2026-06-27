@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between the base Pixel code and event tracking code?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The base Pixel code (placed in the funnel's Body Tracking Code field) fires a PageView event on every page of the funnel — it tells Meta someone visited. Event tracking code (placed on individual funnel steps) fires a more specific event like Lead or Purchase when a visitor completes a key action. Both are needed for accurate Meta Ads optimisation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which funnel step should I put the Lead event on?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Place the Lead event code on the thank-you page (the confirmation step a visitor sees after submitting their details). This ensures the event only fires when the form has been successfully submitted — not on the opt-in page itself, which would inflate your lead count with visits rather than actual submissions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I verify that the Meta Pixel event is firing correctly in GHL?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Install the Meta Pixel Helper Chrome extension and visit the funnel step. The extension will show which events fired on that page. You can also use Events Manager &gt; Test Events in Meta to see real-time event data from your browser as you navigate through the funnel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I track multiple events across different funnel steps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Repeat the event tracking setup (Steps 7–10) for each funnel step. For example, you might fire ViewContent on the sales page, InitiateCheckout on the order form, and Purchase on the order confirmation page. Each step gets its own event code in its own Footer Tracking field."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to create a Custom Conversion in Meta Ads after setting up the event?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not necessarily. If you are using a Standard Event like Lead or Purchase, you can select it directly as a conversion event in your Meta Ads campaign settings without creating a Custom Conversion. Custom Conversions are useful when you want to track a subset of a standard event (e.g. only leads from a specific funnel URL) or when using non-standard event names."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will GHL's native integrations replace the need for this manual setup?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Go High Level has a built-in Meta Pixel integration (via the sub-account settings), but it typically only fires the base PageView event. For granular event tracking on specific funnel steps (like a Lead or Purchase event on a thank-you page), the manual code approach shown in this tutorial gives you more control and reliability than the native integration alone."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

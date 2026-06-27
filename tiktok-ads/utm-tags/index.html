@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the Auto-attach UTM feature in TikTok Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Auto-attach is a TikTok Ads feature that automatically appends UTM parameters to your ad's destination URL every time a user clicks your ad. Instead of manually editing each URL, you enable a single toggle per ad and TikTok handles the parameter injection dynamically — ensuring accurate, consistent UTM data reaches your analytics tool without the risk of manual errors."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What UTM parameters does TikTok Ads Auto-attach add?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TikTok's Auto-attach typically adds the following parameters: utm_source=tiktok, utm_medium=paid, and dynamic values for utm_campaign (campaign name), utm_content (ad group name), and utm_term (ad name). These are automatically populated with the actual names from your Ads Manager, so every click is tagged with the correct campaign context."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where can I see TikTok UTM data in Google Analytics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In Google Analytics 4, go to Reports › Acquisition › Traffic Acquisition and filter by Session source / medium. TikTok traffic tagged with UTM parameters will appear under tiktok / paid. You can further break down performance by campaign, ad group, and ad name using secondary dimensions or the Campaign reports section."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I manually add custom UTM parameters to TikTok Ads instead?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. If you prefer full control over your UTM structure, you can manually append parameters directly to the destination URL in the URL address bar — for example: https://yoursite.com/?utm_source=tiktok&amp;utm_medium=paid&amp;utm_campaign=brand. This is useful when you need custom values or want to use a specific naming convention. However, Auto-attach is faster and eliminates the risk of typos or inconsistent naming across ads."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does enabling UTM tracking affect my TikTok Ads performance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Adding UTM parameters — whether via Auto-attach or manually — does not affect your ad delivery, bidding, or performance metrics within TikTok Ads Manager. UTM parameters are purely for attribution tracking on your own analytics platform and are invisible to TikTok's algorithm. Your final destination URL and landing page experience remain identical for users."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why isn't my TikTok UTM data showing up in Google Analytics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If UTM data isn't appearing in Google Analytics, check the following: (1) verify the GA4 tag is installed correctly on your landing page, (2) confirm Auto-attach is saved and the ad is active, (3) check that your landing page does not strip URL parameters on load (common in some CMS or redirect setups), and (4) allow up to 24 hours for data to appear in GA4 reports. You can also use the GA4 DebugView to test in real time."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
