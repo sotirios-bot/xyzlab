@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the Reddit Ads pixel and why do I need it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Reddit pixel is a snippet of JavaScript that tracks visitor behaviour on your website. It sends data back to Reddit Ads so you can measure conversions (purchases, sign-ups, leads), build retargeting audiences from people who visited your site, and optimise campaigns toward specific events. Without it, Reddit Ads cannot report on what happens after a click."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where do I find my Reddit Pixel ID?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Log in to Reddit Ads, then go to Events Manager in the left-hand navigation. Select the Google Tag Manager installation option and your Pixel ID will be displayed — it starts with a letter followed by numbers (e.g. a2abc1234). Copy this ID to paste into GTM."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a Reddit Ads account before I can install the pixel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The pixel is tied to your Reddit Ads account, so you need to create an account first at ads.reddit.com. Once your account is active, the pixel is automatically generated and available in Events Manager — you don't need to be running any active campaigns to access it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I verify the pixel is installed correctly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use GTM Preview mode before publishing — visit your website while in Preview mode and confirm the Reddit Pixel tag fires on the page load event. You can also install the Reddit Pixel Helper Chrome extension, which shows a green tick when the pixel is detected on a page. Within Reddit Ads, Events Manager will show Active status once it receives its first signal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I use GTM or install the Reddit pixel directly in my website code?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GTM is strongly recommended. It lets you add, update, or remove the pixel without needing developer access to your site's code. You can also fire conversion events and retargeting triggers from the same container. Direct code installation works but every change requires a code deployment — GTM gives you far more flexibility and speed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I track specific conversion events (not just page views) with the Reddit pixel via GTM?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Once the base pixel is installed on all pages, you can create additional GTM tags that fire the Reddit pixel with a specific event type (e.g. Purchase, Lead, AddToCart) triggered only on relevant pages or actions — such as a thank-you page or a button click. This gives Reddit Ads the conversion data needed to optimise your campaigns and measure ROAS accurately."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

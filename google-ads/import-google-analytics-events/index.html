@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between a Google Analytics Key Event and a Google Ads Conversion?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Key Event in Google Analytics (GA4) is an event you've marked as important in your GA4 property — it's used for measurement and reporting within Analytics. A Conversion in Google Ads is what Google uses to optimise bidding and measure ad performance. By importing a Key Event, you create a Google Ads conversion action that mirrors the GA4 event, allowing Smart Bidding to optimise toward it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to link Google Analytics to Google Ads before importing events?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Your GA4 property must be linked to your Google Ads account before you can import events. You can create this link from Google Analytics → Admin → Google Ads links, or from Google Ads → Tools → Linked accounts → Google Analytics. Without the link, your GA4 property will not appear during the import process."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why don't I see any events available to import?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Only events that are marked as Key Events in Google Analytics appear in the import list. If you don't see any events, go to Google Analytics → Admin → Events and toggle the \"Mark as key event\" switch for the events you want to import. Allow a short time for the events to appear before retrying the import in Google Ads."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I use Option 1 (from Google Ads) or Option 2 (from Google Analytics)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both options create the same conversion action in Google Ads — the end result is identical. Option 1 (from Google Ads) is more convenient if you're already working in Google Ads. Option 2 (from Google Analytics) is useful if you manage the GA4–Google Ads integration from the Analytics side and want to control which events are shared at the property level."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will imported conversions count historical data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, to a degree. When you import a GA4 Key Event, Google Ads can backfill up to 30 days of historical conversion data from the linked GA4 property. This means your campaigns may show conversion data from before you set up the import. Going forward, conversions will be recorded in real time as the GA4 event fires."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I import the same event as multiple conversion actions in Google Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You can import the same GA4 event multiple times with different settings — for example, once as a primary conversion (used for Smart Bidding) and once as a secondary conversion (for observation only). This allows you to track the same action differently across campaigns without creating conflicts in your bidding strategy."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

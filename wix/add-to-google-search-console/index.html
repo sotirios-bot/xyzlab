@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why do I need to add my Wix site to Google Search Console?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google Search Console gives you direct insight into how Google sees and ranks your site. You can see which search queries bring visitors to your site, identify indexing issues, check for manual penalties, and submit your sitemap to speed up how quickly Google crawls new pages. Without it, you're flying blind on your SEO performance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the HTML tag verification method?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The HTML tag method works by adding a &lt;meta&gt; tag with a unique verification code to your site's &lt;head&gt;. When you click Verify in Search Console, Google visits your site and checks that the tag is present. Wix's Site Verification tool under Marketing Integrations handles the insertion automatically — you don't need to edit any code manually."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I use URL Prefix or Domain for my Wix site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The URL Prefix method is simpler and works well for most Wix users. It verifies the specific URL you enter (and all pages under it). The Domain method covers all subdomains and protocols but requires DNS access — which can be more complex to set up with Wix. URL Prefix is the recommended starting point."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take for data to appear in Google Search Console after verification?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Verification is instant, but meaningful performance data (impressions, clicks, average position) typically starts appearing within 2–4 days as Google begins crawling and indexing your pages. It can take up to 28 days before you see a full picture of your search performance. Submitting your sitemap after verification can speed up the process."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to submit a sitemap after verifying my Wix site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — submitting your sitemap is highly recommended. Wix automatically generates a sitemap for your site at yoursite.com/sitemap.xml. In Google Search Console, go to Sitemaps and submit that URL. This helps Google discover all your pages faster and ensures new content gets indexed promptly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if the verification fails?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If verification fails, check that you saved the HTML tag correctly in Wix's Site Verification settings and that your site is published (not in draft mode). Also confirm you're verifying the same URL you entered in Search Console, including whether it starts with https://www. or https:// — these are treated as different properties. Try clicking Verify again after confirming the tag is live on your site."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

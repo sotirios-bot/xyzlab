@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does the Google Ads Tag do on my Wix site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Google Ads Tag (also known as the global site tag or gtag.js) fires on every page of your Wix site and sends visitor data to your Google Ads account. It enables remarketing (showing ads to people who have already visited your site), conversion tracking (measuring actions like purchases, form submissions, or phone calls), and building custom audiences in Google Ads based on site behaviour."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between the Google Ads Tag ID and a Conversion ID?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Google Ads Tag ID (format: AW-XXXXXXXXXX) is a single identifier for your entire Google Ads account. It fires on all pages and enables remarketing lists and audience data collection. A Conversion ID is tied to a specific conversion action (e.g. a purchase or lead form) and typically fires only on a confirmation or thank-you page. You need the Tag ID installed site-wide first before conversion tracking can work correctly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I use the Wix native integration or Google Tag Manager to install the Google Ads Tag?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Wix native integration is the simplest option — paste your Tag ID and you're done in minutes. Use Google Tag Manager instead if you want to manage multiple tags (Google Ads, Meta Pixel, Analytics) from one place, fire conversion events on specific user actions, or have more granular control over tag firing rules. For most Wix users running basic Google Ads campaigns, the native integration is the fastest and most reliable starting point."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I verify that the Google Ads Tag is firing correctly on my Wix site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Install the Tag Assistant Chrome extension by Google and visit your live Wix site. It will show you whether the Google Ads Tag is detected, which Tag ID is firing, and flag any errors. You can also check Audience Manager → Your data sources in Google Ads and look for a green status indicator and recent activity on your tag after saving in Wix."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to add the Google Ads Tag if I already have Google Analytics on my Wix site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — they serve different purposes. Google Analytics tracks user behaviour and site traffic. The Google Ads Tag specifically enables Google Ads features like remarketing audiences and conversion tracking. Even if you link Google Analytics to Google Ads, you still need the Google Ads Tag installed to build remarketing lists and enable smart bidding based on site visitors."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will I need to set up conversion tracking separately after installing the tag?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Installing the Google Ads Tag is the first step — it enables site-wide data collection and remarketing. To track specific conversions (e.g. a purchase, a contact form submission, or a phone call), you'll need to create conversion actions inside Google Ads and either use the Google Ads Tag event snippet or configure conversions via Google Tag Manager or Google Analytics. The Wix integration covers the base tag only."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

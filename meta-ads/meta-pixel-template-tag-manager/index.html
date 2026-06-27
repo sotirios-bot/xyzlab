@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why use the GTM Meta Pixel Template instead of installing the base code manually?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The GTM Meta Pixel Template lets you install and manage your Pixel entirely within Google Tag Manager — no direct access to your website's code is needed. It also makes it easier to update the Pixel in the future and keeps all your tracking in one place, alongside your Google tags, consent settings, and other third-party scripts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where do I find my Meta Pixel ID?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Go to Meta Business Suite &gt; Events Manager &gt; Datasets. Click on your Pixel — the Pixel ID is the number displayed next to the Pixel name (e.g. 1234567890123). If you manage multiple ad accounts, make sure you are viewing the correct account before copying the ID."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the Meta Pixel Template support event tracking?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The template supports both the PageView base event (fired on All Pages) and standard events such as ViewContent, AddToCart, Lead, and Purchase. You can create additional tags using the same template, each with a different event type and a more specific trigger (e.g. a thank-you page URL for Purchase events)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I verify that the Meta Pixel is firing correctly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Install the Meta Pixel Helper Chrome extension. Visit your website after publishing the GTM container — the extension will show a green pixel icon if the Pixel is firing correctly on the page. You can also check Events Manager &gt; Test Events in Meta to see real-time events coming through from your browser."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use the same Meta Pixel on multiple websites?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, technically — but it is not recommended. Using one Pixel across multiple domains mixes audience and conversion data, making it harder to optimise campaigns for each website separately. Best practice is to create a separate Pixel (Dataset) for each website so your ad account audiences and conversion events remain clean and accurate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the Meta Pixel fire even without the Conversions API?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The browser-side Pixel (via GTM) fires independently of the Conversions API (CAPI). However, because browser tracking is increasingly blocked by ad blockers and iOS privacy restrictions, Meta recommends using both together for maximum signal coverage. The browser Pixel alone is still a valid starting point before adding server-side tracking."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the TikTok Pixel and why do I need event tracking?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The TikTok Pixel is a snippet of JavaScript code you install on your website. On its own, it tracks page views and basic visit data. Event tracking extends this by recording specific user actions — such as button clicks, form submissions, purchases, or thank-you page visits — and sending them back to TikTok Ads Manager. This data is essential for measuring conversions, optimising your campaigns for results (rather than just clicks), and building retargeting audiences of people who have taken meaningful actions on your site."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Button Clicks and URL Visits in the Event Builder?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Button Clicks fires an event when a user clicks a specific element on your page — such as a \"Book Now\", \"Contact Us\", or \"Add to Cart\" button. This is useful when the action doesn't load a new URL. URL Visits fires an event when a user lands on a page whose URL matches a condition you specify (e.g. a URL that contains /thank-you or /order-confirmed). Use URL Visits for conversion events that end on a dedicated confirmation page, and Button Clicks for interactions that happen without a page change."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What events should I track for TikTok Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The most important events to track depend on your business goals. For lead generation: track form submissions or thank-you page visits (CompleteRegistration or SubmitForm). For e-commerce: track Add to Cart, Initiate Checkout, and Purchase. For service businesses: track Contact button clicks or booking confirmations. TikTok uses these events to optimise your campaigns — the more conversion data you feed it, the better it can find users who are likely to take the same action."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I verify that my TikTok Pixel events are firing correctly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use the TikTok Pixel Helper Chrome extension to check which pixel events fire as you browse your website. You can also check the Events tab in TikTok Ads Manager — recent events appear there within a few minutes of being triggered. Look for events with a \"Matched\" status, which means TikTok has confirmed they are being received. If events show as \"Unverified\" or don't appear at all, revisit your Event Builder configuration or check that the pixel base code is correctly installed on the page."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the best way to set up TikTok event tracking for Shopify?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The simplest and most reliable method for Shopify is to install the official TikTok app from the Shopify App Store. This handles pixel installation and standard e-commerce event tracking (View Content, Add to Cart, Initiate Checkout, Purchase) automatically without any manual code changes. It also supports TikTok's Conversions API for server-side tracking, which is more accurate than browser-only pixel tracking since it isn't affected by ad blockers or browser privacy settings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a developer to set up TikTok event tracking?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No — for most websites, the Event Builder is a fully no-code solution. You point and click on elements in your live website to set up tracking without writing any code. For Shopify and most major e-commerce platforms, the official app or partner integration also requires no development. You only need a developer if you want to set up custom events that go beyond what the Event Builder can capture, or if you want to implement server-side tracking via the TikTok Conversions API."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

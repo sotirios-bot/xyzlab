@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What data can I pull into a Google Ads report in Looker Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Looker Studio's native Google Ads connector gives you access to a wide range of dimensions and metrics including Clicks, Impressions, Cost, CTR, Average CPC, Conversions, Conversion Rate, Cost per Conversion, ROAS, and breakdowns by Campaign, Ad Group, Ad, Keyword, Device, and more. You can combine multiple metrics on the same chart to create rich, actionable dashboards."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a special connector for Google Ads in Looker Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Looker Studio includes a native Google Ads connector at no cost — just select it from the data source panel and authorize access to your account. There are also third-party connectors (e.g. Supermetrics, Porter Metrics) that offer additional features like multi-account blending or historical data beyond Google's default limits, but the native connector is sufficient for most standard reports."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the most important metrics to include in a Google Ads report?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The core metrics for most Google Ads reports are: Impressions (reach), Clicks (traffic), CTR (ad relevance), Average CPC (cost efficiency), Cost (spend), Conversions (results), and Cost per Conversion (ROI). For ecommerce accounts, also include Conversion Value and ROAS. Displaying these as scorecards at the top and a time series chart below gives a clear overview at a glance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I create a Google Ads report for multiple accounts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. If you have a Manager Account (MCC), you can connect it as the data source and then use a filter or a dropdown control to switch between individual sub-accounts. Alternatively, you can add multiple Google Ads data sources to the same report and use blended data or separate pages per account."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I add a comparison period to my Google Ads report?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "On any scorecard or chart, open the Style panel and enable Show comparison. You can compare to the previous period, the same period last year, or a custom date range. The date range control on your report also has a built-in comparison date range option that applies to the entire report when enabled."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I share my Looker Studio Google Ads report with clients?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Click Share in the top-right corner and invite clients by email as Viewers. Alternatively, generate a shareable link that anyone with the link can view — no Google account required if you set access to \"Anyone with the link.\" You can also schedule automated email delivery so clients receive a PDF snapshot of the report on a regular cadence."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

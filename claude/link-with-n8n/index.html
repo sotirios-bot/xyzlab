@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What can Claude do once n8n is connected?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Once n8n is linked, Claude can list your workflows, trigger executions, and check run status conversationally. Instead of opening the n8n UI to kick off an automation, you can simply tell Claude to run a specific workflow — making it easy to initiate complex multi-step automations across any of the 400+ apps n8n supports."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does this work with self-hosted n8n as well as n8n Cloud?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The connector works with both n8n Cloud and self-hosted n8n instances. For self-hosted setups, your n8n instance must be publicly accessible (or accessible via a tunnel) so Claude can reach it during the authorisation flow and when triggering workflows."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a paid Claude plan to use Connectors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Connectors (including the n8n integration) are available on Claude Pro and Team plans. Free plan users generally cannot access third-party connectors. Check Claude's current plan comparison page for the latest feature availability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is linking n8n to Claude different from building an n8n workflow that uses Claude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "These are two different directions of integration. Linking n8n to Claude (this tutorial) lets Claude trigger your n8n workflows from a conversation. Building an n8n workflow that uses Claude means n8n calls the Claude API as a step inside an automation — for example, to summarise data or generate content as part of a larger pipeline. Both approaches can be combined for powerful AI-driven automation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I disconnect n8n from Claude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To disconnect, go to Settings → Connectors in Claude and remove the n8n connection. You can also revoke the API credential from within n8n by going to Settings → API and deleting the key that was generated for Claude. Either action immediately cuts off Claude's access to your n8n instance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my n8n workflow data safe when connected to Claude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Anthropic accesses your n8n data only to respond to your requests in Claude — your workflow configurations and execution data are not used to train AI models. For self-hosted instances, make sure your n8n server is secured with HTTPS and proper authentication before exposing it for the Claude connection."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

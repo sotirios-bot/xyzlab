@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Claude Code and how is it different from Claude.ai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Claude Code is Anthropic's agentic coding tool that can read, write, edit, and run code directly in your project environment. Unlike Claude.ai (the chat interface), Claude Code connects to your file system and tools like GitHub — it doesn't just suggest code, it builds and deploys it. This makes it ideal for building real websites end-to-end without manual copy-pasting."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need coding experience to use Claude Code?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Claude Code is designed to let non-developers build real projects using natural language. You describe what you want and Claude Code writes, tests, and deploys the code for you. Basic familiarity with concepts like files and GitHub is helpful, but you do not need to write a single line of code yourself."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is GitHub Pages free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. GitHub Pages is a free static site hosting service provided by GitHub. It hosts your HTML, CSS, and JavaScript files directly from a GitHub repository at a free username.github.io subdomain. You can also connect a custom domain (e.g. yourbrand.com) at no additional cost from GitHub."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I add a custom domain to my GitHub Pages site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Once your site is live on GitHub Pages, go to your repository Settings → Pages and enter your custom domain. Then update your domain registrar's DNS settings: add a CNAME record pointing to username.github.io (for subdomains) or configure A records pointing to GitHub's IP addresses (for apex domains). Claude Code can generate the exact DNS instructions for your specific domain registrar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What types of websites can I build with Claude Code?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Claude Code works best for static websites — marketing sites, landing pages, portfolios, tutorial sites, documentation, and small business sites. Since GitHub Pages serves static files, sites that require a backend database or server-side logic need additional infrastructure (though Claude Code can help you set that up too with services like Supabase or serverless functions)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Claude Code help with ongoing website updates after launch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Because Claude Code connects directly to your GitHub repository, you can open a new session at any time to add pages, update content, fix bugs, or redesign sections. Claude Code remembers your project structure and pushes changes to GitHub automatically — your site updates as soon as the push completes."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

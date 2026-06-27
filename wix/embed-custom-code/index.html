@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What types of code can I embed using the Embed Code element?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Embed Code element accepts any HTML, CSS, or JavaScript snippet. Common uses include embedding third-party widgets (chat bots, booking tools, forms), tracking scripts, iframes, social media embeds, and custom UI components that aren't available natively in Wix."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Embed Code and adding code to the site header?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Embed Code element places code on a specific page and renders it in a defined location on the canvas — ideal for widgets, iframes, and visible components. Adding code to the site header (via Settings → Custom Code) injects a script across every page and runs globally — better for analytics tags, conversion pixels, and tracking scripts that need to fire on every page load."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I embed code on just one page, not the whole site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The Embed Code element is placed per-page, so your code only runs on the page where you add it. This is useful when you want to show a specific widget — like a pricing calculator or booking form — only on certain pages without affecting the rest of your site."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why isn't my embedded code showing up after publishing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The most common reasons are: the code relies on an external resource that's blocked (check browser console errors), the Embed Code element is hidden behind another element on the canvas, or the snippet requires the page to be on HTTPS (all Wix sites are). Also confirm you've clicked Publish after adding the code — preview mode sometimes doesn't execute third-party scripts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I resize or reposition the Embed Code element?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Once the Embed Code element is on the canvas you can drag it anywhere on the page and resize it like any other Wix element. The embedded content will render within the bounds of the element — so make sure the element is large enough to display your widget or iframe correctly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the Embed Code element available on all Wix plans?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Embed Code element is available on paid Wix plans. Free Wix sites do not support custom code embedding. If you don't see the Embed &amp; Social option or the element is greyed out, you'll need to upgrade your Wix plan to unlock custom code features."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

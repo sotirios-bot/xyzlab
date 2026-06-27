@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between Account Default and Campaign Specific goals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Account Default means the campaign uses whatever conversion actions are set as primary at the account level — all such campaigns share the same goals and Smart Bidding optimises toward all of them. Campaign Specific lets you override the account defaults for a single campaign and choose exactly which conversion actions that campaign should optimise toward. This is essential when different campaigns have different objectives (e.g., one campaign targets leads while another targets purchases)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why would I use campaign-specific goals instead of account defaults?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Account defaults work fine when all your campaigns share the same conversion objective. But if you run campaigns for different products, services, or funnel stages, you'll want each campaign to optimise toward its own specific conversion. For example, a top-of-funnel awareness campaign might optimise for video views, while a bottom-of-funnel campaign optimises for purchases. Campaign-specific goals make Smart Bidding far more precise in these situations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will changing to campaign-specific goals affect my bidding strategy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Smart Bidding strategies (Target CPA, Target ROAS, Maximise Conversions, etc.) optimise toward whichever conversion actions are set as primary for the campaign. When you switch to Campaign Specific and select different goals, the algorithm will begin optimising toward those new actions. You may see a learning period as Google recalibrates its bidding model for the updated objective."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I switch back to Account Default after setting Campaign Specific goals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You can revert a campaign to Account Default at any time by going to Campaign Settings → Conversion goals and changing the setting back to Account Default. This will re-apply the account-level primary conversion actions to that campaign immediately."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a \"Custom Conversion Action Goal\" in Google Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Custom Conversion Action Goal is a conversion action you've created in Google Ads — such as a purchase, lead form submission, phone call, or imported GA4 key event. When setting campaign-specific goals, you select one or more of these custom actions to tell Google exactly what this campaign should be optimising for. Only actions set as primary conversions influence Smart Bidding; secondary conversions are tracked but not optimised toward."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I apply campaign-specific goals to multiple campaigns at once?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, using Option 1 (the Edit menu approach). In the Campaigns list, check the boxes next to multiple campaigns at once, then click Edit → Update conversion goals. This applies the same campaign-specific goal setting to all selected campaigns simultaneously — useful when you need to update a large number of campaigns quickly."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

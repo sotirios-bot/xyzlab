@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why does my Instagram traffic show under \"direct\" in GA4?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Instagram's in-app browser strips referrer information from links, which means GA4 cannot identify the source and classifies the session as direct / (none). This is especially common with links in Stories and the bio link. The fix is to add UTM parameters to all your Instagram links — for example: ?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=bio_link. With UTMs, GA4 reads the source directly from the URL and won't misclassify the traffic."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Session Source/Medium and Session Default Channel Group?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Session Default Channel Group is a high-level category GA4 automatically assigns (e.g. Organic Social, Paid Social, Direct). Multiple sources can map to the same channel group. Session Source / Medium shows the actual source and medium combination from the tracking data — for example instagram / referral or instagram / social. Use Source/Medium when you need granular detail about exactly where traffic is coming from, including differences between UTM-tagged and untagged Instagram traffic."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I add UTM parameters to my Instagram bio link?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Add UTM parameters directly to the URL you put in your Instagram bio. A standard UTM-tagged bio link looks like: https://yoursite.com?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=bio. You can build UTM URLs using Google's Campaign URL Builder tool. For link-in-bio tools (Linktree, Beacons, etc.), add UTM parameters to each individual destination URL, not the linktree page itself."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does \"instagram / referral\" vs \"instagram / social\" mean?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "instagram / referral means GA4 detected the session came from Instagram via the HTTP referrer header — typically from Instagram's mobile web browser. instagram / social usually means the link was tagged with utm_medium=social manually. If you see both, it means some of your Instagram traffic is UTM-tagged and some isn't. For consistency, tag all Instagram links with UTM parameters so traffic always appears under the source/medium you specify."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I see which specific Instagram posts or campaigns drive the most traffic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — use the utm_campaign parameter in your links and then filter by Session Campaign dimension in the Traffic Acquisition report. For example, tag your Stories links with utm_campaign=stories_may and your bio link with utm_campaign=bio. You can then compare performance across campaigns. For post-level tracking, use a unique utm_content value per post — e.g. utm_content=post_123."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I compare Instagram traffic to other social platforms in GA4?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In the Traffic Acquisition report, change the dimension to Session Default Channel Group and look at the Organic Social row. Click on it to drill down, or switch to Session Source/Medium and clear any filters to see all social platforms side by side. You can also use Explore &rarr; Free Form to build a custom comparison with all social sources in one table, filtered by medium containing \"social\"."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

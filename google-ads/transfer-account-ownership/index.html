@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is there a \"Transfer Ownership\" button in Google Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Unlike some platforms, Google Ads does not have a dedicated ownership transfer feature. The correct workaround is to invite the new owner as an Admin user, wait for them to accept the invitation and confirm access, and then remove your own email from the account. Once you are removed, the new Admin has full control."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I remove myself before the new owner accepts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you remove yourself before the invitation is accepted, the new owner will still receive their invitation email and can accept it to gain access. However, if you were the only Admin, removing yourself first could leave the account in a state where no one has Admin access — making it very difficult to regain control. Always confirm the new owner has successfully logged in before removing yourself."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Admin and Standard access in Google Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Admin access is the highest level — Admins can manage all campaigns, settings, billing, and other users (including adding/removing people). Standard access allows users to create and manage campaigns but they cannot manage account-level settings or other users. For an ownership transfer, the new owner must be given Admin access."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does transferring ownership affect billing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Access and billing are separate in Google Ads. Adding a new Admin transfers account access, but billing information (credit card, payment method) remains linked to the original payment profile. The new owner will need to update the billing details separately under Tools → Billing → Payment methods if they want charges to go to a new payment method."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I transfer a Google Ads account that is linked to a Manager Account (MCC)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, but there are extra considerations. If the account is managed under an MCC, the MCC also has access. The new owner should be aware of any MCC links and decide whether to unlink the account from the MCC via Admin → Google Ads Manager accounts. Simply adding themselves as an Admin and removing you does not automatically remove MCC access."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What access levels are available in Google Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google Ads offers four access levels: Admin (full control including user management and billing), Standard (create and edit campaigns, no user management), Read only (view reports and data, no editing), and Email only (receive performance reports by email without logging in). For most team members or agencies, Standard access is appropriate; only the account owner needs Admin."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

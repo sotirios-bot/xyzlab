@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does the Meta Pixel code apply to all pages in a GHL funnel automatically?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. When you paste the Meta Pixel base code into the Body tracking code field in the funnel's Settings, it applies to every page in that funnel — including opt-in pages, thank-you pages, upsell steps, and checkout pages. You do not need to add the code to each funnel page individually. However, the code is funnel-specific, so you must repeat the process for each separate funnel where you run Meta ads."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Head tracking code and Body tracking code in GHL?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Head tracking code field injects code into the &lt;head&gt; section of the page — typically used for scripts that need to load before the page content renders. The Body tracking code field injects code just before the closing &lt;/body&gt; tag, which is the standard placement for the Meta Pixel base code. Meta recommends placing the Pixel in the &lt;head&gt; for best performance, but placing it in the body also works correctly in GHL."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I track specific conversion events (like leads) on my GHL thank-you page?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After installing the base Pixel code, you need to add standard event code to fire on specific pages. For example, to track a lead on a thank-you page, add the event code fbq('track', 'Lead'); to the thank-you page's individual tracking code field. In GHL, you can set tracking code per-page by editing each funnel step and using the page-level tracking code settings, rather than the funnel-level settings used for the base code."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I check if the Meta Pixel is firing correctly on my GHL funnel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Install the Meta Pixel Helper Chrome browser extension (free from the Chrome Web Store). Visit your funnel's live URL and click the Pixel Helper icon in your browser toolbar — it will show you which Pixels are detected on the page and whether the PageView event fired successfully. You can also verify in Meta Events Manager under your Data Set, where you should see real-time activity within a few minutes of visiting the funnel page."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I install the Meta Pixel on GHL website pages as well as funnels?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Go High Level Websites have a similar tracking code field in their settings. Navigate to Sites &gt; Websites, open your website, go to Settings, and paste the Meta Pixel code in the tracking code section. The same base Pixel code works for both funnels and websites — you only need one Pixel across all your GHL properties, as long as you use the same Data Set ID."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to use the Conversions API (CAPI) alongside the Meta Pixel in GHL?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Using the Conversions API (CAPI) alongside the browser Pixel is strongly recommended. Browser-based Pixel tracking is affected by ad blockers, iOS privacy restrictions, and cookie consent, which can cause up to 30–40% of conversions to go untracked. CAPI sends conversion data directly from your server to Meta, bypassing these browser limitations. Go High Level supports native CAPI integration — look for the Meta integration settings within your GHL account to enable server-side event tracking alongside the Pixel."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

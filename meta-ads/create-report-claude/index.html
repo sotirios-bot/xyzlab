@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the Meta Ads MCP connector in Claude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Meta Ads MCP connector is an official integration built by Meta that allows Claude to connect directly to your Meta Ads Manager account via the Model Context Protocol (MCP). Once connected, Claude can read your live campaign data — including spend, impressions, clicks, conversions, and more — and help you analyse performance, identify issues, and generate reports through natural conversation. The MCP endpoint is hosted at https://mcp.facebook.com/ads."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a paid Claude plan to use the Meta Ads MCP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The Connectors feature in Claude (which allows you to add custom MCP servers) is available on the Claude Pro plan and higher. If you are on the free plan you will not see the Connectors option in Settings. Upgrading to Claude Pro unlocks the ability to add custom connectors, including the Meta Ads MCP."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What can I ask Claude after connecting Meta Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Once connected, you can ask Claude to pull and summarise your Meta Ads data in plain English. Examples include: \"Show me my top 5 campaigns by ROAS this month\", \"Which ad sets have the highest CPM?\", \"Compare performance this week vs last week\", \"Create a report of all active campaigns with spend and conversions\", or \"What is my total ad spend this month?\" Claude translates your questions into API calls and returns the results as readable text or tables."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it safe to connect my Meta Ads account to Claude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The Meta Ads MCP uses Meta's official OAuth login flow, which means you authenticate directly through Meta — your password is never shared with Claude or Anthropic. The connector only requests the permissions needed to read your ad account data. You can revoke access at any time from your Meta Business Settings or by removing the connector from Claude's Settings page."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I connect multiple Meta Ads accounts to Claude?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "During the Meta login step you can select multiple ad accounts to grant access to. Once connected, Claude can query data across all the accounts you authorised. You can specify which account you want in your prompt (e.g. \"for my account named XYZ Ltd\") or ask Claude to summarise data across all connected accounts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between this MCP connection and using the Meta Ads API directly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Meta Ads MCP is designed for conversational, no-code access — you simply connect it in Claude's Settings and ask questions in plain language. The Meta Ads API requires developer credentials, app registration, token management, and writing code to make HTTP requests. The MCP handles all of that complexity behind the scenes, making it far more accessible for marketers who want AI-powered insights without engineering support."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

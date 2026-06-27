@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a custom event in Google Tag Manager?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A custom event in GTM is an action fired by your website's code (or another tag) that GTM listens for using a Custom Event trigger. Common examples include button clicks, form submissions, video plays, or scroll depth milestones that your site pushes to the dataLayer. GTM intercepts these events and uses them to fire tags — such as sending a GA4 event to Google Analytics."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why use GTM Preview mode to find the event name?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Preview mode (via Tag Assistant) lets you see exactly which events fire on your site in real time — and their exact names as pushed to the dataLayer. This is important because the event name in your Custom Event trigger must match the dataLayer event name exactly (it is case-sensitive). Using Preview mode removes any guesswork and ensures your trigger fires correctly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where do I find my GA4 Measurement ID?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your GA4 Measurement ID starts with G- followed by letters and numbers. Find it in Google Analytics under Admin &gt; Data Streams &gt; Web &gt; select your stream. The Measurement ID is displayed at the top right of the stream details panel. Copy it and paste it into the GA4 Event tag configuration in GTM."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to publish the GTM container every time I make a change?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Changes in GTM (new tags, triggers, or variables) only go live after you click Submit and publish a new container version. Until you publish, changes only exist as a draft and only appear in Preview mode. It is good practice to batch multiple related changes into a single publish to keep your version history clean and easy to roll back if needed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I fire the same custom event tag on multiple pages?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The Custom Event trigger fires wherever the specified event name is pushed to the dataLayer — regardless of which page the user is on. If you need to restrict the trigger to specific pages, add a filter condition to the trigger (e.g., Page URL contains /checkout/) so it only fires in the right context."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long until the custom event appears in Google Analytics after publishing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After publishing the GTM container, new custom events typically appear in the GA4 Realtime report within a few seconds of being triggered. Standard reports (Explorations, Events report) update within 24–48 hours. Use the Realtime report immediately after publishing to confirm the event is firing and reaching GA4 correctly before checking standard reports."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

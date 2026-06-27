@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Segment Conversion Type Name in Looker Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Segment Conversion Type Name is a dimension available in the Google Ads data source that contains the name of each individual conversion action — exactly as it is named in your Google Ads account. By filtering on this dimension you can isolate the conversions metric to show only one specific conversion type, such as \"Purchase\", \"Lead Form\", or \"Phone Call\", instead of a total across all conversion actions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does my Conversions metric show an unexpected total in Data Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "By default the Conversions metric in Looker Studio aggregates all conversion actions that are set to \"Include in Conversions\" in your Google Ads account. If you track multiple conversion types (e.g., purchases, sign-ups, and calls), they are all summed together. Adding a Segment Conversion Type Name filter lets you see each type independently, which is essential when you only want to report on one specific outcome."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I filter by multiple conversion types at once?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. In the filter editor, instead of using Equal to, use Is one of (or Contains for partial matching). You can then enter multiple conversion names separated by commas. Alternatively, create separate filters and apply them to different charts to compare individual conversion types side by side in the same report."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Conversions and All Conversions in Google Ads reporting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Conversions counts only the conversion actions you have set to \"Include in Conversions\" in Google Ads — these are the ones used for Smart Bidding. All Conversions includes every tracked action, even those excluded from the main Conversions column (such as micro-conversions or cross-device conversions). When reporting to clients, always clarify which metric you are using to avoid confusion."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use this filter technique with any chart type in Looker Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The filter can be applied to any chart type that uses the Google Ads data source — scorecards, time series, bar charts, tables, and more. The filter is set at the chart level, meaning each visualization can have its own independent filter. If you want all charts to share the same filter, apply it as a Report-level filter instead of a chart-level one."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does applying a conversion filter in Data Studio affect my Google Ads data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Filters in Looker Studio only affect what is displayed in the report — they do not change, delete, or alter any data in your Google Ads account. The underlying conversion data remains completely intact. The filter simply tells Looker Studio to query and display a subset of the data that matches your specified criteria."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

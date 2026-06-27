@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many headlines and descriptions can a responsive search ad have?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A responsive search ad supports up to 15 headlines (each up to 30 characters) and up to 4 descriptions (each up to 90 characters). Google automatically tests combinations and shows the best-performing mix. You must provide at least 3 headlines and 2 descriptions. In your spreadsheet, label the columns Headline 1 through Headline 15 and Description 1 through Description 4."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to include all 15 headlines in my spreadsheet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No — the minimum is 3 headlines and 2 descriptions, but providing more gives Google's machine learning more material to test. Google recommends at least 5–10 headlines and 2–4 descriptions to achieve a \"Good\" or \"Excellent\" ad strength rating. Simply leave unused headline or description columns blank in your spreadsheet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I pin headlines or descriptions to specific positions when bulk uploading?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Google Ads Editor supports pinning via a column annotation. In your spreadsheet, append the position pin to the headline column name — for example, Headline 1 (pinned to position 1). This ensures that specific headlines always appear in position 1, 2, or 3. Use pinning sparingly, as it restricts Google's ability to optimise ad combinations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do I need to select \"my data includes columns for campaigns and/or ad groups\"?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This option tells Google Ads Editor to read the Campaign and Ad Group columns from your spreadsheet and use them to place each ad into the correct ad group. Without it, Editor doesn't know which ad group the ads belong to and may prompt you to assign them manually. Always select this option when your data spans multiple campaigns or ad groups."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will bulk uploading RSAs overwrite my existing ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No — if an RSA with the same final URL and headline combination doesn't already exist, Editor will create a new ad. Existing ads in the same ad group are left untouched. If you want to replace existing ads, you must pause or remove them separately before or after the upload. Always review changes in Editor before posting them live."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between bulk uploading RSAs and using the Google Ads UI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Google Ads UI requires you to create each RSA one at a time, which is very slow for large accounts. Google Ads Editor lets you build all your ads in a spreadsheet and import hundreds of RSAs in a single operation — making it far more efficient for large-scale campaigns, new account builds, or seasonal ad refreshes."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Dynamic Location Insertion in Google Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dynamic Location Insertion is a feature that automatically replaces a tag in your ad headline or description with the user's detected location — their city, state, or country. It uses the syntax {LOCATION(City):default}, {LOCATION(State):default}, or {LOCATION(Country):default}. The result is a personalised ad that feels locally relevant without needing to create separate campaigns for every geographic area."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Google determine the user's location for insertion?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google uses two signals: the user's physical location (based on IP address or GPS if on mobile) and their location of interest (if they include a place name in their search query, e.g. \"electrician Melbourne\"). The location of interest takes precedence over physical location when both are present. This means even a user searching from another city can see the correct local name if they type it in their query."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens when the location cannot be detected or is too long?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google falls back to your default text — the text you place after the colon inside the tag, e.g. {LOCATION(City):Your Area}. The default is also used when the inserted location name would cause the headline to exceed the 30-character limit. Always choose a default that reads naturally on its own and is relevant to the ad group, for example \"Your City\", \"Nearby\", or the name of your target market."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use Dynamic Location Insertion with location targeting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, and this is the recommended approach. Set your campaign to target a specific country, state, or set of cities, then use location insertion in your headlines. This way, your ads are only shown in the locations you've approved, and the dynamic tag reflects the user's specific location within that target area. For example, a campaign targeting Australia with {LOCATION(City):Australia} will show city names like \"Sydney\", \"Brisbane\", or \"Perth\" depending on where the user is."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Dynamic Location Insertion and Keyword Insertion?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Keyword Insertion ({KeyWord:default}) replaces the tag with the user's search query — the keyword that triggered your ad. Dynamic Location Insertion replaces the tag with the user's detected location regardless of what they searched for. They can be combined in the same ad — for example, one headline with keyword insertion and another with location insertion — to create highly personalised ad combinations in a Responsive Search Ad."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Dynamic Location Insertion available in descriptions as well as headlines?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The {LOCATION(...)} tag can be used in both headlines (30-character limit) and descriptions (90-character limit). Descriptions give you more space, so the location is less likely to fall back to the default. A common pattern is to use city insertion in a headline (e.g. Plumbers in Sydney) and state or country insertion in a description for broader context."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

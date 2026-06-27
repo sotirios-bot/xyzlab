@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is FAQ schema markup and why does it matter for SEO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "FAQ schema markup is structured data in JSON-LD format that tells Google your page contains a list of questions and answers. When Google recognises it, your blog post may appear in search results with an expandable FAQ rich result beneath your listing — taking up more space, improving click-through rate, and surfacing your content to users searching for those exact questions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where exactly do I paste the FAQ schema code in Wix?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Inside your Wix Blog Post editor, go to SEO → Advanced → Structured data markup → Add new markup. Give it a name, paste your JSON-LD code, and save. Wix injects the code into the page's &lt;head&gt; when the post is published — no manual code editing required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to republish my blog post after adding the schema?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — the schema markup is only added to the live version of your page when you publish the blog post. If you add or update the markup while the post is already live, simply publish the changes again. Google will pick up the updated schema the next time it crawls your page."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many questions should I include in my FAQ schema?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google recommends including questions that are genuinely relevant to the page content. There is no official maximum, but 3–7 well-chosen questions tend to perform best. Focus on questions your target audience actually searches for, keep answers concise (2–4 sentences), and make sure the Q&amp;A content appears on the page itself — not just in the schema."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I generate the FAQ schema JSON-LD code?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can generate FAQ schema JSON-LD using a free online schema generator, or ask an AI tool like Claude or ChatGPT to write it for you. Provide your questions and answers and ask for valid FAQPage JSON-LD. Always validate the output using Google's Rich Results Test before publishing to confirm there are no errors."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take for Google to show the FAQ rich result?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After publishing, Google needs to recrawl and reindex your page before the FAQ rich result appears in search. This typically takes anywhere from a few days to a few weeks depending on how frequently Google crawls your site. You can speed this up by submitting the URL for reindexing via Google Search Console. Even after indexing, Google decides whether to show the rich result based on its own quality signals."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

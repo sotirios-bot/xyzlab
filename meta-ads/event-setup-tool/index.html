@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the Meta Event Setup Tool?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Meta Event Setup Tool is a no-code feature in Meta Events Manager that lets you create pixel event rules by clicking directly on buttons and elements on your website — without writing any JavaScript. It works by overlaying your website in a special browser window and applying CSS selector-based rules that fire events when users interact with the selected elements. It's ideal for marketers who don't have developer access to modify website code."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to have the Meta Pixel installed before using the Event Setup Tool?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The Event Setup Tool builds on top of an existing Meta Pixel installation — the base pixel code must already be installed on your website before you can use the tool to add individual event rules. If your pixel is not yet installed, install it first (via manual code, Google Tag Manager, or a platform integration) and then return to Events Manager to use the Event Setup Tool."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What types of events can I track with the Event Setup Tool?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Event Setup Tool supports Meta's standard events including Lead, Purchase, Contact, ViewContent, AddToCart, InitiateCheckout, and more. You can assign these event types to button clicks or page loads. For more complex event logic (e.g. tracking form submissions with dynamic values), you may need to implement events via code or Google Tag Manager instead."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I verify that my Event Setup Tool event is firing correctly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After setting up the event, go to Events Manager → Test Events and enter your website URL. The Test Events panel shows real-time events as they fire — click the button you set up and confirm the event appears in the panel. You can also use the Meta Pixel Helper Chrome extension to see all events firing on a page as you interact with it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between the Event Setup Tool and adding code manually?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Event Setup Tool creates CSS selector-based rules that are stored in Meta and applied to your pixel automatically — no code changes needed. Manual code implementation involves adding JavaScript event handlers directly to your website's HTML or tag manager. Manual code is more reliable and flexible (it can pass dynamic parameters like order values), while the Event Setup Tool is faster to deploy but can break if your website's CSS structure changes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I edit or delete events created with the Event Setup Tool?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Go to Events Manager → Data Sources → your pixel → Settings → Event Setup Tool to view all rules you've created. You can edit the event type or parameters, or delete a rule entirely. Note that deleting an Event Setup Tool rule removes the event from firing but does not affect any historical data already recorded in your pixel."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

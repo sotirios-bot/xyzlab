@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a Google Tag Manager container ID?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Google Tag Manager container ID is a unique identifier assigned to each GTM container. It follows the format GTM-XXXXXXX (e.g. GTM-ABC1234). This ID is used both in the install snippet you add to your website and when referencing your container in integrations or documentation. Each website or app you manage in GTM has its own separate container with its own unique ID."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where do I paste the GTM tracking code on my website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GTM provides two code snippets. The first — a JavaScript snippet — should be placed as high as possible in the &lt;head&gt; section of every page on your website. The second — a &lt;noscript&gt; iframe snippet — should be placed immediately after the opening &lt;body&gt; tag. Both are required for GTM to work correctly, especially for users who have JavaScript disabled. Many CMS platforms (WordPress, Wix, Shopify) have dedicated fields or plugins that insert these snippets automatically."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between the GTM container ID and the tracking code?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The container ID (e.g. GTM-XXXXXXX) is just the unique identifier for your GTM container. The tracking code (or install snippet) is the full JavaScript and noscript code blocks that you paste into your website's HTML — these blocks include the container ID embedded within them. You need the full tracking code snippet to actually install GTM; the container ID alone is used when referencing your container in other tools or integrations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I know if GTM is installed correctly on my website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The easiest way is to use GTM Preview Mode — click the Preview button in your GTM container and enter your website URL. If GTM is installed correctly, the Tag Assistant panel will open alongside your site and confirm the container is firing. You can also install the Tag Assistant Legacy Chrome extension, which checks for GTM (and other Google tags) on any page you visit and reports whether they are detected correctly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I have multiple GTM containers on the same website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, technically you can install multiple GTM containers on a single website, and some organisations do this when different teams manage different sets of tags. However, it is generally not recommended as it can cause duplicate tracking, slower page loads, and difficult-to-debug tag conflicts. Best practice is to use a single container per website and manage all your tags, triggers, and variables within it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a new GTM container for each website I manage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Each website should have its own dedicated GTM container. Within a single GTM account you can create multiple containers — one per website or app. This keeps your tags, triggers, and variables separate and organised by property, and ensures that publishing a change to one site's container never affects another site. You can manage all containers from the same GTM account at tagmanager.google.com."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

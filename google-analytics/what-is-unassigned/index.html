@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Unassigned traffic a problem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on the volume. A small amount of Unassigned traffic is normal — some traffic genuinely can't be classified. But if Unassigned accounts for a significant percentage of your sessions, it indicates a tracking or UTM tagging issue that is hiding real channel performance from your reports. Paid campaigns showing as Unassigned means you can't accurately measure their ROI, so it's worth investigating and fixing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is Unassigned different from (not set)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Unassigned appears in the channel group dimension and means GA4 received source/medium data but it didn't match any channel rule. (not set) appears in other dimensions (like landing page or keyword) and means GA4 received no data at all for that dimension — the value was simply absent. They signal different problems: Unassigned = wrong UTM values; (not set) = missing data."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Unassigned include bot or spam traffic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Possibly. GA4 filters out known bot traffic automatically, but unknown bots or crawlers that send unusual source/medium combinations may end up in Unassigned. When investigating Unassigned traffic, look for sessions with zero engagement time, unusually high bounce rates, or suspicious source names — these are signals that the traffic may not be from real users."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What UTM medium values does GA4 recognise for each channel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GA4's default channel definitions match specific utm_medium values. Key examples: Paid Search uses cpc, ppc, paidsearch; Email uses email, e-mail, e_mail; Paid Social uses paid_social, paidsocial; Organic Social uses social, social-network, social_network. Using a value outside these definitions — even a slight variation like social_paid — will result in Unassigned. Always refer to Google's official channel definitions to confirm the exact values."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I create custom channel groups to reduce Unassigned traffic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. In GA4 Admin → Data display → Channel groups, you can create custom channel group rules that match your specific source/medium combinations. For example, if you use utm_medium=newsletter and it shows as Unassigned, you can create an Email rule that matches medium contains newsletter. Custom channel group rules apply retroactively to historical data, so fixing them once reclassifies all past Unassigned sessions that match the new rules."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I find out which specific sources are causing Unassigned traffic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Navigate to Reports → Acquisition → Traffic acquisition, add a filter for Session default channel group exactly matches Unassigned, then change the primary dimension to Session source / medium. This reveals every source/medium combination currently being classified as Unassigned, so you can prioritise which ones to fix first. See the full walkthrough in our Check What Goes to Unassigned Traffic tutorial."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

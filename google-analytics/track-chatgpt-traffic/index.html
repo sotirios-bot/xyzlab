@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does ChatGPT send trackable referral traffic to websites?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. When ChatGPT includes a link to your website in a response and a user clicks it, the visit is tracked in Google Analytics as referral traffic from chatgpt.com. This is sometimes called \"AI referral traffic\" and is growing as more people use ChatGPT for research and recommendations. The amount varies by industry and how often your site appears in ChatGPT responses."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does ChatGPT traffic appear as in Google Analytics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ChatGPT referral traffic typically appears as chatgpt.com / referral in the Session source / medium dimension. You may also see variations such as chat.openai.com / referral (from older ChatGPT URLs). In the default channel group view, this traffic falls under the Referral channel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why don't I see any ChatGPT traffic in my reports?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There are a few reasons: your site may not yet appear in ChatGPT responses for relevant queries, your date range may be too short to capture any visits, or the volume of AI referral clicks to your site may still be very low. ChatGPT traffic tends to be higher for informational, how-to, and product content that ChatGPT is likely to cite. Check a longer date range (last 90 days) to get a more accurate picture."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Session Source and Session Source / Medium?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Session source shows just the origin of the traffic (e.g. chatgpt.com). Session source / medium combines both the source and the traffic type (e.g. chatgpt.com / referral), giving you more context about how the visitor arrived. Using Session source / medium is recommended because it helps distinguish between different types of traffic from the same domain — for example, if a site sends both referral and email traffic."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I track other AI chatbot traffic — Perplexity, Claude, Gemini?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Use the same method — Traffic Acquisition → Session source / medium — and search for each AI tool by name: perplexity.ai, claude.ai, gemini.google.com, copilot.microsoft.com, etc. Not all AI tools send referral traffic (some strip referrer headers), but those that link directly to external pages will show up as referral sources in GA4."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I monitor ChatGPT traffic over time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Create a Comparison in GA4 to segment ChatGPT traffic and track it separately from other sources. You can also build a custom Looker Studio (Data Studio) report that filters for chatgpt.com as a source, giving you a dedicated dashboard to monitor AI referral traffic trends over time. For ongoing monitoring, check the Traffic Acquisition report monthly and compare period-over-period growth."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

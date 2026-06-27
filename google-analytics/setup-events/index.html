@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between automatic events and custom events in GA4?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GA4 automatically collects a set of standard events (like page_view, session_start, and first_visit) without any configuration. Enhanced measurement can automatically track scrolls, outbound clicks, file downloads, and video engagement. Custom events — set up via GTM or gtag.js — let you track any user interaction that GA4 doesn't capture automatically, such as button clicks, form submissions, or specific page interactions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why can't I use spaces in GA4 event names?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GA4 event names must follow specific naming rules: they can only contain letters, numbers, and underscores, and must start with a letter. Spaces are not allowed. Using underscores instead of spaces (e.g. button_click instead of button click) keeps your event names consistent and compatible with GA4's reporting and BigQuery export. Event names are also case-sensitive — Button_Click and button_click would appear as two separate events."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where do I find my GA4 Measurement ID?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In Google Analytics, go to Admin (bottom-left gear icon) &rarr; Data Streams (under your property) &rarr; click your web data stream &rarr; your Measurement ID appears in the top-right corner in the format G-XXXXXXXXXX. Copy this and paste it into the GA4 Event tag in Google Tag Manager."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I verify my GA4 events are firing correctly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use two tools: GTM Preview mode (click Preview in GTM before publishing) to confirm your tag fires on the correct trigger, and GA4 DebugView (Admin &rarr; DebugView) to see events arriving in real-time from your browser. You can also check the GA4 Realtime report to see events populating within a few seconds of them firing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to mark GA4 events as conversions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not all events need to be conversions — only the ones that represent meaningful business actions (e.g. form submissions, purchases, phone clicks). In GA4, go to Admin &rarr; Events and toggle Mark as conversion next to any event you want to count as a conversion. Conversion events can then be imported into Google Ads for smart bidding optimisation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I forget to publish my GTM container?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you save your tag and trigger in GTM but don't publish the container, the changes only exist in your GTM workspace — they are not live on your website. Your GA4 property won't receive the new events. Always click Submit &rarr; Publish after saving your tags to push them to your live site. You can use Preview mode first to test without going live."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the Google Ads Tag and why do I need it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Google Ads Tag (also called the global site tag) is a snippet of JavaScript that you place on your website to track visitor behaviour from your Google Ads campaigns. It serves two key purposes: building remarketing audiences (so you can re-advertise to past visitors) and recording conversions (so Google Ads knows which clicks led to valuable actions on your site). Without it, remarketing campaigns and Smart Bidding strategies have no data to work with."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between the Google Ads Tag and a Conversion Tag?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Google Ads Tag (Google Remarketing tag) fires on every page of your website and collects general visitor data for audience building. A Conversion Tag fires only on a specific page or event (e.g. a thank-you page or button click) and records a specific conversion action. Both use your Conversion ID, but the Conversion Tag also includes a Conversion Label to identify which action was completed. You need both for a complete Google Ads tracking setup."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need the Google Ads Tag if I already have GA4 on my site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — they serve different purposes. GA4 tracks overall website analytics and user behaviour. The Google Ads Tag specifically enables Google Ads features like remarketing audiences and conversion tracking that are linked to your Google Ads account. You can import GA4 goals into Google Ads as conversions, but you still need the Google Ads Tag (or a connected Google Tag) to properly build remarketing lists."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where do I find my Conversion ID for the Google Ads Tag?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In Google Ads, go to Tools → Audience Manager → Audience Sources → Google Ads Tag. Click Set up tag or View tag, then choose Use Google Tag Manager. Your Conversion ID will be displayed — it is a numeric string like AW-123456789. Copy just the numeric portion (or the full AW-XXXXXXXX string depending on the GTM tag type you select)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why should I use GTM to install the Google Ads Tag instead of adding it directly to my website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Using Google Tag Manager means you can add, update, or remove the tag without editing your website's source code — ideal if you don't have direct access to the codebase. It also lets you manage all your marketing tags (Google Ads, Meta Pixel, GA4, etc.) in one place, test changes before publishing, and roll back quickly if something breaks. For most advertisers, GTM is the recommended installation method."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I verify the Google Ads Tag is working correctly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use GTM Preview mode to confirm the Google Remarketing tag fires on every page. You can also install the Google Tag Assistant Chrome extension to see the tag firing in real-time as you browse your site. In Google Ads, go to Audience Manager → Audience Sources — the Google Ads Tag status will change from Unverified to Active within a few hours once the tag is live and recording visits."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

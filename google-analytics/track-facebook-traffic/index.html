@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does Facebook traffic appear in Google Analytics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Facebook organic traffic typically appears as facebook.com / referral or l.facebook.com / referral in the Session source / medium dimension. The l.facebook.com domain is Facebook's link shortener and click tracker — many in-app link clicks route through it. In GA4's default channel groupings, Facebook traffic may appear under Referral or Organic Social depending on your channel group rules."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is my Facebook traffic showing as Direct in GA4?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Facebook's in-app browser frequently strips the referrer header, so GA4 cannot identify Facebook as the source and falls back to Direct. This is a very common issue. To fix it, always add UTM parameters to any links you share on Facebook: utm_source=facebook&utm_medium=social for organic posts, or utm_source=facebook&utm_medium=cpc for paid ads. With UTM tags in place, GA4 correctly attributes the session regardless of how the link was opened."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Facebook organic and Facebook Ads traffic in GA4?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Without UTM parameters, both organic and paid Facebook traffic appear as facebook.com / referral, making them indistinguishable. Meta Ads Manager has an auto-tagging option that appends UTM parameters to your ad URLs automatically — enable it under Ads Manager → Settings → Tracking. For organic posts, add UTMs manually. Once in place, paid traffic will show as a separate row (e.g. facebook / cpc) in the Traffic Acquisition report."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I add Facebook to the Organic Social channel in GA4?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If Facebook referral traffic is appearing under Referral instead of Organic Social, go to Admin → Data display → Channel groups and edit the Organic Social channel rule to include facebook.com and l.facebook.com as matching source domains. GA4 should already include Facebook by default, but custom rules may override this — check your channel group configuration to confirm."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I compare Facebook traffic against other social platforms?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. In the Traffic Acquisition report with the Session source / medium dimension, remove the search filter to see all sources ranked by sessions. You can compare Facebook, Instagram, TikTok, Pinterest, and LinkedIn side by side. For a dedicated social media dashboard, build a custom Looker Studio (Data Studio) report that segments each platform into its own chart or table."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I track Facebook traffic differently for Facebook Ads vs organic posts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — keeping paid and organic Facebook traffic separate is important for accurate attribution. Use utm_medium=cpc (or paid-social) for ad traffic and utm_medium=social for organic posts. This way GA4 reports them on separate rows and you can clearly see the return from your ad spend versus your organic social activity. Consistent UTM naming conventions across all social channels will make cross-platform comparison much easier."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

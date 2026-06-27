@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why do I need to sync before making changes in Editor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google Ads Editor works on a local copy of your account data. If you or a team member made changes directly in the Google Ads web interface since you last synced, those changes won't be reflected in Editor until you sync. Making edits on outdated data risks overwriting recent changes or creating conflicts when you post. Always sync first to ensure you're working with the latest account state."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between \"Get Recent Changes\" and \"More Data\"?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Get Recent Changes downloads only items that have been modified since your last sync — it's fast but may miss entities that haven't changed recently. More Data lets you choose a broader scope: selecting All campaigns and All item types forces a full download of every entity in the account. Use More Data when you're doing a major edit or haven't synced in a while."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does \"All item types\" include?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All item types downloads every entity type in your account, including campaigns, ad groups, keywords, ads (RSAs, DSAs, etc.), bid adjustments, audiences, ad schedules, location targeting, sitelinks, callouts, structured snippets, call extensions, and more. Downloading all item types takes longer but ensures you have a complete and accurate local copy to work from."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I post changes without syncing first?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If your local data is outdated, posting changes can cause conflicts — for example, you might overwrite a bid or status change that was made in the web interface after your last sync. In some cases Editor will flag conflicts and ask you to resolve them before posting. To avoid this entirely, make syncing the first step every time you open Editor for a new editing session."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should I sync my account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Best practice is to sync every time you open Editor before making changes. If you're working in a team where multiple people access the account, sync even more frequently to avoid conflicts. For solo accounts that are only managed through Editor, you can get away with syncing at the start of each editing session."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is my account taking a long time to sync?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sync time depends on account size and your internet connection. Large accounts with hundreds of campaigns, thousands of ad groups, and millions of keywords will take significantly longer to download than small accounts. Selecting All item types also increases download time compared to downloading only recent changes. If syncing is consistently slow, try narrowing the scope to specific campaigns rather than the entire account."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

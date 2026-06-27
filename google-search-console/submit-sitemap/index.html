@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a sitemap and why should I submit it to Google?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A sitemap is an XML file that lists all the pages on your website, along with optional metadata like when they were last updated. Submitting it to Google Search Console tells Google exactly which pages exist on your site, making it easier and faster for Googlebot to discover and crawl them. While Google can find most pages through links, submitting a sitemap is especially useful for new websites, large sites, pages with few internal links, and pages with rich media like images or video."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take Google to index my sitemap after submission?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There is no guaranteed timeframe — it depends on your site's crawl budget, authority, and how many pages are listed in the sitemap. For a new site with few pages, Google may begin crawling within hours but full indexing can take several days or weeks. For established sites with good authority, new pages submitted via sitemap can be indexed within hours. Check the Sitemaps report in GSC to see the status and the number of URLs discovered versus indexed over time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to resubmit my sitemap every time I publish a new page?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Once you have submitted your sitemap URL, Google will periodically re-fetch it to check for updates — you do not need to resubmit it every time you add a new page. However, if you want Google to discover a specific new page faster, you can use the URL Inspection tool in GSC to request indexing for that individual URL, which is often quicker than waiting for the sitemap to be re-crawled."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I submit more than one sitemap in Google Search Console?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You can submit multiple sitemaps for the same property in GSC — for example, a separate sitemap for blog posts, product pages, and images. Large sites often use a sitemap index file (a sitemap of sitemaps) to organise thousands of URLs across multiple sitemap files, and you submit just the index file URL. GSC will then discover and process all the child sitemaps referenced within it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does it mean if my sitemap shows an error in Google Search Console?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A sitemap error means Google could not fetch or parse the sitemap file correctly. Common causes include: the sitemap URL returning a 404 (file not found), the file containing invalid XML, or the sitemap being blocked by your robots.txt file. Click on the error in the Sitemaps report for details, then verify that the sitemap URL is accessible in your browser, validate the XML using a free tool like xml-sitemaps.com, and check that your robots.txt does not disallow /sitemap.xml."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does submitting a sitemap guarantee my pages will be indexed by Google?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Submitting a sitemap tells Google about your pages, but Google decides independently which pages to index based on quality, relevance, and technical factors. Pages with thin content, duplicate content, slow load times, or crawl issues may be discovered but not indexed. Use the Coverage report in GSC to see which URLs are indexed, excluded, or have errors, and address any issues that prevent pages from being indexed."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

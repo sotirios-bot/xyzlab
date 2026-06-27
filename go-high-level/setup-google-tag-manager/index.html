@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does GTM apply to all pages of my GHL website automatically?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. When you paste the GTM code snippets into the website-level Header tracking code and Body tracking code fields in GHL, they are applied to every page of that website automatically. You do not need to add the code to each page individually. However, the code is website-specific in GHL, so if you have multiple websites you will need to repeat the process for each one."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between the GTM Head snippet and the Body snippet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Head snippet is the main JavaScript code that loads the GTM library and should be placed as high as possible in the &lt;head&gt; section so tags fire quickly. The Body snippet is a &lt;noscript&gt; iframe fallback that ensures basic GTM functionality for users who have JavaScript disabled — it goes immediately after the opening &lt;body&gt; tag. Both snippets are required for a complete and correct GTM installation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use the same GTM container for both GHL websites and funnels?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. One GTM container can be installed across multiple GHL properties — websites, funnels, or both — as long as you paste the same container code into each property's tracking code settings. Using a single container keeps all your tags, triggers, and variables in one place, which makes management much simpler. Just be mindful of any triggers that use URL conditions, as the same container fires on all pages where it is installed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to publish my GTM container before it works on my GHL website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The GTM snippet you paste into GHL loads your container, but any tags inside the container only fire if you have published a version in GTM. If you have not published yet, the container will load but no tags will fire. After adding or changing tags in GTM, always click Submit and then Publish to push the changes live. You can use GTM Preview mode to test tags before publishing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I verify that GTM is installed correctly on my GHL website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The easiest way is to use GTM Preview mode: click Preview in GTM, enter your website's URL, and GTM will open your site with a debug panel at the bottom showing which tags and triggers are firing on each page. You can also install the Tag Assistant Chrome extension to quickly check whether GTM is present and which container ID is detected on the page."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What tracking tags can I manage through GTM on my GHL website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Once GTM is installed, you can deploy virtually any tracking or marketing tag without touching the GHL code again. Common tags include Google Analytics 4, Google Ads conversion tracking, Meta Pixel, TikTok Pixel, LinkedIn Insight Tag, Microsoft Clarity, Hotjar, and custom event tracking scripts. GTM acts as a single container so you can add, remove, or update any tag from the GTM interface, with no need to edit your GHL website settings each time."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

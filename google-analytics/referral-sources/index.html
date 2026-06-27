@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What counts as referral traffic in Google Analytics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Referral traffic in GA4 is any session where a user clicked a link on another website to reach yours, and the source website's domain is passed as the HTTP referrer. GA4 classifies these sessions with a medium of referral. This includes backlinks from blogs, press coverage, directories, partner sites, and any other third-party website that links to you — as long as the link is not tagged with UTM parameters that would override the referral classification."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does Google Analytics show (direct) / (none) instead of the referring site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This happens when the HTTP referrer is stripped before it reaches GA4. Common causes include: the referring site uses HTTPS → HTTP redirects (browsers don't pass the referrer in this case); the link is clicked inside a mobile app, email client, or PDF that doesn't send a referrer; or the site sets a Referrer-Policy: no-referrer header. Unfortunately there is no way to recover the original source once the referrer is lost."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I see the specific pages on the referring site that sent traffic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GA4 doesn't expose the full referring page URL in the standard Traffic Acquisition report. To see it, go to Explore → create a free-form exploration → add the Page referrer dimension. This shows the complete URL of the referring page (e.g. https://blog.example.com/article-name/) so you can identify exactly which content is driving traffic to your site."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Some referrals look like spam — how do I identify and handle them?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Referral spam in GA4 is less common than in Universal Analytics, but it still occurs. Look for referrers with very high bounce rates, zero engagement time, or suspicious domain names. In GA4 you can create a Comparison or use Explorations to exclude specific domains. If the spam is distorting your data significantly, add an Audience filter or use a Data filter in Admin → Data streams to exclude known spam domains from your reports."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is my own website showing up as a referral source?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Self-referrals occur when a session crosses a domain boundary without proper cross-domain tracking configured — for example, if your main site links to a separate checkout subdomain or a third-party booking tool and back again. Fix this by setting up cross-domain measurement in GA4 Admin → Data streams → Configure tag settings → Configure your domains. Once configured, GA4 will treat sessions across those domains as a single continuous session rather than starting a new referral session."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I see which pages on my site referral visitors land on?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. In Explore, create a free-form exploration with Session source / medium and Landing page + query string as dimensions, then filter by medium exactly matching referral. This shows you both where each referral session came from and which page on your site the visitor first landed on — useful for understanding the context of each referral link."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

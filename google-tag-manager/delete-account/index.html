@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is deleting a Google Tag Manager account permanent?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Deleting a GTM account is permanent and cannot be undone. All containers, tags, triggers, variables, and version history within the account are permanently removed. Google does not provide a recovery option for deleted GTM accounts. If you are unsure, consider removing access for specific users instead of deleting the account entirely, or archive your container's configuration by exporting it first."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between deleting a GTM account and deleting a container?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A GTM account is the top-level entity — it can contain multiple containers. Deleting the account removes everything inside it, including all containers, tags, triggers, variables, and all version history. Deleting a container removes only that specific container and its contents, but leaves the GTM account and any other containers in the account intact. If you only want to remove one website's tracking setup, delete the container rather than the account."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I remove the GTM code from my website before deleting the account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, it is best practice to remove the GTM snippet from your website before or shortly after deleting the account. Once the account is deleted, the container ID no longer exists — the GTM snippet on your site will simply fail silently (no tags will fire), but it will still make unnecessary network requests on every page load. Removing the code keeps your site clean and avoids any potential performance impact from failed script loads."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I export my GTM configuration before deleting the account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Before deleting, you can export your container configuration as a JSON file — go to Admin &gt; Export Container and choose the version or workspace to export. This gives you a backup of all your tags, triggers, and variables that you could import into a new container later if needed. The export only covers the container configuration, not analytics data or event history."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will deleting my GTM account affect tracking on my live website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Once the GTM account is deleted, all tags managed through GTM — including Google Analytics, Google Ads conversion tracking, Meta Pixel, and any other scripts — will stop firing immediately. This means you will lose all tracking data from the moment of deletion. If you are replacing GTM with a different setup, ensure the new tracking is in place and verified before deleting the old GTM account."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if I just want to stop all tags from firing without deleting the account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can pause all tags without deleting the account by removing the GTM snippet from your website, or by adding a trigger exception to all tags so they never fire. Another option is to simply not publish any new container versions and remove the snippet from your site — the account remains intact in GTM but nothing fires on your site. This is a safer approach if you might want to reactivate tracking in the future."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

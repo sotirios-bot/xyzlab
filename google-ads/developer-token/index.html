@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a Google Ads Developer Token?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Developer Token is a unique credential issued by Google that authorises your application to access the Google Ads API. It is required whenever you want to programmatically read or write data in Google Ads accounts — for example, to build scripts, automate reporting, or integrate third-party tools that connect to the API."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do I need a Manager Account to get a Developer Token?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Developer Tokens are issued at the Manager Account (MCC) level, not at individual advertiser account level. Google requires a Manager Account because the token is intended to manage API access across multiple accounts. If you only have a standard advertiser account, you'll need to create a Manager Account first before you can apply."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between a test and a production Developer Token?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When you first apply, Google issues a test token that only works against test accounts and has limited API call quotas. Once you submit your application for review and Google approves it, your token is upgraded to a production token that can access real accounts with full quota limits. Most basic integrations only need the test token to get started."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to get a Developer Token approved?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A basic access (test) token is available immediately after filling in the form — no approval wait time required. Upgrading to standard access for production use requires a Google review, which typically takes a few business days. Google may ask for additional information about your intended use case during this review."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where exactly is the API Center in Google Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Log in to your Manager Account, click on Admin in the left-hand navigation, then select API Center. This option is only visible inside Manager Accounts — it will not appear in standard advertiser accounts. From there you can view your Developer Token, check its access level, and submit an upgrade request."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use one Developer Token across multiple client accounts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. A single Developer Token issued to your Manager Account can be used to access all client accounts linked under that Manager Account. You reference the specific client account via a login-customer-id header in your API calls. This means you only need one token to manage your entire portfolio of accounts programmatically."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

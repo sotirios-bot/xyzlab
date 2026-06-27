@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do I need a paid Zapier plan to connect Meta Ads to Google Sheets?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The Facebook Lead Ads trigger in Zapier requires a paid subscription — it is not available on the free plan. You will need at minimum a Zapier Starter plan. Google Sheets actions are available on paid plans as well. Check Zapier's current pricing for the most up-to-date plan details."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take for a new lead to appear in Google Sheets?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Once your Zap is live, new leads typically appear in Google Sheets within 1–5 minutes of the form being submitted. Zapier checks for new leads at a regular polling interval, so there may be a short delay. On higher-tier Zapier plans, you can reduce this interval for near-instant delivery."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will the Zap capture leads that came in before I set it up?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Zapier only captures leads that are submitted after the Zap is published and turned on. Historical leads that were collected before the Zap was activated will not be sent to Google Sheets automatically. To import past leads, download them manually from Meta Ads Manager and paste them into your spreadsheet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I send leads to multiple Google Sheets at once?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, but you would need a separate Zap for each sheet. Each Zap handles one trigger-action pair. If you want to send the same lead data to two different spreadsheets or tabs, create two Zaps with the same Facebook Lead Ads trigger but different Google Sheets actions. This counts as two tasks per lead submission."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I edit the Meta Ads lead form after setting up the Zap?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you add or remove fields from your lead form, the column mapping in your Zap may break. Zapier stores the field mapping based on the form structure at the time of setup. After editing the form, go back into your Zap, re-test the trigger to load the new fields, and update the Google Sheets column mapping to match the updated form fields."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I connect Meta Ads leads to a CRM instead of Google Sheets?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Zapier supports connections to popular CRMs including HubSpot, Salesforce, Pipedrive, and many others. The setup process is similar — select your CRM as the Action app instead of Google Sheets, then map the lead form fields to the corresponding CRM fields. Meta also has native integrations with some CRMs via its own Leads Centre."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

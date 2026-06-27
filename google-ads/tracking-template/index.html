@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a URL Tracking Template in Google Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A tracking template is a URL suffix that Google Ads appends to your final URL when a user clicks your ad. It lets you pass UTM parameters (source, medium, campaign, keyword, etc.) to your analytics tool so you can see exactly which campaigns, ad groups, and keywords are driving traffic and conversions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between a tracking template and a final URL?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The final URL is the destination page the user lands on. The tracking template is a separate field that wraps or appends to the final URL to add tracking parameters. Google uses the tracking template to redirect the click, log the parameters, then send the user to the final URL — the user sees no difference."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I set one tracking template for the whole account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You can set a tracking template at three levels: Account, Campaign, or Ad Group. The most specific level takes priority. Setting it at the account level means all campaigns inherit the same template automatically — useful if you use consistent UTM parameters across all campaigns. Campaign-level templates are useful when you need different tracking per campaign."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will changing the tracking template trigger an ad re-review?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Updating a tracking template does not trigger an ad re-review or reset your performance data — it is treated as a non-substantive change. This makes it safe to update your UTM parameters or switch analytics tools without interrupting your campaigns."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is {lpurl} and do I need it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{lpurl} is a ValueTrack parameter that Google automatically replaces with your ad's final URL at the time of the click. You must include it in your tracking template so Google knows where to send the user after appending your parameters. Without it, your ads will not deliver correctly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I test if my tracking template is working?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use the Test button next to the tracking template field in Campaign Settings — Google will show you the full destination URL that will be generated. You can also click an ad after setting up the template and check the URL in your browser address bar, or verify in Google Analytics that sessions are tagged with the correct UTM values."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

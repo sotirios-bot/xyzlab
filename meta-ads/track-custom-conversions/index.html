@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a custom conversion in Meta Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A custom conversion is a conversion event you define based on a URL rule — for example, anyone who visits your \"Thank You\" page after a form submission counts as a lead. Unlike standard Pixel events, custom conversions don't require any additional code changes; you simply specify the URL pattern in Events Manager and Meta tracks it automatically."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between a standard event and a custom conversion?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Standard events (e.g. Lead, Purchase, ViewContent) are fired by code snippets or the Event Setup Tool on specific user actions. Custom conversions are URL-based rules — no additional code required. Custom conversions are quicker to set up and ideal when you have a dedicated confirmation or \"thank you\" page URL that only loads after the desired action is completed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need the Meta Pixel installed before creating a custom conversion?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The Meta Pixel must be installed on your website before custom conversions can work. The Pixel fires a PageView event on every page load, and custom conversions use that PageView data combined with your URL rule to identify when the conversion has occurred. Without the Pixel, no data is collected."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What URL conditions can I use for a custom conversion?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Meta offers several URL match types: URL contains (matches any URL with the specified string), URL equals (exact match only), URL starts with, and URL ends with. For most \"thank you\" pages, \"URL contains\" with the unique path segment (e.g. /thank-you) is the simplest and most reliable option."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I use a custom conversion as a campaign optimisation goal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After creating the custom conversion, go to your ad set settings and set the conversion event to your newly created custom conversion. Meta will then optimise delivery to show your ads to people most likely to complete that specific URL-based action. You'll also see the conversion count in your Ads Manager reporting columns."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many custom conversions can I create in Meta Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Each Meta Business Manager account can have up to 100 custom conversions. If you reach the limit, you'll need to delete unused custom conversions before creating new ones. It's good practice to regularly audit and remove outdated custom conversions to keep your Events Manager tidy and within limits."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->

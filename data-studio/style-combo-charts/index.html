@@ -51,6 +51,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a combo chart in Looker Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A combo chart combines two different chart types — typically a bar chart and a line chart — in a single visualisation. This is useful when you want to compare two metrics with different scales side by side, for example showing Clicks as bars alongside CTR as a line. Each series can be styled independently in the Style panel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Series 1 and Series 2 in a combo chart?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Series 1 and Series 2 correspond to the first and second metrics you added to your chart under the Setup tab. Series 1 is typically displayed as bars by default and Series 2 as a line, but you can switch either to bar or line in the Style panel. Each series can have its own colour, axis assignment, and data label settings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I put each series on a different axis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. In the Style panel, each series has an Axis dropdown where you can assign it to the Left or Right axis. This is essential when your two metrics have very different scales — for example, Impressions (large numbers) on the left axis and CTR (a small percentage) on the right axis. Without separate axes, one metric will be barely visible."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I show data labels on a combo chart in Data Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In the Style tab, find the series you want to label and toggle on Show data labels. You can enable this independently for each series, so you could show labels on your line series but not on the bars, keeping the chart readable. Data labels display the raw metric value at each data point on the chart."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I hide or customise the chart legend?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Scroll to the bottom of the Style panel to find the Legend section. You can set the legend position to Top, Bottom, Right, or None (to hide it entirely). If your chart title or data labels already make the series self-explanatory, hiding the legend can produce a cleaner layout — especially on dashboards with multiple charts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I add more than 2 series to a combo chart?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — you can add additional metrics under the Setup tab and each will appear as a new series in the Style panel. However, more than 3–4 series typically makes a combo chart hard to read. For dashboards with many metrics, consider using separate charts or a table instead. Keep combo charts focused on 2 metrics for maximum clarity."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
