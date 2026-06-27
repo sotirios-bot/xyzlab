@@ -1,0 +1,205 @@
+# XYZ Lab
+
+> XYZ Lab is a digital marketing tutorial site offering step-by-step video guides, benchmarks, and courses on paid advertising, analytics, AI tools, SEO, eCommerce, web builders, and social media platforms.
+
+## Courses
+
+- [Google Ads Course](https://xyzlab.com/google-ads-course/): Master Google Ads with AI — campaign setup, Smart Bidding, keyword research, and ROAS optimisation.
+- [Meta Ads Course](https://xyzlab.com/meta-ads-course/): Complete Meta Ads training covering Facebook and Instagram advertising.
+- [SEO AIO Course](https://xyzlab.com/seo-aio-course/): All-in-one SEO course covering on-page, technical, and off-page optimisation.
+- [AI Marketing Analytics Course](https://xyzlab.com/ai-marketing-analytics-course/): Use AI to analyse and report on marketing performance.
+- [AI Content Creation Course](https://xyzlab.com/ai-content-creation-course/): Create marketing content faster using AI tools.
+- [Vibe Coding Course](https://xyzlab.com/vibe-coding-course/): Build web projects using AI-assisted coding.
+
+## Google Ads Tutorials
+
+- [Google Ads](https://xyzlab.com/google-ads/): Hub for all Google Ads video tutorials.
+- [Tracking Template](https://xyzlab.com/google-ads/tracking-template/): Add UTM tracking templates to Google Ads campaigns.
+- [Lead Form](https://xyzlab.com/google-ads/lead-form/): Set up lead form extensions in Google Ads.
+- [Customer Lists](https://xyzlab.com/google-ads/customer-lists/): Upload and use customer match lists.
+- [Sitelinks](https://xyzlab.com/google-ads/sitelinks/): Add sitelink extensions to ads.
+- [Location Targeting](https://xyzlab.com/google-ads/location-targeting/): Target specific geographic locations.
+- [Manual CPC](https://xyzlab.com/google-ads/manual-cpc/): Switch to manual CPC bidding strategy.
+- [Target ROAS](https://xyzlab.com/google-ads/target-roas/): Set up Target ROAS smart bidding.
+- [Manager Account](https://xyzlab.com/google-ads/manager-account/): Create and manage a Google Ads MCC.
+- [Campaign ID](https://xyzlab.com/google-ads/campaign-id/): Find your Google Ads campaign ID.
+- [Change History](https://xyzlab.com/google-ads/change-history/): View change history in a Google Ads account.
+- [Download Leads](https://xyzlab.com/google-ads/download-leads/): Export lead form submissions from Google Ads.
+- [New Account](https://xyzlab.com/google-ads/new-account/): Create a new Google Ads account.
+- [Setup Google Ads Tag](https://xyzlab.com/google-ads/setup-google-ads-tag/): Install the Google Ads global site tag.
+- [Setup Conversions via GTM](https://xyzlab.com/google-ads/setup-conversions-google-tag-manager/): Configure conversion tracking through Google Tag Manager.
+- [Import Google Analytics Events](https://xyzlab.com/google-ads/import-google-analytics-events/): Import GA4 conversions into Google Ads.
+- [PMax Audience Signal](https://xyzlab.com/google-ads/pmax-audience-signal/): Add audience signals to Performance Max campaigns.
+- [Google Ads Benchmarks](https://xyzlab.com/google-ads/benchmarks/): Industry benchmark data for Google Ads by country.
+
+## Google Ads Editor Tutorials
+
+- [Google Ads Editor](https://xyzlab.com/google-ads-editor/): Hub for Google Ads Editor video tutorials.
+- [Bulk Upload Campaigns](https://xyzlab.com/google-ads-editor/bulk-upload-campaigns/): Upload campaigns in bulk using Google Ads Editor.
+- [Bulk Upload Responsive Search Ads](https://xyzlab.com/google-ads-editor/bulk-upload-responsive-search-ads/): Bulk upload RSAs via Editor.
+- [Sync Latest Changes](https://xyzlab.com/google-ads-editor/sync-latest-changes/): Sync account changes in Google Ads Editor.
+- [Add New Accounts](https://xyzlab.com/google-ads-editor/add-new-accounts/): Add accounts to Google Ads Editor.
+
+## Meta Ads Tutorials
+
+- [Meta Ads](https://xyzlab.com/meta-ads/): Hub for all Meta Ads video tutorials.
+- [Track Events with Meta Pixel](https://xyzlab.com/meta-ads/track-events-meta-pixel/): Set up Meta Pixel event tracking.
+- [Meta Pixel via Tag Manager](https://xyzlab.com/meta-ads/meta-pixel-template-tag-manager/): Install Meta Pixel using Google Tag Manager template.
+- [Lead Form Questions](https://xyzlab.com/meta-ads/lead-form-questions/): Add custom questions to Meta lead forms.
+- [Lead Generation Campaign](https://xyzlab.com/meta-ads/lead-generation-campaign/): Create a lead generation campaign on Meta.
+- [UTM Tags](https://xyzlab.com/meta-ads/utm-tags/): Add UTM parameters to Meta ads.
+- [Link Instagram](https://xyzlab.com/meta-ads/link-instagram/): Connect an Instagram account to Meta Ads Manager.
+- [Link WhatsApp](https://xyzlab.com/meta-ads/link-whatsapp/): Link a WhatsApp number to Meta Ads.
+- [Customer List](https://xyzlab.com/meta-ads/customer-list/): Upload customer lists for Meta custom audiences.
+- [Download Reports Excel](https://xyzlab.com/meta-ads/download-reports-excel/): Export Meta Ads reports to Excel.
+- [Change History](https://xyzlab.com/meta-ads/change-history/): View change history in Meta Ads Manager.
+- [Meta Ads Benchmarks](https://xyzlab.com/meta-ads/benchmarks/): Industry benchmark data for Meta Ads by country.
+
+## TikTok Ads Tutorials
+
+- [TikTok Ads](https://xyzlab.com/tiktok-ads/): Hub for all TikTok Ads video tutorials.
+- [Setup Event Tracking](https://xyzlab.com/tiktok-ads/setup-event-tracking/): Configure TikTok Pixel event tracking.
+- [Customer Lists](https://xyzlab.com/tiktok-ads/customer-lists/): Upload customer lists for TikTok audiences.
+- [UTM Tags](https://xyzlab.com/tiktok-ads/utm-tags/): Add UTM parameters to TikTok ads.
+- [TikTok Ads Benchmarks](https://xyzlab.com/tiktok-ads/benchmarks/): Industry benchmark data for TikTok Ads by country.
+
+## LinkedIn Ads Tutorials
+
+- [LinkedIn Ads](https://xyzlab.com/linkedin-ads/): Hub for LinkedIn Ads video tutorials.
+- [Campaign Manager Access](https://xyzlab.com/linkedin-ads/campaign-manager-access/): Grant access to LinkedIn Campaign Manager.
+- [LinkedIn Ads Benchmarks](https://xyzlab.com/linkedin-ads/benchmarks/): Industry benchmark data for LinkedIn Ads by country.
+
+## Microsoft Ads Tutorials
+
+- [Microsoft Ads](https://xyzlab.com/microsoft-ads/): Hub for Microsoft Ads (Bing Ads) video tutorials.
+- [New Account](https://xyzlab.com/microsoft-ads/new-account/): Create a new Microsoft Ads account.
+
+## Pinterest Ads Tutorials
+
+- [Pinterest Ads](https://xyzlab.com/pinterest-ads/): Hub for Pinterest Ads video tutorials.
+- [Add Users](https://xyzlab.com/pinterest-ads/add-users/): Add users to a Pinterest Ads account.
+
+## Reddit Ads Tutorials
+
+- [Reddit Ads](https://xyzlab.com/reddit-ads/): Hub for Reddit Ads video tutorials.
+- [Add Users](https://xyzlab.com/reddit-ads/add-users/): Add users to a Reddit Ads account.
+- [Reddit Ads Benchmarks](https://xyzlab.com/reddit-ads/benchmarks/): Industry benchmark data for Reddit Ads by country.
+
+## Google Analytics Tutorials
+
+- [Google Analytics](https://xyzlab.com/google-analytics/): Hub for all Google Analytics (GA4) video tutorials.
+- [Setup Events](https://xyzlab.com/google-analytics/setup-events/): Create custom events in GA4.
+- [Track WhatsApp Clicks](https://xyzlab.com/google-analytics/track-whatsapp-clicks/): Track WhatsApp button clicks in GA4.
+- [Track ChatGPT Traffic](https://xyzlab.com/google-analytics/track-chatgpt-traffic/): Identify and segment ChatGPT referral traffic in GA4.
+- [Track Instagram Traffic](https://xyzlab.com/google-analytics/track-instagram-traffic/): Segment Instagram traffic in GA4.
+- [Referral Sources](https://xyzlab.com/google-analytics/referral-sources/): View referral traffic sources in GA4.
+- [Unassigned Traffic](https://xyzlab.com/google-analytics/unassigned-traffic/): Understand and fix unassigned traffic in GA4.
+- [Access Demo Account](https://xyzlab.com/google-analytics/access-demo-account/): Access the Google Analytics demo account.
+
+## Google Tag Manager Tutorials
+
+- [Google Tag Manager](https://xyzlab.com/google-tag-manager/): Hub for all GTM video tutorials.
+- [Find Tracking Code ID](https://xyzlab.com/google-tag-manager/find-tracking-code-id/): Locate your GTM container ID.
+- [Give Access to GTM](https://xyzlab.com/google-tag-manager/give-access-gtm/): Add users to a GTM container.
+- [Setup Custom Events](https://xyzlab.com/google-tag-manager/setup-custom-events/): Create custom event triggers in GTM.
+- [Check Setup](https://xyzlab.com/google-tag-manager/check-setup/): Verify GTM is installed correctly.
+- [Setup Reddit Ads Pixel](https://xyzlab.com/google-tag-manager/setup-reddit-ads-pixel/): Install Reddit Pixel via GTM.
+- [Setup GTM on Wix](https://xyzlab.com/google-tag-manager/setup-gtm-wix/): Add GTM to a Wix website.
+
+## Looker Studio (Data Studio) Tutorials
+
+- [Looker Studio](https://xyzlab.com/data-studio/): Hub for all Looker Studio / Data Studio tutorials.
+- [Google Ads Report](https://xyzlab.com/data-studio/google-ads-report/): Build a Google Ads performance report in Looker Studio.
+- [Meta Ads Report](https://xyzlab.com/data-studio/meta-ads-report/): Build a Meta Ads report in Looker Studio.
+- [Google Analytics Website Report](https://xyzlab.com/data-studio/google-analytics-website-report/): Connect GA4 and create a website report.
+- [Search Console Dashboard Report](https://xyzlab.com/data-studio/search-console-dashboard-report/): Build a Search Console dashboard in Looker Studio.
+- [AI Traffic Report](https://xyzlab.com/data-studio/ai-traffic-report/): Track AI referral traffic in a Looker Studio report.
+- [Date Range Comparison](https://xyzlab.com/data-studio/date-range-comparison/): Add date range comparison controls to Looker Studio.
+
+## Claude AI Tutorials
+
+- [Claude](https://xyzlab.com/claude/): Hub for all Claude AI video tutorials.
+- [Link GitHub](https://xyzlab.com/claude/link-github/): Connect GitHub to Claude via Connectors.
+- [Link with Google Drive](https://xyzlab.com/claude/link-with-google-drive/): Connect Google Drive to Claude.
+- [Link with Gmail](https://xyzlab.com/claude/link-with-gmail/): Connect Gmail to Claude.
+- [Link with Google Calendar](https://xyzlab.com/claude/link-with-google-calendar/): Connect Google Calendar to Claude.
+- [Link with Slack](https://xyzlab.com/claude/link-with-slack/): Connect Slack to Claude.
+- [Link with Notion](https://xyzlab.com/claude/link-with-notion/): Connect Notion to Claude.
+- [Link with HubSpot](https://xyzlab.com/claude/link-with-hubspot/): Connect HubSpot to Claude.
+- [Link with WordPress](https://xyzlab.com/claude/link-with-wordpress/): Connect WordPress to Claude.
+- [Link with Stripe](https://xyzlab.com/claude/link-with-stripe/): Connect Stripe to Claude.
+- [Link with n8n](https://xyzlab.com/claude/link-with-n8n/): Connect n8n automation workflows to Claude.
+- [Link with Zapier](https://xyzlab.com/claude/link-with-zapier/): Connect Zapier to Claude.
+- [Link with Asana](https://xyzlab.com/claude/link-with-asana/): Connect Asana to Claude.
+- [Link with ClickUp](https://xyzlab.com/claude/link-with-clickup/): Connect ClickUp to Claude.
+- [Link with Canva](https://xyzlab.com/claude/link-with-canva/): Connect Canva to Claude.
+- [Link with Miro](https://xyzlab.com/claude/link-with-miro/): Connect Miro to Claude.
+- [Link with Ahrefs](https://xyzlab.com/claude/link-with-ahrefs/): Connect Ahrefs to Claude.
+- [Link with Apollo](https://xyzlab.com/claude/link-with-apollo/): Connect Apollo to Claude.
+- [Link with Klaviyo](https://xyzlab.com/claude/link-with-klaviyo/): Connect Klaviyo to Claude.
+- [Link with Wix](https://xyzlab.com/claude/link-with-wix/): Connect Wix to Claude.
+- [Transfer Gemini Memory to Claude](https://xyzlab.com/claude/transfer-gemini-memory/): Import your Google Gemini memory into Claude.
+- [Transfer ChatGPT Memory to Claude](https://xyzlab.com/claude/transfer-chatgpt-memory/): Import your ChatGPT memory into Claude.
+- [Build a Website with Claude](https://xyzlab.com/claude/build-website/): Use Claude to build a website from scratch.
+- [Upload Excel Files to Claude](https://xyzlab.com/claude/upload-excel-files/): Analyse Excel data by uploading files to Claude.
+- [Create WordPress Pages with Claude](https://xyzlab.com/claude/create-wordpress-pages/): Use Claude to generate and publish WordPress pages.
+
+## ChatGPT Tutorials
+
+- [ChatGPT](https://xyzlab.com/chatgpt/): Hub for ChatGPT video tutorials.
+- [Archived Chats](https://xyzlab.com/chatgpt/archived-chats/): Access and manage archived ChatGPT conversations.
+
+## Google Search Console Tutorials
+
+- [Google Search Console](https://xyzlab.com/google-search-console/): Hub for Google Search Console video tutorials.
+- [Index a Page](https://xyzlab.com/google-search-console/index-page/): Request indexing for a URL in Search Console.
+- [Give Access](https://xyzlab.com/google-search-console/give-access/): Add users to Google Search Console.
+- [Submit Sitemap](https://xyzlab.com/google-search-console/submit-sitemap/): Submit an XML sitemap to Google Search Console.
+
+## Bing Webmaster Tools Tutorials
+
+- [Bing Webmaster Tools](https://xyzlab.com/bing-webmaster-tools/): Hub for Bing Webmaster Tools video tutorials.
+
+## Shopify Tutorials
+
+- [Shopify](https://xyzlab.com/shopify/): Hub for Shopify video tutorials.
+- [Shopify Benchmarks](https://xyzlab.com/shopify/benchmarks/): eCommerce benchmark data for Shopify by country.
+
+## Wix Tutorials
+
+- [Wix](https://xyzlab.com/wix/): Hub for Wix website builder video tutorials.
+- [On-Page SEO](https://xyzlab.com/wix/on-page-seo/): Optimise on-page SEO settings in Wix.
+- [Setup Google Ads Tag](https://xyzlab.com/wix/setup-google-ads-tag/): Add the Google Ads tag to a Wix site.
+- [Setup Meta Pixel](https://xyzlab.com/wix/setup-meta-pixel/): Install Meta Pixel on a Wix site.
+- [301 Redirects](https://xyzlab.com/wix/301-redirects/): Set up 301 redirects in Wix.
+- [Add to Google Search Console](https://xyzlab.com/wix/add-to-google-search-console/): Connect a Wix site to Google Search Console.
+- [Dynamic Pages](https://xyzlab.com/wix/dynamic-pages/): Create dynamic pages in Wix.
+
+## Go High Level Tutorials
+
+- [Go High Level](https://xyzlab.com/go-high-level/): Hub for Go High Level video tutorials.
+- [Setup Google Tag Manager](https://xyzlab.com/go-high-level/setup-google-tag-manager/): Add GTM to a Go High Level site.
+- [Setup Meta Pixel](https://xyzlab.com/go-high-level/setup-meta-pixel/): Install Meta Pixel on Go High Level.
+
+## GoDaddy Tutorials
+
+- [GoDaddy](https://xyzlab.com/godaddy/): Hub for GoDaddy video tutorials.
+
+## LinkedIn Tutorials
+
+- [LinkedIn](https://xyzlab.com/linkedin/): Hub for LinkedIn organic tutorials.
+- [Carousel Post](https://xyzlab.com/linkedin/carousel-post/): Create a carousel post on LinkedIn.
+- [Post Analytics](https://xyzlab.com/linkedin/post-analytics/): View analytics for LinkedIn posts.
+- [Find Posts You Liked](https://xyzlab.com/linkedin/find-posts-you-liked/): Retrieve posts you have liked on LinkedIn.
+- [Find Saved Posts](https://xyzlab.com/linkedin/find-saved-posts/): Access your saved posts on LinkedIn.
+- [Pin Post](https://xyzlab.com/linkedin/pin-post/): Pin a post to the top of your LinkedIn profile.
+
+## YouTube Tutorials
+
+- [YouTube](https://xyzlab.com/youtube/): Hub for YouTube channel management tutorials.
+- [Find Video ID](https://xyzlab.com/youtube/find-video-id/): Locate the video ID for any YouTube video.
+- [Find Channels Subscribed](https://xyzlab.com/youtube/find-channels-subscribed/): View the list of channels you are subscribed to.
+
+## Email Marketing Benchmarks
+
+- [Email Marketing Benchmarks](https://xyzlab.com/email-marketing/benchmarks/): Open rate, click rate, and unsubscribe benchmarks for email marketing by country.
