@@ -697,12 +697,19 @@ def gen_html_page(template_html, ch, c):
 
     # 5. Replace Dataset JSON-LD block
     dataset_jsonld = build_dataset_jsonld(ch, c)
-    # Find and replace the Dataset JSON-LD script
-    html = re.sub(
-        r'<script type="application/ld\+json">\s*\{\s*"@context":\s*"https://schema\.org",\s*"@type":\s*"Dataset".*?\}</script>',
-        f'<script type="application/ld+json">\n  {dataset_jsonld}\n  </script>',
-        html, flags=re.DOTALL
-    )
+    # Use string-based replacement to find the Dataset LD+JSON block safely
+    DATASET_MARKER = '"@type": "Dataset"'
+    SCRIPT_OPEN = '<script type="application/ld+json">'
+    SCRIPT_CLOSE = '</script>'
+    idx_dataset = html.find(DATASET_MARKER)
+    if idx_dataset != -1:
+        # Find the opening <script> before this marker
+        start = html.rfind(SCRIPT_OPEN, 0, idx_dataset)
+        # Find the closing </script> after this marker
+        end = html.find(SCRIPT_CLOSE, idx_dataset)
+        if start != -1 and end != -1:
+            end += len(SCRIPT_CLOSE)
+            html = html[:start] + f'<script type="application/ld+json">\n  {dataset_jsonld}\n  </script>' + html[end:]
 
     # 6. Build FAQs
     if ch['type'] in ('ppc_roas', 'ppc_no_roas'):
@@ -716,11 +723,14 @@ def gen_html_page(template_html, ch, c):
 
     # 7. Replace FAQPage JSON-LD block
     faqpage_jsonld = build_faq_jsonld(faqs)
-    html = re.sub(
-        r'<script type="application/ld\+json">\s*\{\s*"@context":\s*"https://schema\.org",\s*"@type":\s*"FAQPage".*?\}</script>',
-        f'<script type="application/ld+json">\n  {faqpage_jsonld}\n  </script>',
-        html, flags=re.DOTALL
-    )
+    FAQPAGE_MARKER = '"@type": "FAQPage"'
+    idx_faq = html.find(FAQPAGE_MARKER)
+    if idx_faq != -1:
+        start = html.rfind(SCRIPT_OPEN, 0, idx_faq)
+        end = html.find(SCRIPT_CLOSE, idx_faq)
+        if start != -1 and end != -1:
+            end += len(SCRIPT_CLOSE)
+            html = html[:start] + f'<script type="application/ld+json">\n  {faqpage_jsonld}\n  </script>' + html[end:]
 
     # 8. Replace HTML FAQ section (between <!-- FAQ --> and <!-- RELATED -->)
     faq_html = build_faq_html(faqs)
