@@ -97,10 +97,25 @@
         var pillOpts = D.countries.map(function (c) { return '<option value="' + c + '"' + (c === country ? ' selected' : '') + '>' + c + '</option>'; }).join('');
         h1El.innerHTML = D.channel + ' Benchmarks in <select class="bm-cpill">' + pillOpts + '</select>' + (isAll ? '' : ' for ' + industry);
       }
-      subEl.textContent = 'Average ' + D.channel + (D.channelDesc ? ' (' + D.channelDesc + ')' : '') +
-        ' performance in ' + country + (isAll ? ' across all industries' : ' for the ' + industry + ' industry') +
+      var _colHeads;
+      if (D.columns) {
+        var _ch = D.columns.map(function(c) { return c.head; });
+        _colHeads = _ch.length > 1 ? _ch.slice(0, -1).join(', ') + ' and ' + _ch[_ch.length - 1] : _ch[0];
+      } else {
+        var _pp = ['CTR', 'CPC'];
+        if (hasCPM) _pp.push('CPM');
+        _pp.push('conversion rate', 'CPA', 'ROAS');
+        _colHeads = _pp.slice(0, -1).join(', ') + ' and ' + _pp[_pp.length - 1];
+      }
+      var _specCount = D.industries.filter(function(i) { return i !== 'All Industries'; }).length;
+      var _src = D.channelDesc ? D.channel + ' (' + D.channelDesc + ')' : D.channel;
+      subEl.textContent = 'Median ' + _colHeads + ' across ' + _specCount + ' industries in ' + country +
+        (isAll ? '' : ' for the ' + industry + ' industry') +
+        ', compiled from anonymised ' + _src + ' campaign data' +
         (curr ? '. Figures in ' + curr.code + ' (' + curr.sym.trim() + ').' : '.');
       document.title = D.channel + ' Benchmarks in ' + country + (isAll ? '' : ' for ' + industry) + ' | XYZ Lab';
+      var _updEl = document.getElementById('bm-updated');
+      if (_updEl && D.updated) _updEl.textContent = D.updated;
 
       if (D.columns) {
         /* ── Generic column mode (SEO, TikTok Ads, etc.) ────── */

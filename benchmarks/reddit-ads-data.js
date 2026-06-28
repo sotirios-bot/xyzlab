@@ -142,7 +142,7 @@
     channel:     'Reddit Ads',
     channelDesc: 'Promoted Posts',
     channelSlug: 'reddit-ads',
-    updated:     'Q2 2026',
+    updated:     'June 2026',
     countries:   countryNames,
     currencies:  (function () {
       var o = {};

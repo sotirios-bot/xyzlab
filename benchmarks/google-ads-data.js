@@ -135,7 +135,7 @@
     channelDesc: 'Search, Shopping & Display',
     channelSlug: 'google-ads',
     hideCPM:     true,
-    updated:     'Q2 2026',
+    updated:     'June 2026',
     countries:   countryNames,
     currencies:  (function () {
       var o = {};

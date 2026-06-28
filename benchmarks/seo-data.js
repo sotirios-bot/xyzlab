@@ -140,7 +140,7 @@
     channel:     'SEO',
     channelDesc: 'Organic Search',
     channelSlug: 'seo',
-    updated:     'Q2 2026',
+    updated:     'June 2026',
     countries:   countryNames,
     industries:  industryNames,
     columns: [

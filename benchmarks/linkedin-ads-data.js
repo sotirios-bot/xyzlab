@@ -144,7 +144,7 @@
     channel:     'LinkedIn Ads',
     channelDesc: 'Sponsored Content & InMail',
     channelSlug: 'linkedin-ads',
-    updated:     'Q2 2026',
+    updated:     'June 2026',
     countries:   countryNames,
     currencies:  (function () {
       var o = {};

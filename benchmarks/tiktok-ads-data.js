@@ -141,7 +141,7 @@
     channel:     'TikTok Ads',
     channelDesc: 'In-Feed Video & TopView',
     channelSlug: 'tiktok-ads',
-    updated:     'Q2 2026',
+    updated:     'June 2026',
     countries:   countryNames,
     currencies:  (function () {
       var o = {};

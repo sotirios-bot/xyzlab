@@ -144,7 +144,7 @@
     channel:     'Email Marketing',
     channelDesc: 'Email Campaigns & Newsletters',
     channelSlug: 'email-marketing',
-    updated:     'Q2 2026',
+    updated:     'June 2026',
     countries:   countryNames,
     industries:  industryNames,
     columns: [
