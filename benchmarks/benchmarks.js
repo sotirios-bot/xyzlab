@@ -96,7 +96,7 @@
       subEl.textContent = 'Average ' + D.channel + (D.channelDesc ? ' (' + D.channelDesc + ')' : '') +
         ' performance in ' + country + (isAll ? ' across all industries' : ' for the ' + industry + ' industry') +
         (curr ? '. Figures in ' + curr.code + ' (' + curr.sym.trim() + ').' : '.');
-      document.title = D.channel + ' Benchmarks in ' + country + (isAll ? '' : ' for ' + industry) + ' (' + D.updated + ') | XYZ Lab';
+      document.title = D.channel + ' Benchmarks in ' + country + (isAll ? '' : ' for ' + industry) + ' | XYZ Lab';
 
       if (D.columns) {
         /* ── Generic column mode (SEO, TikTok Ads, etc.) ────── */
@@ -108,7 +108,7 @@
 
         tbodyEl.innerHTML = D.industries.map(function (ind, idx) {
           var d       = D.data[country][ind];
-          var locked  = !isUnlocked && G && idx >= FREE_ROWS;
+          var locked  = !isUnlocked && G && idx >= 0;
           var classes = [];
           if (ind === industry) classes.push('bm-hi');
           if (locked)           classes.push('bm-blurred');
@@ -132,7 +132,7 @@
 
         tbodyEl.innerHTML = D.industries.map(function (ind, idx) {
           var d       = D.data[country][ind];
-          var locked  = !isUnlocked && G && idx >= FREE_ROWS;
+          var locked  = !isUnlocked && G && idx >= 0;
           var classes = [];
           if (ind === industry) classes.push('bm-hi');
           if (locked)           classes.push('bm-blurred');
