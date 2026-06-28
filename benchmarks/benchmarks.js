@@ -8,22 +8,8 @@
     var FREE_ROWS = 8;
     var hasCPM   = !D.hideCPM;
 
-    /* ── Unlock state ───────────────────────────────────────────── */
+    /* ── Always locked when gate is present ────────────────────── */
     var isUnlocked = !G;
-    var triggerDownload = false;
-
-    if (G) {
-      var initParams = new URLSearchParams(window.location.search);
-      if (initParams.get('unlocked') === '1') {
-        localStorage.setItem(G.storageKey, '1');
-        isUnlocked    = true;
-        triggerDownload = true;
-        initParams.delete('unlocked');
-        history.replaceState({}, '', window.location.pathname + (initParams.toString() ? '?' + initParams.toString() : ''));
-      } else {
-        isUnlocked = localStorage.getItem(G.storageKey) === '1';
-      }
-    }
 
     /* ── Inline country select styles ──────────────────────────── */
     var _s = document.createElement('style');
@@ -37,11 +23,9 @@
     var subEl      = document.getElementById('bm-sub');
     var theadEl    = document.getElementById('bm-thead');
     var tbodyEl    = document.getElementById('bm-tbody');
-    var copyBtn    = document.getElementById('bm-copy');
     var dlBtn      = document.getElementById('bm-download');
     var countLbl   = document.getElementById('bm-count');
     var paywallEl  = document.getElementById('bm-paywall');
-    var successEl  = document.getElementById('bm-success');
 
     /* ── Populate dropdowns ─────────────────────────────────────── */
     D.countries.forEach(function (c) {
@@ -64,40 +48,19 @@
     function applyGateUI() {
       if (!G) return;
       var gateWrap = document.querySelector('.bm-gate-wrap');
-      if (isUnlocked) {
-        if (paywallEl) paywallEl.style.display = 'none';
-        if (gateWrap)  gateWrap.classList.remove('is-locked');
-        if (copyBtn)   copyBtn.disabled = false;
-        if (dlBtn)     dlBtn.disabled   = false;
-      } else {
-        if (paywallEl) paywallEl.style.display = 'flex';
-        if (gateWrap)  gateWrap.classList.add('is-locked');
-        if (copyBtn) { copyBtn.disabled = true; }
-        if (dlBtn)   { dlBtn.disabled   = true; }
-        [copyBtn, dlBtn].forEach(function (btn) {
-          if (!btn || btn.parentElement.classList.contains('bm-btn-tip-wrap')) return;
-          var wrap = document.createElement('div');
-          wrap.className = 'bm-btn-tip-wrap';
-          btn.parentNode.insertBefore(wrap, btn);
-          wrap.appendChild(btn);
-          var tip = document.createElement('span');
-          tip.className = 'bm-btn-tip';
-          tip.innerHTML = '&#128274; <a href="#bm-paywall">Unlock for ' + G.price + '</a> to use';
-          wrap.appendChild(tip);
-        });
+      if (paywallEl) paywallEl.style.display = 'flex';
+      if (gateWrap)  gateWrap.classList.add('is-locked');
+      if (dlBtn)   { dlBtn.disabled = true; }
+      if (dlBtn && !dlBtn.parentElement.classList.contains('bm-btn-tip-wrap')) {
+        var wrap = document.createElement('div');
+        wrap.className = 'bm-btn-tip-wrap';
+        dlBtn.parentNode.insertBefore(wrap, dlBtn);
+        wrap.appendChild(dlBtn);
+        var tip = document.createElement('span');
+        tip.className = 'bm-btn-tip';
+        tip.innerHTML = '&#128274; <a href="#bm-paywall">Unlock for ' + G.price + '</a> to use';
+        wrap.appendChild(tip);
       }
-    }
-
-    /* ── Success banner + auto-download ────────────────────────── */
-    if (triggerDownload) {
-      if (successEl) {
-        successEl.style.display = 'flex';
-        setTimeout(function () {
-          successEl.style.opacity = '0';
-          setTimeout(function () { successEl.style.display = 'none'; }, 700);
-        }, 9000);
-      }
-      setTimeout(downloadAllCountries, 600);
     }
 
     /* ── Render ─────────────────────────────────────────────────── */
@@ -118,11 +81,6 @@
       var industry = industryEl.value;
       var curr     = D.currencies ? D.currencies[country] : null;
       var isAll    = industry === 'All Industries';
-
-      if (isUnlocked) {
-        if (copyBtn) copyBtn.disabled = false;
-        if (dlBtn)   dlBtn.disabled   = false;
-      }
 
       if (!window.BENCHMARK_STATIC_URL) {
         var url = new URL(window.location.href);
@@ -299,20 +257,9 @@
     }
 
     /* ── Button events ──────────────────────────────────────────── */
-    if (copyBtn) {
-      copyBtn.addEventListener('click', function () {
-        if (!isUnlocked && G) return;
-        navigator.clipboard.writeText(buildTSV(countryEl.value)).then(function () {
-          var orig = copyBtn.textContent;
-          copyBtn.textContent = 'Copied!';
-          setTimeout(function () { copyBtn.textContent = orig; }, 2000);
-        });
-      });
-    }
-
     if (dlBtn) {
       dlBtn.addEventListener('click', function () {
-        if (!isUnlocked && G) return;
+        if (G) return;
         downloadAllCountries();
       });
     }
