@@ -13,7 +13,7 @@
 
     /* ── Inline country select styles ──────────────────────────── */
     var _s = document.createElement('style');
-    _s.textContent = 'select.bm-cpill{display:inline-block;appearance:none;-webkit-appearance:none;background-color:rgba(8,191,173,.12);background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%226%22%20viewBox%3D%220%200%2010%206%22%3E%3Cpath%20d%3D%22M0%200l5%206%205-6z%22%20fill%3D%22%2308bfad%22%2F%3E%3C%2Fsvg%3E");background-repeat:no-repeat;background-position:right .55rem center;color:var(--primary);border:1.5px solid rgba(8,191,173,.35);border-radius:6px;padding:.05rem 1.8rem .15rem .55rem;font:inherit;font-weight:800;font-size:inherit;line-height:inherit;vertical-align:baseline;cursor:pointer;transition:background-color .15s,border-color .15s;}select.bm-cpill:hover{background-color:rgba(8,191,173,.22);border-color:var(--primary);}select.bm-cpill:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(8,191,173,.15);}';
+    _s.textContent = 'select.bm-cpill{display:inline-block;appearance:none;-webkit-appearance:none;background-color:rgba(8,191,173,.12);background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%226%22%20viewBox%3D%220%200%2010%206%22%3E%3Cpath%20d%3D%22M0%200l5%206%205-6z%22%20fill%3D%22%2308bfad%22%2F%3E%3C%2Fsvg%3E");background-repeat:no-repeat;background-position:right .55rem center;color:var(--primary);border:1.5px solid rgba(8,191,173,.35);border-radius:6px;padding:.05rem 1.8rem .15rem .55rem;font:inherit;font-weight:800;font-size:inherit;line-height:inherit;vertical-align:baseline;cursor:pointer;transition:background-color .15s,border-color .15s;}select.bm-cpill:hover{background-color:rgba(8,191,173,.22);border-color:var(--primary);}select.bm-cpill:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(8,191,173,.15);}p.bm-teaser-stat{display:inline-block;margin-top:.85rem;background:rgba(8,191,173,.1);border:1.5px solid rgba(8,191,173,.25);border-radius:8px;padding:.4rem .95rem;font-size:.875rem;color:#0a7a72;font-weight:500;}p.bm-teaser-stat strong{font-weight:800;color:var(--primary);}.bm-delivery-note{margin-top:.75rem;font-size:.8rem;color:#94a3b8;}';
     document.head.appendChild(_s);
 
     /* ── DOM refs ───────────────────────────────────────────────── */
@@ -108,7 +108,7 @@
 
         tbodyEl.innerHTML = D.industries.map(function (ind, idx) {
           var d       = D.data[country][ind];
-          var locked  = !isUnlocked && G && idx >= 0;
+          var locked  = !isUnlocked && G && idx >= 2;
           var classes = [];
           if (ind === industry) classes.push('bm-hi');
           if (locked)           classes.push('bm-blurred');
@@ -132,7 +132,7 @@
 
         tbodyEl.innerHTML = D.industries.map(function (ind, idx) {
           var d       = D.data[country][ind];
-          var locked  = !isUnlocked && G && idx >= 0;
+          var locked  = !isUnlocked && G && idx >= 2;
           var classes = [];
           if (ind === industry) classes.push('bm-hi');
           if (locked)           classes.push('bm-blurred');
@@ -155,6 +155,32 @@
         var hiRow = tbodyEl.querySelector('.bm-hi');
         if (hiRow) setTimeout(function () { hiRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }, 100);
       }
+
+      renderTeaser(country, curr);
+    }
+
+    function renderTeaser(country, curr) {
+      var teaserEl = document.getElementById('bm-teaser');
+      if (!teaserEl) {
+        teaserEl = document.createElement('p');
+        teaserEl.id = 'bm-teaser';
+        teaserEl.className = 'bm-teaser-stat';
+        var sub = document.getElementById('bm-sub');
+        if (sub && sub.parentNode) sub.parentNode.insertBefore(teaserEl, sub.nextSibling);
+      }
+      var allData = D.data[country] && D.data[country]['All Industries'];
+      if (!allData) { teaserEl.style.display = 'none'; return; }
+      var metric, value;
+      if (D.columns) {
+        var col = D.columns[0];
+        metric = col.head;
+        value  = formatCell(allData[col.key], col, curr);
+      } else {
+        metric = 'CTR';
+        value  = pct(allData.ctr);
+      }
+      teaserEl.style.display = '';
+      teaserEl.innerHTML = 'Average ' + metric + ' across all industries in ' + country + ': <strong>' + value + '</strong>';
     }
 
     /* ── Formatters ─────────────────────────────────────────────── */
