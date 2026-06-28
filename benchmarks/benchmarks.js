@@ -13,7 +13,7 @@
 
     /* ── Inline country select styles ──────────────────────────── */
     var _s = document.createElement('style');
-    _s.textContent = 'select.bm-cpill{display:inline-block;appearance:none;-webkit-appearance:none;background-color:rgba(8,191,173,.12);background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%226%22%20viewBox%3D%220%200%2010%206%22%3E%3Cpath%20d%3D%22M0%200l5%206%205-6z%22%20fill%3D%22%2308bfad%22%2F%3E%3C%2Fsvg%3E");background-repeat:no-repeat;background-position:right .55rem center;color:var(--primary);border:1.5px solid rgba(8,191,173,.35);border-radius:6px;padding:.05rem 1.8rem .15rem .55rem;font:inherit;font-weight:800;font-size:inherit;line-height:inherit;vertical-align:baseline;cursor:pointer;transition:background-color .15s,border-color .15s;}select.bm-cpill:hover{background-color:rgba(8,191,173,.22);border-color:var(--primary);}select.bm-cpill:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(8,191,173,.15);}p.bm-teaser-stat{display:inline-block;margin-top:.85rem;background:rgba(8,191,173,.1);border:1.5px solid rgba(8,191,173,.25);border-radius:8px;padding:.4rem .95rem;font-size:.875rem;color:#0a7a72;font-weight:500;}p.bm-teaser-stat strong{font-weight:800;color:var(--primary);}.bm-delivery-note{margin-top:.75rem;font-size:.8rem;color:#94a3b8;}';
+    _s.textContent = 'select.bm-cpill{display:inline-block;appearance:none;-webkit-appearance:none;background-color:rgba(8,191,173,.12);background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%226%22%20viewBox%3D%220%200%2010%206%22%3E%3Cpath%20d%3D%22M0%200l5%206%205-6z%22%20fill%3D%22%2308bfad%22%2F%3E%3C%2Fsvg%3E");background-repeat:no-repeat;background-position:right .55rem center;color:var(--primary);border:1.5px solid rgba(8,191,173,.35);border-radius:6px;padding:.05rem 1.8rem .15rem .55rem;font:inherit;font-weight:800;font-size:inherit;line-height:inherit;vertical-align:baseline;cursor:pointer;transition:background-color .15s,border-color .15s;}select.bm-cpill:hover{background-color:rgba(8,191,173,.22);border-color:var(--primary);}select.bm-cpill:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(8,191,173,.15);}p.bm-teaser-stat{display:inline-block;margin-top:.85rem;background:rgba(8,191,173,.1);border:1.5px solid rgba(8,191,173,.25);border-radius:8px;padding:.4rem .95rem;font-size:.875rem;color:#0a7a72;font-weight:500;}p.bm-teaser-stat strong{font-weight:800;color:var(--primary);}.bm-delivery-note{margin-top:.75rem;font-size:.8rem;color:#94a3b8;}.bm-unlock-badge{display:inline-flex;align-items:center;padding:.55rem 1rem;border:1.5px solid var(--primary);border-radius:8px;font-size:.875rem;font-weight:700;color:var(--primary) !important;text-decoration:none !important;transition:all .18s;white-space:nowrap;}.bm-unlock-badge:hover{background:var(--primary);color:#fff !important;}';
     document.head.appendChild(_s);
 
     /* ── DOM refs ───────────────────────────────────────────────── */
@@ -50,16 +50,20 @@
       var gateWrap = document.querySelector('.bm-gate-wrap');
       if (paywallEl) paywallEl.style.display = 'flex';
       if (gateWrap)  gateWrap.classList.add('is-locked');
-      if (dlBtn)   { dlBtn.disabled = true; }
-      if (dlBtn && !dlBtn.parentElement.classList.contains('bm-btn-tip-wrap')) {
-        var wrap = document.createElement('div');
-        wrap.className = 'bm-btn-tip-wrap';
-        dlBtn.parentNode.insertBefore(wrap, dlBtn);
-        wrap.appendChild(dlBtn);
-        var tip = document.createElement('span');
-        tip.className = 'bm-btn-tip';
-        tip.innerHTML = '&#128274; <a href="#bm-paywall">Unlock for ' + G.price + '</a> to use';
-        wrap.appendChild(tip);
+      if (dlBtn) {
+        dlBtn.innerHTML = '&#8595; Download All Countries';
+        dlBtn.disabled = false;
+        dlBtn.onclick = function () { window.open(G.stripeUrl, '_blank'); };
+        if (!document.getElementById('bm-unlock-badge')) {
+          var badge   = document.createElement('a');
+          badge.id        = 'bm-unlock-badge';
+          badge.href      = G.stripeUrl;
+          badge.target    = '_blank';
+          badge.rel       = 'noopener';
+          badge.className = 'bm-unlock-badge';
+          badge.textContent = 'Unlock for ' + G.price;
+          dlBtn.parentNode.insertBefore(badge, dlBtn.nextSibling);
+        }
       }
     }
 
