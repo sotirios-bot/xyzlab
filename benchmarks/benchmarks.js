@@ -51,6 +51,12 @@
       if (paywallEl) paywallEl.style.display = 'flex';
       if (gateWrap)  gateWrap.classList.add('is-locked');
 
+      var _scopeEl = document.querySelector('.bm-pw-scope');
+      if (_scopeEl) {
+        var _ic = D.industries.filter(function(i) { return i !== 'All Industries'; }).length;
+        _scopeEl.innerHTML = D.channel + ' Benchmarks &middot; ' + D.countries.length + ' countries &middot; ' + _ic + ' industries';
+      }
+
       if (!document.getElementById('bm-steps')) {
         var stepsEl = document.createElement('div');
         stepsEl.id        = 'bm-steps';
