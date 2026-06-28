@@ -65,11 +65,11 @@
         stepsEl.id        = 'bm-steps';
         stepsEl.className = 'bm-steps';
         stepsEl.innerHTML =
-          '<div class="bm-step"><span class="bm-step-num">1</span><span class="bm-step-text">Click to Download</span></div>' +
+          '<div class="bm-step"><span class="bm-step-num">1</span><span class="bm-step-text">&#128229; Click to Download</span></div>' +
           '<span class="bm-step-sep">›</span>' +
-          '<div class="bm-step"><span class="bm-step-num">2</span><span class="bm-step-text">Fill in the Form</span></div>' +
+          '<div class="bm-step"><span class="bm-step-num">2</span><span class="bm-step-text">&#128221; Fill in the Form</span></div>' +
           '<span class="bm-step-sep">›</span>' +
-          '<div class="bm-step"><span class="bm-step-num">3</span><span class="bm-step-text">Benchmarks Land in Your Inbox</span></div>';
+          '<div class="bm-step"><span class="bm-step-num">3</span><span class="bm-step-text">&#128140; Benchmarks in Your Inbox</span></div>';
         _secHeader.appendChild(stepsEl);
       }
 
