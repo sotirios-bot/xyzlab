@@ -14,27 +14,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
   <link rel="icon" type="image/png" href="../../favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="60 ready-to-use Meta Ads prompts for ChatGPT and Claude — organised by campaign stage. Copy, paste, get professional outputs instantly." />
+  <meta name="description" content="50 ready-to-use Meta Ads prompts for ChatGPT and Claude. Campaign setup, targeting, image briefs, video scripts, ad copy, optimisation, reporting and strategy." />
   <link rel="canonical" href="https://xyzlab.com/meta-ads/prompt-library/" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://xyzlab.com/meta-ads/prompt-library/" />
-  <meta property="og:title" content="Meta Ads Prompt Library — 60 Ready-to-Use AI Prompts | XYZ Lab" />
-  <meta property="og:description" content="60 expert-built Meta Ads prompts for ChatGPT and Claude. Campaign setup, audience research, ad copy, optimisation, reporting and strategy." />
+  <meta property="og:title" content="Meta Ads Prompt Library, 50 Ready-to-Use AI Prompts | XYZ Lab" />
+  <meta property="og:description" content="50 expert-built Meta Ads prompts for ChatGPT and Claude. Copy, paste, get professional outputs instantly." />
   <meta property="og:image" content="https://xyzlab.com/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Meta Ads Prompt Library — 60 Ready-to-Use AI Prompts | XYZ Lab" />
-  <meta name="twitter:description" content="60 expert-built Meta Ads prompts for ChatGPT and Claude. Copy, paste, get results." />
+  <meta name="twitter:title" content="Meta Ads Prompt Library, 50 Ready-to-Use AI Prompts | XYZ Lab" />
+  <meta name="twitter:description" content="50 expert-built Meta Ads prompts for ChatGPT and Claude. Copy, paste, get results." />
   <meta name="twitter:image" content="https://xyzlab.com/og-image.jpg" />
-  <title>Meta Ads Prompt Library — 60 Ready-to-Use AI Prompts | XYZ Lab</title>
+  <title>Meta Ads Prompt Library, 50 Ready-to-Use AI Prompts | XYZ Lab</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../style.css" />
   <link rel="stylesheet" href="../../course.css" />
   <style>
-/* ── Hero category chips ── */
+/* ── Hero chips ── */
 .pl-hero-cats{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem;justify-content:center;}
 .pl-hero-cat{padding:.3rem .8rem;background:rgba(8,191,173,.1);border:1px solid rgba(8,191,173,.25);border-radius:20px;font-size:.8rem;font-weight:600;color:#0a7a72;}
+
+/* ── CTA Banner ── */
+.pl-cta-banner{display:flex;align-items:center;justify-content:space-between;gap:1rem;background:rgba(8,191,173,.08);border:1.5px solid rgba(8,191,173,.25);border-radius:12px;padding:1.1rem 1.5rem;margin-bottom:2rem;flex-wrap:wrap;}
+.pl-cta-banner-text{font-size:.95rem;font-weight:600;color:#1a202c;}
+.pl-cta-banner-text span{color:var(--primary);}
+.pl-cta-banner-btns{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;}
+.pl-cta-btn{display:inline-block;padding:.6rem 1.35rem;background:var(--primary);color:#fff !important;font-size:.9rem;font-weight:700;border-radius:8px;text-decoration:none;transition:background .18s;white-space:nowrap;}
+.pl-cta-btn:hover{background:#07a99a;}
+.pl-cta-price{font-size:.8rem;color:#64748b;}
 
 /* ── How it works ── */
 .pl-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:.85rem;margin-top:1.5rem;}
@@ -54,24 +63,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 /* ── Prompt cards ── */
 .pl-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;}
 @media(max-width:768px){.pl-grid{grid-template-columns:1fr;}}
-
 .pl-card{background:#fff;border:1.5px solid #e2e8f0;border-radius:12px;padding:1.25rem;display:flex;flex-direction:column;gap:.75rem;transition:border-color .18s;}
 .pl-card:hover{border-color:rgba(8,191,173,.4);}
 .pl-card.is-locked{filter:blur(4px);user-select:none;pointer-events:none;}
-
 .pl-card-cat{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--primary);background:rgba(8,191,173,.1);padding:.2rem .55rem;border-radius:4px;width:fit-content;}
 .pl-card-title{font-size:1rem;font-weight:700;color:#1a202c;margin:0;line-height:1.3;}
 .pl-card-body{font-family:'Courier New',Courier,monospace;font-size:.78rem;line-height:1.7;color:#374151;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:.85rem;white-space:pre-wrap;flex:1;}
 .pl-card-footer{display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:wrap;}
 .pl-placeholder-hint{font-size:.72rem;color:#94a3b8;}
 .pl-copy-btn{display:inline-flex;align-items:center;gap:.35rem;padding:.4rem .85rem;border:1.5px solid var(--primary);border-radius:6px;font-size:.8rem;font-weight:700;color:var(--primary);background:#fff;cursor:pointer;transition:all .18s;font-family:inherit;white-space:nowrap;}
-.pl-copy-btn:hover{background:var(--primary);color:#fff;}
-.pl-copy-btn.copied{background:var(--primary);color:#fff;}
+.pl-copy-btn:hover,.pl-copy-btn.copied{background:var(--primary);color:#fff;}
 
 /* ── Gate & Paywall ── */
 .pl-gate-wrap{position:relative;}
 .pl-paywall{display:none;flex-direction:column;align-items:center;margin-top:1.25rem;background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:12px;padding:2.25rem 1.5rem;text-align:center;}
-.bm-paywall-box{text-align:center;max-width:480px;}
+.bm-paywall-box{text-align:center;max-width:500px;}
 .bm-paywall-box h3{font-size:1.25rem;font-weight:800;color:#1a202c;margin:0 0 .5rem;}
 .bm-paywall-box>p{font-size:.9rem;color:#64748b;margin:0 0 1rem;}
 .bm-perks{list-style:none;padding:0;margin:0 0 1.25rem;text-align:left;display:inline-block;}
@@ -89,61 +95,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .pl-meta{font-size:.8rem;color:#94a3b8;margin-bottom:1.25rem;}
 .pl-note{margin-top:1.5rem;padding:1rem 1.25rem;background:#f8fafc;border-left:3px solid var(--primary);border-radius:0 8px 8px 0;font-size:.85rem;color:#64748b;}
   </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What AI tools do these Meta Ads prompts work with?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "All prompts are tested with ChatGPT (GPT-4o) and Claude (Sonnet or Opus). They also work with Gemini and other large language models. The prompts use plain English — no special syntax required."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I need to know how to write prompts to use this library?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Each prompt is fully written with [PLACEHOLDER] fields you simply fill in before pasting. No prompt engineering knowledge needed — just copy, fill in your details, and paste."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What's included in the full Meta Ads prompt library?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "60 expert-built prompts across 6 categories: Campaign Setup (10), Audience Research (10), Ad Copy & Creative (12), Optimisation (10), Reporting (8), and Strategy & Planning (10). Delivered as a PDF and Google Doc you can copy from directly."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Are these prompts specific to Meta Ads or generic marketing prompts?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Every prompt is built specifically for Meta Ads workflows. They reference Meta-specific concepts like campaign objectives, the learning phase, lookalike audiences, Pixel events, and Meta Ads Manager. They are not generic marketing or copywriting prompts."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How is this different from free prompt lists I can find online?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Free prompt lists are usually vague ('write me a Facebook ad'). This library provides structured, tested prompts with proper [PLACEHOLDER] fields, context instructions, and output formatting — so the AI gives you a usable result on the first try, not a generic draft you have to rewrite."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I receive the prompt library after purchase?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "After submitting the form, the library is emailed to you as a PDF and Google Doc link within 5 minutes. You can copy prompts directly from the Google Doc into ChatGPT or Claude."
-        }
-      }
-    ]
-  }
+  <script>
+    var TALLY_URL = '#'; /* TODO: Replace with Meta Ads Prompt Library Tally form URL */
   </script>
 </head>
 <body>
@@ -225,19 +178,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="breadcrumb-sep">&#8250;</span>
         <span class="breadcrumb-current">Prompt Library</span>
       </nav>
-      <h1>60 Ready-to-Use <span class="highlight">Meta Ads Prompts</span></h1>
-      <p class="hero-sub">Copy, paste into ChatGPT or Claude, get professional outputs instantly.<br>No prompt engineering — organised by campaign stage, ready to use in seconds.</p>
+      <h1>50 Ready-to-Use <span class="highlight">Meta Ads Prompts</span></h1>
+      <p class="hero-sub">Copy, paste into ChatGPT or Claude, get a professional output instantly.<br>No experience needed — fill in the [blanks] and you're done.</p>
       <div class="pl-hero-cats">
         <span class="pl-hero-cat">📋 Campaign Setup</span>
-        <span class="pl-hero-cat">🎯 Audience Research</span>
-        <span class="pl-hero-cat">✍️ Ad Copy & Creative</span>
+        <span class="pl-hero-cat">🎯 Target Audience</span>
+        <span class="pl-hero-cat">🖼️ Image Design</span>
+        <span class="pl-hero-cat">🎬 Video Generation</span>
+        <span class="pl-hero-cat">✍️ Ad Copy</span>
         <span class="pl-hero-cat">⚡ Optimisation</span>
         <span class="pl-hero-cat">📊 Reporting</span>
-        <span class="pl-hero-cat">🧠 Strategy & Planning</span>
+        <span class="pl-hero-cat">🧠 Strategy &amp; Planning</span>
       </div>
-      <div style="margin-top:1.75rem;">
-        <a href="#prompts" class="btn btn-primary">Browse Prompts</a>
-        <a href="#coaching" class="btn btn-outline">Book Coaching</a>
+      <div style="margin-top:1.75rem;display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;">
+        <a href="#prompts" class="btn btn-primary">Browse Free Prompts</a>
+        <a id="hero-cta" href="#" class="btn btn-outline" style="font-weight:700;">Get All 50 Prompts, $29 &rarr;</a>
       </div>
     </div>
   </section>
@@ -247,24 +202,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="section-header">
         <div class="badge badge-secondary">How It Works</div>
         <h2>From Blank Page to <span class="highlight">Professional Output</span></h2>
-        <p>Three steps. Seconds each.</p>
+        <p>Three steps. Takes seconds.</p>
       </div>
       <div class="pl-steps">
         <div class="pl-step">
           <span class="pl-step-num">1</span>
           <span class="pl-step-label">📋 Copy the Prompt</span>
-          <span class="pl-step-sub">Pick the task you need, click Copy, and fill in the [PLACEHOLDERS] with your campaign details.</span>
+          <span class="pl-step-sub">Pick the task, click Copy, fill in the [PLACEHOLDERS] with your details.</span>
         </div>
         <div class="pl-step">
           <span class="pl-step-num">2</span>
           <span class="pl-step-label">🤖 Paste into AI</span>
-          <span class="pl-step-sub">Paste into ChatGPT, Claude, or Gemini. Works with any large language model.</span>
+          <span class="pl-step-sub">Paste into ChatGPT or Claude. Works with any AI tool.</span>
         </div>
         <div class="pl-step">
           <span class="pl-step-num">3</span>
-          <span class="pl-step-label">✅ Get a Professional Output</span>
-          <span class="pl-step-sub">Receive a structured, ready-to-use result — no back-and-forth, no vague answers.</span>
+          <span class="pl-step-label">✅ Get Your Output</span>
+          <span class="pl-step-sub">Receive a structured, ready-to-use result. No rewriting, no back-and-forth.</span>
         </div>
+      </div>
+      <div style="text-align:center;margin-top:1.75rem;">
+        <a id="hiw-cta" href="#" class="pl-cta-btn" style="font-size:1rem;padding:.75rem 2rem;">Get All 50 Prompts, $29 &rarr;</a>
+        <p style="margin-top:.6rem;font-size:.8rem;color:#94a3b8;">PDF + Google Doc &nbsp;&bull;&nbsp; Delivered in 5 minutes &nbsp;&bull;&nbsp; Full refund if not useful</p>
       </div>
     </div>
   </section>
@@ -273,32 +232,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
       <div class="section-header">
         <div class="badge badge-secondary">Prompt Library</div>
-        <h2>Meta Ads Prompts — <span class="highlight">Browse by Category</span></h2>
+        <h2>Meta Ads Prompts, <span class="highlight">Browse by Category</span></h2>
       </div>
-      <p class="pl-meta" id="pl-meta">Showing <span id="pl-free-count">3</span> free prompts in this category — <span id="pl-locked-count">7</span> more in the full library.</p>
+
+      <div class="pl-cta-banner">
+        <div class="pl-cta-banner-text">Try 3 free prompts in each category. <span>Get all 50 for $29</span> — PDF &amp; Google Doc delivered in 5 minutes.</div>
+        <div class="pl-cta-banner-btns">
+          <a id="banner-cta" href="#" class="pl-cta-btn">Get All 50 Prompts &rarr;</a>
+        </div>
+      </div>
+
+      <p class="pl-meta">Showing <span id="pl-free-count">3</span> free prompts, <span id="pl-locked-count">0</span> locked in this category.</p>
       <div class="pl-tabs" id="pl-tabs"></div>
       <div class="pl-gate-wrap">
         <div class="pl-grid" id="pl-grid"></div>
         <div class="pl-paywall" id="pl-paywall">
           <div class="bm-paywall-box">
             <svg width="44" height="44" viewBox="0 0 24 24" fill="none" style="margin:0 auto .75rem;display:block;"><rect x="3" y="11" width="18" height="11" rx="2" stroke="#08bfad" stroke-width="1.8"/><path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#08bfad" stroke-width="1.8" stroke-linecap="round"/></svg>
-            <p class="bm-pw-scope">Meta Ads Prompts &middot; 60 prompts &middot; 6 categories</p>
-            <h3>Get All 60 Meta Ads Prompts</h3>
-            <p>Stop writing prompts from scratch. Get every prompt for every stage of your Meta Ads workflow — ready to copy and paste.</p>
+            <p class="bm-pw-scope">50 prompts &middot; 8 categories &middot; PDF + Google Doc</p>
+            <h3>Get All 50 Meta Ads Prompts</h3>
+            <p>Every prompt you need, for every part of your Meta Ads workflow. Copy, paste, done.</p>
             <ul class="bm-perks">
-              <li>10 Campaign Setup prompts — briefs, structure, pixel, budgets</li>
-              <li>10 Audience Research prompts — interest stacks, lookalikes, retargeting</li>
-              <li>12 Ad Copy &amp; Creative prompts — hooks, headlines, video briefs, UGC</li>
-              <li>10 Optimisation prompts — data analysis, scaling, A/B tests, CPA fixes</li>
-              <li>8 Reporting prompts — client summaries, narratives, post-mortems</li>
-              <li>10 Strategy prompts — launch plans, scaling, competitor analysis</li>
+              <li>6 Campaign Setup prompts — briefs, budgets, objectives</li>
+              <li>6 Target Audience prompts — interests, retargeting, lookalikes</li>
+              <li>6 Image Design prompts — briefs for static ads and Midjourney</li>
+              <li>6 Video Generation prompts — scripts, hooks, UGC briefs</li>
+              <li>7 Ad Copy prompts — primary text, headlines, retargeting copy</li>
+              <li>6 Optimisation prompts — analyse data, scale, fix CPA</li>
+              <li>6 Reporting prompts — client reports, summaries, meeting prep</li>
+              <li>7 Strategy &amp; Planning prompts — launch plans, scaling, seasonal</li>
             </ul>
-            <!-- TODO: Replace with Meta Ads Prompt Library Tally form URL -->
             <p class="bm-price-anchor">Prompt packs like this sell for $49–$99. Get the full Meta Ads library for just $29.</p>
-            <a href="#" class="bm-unlock-btn">Get Full Access &mdash; $29 &rarr;</a>
+            <a id="paywall-cta" href="#" class="bm-unlock-btn">Get Full Access, $29 &rarr;</a>
             <div class="bm-trust-badges">
-              <span>&#10003;&nbsp;Delivered within 5 minutes</span>
-              <span>&#10003;&nbsp;PDF + Google Doc format</span>
+              <span>&#10003;&nbsp;Delivered in 5 minutes</span>
+              <span>&#10003;&nbsp;PDF + Google Doc</span>
               <span>&#10003;&nbsp;Full refund if not useful</span>
             </div>
             <p class="bm-social-proof">Used by Meta Ads managers at agencies and in-house teams.</p>
@@ -306,8 +274,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       <div class="pl-note">
-        <strong>How to use:</strong> Fill in every <strong>[PLACEHOLDER]</strong> before pasting. The more specific your inputs, the better the output. For best results, use ChatGPT GPT-4o or Claude Sonnet/Opus. If the output feels generic, add more context about your business in the [PLACEHOLDERS].
+        <strong>Tip:</strong> Fill in every <strong>[PLACEHOLDER]</strong> before pasting. The more detail you add, the better the output. Best results with ChatGPT GPT-4o or Claude Sonnet.
       </div>
+    </div>
+  </section>
+
+  <section style="background:#f8fafc;padding:2.5rem 0;">
+    <div class="container" style="text-align:center;">
+      <p style="font-size:1.1rem;font-weight:700;color:#1a202c;margin:0 0 .5rem;">Ready to save hours every week?</p>
+      <p style="font-size:.9rem;color:#64748b;margin:0 0 1.25rem;">50 Meta Ads prompts. PDF and Google Doc. Delivered in 5 minutes.</p>
+      <a id="mid-cta" href="#" class="pl-cta-btn" style="font-size:1rem;padding:.75rem 2.25rem;">Get All 50 Prompts, $29 &rarr;</a>
+      <p style="margin-top:.6rem;font-size:.8rem;color:#94a3b8;">Full refund if not useful &nbsp;&bull;&nbsp; Works with ChatGPT and Claude</p>
     </div>
   </section>
 
@@ -327,7 +304,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
       <div class="section-header">
         <div class="badge">FAQ</div>
-        <h2>Meta Ads Prompt Library — FAQ</h2>
+        <h2>Meta Ads Prompt Library, FAQ</h2>
         <p>Common questions about the prompt library.</p>
       </div>
       <div class="faq-list">
@@ -337,16 +314,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="faq-chevron" aria-hidden="true">&#8964;</span>
           </summary>
           <div class="faq-answer">
-            <p>All prompts are tested with ChatGPT (GPT-4o) and Claude (Sonnet or Opus). They also work with Gemini and other large language models. The prompts use plain English — no special syntax required.</p>
+            <p>All prompts are tested with ChatGPT (GPT-4o) and Claude (Sonnet or Opus). They also work with Gemini and other large language models. No special syntax — just copy, fill in the blanks, and paste.</p>
           </div>
         </details>
         <details class="faq-item">
           <summary class="faq-question">
-            <span>Do I need to know how to write prompts to use this library?</span>
+            <span>Do I need experience with AI to use this?</span>
             <span class="faq-chevron" aria-hidden="true">&#8964;</span>
           </summary>
           <div class="faq-answer">
-            <p>No. Each prompt is fully written with [PLACEHOLDER] fields you simply fill in before pasting. No prompt engineering knowledge needed — just copy, fill in your details, and paste into any AI tool.</p>
+            <p>No. Every prompt has [PLACEHOLDER] fields you fill in with your own details before pasting. No prompt engineering needed. If you can fill in a form, you can use these prompts.</p>
           </div>
         </details>
         <details class="faq-item">
@@ -355,16 +332,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="faq-chevron" aria-hidden="true">&#8964;</span>
           </summary>
           <div class="faq-answer">
-            <p>60 expert-built prompts across 6 categories: Campaign Setup (10), Audience Research (10), Ad Copy & Creative (12), Optimisation (10), Reporting (8), and Strategy & Planning (10). Delivered as a PDF and Google Doc you can copy from directly.</p>
+            <p>50 prompts across 8 categories: Campaign Setup (6), Target Audience (6), Image Design (6), Video Generation (6), Ad Copy (7), Optimisation (6), Reporting (6), Strategy & Planning (7). Delivered as a PDF and Google Doc so you can copy prompts directly.</p>
           </div>
         </details>
         <details class="faq-item">
           <summary class="faq-question">
-            <span>Are these prompts specific to Meta Ads or generic marketing prompts?</span>
+            <span>Are these specific to Meta Ads or generic marketing prompts?</span>
             <span class="faq-chevron" aria-hidden="true">&#8964;</span>
           </summary>
           <div class="faq-answer">
-            <p>Every prompt is built specifically for Meta Ads workflows. They reference Meta-specific concepts like campaign objectives, the learning phase, lookalike audiences, Pixel events, and Meta Ads Manager. These are not generic marketing or copywriting prompts.</p>
+            <p>Every prompt is built specifically for Meta Ads. They cover real Meta Ads tasks — targeting, image and video briefs, ad copy, optimisation decisions, client reporting — not generic marketing advice you could Google.</p>
           </div>
         </details>
         <details class="faq-item">
@@ -373,7 +350,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="faq-chevron" aria-hidden="true">&#8964;</span>
           </summary>
           <div class="faq-answer">
-            <p>Free prompt lists are usually vague ("write me a Facebook ad"). This library provides structured, tested prompts with proper [PLACEHOLDER] fields, context instructions, and output formatting — so the AI gives you a usable result on the first try, not a generic draft you have to rewrite.</p>
+            <p>Free prompt lists give you vague starting points like "write me a Facebook ad." These prompts tell the AI exactly what to do, what format to return, and what to include — so the first output is ready to use, not a rough draft you have to rewrite.</p>
           </div>
         </details>
         <details class="faq-item">
@@ -382,7 +359,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="faq-chevron" aria-hidden="true">&#8964;</span>
           </summary>
           <div class="faq-answer">
-            <p>After submitting the form, the library is emailed to you as a PDF and Google Doc link within 5 minutes. You can copy prompts directly from the Google Doc into ChatGPT or Claude.</p>
+            <p>After submitting the form, the library is emailed to you as a PDF and Google Doc link within 5 minutes. Copy prompts directly from the Google Doc into ChatGPT or Claude.</p>
           </div>
         </details>
       </div>
@@ -394,7 +371,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="section-header">
         <div class="badge badge-secondary">Keep Learning</div>
         <h2>Related <span class="highlight">Meta Ads Resources</span></h2>
-        <p>More tools and tutorials to sharpen your Meta Ads results.</p>
+        <p>More tools and tutorials to get better results from your Meta Ads campaigns.</p>
       </div>
       <div class="courses-grid">
         <article class="course-card">
@@ -473,39 +450,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul></div>
         <div class="footer-col"><h4>PPC</h4><ul>
             <li><a href="../../google-ads/">Google Ads</a></li>
-            <li><a href="../../google-ads-editor/">Google Ads Editor</a></li>
             <li><a href="../../meta-ads/">Meta Ads</a></li>
             <li><a href="../../tiktok-ads/">TikTok Ads</a></li>
-            <li><a href="../../microsoft-ads/">Microsoft Ads</a></li>
-            <li><a href="../../pinterest-ads/">Pinterest Ads</a></li>
-            <li><a href="../../reddit-ads/">Reddit Ads</a></li>
             <li><a href="../../linkedin-ads/">LinkedIn Ads</a></li>
-        </ul></div>
-        <div class="footer-col"><h4>Analytics</h4><ul>
-            <li><a href="../../google-analytics/">Google Analytics</a></li>
-            <li><a href="../../google-tag-manager/">Google Tag Manager</a></li>
-            <li><a href="../../data-studio/">Data Studio</a></li>
-        </ul></div>
-        <div class="footer-col"><h4>AI Tools</h4><ul>
-            <li><a href="../../claude/">Claude AI</a></li>
-            <li><a href="../../chatgpt/">ChatGPT</a></li>
-        </ul></div>
-        <div class="footer-col"><h4>SEO</h4><ul>
-            <li><a href="../../google-search-console/">Google Search Console</a></li>
-            <li><a href="../../bing-webmaster-tools/">Bing Webmaster Tools</a></li>
+            <li><a href="../../reddit-ads/">Reddit Ads</a></li>
         </ul></div>
         <div class="footer-col"><h4>Benchmarks</h4><ul>
             <li><a href="/meta-ads/benchmarks/">Meta Ads</a></li>
             <li><a href="/google-ads/benchmarks/">Google Ads</a></li>
             <li><a href="/tiktok-ads/benchmarks/">TikTok Ads</a></li>
-            <li><a href="/linkedin-ads/benchmarks/">LinkedIn Ads</a></li>
             <li><a href="/shopify/benchmarks/">Shopify</a></li>
             <li><a href="/email-marketing/benchmarks/">Email Marketing</a></li>
         </ul></div>
         <div class="footer-col"><h4>Company</h4><ul>
             <li><a href="../../#contact">Contact</a></li>
             <li><a href="mailto:hello@xyzlab.com">hello@xyzlab.com</a></li>
-            <li><a href="https://wa.me/6594260742">+65 9426 0742</a></li>
         </ul></div>
       </div>
     </div>
@@ -520,143 +479,132 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script>
   (function () {
     var FREE_PER_CAT = 3;
-    var TALLY_URL = '#'; // TODO: Replace with Meta Ads Prompt Library Tally form URL
 
     var PROMPTS = [
-      // ── CAMPAIGN SETUP (10) ──────────────────────────────────────
-      { cat: 'Campaign Setup', title: 'Campaign Brief Generator',
-        text: 'You are a senior Meta Ads strategist. Write a campaign brief for [PRODUCT/SERVICE] targeting [TARGET AUDIENCE] in [COUNTRY/REGION].\n\nInclude:\n- Campaign objective and rationale\n- 3 audience segments to test (cold, warm, retargeting)\n- 3 creative angles with brief rationale\n- Budget split for [MONTHLY BUDGET] across the funnel\n- KPI targets: CTR, CPC, CPA, ROAS for [INDUSTRY]\n\nFormat as a structured brief I can share with my team.' },
-      { cat: 'Campaign Setup', title: 'Account Structure Planner',
-        text: 'Design the optimal Meta Ads account structure for [BUSINESS TYPE] with a [MONTHLY BUDGET] budget.\n\nSpecify:\n- Number of campaigns and their objectives\n- Ad sets per campaign with audience logic\n- Ads per ad set and creative rotation strategy\n- Budget allocation per level\n- Campaign, ad set, and ad naming convention\n\nKeep the structure lean enough to exit the learning phase in under 7 days.' },
-      { cat: 'Campaign Setup', title: 'Conversion Event Priority List',
-        text: "I'm setting up Meta Pixel events for [BUSINESS TYPE]. List the top 8 conversion events I should track, in priority order.\n\nFor each event:\n- Event name (standard or custom)\n- Where it fires in my funnel\n- Why it matters for Meta's algorithm\n- Which campaign objective it pairs with\n\nMy funnel: [DESCRIBE YOUR FUNNEL e.g. homepage → product page → add to cart → checkout → purchase]." },
-      { cat: 'Campaign Setup', title: 'UTM Naming Convention Builder',
-        text: 'Create a UTM parameter naming convention for Meta Ads for [BUSINESS/CLIENT NAME].\n\nWe run the following campaign types: [LIST TYPES e.g. prospecting, retargeting, DPA].\n\nBuild a system that is:\n- Consistent across all campaign types\n- Easy to filter in GA4\n- Scalable as we add campaigns\n\nInclude example UTMs for 3 campaign types and a reusable template.' },
-      { cat: 'Campaign Setup', title: 'Campaign Objective Selector',
-        text: 'I want to run Meta Ads for [PRODUCT/SERVICE]. My business goal is [GOAL e.g. generate leads / drive online sales / grow brand awareness].\n\nBudget: [MONTHLY BUDGET]. Target audience: [DESCRIPTION].\n\nRecommend:\n- Which Meta campaign objective to start with and why\n- What to switch to in 3–6 months\n- Which objective to avoid at my current stage\n- How the objective choice affects cost per result' },
-      { cat: 'Campaign Setup', title: 'Budget Allocation Framework',
-        text: 'I have [TOTAL MONTHLY BUDGET] for Meta Ads for [BUSINESS TYPE].\n\nRecommend how to split this across:\n- Prospecting vs. retargeting (% split with reasoning)\n- Campaign objectives\n- Testing vs. scaling budget\n- [COUNTRY 1] vs. [COUNTRY 2] if running in multiple markets\n\nExplain when I should revisit each allocation as results come in.' },
-      { cat: 'Campaign Setup', title: 'Pixel & Event Setup Checklist',
-        text: "I'm installing Meta Pixel for [BUSINESS TYPE] on [PLATFORM e.g. Shopify / WordPress / custom site].\n\nCreate a step-by-step checklist covering:\n- Where to install the base pixel code\n- Which standard events to add and where in the funnel\n- How to verify events fire correctly in Events Manager\n- Common installation mistakes on [PLATFORM] to avoid\n- What to check before launching the first campaign" },
-      { cat: 'Campaign Setup', title: 'Conversion Window Guide',
-        text: 'Advise on attribution and conversion window settings for [CAMPAIGN OBJECTIVE] campaigns for [PRODUCT TYPE].\n\nAverage customer decision period: [X DAYS].\n\nCover:\n- Which attribution window to select and why\n- How window length affects Meta\'s optimisation\n- How to compare campaigns with different windows fairly\n- When to change windows as campaign data matures' },
-      { cat: 'Campaign Setup', title: 'Landing Page Brief',
-        text: 'Write a landing page brief for converting Meta Ads traffic for [PRODUCT/OFFER].\n\nTarget audience: [DESCRIPTION]. Traffic source: Meta Ads.\n\nInclude:\n- Page structure (above fold, proof section, CTA placement)\n- Headline formula that matches the ad message\n- Top 3 objections to address on the page\n- Trust signals to include\n- Mobile optimisation priorities\n- First 2 elements to A/B test' },
-      { cat: 'Campaign Setup', title: 'Full Account Audit Framework',
-        text: 'Conduct a structured audit of my Meta Ads account.\n\nBusiness type: [BUSINESS TYPE]\nMonthly spend: [BUDGET]\nCurrent results: [PASTE KEY METRICS]\n\nAudit these areas and flag what\'s working, what\'s broken, and what to fix first:\n1. Account structure and campaign organisation\n2. Audience targeting and overlap\n3. Creative performance and fatigue signals\n4. Budget allocation and pacing\n5. Pixel and conversion tracking accuracy\n6. Bidding strategy fit' },
+      // ── CAMPAIGN SETUP (6) ──────────────────────────────────────
+      { cat: 'Campaign Setup', title: 'Write My Campaign Brief',
+        text: 'I want to advertise [PRODUCT/SERVICE] on Meta Ads. My target customer is [DESCRIBE YOUR CUSTOMER in 1–2 sentences]. My budget is [MONTHLY BUDGET]. My goal is to [GOAL e.g. get more sales / get more leads / grow awareness].\n\nWrite me a campaign brief.\n\nFormat your response as a table with 5 rows:\n- Campaign Goal\n- Who to Target\n- Creative Idea (what the ad should show or say)\n- Budget Split (how to divide the budget)\n- What to Measure (which number tells me it\'s working)' },
+      { cat: 'Campaign Setup', title: 'Which Campaign Objective Should I Use?',
+        text: 'I want to run Meta Ads for [PRODUCT/SERVICE]. I want to [WHAT YOU WANT e.g. get people to buy on my website / collect email leads / get more video views].\n\nMy budget is [BUDGET] per month. I have [been running ads for X months / never run ads before].\n\nFormat your response as:\n1. Which objective to pick (one clear answer)\n2. Why it\'s the right choice (2–3 sentences)\n3. What to expect in the first 30 days\n4. One common mistake to avoid with this objective' },
+      { cat: 'Campaign Setup', title: 'How Should I Split My Budget?',
+        text: 'I have [TOTAL BUDGET] per month to spend on Meta Ads for [BUSINESS TYPE]. I want to reach new customers and also follow up with people who\'ve already visited my website.\n\nHow should I split my budget?\n\nFormat your response as a table with 3 columns:\n- Where to Spend\n- How Much (%)\n- Why (one sentence)' },
+      { cat: 'Campaign Setup', title: 'Pre-Launch Checklist',
+        text: 'I\'m about to launch a Meta Ads campaign for [PRODUCT/SERVICE]. Target audience: [DESCRIPTION]. Budget: [BUDGET] per month.\n\nWhat do I need to check before I go live to avoid wasting money?\n\nFormat your response as a numbered checklist of 10 items, in the order I should check them. For each item, write one sentence explaining what to look for.' },
+      { cat: 'Campaign Setup', title: 'What Should My Landing Page Include?',
+        text: 'People will click my Meta Ad and land on my website page for [PRODUCT/SERVICE]. My target customer is [DESCRIPTION]. I want them to [BUY / FILL IN A FORM / CALL ME / SIGN UP].\n\nWhat should be on this landing page to get the best results?\n\nFormat your response as:\n- Must-Have Elements (numbered list of 6)\n- Nice-to-Have Elements (bullet list of 3)\n- 3 Common Mistakes That Kill Conversions' },
+      { cat: 'Campaign Setup', title: 'How Much Budget Do I Need?',
+        text: 'I want to run Meta Ads for [PRODUCT/SERVICE] in [COUNTRY]. My goal is to get [X SALES / X LEADS] per month. My product or service costs [PRICE].\n\nHow much should I budget per month?\n\nFormat your response as:\n- Minimum Budget (what\'s needed to get any useful data)\n- Recommended Starter Budget (enough to learn and optimise)\n- What to expect at each level in the first 60 days\n- One sentence on what happens if I spend less than the minimum' },
 
-      // ── AUDIENCE RESEARCH (10) ───────────────────────────────────
-      { cat: 'Audience Research', title: 'Cold Interest Stack Generator',
-        text: 'You are a Meta Ads audience strategist. I\'m selling [PRODUCT] to [TARGET CUSTOMER DESCRIPTION] in [COUNTRY].\n\nSuggest 8 cold audience interest stacks to test. For each stack:\n- Group 3–5 related interests together\n- Explain why this audience fits my product\n- Suggest the creative angle that would resonate most\n\nOrder them from highest to lowest confidence.' },
-      { cat: 'Audience Research', title: 'Competitor Audience Intercept',
-        text: 'My main Meta Ads competitors are [COMPETITOR 1] and [COMPETITOR 2].\n\nAnalyse their likely targeting strategy based on their product and brand positioning.\n\nSuggest 5 interest-based audiences I can use to intercept potential customers before they find competitors. For each:\n- Interest stack\n- Why it overlaps with competitor audiences\n- Ad angle to differentiate from the competitor' },
-      { cat: 'Audience Research', title: 'Lookalike Audience Strategy',
-        text: 'I want to build lookalike audiences in Meta Ads for [BUSINESS TYPE].\n\nSeed audiences I have available: [LIST e.g. purchasers (500), leads (2,000), email list (5,000), page visitors (10,000)].\n\nRecommend:\n- Which seed audience to prioritise and why\n- What lookalike percentage to start with\n- How many lookalikes to test simultaneously\n- How to structure the test to get clean data' },
-      { cat: 'Audience Research', title: 'Retargeting Segment Map',
-        text: 'Map out a full retargeting audience strategy for [BUSINESS TYPE] using Meta Ads.\n\nCreate segments for:\n- Website visitors by page type and recency\n- Video viewers by % watched\n- Instagram/Facebook engagers\n- Past purchasers (for upsell/cross-sell)\n- Abandoned cart / checkout\n\nFor each segment: audience window, message angle, and recommended offer or CTA.' },
-      { cat: 'Audience Research', title: 'Audience Exclusion Blueprint',
-        text: "Create an audience exclusion list for [CAMPAIGN TYPE e.g. cold prospecting] campaigns for [BUSINESS TYPE].\n\nList who to exclude and why, covering:\n- Custom audiences to exclude (e.g. existing customers)\n- Demographics unlikely to convert\n- Interests that attract the wrong traffic\n- Geographic or language exclusions\n\nFormat as a ready-to-use exclusion checklist for Meta Ads Manager." },
-      { cat: 'Audience Research', title: 'Customer Persona from Data',
-        text: "I'll give you data about my existing customers. Build a Meta Ads persona I can use for targeting.\n\nCustomer data: [PASTE DEMOGRAPHICS, PURCHASE PATTERNS, OR CRM INSIGHTS]\n\nOutput:\n- Demographics (age, gender, location, income bracket)\n- Likely interests and behaviours on Facebook/Instagram\n- Pain points and motivations\n- Best Meta Ads placement for this persona\n- Top 3 interest stacks to test first" },
-      { cat: 'Audience Research', title: 'Interest Expansion Brainstorm',
-        text: 'My current Meta Ads interest targeting for [PRODUCT] focuses on [CURRENT INTERESTS]. Performance is declining — I think I\'m hitting audience saturation.\n\nSuggest 10 adjacent or unexpected interest categories I haven\'t tried. For each:\n- The interest name as it appears in Meta Ads\n- Why it overlaps with my buyer profile\n- How large the audience is likely to be (small/medium/large)\n- Creative angle to make the connection clear' },
-      { cat: 'Audience Research', title: 'Custom Audience Priority Ladder',
-        text: 'Rank my available custom audiences in order of conversion likelihood for [PRODUCT TYPE].\n\nAvailable audiences: [LIST YOUR AUDIENCES]\n\nFor each, advise:\n- Expected conversion rate vs cold traffic (higher / lower / much higher)\n- Best campaign objective to pair it with\n- Suggested ad frequency cap\n- Whether to include in prospecting, retargeting, or both\n\nSort from highest to lowest priority.' },
-      { cat: 'Audience Research', title: 'Audience Overlap Diagnosis',
-        text: "I'm running [NUMBER] ad sets simultaneously in Meta Ads for [BUSINESS TYPE] and seeing high CPMs and slowing results.\n\nAd set details: [PASTE AD SET NAMES AND AUDIENCES]\n\nDiagnose potential audience overlap:\n- Which ad sets are likely competing against each other\n- How overlap affects my auction costs\n- How to restructure to eliminate cannibalisation\n- Whether to use Meta's Audience Overlap tool and what to look for" },
-      { cat: 'Audience Research', title: 'B2B Decision-Maker Targeting',
-        text: "I'm running Meta Ads for a B2B product targeting [JOB TITLE / DECISION-MAKER TYPE] at [COMPANY SIZE / INDUSTRY].\n\nBuild a targeting strategy using Meta's available B2B options:\n- Job title and industry interest stacks\n- Behaviour-based signals (business page admins, etc.)\n- LinkedIn-style targeting workarounds within Meta\n- Audience size expectations and budget minimums\n- Why Meta can or cannot replace LinkedIn Ads for this use case" },
+      // ── TARGET AUDIENCE (6) ──────────────────────────────────────
+      { cat: 'Target Audience', title: 'Give Me Interest Targeting Ideas',
+        text: 'I\'m selling [PRODUCT] to [TYPE OF CUSTOMER] in [COUNTRY] on Meta Ads.\n\nSuggest 8 interest groups I can target. For each one, explain in one sentence why my customer would be in this group.\n\nFormat your response as a table with 3 columns:\n- Interest Group Name (as it appears in Meta Ads)\n- Why My Customer Is in This Group\n- Estimated Audience Size (Small / Medium / Large)' },
+      { cat: 'Target Audience', title: 'Who Is My Ideal Customer?',
+        text: 'I sell [PRODUCT/SERVICE]. My best customers are people who [DESCRIBE WHAT YOU KNOW ABOUT THEM e.g. buy from my store, book my service, sign up for my newsletter].\n\nBuild a detailed profile of my ideal Meta Ads target customer.\n\nFormat your response as:\n- Demographics (age range, gender, location, estimated income)\n- What They Care About Most\n- The Problem My Product Solves for Them\n- Top 5 Interests to Target on Meta Ads\n- Which ad placement they\'re most likely to use (Feed / Reels / Stories)' },
+      { cat: 'Target Audience', title: 'Who Should I Retarget?',
+        text: 'I run a [BUSINESS TYPE] website. People visit but most don\'t buy or contact me.\n\nWhat retargeting audiences should I create in Meta Ads to bring them back?\n\nFormat your response as a table with 4 columns:\n- Audience Name\n- Who Is in This Audience\n- What Ad Message to Show Them\n- How Many Days to Include (e.g. visited in last 7 / 14 / 30 days)' },
+      { cat: 'Target Audience', title: 'Who Should I Exclude from My Ads?',
+        text: 'I\'m running Meta Ads for [PRODUCT/SERVICE] targeting [TARGET AUDIENCE DESCRIPTION].\n\nWho should I exclude from seeing my ads so I don\'t waste budget on people who will never buy?\n\nFormat your response as a numbered list of 8 exclusions. For each: who to exclude and one sentence explaining why it saves money.' },
+      { cat: 'Target Audience', title: 'How Do I Reach People Like My Competitors\' Customers?',
+        text: 'My competitors who sell similar products are [COMPETITOR 1] and [COMPETITOR 2].\n\nSuggest 5 ways I can use Meta Ads targeting to reach people who are likely interested in what my competitors sell.\n\nFormat your response as a numbered list. For each idea include:\n- The targeting approach\n- Why it works\n- One sentence on how my ad should stand out from the competitor' },
+      { cat: 'Target Audience', title: 'How Do I Find More Customers Like My Best Ones?',
+        text: 'My best customers on Meta Ads are people who [DESCRIBE WHO HAS BOUGHT OR CONVERTED]. I want to find more people just like them.\n\nWhat\'s the best way to build a lookalike audience in Meta Ads?\n\nFormat your response as:\n- What seed audience to use (and why it\'s the best one)\n- What percentage lookalike to start with\n- How to test it against regular interest targeting\n- What result to expect in the first 2–3 weeks' },
 
-      // ── AD COPY & CREATIVE (12) ──────────────────────────────────
-      { cat: 'Ad Copy & Creative', title: 'Primary Text — 5 Hook Styles',
-        text: 'Write 5 variations of primary text for a Meta Ad promoting [PRODUCT/OFFER].\n\nTarget audience: [DESCRIPTION].\n\nOne variation per hook style:\n1. Curiosity hook ("Most people don\'t know...")\n2. Social proof hook ("3,000 customers in [COUNTRY] use this to...")\n3. Pain point hook (lead with the problem)\n4. Direct benefit hook (lead with the result)\n5. Story hook (first-person narrative, 2–3 sentences)\n\nKeep each under 150 characters for mobile feed.' },
-      { cat: 'Ad Copy & Creative', title: 'Headline Pack (10 Variations)',
-        text: 'Write 10 headline variations for a Meta Ad for [PRODUCT].\n\nThe ad\'s primary text focuses on [MAIN ANGLE/BENEFIT].\n\nMix of styles:\n- 3 benefit-led headlines\n- 2 question-based headlines\n- 2 urgency/scarcity headlines\n- 2 curiosity-gap headlines\n- 1 social proof headline\n\nKeep each under 40 characters. Mark the strongest 3 with ★.' },
-      { cat: 'Ad Copy & Creative', title: 'Video Ad Creative Brief',
-        text: 'Write a creative brief for a 30-second Meta Ads video for [PRODUCT].\n\nTarget audience: [DESCRIPTION]. Placement: Instagram Reels + Facebook Feed.\n\nInclude:\n- Hook script (first 3 seconds — must stop the scroll)\n- Core message (seconds 4–20)\n- Social proof moment\n- Offer and CTA (final 10 seconds)\n- Visual direction (style, mood, pacing)\n- On-screen text suggestions\n- Tone: [TONE e.g. energetic / authoritative / friendly]' },
-      { cat: 'Ad Copy & Creative', title: 'Retargeting Ad Copy',
-        text: "Write 3 retargeting ad copy variations for people who visited [PAGE TYPE e.g. product page / pricing page / checkout] but did not convert.\n\nProduct: [PRODUCT]. Time since visit: [X DAYS].\n\nFor each variation, address a different likely objection:\n1. Price concern\n2. Trust / credibility concern\n3. Timing concern (\"not right now\")\n\nInclude primary text + headline for each. Use urgency or social proof where natural." },
-      { cat: 'Ad Copy & Creative', title: 'Testimonial Ad Framework',
-        text: 'Turn this customer testimonial into a Meta Ad:\n\n[PASTE TESTIMONIAL]\n\nProduct: [PRODUCT]. Target audience: [DESCRIPTION].\n\nCreate:\n- Primary text that leads with the strongest quote\n- A headline that amplifies the testimonial outcome\n- A version for cold audiences (adds context) and warm audiences (goes straight to the proof)\n- Suggested visual treatment (static or video)' },
-      { cat: 'Ad Copy & Creative', title: 'Offer & Discount Headline Generator',
-        text: 'Write 8 headlines for a Meta Ad promoting [SPECIFIC OFFER e.g. 30% off / free trial / buy one get one].\n\nProduct: [PRODUCT]. Audience: [DESCRIPTION].\n\nRules:\n- Make the offer the first thing they read\n- Create urgency without being generic\n- Avoid clichés like "Don\'t miss out" or "Limited time"\n- Vary the angle (savings amount, value gained, problem solved)\n\nMark the top 3 with ★.' },
-      { cat: 'Ad Copy & Creative', title: 'Pain-Point Ad Angle',
-        text: 'Write a Meta Ad that leads with the core pain point my audience experiences before finding [PRODUCT].\n\nTarget audience: [DESCRIPTION].\nThe main pain point: [DESCRIBE PROBLEM].\nThe transformation [PRODUCT] delivers: [DESCRIBE OUTCOME].\n\nCreate:\n- Primary text (pain-agitate-solve structure, under 200 characters)\n- Headline (outcome-focused)\n- Description text\n- Suggested image concept that visually represents the "before" state' },
-      { cat: 'Ad Copy & Creative', title: 'UGC Script Brief',
-        text: 'Write a brief for a UGC (user-generated content) video ad for [PRODUCT].\n\nCreator type: [e.g. everyday person / micro-influencer in [NICHE]].\nTarget audience watching: [DESCRIPTION].\nPlatform: Instagram Reels + Facebook Feed.\n\nInclude:\n- Hook line the creator should open with\n- Key points to cover in 30–45 seconds\n- One "authentic moment" to include (unboxing / before-after / reaction)\n- CTA the creator should use\n- Tone guidance: make it feel organic, not scripted' },
-      { cat: 'Ad Copy & Creative', title: 'Carousel Ad Copy',
-        text: 'Write copy for a 5-card Meta Ads carousel for [PRODUCT/SERVICE].\n\nGoal: [CAMPAIGN OBJECTIVE e.g. drive purchases / generate leads / increase consideration].\nAudience: [DESCRIPTION].\n\nFor each card:\n- Headline (under 40 chars)\n- Description (under 30 chars)\n- Visual concept (1 sentence)\n\nCard 1 should hook. Cards 2–4 should build value. Card 5 should close with a CTA.' },
-      { cat: 'Ad Copy & Creative', title: 'Lead Gen Ad Copy',
-        text: 'Write Meta Ads copy for a lead generation campaign for [BUSINESS TYPE].\n\nLead magnet / offer: [WHAT THEY GET e.g. free consultation / free guide / demo].\nTarget audience: [DESCRIPTION].\n\nCreate:\n- Primary text focused on what they\'ll get and why it\'s valuable\n- Headline for the Instant Form\n- 3 qualifying questions to include in the form\n- Thank-you message after submission\n- Follow-up email subject line (for the first email after sign-up)' },
-      { cat: 'Ad Copy & Creative', title: 'Objection-Handling Copy',
-        text: 'Write Meta Ads copy that pre-emptively handles the top 3 objections to buying [PRODUCT].\n\nTop objections: [LIST 3 OBJECTIONS e.g. "too expensive", "not sure it will work for me", "I can do this myself"].\nTarget audience: [DESCRIPTION].\n\nFor each objection:\n- Primary text variation that addresses it head-on\n- Supporting proof point or trust signal to include\n- CTA that reduces perceived risk' },
-      { cat: 'Ad Copy & Creative', title: 'Seasonal Campaign Copy',
-        text: 'Write Meta Ads copy for a [SEASON/EVENT e.g. Black Friday / Valentine\'s Day / Back to School] campaign for [PRODUCT].\n\nOffer: [DESCRIBE OFFER]. Target audience: [DESCRIPTION].\n\nCreate:\n- Primary text that ties the occasion to the offer naturally\n- 3 headline options (urgency-led, value-led, emotion-led)\n- Recommended campaign start/end window relative to the event\n- 1 retargeting ad variation for people who clicked but didn\'t buy' },
+      // ── IMAGE DESIGN (6) ────────────────────────────────────────
+      { cat: 'Image Design', title: 'Image Ad Design Brief',
+        text: 'I need to create a static image ad for Meta (Facebook and Instagram) for [PRODUCT/SERVICE].\n\nMy target customer is [DESCRIPTION]. My main message is [MAIN MESSAGE e.g. "Get 20% off this week" / "The easiest way to X"].\n\nWrite a design brief I can give to a graphic designer or use in Canva.\n\nFormat your response as:\n- Background and Colour Scheme\n- Main Visual (what to show in the image)\n- Text on Image (headline, max 5–6 words)\n- CTA Button Text\n- Mood and Style (e.g. clean and minimal / bold and energetic)\n- Sizes to Create (feed post, story, square)' },
+      { cat: 'Image Design', title: 'Before and After Ad Brief',
+        text: 'I want to create a before-and-after image ad for [PRODUCT/SERVICE] that shows the transformation it delivers.\n\nBefore using it: [DESCRIBE THE PROBLEM OR SITUATION]\nAfter using it: [DESCRIBE THE RESULT]\n\nWrite a design brief for this ad.\n\nFormat your response as:\n- Left Panel: the "before" — what to show visually\n- Right Panel: the "after" — what to show visually\n- Text Overlay: what words to add\n- Colour and Style Recommendation\n- One sentence on what emotion this image should create' },
+      { cat: 'Image Design', title: 'Testimonial Quote Card Brief',
+        text: 'I have a customer review that says: [PASTE THE REVIEW].\n\nI want to turn it into a visual ad for Meta.\n\nWrite a design brief for a testimonial quote card.\n\nFormat your response as:\n- Which sentence from the review to feature (pull the strongest line)\n- Layout (how to arrange: quote, customer name, star rating, logo)\n- Colour and Font Style\n- Background Suggestion\n- What to add to make it feel authentic, not like a fake review' },
+      { cat: 'Image Design', title: 'Promotional Offer Banner Brief',
+        text: 'I want to create an image ad promoting [OFFER e.g. 30% off / free shipping / buy one get one] for [PRODUCT/SERVICE].\n\nWrite a design brief for a promotional banner.\n\nFormat your response as:\n- Headline Text (make the offer impossible to miss, under 6 words)\n- Supporting Line (1 short sentence)\n- Urgency Element (e.g. "Ends Sunday")\n- Colour Scheme (colours that create urgency without looking cheap)\n- What NOT to Include (what clutters this type of ad)' },
+      { cat: 'Image Design', title: 'Midjourney Prompt for Ad Background',
+        text: 'I need a background image or lifestyle photo for a Meta Ad for [PRODUCT/SERVICE].\n\nMy target customer is [DESCRIPTION]. The mood I want is [MOOD e.g. aspirational / warm and friendly / clean and professional / fun and energetic].\n\nWrite a Midjourney prompt I can use to generate this image.\n\nFormat your response as:\n- The full Midjourney prompt (ready to copy and paste)\n- Which aspect ratio and style flags to add (--ar, --style, etc.)\n- 2 alternative prompts with a different mood or angle' },
+      { cat: 'Image Design', title: 'Rate My Ad Image',
+        text: 'I have a Meta Ads image and I want to know if it will perform well.\n\nHere is what\'s on my image: [DESCRIBE YOUR IMAGE — background, main visual, text, colours, CTA button if any].\n\nRate my image ad and tell me how to improve it.\n\nFormat your response as:\n- Score out of 10 (with one sentence of reasoning)\n- Top 3 Things to Keep\n- Top 3 Things to Change\n- The Single Most Important Fix I Can Make Right Now' },
 
-      // ── OPTIMISATION (10) ────────────────────────────────────────
-      { cat: 'Optimisation', title: 'Performance Data Analysis',
-        text: 'Analyse my Meta Ads performance data and give me an action plan.\n\n[PASTE YOUR DATA — campaign name, spend, impressions, clicks, CTR, CPC, conversions, CPA, ROAS]\n\nIdentify:\n1. The top 3 problems hurting my results\n2. What\'s working that I should double down on\n3. A prioritised 7-day action plan\n4. One experiment to run in the next 2 weeks\n\nBe specific — reference the actual numbers I\'ve shared.' },
-      { cat: 'Optimisation', title: 'Budget Reallocation Guide',
-        text: "Based on this campaign performance, advise how to reallocate my budget:\n\n[PASTE PERFORMANCE DATA PER CAMPAIGN/AD SET]\n\nTotal budget: [TOTAL MONTHLY BUDGET].\n\nTell me:\n- Which campaigns to increase and by how much\n- Which to reduce or pause\n- What to do with freed-up budget\n- How long to wait before measuring the impact of changes" },
-      { cat: 'Optimisation', title: 'Audience Fatigue Diagnosis',
-        text: 'My Meta Ads campaign has been running for [X WEEKS]. Here are the last 30 days of data:\n\n[PASTE: frequency, CTR trend, CPC trend, CPM trend, reach, impressions]\n\nDiagnose whether I\'m experiencing audience fatigue:\n- What signals point to fatigue (or not)\n- At what frequency level should I be concerned for [AUDIENCE TYPE]\n- Recommended actions: refresh creative / expand audience / pause / rotate\n- Timeline for seeing improvement after changes' },
-      { cat: 'Optimisation', title: 'A/B Test Interpretation',
-        text: 'I ran an A/B test on Meta Ads. Here are the results:\n\nVariant A: [PASTE METRICS]\nVariant B: [PASTE METRICS]\n\nTest duration: [X DAYS]. Total spend: [BUDGET SPLIT].\n\nTell me:\n- Which variant won and why\n- Whether the result is statistically significant or if I need more data\n- What the winning element tells me about my audience\n- What to test next based on this result' },
-      { cat: 'Optimisation', title: 'Creative Refresh Decision',
-        text: 'My top-performing Meta Ad has been running for [X WEEKS]:\n\nCurrent metrics: [PASTE CTR, CPC, CPA, ROAS, FREQUENCY]\nOriginal metrics (first 2 weeks): [PASTE]\n\nShould I refresh it? Advise:\n- Whether the data indicates performance decay or stable delivery\n- Which creative elements to keep (proven hooks/messages)\n- What to change (visual, copy angle, format)\n- How to launch the refresh without disrupting what\'s working' },
-      { cat: 'Optimisation', title: 'CPA Improvement Action Plan',
-        text: "My Meta Ads CPA is [CURRENT CPA] and my target is [TARGET CPA]. I've been running for [X WEEKS] on [BUDGET] per month.\n\nCurrent setup: [DESCRIBE CAMPAIGNS, AUDIENCES, CREATIVE]\n\nDiagnose the CPA gap and give me a step-by-step plan to close it. Consider:\n- Bid strategy adjustments\n- Audience quality improvements\n- Creative angle changes\n- Landing page factors outside Meta\n- Budget and structure changes" },
-      { cat: 'Optimisation', title: 'ROAS Optimisation Blueprint',
-        text: 'My Meta Ads ROAS is [CURRENT ROAS]. My target is [TARGET ROAS]. Business type: [ECOMMERCE / OTHER].\n\nCurrent setup: [DESCRIBE BRIEFLY]\n\nBuild a ROAS improvement blueprint covering:\n- Highest-leverage lever to pull first (audience, creative, bid, landing page)\n- How to use Meta\'s value-based bidding if not already\n- Dynamic product ad (DPA) strategy if relevant\n- AOV increase tactics that improve ROAS without changing ad spend' },
-      { cat: 'Optimisation', title: 'Learning Phase Recovery Plan',
-        text: "My Meta Ads ad set has been \"in learning\" for [X DAYS] and results are unstable.\n\nSetup: [CAMPAIGN OBJECTIVE, BID STRATEGY, BUDGET, AUDIENCE SIZE, AD COUNT]\n\nDiagnose why it's stuck and give me a plan to exit learning faster:\n- Which settings are causing learning phase extension\n- Structural changes to make (consolidation / budget / audience)\n- Whether to reset learning intentionally or wait\n- Timeline to expect after making changes" },
-      { cat: 'Optimisation', title: 'Frequency & Reach Analysis',
-        text: 'Analyse my Meta Ads reach and frequency data:\n\n[PASTE: reach, frequency, impressions, CTR by week, CPM trend]\nAudience size: [ESTIMATED SIZE]. Campaign age: [X WEEKS].\n\nAdvise:\n- Whether my frequency is too high, too low, or appropriate for [CAMPAIGN OBJECTIVE]\n- Optimal frequency for [AWARENESS / CONSIDERATION / CONVERSION] campaigns\n- How to increase reach without sacrificing efficiency\n- Signs that I need to expand audiences or rotate creatives' },
-      { cat: 'Optimisation', title: 'Ad Set Consolidation Guide',
-        text: "I'm running [NUMBER] ad sets across my Meta Ads account for [BUSINESS TYPE].\n\nAd set details: [LIST AD SETS WITH BUDGETS AND KEY METRICS]\n\nAdvise on consolidation:\n- Which ad sets to merge and why\n- How consolidation helps Meta's algorithm\n- How to merge without losing data or triggering a new learning phase\n- Post-consolidation structure and budget levels\n- Which ad sets should stay separate" },
+      // ── VIDEO GENERATION (6) ────────────────────────────────────
+      { cat: 'Video Generation', title: '30-Second Video Ad Script',
+        text: 'Write a 30-second video ad script for [PRODUCT/SERVICE].\n\nTarget audience: [DESCRIPTION]. Main message: [WHAT YOU WANT THEM TO DO OR FEEL].\n\nFormat your response as a second-by-second script:\n- [0–3 sec] Hook (what grabs attention)\n- [4–15 sec] Problem and Solution\n- [16–25 sec] Proof or Demonstration\n- [26–30 sec] Offer and CTA\n\nFor each section: the spoken words + what to show on screen in brackets.' },
+      { cat: 'Video Generation', title: '10 Hook Ideas for My Video Ad',
+        text: 'Give me 10 opening lines (hooks) for a Meta video ad for [PRODUCT/SERVICE].\n\nThe hook is the first 2–3 seconds. It must make someone stop scrolling.\n\nMy target customer\'s biggest problem is [PROBLEM]. My product solves it by [SOLUTION].\n\nFormat your response as a numbered list of 10. For each hook:\n- The exact line of text or dialogue\n- One sentence explaining why it would stop the scroll\n\nMark the top 3 with ★.' },
+      { cat: 'Video Generation', title: 'UGC Creator Brief',
+        text: 'I want to hire a content creator to make a UGC video ad for [PRODUCT/SERVICE]. It should feel natural, not like a polished ad.\n\nTarget audience: [DESCRIPTION]. Tone: [TONE e.g. casual and relatable / enthusiastic / educational].\n\nWrite a creator brief.\n\nFormat your response as:\n- What the Video Should Show (scene by scene, max 4 scenes)\n- What the Creator Should Say (key talking points — not a word-for-word script)\n- What to Avoid (things that make it feel fake)\n- Video Length\n- Technical Requirements (vertical, sound-on, no filters, etc.)' },
+      { cat: 'Video Generation', title: 'Short Reels or Stories Script (15 Seconds)',
+        text: 'Write a 15-second vertical video script for a Meta Reels or Stories ad for [PRODUCT/SERVICE].\n\nTarget audience: [DESCRIPTION]. Goal: get them to [CLICK / SWIPE UP / VISIT WEBSITE / BUY].\n\nFormat your response as a second-by-second breakdown:\n- [0–3 sec] Hook\n- [4–10 sec] Core Message\n- [11–15 sec] CTA\n\nFor each section: spoken words + on-screen text (what appears written on the video).' },
+      { cat: 'Video Generation', title: 'Text-on-Screen Video Brief (No Talking)',
+        text: 'I want to create a Meta video ad with text on screen only — no voiceover or talking. The video is for [PRODUCT/SERVICE], targeting [AUDIENCE].\n\nWrite a brief for this text-on-screen video.\n\nFormat your response as:\n- Background Visual (what footage or image to use)\n- Text Sequence (line by line — what text appears and roughly when)\n- Font Style Recommendation (bold and punchy / clean and minimal / etc.)\n- Music Mood\n- Length (in seconds)\n- Final CTA text and visual' },
+      { cat: 'Video Generation', title: 'Rate My Video Ad',
+        text: 'I made a video ad for Meta and I want to know if it will perform well.\n\nHere is what happens in my video: [DESCRIBE YOUR VIDEO — what\'s shown, what\'s said, what text appears on screen, how it ends, how long it is].\n\nRate my video ad and tell me how to improve it.\n\nFormat your response as:\n- Score out of 10 (with one sentence of reasoning)\n- What\'s Working (top 2 things)\n- What to Change (top 3 things)\n- The Single Most Important Fix to Make Before Running This Ad' },
 
-      // ── REPORTING (8) ────────────────────────────────────────────
-      { cat: 'Reporting', title: 'Campaign Performance Summary',
-        text: "Write a campaign performance summary for a client report.\n\n[PASTE YOUR DATA: campaigns, spend, results, key metrics]\n\nWrite in plain English. Include:\n- Overall performance headline (1 sentence)\n- What worked this period\n- What underperformed and why\n- 3 recommended actions for next period\n- Tone: professional but not jargon-heavy\n\nClient type: [ECOMMERCE / B2B / LOCAL BUSINESS / OTHER]" },
-      { cat: 'Reporting', title: 'Monthly Report Narrative',
-        text: "Write the narrative section of a monthly Meta Ads report.\n\nThis month's results: [PASTE DATA]\nLast month's results: [PASTE DATA]\n\nStructure:\n1. Performance vs. last month (% changes, context)\n2. Top 3 insights from the data\n3. What we tested and what we learned\n4. What we're doing differently next month\n5. One forward-looking recommendation\n\nKeep it to 250–350 words. Avoid passive voice." },
-      { cat: 'Reporting', title: 'Client Presentation Talking Points',
-        text: "Prepare talking points for a client review of their Meta Ads results.\n\nResults: [PASTE DATA]\nClient's main KPI focus: [KPI e.g. CPA / ROAS / leads]\nClient type: [DESCRIBE e.g. ecommerce brand, local service, B2B SaaS]\n\nGive me 5–6 talking points that:\n- Lead with what the client cares about most\n- Explain the \"why\" behind key numbers\n- Position any underperformance constructively\n- Include a clear next-step recommendation per point" },
-      { cat: 'Reporting', title: 'Benchmark Comparison Write-Up',
-        text: 'Write a benchmark comparison analysis for a client report.\n\nOur results: [PASTE METRICS: CTR, CPC, CPA, ROAS, CVR]\nIndustry benchmarks for [INDUSTRY] in [COUNTRY]: [PASTE BENCHMARKS]\n\nSummarise:\n- Where we\'re outperforming benchmarks and what\'s driving it\n- Where we\'re below benchmark and the most likely cause\n- What "good" looks like for this industry and how close we are\n- Priority action based on the biggest gap\n\nTone: confident and analytical, not defensive.' },
-      { cat: 'Reporting', title: 'Executive Summary Writer',
-        text: 'Write a 150-word executive summary of our Meta Ads performance for [PERIOD].\n\nData: [PASTE KEY METRICS]\n\nThe summary should:\n- Open with the most important number or trend\n- Highlight one win and one challenge\n- End with a clear recommendation or next step\n- Be readable by a CEO who doesn\'t know Meta Ads jargon\n- Avoid percentages without context' },
-      { cat: 'Reporting', title: 'Week-on-Week Commentary',
-        text: 'Write a short week-on-week performance commentary for our Meta Ads.\n\nThis week: [PASTE DATA]\nLast week: [PASTE DATA]\n\nFormat:\n- Performance headline (1 sentence)\n- What changed and why (2–3 bullet points)\n- Any anomalies to flag\n- One focus area for next week\n\nKeep it under 120 words. This goes into a weekly Slack update.' },
-      { cat: 'Reporting', title: 'Campaign Post-Mortem',
-        text: "Write a campaign post-mortem for a Meta Ads campaign that has now ended.\n\nCampaign: [NAME / TYPE / OBJECTIVE]\nDuration: [X WEEKS]. Total spend: [BUDGET].\nResults vs. targets: [PASTE ACTUALS vs. KPI TARGETS]\n\nStructure:\n1. Did we hit our goals? (be direct)\n2. What drove results (top 3 factors)\n3. What hurt results (top 3 factors)\n4. What we'd do differently\n5. What to carry forward to the next campaign\n\nThis is for internal use — be honest, not diplomatic." },
-      { cat: 'Reporting', title: 'Quarterly Business Review',
-        text: 'Write a quarterly Meta Ads business review for [BUSINESS TYPE].\n\nQ[X] data: [PASTE SPEND, CONVERSIONS, CPA, ROAS, REVENUE ATTRIBUTED]\nQ[X-1] comparison: [PASTE]\nAnnual target progress: [WHERE WE ARE vs. YEAR TARGET]\n\nStructure:\n- Quarter performance vs. target and vs. prior quarter\n- Key campaigns and what they achieved\n- Testing results and insights captured\n- Budget efficiency trend (are we getting better?)\n- Q[X+1] strategy recommendation\n\nWrite for a senior stakeholder who reviews this once per quarter.' },
+      // ── AD COPY (7) ─────────────────────────────────────────────
+      { cat: 'Ad Copy', title: 'Write My Ad Copy — 5 Styles',
+        text: 'Write 5 versions of the main ad text for a Meta Ad promoting [PRODUCT/OFFER].\n\nTarget customer: [DESCRIPTION]. What they care about most: [MAIN BENEFIT OR PROBLEM SOLVED].\n\nWrite one version per style:\n1. Start with a question\n2. Start with a bold statement\n3. Start with a customer result\n4. Start with the problem\n5. Start with the offer\n\nFormat your response as a numbered list. Each version: the copy text (max 3 sentences) + which audience it works best for (cold / warm / retargeting).' },
+      { cat: 'Ad Copy', title: 'Write 10 Ad Headlines',
+        text: 'Write 10 headlines for a Meta Ad for [PRODUCT/SERVICE]. The headline appears in bold below the image.\n\nMy main selling point is [BENEFIT OR OFFER]. Target customer: [DESCRIPTION].\n\nFormat your response as a numbered list of 10 headlines. Rules: under 40 characters each. Add ★ next to the 3 you recommend most, with one sentence explaining why each one would perform well.' },
+      { cat: 'Ad Copy', title: 'Retargeting Ad Copy',
+        text: 'Write 3 versions of ad copy to show people who visited my website for [PRODUCT] but didn\'t buy or contact me.\n\nThey probably didn\'t buy because: [YOUR BEST GUESS e.g. price was too high / they weren\'t sure it was right for them / they got distracted].\n\nFormat your response as 3 complete ads:\n- Version 1: Address the price objection\n- Version 2: Build more trust\n- Version 3: Create urgency\n\nFor each: Headline + Main Copy (2–3 sentences) + CTA Button Text.' },
+      { cat: 'Ad Copy', title: 'Lead Generation Ad Copy',
+        text: 'Write Meta Ads copy to get people to sign up for [OFFER e.g. a free consultation / a free guide / a webinar / a trial].\n\nTarget customer: [DESCRIPTION]. What they\'ll get: [DESCRIBE WHAT THE PERSON RECEIVES].\n\nFormat your response as:\n- Main Ad Copy (3 sentences max)\n- Headline (under 40 characters)\n- Description Line (under 25 characters)\n- CTA Button Text\n- One sentence on what image or video to pair with this copy' },
+      { cat: 'Ad Copy', title: 'Promotional Offer Copy',
+        text: 'Write Meta Ads copy for this promotional offer: [DESCRIBE OFFER e.g. 20% off all orders this week / free delivery until Sunday / buy 2 get 1 free].\n\nProduct: [PRODUCT]. Target customer: [DESCRIPTION].\n\nFormat your response as 3 versions of the ad:\n- Version 1: Leads with the saving (how much they save)\n- Version 2: Leads with the deadline (urgency)\n- Version 3: Leads with the benefit (what they get)\n\nFor each version: main copy + headline + CTA. Mark the strongest with ★.' },
+      { cat: 'Ad Copy', title: 'Ad Copy That Handles Objections',
+        text: 'Write Meta Ads copy that addresses the main reasons why [TARGET CUSTOMER] might NOT buy [PRODUCT].\n\nTop 3 reasons they hesitate:\n1. [FIRST OBJECTION e.g. "it\'s too expensive"]\n2. [SECOND OBJECTION e.g. "I\'m not sure it will work for me"]\n3. [THIRD OBJECTION e.g. "I can figure this out myself"]\n\nFormat your response as 3 ad copy variations — one per objection. For each: 2–3 sentences + headline + CTA. Tone: reassuring and confident, not defensive.' },
+      { cat: 'Ad Copy', title: 'Carousel Ad Copy (5 Cards)',
+        text: 'Write copy for a 5-card Meta carousel ad for [PRODUCT/SERVICE].\n\nGoal: [e.g. get people to visit my website / show 5 different products / explain how it works]. Target customer: [DESCRIPTION].\n\nFormat your response as a table with 4 columns:\n- Card Number\n- What to Show (image description, 1 sentence)\n- Headline (under 40 characters)\n- Description (under 25 characters)\n\nCard 1 should hook. Cards 2–4 build value or show products. Card 5 is the CTA.' },
 
-      // ── STRATEGY & PLANNING (10) ─────────────────────────────────
-      { cat: 'Strategy & Planning', title: 'Full-Funnel Audit',
-        text: 'Audit my Meta Ads full funnel for [BUSINESS TYPE].\n\nTop of funnel: [DESCRIBE campaigns/audiences/creative]\nMiddle of funnel: [DESCRIBE]\nBottom of funnel: [DESCRIBE]\nRetargeting: [DESCRIBE]\n\nIdentify:\n- Gaps (funnel stages with no coverage)\n- Overlaps (audience cannibalisation between stages)\n- Messaging consistency top to bottom\n- Budget imbalance across the funnel\n- The single highest-impact fix' },
-      { cat: 'Strategy & Planning', title: 'Scaling Strategy Plan',
-        text: 'My Meta Ads campaign is profitable at [CURRENT BUDGET] with [ROAS / CPA].\n\nI want to scale to [TARGET BUDGET] while maintaining profitability.\n\nBuild a 6-week scaling plan:\n- Week-by-week budget increase steps\n- Signals to watch that indicate scaling is working\n- Red flags that mean I should slow down\n- Audience expansion strategy to support the scale\n- Creative pipeline needed to sustain increased spend' },
-      { cat: 'Strategy & Planning', title: 'Competitor Ad Intelligence',
-        text: "I've been researching competitors in the Meta Ads Library. Here's what I found:\n\n[DESCRIBE COMPETITOR ADS: formats used, offers, copy angles, visual style, CTA]\n\nAnalyse their strategy:\n- What's working for them (multiple versions of the same concept = tested winner)\n- Gaps or weaknesses in their approach\n- How to differentiate my ads to avoid direct comparison\n- 3 angles I should test to position against them" },
-      { cat: 'Strategy & Planning', title: 'New Product Launch Plan',
-        text: 'Build a Meta Ads launch plan for [NEW PRODUCT/SERVICE].\n\nProduct: [DESCRIBE]\nTarget audience: [DESCRIPTION]\nLaunch date: [DATE]\nBudget: [AMOUNT] for the first [X WEEKS]\n\nCreate a phased plan:\n- Pre-launch (awareness, email capture, waitlist)\n- Launch week (conversion push, urgency)\n- Post-launch (retargeting, social proof, scaling winners)\n\nInclude campaign objectives, audiences, and creative types for each phase.' },
-      { cat: 'Strategy & Planning', title: 'Seasonal Campaign Calendar',
-        text: 'Build a 12-month Meta Ads campaign calendar for [BUSINESS TYPE] in [COUNTRY].\n\nKey seasons/events relevant to my business: [LIST e.g. Black Friday, Christmas, Valentine\'s Day, Back to School].\n\nFor each period:\n- Campaign start date (how far in advance to launch)\n- Recommended offer/angle\n- Budget vs. normal monthly spend (e.g. 2× for Black Friday)\n- Creative brief summary (1 sentence)\n- Post-event retargeting window' },
-      { cat: 'Strategy & Planning', title: 'Agency Proposal — Meta Ads Section',
-        text: 'Write the Meta Ads section of a proposal for [CLIENT TYPE] with [MONTHLY BUDGET] budget.\n\nBusiness context: [DESCRIBE CLIENT GOALS]\nCurrent situation: [RUNNING ADS / STARTING FROM SCRATCH]\n\nInclude:\n- Recommended strategy (campaign structure, objectives, audiences)\n- Expected outcomes in the first 90 days (be realistic, not salesy)\n- What we\'ll test in month 1 vs. scale in month 3\n- Reporting cadence and what we\'ll track\n- Why our approach is right for their stage\n\nTone: confident and strategic, not generic.' },
-      { cat: 'Strategy & Planning', title: '90-Day Testing Roadmap',
-        text: 'Build a 90-day Meta Ads testing roadmap for [BUSINESS TYPE] starting from [CURRENT STAGE e.g. no data / some campaigns running].\n\nBudget: [MONTHLY BUDGET].\n\nStructure:\n- Month 1: Foundation tests (audiences, objectives, creative formats)\n- Month 2: Iterate on winners, introduce new variables\n- Month 3: Scale proven combinations, test next layer\n\nFor each month: what to test, what metric to judge success by, and what decision to make at the end.' },
-      { cat: 'Strategy & Planning', title: 'Meta Ads Health Check',
-        text: 'Run a health check on my Meta Ads account. I\'ll share key metrics and you\'ll rate each area.\n\nAccount data: [PASTE: structure, spend, CTR, CPC, CPA, ROAS, frequency, audience sizes, pixel events]\n\nRate each area (Good / Needs Attention / Critical):\n1. Account structure\n2. Audience health and coverage\n3. Creative performance and diversity\n4. Budget allocation\n5. Conversion tracking\n6. Optimisation settings\n\nFor each "Needs Attention" or "Critical" rating, give a specific fix.' },
-      { cat: 'Strategy & Planning', title: 'Budget Scaling Decision Framework',
-        text: 'Help me decide whether to scale my Meta Ads budget.\n\nCurrent: [BUDGET] per month. Results: [CPA / ROAS / CONVERSIONS]\nTarget CPA / ROAS: [TARGET]\nCampaign age: [X WEEKS]. Audience size: [ESTIMATED]\n\nAnswer:\n- Are we ready to scale? (Yes / No / Not yet — and why)\n- What conditions need to be met before scaling\n- If yes: by how much and how fast\n- What to watch in the first 2 weeks after scaling\n- Biggest risk of scaling at this stage' },
-      { cat: 'Strategy & Planning', title: 'Channel Mix Recommendation',
-        text: "I'm currently running Meta Ads and want to know if I should add other paid channels.\n\nCurrent Meta performance: [PASTE KEY METRICS]\nBusiness type: [DESCRIBE]. Budget: [TOTAL MONTHLY]. Target audience: [DESCRIPTION].\n\nAdvise:\n- Whether my Meta results suggest I'm ready to diversify\n- Which channel to add first (Google Ads / TikTok / LinkedIn / Pinterest) and why\n- How to split budget between Meta and the new channel\n- What to measure to know if the new channel is working\n- Channels NOT to bother with at my current stage and why" }
+      // ── OPTIMISATION (6) ────────────────────────────────────────
+      { cat: 'Optimisation', title: 'What Should I Do With These Results?',
+        text: 'Here are my Meta Ads results from the last [X DAYS]:\n\n[PASTE YOUR DATA — you can copy from Meta Ads Manager: campaign name, amount spent, results, cost per result, CTR, anything you have]\n\nTell me what\'s working, what\'s not, and exactly what to do next.\n\nFormat your response as:\n- What\'s Going Well (bullet list)\n- What\'s Not Working (bullet list)\n- Action Plan for This Week (numbered steps in priority order — most important first)' },
+      { cat: 'Optimisation', title: 'Should I Pause, Keep, or Scale This Ad?',
+        text: 'Here are the results for my Meta Ad:\n\nAd name: [AD NAME]\nAmount spent: [SPEND]\nResults (purchases / leads): [NUMBER]\nCost per result: [COST]\nRunning for: [X DAYS]\nMy target cost per result: [TARGET]\n\nShould I pause it, keep it running, or increase the budget?\n\nFormat your response as:\n- My Recommendation (Pause / Keep / Scale — one clear answer)\n- Why (2–3 sentences)\n- What to Do in the Next 7 Days (numbered steps)' },
+      { cat: 'Optimisation', title: 'Why Are My Results Getting Worse?',
+        text: 'My Meta Ads results were good before but have been getting worse over the last [X WEEKS].\n\nBefore: [PASTE PREVIOUS METRICS — even rough numbers are fine]\nNow: [PASTE CURRENT METRICS]\n\nWhat\'s causing the decline and how do I fix it?\n\nFormat your response as:\n- Most Likely Cause (one clear answer)\n- Other Possible Causes (bullet list)\n- What to Fix This Week (numbered action steps)\n- What to Monitor After Making Changes' },
+      { cat: 'Optimisation', title: 'How Do I Lower My Cost Per Result?',
+        text: 'My Meta Ads cost per [LEAD / SALE / SIGN-UP] is [CURRENT COST]. I need to get it down to [TARGET COST].\n\nCurrent setup:\n- Budget: [BUDGET] per month\n- Audience: [DESCRIBE WHO I\'M TARGETING]\n- Ad format: [IMAGE / VIDEO / CAROUSEL]\n- Where people land: [DESCRIBE THE PAGE THEY GO TO]\n\nWhat are the most effective ways to lower my cost per result?\n\nFormat your response as a numbered list sorted from most impactful to least. For each: what to change and what improvement to expect.' },
+      { cat: 'Optimisation', title: 'What Should I Test Next?',
+        text: 'I\'ve been running Meta Ads for [BUSINESS TYPE] for [X MONTHS]. My current best results come from:\n\n- Best audience: [DESCRIBE]\n- Best ad format: [FORMAT e.g. single image / video / carousel]\n- Best copy angle: [DESCRIBE e.g. "problem-led" / "offer-led" / "testimonial"]\n\nWhat should I test next to improve my results?\n\nFormat your response as 3 test ideas. For each:\n- What to test (be specific)\n- Why this test makes sense at my stage\n- How to measure whether it worked\n\nRule: one variable per test.' },
+      { cat: 'Optimisation', title: 'How Do I Scale My Winning Ad?',
+        text: 'I have a Meta Ad that\'s performing well and I want to increase the budget.\n\nCurrent results: [PASTE METRICS — spend, cost per result, ROAS or anything relevant]\nTarget cost per result: [TARGET] — I\'m currently achieving [CURRENT COST]\nCurrent daily budget: [BUDGET]\n\nHow do I increase the budget without breaking what\'s working?\n\nFormat your response as:\n- How Much to Increase and How Often (exact steps — e.g. increase 15% every 3 days)\n- Warning Signs That I\'ve Scaled Too Fast\n- What to Do If Results Drop After Scaling' },
+
+      // ── REPORTING (6) ───────────────────────────────────────────
+      { cat: 'Reporting', title: 'Write My Client Report',
+        text: 'Write a Meta Ads performance report for my client.\n\nClient business: [BUSINESS TYPE]\nPeriod: [DATE RANGE]\nResults this period: [PASTE DATA from Meta Ads Manager]\nResults last period: [PASTE PREVIOUS DATA]\n\nMy client doesn\'t know Meta Ads — write this in plain language.\n\nFormat your response as:\n- Performance Headline (1 sentence summary of how the month went)\n- What Worked (3 bullet points)\n- What We\'re Improving (2 bullet points — honest, not defensive)\n- What We\'ll Do Next Month (3 actions)' },
+      { cat: 'Reporting', title: 'Write My Monthly Report',
+        text: 'Write the narrative section of a monthly Meta Ads report.\n\nThis month: [PASTE METRICS]\nLast month: [PASTE METRICS]\n\nFormat your response as a short report with these 4 sections:\n1. Month Summary (2 sentences — what happened overall)\n2. Performance vs Last Month (what went up, what went down, why)\n3. Key Learning This Month (1 insight from the data)\n4. What We\'re Doing Next Month (2–3 sentences)\n\nKeep the total under 250 words. No jargon.' },
+      { cat: 'Reporting', title: 'What to Say in My Client Meeting',
+        text: 'I have a call with my client tomorrow to go through their Meta Ads results.\n\nResults: [PASTE YOUR METRICS]\nTheir main focus is: [KPI e.g. lower cost per lead / more sales / more traffic]\n\nGive me talking points for the meeting.\n\nFormat your response as:\n- How to Open the Call (first 2 sentences to set the tone)\n- Main Points to Cover (5 bullet points)\n- How to Handle If They Ask About Something That\'s Not Going Well\n- How to Close the Call (next steps to agree on before hanging up)' },
+      { cat: 'Reporting', title: 'Quick Weekly Update',
+        text: 'Write a short weekly update on my Meta Ads for [CLIENT NAME or BUSINESS].\n\nThis week: [PASTE METRICS]\nLast week: [PASTE METRICS]\n\nThis goes in a weekly email or Slack message — keep it very short.\n\nFormat your response as:\n- 1 headline sentence (how the week went in plain English)\n- 3 bullet points: one win, one thing to watch, one action this week\n\nMax 80 words total.' },
+      { cat: 'Reporting', title: 'End-of-Campaign Review',
+        text: 'My Meta Ads campaign has finished. Write a review of what happened.\n\nCampaign goal: [WHAT WE WANTED TO ACHIEVE]\nResults: [PASTE ACTUAL RESULTS vs WHAT WE AIMED FOR]\n\nFormat your response as:\n- Did We Hit the Goal? (yes / no, and why in 1 sentence)\n- What Worked Best (top 2 things)\n- What Didn\'t Work (top 2 things)\n- What to Do Differently Next Time (3 specific actions)\n\nBe direct. This is for internal use.' },
+      { cat: 'Reporting', title: 'Are My Results Good or Bad?',
+        text: 'Here are my Meta Ads results: [PASTE YOUR METRICS — CTR, CPC, cost per lead or sale, ROAS — whatever you have].\n\nMy industry is [INDUSTRY]. My country is [COUNTRY].\n\nAre these results good, average, or below average for my industry?\n\nFormat your response as:\n- Overall Rating (Good / Average / Below Average)\n- For each metric I shared: Is it above or below typical for [INDUSTRY] in [COUNTRY]? (table format)\n- Top 2 Numbers I Should Focus on Improving\n- One Quick Win to Try This Week' },
+
+      // ── STRATEGY & PLANNING (7) ──────────────────────────────────
+      { cat: 'Strategy & Planning', title: 'How to Launch My First Meta Ads Campaign',
+        text: 'I\'ve never run Meta Ads before. I want to advertise [PRODUCT/SERVICE] to [TARGET CUSTOMER] in [COUNTRY]. My budget is [BUDGET] per month.\n\nGive me a simple 30-day plan to launch and learn.\n\nFormat your response as a week-by-week plan:\n- Week 1: What to set up (3 actions max)\n- Week 2: What to check and monitor (3 things)\n- Week 3: What to adjust based on results (3 decisions)\n- Week 4: What to scale or pause (3 actions)\n\nKeep the language simple — I\'m new to this.' },
+      { cat: 'Strategy & Planning', title: 'Build Me a 3-Month Ad Plan',
+        text: 'I want to grow my [BUSINESS TYPE] using Meta Ads over the next 3 months. My goal is [GOAL e.g. 50 leads per month / 100 sales per month / grow my audience]. Budget: [MONTHLY BUDGET].\n\nBuild me a 3-month plan.\n\nFormat your response as a table with 5 columns:\n- Month\n- Focus (what we\'re trying to achieve this month)\n- Main Activities (what campaigns to run)\n- Budget Split\n- What Success Looks Like (how I know it worked)' },
+      { cat: 'Strategy & Planning', title: 'How to Advertise a New Product Launch',
+        text: 'I\'m launching [NEW PRODUCT/SERVICE] on [DATE]. I want to use Meta Ads to get my first [X SALES / X LEADS] in the first 2 weeks.\n\nBuild me an advertising plan for the launch.\n\nFormat your response as 3 phases:\n- Pre-Launch (1–2 weeks before): what to run, who to target, what the ad says\n- Launch Week: what to run on launch day and that first week\n- After Launch (weeks 2–4): how to follow up and scale what worked\n\nFor each phase: campaign type, audience, ad format, and budget.' },
+      { cat: 'Strategy & Planning', title: 'Should I Add Another Ad Channel?',
+        text: 'I\'m currently running Meta Ads and getting [DESCRIBE YOUR RESULTS in plain numbers]. My total ad budget is [TOTAL BUDGET] per month.\n\nShould I also run Google Ads, TikTok Ads, or another channel — or keep all my budget on Meta?\n\nFormat your response as:\n- My Recommendation (one channel to add, or stay on Meta — one clear answer)\n- Why (3 reasons)\n- If I Add a New Channel: how to split my budget\n- What to Measure in the first 60 days to know if it\'s working' },
+      { cat: 'Strategy & Planning', title: 'Seasonal Campaign Ideas',
+        text: 'My business is [BUSINESS TYPE] and I want to plan Meta Ads campaigns around key dates this year in [COUNTRY].\n\nKey dates that matter for my business: [LIST any that apply e.g. Black Friday, Christmas, Valentine\'s Day, Back to School, Mother\'s Day, Summer Sale].\n\nBuild a seasonal campaign plan.\n\nFormat your response as a table with 5 columns:\n- Event\n- When to Start Running Ads (how many days before)\n- Campaign Idea (1 sentence)\n- Offer Suggestion\n- Budget vs Normal (e.g. 1.5x or 2x normal spend)' },
+      { cat: 'Strategy & Planning', title: 'How Do I Scale Without Wasting Money?',
+        text: 'My Meta Ads are profitable and I want to grow. My current situation:\n\n- Monthly budget: [CURRENT BUDGET]\n- Cost per [LEAD / SALE]: [CURRENT COST]\n- Target cost per result: [TARGET]\n- How long I\'ve been running: [X MONTHS]\n\nWhat\'s the safest way to grow my spend while keeping my results?\n\nFormat your response as:\n- Am I ready to scale? (yes / not yet — and why)\n- If yes: Step-by-step scaling plan for the next 60 days\n- The biggest risk of scaling too fast for my situation\n- One thing to set up before I increase the budget' },
+      { cat: 'Strategy & Planning', title: 'What Am I Doing Wrong?',
+        text: 'I\'ve been running Meta Ads for [X MONTHS] for [BUSINESS TYPE] and my results aren\'t where I want them.\n\nHere\'s what I\'m doing now: [DESCRIBE YOUR CURRENT SETUP — budget, audience, ad type, what you\'re promoting, what results you\'re getting].\n\nWhat are the most likely mistakes I\'m making?\n\nFormat your response as:\n- Top 3 Most Likely Problems (numbered, most likely first)\n- For each problem: what it is, why it hurts results, and exactly how to fix it\n- One Quick Win I Can Apply Today' }
     ];
 
-    // ── Build category list ──────────────────────────────────────
+    // ── Wire up all CTAs ────────────────────────────────────────
+    ['hero-cta','hiw-cta','banner-cta','mid-cta','paywall-cta'].forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) el.href = TALLY_URL;
+    });
+
+    // ── Build categories ────────────────────────────────────────
     var cats = [];
     PROMPTS.forEach(function (p) {
       if (cats.indexOf(p.cat) === -1) cats.push(p.cat);
@@ -666,12 +614,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       return PROMPTS.filter(function (p) { return p.cat === cat; }).length;
     }
 
-    // ── Render tabs ──────────────────────────────────────────────
-    var tabsEl  = document.getElementById('pl-tabs');
-    var gridEl  = document.getElementById('pl-grid');
-    var pwEl    = document.getElementById('pl-paywall');
-    var metaFreeEl   = document.getElementById('pl-free-count');
-    var metaLockedEl = document.getElementById('pl-locked-count');
+    // ── Render tabs ─────────────────────────────────────────────
+    var tabsEl        = document.getElementById('pl-tabs');
+    var gridEl        = document.getElementById('pl-grid');
+    var pwEl          = document.getElementById('pl-paywall');
+    var metaFreeEl    = document.getElementById('pl-free-count');
+    var metaLockedEl  = document.getElementById('pl-locked-count');
 
     cats.forEach(function (cat, i) {
       var btn = document.createElement('button');
@@ -686,11 +634,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       tabsEl.appendChild(btn);
     });
 
-    // ── Render prompts ───────────────────────────────────────────
+    // ── Render prompt cards ──────────────────────────────────────
     function renderPrompts(cat) {
-      var items = PROMPTS.filter(function (p) { return p.cat === cat; });
-      var locked = Math.max(0, items.length - FREE_PER_CAT);
+      var items  = PROMPTS.filter(function (p) { return p.cat === cat; });
       var free   = Math.min(items.length, FREE_PER_CAT);
+      var locked = Math.max(0, items.length - FREE_PER_CAT);
 
       metaFreeEl.textContent   = free;
       metaLockedEl.textContent = locked;
@@ -698,17 +646,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       gridEl.innerHTML = '';
       items.forEach(function (p, idx) {
         var isLocked = idx >= FREE_PER_CAT;
-        var card = document.createElement('div');
+        var card     = document.createElement('div');
         card.className = 'pl-card' + (isLocked ? ' is-locked' : '');
 
-        var escapedText = p.text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+        var escaped = p.text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
         card.innerHTML =
           '<span class="pl-card-cat">' + p.cat + '</span>' +
           '<p class="pl-card-title">' + p.title + '</p>' +
-          '<div class="pl-card-body">' + escapedText + '</div>' +
+          '<div class="pl-card-body">' + escaped + '</div>' +
           '<div class="pl-card-footer">' +
             '<span class="pl-placeholder-hint">Fill in [PLACEHOLDERS] before pasting</span>' +
-            '<button class="pl-copy-btn" aria-label="Copy prompt">&#128203; Copy</button>' +
+            '<button class="pl-copy-btn">&#128203; Copy</button>' +
           '</div>';
 
         if (!isLocked) {
@@ -723,24 +671,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       pwEl.style.display = locked > 0 ? 'flex' : 'none';
     }
 
-    // ── Copy to clipboard ────────────────────────────────────────
+    // ── Clipboard ───────────────────────────────────────────────
     function copyPrompt(text, btn) {
       if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(function () { flashCopied(btn); });
+        navigator.clipboard.writeText(text).then(function () { flash(btn); });
       } else {
         var ta = document.createElement('textarea');
-        ta.value = text;
-        ta.style.position = 'fixed';
-        ta.style.opacity  = '0';
-        document.body.appendChild(ta);
-        ta.focus(); ta.select();
+        ta.value = text; ta.style.cssText = 'position:fixed;opacity:0;';
+        document.body.appendChild(ta); ta.focus(); ta.select();
         try { document.execCommand('copy'); } catch (e) {}
         document.body.removeChild(ta);
-        flashCopied(btn);
+        flash(btn);
       }
     }
 
-    function flashCopied(btn) {
+    function flash(btn) {
       btn.textContent = '✓ Copied!';
       btn.classList.add('copied');
       setTimeout(function () {
@@ -748,9 +693,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         btn.classList.remove('copied');
       }, 2000);
     }
-
-    // ── Wire up paywall CTA ──────────────────────────────────────
-    pwEl.querySelector('.bm-unlock-btn').href = TALLY_URL;
 
     // ── Initial render ───────────────────────────────────────────
     renderPrompts(cats[0]);
