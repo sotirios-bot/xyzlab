@@ -78,6 +78,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .bm-btn-tip-wrap:hover .bm-btn-tip { visibility:visible; opacity:1; pointer-events:auto; }
 .bm-btn-tip a { color:var(--secondary); font-weight:700; text-decoration:none; }
 .bm-btn-tip a:hover { text-decoration:underline; }
+/* ── Test: card-style 3-step layout ───────────────────────── */
+#bm-steps { display:grid !important; grid-template-columns:repeat(3,1fr); gap:.85rem; margin-top:1.35rem; }
+#bm-steps .bm-step { flex-direction:column; align-items:center; justify-content:flex-start; background:rgba(8,191,173,.07); border:1.5px solid rgba(8,191,173,.2); border-radius:12px; padding:1rem 1rem .9rem; text-align:center; }
+#bm-steps .bm-step-text { margin-top:.4rem; line-height:1.35; text-align:center; }
+#bm-steps .bm-step-sep { display:none !important; }
+@media(max-width:640px) { #bm-steps { grid-template-columns:1fr !important; } }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
   <script>
