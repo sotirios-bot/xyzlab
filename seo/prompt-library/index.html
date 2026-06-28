@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="google-adsense-account" content="ca-pub-5220550180754289">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5220550180754289"
+     crossorigin="anonymous"></script>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WXGTNNN');</script>
+<!-- End Google Tag Manager -->
+  <link rel="icon" type="image/png" href="../../favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="50 ready-to-use SEO and AEO prompts for ChatGPT and Claude. Keyword research, on-page SEO, content, technical SEO, link building, AI search and reporting." />
+  <link rel="canonical" href="https://xyzlab.com/seo/prompt-library/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://xyzlab.com/seo/prompt-library/" />
+  <meta property="og:title" content="SEO and AEO Prompt Library, 50 Ready-to-Use AI Prompts | XYZ Lab" />
+  <meta property="og:description" content="50 ready-to-use SEO and AEO prompts for ChatGPT and Claude. Copy, paste, get professional outputs instantly." />
+  <meta property="og:image" content="https://xyzlab.com/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SEO and AEO Prompt Library, 50 Ready-to-Use AI Prompts | XYZ Lab" />
+  <meta name="twitter:description" content="50 ready-to-use SEO and AEO prompts for ChatGPT and Claude. Copy, paste, get results." />
+  <meta name="twitter:image" content="https://xyzlab.com/og-image.jpg" />
+  <title>SEO and AEO Prompt Library, 50 Ready-to-Use AI Prompts | XYZ Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../../course.css" />
+  <style>
+/* ── Hero chips ── */
+.pl-hero-cats{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem;justify-content:center;}
+.pl-hero-cat{padding:.3rem .8rem;background:rgba(8,191,173,.1);border:1px solid rgba(8,191,173,.25);border-radius:20px;font-size:.8rem;font-weight:600;color:#0a7a72;}
+
+/* ── CTA Banner ── */
+.pl-cta-banner{display:flex;align-items:center;justify-content:space-between;gap:1rem;background:rgba(8,191,173,.08);border:1.5px solid rgba(8,191,173,.25);border-radius:12px;padding:1.1rem 1.5rem;margin-bottom:2rem;flex-wrap:wrap;}
+.pl-cta-banner-text{font-size:.95rem;font-weight:600;color:#1a202c;}
+.pl-cta-banner-text span{color:var(--primary);}
+.pl-cta-banner-btns{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;}
+.pl-cta-btn{display:inline-block;padding:.6rem 1.35rem;background:var(--primary);color:#fff !important;font-size:.9rem;font-weight:700;border-radius:8px;text-decoration:none;transition:background .18s;white-space:nowrap;}
+.pl-cta-btn:hover{background:#07a99a;}
+.pl-cta-price{font-size:.8rem;color:#64748b;}
+
+/* ── How it works ── */
+.pl-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:.85rem;margin-top:1.5rem;}
+.pl-step{display:flex;flex-direction:column;align-items:center;gap:.5rem;background:rgba(8,191,173,.07);border:1.5px solid rgba(8,191,173,.2);border-radius:12px;padding:1.25rem 1rem;text-align:center;}
+.pl-step-num{display:inline-flex;align-items:center;justify-content:center;width:2rem;height:2rem;border-radius:50%;background:var(--primary);color:#fff;font-size:.8rem;font-weight:800;flex-shrink:0;}
+.pl-step-label{font-size:1rem;font-weight:700;color:#1a202c;line-height:1.3;}
+.pl-step-sub{font-size:.8rem;color:#64748b;}
+@media(max-width:640px){.pl-steps{grid-template-columns:1fr;}}
+
+/* ── Category tabs ── */
+.pl-tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem;}
+.pl-tab{padding:.5rem 1rem;border:1.5px solid #e2e8f0;border-radius:8px;font-size:.875rem;font-weight:600;cursor:pointer;background:#fff;color:#64748b;transition:all .18s;font-family:inherit;}
+.pl-tab.active,.pl-tab:hover{border-color:var(--primary);color:var(--primary);background:rgba(8,191,173,.06);}
+.pl-tab-count{display:inline-block;margin-left:.35rem;font-size:.72rem;font-weight:700;background:#e2e8f0;color:#64748b;border-radius:10px;padding:.05rem .4rem;}
+.pl-tab.active .pl-tab-count{background:rgba(8,191,173,.15);color:var(--primary);}
+
+/* ── Prompt cards ── */
+.pl-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;}
+@media(max-width:768px){.pl-grid{grid-template-columns:1fr;}}
+.pl-card{background:#fff;border:1.5px solid #e2e8f0;border-radius:12px;padding:1.25rem;display:flex;flex-direction:column;gap:.75rem;transition:border-color .18s;}
+.pl-card:hover{border-color:rgba(8,191,173,.4);}
+.pl-card.is-locked{filter:blur(4px);user-select:none;pointer-events:none;}
+.pl-card-cat{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--primary);background:rgba(8,191,173,.1);padding:.2rem .55rem;border-radius:4px;width:fit-content;}
+.pl-card-title{font-size:1rem;font-weight:700;color:#1a202c;margin:0;line-height:1.3;}
+.pl-card-body{font-family:'Courier New',Courier,monospace;font-size:.78rem;line-height:1.7;color:#374151;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:.85rem;white-space:pre-wrap;flex:1;}
+.pl-card-footer{display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:wrap;}
+.pl-placeholder-hint{font-size:.72rem;color:#94a3b8;}
+.pl-copy-btn{display:inline-flex;align-items:center;gap:.35rem;padding:.4rem .85rem;border:1.5px solid var(--primary);border-radius:6px;font-size:.8rem;font-weight:700;color:var(--primary);background:#fff;cursor:pointer;transition:all .18s;font-family:inherit;white-space:nowrap;}
+.pl-copy-btn:hover,.pl-copy-btn.copied{background:var(--primary);color:#fff;}
+
+/* ── Gate & Paywall ── */
+.pl-gate-wrap{position:relative;}
+.pl-paywall{display:none;flex-direction:column;align-items:center;margin-top:1.25rem;background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:12px;padding:2.25rem 1.5rem;text-align:center;}
+.bm-paywall-box{text-align:center;max-width:500px;}
+.bm-paywall-box h3{font-size:1.25rem;font-weight:800;color:#1a202c;margin:0 0 .5rem;}
+.bm-paywall-box>p{font-size:.9rem;color:#64748b;margin:0 0 1rem;}
+.bm-perks{list-style:none;padding:0;margin:0 0 1.25rem;text-align:left;display:inline-block;}
+.bm-perks li{font-size:.875rem;color:#374151;padding:.2rem 0;}
+.bm-perks li::before{content:'\2713 ';color:var(--primary);font-weight:700;}
+.bm-unlock-btn{display:inline-block;padding:.75rem 2rem;font-size:1rem;font-weight:700;border-radius:8px;background:var(--primary);color:#fff !important;text-decoration:none;transition:background .18s;}
+.bm-unlock-btn:hover{background:#07a99a;}
+.bm-price-anchor{font-size:.8rem;color:#64748b;margin:.65rem 0 .6rem;font-style:italic;}
+.bm-trust-badges{display:flex;justify-content:center;gap:1.25rem;margin-top:.85rem;flex-wrap:wrap;}
+.bm-trust-badges span{font-size:.8rem;font-weight:600;color:#374151;}
+.bm-social-proof{font-size:.78rem;color:#94a3b8;margin-top:.5rem;}
+.bm-pw-scope{font-size:.72rem;font-weight:700;letter-spacing:.07em;color:var(--primary);text-transform:uppercase;margin:0 0 .45rem;}
+
+/* ── Misc ── */
+.pl-meta{font-size:.8rem;color:#94a3b8;margin-bottom:1.25rem;}
+.pl-note{margin-top:1.5rem;padding:1rem 1.25rem;background:#f8fafc;border-left:3px solid var(--primary);border-radius:0 8px 8px 0;font-size:.85rem;color:#64748b;}
+  </style>
+  <script>
+    var TALLY_URL = '#'; /* TODO: Replace with SEO and AEO Prompt Library Tally form URL */
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXGTNNN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <header class="nav-wrapper">
+    <nav class="nav container">
+      <a href="../../" class="logo">
+        <img src="../../XYZLab.gif" alt="XYZ Lab" class="logo-img" />
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li class="nav-has-dropdown">
+          <a href="../../#courses">Courses <span class="nav-caret" aria-hidden="true"></span></a>
+          <ul class="nav-dropdown">
+            <li><a href="../../google-ads-course/">AI for Google Ads</a></li>
+            <li><a href="../../meta-ads-course/">AI for Meta Ads</a></li>
+            <li><a href="../../seo-aio-course/">AI for SEO</a></li>
+            <li><a href="../../ai-marketing-analytics-course/">AI for Marketing Analytics</a></li>
+            <li><a href="../../ai-content-creation-course/">AI Content Creation</a></li>
+            <li><a href="../../vibe-coding-course/">Vibe Coding with AI</a></li>
+          </ul>
+        </li>
+        <li class="nav-has-dropdown">
+          <a href="../../#topics">Tutorials <span class="nav-caret" aria-hidden="true"></span></a>
+          <div class="nav-dropdown nav-mega">
+            <div class="mega-col"><span class="mega-label">PPC</span><ul>
+                <li><a href="../../google-ads/">Google Ads</a></li>
+                <li><a href="../../google-ads-editor/">Google Ads Editor</a></li>
+                <li><a href="../../meta-ads/">Meta Ads</a></li>
+                <li><a href="../../tiktok-ads/">TikTok Ads</a></li>
+                <li><a href="../../microsoft-ads/">Microsoft Ads</a></li>
+                <li><a href="../../pinterest-ads/">Pinterest Ads</a></li>
+                <li><a href="../../reddit-ads/">Reddit Ads</a></li>
+                <li><a href="../../linkedin-ads/">LinkedIn Ads</a></li>
+            </ul></div>
+            <div class="mega-col"><span class="mega-label">Analytics</span><ul>
+                <li><a href="../../google-analytics/">Google Analytics</a></li>
+                <li><a href="../../google-tag-manager/">Google Tag Manager</a></li>
+                <li><a href="../../data-studio/">Data Studio</a></li>
+            </ul></div>
+            <div class="mega-col"><span class="mega-label">SEO</span><ul>
+                <li><a href="../../google-search-console/">Google Search Console</a></li>
+                <li><a href="../../bing-webmaster-tools/">Bing Webmaster Tools</a></li>
+            </ul></div>
+            <div class="mega-col"><span class="mega-label">AI Tools</span><ul>
+                <li><a href="../../claude/">Claude AI</a></li>
+                <li><a href="../../chatgpt/">ChatGPT</a></li>
+            </ul></div>
+            <div class="mega-col"><span class="mega-label">eCommerce</span><ul>
+                <li><a href="../../shopify/">Shopify</a></li>
+            </ul></div>
+            <div class="mega-col"><span class="mega-label">Web Builders</span><ul>
+                <li><a href="../../wix/">Wix</a></li><li><a href="../../go-high-level/">Go High Level</a></li><li><a href="../../godaddy/">GoDaddy</a></li>
+            </ul></div>
+            <div class="mega-col"><span class="mega-label">Social Media</span><ul>
+                <li><a href="../../linkedin/">LinkedIn</a></li>
+                <li><a href="../../youtube/">YouTube</a></li>
+            </ul></div>
+          </div>
+        </li>
+        <li><a href="../../#contact">Contact</a></li>
+        <li><a href="#coaching" class="btn btn-primary btn-sm">Book Coaching</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="video-tutorial-hero">
+    <div class="container tutorial-hero-inner">
+      <nav class="breadcrumb">
+        <a href="../../">Home</a>
+        <span class="breadcrumb-sep">&#8250;</span>
+        <a href="../../seo/">SEO Resources</a>
+        <span class="breadcrumb-sep">&#8250;</span>
+        <span class="breadcrumb-current">Prompt Library</span>
+      </nav>
+      <h1>50 Ready-to-Use <span class="highlight">SEO and AEO Prompts</span></h1>
+      <p class="hero-sub">Copy, paste into ChatGPT or Claude, get a professional output instantly.<br>No experience needed — fill in the [blanks] and you're done.</p>
+      <div class="pl-hero-cats">
+        <span class="pl-hero-cat">🔍 Keyword Research</span>
+        <span class="pl-hero-cat">📝 On-Page SEO</span>
+        <span class="pl-hero-cat">✍️ Content &amp; Blogging</span>
+        <span class="pl-hero-cat">⚙️ Technical SEO</span>
+        <span class="pl-hero-cat">🔗 Link Building</span>
+        <span class="pl-hero-cat">🤖 AEO &amp; AI Search</span>
+        <span class="pl-hero-cat">📍 Local SEO</span>
+        <span class="pl-hero-cat">📊 Reporting &amp; Analysis</span>
+      </div>
+      <div style="margin-top:1.75rem;display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;">
+        <a href="#prompts" class="btn btn-primary">Browse Free Prompts</a>
+        <a id="hero-cta" href="#" class="btn btn-outline" style="font-weight:700;">Get All 50 Prompts, $29 &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="outcomes" style="background:var(--white);padding-top:2.5rem;padding-bottom:2.5rem;">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-secondary">How It Works</div>
+        <h2>From Blank Page to <span class="highlight">Professional Output</span></h2>
+        <p>Three steps. Takes seconds.</p>
+      </div>
+      <div class="pl-steps">
+        <div class="pl-step">
+          <span class="pl-step-num">1</span>
+          <span class="pl-step-label">📋 Copy the Prompt</span>
+          <span class="pl-step-sub">Pick the task, click Copy, fill in the [PLACEHOLDERS] with your details.</span>
+        </div>
+        <div class="pl-step">
+          <span class="pl-step-num">2</span>
+          <span class="pl-step-label">🤖 Paste into AI</span>
+          <span class="pl-step-sub">Paste into ChatGPT or Claude. Works with any AI tool.</span>
+        </div>
+        <div class="pl-step">
+          <span class="pl-step-num">3</span>
+          <span class="pl-step-label">✅ Get Your Output</span>
+          <span class="pl-step-sub">Receive a structured, ready-to-use result. No rewriting, no back-and-forth.</span>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:1.75rem;">
+        <a id="hiw-cta" href="#" class="pl-cta-btn" style="font-size:1rem;padding:.75rem 2rem;">Get All 50 Prompts, $29 &rarr;</a>
+        <p style="margin-top:.6rem;font-size:.8rem;color:#94a3b8;">PDF + Google Doc &nbsp;&bull;&nbsp; Delivered in 5 minutes &nbsp;&bull;&nbsp; Full refund if not useful</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="outcomes" id="prompts">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-secondary">Prompt Library</div>
+        <h2>SEO and AEO Prompts, <span class="highlight">Browse by Category</span></h2>
+      </div>
+
+      <div class="pl-cta-banner">
+        <div class="pl-cta-banner-text">Try 3 free prompts in each category. <span>Get all 50 for $29</span> — PDF &amp; Google Doc delivered in 5 minutes.</div>
+        <div class="pl-cta-banner-btns">
+          <a id="banner-cta" href="#" class="pl-cta-btn">Get All 50 Prompts &rarr;</a>
+        </div>
+      </div>
+
+      <p class="pl-meta">Showing <span id="pl-free-count">3</span> free prompts, <span id="pl-locked-count">0</span> locked in this category.</p>
+      <div class="pl-tabs" id="pl-tabs"></div>
+      <div class="pl-gate-wrap">
+        <div class="pl-grid" id="pl-grid"></div>
+        <div class="pl-paywall" id="pl-paywall">
+          <div class="bm-paywall-box">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" style="margin:0 auto .75rem;display:block;"><rect x="3" y="11" width="18" height="11" rx="2" stroke="#08bfad" stroke-width="1.8"/><path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#08bfad" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <p class="bm-pw-scope">50 prompts &middot; 8 categories &middot; PDF + Google Doc</p>
+            <h3>Get All 50 SEO and AEO Prompts</h3>
+            <p>Every prompt you need, for every part of your SEO workflow. Copy, paste, done.</p>
+            <ul class="bm-perks">
+              <li>6 Keyword Research prompts — find, group and prioritise keywords</li>
+              <li>6 On-Page SEO prompts — titles, headings, audits, internal links</li>
+              <li>7 Content &amp; Blogging prompts — outlines, ideas, calendars, FAQs</li>
+              <li>6 Technical SEO prompts — speed, sitemaps, schema, Core Web Vitals</li>
+              <li>6 Link Building prompts — outreach, broken links, digital PR</li>
+              <li>6 AEO &amp; AI Search prompts — AI Overviews, featured snippets, topic authority</li>
+              <li>6 Local SEO prompts — Google Business Profile, citations, local content</li>
+              <li>7 Reporting &amp; Analysis prompts — GSC data, client reports, ROI</li>
+            </ul>
+            <p class="bm-price-anchor">Prompt packs like this sell for $49–$99. Get the full SEO and AEO library for just $29.</p>
+            <a id="paywall-cta" href="#" class="bm-unlock-btn">Get Full Access, $29 &rarr;</a>
+            <div class="bm-trust-badges">
+              <span>&#10003;&nbsp;Delivered in 5 minutes</span>
+              <span>&#10003;&nbsp;PDF + Google Doc</span>
+              <span>&#10003;&nbsp;Full refund if not useful</span>
+            </div>
+            <p class="bm-social-proof">Used by SEO managers, content teams and agency professionals.</p>
+          </div>
+        </div>
+      </div>
+      <div class="pl-note">
+        <strong>Tip:</strong> Fill in every <strong>[PLACEHOLDER]</strong> before pasting. The more detail you add, the better the output. Best results with ChatGPT GPT-4o or Claude Sonnet.
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#f8fafc;padding:2.5rem 0;">
+    <div class="container" style="text-align:center;">
+      <p style="font-size:1.1rem;font-weight:700;color:#1a202c;margin:0 0 .5rem;">Ready to save hours every week?</p>
+      <p style="font-size:.9rem;color:#64748b;margin:0 0 1.25rem;">50 SEO and AEO prompts. PDF and Google Doc. Delivered in 5 minutes.</p>
+      <a id="mid-cta" href="#" class="pl-cta-btn" style="font-size:1rem;padding:.75rem 2.25rem;">Get All 50 Prompts, $29 &rarr;</a>
+      <p style="margin-top:.6rem;font-size:.8rem;color:#94a3b8;">Full refund if not useful &nbsp;&bull;&nbsp; Works with ChatGPT and Claude</p>
+    </div>
+  </section>
+
+  <section class="coaching-cta">
+    <div class="container">
+      <div class="coaching-cta-inner">
+        <div class="coaching-cta-text">
+          <h3>Want a hands-on SEO walkthrough?</h3>
+          <p>Book a 90-minute coaching session and we'll apply these prompts to your actual website and SEO strategy together.</p>
+        </div>
+        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">FAQ</div>
+        <h2>SEO and AEO Prompt Library, FAQ</h2>
+        <p>Common questions about the prompt library.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary class="faq-question">
+            <span>What AI tools do these prompts work with?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>All prompts are tested with ChatGPT (GPT-4o) and Claude (Sonnet or Opus). They also work with Gemini and other large language models. No special syntax — just copy, fill in the blanks, and paste.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Do I need SEO experience to use this?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>No. Every prompt has [PLACEHOLDER] fields you fill in with your own details before pasting. No prompt engineering needed. If you understand what your website is about and who your customers are, you can use these prompts.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What's included in the full library?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>50 prompts across 8 categories: Keyword Research (6), On-Page SEO (6), Content &amp; Blogging (7), Technical SEO (6), Link Building (6), AEO &amp; AI Search (6), Local SEO (6), Reporting &amp; Analysis (7). Delivered as a PDF and Google Doc so you can copy prompts directly.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What is AEO and why does it matter?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>AEO stands for Answer Engine Optimisation — the practice of optimising your content to appear in AI-generated answers (Google AI Overviews, ChatGPT, Perplexity, Gemini). As more searches are answered directly by AI tools, AEO is becoming as important as traditional SEO. This library includes 6 dedicated AEO prompts covering AI Overviews, featured snippets, and topic authority.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>How is this different from free prompt lists online?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Free prompt lists give you vague starting points like "write me an SEO title." These prompts tell the AI exactly what to do, what format to return, and what to include — so the first output is ready to use, not a rough draft you have to rewrite.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>How do I receive the library after purchase?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>After submitting the form, the library is emailed to you as a PDF and Google Doc link within 5 minutes. Copy prompts directly from the Google Doc into ChatGPT or Claude.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="outcomes" style="background:var(--white);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-secondary">Keep Learning</div>
+        <h2>Related <span class="highlight">SEO Resources</span></h2>
+        <p>More tools and tutorials to improve your search rankings and visibility.</p>
+      </div>
+      <div class="courses-grid">
+        <article class="course-card">
+          <a href="../../google-search-console/" class="course-icon" tabindex="-1" style="background:#e8faf9;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#e8faf9"/><circle cx="14" cy="14" r="5" stroke="#08bfad" stroke-width="2"/><path d="M18 18l5 5" stroke="#08bfad" stroke-width="2" stroke-linecap="round"/></svg>
+          </a>
+          <h3><a href="../../google-search-console/">Google Search Console Tutorials</a></h3>
+          <ul class="course-bullets">
+            <li>Understand your search performance data</li>
+            <li>Find and fix indexing and coverage issues</li>
+            <li>Step-by-step GSC walkthroughs</li>
+          </ul>
+          <a href="../../google-search-console/" class="course-link">Browse Tutorials &#8594;</a>
+        </article>
+        <article class="course-card">
+          <a href="../../seo-aio-course/" class="course-icon" tabindex="-1" style="background:#fff3e0;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#fff3e0"/><circle cx="16" cy="13" r="5" stroke="#fec55c" stroke-width="2"/><path d="M8 26c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#fec55c" stroke-width="2" stroke-linecap="round"/></svg>
+          </a>
+          <h3><a href="../../seo-aio-course/">AI for SEO Course</a></h3>
+          <ul class="course-bullets">
+            <li>Full course on using AI in your SEO workflow</li>
+            <li>Keyword research, content and technical SEO</li>
+            <li>Practical frameworks, not theory</li>
+          </ul>
+          <a href="../../seo-aio-course/" class="course-link">View Course &#8594;</a>
+        </article>
+        <article class="course-card">
+          <a href="/seo/benchmarks/" class="course-icon" tabindex="-1" style="background:#e8faf9;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#e8faf9"/><rect x="8" y="18" width="3" height="6" rx="1" fill="#08bfad"/><rect x="13" y="13" width="3" height="11" rx="1" fill="#08bfad" opacity=".7"/><rect x="18" y="9" width="3" height="15" rx="1" fill="#08bfad" opacity=".4"/><rect x="23" y="14" width="3" height="10" rx="1" fill="#08bfad"/></svg>
+          </a>
+          <h3><a href="/seo/benchmarks/">SEO Benchmarks</a></h3>
+          <ul class="course-bullets">
+            <li>CTR, ranking and traffic benchmarks by industry</li>
+            <li>Know how your site compares to the market</li>
+            <li>Data-backed targets for your SEO goals</li>
+          </ul>
+          <a href="/seo/benchmarks/" class="course-link">View Benchmarks &#8594;</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Get Personal Help</div>
+        <h2>Book a <span class="highlight">1-on-1 Coaching Session</span></h2>
+        <p>Need a hands-on SEO walkthrough tailored to your site? Book a 90-minute coaching session and we'll work through your strategy together.</p>
+      </div>
+      <iframe data-tally-src="https://tally.so/embed/RGVaXv?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1" frameborder="0" marginheight="0" marginwidth="0" title="Book a 90-Minute Digital Marketing Coaching Session"></iframe>
+      <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')===null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p>Hands-On, AI-First Digital Marketing Training. Work Smarter with AI.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/seridis/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@xyzl" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="../../google-ads-course/">AI for Google Ads</a></li>
+            <li><a href="../../meta-ads-course/">AI for Meta Ads</a></li>
+            <li><a href="../../seo-aio-course/">AI for SEO</a></li>
+            <li><a href="../../ai-marketing-analytics-course/">Analytics</a></li>
+            <li><a href="../../ai-content-creation-course/">AI Content Creation</a></li>
+            <li><a href="../../vibe-coding-course/">Vibe Coding</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>PPC</h4>
+          <ul>
+            <li><a href="../../google-ads/">Google Ads</a></li>
+            <li><a href="../../google-ads-editor/">Google Ads Editor</a></li>
+            <li><a href="../../meta-ads/">Meta Ads</a></li>
+            <li><a href="../../tiktok-ads/">TikTok Ads</a></li>
+            <li><a href="../../microsoft-ads/">Microsoft Ads</a></li>
+            <li><a href="../../pinterest-ads/">Pinterest Ads</a></li>
+            <li><a href="../../reddit-ads/">Reddit Ads</a></li>
+            <li><a href="../../linkedin-ads/">LinkedIn Ads</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Analytics</h4>
+          <ul>
+            <li><a href="../../google-analytics/">Google Analytics</a></li>
+            <li><a href="../../google-tag-manager/">Google Tag Manager</a></li>
+            <li><a href="../../data-studio/">Data Studio</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>AI Tools</h4>
+          <ul>
+            <li><a href="../../claude/">Claude AI</a></li>
+            <li><a href="../../chatgpt/">ChatGPT</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>SEO</h4>
+          <ul>
+            <li><a href="../../google-search-console/">Google Search Console</a></li>
+            <li><a href="../../bing-webmaster-tools/">Bing Webmaster Tools</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Benchmarks</h4>
+          <ul>
+            <li><a href="/meta-ads/benchmarks/">Meta Ads</a></li>
+            <li><a href="/google-ads/benchmarks/">Google Ads</a></li>
+            <li><a href="/seo/benchmarks/">SEO</a></li>
+            <li><a href="/tiktok-ads/benchmarks/">TikTok Ads</a></li>
+            <li><a href="/linkedin-ads/benchmarks/">LinkedIn Ads</a></li>
+            <li><a href="/reddit-ads/benchmarks/">Reddit Ads</a></li>
+            <li><a href="/shopify/benchmarks/">Shopify</a></li>
+            <li><a href="/email-marketing/benchmarks/">Email Marketing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>eCommerce</h4>
+          <ul>
+            <li><a href="../../shopify/">Shopify</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Web Builders</h4>
+          <ul>
+            <li><a href="../../wix/">Wix</a></li><li><a href="../../go-high-level/">Go High Level</a></li><li><a href="../../godaddy/">GoDaddy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Social Media</h4>
+          <ul>
+            <li><a href="../../linkedin/">LinkedIn</a></li>
+            <li><a href="../../youtube/">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../../#contact">Contact</a></li>
+            <li><a href="mailto:hello@xyzlab.com">hello@xyzlab.com</a></li>
+            <li><a href="https://wa.me/6594260742">+65 9426 0742</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> XYZ Lab. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../main.js"></script>
+  <script>
+  (function () {
+    var FREE_PER_CAT = 3;
+
+    var PROMPTS = [
+      // ── KEYWORD RESEARCH (6) ────────────────────────────────────
+      { cat: 'Keyword Research', title: 'Find Keywords for My Business',
+        text: 'I have a [BUSINESS TYPE] website. My target customer is [DESCRIPTION]. I\'m based in / targeting [COUNTRY or REGION].\n\nFind me keywords I should target for SEO.\n\nFormat your response as a table with 4 columns:\n- Keyword\n- Monthly Search Volume (Low / Medium / High — estimate)\n- Search Intent (Informational / Commercial / Transactional)\n- Priority to Target (High / Medium / Low)' },
+      { cat: 'Keyword Research', title: 'Find Long-Tail Keywords',
+        text: 'I want to find long-tail keywords for my [PRODUCT/SERVICE] that are easier to rank for than broad terms.\n\nMy main topic is: [TOPIC]. My target customer is: [DESCRIPTION].\n\nSuggest 15 long-tail keyword phrases.\n\nFormat your response as a table with 3 columns:\n- Long-Tail Keyword\n- Why It\'s Easier to Rank For (1 sentence)\n- What Type of Content to Create for It' },
+      { cat: 'Keyword Research', title: 'Analyse My Competitor\'s Keywords',
+        text: 'My main SEO competitors are [COMPETITOR 1] and [COMPETITOR 2]. They rank for topics related to [TOPIC].\n\nWhat keywords are they likely targeting that I should also target — or that I could beat them on?\n\nFormat your response as:\n- 8 keywords they almost certainly rank for\n- 5 keyword gaps I could exploit\n- One topic area they\'re probably ignoring\n- Whether to compete head-on or target different keywords' },
+      { cat: 'Keyword Research', title: 'Group My Keywords Into Topics',
+        text: 'I have these keywords: [PASTE YOUR KEYWORD LIST].\n\nGroup them into content topics I can build pages around.\n\nFormat your response as a table with 3 columns:\n- Topic / Pillar\n- Keywords in This Group\n- Type of Page to Create (pillar page / blog post / product page / FAQ)' },
+      { cat: 'Keyword Research', title: 'Find Keywords I\'m Missing',
+        text: 'My website is [URL or DESCRIBE YOUR WEBSITE]. I currently rank for some keywords but want to find gaps.\n\nWhat keyword opportunities am I likely missing?\n\nFormat your response as:\n- 5 Topic Areas I Should Cover But Probably Don\'t\n- 5 Specific Keywords to Target\n- 3 Questions My Customers Are Asking That I Should Answer\n- One type of content I should create more of' },
+      { cat: 'Keyword Research', title: 'Which Keywords Should I Focus on First?',
+        text: 'I have a list of keywords: [PASTE YOUR LIST]. My website is [NEW / ESTABLISHED — describe domain authority if known].\n\nWhich keywords should I prioritise and in what order?\n\nFormat your response as:\n- Tier 1 Keywords to Target Now (quick wins — lower competition)\n- Tier 2 Keywords to Target in 3–6 Months\n- Keywords to Avoid for Now (too competitive for my current domain)\n- One rule for deciding which keyword to create content for next' },
+
+      // ── ON-PAGE SEO (6) ─────────────────────────────────────────
+      { cat: 'On-Page SEO', title: 'Write My Page Title and Meta Description',
+        text: 'I want to optimise the title tag and meta description for my [PAGE TYPE e.g. product page / blog post / service page] about [TOPIC].\n\nTarget keyword: [KEYWORD]. My page helps visitors [WHAT THE PAGE DOES FOR THEM].\n\nFormat your response as:\n- 3 Title Tag options (under 60 characters each — mark the best with ★)\n- 2 Meta Description options (under 155 characters each)\n- One sentence on why the top title will perform well' },
+      { cat: 'On-Page SEO', title: 'Optimise My Page for a Keyword',
+        text: 'I want to optimise my existing page for the keyword [TARGET KEYWORD]. Here is my current page content: [PASTE CONTENT or DESCRIBE THE PAGE].\n\nWhat changes should I make?\n\nFormat your response as:\n- Where to add the keyword (H1, H2s, body, URL, image alt — be specific)\n- Semantic keywords to include (related terms that support the main keyword)\n- One thing to fix on the page structure\n- Internal links to add (what pages to link from/to)\n- What NOT to do (keyword stuffing risks)' },
+      { cat: 'On-Page SEO', title: 'Write My H1 and Heading Structure',
+        text: 'I\'m writing a [BLOG POST / LANDING PAGE / SERVICE PAGE] about [TOPIC]. Target keyword: [KEYWORD].\n\nWrite the H1 and a heading structure (H2s and H3s) for this page.\n\nFormat your response as:\n- H1 (1 option — keyword-focused, compelling)\n- H2 headings (5–7, covering the key sections of the page)\n- H3 sub-headings under 2 of the H2s (as examples)\n- One sentence on why this structure will help rankings' },
+      { cat: 'On-Page SEO', title: 'Audit My Page for SEO Issues',
+        text: 'Please audit this page for SEO issues.\n\nPage URL: [YOUR URL]\nPage content: [PASTE THE FIRST 300–500 WORDS or DESCRIBE THE PAGE]\nTarget keyword: [KEYWORD]\n\nFormat your response as:\n- Critical Issues to Fix Now (numbered)\n- Things to Improve (bullet list)\n- Things That Are Fine (bullet list)\n- Top 1 change that will have the most impact' },
+      { cat: 'On-Page SEO', title: 'Write My Image Alt Text',
+        text: 'I have [NUMBER] images on my page about [TOPIC]. Here\'s what each image shows:\n\n[DESCRIBE EACH IMAGE — e.g. "Image 1: a woman using a laptop at a café"]\n\nWrite SEO-optimised alt text for each image.\n\nFormat your response as a table with 3 columns:\n- Image\n- Alt Text (under 125 characters)\n- Whether to Include the Target Keyword (yes/no and why)' },
+      { cat: 'On-Page SEO', title: 'Plan My Internal Linking',
+        text: 'My website has these main pages: [LIST YOUR KEY PAGES]. I\'m trying to rank [TARGET PAGE URL or TOPIC] higher on Google.\n\nHow should I use internal links to support this?\n\nFormat your response as:\n- Which pages should link TO my target page (and what anchor text to use)\n- Which pages should my target page link TO\n- One rule for internal linking I should follow across my whole site\n- How many internal links is too many on one page' },
+
+      // ── CONTENT & BLOGGING (7) ──────────────────────────────────
+      { cat: 'Content & Blogging', title: 'Write a Blog Post Outline',
+        text: 'Write a detailed outline for a blog post titled: [YOUR TITLE or TOPIC].\n\nTarget keyword: [KEYWORD]. Target audience: [DESCRIPTION]. Goal of the post: [e.g. rank on Google / answer a specific question / build trust].\n\nFormat your response as:\n- Final recommended title (H1)\n- Introduction approach (2 sentences on what the intro should cover)\n- H2 sections with bullet points under each showing what to cover\n- Conclusion and CTA suggestion\n- Estimated word count' },
+      { cat: 'Content & Blogging', title: 'Generate Blog Post Ideas',
+        text: 'I run a [BUSINESS TYPE] and want to create blog content that ranks on Google and attracts [TARGET CUSTOMER].\n\nGive me 15 blog post ideas.\n\nFormat your response as a table with 4 columns:\n- Blog Post Title\n- Target Keyword\n- Why It Would Rank (1 sentence)\n- Type (How-to / List / Comparison / FAQ / Case Study)' },
+      { cat: 'Content & Blogging', title: 'Write Content That Ranks and Converts',
+        text: 'Write the introduction (first 200 words) and conclusion (final 100 words) for a blog post about [TOPIC].\n\nTarget keyword: [KEYWORD]. Audience: [DESCRIPTION]. The reader\'s problem: [WHAT PROBLEM ARE THEY TRYING TO SOLVE].\n\nFormat your response as:\n- Introduction (200 words — hook + what they\'ll learn + why trust you)\n- Conclusion (100 words — summary + clear next step or CTA)\n- One tip on how to make the full post more likely to rank' },
+      { cat: 'Content & Blogging', title: 'Improve My Existing Blog Post',
+        text: 'I have a blog post that\'s getting some traffic but not ranking as high as I want.\n\nPost title: [TITLE]\nCurrent ranking: [POSITION] for keyword [KEYWORD]\nPost summary: [DESCRIBE THE POST or PASTE THE FIRST 300 WORDS]\n\nHow do I improve it to rank higher?\n\nFormat your response as:\n- Content gaps (what topics or questions the post is missing)\n- On-page fixes (title, headings, keyword usage)\n- What to add to make the post more comprehensive\n- Whether to update or completely rewrite (and why)' },
+      { cat: 'Content & Blogging', title: 'Write a FAQ Section',
+        text: 'Write a FAQ section for my [PAGE TYPE] about [TOPIC].\n\nMy target keyword is [KEYWORD]. My customer\'s top questions are: [LIST 3–5 QUESTIONS THEY USUALLY ASK YOU].\n\nFormat your response as:\n- 8 FAQ questions and answers (each answer 2–4 sentences)\n- Which questions are most likely to appear in Google\'s People Also Ask\n- Whether to use FAQ schema markup (yes/no and why)' },
+      { cat: 'Content & Blogging', title: 'Plan a Content Calendar',
+        text: 'I want to publish [X POSTS] per [WEEK/MONTH] for my [BUSINESS TYPE] website to improve SEO.\n\nMy main topics are: [LIST 3–5 TOPIC AREAS]. My target audience is [DESCRIPTION].\n\nCreate a content calendar plan.\n\nFormat your response as a table with 4 columns:\n- Week/Month\n- Content Title\n- Target Keyword\n- Content Type (how-to / list / comparison / FAQ)' },
+      { cat: 'Content & Blogging', title: 'Make My Content Better Than the Top Result',
+        text: 'I want to write a post about [TOPIC] that outranks the current #1 result.\n\nHere\'s what the top result covers: [DESCRIBE THE TOP RESULT — or paste the URL and say what you know about it].\n\nWhat should my post include to be better?\n\nFormat your response as:\n- What the top result does well (2 things)\n- What it\'s missing (3+ gaps I can fill)\n- What my post structure should be\n- One unique angle that would make my post clearly better' },
+
+      // ── TECHNICAL SEO (6) ───────────────────────────────────────
+      { cat: 'Technical SEO', title: 'Find Technical SEO Issues on My Site',
+        text: 'I want to check my website for technical SEO issues that might be hurting my rankings.\n\nMy website is [DESCRIBE — type of site, platform e.g. WordPress / Shopify / custom, approximate number of pages].\n\nWhat technical SEO issues should I check for, and how do I find them?\n\nFormat your response as:\n- Critical Issues to Check First (numbered, most impactful first)\n- How to check each one (tool or method to use)\n- Which issues to fix yourself vs hire someone for\n- One free tool that will find the most issues' },
+      { cat: 'Technical SEO', title: 'Fix My Page Speed',
+        text: 'My website is loading slowly and I think it\'s hurting my SEO. My site is built on [PLATFORM e.g. WordPress / Shopify / Wix / custom code].\n\nWhat are the most impactful things I can do to speed it up?\n\nFormat your response as:\n- Top 5 fixes ranked by impact (most impactful first)\n- For each fix: what it does, how to do it, and estimated effort (easy/medium/hard)\n- One free tool to measure my speed and what score to aim for\n- One thing NOT to break while optimising speed' },
+      { cat: 'Technical SEO', title: 'Set Up My XML Sitemap',
+        text: 'I need to set up or improve the XML sitemap for my [PLATFORM e.g. WordPress / Shopify / custom] website.\n\nMy site has approximately [NUMBER] pages.\n\nFormat your response as:\n- What pages to include in the sitemap (and what to exclude)\n- How to create it on [MY PLATFORM]\n- Where to submit it (Google Search Console steps)\n- How to check if Google is processing it correctly' },
+      { cat: 'Technical SEO', title: 'Fix My Duplicate Content Issues',
+        text: 'I think my website has duplicate content issues that might be hurting my SEO.\n\nMy site is [DESCRIBE e.g. ecommerce with product variants / blog that syndicates content / site with print pages].\n\nFormat your response as:\n- What types of duplicate content I likely have (based on my site type)\n- How to find it (tool and method)\n- How to fix each type (canonical tags / 301 redirects / noindex)\n- Which fix to prioritise' },
+      { cat: 'Technical SEO', title: 'Improve My Core Web Vitals',
+        text: 'My Google Search Console is showing Core Web Vitals issues.\n\nMy failing metrics are: [LIST WHICH ONES ARE FAILING e.g. LCP / FID / CLS / INP]. My site platform: [PLATFORM].\n\nHow do I fix each one?\n\nFormat your response as a table with 3 columns:\n- Metric\n- What\'s Probably Causing It to Fail\n- How to Fix It (specific steps)' },
+      { cat: 'Technical SEO', title: 'Set Up Structured Data (Schema)',
+        text: 'I want to add structured data (schema markup) to my website to improve how my pages appear in Google search results.\n\nMy website type: [e.g. local business / ecommerce / blog / service business]. My goal: [e.g. get star ratings / get FAQ boxes in search / get local business info to show]\n\nFormat your response as:\n- Which schema types to add (and on which pages)\n- How to add schema on [MY PLATFORM]\n- How to test if schema is implemented correctly\n- What Google feature each schema type can unlock' },
+
+      // ── LINK BUILDING (6) ───────────────────────────────────────
+      { cat: 'Link Building', title: 'Find Link Building Opportunities',
+        text: 'I want to build backlinks to my [BUSINESS TYPE] website. My main topic is [TOPIC]. My target audience is [DESCRIPTION].\n\nSuggest link building strategies I can actually execute.\n\nFormat your response as a numbered list of 8 link building tactics. For each:\n- The tactic\n- How to find the opportunity\n- What to say or send (1–2 sentences)\n- Estimated difficulty (easy / medium / hard)' },
+      { cat: 'Link Building', title: 'Write a Link Outreach Email',
+        text: 'I want to email [DESCRIBE THE WEBSITE e.g. a blog in my industry / a local directory / a journalist who wrote about my topic] to ask for a link to my website.\n\nMy website: [DESCRIBE]. The reason they should link to me: [WHY IS YOUR CONTENT WORTH LINKING TO].\n\nWrite me 2 outreach email templates.\n\nFormat your response as:\n- Email 1: Short and direct (under 100 words)\n- Email 2: Relationship-first approach (under 150 words)\n- Subject line options (3) for each email\n- One thing NOT to say in a link outreach email' },
+      { cat: 'Link Building', title: 'Find Broken Link Building Opportunities',
+        text: 'I want to use broken link building to earn backlinks in the [INDUSTRY/NICHE] space.\n\nMy website offers [WHAT YOUR SITE COVERS]. I want to find broken links on other sites I could replace with my content.\n\nFormat your response as:\n- Step-by-step process to find broken link opportunities\n- What tools to use (free options only)\n- What to say when reaching out\n- What types of pages are most likely to have broken links in my niche' },
+      { cat: 'Link Building', title: 'What Content Earns Links?',
+        text: 'I want to create content that naturally earns backlinks for my [BUSINESS TYPE] website.\n\nMy topic area is [TOPIC]. My target audience is [DESCRIPTION].\n\nWhat types of content should I create to attract links?\n\nFormat your response as:\n- Top 5 content formats that earn links (most effective first)\n- For each: why it works + one example idea specific to my topic\n- Which one to create first and why\n- One content type that rarely earns links (to avoid)' },
+      { cat: 'Link Building', title: 'Build Local Citations',
+        text: 'I run a [BUSINESS TYPE] based in [CITY, COUNTRY]. I want to improve my local SEO by building citations (mentions of my business name, address, and phone number).\n\nFormat your response as:\n- Top 10 directories and sites to submit my business to\n- What information to include in each listing\n- How to check if my existing citations are consistent\n- One thing that kills local SEO that most businesses don\'t realise' },
+      { cat: 'Link Building', title: 'Plan a Digital PR Campaign',
+        text: 'I want to earn press coverage and backlinks through digital PR for my [BUSINESS TYPE].\n\nMy topic area: [TOPIC]. My target publications: [TYPES OF MEDIA e.g. industry blogs / local news / national press].\n\nBuild me a simple digital PR plan.\n\nFormat your response as:\n- 3 story angles journalists might cover (be specific to my topic)\n- What asset to create for each angle (data / survey / tool / guide)\n- How to find the right journalist or editor to contact\n- What to put in the pitch email (structure only — not the full email)' },
+
+      // ── AEO & AI SEARCH (6) ─────────────────────────────────────
+      { cat: 'AEO & AI Search', title: 'Optimise My Content for AI Overviews',
+        text: 'I want my website content to appear in Google AI Overviews (the AI-generated summary at the top of search results).\n\nMy target topic: [TOPIC]. My target keyword: [KEYWORD]. My page: [DESCRIBE THE PAGE].\n\nHow do I optimise my content to be included?\n\nFormat your response as:\n- What makes content likely to appear in AI Overviews\n- Specific changes to make to my page (numbered)\n- What format works best (paragraphs / lists / tables / Q&A)\n- One thing that disqualifies content from AI Overviews' },
+      { cat: 'AEO & AI Search', title: 'Write Content That Answers AI Search Queries',
+        text: 'I want to write content that AI tools (ChatGPT, Claude, Gemini, Perplexity) will reference when users ask questions about [TOPIC].\n\nMy target audience asks questions like: [LIST 3–5 QUESTIONS YOUR CUSTOMERS ASK].\n\nHow should I structure my content?\n\nFormat your response as:\n- What AI search engines look for in a good source (bullet list)\n- How to structure my content to get cited (specific format)\n- 3 content improvements to make to my existing pages\n- One type of page that AI tools almost always cite' },
+      { cat: 'AEO & AI Search', title: 'Find AEO Keyword Opportunities',
+        text: 'I want to rank for question-based searches that AI tools and voice search pick up.\n\nMy business: [BUSINESS TYPE]. My topic: [TOPIC].\n\nFind me question-based keyword opportunities to target.\n\nFormat your response as a table with 4 columns:\n- Question Keyword\n- Search Volume Estimate (Low / Medium / High)\n- Type (Who / What / How / Why / When / Where)\n- What Content Format to Use (paragraph / list / table / video)' },
+      { cat: 'AEO & AI Search', title: 'Optimise for Featured Snippets',
+        text: 'I want to rank in Google\'s featured snippets (the answer box at position zero) for questions about [TOPIC].\n\nMy target keyword: [KEYWORD]. My page: [DESCRIBE THE PAGE].\n\nHow do I optimise for featured snippets?\n\nFormat your response as:\n- Which type of featured snippet to aim for (paragraph / list / table)\n- Exactly how to structure my content to win the snippet\n- What question to answer directly and how long the answer should be\n- 3 other questions I could target for featured snippets on the same topic' },
+      { cat: 'AEO & AI Search', title: 'Make My Business Appear in AI Recommendations',
+        text: 'When people ask AI tools like ChatGPT or Perplexity to recommend [TYPE OF BUSINESS] in [LOCATION or NICHE], I want my business to appear.\n\nMy business: [DESCRIBE]. My main strengths: [LIST 2–3 THINGS YOU DO WELL].\n\nWhat should I do?\n\nFormat your response as:\n- Why AI tools recommend some businesses and not others\n- 5 actions to take to improve my chances of appearing\n- What content to create\n- How long this takes to have an effect' },
+      { cat: 'AEO & AI Search', title: 'Build a Topic Authority Strategy',
+        text: 'I want my website to become the go-to source on [TOPIC] so that Google and AI tools trust and cite my content.\n\nMy current content: [DESCRIBE WHAT YOU HAVE — rough count and topics covered].\n\nBuild me a topic authority plan.\n\nFormat your response as:\n- What gaps exist in my current content coverage\n- A pillar + cluster structure for my topic (1 pillar page + 5–7 supporting posts)\n- The order to create content in (most important first)\n- How to signal authority to Google beyond content alone' },
+
+      // ── LOCAL SEO (6) ───────────────────────────────────────────
+      { cat: 'Local SEO', title: 'Optimise My Google Business Profile',
+        text: 'I run a [BUSINESS TYPE] in [CITY, COUNTRY]. I want to rank higher in local Google searches and Google Maps.\n\nHow do I fully optimise my Google Business Profile?\n\nFormat your response as a numbered checklist of 10 items in priority order. For each: what to do and one sentence on why it helps.' },
+      { cat: 'Local SEO', title: 'Write My Google Business Profile Description',
+        text: 'Write a Google Business Profile description for my business.\n\nBusiness type: [TYPE]. Location: [CITY]. What makes us different: [2–3 THINGS YOU DO BETTER THAN COMPETITORS]. Main services: [LIST].\n\nFormat your response as:\n- Description (under 750 characters — include main keywords naturally)\n- 3 alternative versions (shorter — under 200 characters each)\n- Top 5 keywords to include naturally in the description' },
+      { cat: 'Local SEO', title: 'Respond to My Google Reviews',
+        text: 'I have received these Google reviews and need to respond professionally.\n\n[PASTE 3–5 REVIEWS — both positive and negative]\n\nWrite a response for each review.\n\nFormat your response as:\n- Response for each review (labelled Review 1, 2, etc.)\n- Keep each response under 150 words\n- For negative reviews: acknowledge, apologise, offer to resolve\n- For positive reviews: thank, mention a specific detail from their review, invite them back' },
+      { cat: 'Local SEO', title: 'Create a Local Content Strategy',
+        text: 'I run a [BUSINESS TYPE] in [CITY, COUNTRY] and want to create content that helps me rank in local searches.\n\nMy target customers are: [DESCRIPTION].\n\nBuild me a local content strategy.\n\nFormat your response as:\n- 10 local content ideas (blog posts, pages, or guides)\n- For each: the title + target local keyword\n- Which 3 to create first (and why)\n- One local content type that almost no small businesses create (opportunity)' },
+      { cat: 'Local SEO', title: 'Build My Local Link Strategy',
+        text: 'I want to build local backlinks for my [BUSINESS TYPE] in [CITY, COUNTRY] to improve my local SEO rankings.\n\nFormat your response as:\n- 8 local link sources to target (specific, not generic)\n- How to approach each one\n- What a local link looks like vs a generic link\n- Which local links matter most to Google' },
+      { cat: 'Local SEO', title: 'Fix My Local SEO Basics',
+        text: 'I run a [BUSINESS TYPE] in [CITY] and I\'m not ranking well in local Google searches. I\'ve heard I should improve my local SEO but don\'t know where to start.\n\nWhat are the most important things to fix first?\n\nFormat your response as:\n- Quick Wins (things I can fix today — numbered list)\n- Medium-Term Work (1–4 weeks — bullet list)\n- Longer-Term Strategy (ongoing)\n- The single most important thing to do this week' },
+
+      // ── REPORTING & ANALYSIS (7) ─────────────────────────────────
+      { cat: 'Reporting & Analysis', title: 'Interpret My Google Search Console Data',
+        text: 'Here is data from my Google Search Console:\n\n[PASTE YOUR DATA — impressions, clicks, CTR, average position, top queries, etc.]\n\nWhat does this data tell me and what should I do?\n\nFormat your response as:\n- What\'s Going Well (bullet list)\n- What Needs Attention (bullet list)\n- Top 3 Actions to Take This Week (numbered, most impactful first)\n- One number I should check every week going forward' },
+      { cat: 'Reporting & Analysis', title: 'Write My SEO Monthly Report',
+        text: 'Write the narrative section of a monthly SEO report.\n\nThis month: [PASTE METRICS — organic traffic, rankings, clicks, impressions]\nLast month: [PASTE METRICS]\n\nFormat your response as:\n1. Month Summary (2 sentences)\n2. What Moved and Why (rankings and traffic changes)\n3. Key Win This Month (1 thing that worked)\n4. Focus for Next Month\n\nUnder 250 words. No jargon.' },
+      { cat: 'Reporting & Analysis', title: 'Write My SEO Client Report',
+        text: 'Write an SEO performance report for my client.\n\nClient business: [BUSINESS TYPE]\nPeriod: [DATE RANGE]\nResults: [PASTE METRICS]\nPrevious period: [PASTE METRICS]\n\nMy client doesn\'t know SEO — write in plain language.\n\nFormat your response as:\n- Performance Headline (1 sentence)\n- What Worked (3 bullet points)\n- What We\'re Working On (2 bullet points)\n- What We\'ll Do Next Month (3 actions)' },
+      { cat: 'Reporting & Analysis', title: 'Find Pages I Should Prioritise',
+        text: 'I want to identify which pages on my website deserve the most SEO attention.\n\nHere is data from my site: [PASTE GOOGLE SEARCH CONSOLE or ANALYTICS DATA — or describe: number of pages, which ones get traffic, which don\'t].\n\nWhich pages should I prioritise and why?\n\nFormat your response as:\n- Pages to Optimise Now (quick wins — already getting impressions but low CTR or mid-ranking)\n- Pages to Update (older content that has dropped)\n- Pages to Create (gaps in my content)\n- Pages to Remove or Redirect (thin or duplicate content)' },
+      { cat: 'Reporting & Analysis', title: 'Track the Right SEO Metrics',
+        text: 'I\'m not sure which SEO metrics I should be tracking week to week. My goal is [GOAL e.g. more leads / more traffic / rank for specific keywords].\n\nWhat should I track and how?\n\nFormat your response as a table with 4 columns:\n- Metric\n- What It Tells Me\n- Where to Find It (tool)\n- How Often to Check It' },
+      { cat: 'Reporting & Analysis', title: 'Measure My SEO ROI',
+        text: 'I want to show my boss / client that SEO is generating value. My business is [BUSINESS TYPE]. Organic traffic is [DESCRIBE — growing / flat / declining]. My goal is [GOAL].\n\nHow do I calculate and communicate SEO ROI?\n\nFormat your response as:\n- How to calculate organic traffic value (formula + example with my numbers)\n- How to attribute conversions to SEO\n- What to present to a non-technical stakeholder\n- One number that makes the ROI argument most clearly' },
+      { cat: 'Reporting & Analysis', title: 'What to Say in My SEO Client Meeting',
+        text: 'I have a call with my SEO client tomorrow.\n\nResults: [PASTE METRICS]\nTheir main concern is: [e.g. rankings dropped / traffic is flat / competitors are outranking us]\n\nGive me talking points.\n\nFormat your response as:\n- How to Open the Call\n- Main Points to Cover (5 bullet points)\n- How to Handle the Main Concern\n- How to Close with Clear Next Steps' }
+    ];
+
+    // ── Wire up all CTAs ────────────────────────────────────────
+    ['hero-cta','hiw-cta','banner-cta','mid-cta','paywall-cta'].forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) el.href = TALLY_URL;
+    });
+
+    // ── Build categories ────────────────────────────────────────
+    var cats = [];
+    PROMPTS.forEach(function (p) {
+      if (cats.indexOf(p.cat) === -1) cats.push(p.cat);
+    });
+
+    function countByCat(cat) {
+      return PROMPTS.filter(function (p) { return p.cat === cat; }).length;
+    }
+
+    // ── Render tabs ─────────────────────────────────────────────
+    var tabsEl        = document.getElementById('pl-tabs');
+    var gridEl        = document.getElementById('pl-grid');
+    var pwEl          = document.getElementById('pl-paywall');
+    var metaFreeEl    = document.getElementById('pl-free-count');
+    var metaLockedEl  = document.getElementById('pl-locked-count');
+
+    cats.forEach(function (cat, i) {
+      var btn = document.createElement('button');
+      btn.className = 'pl-tab' + (i === 0 ? ' active' : '');
+      btn.dataset.cat = cat;
+      btn.innerHTML = cat + '<span class="pl-tab-count">' + countByCat(cat) + '</span>';
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.pl-tab').forEach(function (t) { t.classList.remove('active'); });
+        btn.classList.add('active');
+        renderPrompts(cat);
+      });
+      tabsEl.appendChild(btn);
+    });
+
+    // ── Render prompt cards ──────────────────────────────────────
+    function renderPrompts(cat) {
+      var items  = PROMPTS.filter(function (p) { return p.cat === cat; });
+      var free   = Math.min(items.length, FREE_PER_CAT);
+      var locked = Math.max(0, items.length - FREE_PER_CAT);
+
+      metaFreeEl.textContent   = free;
+      metaLockedEl.textContent = locked;
+
+      gridEl.innerHTML = '';
+      items.forEach(function (p, idx) {
+        var isLocked = idx >= FREE_PER_CAT;
+        var card     = document.createElement('div');
+        card.className = 'pl-card' + (isLocked ? ' is-locked' : '');
+
+        var escaped = p.text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+        card.innerHTML =
+          '<span class="pl-card-cat">' + p.cat + '</span>' +
+          '<p class="pl-card-title">' + p.title + '</p>' +
+          '<div class="pl-card-body">' + escaped + '</div>' +
+          '<div class="pl-card-footer">' +
+            '<span class="pl-placeholder-hint">Fill in [PLACEHOLDERS] before pasting</span>' +
+            '<button class="pl-copy-btn">&#128203; Copy</button>' +
+          '</div>';
+
+        if (!isLocked) {
+          card.querySelector('.pl-copy-btn').addEventListener('click', function () {
+            copyPrompt(p.text, this);
+          });
+        }
+
+        gridEl.appendChild(card);
+      });
+
+      pwEl.style.display = locked > 0 ? 'flex' : 'none';
+    }
+
+    // ── Clipboard ───────────────────────────────────────────────
+    function copyPrompt(text, btn) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () { flash(btn); });
+      } else {
+        var ta = document.createElement('textarea');
+        ta.value = text; ta.style.cssText = 'position:fixed;opacity:0;';
+        document.body.appendChild(ta); ta.focus(); ta.select();
+        try { document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(ta);
+        flash(btn);
+      }
+    }
+
+    function flash(btn) {
+      btn.textContent = '✓ Copied!';
+      btn.classList.add('copied');
+      setTimeout(function () {
+        btn.innerHTML = '&#128203; Copy';
+        btn.classList.remove('copied');
+      }, 2000);
+    }
+
+    // ── Initial render ───────────────────────────────────────────
+    renderPrompts(cats[0]);
+  })();
+  </script>
+</body>
+</html>
