@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="google-adsense-account" content="ca-pub-5220550180754289">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5220550180754289"
+     crossorigin="anonymous"></script>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WXGTNNN');</script>
+<!-- End Google Tag Manager -->
+  <link rel="icon" type="image/png" href="../../favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI referral traffic report template for Excel and Google Sheets. Track sessions from ChatGPT, Perplexity, Gemini, Claude and more with auto-charts and AI prompts. $9.99." />
+  <link rel="canonical" href="https://xyzlab.com/google-analytics/ai-traffic-report-template/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://xyzlab.com/google-analytics/ai-traffic-report-template/" />
+  <meta property="og:title" content="AI Traffic Report Template — Track ChatGPT, Perplexity &amp; Gemini | XYZ Lab" />
+  <meta property="og:description" content="AI referral traffic report template for Excel and Google Sheets. Track sessions from ChatGPT, Perplexity, Gemini, Claude and more with auto-charts and AI prompts. $9.99." />
+  <meta property="og:image" content="https://xyzlab.com/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI Traffic Report Template — Track ChatGPT, Perplexity &amp; Gemini | XYZ Lab" />
+  <meta name="twitter:description" content="AI referral traffic report template for Excel and Google Sheets. Track ChatGPT, Perplexity, Gemini and Claude sessions. Auto-charts and AI prompts. $9.99." />
+  <meta name="twitter:image" content="https://xyzlab.com/og-image.jpg" />
+  <title>AI Traffic Report Template — Track ChatGPT, Perplexity &amp; Gemini | XYZ Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../../course.css" />
+  <style>
+/* ── Price badge ── */
+.rt-price-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(8,191,173,.12);border:1.5px solid rgba(8,191,173,.3);border-radius:20px;padding:.35rem .9rem;font-size:.9rem;font-weight:700;color:#0a7a72;margin-bottom:1rem;}
+.rt-price-strike{text-decoration:line-through;color:#94a3b8;font-weight:400;margin-right:.25rem;}
+
+/* ── Hero CTA area ── */
+.rt-hero-cta{display:flex;align-items:center;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem;}
+.rt-hero-sub{font-size:.85rem;color:#64748b;text-align:center;margin-top:.6rem;}
+
+/* ── Includes grid ── */
+.rt-includes{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:1.75rem;}
+@media(max-width:768px){.rt-includes{grid-template-columns:1fr;}}
+.rt-include-card{background:#fff;border:1.5px solid #e2e8f0;border-radius:14px;padding:1.5rem 1.25rem;display:flex;flex-direction:column;gap:.6rem;}
+.rt-include-card:hover{border-color:rgba(8,191,173,.4);box-shadow:0 4px 16px rgba(8,191,173,.08);}
+.rt-include-icon{width:44px;height:44px;border-radius:10px;background:rgba(8,191,173,.1);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;}
+.rt-include-title{font-size:1.05rem;font-weight:700;color:#1a202c;margin:0;}
+.rt-include-desc{font-size:.875rem;color:#64748b;margin:0;line-height:1.6;}
+.rt-include-bullets{list-style:none;padding:0;margin:.5rem 0 0;}
+.rt-include-bullets li{font-size:.82rem;color:#374151;padding:.18rem 0;}
+.rt-include-bullets li::before{content:"✓ ";color:var(--primary);font-weight:700;}
+
+/* ── Metrics grid ── */
+.rt-metrics{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.25rem;}
+.rt-metric-chip{padding:.4rem .85rem;background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:8px;font-size:.82rem;font-weight:600;color:#374151;}
+
+/* ── Steps ── */
+.rt-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:.85rem;margin-top:1.5rem;}
+.rt-step{display:flex;flex-direction:column;align-items:center;gap:.5rem;background:rgba(8,191,173,.07);border:1.5px solid rgba(8,191,173,.2);border-radius:12px;padding:1.25rem 1rem;text-align:center;}
+.rt-step-num{display:inline-flex;align-items:center;justify-content:center;width:2rem;height:2rem;border-radius:50%;background:var(--primary);color:#fff;font-size:.8rem;font-weight:800;flex-shrink:0;}
+.rt-step-label{font-size:1rem;font-weight:700;color:#1a202c;line-height:1.3;}
+.rt-step-sub{font-size:.8rem;color:#64748b;}
+@media(max-width:640px){.rt-steps{grid-template-columns:1fr;}}
+
+/* ── CTA button ── */
+.rt-cta-btn{display:inline-block;padding:.75rem 2.25rem;background:var(--primary);color:#fff !important;font-size:1rem;font-weight:700;border-radius:8px;text-decoration:none;transition:background .18s;white-space:nowrap;}
+.rt-cta-btn:hover{background:#07a99a;}
+.rt-cta-sm{font-size:.8rem;color:#94a3b8;margin-top:.55rem;}
+
+/* ── Preview table ── */
+.rt-preview{overflow-x:auto;margin-top:1.5rem;}
+.rt-table{width:100%;border-collapse:collapse;font-size:.82rem;}
+.rt-table th{background:#1a202c;color:#fff;padding:.6rem .85rem;font-weight:700;text-align:center;white-space:nowrap;}
+.rt-table th:first-child{text-align:left;}
+.rt-table td{padding:.55rem .85rem;border-bottom:1px solid #e2e8f0;color:#374151;text-align:center;white-space:nowrap;}
+.rt-table td:first-child{font-weight:600;color:#1a202c;text-align:left;}
+.rt-table tr:nth-child(even) td{background:#f8fafc;}
+.rt-table .rt-wow-up{color:#10b981;font-weight:700;}
+.rt-table .rt-wow-dn{color:#ef4444;font-weight:700;}
+.rt-table .rt-input{background:#fffff0;color:#374151;}
+  </style>
+  <script>
+    var TALLY_URL = '#'; /* TODO: Replace with AI Traffic Report Template Tally form URL */
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXGTNNN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <header class="nav-wrapper">
+    <nav class="nav container">
+      <a href="../../" class="logo">
+        <img src="../../XYZLab.gif" alt="XYZ Lab" class="logo-img" />
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li class="nav-has-dropdown">
+          <a href="../../#courses">Courses <span class="nav-caret" aria-hidden="true"></span></a>
+          <ul class="nav-dropdown">
+            <li><a href="../../google-ads-course/">AI for Google Ads</a></li>
+            <li><a href="../../meta-ads-course/">AI for Meta Ads</a></li>
+            <li><a href="../../seo-aio-course/">AI for SEO</a></li>
+            <li><a href="../../ai-marketing-analytics-course/">AI for Marketing Analytics</a></li>
+            <li><a href="../../ai-content-creation-course/">AI Content Creation</a></li>
+            <li><a href="../../vibe-coding-course/">Vibe Coding with AI</a></li>
+          </ul>
+        </li>
+        <li class="nav-has-dropdown">
+          <a href="../../#topics">Tutorials <span class="nav-caret" aria-hidden="true"></span></a>
+          <div class="nav-dropdown nav-mega">
+            <div class="mega-col">
+              <span class="mega-label">PPC</span>
+              <ul>
+                <li><a href="../../google-ads/">Google Ads</a></li>
+                <li><a href="../../google-ads-editor/">Google Ads Editor</a></li>
+                <li><a href="../../meta-ads/">Meta Ads</a></li>
+                <li><a href="../../tiktok-ads/">TikTok Ads</a></li>
+                <li><a href="../../microsoft-ads/">Microsoft Ads</a></li>
+                <li><a href="../../pinterest-ads/">Pinterest Ads</a></li>
+                <li><a href="../../reddit-ads/">Reddit Ads</a></li>
+                <li><a href="../../linkedin-ads/">LinkedIn Ads</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">Analytics</span>
+              <ul>
+                <li><a href="../../google-analytics/">Google Analytics</a></li>
+                <li><a href="../../google-tag-manager/">Google Tag Manager</a></li>
+                <li><a href="../../data-studio/">Data Studio</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">SEO</span>
+              <ul>
+                <li><a href="../../google-search-console/">Google Search Console</a></li>
+                <li><a href="../../bing-webmaster-tools/">Bing Webmaster Tools</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">AI Tools</span>
+              <ul>
+                <li><a href="../../claude/">Claude AI</a></li>
+                <li><a href="../../chatgpt/">ChatGPT</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">eCommerce</span>
+              <ul>
+                <li><a href="../../shopify/">Shopify</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">Web Builders</span>
+              <ul>
+                <li><a href="../../wix/">Wix</a></li><li><a href="../../go-high-level/">Go High Level</a></li><li><a href="../../godaddy/">GoDaddy</a></li>
+              </ul>
+            </div>
+            <div class="mega-col">
+              <span class="mega-label">Social Media</span>
+              <ul>
+                <li><a href="../../linkedin/">LinkedIn</a></li>
+                <li><a href="../../youtube/">YouTube</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="../../#contact">Contact</a></li>
+        <li><a href="../../#coaching" class="btn btn-primary btn-sm">Book Coaching</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="video-tutorial-hero">
+    <div class="container tutorial-hero-inner">
+      <nav aria-label="breadcrumb" style="font-size:.8rem;color:#94a3b8;margin-bottom:1rem;">
+        <a href="../../" style="color:#94a3b8;">Home</a> ›
+        <a href="../../google-analytics/" style="color:#94a3b8;">Google Analytics Tutorials</a> ›
+        <span style="color:#1a202c;">AI Traffic Report Template</span>
+      </nav>
+      <div class="badge badge-secondary">Google Analytics</div>
+      <div class="rt-price-badge"><span class="rt-price-strike">$29</span> $9.99 — Excel + AI Prompts</div>
+      <h1>AI Traffic <span class="highlight">Report Template</span></h1>
+      <p class="hero-sub">Weekly and monthly AI referral traffic reporting in Excel and Google Sheets. Track visits from ChatGPT, Perplexity, Gemini and Claude with auto-charts, WoW comparisons, and 6 AI prompts to grow your visibility in AI search.</p>
+      <div class="rt-hero-cta">
+        <a id="hero-cta" href="#" class="rt-cta-btn" onclick="window.open(TALLY_URL,'_blank');return false;">Get the Template, $9.99 &rarr;</a>
+      </div>
+      <p class="rt-hero-sub">Excel + Google Sheets &nbsp;&bull;&nbsp; AI Prompts included &nbsp;&bull;&nbsp; Delivered in 5 minutes</p>
+    </div>
+  </section>
+
+  <!-- WHAT'S INCLUDED -->
+  <section class="outcomes" style="background:var(--white);padding-top:2.5rem;padding-bottom:2.5rem;">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-secondary">What You Get</div>
+        <h2>One Template, <span class="highlight">Everything You Need</span></h2>
+        <p>Stop building reports from scratch. Open the file, enter your data, done.</p>
+      </div>
+      <div class="rt-includes">
+        <div class="rt-include-card">
+          <div class="rt-include-icon">📅</div>
+          <h3 class="rt-include-title">Weekly Report Tab</h3>
+          <p class="rt-include-desc">Track 4 weeks of AI referral traffic with automatic week-over-week percentage change calculations and bar charts.</p>
+          <ul class="rt-include-bullets">
+            <li>4-week performance table</li>
+            <li>WoW % change (auto-calculated)</li>
+            <li>Best week column</li>
+            <li>Auto-updating bar charts</li>
+          </ul>
+        </div>
+        <div class="rt-include-card">
+          <div class="rt-include-icon">📊</div>
+          <h3 class="rt-include-title">Monthly Report Tab</h3>
+          <p class="rt-include-desc">12-month AI traffic tracking with month-over-month comparison and trend line charts. Perfect for spotting AI traffic growth over time.</p>
+          <ul class="rt-include-bullets">
+            <li>Full-year performance table</li>
+            <li>MoM % change (auto-calculated)</li>
+            <li>Annual totals column</li>
+            <li>Auto-updating line charts</li>
+          </ul>
+        </div>
+        <div class="rt-include-card">
+          <div class="rt-include-icon">🤖</div>
+          <h3 class="rt-include-title">AI Prompts Tab</h3>
+          <p class="rt-include-desc">6 ready-to-use prompts for ChatGPT and Claude. Copy your AI traffic data, paste into AI, get a written analysis and AEO strategy instantly.</p>
+          <ul class="rt-include-bullets">
+            <li>Weekly AI traffic summary</li>
+            <li>Monthly AI traffic growth analysis</li>
+            <li>AI traffic conversion analysis</li>
+            <li>AEO content strategy prompt</li>
+            <li>AI traffic client report</li>
+            <li>Competitor AI visibility analysis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METRICS TRACKED -->
+  <section class="outcomes" style="padding-top:2rem;padding-bottom:2rem;">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-secondary">Metrics</div>
+        <h2>Every <span class="highlight">AI Traffic Metric</span> That Matters</h2>
+        <p>Pre-built rows for all key metrics. Just enter your numbers.</p>
+      </div>
+      <div class="rt-metrics">
+        <span class="rt-metric-chip">Total AI Sessions</span>
+        <span class="rt-metric-chip">ChatGPT Sessions</span>
+        <span class="rt-metric-chip">Perplexity Sessions</span>
+        <span class="rt-metric-chip">Gemini Sessions</span>
+        <span class="rt-metric-chip">Claude Sessions</span>
+        <span class="rt-metric-chip">Other AI Sessions</span>
+        <span class="rt-metric-chip">Pages / Session</span>
+        <span class="rt-metric-chip">Conversions from AI</span>
+      </div>
+
+      <!-- Preview table -->
+      <div class="rt-preview" style="margin-top:2rem;">
+        <p style="font-size:.8rem;font-weight:600;color:#64748b;margin-bottom:.6rem;text-transform:uppercase;letter-spacing:.06em;">Preview — Weekly Report</p>
+        <table class="rt-table">
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>Week 1</th>
+              <th>Week 2</th>
+              <th>Week 3</th>
+              <th>Week 4</th>
+              <th>Best Week</th>
+              <th>WoW %</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Total AI Sessions</td><td class="rt-input">284</td><td class="rt-input">312</td><td class="rt-input">298</td><td class="rt-input">361</td><td>361</td><td class="rt-wow-up">+21.1%</td></tr>
+            <tr><td>ChatGPT Sessions</td><td class="rt-input">148</td><td class="rt-input">167</td><td class="rt-input">155</td><td class="rt-input">192</td><td>192</td><td class="rt-wow-up">+23.9%</td></tr>
+            <tr><td>Perplexity Sessions</td><td class="rt-input">72</td><td class="rt-input">84</td><td class="rt-input">79</td><td class="rt-input">98</td><td>98</td><td class="rt-wow-up">+24.1%</td></tr>
+            <tr><td>Gemini Sessions</td><td class="rt-input">38</td><td class="rt-input">41</td><td class="rt-input">36</td><td class="rt-input">44</td><td>44</td><td class="rt-wow-up">+22.2%</td></tr>
+            <tr><td>Claude Sessions</td><td class="rt-input">18</td><td class="rt-input">12</td><td class="rt-input">19</td><td class="rt-input">17</td><td>19</td><td class="rt-wow-dn">−10.5%</td></tr>
+            <tr><td>Pages / Session</td><td class="rt-input">2.8</td><td class="rt-input">3.1</td><td class="rt-input">2.9</td><td class="rt-input">3.4</td><td>3.4</td><td class="rt-wow-up">+17.2%</td></tr>
+            <tr><td>Conversions from AI</td><td class="rt-input">14</td><td class="rt-input">18</td><td class="rt-input">16</td><td class="rt-input">22</td><td>22</td><td class="rt-wow-up">+37.5%</td></tr>
+          </tbody>
+        </table>
+        <p style="font-size:.75rem;color:#94a3b8;margin-top:.5rem;">Yellow cells = your data inputs. All other columns calculate automatically.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="outcomes" style="background:var(--white);padding-top:2.5rem;padding-bottom:2.5rem;">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-secondary">How It Works</div>
+        <h2>From Data to <span class="highlight">Report in Minutes</span></h2>
+        <p>Three steps. No design skills needed.</p>
+      </div>
+      <div class="rt-steps">
+        <div class="rt-step">
+          <span class="rt-step-num">1</span>
+          <span class="rt-step-label">📥 Download &amp; Open</span>
+          <span class="rt-step-sub">Open in Excel or upload to Google Drive. Works in both. No plugins needed.</span>
+        </div>
+        <div class="rt-step">
+          <span class="rt-step-num">2</span>
+          <span class="rt-step-label">📝 Enter Your Data</span>
+          <span class="rt-step-sub">Paste your AI referral traffic numbers from GA4 into the yellow cells. WoW/MoM and charts update automatically.</span>
+        </div>
+        <div class="rt-step">
+          <span class="rt-step-num">3</span>
+          <span class="rt-step-label">🤖 Use AI Prompts</span>
+          <span class="rt-step-sub">Copy a prompt from the AI tab, add your data, paste into ChatGPT or Claude. Get a written report and AEO strategy in seconds.</span>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:1.75rem;">
+        <a id="hiw-cta" href="#" class="rt-cta-btn" onclick="window.open(TALLY_URL,'_blank');return false;">Get the Template, $9.99 &rarr;</a>
+        <p class="rt-cta-sm">Excel + Google Sheets &nbsp;&bull;&nbsp; AI Prompts included &nbsp;&bull;&nbsp; Delivered in 5 minutes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MID CTA BANNER -->
+  <section style="background:#f8fafc;padding:2.5rem 0;">
+    <div class="container" style="text-align:center;">
+      <p style="font-size:1.1rem;font-weight:700;color:#1a202c;margin:0 0 .5rem;">AI search is the fastest-growing traffic source.</p>
+      <p style="font-size:.9rem;color:#64748b;margin:0 0 1.25rem;">Start tracking ChatGPT, Perplexity and Gemini referrals properly — all for $9.99.</p>
+      <a id="mid-cta" href="#" class="rt-cta-btn" onclick="window.open(TALLY_URL,'_blank');return false;">Get the AI Traffic Report Template &rarr;</a>
+      <p class="rt-cta-sm" style="margin-top:.6rem;">Full refund if not useful &nbsp;&bull;&nbsp; Works with ChatGPT and Claude</p>
+    </div>
+  </section>
+
+  <!-- COACHING -->
+  <section class="coaching-cta">
+    <div class="container">
+      <div class="coaching-cta-inner">
+        <div class="coaching-cta-text">
+          <h3>Want help tracking and growing your AI referral traffic?</h3>
+          <p>Book a 90-minute coaching session and we'll set up AI traffic tracking in GA4 and build your AEO content strategy together.</p>
+        </div>
+        <a href="../../#coaching" class="btn btn-primary">Book a Coaching Session</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">FAQ</div>
+        <h2>AI Traffic Report Template, FAQ</h2>
+        <p>Common questions about the template.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary class="faq-question">
+            <span>Does this work in Google Sheets?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Yes. Upload the Excel file to Google Drive and open it with Google Sheets. All formulas, charts and formatting carry over. You can then share it as a Google Sheets link with clients or teammates.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What's in the AI Prompts tab?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Six structured prompts focused on AI traffic analysis: weekly AI traffic summary, monthly growth analysis, conversion quality by AI source, AEO content strategy, AI traffic client report, and competitor AI visibility tactics. Each prompt has placeholder fields — add your numbers, paste into ChatGPT or Claude, and receive a written analysis and action plan in under 30 seconds.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>How do I get AI referral data from GA4?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>In GA4, go to Reports &gt; Acquisition &gt; Traffic Acquisition and filter by Session Source. The referral domains to look for are chatgpt.com, perplexity.ai, gemini.google.com, and claude.ai. Copy the session data for each source into the template weekly and the calculations and charts will update automatically.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What is AEO and why does AI traffic matter?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>AEO stands for Answer Engine Optimisation — the practice of getting your site cited in AI-generated answers. ChatGPT, Perplexity and Gemini now drive significant referral traffic for many sites, and this channel is growing fast. This template helps you track where that traffic comes from, how it converts, and identify opportunities to grow your visibility in AI search results.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>How do I receive the template after purchase?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>After submitting the form and completing payment, the template is emailed to you as an Excel file within 5 minutes. Check your inbox and spam folder if it doesn't arrive promptly.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Is there a refund if it's not what I expected?</span>
+            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Yes — full refund if you find the template isn't useful. Email <a href="mailto:hello@xyzlab.com" style="color:var(--primary);">hello@xyzlab.com</a> within 7 days of purchase and we'll refund immediately, no questions asked.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED RESOURCES -->
+  <section class="outcomes" style="background:var(--white);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-secondary">Keep Learning</div>
+        <h2>Related <span class="highlight">Google Analytics Resources</span></h2>
+        <p>More tools to get better results from your analytics and organic channels.</p>
+      </div>
+      <div class="courses-grid">
+        <article class="course-card">
+          <a href="../../google-analytics/report-template/" class="course-icon" tabindex="-1" style="background:#e8faf9;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#e8faf9"/><rect x="8" y="8" width="16" height="3" rx="1.5" fill="#08bfad" opacity=".4"/><rect x="8" y="14" width="16" height="3" rx="1.5" fill="#08bfad" opacity=".7"/><rect x="8" y="20" width="10" height="3" rx="1.5" fill="#08bfad"/></svg>
+          </a>
+          <h3><a href="../../google-analytics/report-template/">Google Analytics Report Template</a></h3>
+          <ul class="course-bullets">
+            <li>Full GA4 weekly and monthly reporting</li>
+            <li>Sessions, users, conversions and revenue</li>
+            <li>AI prompts for traffic analysis included</li>
+          </ul>
+          <a href="../../google-analytics/report-template/" class="course-link">View Template &#8594;</a>
+        </article>
+        <article class="course-card">
+          <a href="../../google-analytics/" class="course-icon" tabindex="-1" style="background:#fff3e0;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#fff3e0"/><rect x="8" y="18" width="3" height="6" rx="1" fill="#fec55c"/><rect x="13" y="13" width="3" height="11" rx="1" fill="#fec55c" opacity=".7"/><rect x="18" y="9" width="3" height="15" rx="1" fill="#fec55c" opacity=".4"/><rect x="23" y="14" width="3" height="10" rx="1" fill="#fec55c"/></svg>
+          </a>
+          <h3><a href="../../google-analytics/">Google Analytics Tutorial Library</a></h3>
+          <ul class="course-bullets">
+            <li>Step-by-step GA4 setup and tracking guides</li>
+            <li>Events, audiences and conversions</li>
+            <li>From beginner to advanced</li>
+          </ul>
+          <a href="../../google-analytics/" class="course-link">Browse Tutorials &#8594;</a>
+        </article>
+        <article class="course-card">
+          <a href="../../seo/report-template/" class="course-icon" tabindex="-1" style="background:#e8faf9;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#e8faf9"/><path d="M10 16l4-4 4 4 4-4" stroke="#08bfad" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <h3><a href="../../seo/report-template/">SEO Report Template</a></h3>
+          <ul class="course-bullets">
+            <li>Organic sessions, GSC clicks and rankings</li>
+            <li>Weekly and monthly SEO reporting</li>
+            <li>AI prompts for reporting included</li>
+          </ul>
+          <a href="../../seo/report-template/" class="course-link">View Template &#8594;</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p>Hands-On, AI-First Digital Marketing Training. Work Smarter with AI.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/seridis/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@xyzl" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="../../google-ads-course/">AI for Google Ads</a></li>
+            <li><a href="../../meta-ads-course/">AI for Meta Ads</a></li>
+            <li><a href="../../seo-aio-course/">AI for SEO</a></li>
+            <li><a href="../../ai-marketing-analytics-course/">Analytics</a></li>
+            <li><a href="../../ai-content-creation-course/">AI Content Creation</a></li>
+            <li><a href="../../vibe-coding-course/">Vibe Coding</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>PPC</h4>
+          <ul>
+            <li><a href="../../google-ads/">Google Ads</a></li>
+            <li><a href="../../google-ads-editor/">Google Ads Editor</a></li>
+            <li><a href="../../meta-ads/">Meta Ads</a></li>
+            <li><a href="../../tiktok-ads/">TikTok Ads</a></li>
+            <li><a href="../../microsoft-ads/">Microsoft Ads</a></li>
+            <li><a href="../../pinterest-ads/">Pinterest Ads</a></li>
+            <li><a href="../../reddit-ads/">Reddit Ads</a></li>
+            <li><a href="../../linkedin-ads/">LinkedIn Ads</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Analytics</h4>
+          <ul>
+            <li><a href="../../google-analytics/">Google Analytics</a></li>
+            <li><a href="../../google-tag-manager/">Google Tag Manager</a></li>
+            <li><a href="../../data-studio/">Data Studio</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>AI Tools</h4>
+          <ul>
+            <li><a href="../../claude/">Claude AI</a></li>
+            <li><a href="../../chatgpt/">ChatGPT</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>SEO</h4>
+          <ul>
+            <li><a href="../../google-search-console/">Google Search Console</a></li>
+            <li><a href="../../bing-webmaster-tools/">Bing Webmaster Tools</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Benchmarks</h4>
+          <ul>
+            <li><a href="/meta-ads/benchmarks/">Meta Ads</a></li>
+            <li><a href="/google-ads/benchmarks/">Google Ads</a></li>
+            <li><a href="/seo/benchmarks/">SEO</a></li>
+            <li><a href="/tiktok-ads/benchmarks/">TikTok Ads</a></li>
+            <li><a href="/linkedin-ads/benchmarks/">LinkedIn Ads</a></li>
+            <li><a href="/reddit-ads/benchmarks/">Reddit Ads</a></li>
+            <li><a href="/shopify/benchmarks/">Shopify</a></li>
+            <li><a href="/email-marketing/benchmarks/">Email Marketing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>eCommerce</h4>
+          <ul>
+            <li><a href="../../shopify/">Shopify</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Web Builders</h4>
+          <ul>
+            <li><a href="../../wix/">Wix</a></li><li><a href="../../go-high-level/">Go High Level</a></li><li><a href="../../godaddy/">GoDaddy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Social Media</h4>
+          <ul>
+            <li><a href="../../linkedin/">LinkedIn</a></li>
+            <li><a href="../../youtube/">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../../#contact">Contact</a></li>
+            <li><a href="mailto:hello@xyzlab.com">hello@xyzlab.com</a></li>
+            <li><a href="https://wa.me/6594260742">+65 9426 0742</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> XYZ Lab. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../main.js"></script>
+  <script>
+    document.querySelectorAll('a[onclick]').forEach(function(a){
+      a.addEventListener('click',function(e){
+        e.preventDefault();
+        if(TALLY_URL&&TALLY_URL!=='#'){window.open(TALLY_URL,'_blank');}
+      });
+    });
+  </script>
+</body>
+</html>
