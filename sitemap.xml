@@ -757,7 +757,6 @@
   <url><loc>https://xyzlab.com/google-ads-editor/sync-latest-changes/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://xyzlab.com/google-ads-editor/add-new-accounts/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <url><loc>https://xyzlab.com/claude/report-template/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Databases -->
   <url><loc>https://xyzlab.com/vc-angel-investors/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
