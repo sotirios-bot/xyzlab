@@ -708,14 +708,14 @@ a.course-icon:hover {
 .footer {
   background: var(--dark);
   color: rgba(255,255,255,.75);
-  padding-top: 4rem;
+  padding-top: 3rem;
 }
 
 .footer-inner {
   display: grid;
-  grid-template-columns: 1fr 2.8fr;
-  gap: 3rem;
-  padding-bottom: 3rem;
+  grid-template-columns: 200px 1fr;
+  gap: 2.5rem;
+  padding-bottom: 2.5rem;
   border-bottom: 1px solid rgba(255,255,255,.1);
 }
 
@@ -753,8 +753,8 @@ a.course-icon:hover {
 
 .footer-links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 1.5rem 1.75rem;
 }
 
 .footer-col-wide ul {
@@ -768,20 +768,20 @@ a.course-icon:hover {
 }
 
 .footer-col h4 {
-  font-size: .78rem;
+  font-size: .72rem;
   font-weight: 700;
   letter-spacing: .08em;
   text-transform: uppercase;
   color: var(--white);
-  margin-bottom: 1rem;
+  margin-bottom: .75rem;
 }
 .footer-col ul {
   display: flex;
   flex-direction: column;
-  gap: .6rem;
+  gap: .45rem;
 }
 .footer-col a {
-  font-size: .88rem;
+  font-size: .82rem;
   color: rgba(255,255,255,.6);
   transition: color var(--transition);
 }
@@ -821,12 +821,12 @@ a.course-icon:hover {
 
   .footer-inner {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
   }
 
   .footer-links {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.75rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
   }
   .footer-col-wide ul { columns: 1; }
 }
