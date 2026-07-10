@@ -58,3 +58,32 @@ Use the channel name itself — e.g. `LinkedIn Ads`, `Meta Ads`, `TikTok Ads`, `
 - Percentage columns: 9–18 depending on label length
 - Money columns: 12
 - ROAS: 10
+
+## Redirect Stubs
+
+All redirects are client-side (`<meta http-equiv="refresh">` + `window.location.replace`) — GitHub Pages cannot serve true HTTP 301s.
+
+Each slug exists in two forms: a directory (`/slug/index.html`) and a flat file (`/slug.html`) to cover both URL variants.
+
+**Review date: 2027-01-10** — remove stubs whose old URLs no longer appear in Google Search Console or receive meaningful traffic.
+
+| Old slug | Destination |
+|---|---|
+| `/content-prompt-library` | `/linkedin/prompt-library/` |
+| `/email-marketing-report-template` | `/email-marketing/benchmarks/` |
+| `/google-ads-editor-template` | `/google-ads-editor/bulk-upload-template/` |
+| `/google-ads-performance-tracking-template` | `/google-ads/report-template/` |
+| `/google-ads-prompt-library` | `/google-ads/prompt-library/` |
+| `/google-ads-report-template` | `/google-ads/report-template/` |
+| `/google-analytics-prompt-library` | `/google-analytics/prompt-library/` |
+| `/google-analytics-report-template` | `/google-analytics/report-template/` |
+| `/google-analytics-seo-performance-tracking-template` | `/google-analytics/report-template/` |
+| `/link-building-report-template` | `/seo/link-building-report-template/` |
+| `/linkedin-ads-report-template` | `/linkedin-ads/report-template/` |
+| `/meta-ads-prompt-library` | `/meta-ads/prompt-library/` |
+| `/meta-ads-report-template` | `/meta-ads/report-template/` |
+| `/seo-prompt-library` | `/seo/prompt-library/` |
+| `/seo-report-template` | `/seo/report-template/` |
+| `/social-media-followers-tracking-report-template` | `/linkedin/personal-brand-report-template/` |
+| `/tiktok-ads-prompt-library` | `/tiktok-ads/` |
+| `/tiktok-ads-report-template` | `/tiktok-ads/report-template/` |
