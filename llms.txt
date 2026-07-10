@@ -305,10 +305,12 @@
 ## Report Templates
 
 - [Google Ads Report Template](https://xyzlab.com/google-ads/report-template/): Free Google Ads report template for Excel and Google Sheets — weekly and monthly performance tracking.
+- [Google Ads Editor Bulk Upload Template](https://xyzlab.com/google-ads-editor/bulk-upload-template/): Free Google Ads Editor bulk upload template — import-ready tabs for campaigns, ad groups, keywords, and responsive search ads.
 - [Meta Ads Report Template](https://xyzlab.com/meta-ads/report-template/): Free Meta Ads report template for Excel and Google Sheets — weekly and monthly performance tracking.
 - [Google Analytics Report Template](https://xyzlab.com/google-analytics/report-template/): Free Google Analytics report template for Excel and Google Sheets — weekly and monthly website performance tracking.
 - [AI Traffic Report Template](https://xyzlab.com/google-analytics/ai-traffic-report-template/): Free AI referral traffic report template — track sessions from ChatGPT, Claude, Gemini, and other AI sources.
 - [SEO Report Template](https://xyzlab.com/seo/report-template/): Free SEO report template for Excel and Google Sheets — track organic sessions, GSC metrics, and rankings.
+- [Link Building Report Template](https://xyzlab.com/seo/link-building-report-template/): Free link building report template — track requests sent, reply rate, backlinks won, and domain authority.
 - [TikTok Ads Report Template](https://xyzlab.com/tiktok-ads/report-template/): Free TikTok Ads report template for Excel and Google Sheets — track spend, video views, and conversions.
 - [LinkedIn Ads Report Template](https://xyzlab.com/linkedin-ads/report-template/): Free LinkedIn Ads report template for Excel and Google Sheets — weekly and monthly performance tracking.
 - [Pinterest Ads Report Template](https://xyzlab.com/pinterest-ads/report-template/): Free Pinterest Ads report template for Excel and Google Sheets — track spend, impressions, and conversions.
