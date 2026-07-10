@@ -761,10 +761,12 @@
 
   <!-- Report Templates -->
   <url><loc>https://xyzlab.com/google-ads/report-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xyzlab.com/google-ads-editor/bulk-upload-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://xyzlab.com/meta-ads/report-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://xyzlab.com/google-analytics/report-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://xyzlab.com/google-analytics/ai-traffic-report-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://xyzlab.com/seo/report-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xyzlab.com/seo/link-building-report-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://xyzlab.com/tiktok-ads/report-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://xyzlab.com/linkedin-ads/report-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://xyzlab.com/pinterest-ads/report-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
