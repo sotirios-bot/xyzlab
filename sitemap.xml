@@ -774,7 +774,35 @@
 
   <!-- Databases -->
   <url><loc>https://xyzlab.com/vc-angel-investors/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xyzlab.com/vc-angel-investors/usa/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/vc-angel-investors/canada/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/vc-angel-investors/uk/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/vc-angel-investors/australia/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/vc-angel-investors/uae/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/vc-angel-investors/germany/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/vc-angel-investors/israel/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/vc-angel-investors/poland/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/vc-angel-investors/spain/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/vc-angel-investors/france/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/vc-angel-investors/italy/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/vc-angel-investors/singapore/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/vc-angel-investors/hong-kong/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/vc-angel-investors/south-africa/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://xyzlab.com/accelerators-incubators/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xyzlab.com/accelerators-incubators/usa/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/accelerators-incubators/canada/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/accelerators-incubators/uk/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/accelerators-incubators/australia/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/accelerators-incubators/uae/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/accelerators-incubators/germany/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/accelerators-incubators/israel/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/accelerators-incubators/poland/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/accelerators-incubators/spain/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/accelerators-incubators/france/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/accelerators-incubators/italy/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/accelerators-incubators/singapore/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/accelerators-incubators/hong-kong/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://xyzlab.com/accelerators-incubators/south-africa/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
 </urlset>
 
