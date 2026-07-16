@@ -136,9 +136,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 .acc-lock-overlay {
   position: absolute; inset: 0; z-index: 10;
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,.75) 30%, rgba(255,255,255,.97) 55%);
+  background: linear-gradient(to bottom, rgba(255,255,255,.4) 0%, rgba(255,255,255,.95) 30%, rgba(255,255,255,.95) 70%, rgba(255,255,255,.4) 100%);
   display: flex; flex-direction: column; align-items: center;
-  justify-content: flex-end; padding-bottom: 3rem; text-align: center;
+  justify-content: center; text-align: center;
 }
 .acc-lock-icon {
   width: 56px; height: 56px; border-radius: 50%;
@@ -162,7 +162,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .acc-table tbody tr { border-bottom: 1px solid #f1f5f9; }
 .acc-table tbody tr:last-child { border-bottom: none; }
 .acc-table tbody td { padding: .85rem 1rem; color: #334155; }
-.acc-table-blurred tbody tr { filter: blur(7px); user-select: none; pointer-events: none; }
+.acc-table-blurred tbody tr { filter: blur(3px); user-select: none; pointer-events: none; }
 .acc-preview-note { text-align: center; margin-top: 1.25rem; font-size: .82rem; color: #94a3b8; }
 
 /* ── WHO IT'S FOR ── */
@@ -568,41 +568,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="badge badge-secondary">Database Preview</div>
         <h2>1,900+ programmes. <span class="highlight">Every detail locked in.</span></h2>
         <p>Purchase to unlock all records including verified email contacts and direct application links.</p>
-      </div>
-
-      <div class="acc-filter-bar">
-        <select class="acc-filter-select" disabled>
-          <option>All Tiers</option>
-          <option>Tier 1</option>
-          <option>Tier 2</option>
-          <option>Tier 3</option>
-        </select>
-        <select class="acc-filter-select" disabled>
-          <option>All Stages</option>
-          <option>Pre-Idea</option>
-          <option>Pre-Seed</option>
-          <option>Seed</option>
-          <option>Series A</option>
-        </select>
-        <select class="acc-filter-select" disabled>
-          <option>All Regions</option>
-          <option>North America</option>
-          <option>Europe</option>
-          <option>Southeast Asia</option>
-          <option>MENA</option>
-          <option>LATAM</option>
-          <option>Africa</option>
-          <option>Global</option>
-        </select>
-        <select class="acc-filter-select" disabled>
-          <option>All Focus Areas</option>
-          <option>SaaS / B2B</option>
-          <option>Fintech</option>
-          <option>Deep Tech / AI</option>
-          <option>Health / BioTech</option>
-          <option>Climate / Impact</option>
-          <option>Generalist</option>
-        </select>
       </div>
 
       <div class="acc-table-wrap">
