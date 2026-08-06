@@ -164,10 +164,10 @@ ul { list-style: none; }
   width: auto;
   display: block;
 }
-/* Nav logo — slightly bigger, no blend mode on dark bg */
+/* Nav logo on dark bg — use transparent PNG so no invert needed */
 .nav-wrapper .logo-img {
   height: 46px;
-  filter: brightness(0) invert(1);
+  content: url('/logo.png');
 }
 /* Fallback text (hidden when image loads) */
 .logo-xyz { color: var(--primary); display: none; }
@@ -436,7 +436,7 @@ ul { list-style: none; }
 .trusted-stat-number {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 900;
-  color: var(--primary);
+  color: var(--white);
   line-height: 1;
   margin-bottom: .35rem;
 }
@@ -444,7 +444,7 @@ ul { list-style: none; }
 .trusted-stat-label {
   font-size: .9rem;
   font-weight: 600;
-  color: rgba(255,255,255,.55);
+  color: rgba(255,255,255,.75);
   text-transform: uppercase;
   letter-spacing: .06em;
 }
@@ -867,14 +867,14 @@ a.course-icon:hover {
 }
 .contact-card p {
   font-size: .93rem;
-  color: rgba(255,255,255,.65);
+  color: var(--white);
   line-height: 1.6;
 }
 .contact .section-header h2 { color: var(--white); }
-.contact .section-header p { color: rgba(255,255,255,.65); }
+.contact .section-header p { color: rgba(255,255,255,.75); }
 .contact .badge { background: rgba(255,255,255,.1); color: var(--white); }
-.contact-card a { color: var(--primary); font-weight: 500; }
-.contact-card a:hover { opacity: .8; }
+.contact-card a { color: var(--white); font-weight: 500; }
+.contact-card a:hover { color: var(--primary); }
 
 /* ============================================================
    FOOTER
