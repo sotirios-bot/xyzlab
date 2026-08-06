@@ -4,7 +4,7 @@
 
 /* ---------- Course Hero ---------- */
 .course-hero {
-  background: linear-gradient(135deg, #f0fdfb 0%, #fffdf4 100%);
+  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%);
   padding: 5rem 0 4rem;
   overflow: hidden;
 }
@@ -22,7 +22,7 @@
   gap: .4rem;
   font-size: .85rem;
   font-weight: 600;
-  color: var(--mid);
+  color: rgba(255,255,255,.55);
   transition: color var(--transition), gap var(--transition);
   margin-bottom: .5rem;
 }
@@ -34,6 +34,23 @@
   line-height: 1.08;
   letter-spacing: -.03em;
   margin: .5rem 0 1.25rem;
+  color: var(--white);
+}
+.course-hero-text > p,
+.course-hero-text .hero-sub {
+  color: rgba(255,255,255,.7);
+}
+.course-hero .btn-outline {
+  color: var(--white);
+  border-color: rgba(255,255,255,.4);
+}
+.course-hero .btn-outline:hover {
+  background: rgba(255,255,255,.1);
+  border-color: var(--white);
+}
+.course-hero .badge {
+  background: rgba(255,255,255,.12);
+  color: var(--white);
 }
 
 .course-meta-row {
