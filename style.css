@@ -82,15 +82,8 @@ ul { list-style: none; }
 }
 .btn-outline:hover { background: var(--primary-light); }
 
-/* Outline button on dark backgrounds */
-.video-tutorial-hero .btn-outline {
-  color: var(--white);
-  border-color: rgba(255,255,255,.4);
-}
-.video-tutorial-hero .btn-outline:hover {
-  background: rgba(255,255,255,.1);
-  border-color: var(--white);
-}
+/* Outline button on dark backgrounds — removed (hero is now white) */
+/* removed — hero now white */
 
 .btn-white {
   background: var(--white);
@@ -164,10 +157,10 @@ ul { list-style: none; }
   width: auto;
   display: block;
 }
-/* Nav logo on dark bg — use transparent PNG so no invert needed */
+/* Nav logo on dark bg — transparent PNG blends into nav */
 .nav-wrapper .logo-img {
   height: 46px;
-  content: url('/logo.png');
+  content: url('/xyz-lab-logo.png');
 }
 /* Fallback text (hidden when image loads) */
 .logo-xyz { color: var(--primary); display: none; }
@@ -716,6 +709,15 @@ a.course-icon:hover {
 .inst-schools span { font-size: .88rem; color: rgba(255,255,255,.6); font-weight: 500; }
 .inst-schools span:not(:last-child)::after { content: ' ·'; color: rgba(255,255,255,.25); margin-left: .3rem; }
 
+/* Instructor section heading */
+.instructor-section-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--dark);
+  margin: 2.5rem 0 1rem;
+  letter-spacing: -.02em;
+}
+
 /* Tutorial pages — instructor strip inside coaching section */
 .instructor-strip {
   display: flex;
@@ -1108,7 +1110,8 @@ a.course-icon:hover {
    PILLAR PAGES  (/google-ads/, /meta-ads/, etc.)
    ============================================================ */
 .pillar-hero {
-  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%);
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
   padding: 5rem 0 4rem;
 }
 .pillar-hero h1 {
@@ -1118,32 +1121,26 @@ a.course-icon:hover {
   letter-spacing: -.03em;
   margin: .5rem 0 1.25rem;
   max-width: 720px;
-  color: var(--white);
+  color: var(--dark);
 }
 .pillar-hero .hero-sub {
   font-size: 1.1rem;
-  color: rgba(255,255,255,.7);
+  color: var(--mid);
   max-width: 580px;
   margin-bottom: 2rem;
 }
-.pillar-hero .badge {
-  background: rgba(255,255,255,.12);
-  color: var(--white);
-}
+.pillar-hero .badge { /* inherits default badge style */ }
 .pillar-hero .btn-outline {
-  color: var(--white);
-  border-color: rgba(255,255,255,.4);
-}
-.pillar-hero .btn-outline:hover {
-  background: rgba(255,255,255,.1);
-  border-color: var(--white);
+  color: var(--dark);
+  border-color: var(--border);
 }
 
 /* ============================================================
    VIDEO TUTORIAL PAGE  (404 / thank-you hero + tutorial pages)
    ============================================================ */
 .video-tutorial-hero {
-  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%);
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
   padding: 4rem 0 0;
   overflow: hidden;
 }
@@ -1159,17 +1156,17 @@ a.course-icon:hover {
   line-height: 1.1;
   letter-spacing: -.03em;
   margin: 1rem 0 1.25rem;
-  color: var(--white);
+  color: var(--dark);
 }
 .tutorial-hero-inner .hero-sub {
   font-size: 1.1rem;
-  color: rgba(255,255,255,.7);
+  color: var(--mid);
   max-width: 620px;
   margin: 0 auto;
 }
-.tutorial-hero-inner .breadcrumb a { color: rgba(255,255,255,.55); }
-.tutorial-hero-inner .breadcrumb .breadcrumb-sep { color: rgba(255,255,255,.3); }
-.tutorial-hero-inner .breadcrumb .breadcrumb-current { color: rgba(255,255,255,.8); }
+.tutorial-hero-inner .breadcrumb a { color: var(--mid); }
+.tutorial-hero-inner .breadcrumb .breadcrumb-sep { color: var(--border); }
+.tutorial-hero-inner .breadcrumb .breadcrumb-current { color: var(--dark); }
 
 @media (max-width: 700px) {
   .video-tutorial-hero { padding: 3rem 0 0; }
