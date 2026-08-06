@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -296,81 +314,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about the Target Impression Share bid strategy in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What does Target Impression Share do in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Target Impression Share</strong> is an automated bid strategy that sets your bids to show your ads a specific percentage of the time in your chosen position on the search results page. Instead of optimising for conversions or clicks, Google adjusts your CPC bids to hit your impression share target — making it ideal for campaigns focused on <strong>brand visibility or competitive presence</strong>.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between the three placement options?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The three options determine where on the results page Google aims to show your ad: <strong>Anywhere on results page</strong> targets any ad position and is the most flexible; <strong>Top of results page (positions 1–4)</strong> targets the first block of ads above organic results; <strong>Absolute top of results page (position 1)</strong> targets the very first ad slot and typically requires the highest bids. More restrictive placements give Google less room to find impressions, so cost per impression tends to rise as you move down the list.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What impression share percentage should I target?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>It depends on your goal and budget. For <strong>brand campaigns</strong> (where you own the keywords), targeting 90–100% absolute top impression share is common and cost-effective because competition is low. For <strong>competitive campaigns</strong>, targeting 80–90% top impression share is more realistic — aiming for 100% in a competitive space can drive CPCs up dramatically with diminishing returns. Start with a moderate target and review CPC impact before increasing.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Should I set a maximum CPC bid limit with Target Impression Share?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, setting a <strong>maximum CPC bid limit</strong> is strongly recommended — without one, Google can set very high bids to chase your impression share target, especially in competitive auctions. Set the cap based on your acceptable cost per click. Note that if your max CPC is too low, Google may not be able to reach your impression share target, so monitor Impression Share Lost (due to Rank) to find the right balance.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I use Target Impression Share for non-brand campaigns?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, but with caution. For <strong>competitor campaigns</strong> (bidding on a competitor's branded keywords), Target Impression Share can help you consistently appear alongside competitor searches. However, for general non-brand keywords where you want leads or sales, it is usually better to use conversion-focused strategies like Target CPA or Target ROAS — visibility alone does not guarantee business results.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How does Target Impression Share differ from Maximise Clicks?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Maximise Clicks</strong> optimises bids to get as many clicks as possible within your budget — it prioritises traffic volume. <strong>Target Impression Share</strong> optimises bids to show your ad in a specific position a target percentage of the time — it prioritises visibility and presence. Use Maximise Clicks when you want volume and have no conversion tracking; use Target Impression Share when consistent placement (especially for brand terms) matters more than raw click volume.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -428,21 +372,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about the Target Impression Share bid strategy in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What does Target Impression Share do in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Target Impression Share</strong> is an automated bid strategy that sets your bids to show your ads a specific percentage of the time in your chosen position on the search results page. Instead of optimising for conversions or clicks, Google adjusts your CPC bids to hit your impression share target — making it ideal for campaigns focused on <strong>brand visibility or competitive presence</strong>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between the three placement options?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The three options determine where on the results page Google aims to show your ad: <strong>Anywhere on results page</strong> targets any ad position and is the most flexible; <strong>Top of results page (positions 1–4)</strong> targets the first block of ads above organic results; <strong>Absolute top of results page (position 1)</strong> targets the very first ad slot and typically requires the highest bids. More restrictive placements give Google less room to find impressions, so cost per impression tends to rise as you move down the list.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What impression share percentage should I target?</span>
+          </div>
+          <div class="faq-answer">
+            <p>It depends on your goal and budget. For <strong>brand campaigns</strong> (where you own the keywords), targeting 90–100% absolute top impression share is common and cost-effective because competition is low. For <strong>competitive campaigns</strong>, targeting 80–90% top impression share is more realistic — aiming for 100% in a competitive space can drive CPCs up dramatically with diminishing returns. Start with a moderate target and review CPC impact before increasing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Should I set a maximum CPC bid limit with Target Impression Share?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, setting a <strong>maximum CPC bid limit</strong> is strongly recommended — without one, Google can set very high bids to chase your impression share target, especially in competitive auctions. Set the cap based on your acceptable cost per click. Note that if your max CPC is too low, Google may not be able to reach your impression share target, so monitor Impression Share Lost (due to Rank) to find the right balance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I use Target Impression Share for non-brand campaigns?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, but with caution. For <strong>competitor campaigns</strong> (bidding on a competitor's branded keywords), Target Impression Share can help you consistently appear alongside competitor searches. However, for general non-brand keywords where you want leads or sales, it is usually better to use conversion-focused strategies like Target CPA or Target ROAS — visibility alone does not guarantee business results.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How does Target Impression Share differ from Maximise Clicks?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Maximise Clicks</strong> optimises bids to get as many clicks as possible within your budget — it prioritises traffic volume. <strong>Target Impression Share</strong> optimises bids to show your ad in a specific position a target percentage of the time — it prioritises visibility and presence. Use Maximise Clicks when you want volume and have no conversion tracking; use Target Impression Share when consistent placement (especially for brand terms) matters more than raw click volume.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

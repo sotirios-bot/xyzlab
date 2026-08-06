@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -289,81 +307,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with ChatGPT?</h3>
           <p>Book a 90-minute training session and we'll build your AI-powered workflow together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about archived chats in ChatGPT.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What does archiving a chat in ChatGPT do?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Archiving a chat <strong>removes it from your sidebar</strong> without deleting it. The conversation and all its content are fully preserved — it just no longer appears in your main chat list. Archived chats are stored indefinitely and can be unarchived and continued at any time. It's useful for keeping your sidebar tidy without losing old conversations.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I archive a chat in the first place?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>To archive a chat, hover over it in the sidebar and click the <strong>three-dot menu (⋯)</strong> that appears, then select <strong>Archive</strong>. The conversation disappears from the sidebar immediately but is safely stored in the Archived Chats section of Settings → Data controls, where you can retrieve it any time.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is there a difference between archiving and deleting a chat?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. <strong>Archiving</strong> hides the chat from your sidebar but keeps all content intact and retrievable. <strong>Deleting</strong> permanently removes the conversation — it cannot be recovered. If you are unsure whether you will need a conversation again, archive it rather than delete it.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I search through my archived chats?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Inside the Archived Chats manager (Settings → Data controls → Manage), chats are listed with their titles and dates. You can scroll through the list to find the one you need. To search within an archived conversation's content, first unarchive it so it reappears in the sidebar, then use the sidebar search function.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens after I unarchive a chat?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Once unarchived, the conversation reappears in your <strong>main sidebar</strong> just as it was — all messages, context, and history are fully restored. You can continue the conversation, share it, rename it, or re-archive it again at any time. The unarchive action is instant and does not require a page refresh.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I bulk-delete all archived chats at once?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. In the Archived Chats manager there is a <strong>Delete all</strong> option that removes every archived conversation permanently in one action. Use this with caution — deleted chats cannot be recovered. If you only want to clear some chats, open each one individually and use the delete option for that specific conversation rather than the bulk delete.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -421,21 +365,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about archived chats in ChatGPT.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What does archiving a chat in ChatGPT do?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Archiving a chat <strong>removes it from your sidebar</strong> without deleting it. The conversation and all its content are fully preserved — it just no longer appears in your main chat list. Archived chats are stored indefinitely and can be unarchived and continued at any time. It's useful for keeping your sidebar tidy without losing old conversations.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I archive a chat in the first place?</span>
+          </div>
+          <div class="faq-answer">
+            <p>To archive a chat, hover over it in the sidebar and click the <strong>three-dot menu (⋯)</strong> that appears, then select <strong>Archive</strong>. The conversation disappears from the sidebar immediately but is safely stored in the Archived Chats section of Settings → Data controls, where you can retrieve it any time.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is there a difference between archiving and deleting a chat?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. <strong>Archiving</strong> hides the chat from your sidebar but keeps all content intact and retrievable. <strong>Deleting</strong> permanently removes the conversation — it cannot be recovered. If you are unsure whether you will need a conversation again, archive it rather than delete it.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I search through my archived chats?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Inside the Archived Chats manager (Settings → Data controls → Manage), chats are listed with their titles and dates. You can scroll through the list to find the one you need. To search within an archived conversation's content, first unarchive it so it reappears in the sidebar, then use the sidebar search function.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens after I unarchive a chat?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Once unarchived, the conversation reappears in your <strong>main sidebar</strong> just as it was — all messages, context, and history are fully restored. You can continue the conversation, share it, rename it, or re-archive it again at any time. The unarchive action is instant and does not require a page refresh.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I bulk-delete all archived chats at once?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. In the Archived Chats manager there is a <strong>Delete all</strong> option that removes every archived conversation permanently in one action. Use this with caution — deleted chats cannot be recovered. If you only want to clear some chats, open each one individually and use the delete option for that specific conversation rather than the bulk delete.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

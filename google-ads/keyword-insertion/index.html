@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -302,81 +320,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about Keyword Insertion in Google Ads Responsive Search Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is Keyword Insertion in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Keyword Insertion</strong> is a dynamic feature in Google Ads that automatically replaces a placeholder in your ad headline or description with the user's actual search query. It is added using the syntax <code>{KeyWord:Default Text}</code>. When a user searches for something that matches your keyword list, Google inserts the matching keyword into your ad — making the ad appear highly relevant to that specific search without requiring you to write a separate ad for every keyword.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What does the Default text in Keyword Insertion do?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>Default text</strong> is the fallback copy that appears when the user's search query cannot be inserted — either because it is too long to fit within the character limit (30 characters for headlines, 90 for descriptions) or because the keyword would cause the ad to exceed the limit. Always choose a default that reads naturally on its own and is relevant to your ad group's theme. For example, <code>{KeyWord:Running Shoes}</code> — if the query fits, it replaces the placeholder; if not, "Running Shoes" is shown.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What capitalisation option should I choose for Keyword Insertion?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>There are three options: <strong>Title Case</strong> (first letter of every word capitalised), <strong>Sentence case</strong> (only the first word capitalised), and <strong>lower case</strong> (no capitalisation). <strong>Title Case</strong> is generally recommended because it matches the standard appearance of Google Search ad headlines and looks the most polished. The syntax reflects your choice — <code>{KeyWord:}</code> for Title Case, <code>{Keyword:}</code> for Sentence case, and <code>{keyword:}</code> for lower case.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I use Keyword Insertion in descriptions as well as headlines?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Keyword Insertion can be added to both <strong>headlines</strong> (up to 30 characters) and <strong>description lines</strong> (up to 90 characters). Descriptions allow more space, so fewer queries will fall back to the default text. However, keyword-inserted descriptions can sound unnatural if the inserted query is a short or generic term. Test both placements and monitor your ad strength and CTR to find what works best for your campaign.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is Keyword Insertion the same as Dynamic Search Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No — they are different features. <strong>Keyword Insertion</strong> is a manual tag you add to your existing RSA headlines or descriptions to dynamically swap in a matching keyword from your keyword list. <strong>Dynamic Search Ads (DSAs)</strong> are a separate campaign/ad type where Google automatically generates headlines by crawling your website content. Keyword Insertion gives you more control; DSAs are more automated and can surface long-tail queries you haven't explicitly targeted.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Are there any risks or downsides to using Keyword Insertion?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — Keyword Insertion can produce awkward or even inappropriate ad copy if your keyword list contains strange combinations, brand names, or very short/generic terms. For example, a keyword like "cheap" could be inserted verbatim into your headline. To avoid this, use Keyword Insertion in <strong>tightly themed ad groups</strong> where all keywords are closely related to the same product or service, and always preview your ads to check for edge cases before publishing.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -434,21 +378,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about Keyword Insertion in Google Ads Responsive Search Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is Keyword Insertion in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Keyword Insertion</strong> is a dynamic feature in Google Ads that automatically replaces a placeholder in your ad headline or description with the user's actual search query. It is added using the syntax <code>{KeyWord:Default Text}</code>. When a user searches for something that matches your keyword list, Google inserts the matching keyword into your ad — making the ad appear highly relevant to that specific search without requiring you to write a separate ad for every keyword.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What does the Default text in Keyword Insertion do?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>Default text</strong> is the fallback copy that appears when the user's search query cannot be inserted — either because it is too long to fit within the character limit (30 characters for headlines, 90 for descriptions) or because the keyword would cause the ad to exceed the limit. Always choose a default that reads naturally on its own and is relevant to your ad group's theme. For example, <code>{KeyWord:Running Shoes}</code> — if the query fits, it replaces the placeholder; if not, "Running Shoes" is shown.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What capitalisation option should I choose for Keyword Insertion?</span>
+          </div>
+          <div class="faq-answer">
+            <p>There are three options: <strong>Title Case</strong> (first letter of every word capitalised), <strong>Sentence case</strong> (only the first word capitalised), and <strong>lower case</strong> (no capitalisation). <strong>Title Case</strong> is generally recommended because it matches the standard appearance of Google Search ad headlines and looks the most polished. The syntax reflects your choice — <code>{KeyWord:}</code> for Title Case, <code>{Keyword:}</code> for Sentence case, and <code>{keyword:}</code> for lower case.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I use Keyword Insertion in descriptions as well as headlines?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Keyword Insertion can be added to both <strong>headlines</strong> (up to 30 characters) and <strong>description lines</strong> (up to 90 characters). Descriptions allow more space, so fewer queries will fall back to the default text. However, keyword-inserted descriptions can sound unnatural if the inserted query is a short or generic term. Test both placements and monitor your ad strength and CTR to find what works best for your campaign.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is Keyword Insertion the same as Dynamic Search Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No — they are different features. <strong>Keyword Insertion</strong> is a manual tag you add to your existing RSA headlines or descriptions to dynamically swap in a matching keyword from your keyword list. <strong>Dynamic Search Ads (DSAs)</strong> are a separate campaign/ad type where Google automatically generates headlines by crawling your website content. Keyword Insertion gives you more control; DSAs are more automated and can surface long-tail queries you haven't explicitly targeted.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Are there any risks or downsides to using Keyword Insertion?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — Keyword Insertion can produce awkward or even inappropriate ad copy if your keyword list contains strange combinations, brand names, or very short/generic terms. For example, a keyword like "cheap" could be inserted verbatim into your headline. To avoid this, use Keyword Insertion in <strong>tightly themed ad groups</strong> where all keywords are closely related to the same product or service, and always preview your ads to check for edge cases before publishing.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

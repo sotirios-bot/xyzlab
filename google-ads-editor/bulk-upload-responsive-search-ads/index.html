@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -319,81 +337,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads Editor?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads Editor workflow together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about bulk uploading responsive search ads in Google Ads Editor.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>How many headlines and descriptions can a responsive search ad have?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A responsive search ad supports up to <strong>15 headlines</strong> (each up to 30 characters) and up to <strong>4 descriptions</strong> (each up to 90 characters). Google automatically tests combinations and shows the best-performing mix. You must provide at least 3 headlines and 2 descriptions. In your spreadsheet, label the columns <strong>Headline 1</strong> through <strong>Headline 15</strong> and <strong>Description 1</strong> through <strong>Description 4</strong>.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to include all 15 headlines in my spreadsheet?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No — the minimum is <strong>3 headlines</strong> and <strong>2 descriptions</strong>, but providing more gives Google's machine learning more material to test. Google recommends at least 5–10 headlines and 2–4 descriptions to achieve a "Good" or "Excellent" ad strength rating. Simply leave unused headline or description columns blank in your spreadsheet.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I pin headlines or descriptions to specific positions when bulk uploading?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Google Ads Editor supports pinning via a column annotation. In your spreadsheet, append the position pin to the headline column name — for example, <strong>Headline 1 (pinned to position 1)</strong>. This ensures that specific headlines always appear in position 1, 2, or 3. Use pinning sparingly, as it restricts Google's ability to optimise ad combinations.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why do I need to select "my data includes columns for campaigns and/or ad groups"?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>This option tells Google Ads Editor to read the <strong>Campaign</strong> and <strong>Ad Group</strong> columns from your spreadsheet and use them to place each ad into the correct ad group. Without it, Editor doesn't know which ad group the ads belong to and may prompt you to assign them manually. Always select this option when your data spans multiple campaigns or ad groups.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will bulk uploading RSAs overwrite my existing ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No — if an RSA with the same final URL and headline combination doesn't already exist, Editor will create a <strong>new ad</strong>. Existing ads in the same ad group are left untouched. If you want to replace existing ads, you must pause or remove them separately before or after the upload. Always review changes in Editor before posting them live.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between bulk uploading RSAs and using the Google Ads UI?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The Google Ads UI requires you to create each RSA one at a time, which is very slow for large accounts. Google Ads Editor lets you build all your ads in a spreadsheet and import hundreds of RSAs in a single operation — making it far more efficient for large-scale campaigns, new account builds, or seasonal ad refreshes.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -451,21 +395,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about bulk uploading responsive search ads in Google Ads Editor.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How many headlines and descriptions can a responsive search ad have?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A responsive search ad supports up to <strong>15 headlines</strong> (each up to 30 characters) and up to <strong>4 descriptions</strong> (each up to 90 characters). Google automatically tests combinations and shows the best-performing mix. You must provide at least 3 headlines and 2 descriptions. In your spreadsheet, label the columns <strong>Headline 1</strong> through <strong>Headline 15</strong> and <strong>Description 1</strong> through <strong>Description 4</strong>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to include all 15 headlines in my spreadsheet?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No — the minimum is <strong>3 headlines</strong> and <strong>2 descriptions</strong>, but providing more gives Google's machine learning more material to test. Google recommends at least 5–10 headlines and 2–4 descriptions to achieve a "Good" or "Excellent" ad strength rating. Simply leave unused headline or description columns blank in your spreadsheet.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I pin headlines or descriptions to specific positions when bulk uploading?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Google Ads Editor supports pinning via a column annotation. In your spreadsheet, append the position pin to the headline column name — for example, <strong>Headline 1 (pinned to position 1)</strong>. This ensures that specific headlines always appear in position 1, 2, or 3. Use pinning sparingly, as it restricts Google's ability to optimise ad combinations.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why do I need to select "my data includes columns for campaigns and/or ad groups"?</span>
+          </div>
+          <div class="faq-answer">
+            <p>This option tells Google Ads Editor to read the <strong>Campaign</strong> and <strong>Ad Group</strong> columns from your spreadsheet and use them to place each ad into the correct ad group. Without it, Editor doesn't know which ad group the ads belong to and may prompt you to assign them manually. Always select this option when your data spans multiple campaigns or ad groups.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will bulk uploading RSAs overwrite my existing ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No — if an RSA with the same final URL and headline combination doesn't already exist, Editor will create a <strong>new ad</strong>. Existing ads in the same ad group are left untouched. If you want to replace existing ads, you must pause or remove them separately before or after the upload. Always review changes in Editor before posting them live.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between bulk uploading RSAs and using the Google Ads UI?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The Google Ads UI requires you to create each RSA one at a time, which is very slow for large accounts. Google Ads Editor lets you build all your ads in a spreadsheet and import hundreds of RSAs in a single operation — making it far more efficient for large-scale campaigns, new account builds, or seasonal ad refreshes.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

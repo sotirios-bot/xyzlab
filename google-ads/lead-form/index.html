@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -272,81 +290,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about Google Ads Lead Form Assets.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a Lead Form Asset in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A Lead Form Asset is a form that appears directly within your Google ad, allowing users to submit their contact details <strong>without leaving Google</strong>. It removes the need for a landing page and reduces friction in the lead capture process, which can significantly improve conversion rates on mobile.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Which campaign types support Lead Form Assets?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Lead Form Assets are supported on <strong>Search, Display, Discovery (Demand Gen), and Video campaigns</strong>. They are not available for Shopping campaigns. You can apply the asset at account or campaign level depending on how targeted you want the form to be.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What information can I collect with a Lead Form?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>By default you can collect <strong>name, email, phone number, and postal code</strong>. You can also add up to 10 custom questions — either multiple choice or open-ended — to qualify leads before they submit. Keep the form short: fewer fields generally means more submissions.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I download the leads collected?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Leads can be downloaded as a <strong>CSV file directly from the Assets section</strong> in Google Ads. For automated delivery, you can connect the Lead Form to a CRM or Google Sheets using a webhook integration — available natively for Salesforce, HubSpot, and others, or via Zapier for custom connections.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I use a Lead Form and a landing page at the same time?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. When a Lead Form Asset is active, users can choose to either <strong>submit the form directly</strong> or click through to your landing page as usual. The form adds an additional conversion path without replacing your existing one — useful for testing which path converts better.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does a Lead Form affect my Quality Score?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Lead Form Assets do not directly impact Quality Score, which is calculated at the keyword and ad level. However, if form submissions improve your <strong>overall conversion rate</strong>, Google's smart bidding strategies (like Target CPA) will optimise more effectively over time, which can indirectly lower your CPCs.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -404,21 +348,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about Google Ads Lead Form Assets.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a Lead Form Asset in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A Lead Form Asset is a form that appears directly within your Google ad, allowing users to submit their contact details <strong>without leaving Google</strong>. It removes the need for a landing page and reduces friction in the lead capture process, which can significantly improve conversion rates on mobile.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Which campaign types support Lead Form Assets?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Lead Form Assets are supported on <strong>Search, Display, Discovery (Demand Gen), and Video campaigns</strong>. They are not available for Shopping campaigns. You can apply the asset at account or campaign level depending on how targeted you want the form to be.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What information can I collect with a Lead Form?</span>
+          </div>
+          <div class="faq-answer">
+            <p>By default you can collect <strong>name, email, phone number, and postal code</strong>. You can also add up to 10 custom questions — either multiple choice or open-ended — to qualify leads before they submit. Keep the form short: fewer fields generally means more submissions.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I download the leads collected?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Leads can be downloaded as a <strong>CSV file directly from the Assets section</strong> in Google Ads. For automated delivery, you can connect the Lead Form to a CRM or Google Sheets using a webhook integration — available natively for Salesforce, HubSpot, and others, or via Zapier for custom connections.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I use a Lead Form and a landing page at the same time?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. When a Lead Form Asset is active, users can choose to either <strong>submit the form directly</strong> or click through to your landing page as usual. The form adds an additional conversion path without replacing your existing one — useful for testing which path converts better.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does a Lead Form affect my Quality Score?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Lead Form Assets do not directly impact Quality Score, which is calculated at the keyword and ad level. However, if form submissions improve your <strong>overall conversion rate</strong>, Google's smart bidding strategies (like Target CPA) will optimise more effectively over time, which can indirectly lower your CPCs.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

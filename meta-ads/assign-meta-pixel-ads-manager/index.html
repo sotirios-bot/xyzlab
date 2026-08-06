@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -311,81 +329,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll set up your pixel tracking together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about assigning a Meta Pixel (Dataset) to a Meta Ads account.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Why do I need to assign my Meta Pixel to my ad account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A Meta Pixel (Dataset) must be explicitly assigned to an ad account before it can be used for conversion tracking or creating custom audiences in that account. Without the assignment, the pixel data is collected but cannot be used to optimise campaigns or measure conversions. This is managed at the Business Manager level under <strong>Business Settings → Data Sources → Datasets</strong>.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between a Meta Pixel and a Dataset?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Meta rebranded the Meta Pixel as a <strong>Dataset</strong> to reflect its expanded role — a Dataset can receive data not only from the browser pixel but also from server-side events (Conversions API), mobile app events, and offline conversions, all in one unified data source. The pixel code you install on your website still works the same way; the Dataset is simply the container that holds all these event data streams together.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I assign the same Meta Pixel to multiple ad accounts?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. A single Meta Pixel (Dataset) can be assigned to multiple ad accounts within the same Business Manager. This is useful for agencies managing several clients from one business portfolio, or businesses running ads from different ad accounts but tracking conversions on a single website. Repeat the "Assign assets" process for each additional ad account you want to connect.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why can't I see the Datasets option in Business Settings?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>There are two common reasons: you may not have <strong>Admin</strong> access to the Business Manager — only admins can manage data sources and assign them to ad accounts. Alternatively, if no pixel has been created yet, the Datasets section may appear empty. Make sure you are logged into the correct Business Manager account and that a pixel has been created before attempting the assignment.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I check that my Meta Pixel is correctly assigned and firing?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>After assigning the pixel, go to <strong>Events Manager</strong> in Meta Business Manager and select your Dataset. The <strong>Overview</strong> tab shows recent event activity — if the pixel is installed on your site and assigned correctly, you should see events appearing here. You can also install the <strong>Meta Pixel Helper</strong> Chrome extension to verify the pixel is firing on your website pages in real time.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can an agency assign a client's Meta Pixel to their own ad account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, but only if the agency has been granted access to the client's Business Manager and has at least <strong>Admin</strong> permissions on it. The pixel must be owned by (or shared with) the Business Manager that contains the ad account. Best practice is for the client to own their pixel within their own Business Manager, and then share access to the agency — this ensures the client retains ownership of their data.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -443,21 +387,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about assigning a Meta Pixel (Dataset) to a Meta Ads account.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why do I need to assign my Meta Pixel to my ad account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A Meta Pixel (Dataset) must be explicitly assigned to an ad account before it can be used for conversion tracking or creating custom audiences in that account. Without the assignment, the pixel data is collected but cannot be used to optimise campaigns or measure conversions. This is managed at the Business Manager level under <strong>Business Settings → Data Sources → Datasets</strong>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between a Meta Pixel and a Dataset?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Meta rebranded the Meta Pixel as a <strong>Dataset</strong> to reflect its expanded role — a Dataset can receive data not only from the browser pixel but also from server-side events (Conversions API), mobile app events, and offline conversions, all in one unified data source. The pixel code you install on your website still works the same way; the Dataset is simply the container that holds all these event data streams together.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I assign the same Meta Pixel to multiple ad accounts?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. A single Meta Pixel (Dataset) can be assigned to multiple ad accounts within the same Business Manager. This is useful for agencies managing several clients from one business portfolio, or businesses running ads from different ad accounts but tracking conversions on a single website. Repeat the "Assign assets" process for each additional ad account you want to connect.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why can't I see the Datasets option in Business Settings?</span>
+          </div>
+          <div class="faq-answer">
+            <p>There are two common reasons: you may not have <strong>Admin</strong> access to the Business Manager — only admins can manage data sources and assign them to ad accounts. Alternatively, if no pixel has been created yet, the Datasets section may appear empty. Make sure you are logged into the correct Business Manager account and that a pixel has been created before attempting the assignment.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I check that my Meta Pixel is correctly assigned and firing?</span>
+          </div>
+          <div class="faq-answer">
+            <p>After assigning the pixel, go to <strong>Events Manager</strong> in Meta Business Manager and select your Dataset. The <strong>Overview</strong> tab shows recent event activity — if the pixel is installed on your site and assigned correctly, you should see events appearing here. You can also install the <strong>Meta Pixel Helper</strong> Chrome extension to verify the pixel is firing on your website pages in real time.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can an agency assign a client's Meta Pixel to their own ad account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, but only if the agency has been granted access to the client's Business Manager and has at least <strong>Admin</strong> permissions on it. The pixel must be owned by (or shared with) the Business Manager that contains the ad account. Best practice is for the client to own their pixel within their own Business Manager, and then share access to the agency — this ensures the client retains ownership of their data.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

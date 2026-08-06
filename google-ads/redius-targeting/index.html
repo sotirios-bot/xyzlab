@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -304,81 +322,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about radius targeting in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is radius targeting in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Radius targeting (also called proximity targeting) lets you show your ads to people within a set distance from a specific address or point on a map. You define the centre point (e.g., your business address) and the radius (e.g., 10 km), and Google will only serve your ads to users located — or regularly in — that zone. It's ideal for local businesses that want to reach nearby customers.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the minimum and maximum radius I can set?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google Ads allows a minimum radius of <strong>1 km (or 1 mile)</strong> and a maximum of <strong>500 miles (approximately 800 km)</strong>. For very local businesses like restaurants or clinics, a radius of 5–20 km is typically most effective. Larger radii are better for service-area businesses or businesses that serve a wider geographic region.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I add multiple radius targets to a single campaign?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You can add as many radius targets as needed — for example, targeting a 10 km radius around each of your store locations. You can also mix radius targeting with city or region targeting within the same campaign. Each location target is additive: your ads will show to users in any of the defined areas.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between radius targeting and city targeting?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>City targeting</strong> targets an entire city or metropolitan area as defined by Google — the boundary follows administrative lines and can be much larger than expected. <strong>Radius targeting</strong> is a precise circle around a specific address, regardless of administrative boundaries. Radius targeting gives you more control over the exact coverage area, which is especially useful in dense urban areas where a city-level target might be too broad.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does radius targeting only reach people physically in the area?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>It depends on your <strong>Location Options</strong> setting. The default is <strong>Presence or interest</strong>, which can include users who are searching for your targeted area even if they're physically elsewhere (e.g., someone in another city searching for restaurants in your area). If you only want to reach people physically present in the radius, change the setting to <strong>Presence</strong> only in Campaign Settings → Locations → Location Options.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I set bid adjustments for my radius target?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Once a radius target is added to your campaign, you can apply a <strong>bid adjustment</strong> (increase or decrease) to increase or reduce how aggressively you bid for users within that radius. For example, you could add a +20% bid adjustment for users within 2 km of your store. This is useful when you have both a tight local radius and a broader city or country target and want to prioritise the most relevant zone.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -436,21 +380,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about radius targeting in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is radius targeting in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Radius targeting (also called proximity targeting) lets you show your ads to people within a set distance from a specific address or point on a map. You define the centre point (e.g., your business address) and the radius (e.g., 10 km), and Google will only serve your ads to users located — or regularly in — that zone. It's ideal for local businesses that want to reach nearby customers.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the minimum and maximum radius I can set?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google Ads allows a minimum radius of <strong>1 km (or 1 mile)</strong> and a maximum of <strong>500 miles (approximately 800 km)</strong>. For very local businesses like restaurants or clinics, a radius of 5–20 km is typically most effective. Larger radii are better for service-area businesses or businesses that serve a wider geographic region.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I add multiple radius targets to a single campaign?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can add as many radius targets as needed — for example, targeting a 10 km radius around each of your store locations. You can also mix radius targeting with city or region targeting within the same campaign. Each location target is additive: your ads will show to users in any of the defined areas.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between radius targeting and city targeting?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>City targeting</strong> targets an entire city or metropolitan area as defined by Google — the boundary follows administrative lines and can be much larger than expected. <strong>Radius targeting</strong> is a precise circle around a specific address, regardless of administrative boundaries. Radius targeting gives you more control over the exact coverage area, which is especially useful in dense urban areas where a city-level target might be too broad.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does radius targeting only reach people physically in the area?</span>
+          </div>
+          <div class="faq-answer">
+            <p>It depends on your <strong>Location Options</strong> setting. The default is <strong>Presence or interest</strong>, which can include users who are searching for your targeted area even if they're physically elsewhere (e.g., someone in another city searching for restaurants in your area). If you only want to reach people physically present in the radius, change the setting to <strong>Presence</strong> only in Campaign Settings → Locations → Location Options.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I set bid adjustments for my radius target?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Once a radius target is added to your campaign, you can apply a <strong>bid adjustment</strong> (increase or decrease) to increase or reduce how aggressively you bid for users within that radius. For example, you could add a +20% bid adjustment for users within 2 km of your store. This is useful when you have both a tight local radius and a broader city or country target and want to prioritise the most relevant zone.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

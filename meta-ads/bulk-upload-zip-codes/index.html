@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -282,81 +300,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Meta Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about bulk uploading zip codes and postal codes in Meta Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Can I target zip codes or postal codes in Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Meta Ads supports <strong>postal code targeting</strong> at the Ad Set level. You can add individual postal codes one by one or use the <strong>Add locations in bulk</strong> tool to paste an entire list at once. This is ideal for businesses that serve specific delivery zones, sales territories, or neighbourhoods.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What format should my postal codes be in?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Enter one postal code per line in the bulk upload box. Use the <strong>standard format for your selected country</strong> — for example, 5-digit codes for the US (e.g. <code>10001</code>), alphanumeric codes for Canada (e.g. <code>M5V 3A8</code>), or 4–6 digit codes for European countries. Do not add commas, quotes, or extra spaces.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens if some postal codes don't match?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>After clicking <strong>Match Locations</strong>, Meta will flag any codes it cannot recognise. Unmatched codes are highlighted so you can correct or remove them before saving. Valid codes are accepted; only the unmatched ones are excluded. Always review the results before saving to ensure your targeting list is accurate.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is there a limit to how many postal codes I can upload at once?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Meta Ads allows up to <strong>2,500 locations per ad set</strong> in total across all location types. For most campaigns targeting a defined list of postal codes, this limit is more than sufficient. If you need to target a very large number of codes, consider splitting them across multiple ad sets within the same campaign.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I target postal codes from multiple countries in the same ad set?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The bulk upload tool requires you to select <strong>one country at a time</strong>. To target postal codes across multiple countries, complete the bulk upload for each country separately within the same ad set. Meta will combine all added locations, so your ad set can ultimately target postal codes from different countries simultaneously.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I exclude postal codes instead of targeting them?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. After matching locations, Meta gives you the option to <strong>include or exclude</strong> each location. To exclude a postal code list, switch the toggle from Include to Exclude before saving. This lets you, for example, target an entire country while excluding specific postal codes where you don't operate.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -414,21 +358,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about bulk uploading zip codes and postal codes in Meta Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I target zip codes or postal codes in Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Meta Ads supports <strong>postal code targeting</strong> at the Ad Set level. You can add individual postal codes one by one or use the <strong>Add locations in bulk</strong> tool to paste an entire list at once. This is ideal for businesses that serve specific delivery zones, sales territories, or neighbourhoods.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What format should my postal codes be in?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Enter one postal code per line in the bulk upload box. Use the <strong>standard format for your selected country</strong> — for example, 5-digit codes for the US (e.g. <code>10001</code>), alphanumeric codes for Canada (e.g. <code>M5V 3A8</code>), or 4–6 digit codes for European countries. Do not add commas, quotes, or extra spaces.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens if some postal codes don't match?</span>
+          </div>
+          <div class="faq-answer">
+            <p>After clicking <strong>Match Locations</strong>, Meta will flag any codes it cannot recognise. Unmatched codes are highlighted so you can correct or remove them before saving. Valid codes are accepted; only the unmatched ones are excluded. Always review the results before saving to ensure your targeting list is accurate.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is there a limit to how many postal codes I can upload at once?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Meta Ads allows up to <strong>2,500 locations per ad set</strong> in total across all location types. For most campaigns targeting a defined list of postal codes, this limit is more than sufficient. If you need to target a very large number of codes, consider splitting them across multiple ad sets within the same campaign.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I target postal codes from multiple countries in the same ad set?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The bulk upload tool requires you to select <strong>one country at a time</strong>. To target postal codes across multiple countries, complete the bulk upload for each country separately within the same ad set. Meta will combine all added locations, so your ad set can ultimately target postal codes from different countries simultaneously.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I exclude postal codes instead of targeting them?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. After matching locations, Meta gives you the option to <strong>include or exclude</strong> each location. To exclude a postal code list, switch the toggle from Include to Exclude before saving. This lets you, for example, target an entire country while excluding specific postal codes where you don't operate.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

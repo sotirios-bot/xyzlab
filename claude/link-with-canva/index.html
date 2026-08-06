@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your workflow? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -275,81 +293,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Claude AI?</h3>
           <p>Book a 90-minute training session and we'll build your AI workflows together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about connecting Canva to Claude.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What can I do after linking Canva to Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Once connected, Claude can interact with your Canva account directly from the conversation window. You can ask Claude to <strong>create new designs</strong>, open existing ones, generate design briefs, and get AI-powered suggestions — all without switching tabs. The integration allows Claude to act as a design co-pilot, handling visual creation tasks alongside text-based work.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need a paid Canva account to connect it to Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No, a free Canva account is sufficient to connect and use the integration with Claude. However, certain Canva features used within the workflow (such as premium templates or Brand Kit elements) will still require a Canva Pro subscription to access.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where is the Customize menu in Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>Customize</strong> option appears in the left-hand sidebar when you are logged into Claude at claude.ai. It sits below your conversation history. Clicking it opens a panel where you can manage integrations, set custom instructions, and configure connected tools including Canva, GitHub, and others.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I disconnect Canva from Claude at any time?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. To disconnect, go back to <strong>Customize → Connect your tools</strong>, find Canva in the list of connected tools, and click the disconnect or revoke access option. You can also revoke Claude's access from within your Canva account settings under Connected Apps.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is the Canva integration available on the free Claude plan?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Integrations and the ability to connect external tools in Claude are available depending on your plan and region. Check the <strong>Connect your tools</strong> section in your Claude account — if Canva appears as an option, it is available for your plan. Claude Pro subscribers generally have access to a wider range of integrations and higher usage limits.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What other tools can I connect to Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Claude supports a growing list of integrations via the <strong>Connect your tools</strong> panel, including GitHub, Google Drive, Notion, Jira, and more. Each integration allows Claude to read or interact with data from the connected platform — for example, referencing your code repository or reading documents from Google Drive directly within a conversation.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -407,21 +351,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your workflow? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about connecting Canva to Claude.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What can I do after linking Canva to Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Once connected, Claude can interact with your Canva account directly from the conversation window. You can ask Claude to <strong>create new designs</strong>, open existing ones, generate design briefs, and get AI-powered suggestions — all without switching tabs. The integration allows Claude to act as a design co-pilot, handling visual creation tasks alongside text-based work.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a paid Canva account to connect it to Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No, a free Canva account is sufficient to connect and use the integration with Claude. However, certain Canva features used within the workflow (such as premium templates or Brand Kit elements) will still require a Canva Pro subscription to access.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where is the Customize menu in Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>Customize</strong> option appears in the left-hand sidebar when you are logged into Claude at claude.ai. It sits below your conversation history. Clicking it opens a panel where you can manage integrations, set custom instructions, and configure connected tools including Canva, GitHub, and others.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I disconnect Canva from Claude at any time?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. To disconnect, go back to <strong>Customize → Connect your tools</strong>, find Canva in the list of connected tools, and click the disconnect or revoke access option. You can also revoke Claude's access from within your Canva account settings under Connected Apps.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is the Canva integration available on the free Claude plan?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Integrations and the ability to connect external tools in Claude are available depending on your plan and region. Check the <strong>Connect your tools</strong> section in your Claude account — if Canva appears as an option, it is available for your plan. Claude Pro subscribers generally have access to a wider range of integrations and higher usage limits.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What other tools can I connect to Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Claude supports a growing list of integrations via the <strong>Connect your tools</strong> panel, including GitHub, Google Drive, Notion, Jira, and more. Each integration allows Claude to read or interact with data from the connected platform — for example, referencing your code repository or reading documents from Google Drive directly within a conversation.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

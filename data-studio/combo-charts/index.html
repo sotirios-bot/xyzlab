@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -304,81 +322,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Data Studio?</h3>
           <p>Book a 90-minute training session and we'll build your Data Studio dashboard together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about combo charts in Data Studio (Looker Studio).</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a combo chart in Data Studio?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A combo chart combines two chart types — typically <strong>bars and a line</strong> — in a single visual. Each series can be assigned to its own Y-axis (left or right), which lets you compare metrics that have very different scales, such as ad spend (bars, left axis) alongside ROAS (line, right axis), without one series dwarfing the other.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>When should I use a combo chart instead of a regular bar or line chart?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Use a combo chart when you want to show <strong>two related but differently scaled metrics</strong> together — for example, clicks (volume, in the thousands) and CTR (percentage, between 0–10%). Plotting them on a single axis would make one metric unreadable. The dual-axis combo chart solves this by giving each metric its own scale while keeping the relationship visible at a glance.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I add more than two series to a combo chart?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Data Studio allows you to add multiple metrics, each configured as an individual series in the Style panel. You can assign each series to either the left or right axis and choose its type (bar or line) independently. Keep in mind that adding too many series can make the chart hard to read — two or three well-chosen metrics usually communicate most clearly.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I change the colour of each series in a combo chart?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>In the <strong>Style</strong> panel, each series has a colour swatch next to its label. Click the swatch to open the colour picker and choose a custom colour. Using contrasting colours for bars and lines (e.g. blue bars and an orange line) makes it easier for viewers to immediately distinguish between the two metrics.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why does my combo chart look wrong when I switch from Setup to Style?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The most common issue is that <strong>series order in the Style panel matches the order metrics were added in Setup</strong>. If you added your metrics in the wrong order, Series #1 in Style will correspond to the first metric in Setup — not necessarily the one you expected. You can reorder metrics in the Setup panel by dragging them, then re-style each series.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I use a combo chart with a date dimension for trend reporting?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, and this is one of the most powerful use cases. Set your <strong>dimension to Date</strong> and your metrics to something like daily spend (bars) and daily ROAS (line). This gives you a timeline view where you can immediately see whether efficiency rises or falls as spend increases — which is exactly what most marketing reports need.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -436,21 +380,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about combo charts in Data Studio (Looker Studio).</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a combo chart in Data Studio?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A combo chart combines two chart types — typically <strong>bars and a line</strong> — in a single visual. Each series can be assigned to its own Y-axis (left or right), which lets you compare metrics that have very different scales, such as ad spend (bars, left axis) alongside ROAS (line, right axis), without one series dwarfing the other.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>When should I use a combo chart instead of a regular bar or line chart?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Use a combo chart when you want to show <strong>two related but differently scaled metrics</strong> together — for example, clicks (volume, in the thousands) and CTR (percentage, between 0–10%). Plotting them on a single axis would make one metric unreadable. The dual-axis combo chart solves this by giving each metric its own scale while keeping the relationship visible at a glance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I add more than two series to a combo chart?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Data Studio allows you to add multiple metrics, each configured as an individual series in the Style panel. You can assign each series to either the left or right axis and choose its type (bar or line) independently. Keep in mind that adding too many series can make the chart hard to read — two or three well-chosen metrics usually communicate most clearly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I change the colour of each series in a combo chart?</span>
+          </div>
+          <div class="faq-answer">
+            <p>In the <strong>Style</strong> panel, each series has a colour swatch next to its label. Click the swatch to open the colour picker and choose a custom colour. Using contrasting colours for bars and lines (e.g. blue bars and an orange line) makes it easier for viewers to immediately distinguish between the two metrics.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why does my combo chart look wrong when I switch from Setup to Style?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The most common issue is that <strong>series order in the Style panel matches the order metrics were added in Setup</strong>. If you added your metrics in the wrong order, Series #1 in Style will correspond to the first metric in Setup — not necessarily the one you expected. You can reorder metrics in the Setup panel by dragging them, then re-style each series.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I use a combo chart with a date dimension for trend reporting?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, and this is one of the most powerful use cases. Set your <strong>dimension to Date</strong> and your metrics to something like daily spend (bars) and daily ROAS (line). This gives you a timeline view where you can immediately see whether efficiency rises or falls as spend increases — which is exactly what most marketing reports need.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

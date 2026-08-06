@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -297,81 +315,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Analytics?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Analytics setup together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about Unassigned traffic in Google Analytics.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What does "Unassigned" mean in Google Analytics?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Unassigned</strong> is the channel group GA4 uses when a session's source/medium combination doesn't match any of the default channel definitions. Unlike UA's "(Other)" bucket, Unassigned in GA4 means the traffic genuinely couldn't be categorised — most often because UTM parameters are missing, incomplete, or don't align with Google's channel rules for manual traffic sources.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What are the most common causes of Unassigned traffic?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The most frequent causes are: <strong>missing UTM tags</strong> on paid campaigns (e.g. emails or social posts without <code>utm_source</code> and <code>utm_medium</code>); UTM values that don't match GA4's channel definitions (e.g. <code>utm_medium=social_paid</code> instead of <code>paid_social</code>); <strong>cross-domain tracking issues</strong> that break the referral chain; and <strong>server-side or API-imported events</strong> sent without session-level attribution data.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I fix Unassigned traffic?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>First, identify the sources using the method in this tutorial. Then for each source: <strong>add or correct UTM parameters</strong> to match GA4's channel definitions (e.g. use <code>utm_medium=cpc</code> for paid search, <code>utm_medium=email</code> for email campaigns); <strong>configure channel group rules</strong> in GA4 Admin → Data display → Channel groups to capture custom source/medium values; and ensure <strong>cross-domain tracking</strong> is configured if traffic crosses multiple domains.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is Unassigned traffic the same as Direct traffic?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. <strong>Direct</strong> traffic is specifically sessions where GA4 receives no referrer and no UTM parameters — a user typed the URL directly or used a bookmark. <strong>Unassigned</strong> is different: it means GA4 <em>did</em> receive source/medium information but couldn't match it to any known channel group. Both are data quality issues, but they have different root causes and different fixes.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I create a custom channel group to capture Unassigned traffic?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. In GA4, go to <strong>Admin</strong> → <strong>Data display</strong> → <strong>Channel groups</strong> and create a new channel group (or edit the default one). You can add rules that match specific source/medium combinations from your Unassigned bucket and assign them to meaningful channel names. This is the recommended long-term fix when you can't change the UTM parameters at the source (e.g. third-party platforms).</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will fixing Unassigned traffic change historical data?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>It depends on the fix. Updating <strong>UTM parameters</strong> only affects future traffic — historical sessions that were tagged incorrectly remain Unassigned. However, creating or editing a <strong>custom channel group</strong> in GA4 Admin <em>does</em> apply retroactively to historical data, because channel groupings are calculated at query time rather than at data collection time. This makes channel group rules a powerful way to reclassify past Unassigned sessions without re-tagging campaigns.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -429,21 +373,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about Unassigned traffic in Google Analytics.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What does "Unassigned" mean in Google Analytics?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Unassigned</strong> is the channel group GA4 uses when a session's source/medium combination doesn't match any of the default channel definitions. Unlike UA's "(Other)" bucket, Unassigned in GA4 means the traffic genuinely couldn't be categorised — most often because UTM parameters are missing, incomplete, or don't align with Google's channel rules for manual traffic sources.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What are the most common causes of Unassigned traffic?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The most frequent causes are: <strong>missing UTM tags</strong> on paid campaigns (e.g. emails or social posts without <code>utm_source</code> and <code>utm_medium</code>); UTM values that don't match GA4's channel definitions (e.g. <code>utm_medium=social_paid</code> instead of <code>paid_social</code>); <strong>cross-domain tracking issues</strong> that break the referral chain; and <strong>server-side or API-imported events</strong> sent without session-level attribution data.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I fix Unassigned traffic?</span>
+          </div>
+          <div class="faq-answer">
+            <p>First, identify the sources using the method in this tutorial. Then for each source: <strong>add or correct UTM parameters</strong> to match GA4's channel definitions (e.g. use <code>utm_medium=cpc</code> for paid search, <code>utm_medium=email</code> for email campaigns); <strong>configure channel group rules</strong> in GA4 Admin → Data display → Channel groups to capture custom source/medium values; and ensure <strong>cross-domain tracking</strong> is configured if traffic crosses multiple domains.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is Unassigned traffic the same as Direct traffic?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. <strong>Direct</strong> traffic is specifically sessions where GA4 receives no referrer and no UTM parameters — a user typed the URL directly or used a bookmark. <strong>Unassigned</strong> is different: it means GA4 <em>did</em> receive source/medium information but couldn't match it to any known channel group. Both are data quality issues, but they have different root causes and different fixes.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I create a custom channel group to capture Unassigned traffic?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. In GA4, go to <strong>Admin</strong> → <strong>Data display</strong> → <strong>Channel groups</strong> and create a new channel group (or edit the default one). You can add rules that match specific source/medium combinations from your Unassigned bucket and assign them to meaningful channel names. This is the recommended long-term fix when you can't change the UTM parameters at the source (e.g. third-party platforms).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will fixing Unassigned traffic change historical data?</span>
+          </div>
+          <div class="faq-answer">
+            <p>It depends on the fix. Updating <strong>UTM parameters</strong> only affects future traffic — historical sessions that were tagged incorrectly remain Unassigned. However, creating or editing a <strong>custom channel group</strong> in GA4 Admin <em>does</em> apply retroactively to historical data, because channel groupings are calculated at query time rather than at data collection time. This makes channel group rules a powerful way to reclassify past Unassigned sessions without re-tagging campaigns.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

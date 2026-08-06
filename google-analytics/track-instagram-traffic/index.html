@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -275,81 +293,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Analytics?</h3>
           <p>Book a 90-minute training session and we'll set up your GA4 reports and tracking together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about tracking Instagram traffic in Google Analytics.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Why does my Instagram traffic show under "direct" in GA4?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Instagram's in-app browser strips referrer information from links, which means GA4 cannot identify the source and classifies the session as <strong>direct / (none)</strong>. This is especially common with links in Stories and the bio link. The fix is to add <strong>UTM parameters</strong> to all your Instagram links — for example: <code>?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=bio_link</code>. With UTMs, GA4 reads the source directly from the URL and won't misclassify the traffic.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between Session Source/Medium and Session Default Channel Group?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Session Default Channel Group</strong> is a high-level category GA4 automatically assigns (e.g. Organic Social, Paid Social, Direct). Multiple sources can map to the same channel group. <strong>Session Source / Medium</strong> shows the actual source and medium combination from the tracking data — for example <code>instagram / referral</code> or <code>instagram / social</code>. Use Source/Medium when you need granular detail about exactly where traffic is coming from, including differences between UTM-tagged and untagged Instagram traffic.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I add UTM parameters to my Instagram bio link?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Add UTM parameters directly to the URL you put in your Instagram bio. A standard UTM-tagged bio link looks like: <code>https://yoursite.com?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=bio</code>. You can build UTM URLs using Google's <strong>Campaign URL Builder</strong> tool. For link-in-bio tools (Linktree, Beacons, etc.), add UTM parameters to each individual destination URL, not the linktree page itself.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What does "instagram / referral" vs "instagram / social" mean?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>instagram / referral</strong> means GA4 detected the session came from Instagram via the HTTP referrer header — typically from Instagram's mobile web browser. <strong>instagram / social</strong> usually means the link was tagged with <code>utm_medium=social</code> manually. If you see both, it means some of your Instagram traffic is UTM-tagged and some isn't. For consistency, tag all Instagram links with UTM parameters so traffic always appears under the source/medium you specify.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I see which specific Instagram posts or campaigns drive the most traffic?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — use the <strong>utm_campaign</strong> parameter in your links and then filter by <strong>Session Campaign</strong> dimension in the Traffic Acquisition report. For example, tag your Stories links with <code>utm_campaign=stories_may</code> and your bio link with <code>utm_campaign=bio</code>. You can then compare performance across campaigns. For post-level tracking, use a unique <code>utm_content</code> value per post — e.g. <code>utm_content=post_123</code>.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I compare Instagram traffic to other social platforms in GA4?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>In the Traffic Acquisition report, change the dimension to <strong>Session Default Channel Group</strong> and look at the <strong>Organic Social</strong> row. Click on it to drill down, or switch to Session Source/Medium and clear any filters to see all social platforms side by side. You can also use <strong>Explore &rarr; Free Form</strong> to build a custom comparison with all social sources in one table, filtered by medium containing "social".</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -407,21 +351,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about tracking Instagram traffic in Google Analytics.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why does my Instagram traffic show under "direct" in GA4?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Instagram's in-app browser strips referrer information from links, which means GA4 cannot identify the source and classifies the session as <strong>direct / (none)</strong>. This is especially common with links in Stories and the bio link. The fix is to add <strong>UTM parameters</strong> to all your Instagram links — for example: <code>?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=bio_link</code>. With UTMs, GA4 reads the source directly from the URL and won't misclassify the traffic.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Session Source/Medium and Session Default Channel Group?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Session Default Channel Group</strong> is a high-level category GA4 automatically assigns (e.g. Organic Social, Paid Social, Direct). Multiple sources can map to the same channel group. <strong>Session Source / Medium</strong> shows the actual source and medium combination from the tracking data — for example <code>instagram / referral</code> or <code>instagram / social</code>. Use Source/Medium when you need granular detail about exactly where traffic is coming from, including differences between UTM-tagged and untagged Instagram traffic.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I add UTM parameters to my Instagram bio link?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Add UTM parameters directly to the URL you put in your Instagram bio. A standard UTM-tagged bio link looks like: <code>https://yoursite.com?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=bio</code>. You can build UTM URLs using Google's <strong>Campaign URL Builder</strong> tool. For link-in-bio tools (Linktree, Beacons, etc.), add UTM parameters to each individual destination URL, not the linktree page itself.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What does "instagram / referral" vs "instagram / social" mean?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>instagram / referral</strong> means GA4 detected the session came from Instagram via the HTTP referrer header — typically from Instagram's mobile web browser. <strong>instagram / social</strong> usually means the link was tagged with <code>utm_medium=social</code> manually. If you see both, it means some of your Instagram traffic is UTM-tagged and some isn't. For consistency, tag all Instagram links with UTM parameters so traffic always appears under the source/medium you specify.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I see which specific Instagram posts or campaigns drive the most traffic?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — use the <strong>utm_campaign</strong> parameter in your links and then filter by <strong>Session Campaign</strong> dimension in the Traffic Acquisition report. For example, tag your Stories links with <code>utm_campaign=stories_may</code> and your bio link with <code>utm_campaign=bio</code>. You can then compare performance across campaigns. For post-level tracking, use a unique <code>utm_content</code> value per post — e.g. <code>utm_content=post_123</code>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I compare Instagram traffic to other social platforms in GA4?</span>
+          </div>
+          <div class="faq-answer">
+            <p>In the Traffic Acquisition report, change the dimension to <strong>Session Default Channel Group</strong> and look at the <strong>Organic Social</strong> row. Click on it to drill down, or switch to Session Source/Medium and clear any filters to see all social platforms side by side. You can also use <strong>Explore &rarr; Free Form</strong> to build a custom comparison with all social sources in one table, filtered by medium containing "social".</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

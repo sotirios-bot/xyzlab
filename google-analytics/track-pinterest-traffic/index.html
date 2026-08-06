@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -286,81 +304,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Analytics?</h3>
           <p>Book a 90-minute training session and we'll work through your analytics setup together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about finding and understanding Pinterest traffic in Google Analytics.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>How does Pinterest traffic appear in Google Analytics?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Pinterest traffic typically appears as <strong>pinterest.com / referral</strong> or <strong>pinterest.com / social</strong> in the Session source / medium dimension. Organic clicks from Pins link directly to your website, while Pinterest Ads traffic will appear with whatever UTM parameters you've configured in your campaign URLs. In GA4's default channel groupings, Pinterest traffic usually falls under <strong>Referral</strong> or <strong>Organic Social</strong> depending on your channel rules.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why is my Pinterest traffic not showing in Google Analytics?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The most common reasons are: your Pins don't link to your website, your date range is too short to show any visits, or the volume of traffic from Pinterest is very low. Pinterest is a discovery platform where results compound over time, so try extending your date range to the last 90 or 180 days. Also check whether traffic might be attributed to <strong>Direct</strong> if the referrer was stripped — adding UTM parameters (<code>utm_source=pinterest&utm_medium=social</code>) to your Pin links prevents this.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What UTM parameters should I use for Pinterest links?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>For organic Pins, a standard setup is: <code>utm_source=pinterest&utm_medium=social&utm_campaign=your-campaign-name</code>. For Pinterest Ads, use the platform's built-in UTM tracking or add: <code>utm_source=pinterest&utm_medium=cpc&utm_campaign=your-campaign-name</code>. Adding UTM parameters ensures GA4 always attributes the session correctly, regardless of how the link is opened — especially important since Pinterest's app can sometimes strip the referrer header.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between Pinterest organic and Pinterest Ads traffic in GA4?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Without UTM parameters, both organic and paid Pinterest traffic appear as <strong>pinterest.com / referral</strong>, making them indistinguishable. To separate them, add UTM tags to your ad URLs (<code>utm_medium=cpc</code> for paid, <code>utm_medium=social</code> for organic). Pinterest Ads Manager also has an auto-tagging option that can append UTM parameters automatically — check your campaign settings to enable it.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I add Pinterest to the Organic Social channel in GA4?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>GA4 may classify Pinterest referral traffic under <strong>Referral</strong> rather than <strong>Organic Social</strong>. To fix this, go to <strong>Admin → Data display → Channel groups</strong>, edit the <strong>Organic Social</strong> channel rule, and add <code>pinterest.com</code> as a matching source domain. This ensures Pinterest organic traffic is grouped alongside Facebook, Instagram, and other social platforms in your channel-level reports.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I track Pinterest traffic alongside other social media platforms in one report?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. In the Traffic Acquisition report, remove the search filter to see all sources ranked by sessions. You can compare Pinterest, Instagram, TikTok, and other platforms side by side using the <strong>Session source / medium</strong> dimension. For a dedicated social media overview, build a custom <strong>Looker Studio (Data Studio) report</strong> that filters for all major social sources, making it easy to monitor and compare them on a single dashboard.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -418,21 +362,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about finding and understanding Pinterest traffic in Google Analytics.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How does Pinterest traffic appear in Google Analytics?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Pinterest traffic typically appears as <strong>pinterest.com / referral</strong> or <strong>pinterest.com / social</strong> in the Session source / medium dimension. Organic clicks from Pins link directly to your website, while Pinterest Ads traffic will appear with whatever UTM parameters you've configured in your campaign URLs. In GA4's default channel groupings, Pinterest traffic usually falls under <strong>Referral</strong> or <strong>Organic Social</strong> depending on your channel rules.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why is my Pinterest traffic not showing in Google Analytics?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The most common reasons are: your Pins don't link to your website, your date range is too short to show any visits, or the volume of traffic from Pinterest is very low. Pinterest is a discovery platform where results compound over time, so try extending your date range to the last 90 or 180 days. Also check whether traffic might be attributed to <strong>Direct</strong> if the referrer was stripped — adding UTM parameters (<code>utm_source=pinterest&utm_medium=social</code>) to your Pin links prevents this.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What UTM parameters should I use for Pinterest links?</span>
+          </div>
+          <div class="faq-answer">
+            <p>For organic Pins, a standard setup is: <code>utm_source=pinterest&utm_medium=social&utm_campaign=your-campaign-name</code>. For Pinterest Ads, use the platform's built-in UTM tracking or add: <code>utm_source=pinterest&utm_medium=cpc&utm_campaign=your-campaign-name</code>. Adding UTM parameters ensures GA4 always attributes the session correctly, regardless of how the link is opened — especially important since Pinterest's app can sometimes strip the referrer header.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Pinterest organic and Pinterest Ads traffic in GA4?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Without UTM parameters, both organic and paid Pinterest traffic appear as <strong>pinterest.com / referral</strong>, making them indistinguishable. To separate them, add UTM tags to your ad URLs (<code>utm_medium=cpc</code> for paid, <code>utm_medium=social</code> for organic). Pinterest Ads Manager also has an auto-tagging option that can append UTM parameters automatically — check your campaign settings to enable it.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I add Pinterest to the Organic Social channel in GA4?</span>
+          </div>
+          <div class="faq-answer">
+            <p>GA4 may classify Pinterest referral traffic under <strong>Referral</strong> rather than <strong>Organic Social</strong>. To fix this, go to <strong>Admin → Data display → Channel groups</strong>, edit the <strong>Organic Social</strong> channel rule, and add <code>pinterest.com</code> as a matching source domain. This ensures Pinterest organic traffic is grouped alongside Facebook, Instagram, and other social platforms in your channel-level reports.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I track Pinterest traffic alongside other social media platforms in one report?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. In the Traffic Acquisition report, remove the search filter to see all sources ranked by sessions. You can compare Pinterest, Instagram, TikTok, and other platforms side by side using the <strong>Session source / medium</strong> dimension. For a dedicated social media overview, build a custom <strong>Looker Studio (Data Studio) report</strong> that filters for all major social sources, making it easy to monitor and compare them on a single dashboard.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

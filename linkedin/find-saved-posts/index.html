@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -279,81 +297,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with LinkedIn?</h3>
           <p>Book a 90-minute training session and we'll build your LinkedIn content strategy together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about saved posts on LinkedIn.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Where do I find my saved posts on LinkedIn?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>On <strong>desktop</strong>, go to your feed and click <strong>Saved items</strong> in the left-hand menu, then open <strong>Saved posts and articles</strong>. On <strong>mobile</strong>, tap your profile icon at the top-left, scroll down, and select <strong>Saved posts</strong>.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I save a post on LinkedIn?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Click the <strong>three dots (&hellip;)</strong> in the top-right corner of any post and choose <strong>Save</strong>. The post is added to your Saved items so you can come back to it later — the author is not notified when you save their post.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can other people see what I've saved?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Your <strong>Saved items are private</strong> — only you can see the posts, articles, and jobs you've saved. Saving a post is not the same as liking or reposting it, so it never appears in your activity or your connections' feeds.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is there a limit to how many posts I can save?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>LinkedIn doesn't publish a hard cap, and in practice you can save a large number of posts and articles. They stay in your Saved items until you remove them, so it's a handy place to bookmark content you want to read or reference later.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I remove a saved post?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Open your <strong>Saved posts and articles</strong> list, find the post, click the <strong>three dots (&hellip;)</strong> or the bookmark/ribbon icon, and choose <strong>Unsave</strong>. It's removed from your saved list immediately.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What's the difference between saved posts and liked posts?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Saving</strong> is a private bookmark — nobody sees it and it doesn't interact with the post. <strong>Liking</strong> is a public reaction that can appear in your activity and your network's feed. If you want to revisit posts you reacted to instead, use the Reactions filter in your profile activity.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -411,21 +355,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about saved posts on LinkedIn.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where do I find my saved posts on LinkedIn?</span>
+          </div>
+          <div class="faq-answer">
+            <p>On <strong>desktop</strong>, go to your feed and click <strong>Saved items</strong> in the left-hand menu, then open <strong>Saved posts and articles</strong>. On <strong>mobile</strong>, tap your profile icon at the top-left, scroll down, and select <strong>Saved posts</strong>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I save a post on LinkedIn?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Click the <strong>three dots (&hellip;)</strong> in the top-right corner of any post and choose <strong>Save</strong>. The post is added to your Saved items so you can come back to it later — the author is not notified when you save their post.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can other people see what I've saved?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Your <strong>Saved items are private</strong> — only you can see the posts, articles, and jobs you've saved. Saving a post is not the same as liking or reposting it, so it never appears in your activity or your connections' feeds.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is there a limit to how many posts I can save?</span>
+          </div>
+          <div class="faq-answer">
+            <p>LinkedIn doesn't publish a hard cap, and in practice you can save a large number of posts and articles. They stay in your Saved items until you remove them, so it's a handy place to bookmark content you want to read or reference later.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I remove a saved post?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Open your <strong>Saved posts and articles</strong> list, find the post, click the <strong>three dots (&hellip;)</strong> or the bookmark/ribbon icon, and choose <strong>Unsave</strong>. It's removed from your saved list immediately.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What's the difference between saved posts and liked posts?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Saving</strong> is a private bookmark — nobody sees it and it doesn't interact with the post. <strong>Liking</strong> is a public reaction that can appear in your activity and your network's feed. If you want to revisit posts you reacted to instead, use the Reactions filter in your profile activity.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

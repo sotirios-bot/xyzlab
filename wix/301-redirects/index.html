@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your website? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -289,81 +307,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Wix?</h3>
           <p>Book a 90-minute training session and we'll work through your Wix website together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about applying 301 redirects in WIX.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a 301 redirect and why is it important in Wix?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A <strong>301 redirect</strong> is a permanent redirect that tells browsers and search engines that a URL has moved to a new location. When you change a page URL, delete a page, or restructure your Wix site, a 301 redirect ensures that visitors who click old links (from search results, social media, or backlinks) are automatically sent to the correct new page — instead of seeing a 404 error. It also transfers most of the original page's SEO authority to the new URL.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do 301 redirects in Wix pass SEO link equity?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. A properly set up 301 redirect passes the majority of a page's <strong>link equity (PageRank)</strong> to the destination URL. This means any backlinks pointing to your old URL will continue to benefit your new URL in Google's rankings. For this reason, 301 redirects are the recommended approach whenever you change a page URL or move content permanently.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between a 301 and a 302 redirect?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A <strong>301 redirect</strong> signals that the move is <em>permanent</em> — search engines will update their index to point to the new URL and transfer link equity. A <strong>302 redirect</strong> signals that the move is <em>temporary</em> — search engines keep the original URL in their index and do not fully transfer link equity. Use 301 for permanent URL changes and 302 only when you genuinely intend to restore the original URL in the future.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to republish my Wix site after adding a redirect?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. URL redirects created in the Wix URL Redirect Manager take effect <strong>immediately</strong> without needing to republish your website. This is different from design or content changes, which require a full publish. You can add, edit, and delete redirects at any time from the dashboard and they will go live instantly.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I redirect an old URL to a page on a completely different domain in Wix?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The Wix URL Redirect Manager supports <strong>cross-domain redirects</strong> — you can enter a full external URL (including <code>https://</code>) as the destination. This is useful if you are migrating content to a new domain or redirecting an old page to a partner website. For the old URL field, you still enter only the slug (the path after your domain).</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How long does it take Google to recognise a 301 redirect added in Wix?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The redirect works for users immediately. For Google to update its index and transfer ranking signals, it typically takes anywhere from a <strong>few days to a few weeks</strong> depending on how often Googlebot crawls your site. You can speed up the process by submitting the new URL in <strong>Google Search Console › URL Inspection</strong> and requesting indexing. Submitting an updated sitemap also helps Google discover the change faster.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -421,21 +365,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your website? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about applying 301 redirects in WIX.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a 301 redirect and why is it important in Wix?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A <strong>301 redirect</strong> is a permanent redirect that tells browsers and search engines that a URL has moved to a new location. When you change a page URL, delete a page, or restructure your Wix site, a 301 redirect ensures that visitors who click old links (from search results, social media, or backlinks) are automatically sent to the correct new page — instead of seeing a 404 error. It also transfers most of the original page's SEO authority to the new URL.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do 301 redirects in Wix pass SEO link equity?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. A properly set up 301 redirect passes the majority of a page's <strong>link equity (PageRank)</strong> to the destination URL. This means any backlinks pointing to your old URL will continue to benefit your new URL in Google's rankings. For this reason, 301 redirects are the recommended approach whenever you change a page URL or move content permanently.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between a 301 and a 302 redirect?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A <strong>301 redirect</strong> signals that the move is <em>permanent</em> — search engines will update their index to point to the new URL and transfer link equity. A <strong>302 redirect</strong> signals that the move is <em>temporary</em> — search engines keep the original URL in their index and do not fully transfer link equity. Use 301 for permanent URL changes and 302 only when you genuinely intend to restore the original URL in the future.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to republish my Wix site after adding a redirect?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. URL redirects created in the Wix URL Redirect Manager take effect <strong>immediately</strong> without needing to republish your website. This is different from design or content changes, which require a full publish. You can add, edit, and delete redirects at any time from the dashboard and they will go live instantly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I redirect an old URL to a page on a completely different domain in Wix?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The Wix URL Redirect Manager supports <strong>cross-domain redirects</strong> — you can enter a full external URL (including <code>https://</code>) as the destination. This is useful if you are migrating content to a new domain or redirecting an old page to a partner website. For the old URL field, you still enter only the slug (the path after your domain).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How long does it take Google to recognise a 301 redirect added in Wix?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The redirect works for users immediately. For Google to update its index and transfer ranking signals, it typically takes anywhere from a <strong>few days to a few weeks</strong> depending on how often Googlebot crawls your site. You can speed up the process by submitting the new URL in <strong>Google Search Console › URL Inspection</strong> and requesting indexing. Submitting an updated sitemap also helps Google discover the change faster.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

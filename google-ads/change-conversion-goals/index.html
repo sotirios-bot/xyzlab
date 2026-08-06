@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -284,81 +302,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about changing conversion goals in Google Ads campaigns.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the difference between account-level and campaign-level conversion goals?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Account-level goals</strong> apply to every campaign in your account by default — if you set "Purchase" and "Lead" as account goals, all campaigns optimise toward both. <strong>Campaign-level goals</strong> let you override that for a specific campaign so it only counts and optimises for the conversions you choose. This is essential when running mixed campaigns — for example, a lead generation campaign that should ignore purchase events, or a brand awareness campaign that only counts video views.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will changing conversion goals reset my campaign's Smart Bidding learning period?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, changing the conversion actions a campaign optimises for can trigger a <strong>re-learning period</strong> for Smart Bidding strategies like Target CPA or Target ROAS. Google's algorithm needs to relearn which users are most likely to complete the newly selected conversions. The learning period typically lasts <strong>1–2 weeks</strong> — expect some fluctuation in performance during this time before bids stabilise.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I set different conversion goals for different campaigns in the same account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, that is exactly what campaign-specific conversion goals enable. Each campaign can have its own set of conversion actions — for example, a Search campaign optimising for <strong>form submissions</strong> while a Shopping campaign optimises for <strong>purchases</strong> and a YouTube campaign optimises for <strong>video engagement</strong>. This gives you granular control over how each campaign's bidding strategy behaves.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Which conversion actions are available to select at the campaign level?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>All <strong>active conversion actions</strong> in your Google Ads account are available to select, including those created via the Google Ads tag, Google Analytics import, app tracking, phone call tracking, and any manually created actions. If you don't see a conversion action you expect, check that it is set to <strong>active</strong> and has the <strong>Include in Conversions</strong> setting enabled in your account's Conversion Actions settings.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens if I switch a campaign back to account default goals?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Switching back to <strong>Account default</strong> removes the campaign-specific override — the campaign will again optimise toward all conversion actions included in your account-level goals. This change can also trigger a brief re-learning period for Smart Bidding, as the algorithm adjusts back to optimising for a broader or different set of conversions. Review your account-level goals first to confirm they align with what you want this campaign to target.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I change conversion goals for multiple campaigns at once?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. In the Campaigns view, you can <strong>tick the checkbox</strong> next to multiple campaigns and then use the <strong>Edit → Update conversion goals</strong> option to apply the same conversion goal settings across all selected campaigns simultaneously. This is a useful time-saver when restructuring a large account or rolling out a new conversion strategy across a set of campaigns at once.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -416,21 +360,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about changing conversion goals in Google Ads campaigns.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between account-level and campaign-level conversion goals?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Account-level goals</strong> apply to every campaign in your account by default — if you set "Purchase" and "Lead" as account goals, all campaigns optimise toward both. <strong>Campaign-level goals</strong> let you override that for a specific campaign so it only counts and optimises for the conversions you choose. This is essential when running mixed campaigns — for example, a lead generation campaign that should ignore purchase events, or a brand awareness campaign that only counts video views.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will changing conversion goals reset my campaign's Smart Bidding learning period?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, changing the conversion actions a campaign optimises for can trigger a <strong>re-learning period</strong> for Smart Bidding strategies like Target CPA or Target ROAS. Google's algorithm needs to relearn which users are most likely to complete the newly selected conversions. The learning period typically lasts <strong>1–2 weeks</strong> — expect some fluctuation in performance during this time before bids stabilise.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I set different conversion goals for different campaigns in the same account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, that is exactly what campaign-specific conversion goals enable. Each campaign can have its own set of conversion actions — for example, a Search campaign optimising for <strong>form submissions</strong> while a Shopping campaign optimises for <strong>purchases</strong> and a YouTube campaign optimises for <strong>video engagement</strong>. This gives you granular control over how each campaign's bidding strategy behaves.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Which conversion actions are available to select at the campaign level?</span>
+          </div>
+          <div class="faq-answer">
+            <p>All <strong>active conversion actions</strong> in your Google Ads account are available to select, including those created via the Google Ads tag, Google Analytics import, app tracking, phone call tracking, and any manually created actions. If you don't see a conversion action you expect, check that it is set to <strong>active</strong> and has the <strong>Include in Conversions</strong> setting enabled in your account's Conversion Actions settings.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens if I switch a campaign back to account default goals?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Switching back to <strong>Account default</strong> removes the campaign-specific override — the campaign will again optimise toward all conversion actions included in your account-level goals. This change can also trigger a brief re-learning period for Smart Bidding, as the algorithm adjusts back to optimising for a broader or different set of conversions. Review your account-level goals first to confirm they align with what you want this campaign to target.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I change conversion goals for multiple campaigns at once?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. In the Campaigns view, you can <strong>tick the checkbox</strong> next to multiple campaigns and then use the <strong>Edit → Update conversion goals</strong> option to apply the same conversion goal settings across all selected campaigns simultaneously. This is a useful time-saver when restructuring a large account or rolling out a new conversion strategy across a set of campaigns at once.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -318,81 +336,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Looker Studio?</h3>
           <p>Book a 90-minute training session and we'll build your GA4 website dashboard together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about building a Google Analytics report in Looker Studio.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Does the Google Analytics connector in Looker Studio support GA4?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Looker Studio's native <strong>Google Analytics connector</strong> supports GA4 (Google Analytics 4) properties. When selecting your data source, choose your GA4 Account and Property — the connector will expose all GA4 dimensions and metrics including events, engagement rate, and session data.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why do some GA4 metrics look different from what I see in the GA4 interface?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>GA4 uses <strong>sampled data</strong> for large datasets, and Looker Studio may apply different sampling thresholds. Additionally, some GA4 metrics are calculated differently in the Looker Studio connector compared to the GA4 UI. Minor discrepancies (within 1–5%) are normal — for exact figures, always cross-reference with the GA4 interface directly.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I add multiple GA4 properties to the same Looker Studio report?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You can add multiple GA4 data sources to a single report — one per property. To compare properties side by side, add separate charts connected to different data sources, or use <strong>Blend Data</strong> to merge them into a single chart. This is useful for multi-site or multi-brand reporting.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I show traffic by channel in Looker Studio?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Add a <strong>Table</strong> or <strong>Bar Chart</strong> and set the dimension to <strong>Session Default Channel Group</strong>. This breaks down traffic into channels like Organic Search, Paid Search, Direct, Referral, Social, and Email — matching the channel grouping you see in the GA4 Traffic Acquisition report.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I schedule automatic email delivery of my Looker Studio report?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. In Looker Studio, go to <strong>Share &gt; Schedule email delivery</strong>. You can set a frequency (daily, weekly, monthly), choose recipients, and select which pages of the report to send. Recipients receive a PDF snapshot of the report on the schedule you define — no Looker Studio account required to view the email.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I filter the report to show data for a specific page or section of the site?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Use a <strong>Filter Control</strong> widget — insert it via the Add a control menu and set it to the <strong>Page Path</strong> dimension. Viewers can then type or select specific paths to filter the entire report. Alternatively, apply a <strong>Report-level filter</strong> via Resource &gt; Manage Report Filters to permanently restrict data to a specific section of the site.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -450,21 +394,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about building a Google Analytics report in Looker Studio.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does the Google Analytics connector in Looker Studio support GA4?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Looker Studio's native <strong>Google Analytics connector</strong> supports GA4 (Google Analytics 4) properties. When selecting your data source, choose your GA4 Account and Property — the connector will expose all GA4 dimensions and metrics including events, engagement rate, and session data.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why do some GA4 metrics look different from what I see in the GA4 interface?</span>
+          </div>
+          <div class="faq-answer">
+            <p>GA4 uses <strong>sampled data</strong> for large datasets, and Looker Studio may apply different sampling thresholds. Additionally, some GA4 metrics are calculated differently in the Looker Studio connector compared to the GA4 UI. Minor discrepancies (within 1–5%) are normal — for exact figures, always cross-reference with the GA4 interface directly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I add multiple GA4 properties to the same Looker Studio report?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can add multiple GA4 data sources to a single report — one per property. To compare properties side by side, add separate charts connected to different data sources, or use <strong>Blend Data</strong> to merge them into a single chart. This is useful for multi-site or multi-brand reporting.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I show traffic by channel in Looker Studio?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Add a <strong>Table</strong> or <strong>Bar Chart</strong> and set the dimension to <strong>Session Default Channel Group</strong>. This breaks down traffic into channels like Organic Search, Paid Search, Direct, Referral, Social, and Email — matching the channel grouping you see in the GA4 Traffic Acquisition report.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I schedule automatic email delivery of my Looker Studio report?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. In Looker Studio, go to <strong>Share &gt; Schedule email delivery</strong>. You can set a frequency (daily, weekly, monthly), choose recipients, and select which pages of the report to send. Recipients receive a PDF snapshot of the report on the schedule you define — no Looker Studio account required to view the email.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I filter the report to show data for a specific page or section of the site?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Use a <strong>Filter Control</strong> widget — insert it via the Add a control menu and set it to the <strong>Page Path</strong> dimension. Viewers can then type or select specific paths to filter the entire report. Alternatively, apply a <strong>Report-level filter</strong> via Resource &gt; Manage Report Filters to permanently restrict data to a specific section of the site.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

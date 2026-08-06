@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -271,81 +289,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about the Display Network setting in Google Ads Search campaigns.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the Display Network option in a Search campaign?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>When you create a Search campaign, Google Ads gives you the option to extend your reach to the <strong>Google Display Network</strong> — banner and text ads placed across millions of websites, apps, and Gmail. This is controlled in Campaign Settings under <strong>Networks</strong>. Disabling it keeps your budget focused exclusively on text ads shown in Google Search results.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why should I disable the Display Network on a Search campaign?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Search and Display audiences behave very differently. Mixing them in one campaign makes it harder to control bids, measure performance accurately, and allocate budget effectively. Most advertisers get better results by running <strong>separate Search and Display campaigns</strong> with dedicated budgets, creatives, and targeting rather than blending them.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What are Google search partners and should I keep them enabled?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Google search partners</strong> are third-party websites (such as YouTube, Google Maps, and other search sites) that display Google Search ads. Enabling search partners can increase reach, but performance varies by industry. Check the <strong>Search partners segment</strong> in your campaign report — if the CPA is significantly higher or conversion rate is lower than Google Search, turning it off will improve efficiency.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will disabling these options pause or affect my existing ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Unchecking the Display Network or search partners in Campaign Settings does <strong>not</strong> pause your ads or reset your Quality Score. Your Search ads will continue to run as normal — the change simply stops Google from extending your ads to display placements or partner search sites going forward.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I check search partner performance before disabling?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. In your campaign report, click <strong>Segment &gt; Network (with search partners)</strong> to see how Google Search, Google search partners, and the Display Network compare individually for clicks, impressions, cost, and conversions. Use this data to make an informed decision before turning off any network.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I re-enable the Display Network or search partners later?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, at any time. Go back to <strong>Settings &gt; Networks</strong> and re-tick the checkbox for whichever network you want to re-enable. Changes take effect for new auctions immediately, so you can test different configurations and compare performance over time.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -403,21 +347,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about the Display Network setting in Google Ads Search campaigns.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the Display Network option in a Search campaign?</span>
+          </div>
+          <div class="faq-answer">
+            <p>When you create a Search campaign, Google Ads gives you the option to extend your reach to the <strong>Google Display Network</strong> — banner and text ads placed across millions of websites, apps, and Gmail. This is controlled in Campaign Settings under <strong>Networks</strong>. Disabling it keeps your budget focused exclusively on text ads shown in Google Search results.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why should I disable the Display Network on a Search campaign?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Search and Display audiences behave very differently. Mixing them in one campaign makes it harder to control bids, measure performance accurately, and allocate budget effectively. Most advertisers get better results by running <strong>separate Search and Display campaigns</strong> with dedicated budgets, creatives, and targeting rather than blending them.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What are Google search partners and should I keep them enabled?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Google search partners</strong> are third-party websites (such as YouTube, Google Maps, and other search sites) that display Google Search ads. Enabling search partners can increase reach, but performance varies by industry. Check the <strong>Search partners segment</strong> in your campaign report — if the CPA is significantly higher or conversion rate is lower than Google Search, turning it off will improve efficiency.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will disabling these options pause or affect my existing ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Unchecking the Display Network or search partners in Campaign Settings does <strong>not</strong> pause your ads or reset your Quality Score. Your Search ads will continue to run as normal — the change simply stops Google from extending your ads to display placements or partner search sites going forward.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I check search partner performance before disabling?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. In your campaign report, click <strong>Segment &gt; Network (with search partners)</strong> to see how Google Search, Google search partners, and the Display Network compare individually for clicks, impressions, cost, and conversions. Use this data to make an informed decision before turning off any network.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I re-enable the Display Network or search partners later?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, at any time. Go back to <strong>Settings &gt; Networks</strong> and re-tick the checkbox for whichever network you want to re-enable. Changes take effect for new auctions immediately, so you can test different configurations and compare performance over time.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

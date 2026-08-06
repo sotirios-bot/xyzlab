@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -265,81 +283,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with YouTube?</h3>
           <p>Book a 90-minute training session and we'll build your YouTube growth strategy together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about finding a YouTube video ID.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a YouTube video ID?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A YouTube video ID is the unique <strong>11-character code</strong> that identifies a specific video. It appears after <code>v=</code> in a standard YouTube URL, for example the <strong>K7JSenLDgQ0</strong> in <code>youtube.com/watch?v=K7JSenLDgQ0</code>.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where do I find the video ID in the URL?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Open the video and look at your browser's address bar. The ID is the string immediately after <code>v=</code> and before any <code>&amp;</code> symbol. If there are extra parameters like <code>&amp;t=1s</code>, the ID is only the part before that ampersand.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I get the video ID from a youtu.be short link?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>On a shortened <strong>youtu.be</strong> link, the ID comes right after the slash — for example, in <code>youtu.be/K7JSenLDgQ0</code> the ID is <strong>K7JSenLDgQ0</strong>. Again, ignore anything after a <code>?</code> such as a timestamp.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I find the video ID on the mobile app?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Tap <strong>Share</strong> under the video and choose <strong>Copy link</strong>. Paste it anywhere and you'll get a youtu.be link — the characters after the slash are the video ID.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What do I use a YouTube video ID for?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The ID is used to <strong>embed videos</strong> on websites, pull a video's <strong>thumbnail</strong> (e.g. <code>img.youtube.com/vi/ID/maxresdefault.jpg</code>), reference videos in the YouTube API, and build clean links. It's the most reliable way to point to one exact video.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is the video ID the same as the channel ID?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. The <strong>video ID</strong> identifies a single video, while a <strong>channel ID</strong> identifies the creator's whole channel. They're different codes found in different parts of the URL — the video ID after <code>v=</code>, and the channel ID after <code>/channel/</code>.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -397,21 +341,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about finding a YouTube video ID.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a YouTube video ID?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A YouTube video ID is the unique <strong>11-character code</strong> that identifies a specific video. It appears after <code>v=</code> in a standard YouTube URL, for example the <strong>K7JSenLDgQ0</strong> in <code>youtube.com/watch?v=K7JSenLDgQ0</code>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where do I find the video ID in the URL?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Open the video and look at your browser's address bar. The ID is the string immediately after <code>v=</code> and before any <code>&amp;</code> symbol. If there are extra parameters like <code>&amp;t=1s</code>, the ID is only the part before that ampersand.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I get the video ID from a youtu.be short link?</span>
+          </div>
+          <div class="faq-answer">
+            <p>On a shortened <strong>youtu.be</strong> link, the ID comes right after the slash — for example, in <code>youtu.be/K7JSenLDgQ0</code> the ID is <strong>K7JSenLDgQ0</strong>. Again, ignore anything after a <code>?</code> such as a timestamp.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I find the video ID on the mobile app?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Tap <strong>Share</strong> under the video and choose <strong>Copy link</strong>. Paste it anywhere and you'll get a youtu.be link — the characters after the slash are the video ID.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What do I use a YouTube video ID for?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The ID is used to <strong>embed videos</strong> on websites, pull a video's <strong>thumbnail</strong> (e.g. <code>img.youtube.com/vi/ID/maxresdefault.jpg</code>), reference videos in the YouTube API, and build clean links. It's the most reliable way to point to one exact video.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is the video ID the same as the channel ID?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. The <strong>video ID</strong> identifies a single video, while a <strong>channel ID</strong> identifies the creator's whole channel. They're different codes found in different parts of the URL — the video ID after <code>v=</code>, and the channel ID after <code>/channel/</code>.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

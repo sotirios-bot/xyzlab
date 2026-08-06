@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -331,81 +349,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Meta Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about UTM tags in Meta Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What are UTM tags and why do I need them in Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>UTM tags (Urchin Tracking Module) are small snippets of text appended to your landing page URL that tell Google Analytics <strong>where your traffic came from</strong>. Without them, Meta Ads traffic often appears in GA4 under "Direct" or gets misclassified, making it impossible to accurately measure which campaigns are driving results. UTM tags let you see the exact source, medium, campaign, and content that generated each visit.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What UTM parameters should I use for Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>To ensure GA4 classifies Meta Ads traffic under the <strong>Paid Social</strong> channel, use values that match Google's default channel grouping rules. A common setup is: <code>utm_source=facebook</code> (or <code>instagram</code>), <code>utm_medium=paid-social</code> (or <code>cpc</code>), and <code>utm_campaign=your-campaign-name</code>. Check <a href="https://support.google.com/analytics/answer/9756891?hl=en" target="_blank" rel="noopener noreferrer">Google's official channel grouping guide</a> to confirm the exact regex rules for Paid Social.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Are UTM tags case-sensitive?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — UTM tags are <strong>fully case-sensitive</strong> in Google Analytics 4. <code>Facebook</code>, <code>facebook</code>, and <code>FACEBOOK</code> will be treated as three separate sources, splitting your data across multiple rows. Always use lowercase for all UTM parameter values to keep your reporting clean and consistent.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between adding UTM parameters directly vs using the URL Builder?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Both approaches result in the same tagged URL — the difference is <strong>how you build it</strong>. Adding parameters directly in Meta Ads via the URL Parameters field keeps your destination URL clean and lets Meta append the tags automatically. The GA4 Campaign URL Builder is a visual tool that assembles the full tagged URL for you, which is then pasted into Meta Ads Manager — useful if you want to double-check the final URL before using it or prefer a guided form.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I check if my UTM tags are working in Google Analytics?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>After publishing your ad, click it yourself (from a non-admin browser or incognito window) and check the URL in the address bar — your UTM parameters should be visible. In GA4, go to <strong>Reports &gt; Acquisition &gt; Traffic Acquisition</strong> and look for your campaign in the Session Source / Medium or Session Campaign dimensions. Data can take up to 24 hours to appear fully.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will adding UTM tags affect my Meta Ads delivery or performance?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. UTM tags are <strong>purely for analytics tracking</strong> and have no effect on how Meta delivers your ads or how your campaigns perform. They are invisible to users and do not change the destination page experience. Adding or updating UTM parameters does not trigger an ad re-review.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -463,21 +407,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about UTM tags in Meta Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What are UTM tags and why do I need them in Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>UTM tags (Urchin Tracking Module) are small snippets of text appended to your landing page URL that tell Google Analytics <strong>where your traffic came from</strong>. Without them, Meta Ads traffic often appears in GA4 under "Direct" or gets misclassified, making it impossible to accurately measure which campaigns are driving results. UTM tags let you see the exact source, medium, campaign, and content that generated each visit.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What UTM parameters should I use for Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>To ensure GA4 classifies Meta Ads traffic under the <strong>Paid Social</strong> channel, use values that match Google's default channel grouping rules. A common setup is: <code>utm_source=facebook</code> (or <code>instagram</code>), <code>utm_medium=paid-social</code> (or <code>cpc</code>), and <code>utm_campaign=your-campaign-name</code>. Check <a href="https://support.google.com/analytics/answer/9756891?hl=en" target="_blank" rel="noopener noreferrer">Google's official channel grouping guide</a> to confirm the exact regex rules for Paid Social.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Are UTM tags case-sensitive?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — UTM tags are <strong>fully case-sensitive</strong> in Google Analytics 4. <code>Facebook</code>, <code>facebook</code>, and <code>FACEBOOK</code> will be treated as three separate sources, splitting your data across multiple rows. Always use lowercase for all UTM parameter values to keep your reporting clean and consistent.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between adding UTM parameters directly vs using the URL Builder?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Both approaches result in the same tagged URL — the difference is <strong>how you build it</strong>. Adding parameters directly in Meta Ads via the URL Parameters field keeps your destination URL clean and lets Meta append the tags automatically. The GA4 Campaign URL Builder is a visual tool that assembles the full tagged URL for you, which is then pasted into Meta Ads Manager — useful if you want to double-check the final URL before using it or prefer a guided form.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I check if my UTM tags are working in Google Analytics?</span>
+          </div>
+          <div class="faq-answer">
+            <p>After publishing your ad, click it yourself (from a non-admin browser or incognito window) and check the URL in the address bar — your UTM parameters should be visible. In GA4, go to <strong>Reports &gt; Acquisition &gt; Traffic Acquisition</strong> and look for your campaign in the Session Source / Medium or Session Campaign dimensions. Data can take up to 24 hours to appear fully.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will adding UTM tags affect my Meta Ads delivery or performance?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. UTM tags are <strong>purely for analytics tracking</strong> and have no effect on how Meta delivers your ads or how your campaigns perform. They are invisible to users and do not change the destination page experience. Adding or updating UTM parameters does not trigger an ad re-review.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

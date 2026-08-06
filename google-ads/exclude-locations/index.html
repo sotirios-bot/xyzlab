@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -280,81 +298,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about excluding locations in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What does excluding a location in Google Ads do?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Excluding a location prevents your ads from showing to users who are in, or searching for, that location. This is useful when certain areas consistently produce low-quality clicks, high bounce rates, or no conversions — allowing you to redirect budget toward locations that actually perform. Exclusions apply on top of your existing targeting settings.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What types of locations can I exclude in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>You can exclude locations at multiple levels of granularity: <strong>countries</strong>, <strong>regions or states</strong>, <strong>cities</strong>, <strong>postal codes</strong>, and <strong>custom radius areas</strong>. The more specific the exclusion, the more precise your targeting becomes. You can layer multiple exclusions within a single campaign.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between targeting and excluding a location?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Targeting</strong> tells Google where you want your ads to show — your ads will only be eligible in those locations. <strong>Excluding</strong> carves out areas inside or overlapping your target region where you do not want ads to appear. For example, you might target an entire country but exclude specific cities where you don't operate or have poor results.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I exclude a location at the ad group level?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Location exclusions in Google Ads are set at the <strong>campaign level</strong>, not the ad group level. If you need different location settings for different ad groups, you would need to split them into separate campaigns. This is a known limitation of the Google Ads interface.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does excluding a location affect my Quality Score?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Location exclusions do not directly affect Quality Score. However, by removing low-performing locations you may indirectly improve your overall campaign metrics — such as CTR and conversion rate — which can positively influence Quality Score over time. Focus on excluding locations with consistently poor performance data rather than making changes speculatively.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I remove a location exclusion I added by mistake?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Go to <strong>Campaign Settings &rarr; Locations</strong> and look for the Excluded locations list. Click the <strong>X</strong> or trash icon next to the exclusion you want to remove, then save your changes. The exclusion takes effect immediately, so ads will be eligible to show in that location again as soon as the setting is saved.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -412,21 +356,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about excluding locations in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What does excluding a location in Google Ads do?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Excluding a location prevents your ads from showing to users who are in, or searching for, that location. This is useful when certain areas consistently produce low-quality clicks, high bounce rates, or no conversions — allowing you to redirect budget toward locations that actually perform. Exclusions apply on top of your existing targeting settings.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What types of locations can I exclude in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>You can exclude locations at multiple levels of granularity: <strong>countries</strong>, <strong>regions or states</strong>, <strong>cities</strong>, <strong>postal codes</strong>, and <strong>custom radius areas</strong>. The more specific the exclusion, the more precise your targeting becomes. You can layer multiple exclusions within a single campaign.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between targeting and excluding a location?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Targeting</strong> tells Google where you want your ads to show — your ads will only be eligible in those locations. <strong>Excluding</strong> carves out areas inside or overlapping your target region where you do not want ads to appear. For example, you might target an entire country but exclude specific cities where you don't operate or have poor results.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I exclude a location at the ad group level?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Location exclusions in Google Ads are set at the <strong>campaign level</strong>, not the ad group level. If you need different location settings for different ad groups, you would need to split them into separate campaigns. This is a known limitation of the Google Ads interface.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does excluding a location affect my Quality Score?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Location exclusions do not directly affect Quality Score. However, by removing low-performing locations you may indirectly improve your overall campaign metrics — such as CTR and conversion rate — which can positively influence Quality Score over time. Focus on excluding locations with consistently poor performance data rather than making changes speculatively.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I remove a location exclusion I added by mistake?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Go to <strong>Campaign Settings &rarr; Locations</strong> and look for the Excluded locations list. Click the <strong>X</strong> or trash icon next to the exclusion you want to remove, then save your changes. The exclusion takes effect immediately, so ads will be eligible to show in that location again as soon as the setting is saved.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

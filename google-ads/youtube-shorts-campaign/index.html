@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -319,81 +337,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about running YouTube Shorts campaigns in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a YouTube Shorts campaign in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A YouTube Shorts campaign delivers ads inside the <strong>YouTube Shorts feed</strong> — the vertical, full-screen short video experience on YouTube. Ads appear between organic Shorts videos as users swipe through the feed. In Google Ads, Shorts is a channel option within the <strong>Demand Gen</strong> campaign type, allowing you to target it exclusively or alongside other channels like Gmail and Discover.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What video format do I need for YouTube Shorts ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>YouTube Shorts ads perform best in <strong>vertical (9:16) format</strong>, typically 15–60 seconds long. While Google can crop horizontal (16:9) videos to fit the Shorts feed, the result is often poor quality. For best results, produce or repurpose creative specifically in portrait format. Ensure your logo, text, and key visuals appear in the centre-safe zone to avoid being cropped on smaller screens.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between Demand Gen Shorts-only and Video campaign Multi-format ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Demand Gen with "Let me choose" → YouTube Shorts only</strong>: your budget is spent exclusively in the Shorts feed, giving you isolated performance data and precise channel control.<br><br><strong>Video campaign with Multi-format ads</strong>: Google serves a mix of in-stream (pre-roll) and Shorts ads, optimising delivery across both placements. This approach typically generates more volume but makes it harder to measure Shorts-specific performance separately.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do YouTube Shorts ads have a minimum budget requirement?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>There is no official minimum budget for Shorts ads, but a daily budget of <strong>$10–$30</strong> is a reasonable starting point to gather meaningful data. Shorts CPCs and CPMs tend to be lower than regular YouTube in-stream placements, so your budget can go further. Increase spend once you identify creative that performs well.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I retarget users who watched my YouTube Shorts ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. If your YouTube channel is linked to your Google Ads account, you can build <strong>remarketing audiences</strong> based on users who viewed your Shorts videos, visited your channel, or engaged with any of your YouTube content. These audiences can then be used in subsequent campaigns for retargeting. Link your YouTube channel via <strong>Tools &amp; Settings → Audience Manager → Linked accounts</strong>.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I measure the performance of my Shorts campaign?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>In Google Ads, use the <strong>Segments</strong> column within your Demand Gen campaign to break down performance by channel. This shows YouTube Shorts-specific impressions, clicks, view-through rates, and conversions. Key metrics to watch are <strong>swipe-up rate</strong> (equivalent to CTR in Shorts), <strong>view rate</strong>, and <strong>cost per conversion</strong>. Connect your campaign to Google Analytics 4 for full funnel reporting.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -451,21 +395,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about running YouTube Shorts campaigns in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a YouTube Shorts campaign in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A YouTube Shorts campaign delivers ads inside the <strong>YouTube Shorts feed</strong> — the vertical, full-screen short video experience on YouTube. Ads appear between organic Shorts videos as users swipe through the feed. In Google Ads, Shorts is a channel option within the <strong>Demand Gen</strong> campaign type, allowing you to target it exclusively or alongside other channels like Gmail and Discover.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What video format do I need for YouTube Shorts ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>YouTube Shorts ads perform best in <strong>vertical (9:16) format</strong>, typically 15–60 seconds long. While Google can crop horizontal (16:9) videos to fit the Shorts feed, the result is often poor quality. For best results, produce or repurpose creative specifically in portrait format. Ensure your logo, text, and key visuals appear in the centre-safe zone to avoid being cropped on smaller screens.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Demand Gen Shorts-only and Video campaign Multi-format ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Demand Gen with "Let me choose" → YouTube Shorts only</strong>: your budget is spent exclusively in the Shorts feed, giving you isolated performance data and precise channel control.<br><br><strong>Video campaign with Multi-format ads</strong>: Google serves a mix of in-stream (pre-roll) and Shorts ads, optimising delivery across both placements. This approach typically generates more volume but makes it harder to measure Shorts-specific performance separately.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do YouTube Shorts ads have a minimum budget requirement?</span>
+          </div>
+          <div class="faq-answer">
+            <p>There is no official minimum budget for Shorts ads, but a daily budget of <strong>$10–$30</strong> is a reasonable starting point to gather meaningful data. Shorts CPCs and CPMs tend to be lower than regular YouTube in-stream placements, so your budget can go further. Increase spend once you identify creative that performs well.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I retarget users who watched my YouTube Shorts ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. If your YouTube channel is linked to your Google Ads account, you can build <strong>remarketing audiences</strong> based on users who viewed your Shorts videos, visited your channel, or engaged with any of your YouTube content. These audiences can then be used in subsequent campaigns for retargeting. Link your YouTube channel via <strong>Tools &amp; Settings → Audience Manager → Linked accounts</strong>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I measure the performance of my Shorts campaign?</span>
+          </div>
+          <div class="faq-answer">
+            <p>In Google Ads, use the <strong>Segments</strong> column within your Demand Gen campaign to break down performance by channel. This shows YouTube Shorts-specific impressions, clicks, view-through rates, and conversions. Key metrics to watch are <strong>swipe-up rate</strong> (equivalent to CTR in Shorts), <strong>view rate</strong>, and <strong>cost per conversion</strong>. Connect your campaign to Google Analytics 4 for full funnel reporting.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

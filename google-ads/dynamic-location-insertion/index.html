@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -306,81 +324,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about Dynamic Location Insertion in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is Dynamic Location Insertion in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Dynamic Location Insertion</strong> is a feature that automatically replaces a tag in your ad headline or description with the user's detected location — their city, state, or country. It uses the syntax <code>{LOCATION(City):default}</code>, <code>{LOCATION(State):default}</code>, or <code>{LOCATION(Country):default}</code>. The result is a personalised ad that feels locally relevant without needing to create separate campaigns for every geographic area.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How does Google determine the user's location for insertion?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google uses two signals: the user's <strong>physical location</strong> (based on IP address or GPS if on mobile) and their <strong>location of interest</strong> (if they include a place name in their search query, e.g. "electrician Melbourne"). The location of interest takes precedence over physical location when both are present. This means even a user searching from another city can see the correct local name if they type it in their query.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens when the location cannot be detected or is too long?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google falls back to your <strong>default text</strong> — the text you place after the colon inside the tag, e.g. <code>{LOCATION(City):Your Area}</code>. The default is also used when the inserted location name would cause the headline to exceed the 30-character limit. Always choose a default that reads naturally on its own and is relevant to the ad group, for example "Your City", "Nearby", or the name of your target market.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I use Dynamic Location Insertion with location targeting?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, and this is the recommended approach. Set your campaign to target a specific country, state, or set of cities, then use location insertion in your headlines. This way, your ads are only shown in the locations you've approved, and the dynamic tag reflects the user's specific location within that target area. For example, a campaign targeting Australia with <code>{LOCATION(City):Australia}</code> will show city names like "Sydney", "Brisbane", or "Perth" depending on where the user is.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between Dynamic Location Insertion and Keyword Insertion?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Keyword Insertion</strong> (<code>{KeyWord:default}</code>) replaces the tag with the user's <em>search query</em> — the keyword that triggered your ad. <strong>Dynamic Location Insertion</strong> replaces the tag with the user's <em>detected location</em> regardless of what they searched for. They can be combined in the same ad — for example, one headline with keyword insertion and another with location insertion — to create highly personalised ad combinations in a Responsive Search Ad.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is Dynamic Location Insertion available in descriptions as well as headlines?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. The <code>{LOCATION(...)}</code> tag can be used in both <strong>headlines</strong> (30-character limit) and <strong>descriptions</strong> (90-character limit). Descriptions give you more space, so the location is less likely to fall back to the default. A common pattern is to use city insertion in a headline (e.g. <em>Plumbers in Sydney</em>) and state or country insertion in a description for broader context.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -438,21 +382,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about Dynamic Location Insertion in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is Dynamic Location Insertion in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Dynamic Location Insertion</strong> is a feature that automatically replaces a tag in your ad headline or description with the user's detected location — their city, state, or country. It uses the syntax <code>{LOCATION(City):default}</code>, <code>{LOCATION(State):default}</code>, or <code>{LOCATION(Country):default}</code>. The result is a personalised ad that feels locally relevant without needing to create separate campaigns for every geographic area.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How does Google determine the user's location for insertion?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google uses two signals: the user's <strong>physical location</strong> (based on IP address or GPS if on mobile) and their <strong>location of interest</strong> (if they include a place name in their search query, e.g. "electrician Melbourne"). The location of interest takes precedence over physical location when both are present. This means even a user searching from another city can see the correct local name if they type it in their query.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens when the location cannot be detected or is too long?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google falls back to your <strong>default text</strong> — the text you place after the colon inside the tag, e.g. <code>{LOCATION(City):Your Area}</code>. The default is also used when the inserted location name would cause the headline to exceed the 30-character limit. Always choose a default that reads naturally on its own and is relevant to the ad group, for example "Your City", "Nearby", or the name of your target market.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I use Dynamic Location Insertion with location targeting?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, and this is the recommended approach. Set your campaign to target a specific country, state, or set of cities, then use location insertion in your headlines. This way, your ads are only shown in the locations you've approved, and the dynamic tag reflects the user's specific location within that target area. For example, a campaign targeting Australia with <code>{LOCATION(City):Australia}</code> will show city names like "Sydney", "Brisbane", or "Perth" depending on where the user is.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Dynamic Location Insertion and Keyword Insertion?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Keyword Insertion</strong> (<code>{KeyWord:default}</code>) replaces the tag with the user's <em>search query</em> — the keyword that triggered your ad. <strong>Dynamic Location Insertion</strong> replaces the tag with the user's <em>detected location</em> regardless of what they searched for. They can be combined in the same ad — for example, one headline with keyword insertion and another with location insertion — to create highly personalised ad combinations in a Responsive Search Ad.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is Dynamic Location Insertion available in descriptions as well as headlines?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. The <code>{LOCATION(...)}</code> tag can be used in both <strong>headlines</strong> (30-character limit) and <strong>descriptions</strong> (90-character limit). Descriptions give you more space, so the location is less likely to fall back to the default. A common pattern is to use city insertion in a headline (e.g. <em>Plumbers in Sydney</em>) and state or country insertion in a description for broader context.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

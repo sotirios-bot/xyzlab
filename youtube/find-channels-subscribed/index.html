@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -292,81 +310,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with YouTube?</h3>
           <p>Book a 90-minute training session and we'll build your YouTube growth strategy together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about finding the YouTube channels you're subscribed to.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>How do I see all the YouTube channels I'm subscribed to?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>On desktop, open the <strong>menu</strong> on the top-left, click <strong>Subscriptions</strong>, then click <strong>All Subscriptions</strong>. On mobile, open the YouTube app, tap <strong>Subscriptions</strong>, then tap the <strong>All</strong> button in the top-right.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where is the "All Subscriptions" option on desktop?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Open the hamburger <strong>menu</strong> (three lines) in the top-left of YouTube and click <strong>Subscriptions</strong>. In the left sidebar you'll then see an <strong>All Subscriptions</strong> link that lists every channel you follow alphabetically.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can other people see who I'm subscribed to?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Only if your subscriptions are public. You can control this in <strong>Settings &rarr; Privacy</strong> by toggling <strong>"Keep all my subscriptions private."</strong> When private, your subscription list is visible only to you.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I manage or unsubscribe from channels?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>From the <strong>All Subscriptions</strong> list, click the <strong>Subscribed</strong> button next to any channel to unsubscribe, or open the bell icon to adjust notification settings for that channel without unsubscribing.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why do my subscriptions look different on mobile and desktop?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The layout differs but the data is identical, since both are tied to the same Google account. On mobile the list lives behind the <strong>All</strong> button at the top of the Subscriptions tab, while on desktop it's under <strong>All Subscriptions</strong> in the sidebar.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I sort my subscriptions by most recent activity?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The main <strong>Subscriptions</strong> feed shows the latest uploads from your channels in chronological order. The <strong>All Subscriptions</strong> view is geared toward managing the channel list itself rather than sorting by activity, so use the feed if you want the newest videos first.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -424,21 +368,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about finding the YouTube channels you're subscribed to.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I see all the YouTube channels I'm subscribed to?</span>
+          </div>
+          <div class="faq-answer">
+            <p>On desktop, open the <strong>menu</strong> on the top-left, click <strong>Subscriptions</strong>, then click <strong>All Subscriptions</strong>. On mobile, open the YouTube app, tap <strong>Subscriptions</strong>, then tap the <strong>All</strong> button in the top-right.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where is the "All Subscriptions" option on desktop?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Open the hamburger <strong>menu</strong> (three lines) in the top-left of YouTube and click <strong>Subscriptions</strong>. In the left sidebar you'll then see an <strong>All Subscriptions</strong> link that lists every channel you follow alphabetically.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can other people see who I'm subscribed to?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Only if your subscriptions are public. You can control this in <strong>Settings &rarr; Privacy</strong> by toggling <strong>"Keep all my subscriptions private."</strong> When private, your subscription list is visible only to you.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I manage or unsubscribe from channels?</span>
+          </div>
+          <div class="faq-answer">
+            <p>From the <strong>All Subscriptions</strong> list, click the <strong>Subscribed</strong> button next to any channel to unsubscribe, or open the bell icon to adjust notification settings for that channel without unsubscribing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why do my subscriptions look different on mobile and desktop?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The layout differs but the data is identical, since both are tied to the same Google account. On mobile the list lives behind the <strong>All</strong> button at the top of the Subscriptions tab, while on desktop it's under <strong>All Subscriptions</strong> in the sidebar.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I sort my subscriptions by most recent activity?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The main <strong>Subscriptions</strong> feed shows the latest uploads from your channels in chronological order. The <strong>All Subscriptions</strong> view is geared toward managing the channel list itself rather than sorting by activity, so use the feed if you want the newest videos first.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

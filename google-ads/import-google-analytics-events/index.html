@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -408,81 +426,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about importing Google Analytics events into Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the difference between a Google Analytics Key Event and a Google Ads Conversion?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A <strong>Key Event</strong> in Google Analytics (GA4) is an event you've marked as important in your GA4 property — it's used for measurement and reporting within Analytics. A <strong>Conversion</strong> in Google Ads is what Google uses to optimise bidding and measure ad performance. By importing a Key Event, you create a Google Ads conversion action that mirrors the GA4 event, allowing Smart Bidding to optimise toward it.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to link Google Analytics to Google Ads before importing events?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Your GA4 property must be linked to your Google Ads account before you can import events. You can create this link from <strong>Google Analytics → Admin → Google Ads links</strong>, or from <strong>Google Ads → Tools → Linked accounts → Google Analytics</strong>. Without the link, your GA4 property will not appear during the import process.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why don't I see any events available to import?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Only events that are marked as <strong>Key Events</strong> in Google Analytics appear in the import list. If you don't see any events, go to <strong>Google Analytics → Admin → Events</strong> and toggle the "Mark as key event" switch for the events you want to import. Allow a short time for the events to appear before retrying the import in Google Ads.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Should I use Option 1 (from Google Ads) or Option 2 (from Google Analytics)?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Both options create the same conversion action in Google Ads — the end result is identical. <strong>Option 1 (from Google Ads)</strong> is more convenient if you're already working in Google Ads. <strong>Option 2 (from Google Analytics)</strong> is useful if you manage the GA4–Google Ads integration from the Analytics side and want to control which events are shared at the property level.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will imported conversions count historical data?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, to a degree. When you import a GA4 Key Event, Google Ads can backfill up to <strong>30 days</strong> of historical conversion data from the linked GA4 property. This means your campaigns may show conversion data from before you set up the import. Going forward, conversions will be recorded in real time as the GA4 event fires.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I import the same event as multiple conversion actions in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You can import the same GA4 event multiple times with different settings — for example, once as a primary conversion (used for Smart Bidding) and once as a secondary conversion (for observation only). This allows you to track the same action differently across campaigns without creating conflicts in your bidding strategy.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -540,21 +484,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about importing Google Analytics events into Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between a Google Analytics Key Event and a Google Ads Conversion?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A <strong>Key Event</strong> in Google Analytics (GA4) is an event you've marked as important in your GA4 property — it's used for measurement and reporting within Analytics. A <strong>Conversion</strong> in Google Ads is what Google uses to optimise bidding and measure ad performance. By importing a Key Event, you create a Google Ads conversion action that mirrors the GA4 event, allowing Smart Bidding to optimise toward it.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to link Google Analytics to Google Ads before importing events?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Your GA4 property must be linked to your Google Ads account before you can import events. You can create this link from <strong>Google Analytics → Admin → Google Ads links</strong>, or from <strong>Google Ads → Tools → Linked accounts → Google Analytics</strong>. Without the link, your GA4 property will not appear during the import process.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why don't I see any events available to import?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Only events that are marked as <strong>Key Events</strong> in Google Analytics appear in the import list. If you don't see any events, go to <strong>Google Analytics → Admin → Events</strong> and toggle the "Mark as key event" switch for the events you want to import. Allow a short time for the events to appear before retrying the import in Google Ads.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Should I use Option 1 (from Google Ads) or Option 2 (from Google Analytics)?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Both options create the same conversion action in Google Ads — the end result is identical. <strong>Option 1 (from Google Ads)</strong> is more convenient if you're already working in Google Ads. <strong>Option 2 (from Google Analytics)</strong> is useful if you manage the GA4–Google Ads integration from the Analytics side and want to control which events are shared at the property level.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will imported conversions count historical data?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, to a degree. When you import a GA4 Key Event, Google Ads can backfill up to <strong>30 days</strong> of historical conversion data from the linked GA4 property. This means your campaigns may show conversion data from before you set up the import. Going forward, conversions will be recorded in real time as the GA4 event fires.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I import the same event as multiple conversion actions in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can import the same GA4 event multiple times with different settings — for example, once as a primary conversion (used for Smart Bidding) and once as a secondary conversion (for observation only). This allows you to track the same action differently across campaigns without creating conflicts in your bidding strategy.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

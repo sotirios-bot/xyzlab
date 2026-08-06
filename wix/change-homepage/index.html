@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your website? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -268,81 +286,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Wix?</h3>
           <p>Book a 90-minute training session and we'll work through your Wix website together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about changing the homepage in WIX.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Can I set any page as the homepage in Wix?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Any page on your Wix site can be set as the homepage — including regular pages, landing pages, or pages you've created specifically as a new home. The only exception is dynamic pages, which cannot be set as the homepage because they require a URL parameter to load content.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens to my old homepage after I change it?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Your old homepage becomes a regular page on your site — it stays live and accessible via its URL, but it is no longer the page visitors land on when they type your domain. You can keep it, hide it from the menu, or delete it depending on your needs.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will the URL of my new homepage be my root domain?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. When you set a page as the homepage, Wix automatically maps it to your root domain (e.g. <strong>yourdomain.com</strong>). The page's original URL slug still exists in the background but the homepage will load at the root. Google Search Console may need a few days to reflect the updated homepage in search results.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to republish after changing the homepage?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. After selecting <strong>Set as Homepage</strong>, you need to click <strong>Publish</strong> to make the change live. Until you publish, your site visitors will still see the previous homepage.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I have a different homepage for mobile and desktop?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. In Wix, the same page is used as the homepage for both desktop and mobile. However, you can use <strong>Wix's mobile editor</strong> to customise how your homepage looks on mobile devices — hiding or rearranging elements — while keeping the same underlying page.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will changing my homepage affect my SEO?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>It can. Your homepage typically carries the most authority on your site, so switching it to a different page may affect how Google ranks your key pages. Make sure your new homepage has a strong <strong>title tag</strong>, <strong>meta description</strong>, and internal links pointing to your most important pages. Submit your sitemap in <strong>Google Search Console</strong> after publishing to help Google re-crawl the updated structure.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -400,21 +344,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your website? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about changing the homepage in WIX.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I set any page as the homepage in Wix?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Any page on your Wix site can be set as the homepage — including regular pages, landing pages, or pages you've created specifically as a new home. The only exception is dynamic pages, which cannot be set as the homepage because they require a URL parameter to load content.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens to my old homepage after I change it?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Your old homepage becomes a regular page on your site — it stays live and accessible via its URL, but it is no longer the page visitors land on when they type your domain. You can keep it, hide it from the menu, or delete it depending on your needs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will the URL of my new homepage be my root domain?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. When you set a page as the homepage, Wix automatically maps it to your root domain (e.g. <strong>yourdomain.com</strong>). The page's original URL slug still exists in the background but the homepage will load at the root. Google Search Console may need a few days to reflect the updated homepage in search results.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to republish after changing the homepage?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. After selecting <strong>Set as Homepage</strong>, you need to click <strong>Publish</strong> to make the change live. Until you publish, your site visitors will still see the previous homepage.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I have a different homepage for mobile and desktop?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. In Wix, the same page is used as the homepage for both desktop and mobile. However, you can use <strong>Wix's mobile editor</strong> to customise how your homepage looks on mobile devices — hiding or rearranging elements — while keeping the same underlying page.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will changing my homepage affect my SEO?</span>
+          </div>
+          <div class="faq-answer">
+            <p>It can. Your homepage typically carries the most authority on your site, so switching it to a different page may affect how Google ranks your key pages. Make sure your new homepage has a strong <strong>title tag</strong>, <strong>meta description</strong>, and internal links pointing to your most important pages. Submit your sitemap in <strong>Google Search Console</strong> after publishing to help Google re-crawl the updated structure.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

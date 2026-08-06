@@ -219,6 +219,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -342,81 +360,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Go High Level?</h3>
           <p>Book a 90-minute training session and we'll set up and optimise your GHL account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about installing Meta Pixel in Go High Level funnels.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Does the Meta Pixel code apply to all pages in a GHL funnel automatically?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. When you paste the Meta Pixel base code into the <strong>Body tracking code</strong> field in the funnel's Settings, it applies to every page in that funnel — including opt-in pages, thank-you pages, upsell steps, and checkout pages. You do not need to add the code to each funnel page individually. However, the code is funnel-specific, so you must repeat the process for each separate funnel where you run Meta ads.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between Head tracking code and Body tracking code in GHL?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>Head tracking code</strong> field injects code into the <code>&lt;head&gt;</code> section of the page — typically used for scripts that need to load before the page content renders. The <strong>Body tracking code</strong> field injects code just before the closing <code>&lt;/body&gt;</code> tag, which is the standard placement for the Meta Pixel base code. Meta recommends placing the Pixel in the <code>&lt;head&gt;</code> for best performance, but placing it in the body also works correctly in GHL.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I track specific conversion events (like leads) on my GHL thank-you page?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>After installing the base Pixel code, you need to add <strong>standard event code</strong> to fire on specific pages. For example, to track a lead on a thank-you page, add the event code <code>fbq('track', 'Lead');</code> to the thank-you page's individual tracking code field. In GHL, you can set tracking code per-page by editing each funnel step and using the page-level tracking code settings, rather than the funnel-level settings used for the base code.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I check if the Meta Pixel is firing correctly on my GHL funnel?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Install the <strong>Meta Pixel Helper</strong> Chrome browser extension (free from the Chrome Web Store). Visit your funnel's live URL and click the Pixel Helper icon in your browser toolbar — it will show you which Pixels are detected on the page and whether the PageView event fired successfully. You can also verify in Meta Events Manager under your Data Set, where you should see real-time activity within a few minutes of visiting the funnel page.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I install the Meta Pixel on GHL website pages as well as funnels?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Go High Level Websites have a similar tracking code field in their settings. Navigate to <strong>Sites &gt; Websites</strong>, open your website, go to <strong>Settings</strong>, and paste the Meta Pixel code in the tracking code section. The same base Pixel code works for both funnels and websites — you only need one Pixel across all your GHL properties, as long as you use the same Data Set ID.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to use the Conversions API (CAPI) alongside the Meta Pixel in GHL?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Using the <strong>Conversions API (CAPI)</strong> alongside the browser Pixel is strongly recommended. Browser-based Pixel tracking is affected by ad blockers, iOS privacy restrictions, and cookie consent, which can cause up to 30–40% of conversions to go untracked. CAPI sends conversion data directly from your server to Meta, bypassing these browser limitations. Go High Level supports native CAPI integration — look for the Meta integration settings within your GHL account to enable server-side event tracking alongside the Pixel.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -474,21 +418,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about installing Meta Pixel in Go High Level funnels.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does the Meta Pixel code apply to all pages in a GHL funnel automatically?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. When you paste the Meta Pixel base code into the <strong>Body tracking code</strong> field in the funnel's Settings, it applies to every page in that funnel — including opt-in pages, thank-you pages, upsell steps, and checkout pages. You do not need to add the code to each funnel page individually. However, the code is funnel-specific, so you must repeat the process for each separate funnel where you run Meta ads.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Head tracking code and Body tracking code in GHL?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>Head tracking code</strong> field injects code into the <code>&lt;head&gt;</code> section of the page — typically used for scripts that need to load before the page content renders. The <strong>Body tracking code</strong> field injects code just before the closing <code>&lt;/body&gt;</code> tag, which is the standard placement for the Meta Pixel base code. Meta recommends placing the Pixel in the <code>&lt;head&gt;</code> for best performance, but placing it in the body also works correctly in GHL.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I track specific conversion events (like leads) on my GHL thank-you page?</span>
+          </div>
+          <div class="faq-answer">
+            <p>After installing the base Pixel code, you need to add <strong>standard event code</strong> to fire on specific pages. For example, to track a lead on a thank-you page, add the event code <code>fbq('track', 'Lead');</code> to the thank-you page's individual tracking code field. In GHL, you can set tracking code per-page by editing each funnel step and using the page-level tracking code settings, rather than the funnel-level settings used for the base code.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I check if the Meta Pixel is firing correctly on my GHL funnel?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Install the <strong>Meta Pixel Helper</strong> Chrome browser extension (free from the Chrome Web Store). Visit your funnel's live URL and click the Pixel Helper icon in your browser toolbar — it will show you which Pixels are detected on the page and whether the PageView event fired successfully. You can also verify in Meta Events Manager under your Data Set, where you should see real-time activity within a few minutes of visiting the funnel page.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I install the Meta Pixel on GHL website pages as well as funnels?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Go High Level Websites have a similar tracking code field in their settings. Navigate to <strong>Sites &gt; Websites</strong>, open your website, go to <strong>Settings</strong>, and paste the Meta Pixel code in the tracking code section. The same base Pixel code works for both funnels and websites — you only need one Pixel across all your GHL properties, as long as you use the same Data Set ID.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to use the Conversions API (CAPI) alongside the Meta Pixel in GHL?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Using the <strong>Conversions API (CAPI)</strong> alongside the browser Pixel is strongly recommended. Browser-based Pixel tracking is affected by ad blockers, iOS privacy restrictions, and cookie consent, which can cause up to 30–40% of conversions to go untracked. CAPI sends conversion data directly from your server to Meta, bypassing these browser limitations. Go High Level supports native CAPI integration — look for the Meta integration settings within your GHL account to enable server-side event tracking alongside the Pixel.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

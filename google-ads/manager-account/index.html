@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -276,81 +294,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about Google Ads Manager Accounts (MCC).</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a Google Ads Manager Account (MCC)?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A <strong>Manager Account</strong> (formerly called My Client Center, or MCC) is a Google Ads account that lets you manage multiple individual Google Ads accounts from a single login. It is the standard account type used by agencies, freelancers, and businesses that run ads across multiple brands or clients. A Manager Account does not run ads itself — it simply acts as a hub to access and manage the accounts linked beneath it.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need a Manager Account if I only have one Google Ads account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Not necessarily — a single-account advertiser can manage everything directly from a standard Google Ads account. However, a Manager Account is useful even with one account if you want to use <strong>Google Ads Editor</strong> with multiple accounts, access <strong>cross-account reporting</strong>, or plan to manage additional accounts in the future. Agencies almost always use an MCC.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is a Google Ads Manager Account free to create?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Creating a Manager Account is completely free. You only pay for ad spend within the individual Google Ads accounts linked to your MCC — the MCC itself has no cost. There is also no minimum spend or account requirement to open one.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between a Manager Account and a standard Google Ads account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A <strong>standard Google Ads account</strong> is where campaigns, ads, and billing live — it is the account that actually spends money. A <strong>Manager Account</strong> sits above one or more standard accounts and provides a centralised view for reporting, bulk edits, and access management. You cannot create campaigns directly inside an MCC; campaigns must be in a linked standard account.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I link an existing Google Ads account to my Manager Account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>From your Manager Account dashboard, click <strong>+ Add account</strong> and select <strong>Link existing account</strong>. Enter the 10-digit Customer ID of the account you want to link. The account owner will receive a link request — once they accept it in their Google Ads account settings, the account will appear under your MCC. You can also create a brand-new Google Ads account directly from the MCC without a separate sign-up flow.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I access a client's Google Ads account without a Manager Account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — a client can grant you access directly via <strong>Access and security</strong> in their Google Ads account settings without using an MCC. However, this is less scalable: you would need a separate login for each client account. A Manager Account is the preferred approach for agencies because it consolidates access, billing, and reporting across all client accounts in one place.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -408,21 +352,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about Google Ads Manager Accounts (MCC).</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a Google Ads Manager Account (MCC)?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A <strong>Manager Account</strong> (formerly called My Client Center, or MCC) is a Google Ads account that lets you manage multiple individual Google Ads accounts from a single login. It is the standard account type used by agencies, freelancers, and businesses that run ads across multiple brands or clients. A Manager Account does not run ads itself — it simply acts as a hub to access and manage the accounts linked beneath it.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a Manager Account if I only have one Google Ads account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Not necessarily — a single-account advertiser can manage everything directly from a standard Google Ads account. However, a Manager Account is useful even with one account if you want to use <strong>Google Ads Editor</strong> with multiple accounts, access <strong>cross-account reporting</strong>, or plan to manage additional accounts in the future. Agencies almost always use an MCC.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is a Google Ads Manager Account free to create?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Creating a Manager Account is completely free. You only pay for ad spend within the individual Google Ads accounts linked to your MCC — the MCC itself has no cost. There is also no minimum spend or account requirement to open one.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between a Manager Account and a standard Google Ads account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A <strong>standard Google Ads account</strong> is where campaigns, ads, and billing live — it is the account that actually spends money. A <strong>Manager Account</strong> sits above one or more standard accounts and provides a centralised view for reporting, bulk edits, and access management. You cannot create campaigns directly inside an MCC; campaigns must be in a linked standard account.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I link an existing Google Ads account to my Manager Account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>From your Manager Account dashboard, click <strong>+ Add account</strong> and select <strong>Link existing account</strong>. Enter the 10-digit Customer ID of the account you want to link. The account owner will receive a link request — once they accept it in their Google Ads account settings, the account will appear under your MCC. You can also create a brand-new Google Ads account directly from the MCC without a separate sign-up flow.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I access a client's Google Ads account without a Manager Account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — a client can grant you access directly via <strong>Access and security</strong> in their Google Ads account settings without using an MCC. However, this is less scalable: you would need a separate login for each client account. A Manager Account is the preferred approach for agencies because it consolidates access, billing, and reporting across all client accounts in one place.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -286,81 +304,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about finding and using Campaign IDs in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a Campaign ID in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A Campaign ID is a unique numeric identifier that Google Ads assigns to every campaign when it is created. Unlike the campaign name, the ID <strong>never changes</strong> — even if you rename or copy the campaign. It is used in tracking templates, the Google Ads API, Data Studio connectors, and any external tool that needs to reference a specific campaign unambiguously.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I use the Campaign ID in a URL tracking template?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Use the ValueTrack parameter <code>{campaignid}</code> in your tracking template — Google automatically replaces it with the Campaign ID at click time. A typical UTM template looks like: <code>{lpurl}?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign={campaignid}</code>. This lets you see the exact Campaign ID in Google Analytics and match it back to the campaign name in your reports.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is the Campaign ID the same as the Campaign Name?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. The Campaign Name is a human-readable label you choose and can change at any time. The Campaign ID is a system-generated number that is permanent and unique across all Google Ads accounts. When building reliable integrations or reports, always use the Campaign ID rather than the name — names can be duplicated or edited, but IDs never change.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I find the Campaign ID in the browser URL?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. When you click into a campaign in the Google Ads interface, the URL in your browser bar contains the Campaign ID as a parameter (e.g., <code>campaignId=123456789</code>). This is a quick way to find the ID without needing to modify columns — just navigate to the campaign and copy the number from the URL.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I change or reset a Campaign ID?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Campaign IDs are assigned by Google and cannot be changed or reset. If you duplicate a campaign, the copy receives a new unique ID. Deleting and recreating a campaign also generates a new ID — the original ID is permanently retired. This is why it is important to record Campaign IDs if you use them in external tracking or reporting systems.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I find Ad Group IDs and Ad IDs the same way?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. The same Modify Columns process works at every level of the hierarchy. Navigate to <strong>Ad Groups</strong> and add the Ad Group ID column, or go to <strong>Ads</strong> and add the Ad ID column. ValueTrack parameters such as <code>{adgroupid}</code> and <code>{creative}</code> work the same way in tracking templates for finer-grained reporting.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -418,21 +362,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about finding and using Campaign IDs in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a Campaign ID in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A Campaign ID is a unique numeric identifier that Google Ads assigns to every campaign when it is created. Unlike the campaign name, the ID <strong>never changes</strong> — even if you rename or copy the campaign. It is used in tracking templates, the Google Ads API, Data Studio connectors, and any external tool that needs to reference a specific campaign unambiguously.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I use the Campaign ID in a URL tracking template?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Use the ValueTrack parameter <code>{campaignid}</code> in your tracking template — Google automatically replaces it with the Campaign ID at click time. A typical UTM template looks like: <code>{lpurl}?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign={campaignid}</code>. This lets you see the exact Campaign ID in Google Analytics and match it back to the campaign name in your reports.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is the Campaign ID the same as the Campaign Name?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. The Campaign Name is a human-readable label you choose and can change at any time. The Campaign ID is a system-generated number that is permanent and unique across all Google Ads accounts. When building reliable integrations or reports, always use the Campaign ID rather than the name — names can be duplicated or edited, but IDs never change.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I find the Campaign ID in the browser URL?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. When you click into a campaign in the Google Ads interface, the URL in your browser bar contains the Campaign ID as a parameter (e.g., <code>campaignId=123456789</code>). This is a quick way to find the ID without needing to modify columns — just navigate to the campaign and copy the number from the URL.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I change or reset a Campaign ID?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Campaign IDs are assigned by Google and cannot be changed or reset. If you duplicate a campaign, the copy receives a new unique ID. Deleting and recreating a campaign also generates a new ID — the original ID is permanently retired. This is why it is important to record Campaign IDs if you use them in external tracking or reporting systems.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I find Ad Group IDs and Ad IDs the same way?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. The same Modify Columns process works at every level of the hierarchy. Navigate to <strong>Ad Groups</strong> and add the Ad Group ID column, or go to <strong>Ads</strong> and add the Ad ID column. ValueTrack parameters such as <code>{adgroupid}</code> and <code>{creative}</code> work the same way in tracking templates for finer-grained reporting.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

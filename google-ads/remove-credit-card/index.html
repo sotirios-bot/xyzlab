@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -307,81 +325,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about removing a payment method from Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Can I remove a credit card if it's the only payment method on my account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Google Ads requires at least one valid payment method on any active account. If the card you want to remove is the only one, you must first add a new payment method, then remove the old card. Alternatively, if you no longer need the account, you can cancel it entirely via <strong>Admin → Account Settings → Account Status</strong>.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will removing my credit card stop my Google Ads campaigns?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Removing a card won't stop campaigns as long as another valid payment method remains on the account. However, if you remove the card and no replacement is added, Google Ads may pause your campaigns due to a billing issue. Always ensure a backup payment method is in place before removing the primary card.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens to my outstanding balance when I cancel my Google Ads account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Cancelling your account does not erase any outstanding balance. Google will charge any remaining balance to the payment method on file. You'll receive a final invoice, and your account data will remain accessible for a period after cancellation in case you need to review historical performance.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I reactivate a cancelled Google Ads account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You can reactivate a cancelled Google Ads account by returning to <strong>Admin → Account Settings → Account Status</strong> and changing the status back to active. You will need to ensure a valid payment method is on file. Your previous campaigns and settings should still be accessible after reactivation.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I add a new payment method to Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Go to <strong>Billing → Payment methods</strong> and click <strong>Add payment method</strong>. You can add a credit card, debit card, or bank account depending on your country. Once the new payment method is verified and set as primary, you can then safely remove the old card.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between pausing and cancelling a Google Ads account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Pausing</strong> stops your campaigns from running but keeps your account, payment methods, and data intact — you can resume at any time. <strong>Cancelling</strong> deactivates the entire account and stops all billing. Pausing is preferable if you plan to return to advertising; cancellation is better if you no longer need the account at all.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -439,21 +383,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about removing a payment method from Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I remove a credit card if it's the only payment method on my account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Google Ads requires at least one valid payment method on any active account. If the card you want to remove is the only one, you must first add a new payment method, then remove the old card. Alternatively, if you no longer need the account, you can cancel it entirely via <strong>Admin → Account Settings → Account Status</strong>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will removing my credit card stop my Google Ads campaigns?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Removing a card won't stop campaigns as long as another valid payment method remains on the account. However, if you remove the card and no replacement is added, Google Ads may pause your campaigns due to a billing issue. Always ensure a backup payment method is in place before removing the primary card.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens to my outstanding balance when I cancel my Google Ads account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Cancelling your account does not erase any outstanding balance. Google will charge any remaining balance to the payment method on file. You'll receive a final invoice, and your account data will remain accessible for a period after cancellation in case you need to review historical performance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I reactivate a cancelled Google Ads account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can reactivate a cancelled Google Ads account by returning to <strong>Admin → Account Settings → Account Status</strong> and changing the status back to active. You will need to ensure a valid payment method is on file. Your previous campaigns and settings should still be accessible after reactivation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I add a new payment method to Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Go to <strong>Billing → Payment methods</strong> and click <strong>Add payment method</strong>. You can add a credit card, debit card, or bank account depending on your country. Once the new payment method is verified and set as primary, you can then safely remove the old card.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between pausing and cancelling a Google Ads account?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Pausing</strong> stops your campaigns from running but keeps your account, payment methods, and data intact — you can resume at any time. <strong>Cancelling</strong> deactivates the entire account and stops all billing. Pausing is preferable if you plan to return to advertising; cancellation is better if you no longer need the account at all.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

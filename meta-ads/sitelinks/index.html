@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -272,81 +290,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Meta Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about adding sitelinks to Meta Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What are sitelinks in Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Sitelinks in Meta Ads are <strong>additional clickable links</strong> shown below your main ad creative. Each sitelink has its own destination URL, a short display label (the visible link text), and an optional thumbnail image. They give users more ways to navigate directly to relevant pages on your website — such as a product page, a pricing page, or a contact form — directly from the ad.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What image size is required for sitelink thumbnails?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Sitelink thumbnail images must be <strong>300 × 300 pixels</strong> (square format). Use a clear, high-quality image that represents the destination page — such as a product photo, an icon, or a branded graphic. Avoid text-heavy images as they may not display well at small sizes.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How many sitelinks can I add to a Meta Ad?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Meta Ads typically supports <strong>up to 4 sitelinks</strong> per ad. Meta may not always show all sitelinks — it will display the most relevant ones based on placement and user context. Adding more sitelinks gives Meta more options to optimise which ones are shown to each user.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where do Meta Ads sitelinks appear?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Sitelinks appear <strong>below the main ad creative</strong> on Facebook and Instagram placements that support them — primarily the Facebook News Feed and Instagram Feed. They are displayed as a scrollable row of links with thumbnails and labels. Not all placements support sitelinks, so Meta will only show them where they are eligible.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do sitelinks work for all Meta Ads campaign objectives?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Sitelinks are primarily available for <strong>Traffic, Engagement, and Sales</strong> campaign objectives where the ad is driving users to a website. They require a <strong>Source URL</strong> to be set in the creative setup. Objectives that do not use a website destination (such as App Installs or some Video Views campaigns) may not support sitelinks.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I add sitelinks to an existing Meta Ad?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Navigate to the Ad level in Meta Ads Manager, find the ad you want to update, and click <strong>Edit</strong> under Ad creative. Scroll to the Site links section and add or edit your sitelinks from there. Note that editing an active ad may trigger a brief re-review, though adding sitelinks is generally treated as a minor change.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -404,21 +348,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about adding sitelinks to Meta Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What are sitelinks in Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Sitelinks in Meta Ads are <strong>additional clickable links</strong> shown below your main ad creative. Each sitelink has its own destination URL, a short display label (the visible link text), and an optional thumbnail image. They give users more ways to navigate directly to relevant pages on your website — such as a product page, a pricing page, or a contact form — directly from the ad.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What image size is required for sitelink thumbnails?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Sitelink thumbnail images must be <strong>300 × 300 pixels</strong> (square format). Use a clear, high-quality image that represents the destination page — such as a product photo, an icon, or a branded graphic. Avoid text-heavy images as they may not display well at small sizes.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How many sitelinks can I add to a Meta Ad?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Meta Ads typically supports <strong>up to 4 sitelinks</strong> per ad. Meta may not always show all sitelinks — it will display the most relevant ones based on placement and user context. Adding more sitelinks gives Meta more options to optimise which ones are shown to each user.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where do Meta Ads sitelinks appear?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Sitelinks appear <strong>below the main ad creative</strong> on Facebook and Instagram placements that support them — primarily the Facebook News Feed and Instagram Feed. They are displayed as a scrollable row of links with thumbnails and labels. Not all placements support sitelinks, so Meta will only show them where they are eligible.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do sitelinks work for all Meta Ads campaign objectives?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Sitelinks are primarily available for <strong>Traffic, Engagement, and Sales</strong> campaign objectives where the ad is driving users to a website. They require a <strong>Source URL</strong> to be set in the creative setup. Objectives that do not use a website destination (such as App Installs or some Video Views campaigns) may not support sitelinks.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I add sitelinks to an existing Meta Ad?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Navigate to the Ad level in Meta Ads Manager, find the ad you want to update, and click <strong>Edit</strong> under Ad creative. Scroll to the Site links section and add or edit your sitelinks from there. Note that editing an active ad may trigger a brief re-review, though adding sitelinks is generally treated as a minor change.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

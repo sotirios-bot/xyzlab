@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -308,81 +326,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your campaigns together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about finding and downloading invoices in Meta Ads Manager.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Where can I find my Meta Ads invoices?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Meta Ads invoices are found in <strong>Ads Manager → All Tools → Billing &amp; Payments → Invoices</strong>. By default, only outstanding (unpaid) invoices are shown — toggle off the "Show outstanding only" filter to see your complete billing history including all paid invoices. Invoices are available as downloadable PDFs for each billing cycle.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why can't I see older Meta Ads invoices?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Two common reasons: first, the "Show outstanding only" toggle may be enabled — turn it off to show all invoices including paid ones. Second, the date range filter may be set too narrow. Expand the date range to cover the period you're looking for. Note that Meta typically retains billing records for up to 7 years, so historical invoices should be accessible unless the ad account has been permanently disabled.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I download Meta Ads invoices for multiple months at once?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Currently, Meta Ads Manager does not offer a bulk download option for invoices — each invoice must be downloaded individually. To download multiple months, set the date range to cover the full period you need, then download each invoice one by one from the list. If you need invoices regularly for accounting, bookmark the Billing &amp; Payments page and check it monthly.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between a Meta Ads invoice and a receipt?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A <strong>receipt</strong> is generated each time a payment is processed against your ad account — it confirms a specific charge. An <strong>invoice</strong> is a monthly billing summary that details all charges for a billing period. For VAT/tax purposes, most accountants and tax authorities require the official invoice rather than individual receipts. Both are accessible from the Billing &amp; Payments section in Meta Ads Manager.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need admin access to download Meta Ads invoices?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. To access the Billing &amp; Payments section and download invoices, you need <strong>Admin</strong> access on the Meta Business account that owns the ad account. Analyst or Advertiser roles do not have access to billing information. If you are an agency managing a client's account, you will need to request Admin access or ask the client to download and share the invoices directly.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I update the billing details shown on Meta Ads invoices?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Go to <strong>Billing &amp; Payments → Payment settings</strong> and update your business name, VAT/tax ID, and billing address. Changes apply to future invoices — previously issued invoices cannot be retroactively amended. Make sure your billing details are correct before running campaigns if you need invoices for VAT reclaim or company accounting purposes.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -440,21 +384,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about finding and downloading invoices in Meta Ads Manager.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where can I find my Meta Ads invoices?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Meta Ads invoices are found in <strong>Ads Manager → All Tools → Billing &amp; Payments → Invoices</strong>. By default, only outstanding (unpaid) invoices are shown — toggle off the "Show outstanding only" filter to see your complete billing history including all paid invoices. Invoices are available as downloadable PDFs for each billing cycle.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why can't I see older Meta Ads invoices?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Two common reasons: first, the "Show outstanding only" toggle may be enabled — turn it off to show all invoices including paid ones. Second, the date range filter may be set too narrow. Expand the date range to cover the period you're looking for. Note that Meta typically retains billing records for up to 7 years, so historical invoices should be accessible unless the ad account has been permanently disabled.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I download Meta Ads invoices for multiple months at once?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Currently, Meta Ads Manager does not offer a bulk download option for invoices — each invoice must be downloaded individually. To download multiple months, set the date range to cover the full period you need, then download each invoice one by one from the list. If you need invoices regularly for accounting, bookmark the Billing &amp; Payments page and check it monthly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between a Meta Ads invoice and a receipt?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A <strong>receipt</strong> is generated each time a payment is processed against your ad account — it confirms a specific charge. An <strong>invoice</strong> is a monthly billing summary that details all charges for a billing period. For VAT/tax purposes, most accountants and tax authorities require the official invoice rather than individual receipts. Both are accessible from the Billing &amp; Payments section in Meta Ads Manager.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need admin access to download Meta Ads invoices?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. To access the Billing &amp; Payments section and download invoices, you need <strong>Admin</strong> access on the Meta Business account that owns the ad account. Analyst or Advertiser roles do not have access to billing information. If you are an agency managing a client's account, you will need to request Admin access or ask the client to download and share the invoices directly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I update the billing details shown on Meta Ads invoices?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Go to <strong>Billing &amp; Payments → Payment settings</strong> and update your business name, VAT/tax ID, and billing address. Changes apply to future invoices — previously issued invoices cannot be retroactively amended. Make sure your billing details are correct before running campaigns if you need invoices for VAT reclaim or company accounting purposes.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

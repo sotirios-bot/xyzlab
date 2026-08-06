@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your setup? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -274,81 +292,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Claude AI?</h3>
           <p>Book a 90-minute training session and we'll work through your Claude setup together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about linking WordPress with Claude.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What can Claude do once WordPress is connected?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Once WordPress is linked, Claude can <strong>read, create, and edit posts and pages</strong> on your site. You can ask Claude to draft new blog posts, update existing content, retrieve published articles, or manage your site's content without leaving the Claude interface. This makes it a powerful tool for content teams and solo creators alike.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does this work with self-hosted WordPress (WordPress.org)?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The WordPress connector in Claude works with <strong>WordPress.com sites</strong> and self-hosted <strong>WordPress.org</strong> sites that have the necessary REST API access enabled. Most modern WordPress installations have the REST API enabled by default. Check your WordPress site's settings or ask your hosting provider if you're unsure whether the API is accessible.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need a paid Claude plan to use Connectors?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Connectors (including the WordPress integration) are available on <strong>Claude Pro and Team plans</strong>. Free plan users generally cannot access third-party connectors. Check Claude's current plan comparison page for the latest feature availability.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can Claude publish posts directly to my WordPress site?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, depending on the permissions granted during setup. Claude can typically <strong>create posts as drafts or publish them directly</strong> based on the access level you authorise. For most workflows, it's safer to have Claude create drafts that you review and publish manually — giving you a final quality check before anything goes live.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I disconnect WordPress from Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>To disconnect, go to <strong>Settings → Connectors</strong> in Claude and remove the WordPress connection. You can also revoke access from your WordPress admin panel under <strong>Users → Your Profile → Applications</strong> (for WordPress.com) or by removing the connected application from your site's settings. Either action immediately cuts off Claude's access to your WordPress site.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is my WordPress site data safe when connected to Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Anthropic accesses your WordPress data only to respond to your requests in Claude — your site content is not used to train AI models. The connection uses OAuth or application passwords, meaning your WordPress admin credentials are never directly exposed to Claude. Always review the permission scopes during the authorisation step and grant only the access your workflow requires.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -406,21 +350,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your setup? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about linking WordPress with Claude.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What can Claude do once WordPress is connected?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Once WordPress is linked, Claude can <strong>read, create, and edit posts and pages</strong> on your site. You can ask Claude to draft new blog posts, update existing content, retrieve published articles, or manage your site's content without leaving the Claude interface. This makes it a powerful tool for content teams and solo creators alike.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does this work with self-hosted WordPress (WordPress.org)?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The WordPress connector in Claude works with <strong>WordPress.com sites</strong> and self-hosted <strong>WordPress.org</strong> sites that have the necessary REST API access enabled. Most modern WordPress installations have the REST API enabled by default. Check your WordPress site's settings or ask your hosting provider if you're unsure whether the API is accessible.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a paid Claude plan to use Connectors?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Connectors (including the WordPress integration) are available on <strong>Claude Pro and Team plans</strong>. Free plan users generally cannot access third-party connectors. Check Claude's current plan comparison page for the latest feature availability.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can Claude publish posts directly to my WordPress site?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, depending on the permissions granted during setup. Claude can typically <strong>create posts as drafts or publish them directly</strong> based on the access level you authorise. For most workflows, it's safer to have Claude create drafts that you review and publish manually — giving you a final quality check before anything goes live.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I disconnect WordPress from Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>To disconnect, go to <strong>Settings → Connectors</strong> in Claude and remove the WordPress connection. You can also revoke access from your WordPress admin panel under <strong>Users → Your Profile → Applications</strong> (for WordPress.com) or by removing the connected application from your site's settings. Either action immediately cuts off Claude's access to your WordPress site.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is my WordPress site data safe when connected to Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Anthropic accesses your WordPress data only to respond to your requests in Claude — your site content is not used to train AI models. The connection uses OAuth or application passwords, meaning your WordPress admin credentials are never directly exposed to Claude. Always review the permission scopes during the authorisation step and grant only the access your workflow requires.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

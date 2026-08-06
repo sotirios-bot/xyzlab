@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -307,81 +325,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about transferring ownership of a Google Ads account.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Is there a "Transfer Ownership" button in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Unlike some platforms, Google Ads does not have a dedicated ownership transfer feature. The correct workaround is to <strong>invite the new owner as an Admin</strong> user, wait for them to accept the invitation and confirm access, and then <strong>remove your own email</strong> from the account. Once you are removed, the new Admin has full control.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens if I remove myself before the new owner accepts?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>If you remove yourself before the invitation is accepted, the new owner will still receive their invitation email and can accept it to gain access. However, if you were the <strong>only Admin</strong>, removing yourself first could leave the account in a state where no one has Admin access — making it very difficult to regain control. Always confirm the new owner has successfully logged in before removing yourself.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between Admin and Standard access in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Admin</strong> access is the highest level — Admins can manage all campaigns, settings, billing, and other users (including adding/removing people). <strong>Standard</strong> access allows users to create and manage campaigns but they cannot manage account-level settings or other users. For an ownership transfer, the new owner must be given <strong>Admin</strong> access.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does transferring ownership affect billing?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Access and billing are separate in Google Ads. Adding a new Admin transfers account access, but <strong>billing information</strong> (credit card, payment method) remains linked to the original payment profile. The new owner will need to update the billing details separately under <strong>Tools → Billing → Payment methods</strong> if they want charges to go to a new payment method.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I transfer a Google Ads account that is linked to a Manager Account (MCC)?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, but there are extra considerations. If the account is managed under an MCC, the MCC also has access. The new owner should be aware of any MCC links and decide whether to <strong>unlink the account</strong> from the MCC via <strong>Admin → Google Ads Manager accounts</strong>. Simply adding themselves as an Admin and removing you does not automatically remove MCC access.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What access levels are available in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google Ads offers four access levels: <strong>Admin</strong> (full control including user management and billing), <strong>Standard</strong> (create and edit campaigns, no user management), <strong>Read only</strong> (view reports and data, no editing), and <strong>Email only</strong> (receive performance reports by email without logging in). For most team members or agencies, Standard access is appropriate; only the account owner needs Admin.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -439,21 +383,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about transferring ownership of a Google Ads account.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is there a "Transfer Ownership" button in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Unlike some platforms, Google Ads does not have a dedicated ownership transfer feature. The correct workaround is to <strong>invite the new owner as an Admin</strong> user, wait for them to accept the invitation and confirm access, and then <strong>remove your own email</strong> from the account. Once you are removed, the new Admin has full control.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens if I remove myself before the new owner accepts?</span>
+          </div>
+          <div class="faq-answer">
+            <p>If you remove yourself before the invitation is accepted, the new owner will still receive their invitation email and can accept it to gain access. However, if you were the <strong>only Admin</strong>, removing yourself first could leave the account in a state where no one has Admin access — making it very difficult to regain control. Always confirm the new owner has successfully logged in before removing yourself.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Admin and Standard access in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Admin</strong> access is the highest level — Admins can manage all campaigns, settings, billing, and other users (including adding/removing people). <strong>Standard</strong> access allows users to create and manage campaigns but they cannot manage account-level settings or other users. For an ownership transfer, the new owner must be given <strong>Admin</strong> access.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does transferring ownership affect billing?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Access and billing are separate in Google Ads. Adding a new Admin transfers account access, but <strong>billing information</strong> (credit card, payment method) remains linked to the original payment profile. The new owner will need to update the billing details separately under <strong>Tools → Billing → Payment methods</strong> if they want charges to go to a new payment method.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I transfer a Google Ads account that is linked to a Manager Account (MCC)?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, but there are extra considerations. If the account is managed under an MCC, the MCC also has access. The new owner should be aware of any MCC links and decide whether to <strong>unlink the account</strong> from the MCC via <strong>Admin → Google Ads Manager accounts</strong>. Simply adding themselves as an Admin and removing you does not automatically remove MCC access.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What access levels are available in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google Ads offers four access levels: <strong>Admin</strong> (full control including user management and billing), <strong>Standard</strong> (create and edit campaigns, no user management), <strong>Read only</strong> (view reports and data, no editing), and <strong>Email only</strong> (receive performance reports by email without logging in). For most team members or agencies, Standard access is appropriate; only the account owner needs Admin.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

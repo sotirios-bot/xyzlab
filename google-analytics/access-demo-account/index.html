@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -263,81 +281,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Analytics?</h3>
           <p>Book a 90-minute training session and we'll work through your analytics setup together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about the Google Analytics Demo Account.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the Google Analytics Demo Account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The Google Analytics Demo Account is a free GA4 property provided by Google that contains <strong>real data from the Google Merchandise Store</strong> — an actual ecommerce site that sells Google-branded products. It gives you access to a fully populated GA4 account so you can explore reports, test features, and learn how analytics works without needing your own live website data.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is the Google Analytics Demo Account free?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — completely free. Any Google account holder can access the Demo Account by visiting the Google support page and clicking the link to add it. You do not need a paid Google Analytics subscription, and there is no time limit on access.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What kind of data does the Demo Account contain?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The GA4 Demo Account contains <strong>live ecommerce data</strong> from the Google Merchandise Store including sessions, users, pageviews, events, conversions, revenue, traffic sources, device breakdown, and geo data. Because it's a real active store, the data is updated continuously — making it ideal for practising with GA4 reports, building Looker Studio dashboards, or following along with tutorials.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I make changes to the Demo Account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. The Demo Account is <strong>read-only</strong> — you can view and explore all reports, but you cannot create goals, modify settings, add users, or change the configuration. This is by design: it protects the shared data for all users. If you want to practise creating events or goals, you will need your own GA4 property.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does the Demo Account appear in my normal Google Analytics account list?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Once you click the access link, the Demo Account is added to your Google Analytics account list and appears under a <strong>"Demo Account"</strong> account alongside any other GA4 properties you own. You can switch between your own properties and the Demo Account at any time from the account selector in the top-left of Google Analytics.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I use the Demo Account to build Looker Studio reports?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — this is one of the best uses for the Demo Account. Because it has consistently populated data, you can connect it to <strong>Looker Studio (Data Studio)</strong> as a data source to practise building dashboards and reports without needing your own live site data. It is also useful for following along with analytics tutorials that reference specific reports or metrics.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -395,21 +339,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about the Google Analytics Demo Account.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the Google Analytics Demo Account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The Google Analytics Demo Account is a free GA4 property provided by Google that contains <strong>real data from the Google Merchandise Store</strong> — an actual ecommerce site that sells Google-branded products. It gives you access to a fully populated GA4 account so you can explore reports, test features, and learn how analytics works without needing your own live website data.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is the Google Analytics Demo Account free?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — completely free. Any Google account holder can access the Demo Account by visiting the Google support page and clicking the link to add it. You do not need a paid Google Analytics subscription, and there is no time limit on access.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What kind of data does the Demo Account contain?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The GA4 Demo Account contains <strong>live ecommerce data</strong> from the Google Merchandise Store including sessions, users, pageviews, events, conversions, revenue, traffic sources, device breakdown, and geo data. Because it's a real active store, the data is updated continuously — making it ideal for practising with GA4 reports, building Looker Studio dashboards, or following along with tutorials.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I make changes to the Demo Account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. The Demo Account is <strong>read-only</strong> — you can view and explore all reports, but you cannot create goals, modify settings, add users, or change the configuration. This is by design: it protects the shared data for all users. If you want to practise creating events or goals, you will need your own GA4 property.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does the Demo Account appear in my normal Google Analytics account list?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Once you click the access link, the Demo Account is added to your Google Analytics account list and appears under a <strong>"Demo Account"</strong> account alongside any other GA4 properties you own. You can switch between your own properties and the Demo Account at any time from the account selector in the top-left of Google Analytics.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I use the Demo Account to build Looker Studio reports?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — this is one of the best uses for the Demo Account. Because it has consistently populated data, you can connect it to <strong>Looker Studio (Data Studio)</strong> as a data source to practise building dashboards and reports without needing your own live site data. It is also useful for following along with analytics tutorials that reference specific reports or metrics.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

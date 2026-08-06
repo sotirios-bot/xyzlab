@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -287,81 +305,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about URL Tracking Templates in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a URL Tracking Template in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A tracking template is a URL suffix that Google Ads appends to your final URL when a user clicks your ad. It lets you pass <strong>UTM parameters</strong> (source, medium, campaign, keyword, etc.) to your analytics tool so you can see exactly which campaigns, ad groups, and keywords are driving traffic and conversions.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between a tracking template and a final URL?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>final URL</strong> is the destination page the user lands on. The <strong>tracking template</strong> is a separate field that wraps or appends to the final URL to add tracking parameters. Google uses the tracking template to redirect the click, log the parameters, then send the user to the final URL — the user sees no difference.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I set one tracking template for the whole account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You can set a tracking template at three levels: <strong>Account, Campaign, or Ad Group</strong>. The most specific level takes priority. Setting it at the account level means all campaigns inherit the same template automatically — useful if you use consistent UTM parameters across all campaigns. Campaign-level templates are useful when you need different tracking per campaign.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will changing the tracking template trigger an ad re-review?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Updating a tracking template does <strong>not</strong> trigger an ad re-review or reset your performance data — it is treated as a non-substantive change. This makes it safe to update your UTM parameters or switch analytics tools without interrupting your campaigns.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is {lpurl} and do I need it?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><code>{lpurl}</code> is a <strong>ValueTrack parameter</strong> that Google automatically replaces with your ad's final URL at the time of the click. You must include it in your tracking template so Google knows where to send the user after appending your parameters. Without it, your ads will not deliver correctly.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I test if my tracking template is working?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Use the <strong>Test</strong> button next to the tracking template field in Campaign Settings — Google will show you the full destination URL that will be generated. You can also click an ad after setting up the template and check the URL in your browser address bar, or verify in Google Analytics that sessions are tagged with the correct UTM values.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -419,21 +363,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about URL Tracking Templates in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a URL Tracking Template in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A tracking template is a URL suffix that Google Ads appends to your final URL when a user clicks your ad. It lets you pass <strong>UTM parameters</strong> (source, medium, campaign, keyword, etc.) to your analytics tool so you can see exactly which campaigns, ad groups, and keywords are driving traffic and conversions.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between a tracking template and a final URL?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>final URL</strong> is the destination page the user lands on. The <strong>tracking template</strong> is a separate field that wraps or appends to the final URL to add tracking parameters. Google uses the tracking template to redirect the click, log the parameters, then send the user to the final URL — the user sees no difference.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I set one tracking template for the whole account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can set a tracking template at three levels: <strong>Account, Campaign, or Ad Group</strong>. The most specific level takes priority. Setting it at the account level means all campaigns inherit the same template automatically — useful if you use consistent UTM parameters across all campaigns. Campaign-level templates are useful when you need different tracking per campaign.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will changing the tracking template trigger an ad re-review?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Updating a tracking template does <strong>not</strong> trigger an ad re-review or reset your performance data — it is treated as a non-substantive change. This makes it safe to update your UTM parameters or switch analytics tools without interrupting your campaigns.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is {lpurl} and do I need it?</span>
+          </div>
+          <div class="faq-answer">
+            <p><code>{lpurl}</code> is a <strong>ValueTrack parameter</strong> that Google automatically replaces with your ad's final URL at the time of the click. You must include it in your tracking template so Google knows where to send the user after appending your parameters. Without it, your ads will not deliver correctly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I test if my tracking template is working?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Use the <strong>Test</strong> button next to the tracking template field in Campaign Settings — Google will show you the full destination URL that will be generated. You can also click an ad after setting up the template and check the URL in your browser address bar, or verify in Google Analytics that sessions are tagged with the correct UTM values.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

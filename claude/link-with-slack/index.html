@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your workflow? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -285,81 +303,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Claude AI?</h3>
           <p>Book a 90-minute training session and we'll build your AI workflows together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about connecting Slack to Claude.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What can I do after linking Slack to Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Once connected, Claude can interact with your Slack workspace directly from the conversation window. You can ask Claude to <strong>send messages to channels or DMs, search for past conversations, list recent messages, summarise threads, and look up channel members</strong> — all without leaving Claude. This makes it easy to communicate with your team, share AI-generated content, and keep track of what's happening in Slack alongside your other work.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where is the Customize menu in Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>Customize</strong> option is found in the left-hand sidebar of the Claude interface at claude.ai. Click it to open the customisation panel, then select <strong>Connect your tools</strong> to browse and manage all available integrations including Slack.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can Claude send Slack messages on my behalf?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Once authorised, Claude can <strong>send messages to channels and direct message other members</strong> of your Slack workspace. You can simply tell Claude what you want to say and where to send it — for example, "Send a message to the #marketing channel saying the report is ready" — and Claude will post it for you using your Slack account.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Which Slack workspace will Claude connect to?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>During the connection flow, you'll be prompted to <strong>select which Slack workspace</strong> to link. If you're a member of multiple workspaces, make sure to choose the correct one before clicking Connect. You can disconnect and reconnect at any time to switch workspaces.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I disconnect Slack from Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Go back to <strong>Customize → Connect your tools</strong> in Claude and find Slack in your connected integrations. Click the disconnect or remove option to revoke access. You can also remove Claude's access from your Slack workspace under <strong>Administration → Installed Apps</strong>, where all third-party app permissions are managed.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is the Slack integration available on the free Claude plan?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Tool availability in Claude depends on your plan and region. If Slack appears in your <strong>Customize → Connect your tools</strong> list, it is available for your account. Claude Pro subscribers generally have access to more tools and higher usage limits for integrated tools. Check the Connect your tools section in your account to see what is currently available.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -417,21 +361,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your workflow? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about connecting Slack to Claude.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What can I do after linking Slack to Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Once connected, Claude can interact with your Slack workspace directly from the conversation window. You can ask Claude to <strong>send messages to channels or DMs, search for past conversations, list recent messages, summarise threads, and look up channel members</strong> — all without leaving Claude. This makes it easy to communicate with your team, share AI-generated content, and keep track of what's happening in Slack alongside your other work.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where is the Customize menu in Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>Customize</strong> option is found in the left-hand sidebar of the Claude interface at claude.ai. Click it to open the customisation panel, then select <strong>Connect your tools</strong> to browse and manage all available integrations including Slack.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can Claude send Slack messages on my behalf?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Once authorised, Claude can <strong>send messages to channels and direct message other members</strong> of your Slack workspace. You can simply tell Claude what you want to say and where to send it — for example, "Send a message to the #marketing channel saying the report is ready" — and Claude will post it for you using your Slack account.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Which Slack workspace will Claude connect to?</span>
+          </div>
+          <div class="faq-answer">
+            <p>During the connection flow, you'll be prompted to <strong>select which Slack workspace</strong> to link. If you're a member of multiple workspaces, make sure to choose the correct one before clicking Connect. You can disconnect and reconnect at any time to switch workspaces.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I disconnect Slack from Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Go back to <strong>Customize → Connect your tools</strong> in Claude and find Slack in your connected integrations. Click the disconnect or remove option to revoke access. You can also remove Claude's access from your Slack workspace under <strong>Administration → Installed Apps</strong>, where all third-party app permissions are managed.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is the Slack integration available on the free Claude plan?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Tool availability in Claude depends on your plan and region. If Slack appears in your <strong>Customize → Connect your tools</strong> list, it is available for your account. Claude Pro subscribers generally have access to more tools and higher usage limits for integrated tools. Check the Connect your tools section in your account to see what is currently available.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

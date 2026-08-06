@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -293,81 +311,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Tag Manager?</h3>
           <p>Book a 90-minute training session and we'll set up your tag tracking together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about finding and using your Google Tag Manager container ID and tracking code.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a Google Tag Manager container ID?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A Google Tag Manager container ID is a unique identifier assigned to each GTM container. It follows the format <code>GTM-XXXXXXX</code> (e.g. <code>GTM-ABC1234</code>). This ID is used both in the install snippet you add to your website and when referencing your container in integrations or documentation. Each website or app you manage in GTM has its own separate container with its own unique ID.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where do I paste the GTM tracking code on my website?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>GTM provides two code snippets. The first — a JavaScript snippet — should be placed as high as possible in the <code>&lt;head&gt;</code> section of every page on your website. The second — a <code>&lt;noscript&gt;</code> iframe snippet — should be placed immediately after the opening <code>&lt;body&gt;</code> tag. Both are required for GTM to work correctly, especially for users who have JavaScript disabled. Many CMS platforms (WordPress, Wix, Shopify) have dedicated fields or plugins that insert these snippets automatically.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between the GTM container ID and the tracking code?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>container ID</strong> (e.g. <code>GTM-XXXXXXX</code>) is just the unique identifier for your GTM container. The <strong>tracking code</strong> (or install snippet) is the full JavaScript and noscript code blocks that you paste into your website's HTML — these blocks include the container ID embedded within them. You need the full tracking code snippet to actually install GTM; the container ID alone is used when referencing your container in other tools or integrations.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I know if GTM is installed correctly on my website?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The easiest way is to use <strong>GTM Preview Mode</strong> — click the <strong>Preview</strong> button in your GTM container and enter your website URL. If GTM is installed correctly, the Tag Assistant panel will open alongside your site and confirm the container is firing. You can also install the <strong>Tag Assistant Legacy</strong> Chrome extension, which checks for GTM (and other Google tags) on any page you visit and reports whether they are detected correctly.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I have multiple GTM containers on the same website?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, technically you can install multiple GTM containers on a single website, and some organisations do this when different teams manage different sets of tags. However, it is generally not recommended as it can cause duplicate tracking, slower page loads, and difficult-to-debug tag conflicts. Best practice is to use a single container per website and manage all your tags, triggers, and variables within it.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need a new GTM container for each website I manage?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Each website should have its own dedicated GTM container. Within a single GTM account you can create multiple containers — one per website or app. This keeps your tags, triggers, and variables separate and organised by property, and ensures that publishing a change to one site's container never affects another site. You can manage all containers from the same GTM account at tagmanager.google.com.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -425,21 +369,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about finding and using your Google Tag Manager container ID and tracking code.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a Google Tag Manager container ID?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A Google Tag Manager container ID is a unique identifier assigned to each GTM container. It follows the format <code>GTM-XXXXXXX</code> (e.g. <code>GTM-ABC1234</code>). This ID is used both in the install snippet you add to your website and when referencing your container in integrations or documentation. Each website or app you manage in GTM has its own separate container with its own unique ID.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where do I paste the GTM tracking code on my website?</span>
+          </div>
+          <div class="faq-answer">
+            <p>GTM provides two code snippets. The first — a JavaScript snippet — should be placed as high as possible in the <code>&lt;head&gt;</code> section of every page on your website. The second — a <code>&lt;noscript&gt;</code> iframe snippet — should be placed immediately after the opening <code>&lt;body&gt;</code> tag. Both are required for GTM to work correctly, especially for users who have JavaScript disabled. Many CMS platforms (WordPress, Wix, Shopify) have dedicated fields or plugins that insert these snippets automatically.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between the GTM container ID and the tracking code?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>container ID</strong> (e.g. <code>GTM-XXXXXXX</code>) is just the unique identifier for your GTM container. The <strong>tracking code</strong> (or install snippet) is the full JavaScript and noscript code blocks that you paste into your website's HTML — these blocks include the container ID embedded within them. You need the full tracking code snippet to actually install GTM; the container ID alone is used when referencing your container in other tools or integrations.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I know if GTM is installed correctly on my website?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The easiest way is to use <strong>GTM Preview Mode</strong> — click the <strong>Preview</strong> button in your GTM container and enter your website URL. If GTM is installed correctly, the Tag Assistant panel will open alongside your site and confirm the container is firing. You can also install the <strong>Tag Assistant Legacy</strong> Chrome extension, which checks for GTM (and other Google tags) on any page you visit and reports whether they are detected correctly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I have multiple GTM containers on the same website?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, technically you can install multiple GTM containers on a single website, and some organisations do this when different teams manage different sets of tags. However, it is generally not recommended as it can cause duplicate tracking, slower page loads, and difficult-to-debug tag conflicts. Best practice is to use a single container per website and manage all your tags, triggers, and variables within it.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a new GTM container for each website I manage?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Each website should have its own dedicated GTM container. Within a single GTM account you can create multiple containers — one per website or app. This keeps your tags, triggers, and variables separate and organised by property, and ensures that publishing a change to one site's container never affects another site. You can manage all containers from the same GTM account at tagmanager.google.com.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

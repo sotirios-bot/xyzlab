@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -308,81 +326,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads and AI?</h3>
           <p>Book a 90-minute training session and we'll set up your AI-powered Meta Ads workflow together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about connecting Meta Ads to Claude via MCP.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is MCP and why does it matter for Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>MCP (Model Context Protocol) is an open standard that lets AI models like Claude connect to external tools and data sources. By connecting the <strong>Meta Ads MCP</strong> to Claude, you give Claude direct access to your campaign data — so instead of manually exporting reports, you can ask Claude to analyse performance, identify trends, suggest optimisations, and even make changes to your campaigns through natural conversation.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Which Claude plan do I need to use MCP connectors?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>MCP connectors (also called <strong>Integrations</strong>) are available on <strong>Claude Pro, Team, and Enterprise</strong> plans. They are not available on the free tier. If you don't see the Connectors option in Settings, check your current plan and upgrade if needed to access this feature.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What can I ask Claude to do once Meta Ads is connected?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Once connected, Claude can read your campaign data in real time. You can ask it to <strong>pull performance reports</strong>, compare campaigns by ROAS or CPA, identify underperforming ad sets, suggest budget reallocations, write new ad copy, and more. The Meta Ads MCP also supports write actions — meaning Claude can pause campaigns, adjust budgets, or update targeting directly in your account when you instruct it to.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is it safe to give Claude access to my Meta Ads account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. The connection uses Meta's official OAuth authorisation flow — Claude never sees your password and access is granted through Meta's standard permissions system, the same way you'd connect any third-party tool. You can <strong>revoke access</strong> at any time from your Meta Business Settings under <strong>Apps &amp; Integrations</strong>. It is good practice to only connect ad accounts that are relevant and to review what actions Claude takes before confirming them.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I connect multiple Meta Ads accounts to Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. During the authorisation step you can select <strong>multiple ad accounts</strong> from your Meta Business Manager. This is especially useful for agencies managing several clients — you can switch between accounts within the same conversation or ask Claude to compare performance across accounts.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I disconnect Meta Ads from Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Go to Claude <strong>Settings → Connectors</strong>, find the Meta Ads MCP connector, and click <strong>Disconnect</strong> or <strong>Delete</strong>. To fully revoke access from Meta's side, go to your Meta Business Settings, navigate to <strong>Apps &amp; Integrations</strong>, find Claude, and remove its permissions. Both steps together ensure the connection is fully terminated.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -440,21 +384,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about connecting Meta Ads to Claude via MCP.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is MCP and why does it matter for Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>MCP (Model Context Protocol) is an open standard that lets AI models like Claude connect to external tools and data sources. By connecting the <strong>Meta Ads MCP</strong> to Claude, you give Claude direct access to your campaign data — so instead of manually exporting reports, you can ask Claude to analyse performance, identify trends, suggest optimisations, and even make changes to your campaigns through natural conversation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Which Claude plan do I need to use MCP connectors?</span>
+          </div>
+          <div class="faq-answer">
+            <p>MCP connectors (also called <strong>Integrations</strong>) are available on <strong>Claude Pro, Team, and Enterprise</strong> plans. They are not available on the free tier. If you don't see the Connectors option in Settings, check your current plan and upgrade if needed to access this feature.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What can I ask Claude to do once Meta Ads is connected?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Once connected, Claude can read your campaign data in real time. You can ask it to <strong>pull performance reports</strong>, compare campaigns by ROAS or CPA, identify underperforming ad sets, suggest budget reallocations, write new ad copy, and more. The Meta Ads MCP also supports write actions — meaning Claude can pause campaigns, adjust budgets, or update targeting directly in your account when you instruct it to.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is it safe to give Claude access to my Meta Ads account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. The connection uses Meta's official OAuth authorisation flow — Claude never sees your password and access is granted through Meta's standard permissions system, the same way you'd connect any third-party tool. You can <strong>revoke access</strong> at any time from your Meta Business Settings under <strong>Apps &amp; Integrations</strong>. It is good practice to only connect ad accounts that are relevant and to review what actions Claude takes before confirming them.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I connect multiple Meta Ads accounts to Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. During the authorisation step you can select <strong>multiple ad accounts</strong> from your Meta Business Manager. This is especially useful for agencies managing several clients — you can switch between accounts within the same conversation or ask Claude to compare performance across accounts.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I disconnect Meta Ads from Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Go to Claude <strong>Settings → Connectors</strong>, find the Meta Ads MCP connector, and click <strong>Disconnect</strong> or <strong>Delete</strong>. To fully revoke access from Meta's side, go to your Meta Business Settings, navigate to <strong>Apps &amp; Integrations</strong>, find Claude, and remove its permissions. Both steps together ensure the connection is fully terminated.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

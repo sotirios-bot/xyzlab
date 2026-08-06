@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your website? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -275,81 +293,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Wix?</h3>
           <p>Book a 90-minute training session and we'll work through your Wix website together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about adding alt text to product images in WIX.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is alt text and why does it matter for SEO?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Alt text (alternative text) is a short description of an image that search engines read to understand what the image shows. Since Google cannot "see" images, it relies on alt text to index them correctly. Well-written alt text helps your product images appear in <strong>Google Image Search</strong>, contributes to your page's keyword relevance, and improves accessibility for visually impaired visitors using screen readers.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How should I write good alt text for product images?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Good alt text is <strong>descriptive and specific</strong>. Include the product name, key attributes (colour, material, size), and any relevant context. For example: <em>"Blue leather crossbody bag with gold zip"</em> is far better than <em>"bag"</em> or <em>"IMG_1234"</em>. Keep it under 125 characters and avoid keyword stuffing — write for a human who can't see the image.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does alt text affect my Wix store's Google ranking?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, indirectly. Alt text helps Google understand the context of your product pages, which can improve their relevance for related search queries. Product images with keyword-rich alt text also have a better chance of appearing in <strong>Google Shopping</strong> image panels and image search results — both of which drive additional organic traffic to your store.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to add alt text to every product image?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Ideally yes, but prioritise your <strong>primary product image</strong> first as it carries the most weight. Additional gallery images (angle shots, lifestyle photos) should also have alt text, but if you have a large catalogue, start with the main image for each product and work through the rest over time.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I add alt text to regular page images (not just product images) in Wix?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. For images placed directly on Wix pages (not in the product catalogue), click the image in the <strong>Wix Editor</strong>, select <strong>Settings</strong>, and you'll find an <strong>Alt Text</strong> field. This process is separate from adding alt text to product catalogue images, which is done via the backend as shown in this tutorial.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does Wix automatically generate alt text for product images?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Wix may use the product name as a fallback alt text if none is provided, but it is not guaranteed and the auto-generated text is often generic. For best SEO results, always write your own alt text manually — it takes just a few seconds per image and makes a meaningful difference to how Google indexes your products.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -407,21 +351,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your website? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about adding alt text to product images in WIX.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is alt text and why does it matter for SEO?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Alt text (alternative text) is a short description of an image that search engines read to understand what the image shows. Since Google cannot "see" images, it relies on alt text to index them correctly. Well-written alt text helps your product images appear in <strong>Google Image Search</strong>, contributes to your page's keyword relevance, and improves accessibility for visually impaired visitors using screen readers.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How should I write good alt text for product images?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Good alt text is <strong>descriptive and specific</strong>. Include the product name, key attributes (colour, material, size), and any relevant context. For example: <em>"Blue leather crossbody bag with gold zip"</em> is far better than <em>"bag"</em> or <em>"IMG_1234"</em>. Keep it under 125 characters and avoid keyword stuffing — write for a human who can't see the image.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does alt text affect my Wix store's Google ranking?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, indirectly. Alt text helps Google understand the context of your product pages, which can improve their relevance for related search queries. Product images with keyword-rich alt text also have a better chance of appearing in <strong>Google Shopping</strong> image panels and image search results — both of which drive additional organic traffic to your store.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to add alt text to every product image?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Ideally yes, but prioritise your <strong>primary product image</strong> first as it carries the most weight. Additional gallery images (angle shots, lifestyle photos) should also have alt text, but if you have a large catalogue, start with the main image for each product and work through the rest over time.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I add alt text to regular page images (not just product images) in Wix?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. For images placed directly on Wix pages (not in the product catalogue), click the image in the <strong>Wix Editor</strong>, select <strong>Settings</strong>, and you'll find an <strong>Alt Text</strong> field. This process is separate from adding alt text to product catalogue images, which is done via the backend as shown in this tutorial.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does Wix automatically generate alt text for product images?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Wix may use the product name as a fallback alt text if none is provided, but it is not guaranteed and the auto-generated text is often generic. For best SEO results, always write your own alt text manually — it takes just a few seconds per image and makes a meaningful difference to how Google indexes your products.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

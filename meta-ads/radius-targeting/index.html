@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -286,81 +304,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Meta Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about radius targeting in Meta Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is radius targeting in Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Radius targeting (also called geo-targeting or pin targeting) lets you <strong>target people within a specific distance</strong> of any point on the map. Instead of targeting a whole city or country, you drop a pin at a location — such as your store, an event venue, or a competitor — and set a radius in miles or kilometres. Meta will then show your ads to people in that area.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the minimum and maximum radius I can set?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Meta Ads allows a minimum radius of <strong>1 mile (or 1 kilometre)</strong> and a maximum of <strong>50 miles (or 80 kilometres)</strong> per pin. If you need to cover a broader area, you can add multiple pins to the same ad set and combine them.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I target multiple radius locations in one ad set?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You can <strong>drop multiple pins</strong> within a single ad set, each with its own radius. This is useful if you have several store locations or want to target a few specific areas within the same campaign. Meta will show your ads to people who fall within any of the defined radius zones.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I exclude a radius from my targeting?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. After adding a location or dropping a pin, Meta gives you the option to <strong>exclude</strong> that area rather than include it. This lets you, for example, target a 20-mile radius around a city but exclude the central 5-mile area if you do not serve that zone.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does radius targeting work for all Meta Ads campaign objectives?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Radius targeting via Drop Pin is available for <strong>most campaign objectives</strong> in Meta Ads, including Traffic, Engagement, Leads, and Sales. However, some objectives with highly automated placement or Advantage+ audience settings may limit manual location targeting options. Always check the Ad Set location section after selecting your objective.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How accurate is radius targeting in Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Meta determines location using a combination of <strong>device GPS, IP address, profile data, and check-in signals</strong>. The accuracy is generally good for mobile users with location services enabled, but it is not precise to a few metres. A small buffer beyond your set radius should be expected, especially for users on desktop or those with limited location data.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -418,21 +362,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about radius targeting in Meta Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is radius targeting in Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Radius targeting (also called geo-targeting or pin targeting) lets you <strong>target people within a specific distance</strong> of any point on the map. Instead of targeting a whole city or country, you drop a pin at a location — such as your store, an event venue, or a competitor — and set a radius in miles or kilometres. Meta will then show your ads to people in that area.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the minimum and maximum radius I can set?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Meta Ads allows a minimum radius of <strong>1 mile (or 1 kilometre)</strong> and a maximum of <strong>50 miles (or 80 kilometres)</strong> per pin. If you need to cover a broader area, you can add multiple pins to the same ad set and combine them.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I target multiple radius locations in one ad set?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can <strong>drop multiple pins</strong> within a single ad set, each with its own radius. This is useful if you have several store locations or want to target a few specific areas within the same campaign. Meta will show your ads to people who fall within any of the defined radius zones.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I exclude a radius from my targeting?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. After adding a location or dropping a pin, Meta gives you the option to <strong>exclude</strong> that area rather than include it. This lets you, for example, target a 20-mile radius around a city but exclude the central 5-mile area if you do not serve that zone.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does radius targeting work for all Meta Ads campaign objectives?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Radius targeting via Drop Pin is available for <strong>most campaign objectives</strong> in Meta Ads, including Traffic, Engagement, Leads, and Sales. However, some objectives with highly automated placement or Advantage+ audience settings may limit manual location targeting options. Always check the Ad Set location section after selecting your objective.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How accurate is radius targeting in Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Meta determines location using a combination of <strong>device GPS, IP address, profile data, and check-in signals</strong>. The accuracy is generally good for mobile users with location services enabled, but it is not precise to a few metres. A small buffer beyond your set radius should be expected, especially for users on desktop or those with limited location data.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

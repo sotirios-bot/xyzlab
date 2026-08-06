@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -397,81 +415,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with TikTok Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your TikTok Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about setting up TikTok Pixel event tracking.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the TikTok Pixel and why do I need event tracking?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>TikTok Pixel</strong> is a snippet of JavaScript code you install on your website. On its own, it tracks page views and basic visit data. <strong>Event tracking</strong> extends this by recording specific user actions — such as button clicks, form submissions, purchases, or thank-you page visits — and sending them back to TikTok Ads Manager. This data is essential for measuring conversions, optimising your campaigns for results (rather than just clicks), and building retargeting audiences of people who have taken meaningful actions on your site.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between Button Clicks and URL Visits in the Event Builder?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Button Clicks</strong> fires an event when a user clicks a specific element on your page — such as a "Book Now", "Contact Us", or "Add to Cart" button. This is useful when the action doesn't load a new URL. <strong>URL Visits</strong> fires an event when a user lands on a page whose URL matches a condition you specify (e.g. a URL that contains <code>/thank-you</code> or <code>/order-confirmed</code>). Use URL Visits for conversion events that end on a dedicated confirmation page, and Button Clicks for interactions that happen without a page change.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What events should I track for TikTok Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The most important events to track depend on your business goals. For <strong>lead generation</strong>: track form submissions or thank-you page visits (CompleteRegistration or SubmitForm). For <strong>e-commerce</strong>: track Add to Cart, Initiate Checkout, and Purchase. For <strong>service businesses</strong>: track Contact button clicks or booking confirmations. TikTok uses these events to optimise your campaigns — the more conversion data you feed it, the better it can find users who are likely to take the same action.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I verify that my TikTok Pixel events are firing correctly?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Use the <strong>TikTok Pixel Helper</strong> Chrome extension to check which pixel events fire as you browse your website. You can also check the <strong>Events</strong> tab in TikTok Ads Manager — recent events appear there within a few minutes of being triggered. Look for events with a "Matched" status, which means TikTok has confirmed they are being received. If events show as "Unverified" or don't appear at all, revisit your Event Builder configuration or check that the pixel base code is correctly installed on the page.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the best way to set up TikTok event tracking for Shopify?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The simplest and most reliable method for Shopify is to install the <strong>official TikTok app</strong> from the Shopify App Store. This handles pixel installation and standard e-commerce event tracking (View Content, Add to Cart, Initiate Checkout, Purchase) automatically without any manual code changes. It also supports TikTok's <strong>Conversions API</strong> for server-side tracking, which is more accurate than browser-only pixel tracking since it isn't affected by ad blockers or browser privacy settings.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need a developer to set up TikTok event tracking?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No — for most websites, the <strong>Event Builder</strong> is a fully no-code solution. You point and click on elements in your live website to set up tracking without writing any code. For Shopify and most major e-commerce platforms, the official app or partner integration also requires no development. You only need a developer if you want to set up <strong>custom events</strong> that go beyond what the Event Builder can capture, or if you want to implement <strong>server-side tracking</strong> via the TikTok Conversions API.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -529,21 +473,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about setting up TikTok Pixel event tracking.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the TikTok Pixel and why do I need event tracking?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>TikTok Pixel</strong> is a snippet of JavaScript code you install on your website. On its own, it tracks page views and basic visit data. <strong>Event tracking</strong> extends this by recording specific user actions — such as button clicks, form submissions, purchases, or thank-you page visits — and sending them back to TikTok Ads Manager. This data is essential for measuring conversions, optimising your campaigns for results (rather than just clicks), and building retargeting audiences of people who have taken meaningful actions on your site.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Button Clicks and URL Visits in the Event Builder?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Button Clicks</strong> fires an event when a user clicks a specific element on your page — such as a "Book Now", "Contact Us", or "Add to Cart" button. This is useful when the action doesn't load a new URL. <strong>URL Visits</strong> fires an event when a user lands on a page whose URL matches a condition you specify (e.g. a URL that contains <code>/thank-you</code> or <code>/order-confirmed</code>). Use URL Visits for conversion events that end on a dedicated confirmation page, and Button Clicks for interactions that happen without a page change.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What events should I track for TikTok Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The most important events to track depend on your business goals. For <strong>lead generation</strong>: track form submissions or thank-you page visits (CompleteRegistration or SubmitForm). For <strong>e-commerce</strong>: track Add to Cart, Initiate Checkout, and Purchase. For <strong>service businesses</strong>: track Contact button clicks or booking confirmations. TikTok uses these events to optimise your campaigns — the more conversion data you feed it, the better it can find users who are likely to take the same action.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I verify that my TikTok Pixel events are firing correctly?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Use the <strong>TikTok Pixel Helper</strong> Chrome extension to check which pixel events fire as you browse your website. You can also check the <strong>Events</strong> tab in TikTok Ads Manager — recent events appear there within a few minutes of being triggered. Look for events with a "Matched" status, which means TikTok has confirmed they are being received. If events show as "Unverified" or don't appear at all, revisit your Event Builder configuration or check that the pixel base code is correctly installed on the page.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the best way to set up TikTok event tracking for Shopify?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The simplest and most reliable method for Shopify is to install the <strong>official TikTok app</strong> from the Shopify App Store. This handles pixel installation and standard e-commerce event tracking (View Content, Add to Cart, Initiate Checkout, Purchase) automatically without any manual code changes. It also supports TikTok's <strong>Conversions API</strong> for server-side tracking, which is more accurate than browser-only pixel tracking since it isn't affected by ad blockers or browser privacy settings.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a developer to set up TikTok event tracking?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No — for most websites, the <strong>Event Builder</strong> is a fully no-code solution. You point and click on elements in your live website to set up tracking without writing any code. For Shopify and most major e-commerce platforms, the official app or partner integration also requires no development. You only need a developer if you want to set up <strong>custom events</strong> that go beyond what the Event Builder can capture, or if you want to implement <strong>server-side tracking</strong> via the TikTok Conversions API.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

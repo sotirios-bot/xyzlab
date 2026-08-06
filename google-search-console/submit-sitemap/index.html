@@ -219,6 +219,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -299,81 +317,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Search Console?</h3>
           <p>Book a 90-minute training session and we'll set up and optimise your GSC account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about submitting a sitemap in Google Search Console.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a sitemap and why should I submit it to Google?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A sitemap is an XML file that lists all the pages on your website, along with optional metadata like when they were last updated. Submitting it to Google Search Console tells Google exactly which pages exist on your site, making it easier and faster for Googlebot to discover and crawl them. While Google can find most pages through links, submitting a sitemap is especially useful for new websites, large sites, pages with few internal links, and pages with rich media like images or video.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How long does it take Google to index my sitemap after submission?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>There is no guaranteed timeframe — it depends on your site's crawl budget, authority, and how many pages are listed in the sitemap. For a new site with few pages, Google may begin crawling within hours but full indexing can take several days or weeks. For established sites with good authority, new pages submitted via sitemap can be indexed within hours. Check the Sitemaps report in GSC to see the status and the number of URLs discovered versus indexed over time.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to resubmit my sitemap every time I publish a new page?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Once you have submitted your sitemap URL, Google will periodically re-fetch it to check for updates — you do not need to resubmit it every time you add a new page. However, if you want Google to discover a specific new page faster, you can use the <strong>URL Inspection tool</strong> in GSC to request indexing for that individual URL, which is often quicker than waiting for the sitemap to be re-crawled.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I submit more than one sitemap in Google Search Console?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You can submit multiple sitemaps for the same property in GSC — for example, a separate sitemap for blog posts, product pages, and images. Large sites often use a <strong>sitemap index file</strong> (a sitemap of sitemaps) to organise thousands of URLs across multiple sitemap files, and you submit just the index file URL. GSC will then discover and process all the child sitemaps referenced within it.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What does it mean if my sitemap shows an error in Google Search Console?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A sitemap error means Google could not fetch or parse the sitemap file correctly. Common causes include: the sitemap URL returning a 404 (file not found), the file containing invalid XML, or the sitemap being blocked by your <code>robots.txt</code> file. Click on the error in the Sitemaps report for details, then verify that the sitemap URL is accessible in your browser, validate the XML using a free tool like <a href="https://www.xml-sitemaps.com/validate-xml-sitemap.html" target="_blank" rel="noopener">xml-sitemaps.com</a>, and check that your <code>robots.txt</code> does not disallow <code>/sitemap.xml</code>.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does submitting a sitemap guarantee my pages will be indexed by Google?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Submitting a sitemap tells Google about your pages, but Google decides independently which pages to index based on quality, relevance, and technical factors. Pages with thin content, duplicate content, slow load times, or crawl issues may be discovered but not indexed. Use the <strong>Coverage</strong> report in GSC to see which URLs are indexed, excluded, or have errors, and address any issues that prevent pages from being indexed.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -431,21 +375,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about submitting a sitemap in Google Search Console.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a sitemap and why should I submit it to Google?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A sitemap is an XML file that lists all the pages on your website, along with optional metadata like when they were last updated. Submitting it to Google Search Console tells Google exactly which pages exist on your site, making it easier and faster for Googlebot to discover and crawl them. While Google can find most pages through links, submitting a sitemap is especially useful for new websites, large sites, pages with few internal links, and pages with rich media like images or video.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How long does it take Google to index my sitemap after submission?</span>
+          </div>
+          <div class="faq-answer">
+            <p>There is no guaranteed timeframe — it depends on your site's crawl budget, authority, and how many pages are listed in the sitemap. For a new site with few pages, Google may begin crawling within hours but full indexing can take several days or weeks. For established sites with good authority, new pages submitted via sitemap can be indexed within hours. Check the Sitemaps report in GSC to see the status and the number of URLs discovered versus indexed over time.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to resubmit my sitemap every time I publish a new page?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Once you have submitted your sitemap URL, Google will periodically re-fetch it to check for updates — you do not need to resubmit it every time you add a new page. However, if you want Google to discover a specific new page faster, you can use the <strong>URL Inspection tool</strong> in GSC to request indexing for that individual URL, which is often quicker than waiting for the sitemap to be re-crawled.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I submit more than one sitemap in Google Search Console?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can submit multiple sitemaps for the same property in GSC — for example, a separate sitemap for blog posts, product pages, and images. Large sites often use a <strong>sitemap index file</strong> (a sitemap of sitemaps) to organise thousands of URLs across multiple sitemap files, and you submit just the index file URL. GSC will then discover and process all the child sitemaps referenced within it.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What does it mean if my sitemap shows an error in Google Search Console?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A sitemap error means Google could not fetch or parse the sitemap file correctly. Common causes include: the sitemap URL returning a 404 (file not found), the file containing invalid XML, or the sitemap being blocked by your <code>robots.txt</code> file. Click on the error in the Sitemaps report for details, then verify that the sitemap URL is accessible in your browser, validate the XML using a free tool like <a href="https://www.xml-sitemaps.com/validate-xml-sitemap.html" target="_blank" rel="noopener">xml-sitemaps.com</a>, and check that your <code>robots.txt</code> does not disallow <code>/sitemap.xml</code>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does submitting a sitemap guarantee my pages will be indexed by Google?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Submitting a sitemap tells Google about your pages, but Google decides independently which pages to index based on quality, relevance, and technical factors. Pages with thin content, duplicate content, slow load times, or crawl issues may be discovered but not indexed. Use the <strong>Coverage</strong> report in GSC to see which URLs are indexed, excluded, or have errors, and address any issues that prevent pages from being indexed.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

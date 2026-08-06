@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -328,81 +346,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Tag Manager?</h3>
           <p>Book a 90-minute training session and we'll set up your GTM tracking together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about installing Google Tag Manager on a WIX website.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Do all WIX plans support Google Tag Manager?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The native GTM integration via WIX Marketing Integrations is available on <strong>WIX Premium plans</strong>. Free WIX plans do not support custom tracking integrations. If you're on a free plan, you'll need to upgrade to a paid plan before you can connect GTM. The integration is available on all paid plans including the Combo, Unlimited, Pro, and Business plans.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I verify GTM is installed correctly on my WIX site?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>In Google Tag Manager, click <strong>Preview</strong> to open Tag Assistant, then enter your WIX website URL. Tag Assistant will open your site in a new tab and show you which GTM container is detected. If your GTM container ID appears in the Tag Assistant panel, the installation is working correctly. You can also check in your browser's developer tools — search the page source for your GTM ID to confirm the snippet is present.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does GTM on WIX work for all pages including dynamic pages?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — when you connect GTM via WIX Marketing Integrations, WIX automatically injects the GTM snippet on <strong>all pages</strong> of your site, including dynamic collection pages, blog posts, and product pages. You don't need to add GTM to each page individually. However, note that WIX's single-page application (SPA) architecture means you may need to configure GTM's <strong>History Change trigger</strong> to track virtual page views correctly.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What can I track with GTM once it's installed on WIX?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>With GTM installed on WIX you can track virtually anything: <strong>Google Analytics 4 events</strong>, <strong>Google Ads conversion tracking</strong>, <strong>Meta Pixel</strong>, <strong>TikTok Pixel</strong>, form submissions, button clicks, scroll depth, outbound link clicks, and more. GTM acts as a central hub — you add tracking scripts and pixels as GTM tags instead of editing WIX code directly, making it much easier to manage and update tracking over time.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I still use WIX's built-in analytics tools alongside GTM?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8594;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — WIX's built-in analytics (WIX Analytics) operates independently and will continue to function normally alongside GTM. You can also connect Google Analytics directly through WIX's native integration <em>and</em> through a GTM tag — though if you do both, be careful not to double-count page views. For most users, the simplest approach is to use GTM to deploy Google Analytics and manage all other tracking through GTM tags.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why should I use GTM instead of adding tracking scripts directly to WIX?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Adding scripts directly to WIX (via Custom Code) works but is harder to manage as your tracking grows. With GTM, you get a <strong>centralised dashboard</strong> to manage all your tags, <strong>version control</strong> so you can roll back changes, <strong>Preview mode</strong> to test before going live, and the ability to add or update tracking without touching your WIX site settings every time. GTM is the industry standard approach for managing marketing and analytics tags on any website.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -460,21 +404,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about installing Google Tag Manager on a WIX website.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do all WIX plans support Google Tag Manager?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The native GTM integration via WIX Marketing Integrations is available on <strong>WIX Premium plans</strong>. Free WIX plans do not support custom tracking integrations. If you're on a free plan, you'll need to upgrade to a paid plan before you can connect GTM. The integration is available on all paid plans including the Combo, Unlimited, Pro, and Business plans.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I verify GTM is installed correctly on my WIX site?</span>
+          </div>
+          <div class="faq-answer">
+            <p>In Google Tag Manager, click <strong>Preview</strong> to open Tag Assistant, then enter your WIX website URL. Tag Assistant will open your site in a new tab and show you which GTM container is detected. If your GTM container ID appears in the Tag Assistant panel, the installation is working correctly. You can also check in your browser's developer tools — search the page source for your GTM ID to confirm the snippet is present.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does GTM on WIX work for all pages including dynamic pages?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — when you connect GTM via WIX Marketing Integrations, WIX automatically injects the GTM snippet on <strong>all pages</strong> of your site, including dynamic collection pages, blog posts, and product pages. You don't need to add GTM to each page individually. However, note that WIX's single-page application (SPA) architecture means you may need to configure GTM's <strong>History Change trigger</strong> to track virtual page views correctly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What can I track with GTM once it's installed on WIX?</span>
+          </div>
+          <div class="faq-answer">
+            <p>With GTM installed on WIX you can track virtually anything: <strong>Google Analytics 4 events</strong>, <strong>Google Ads conversion tracking</strong>, <strong>Meta Pixel</strong>, <strong>TikTok Pixel</strong>, form submissions, button clicks, scroll depth, outbound link clicks, and more. GTM acts as a central hub — you add tracking scripts and pixels as GTM tags instead of editing WIX code directly, making it much easier to manage and update tracking over time.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I still use WIX's built-in analytics tools alongside GTM?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — WIX's built-in analytics (WIX Analytics) operates independently and will continue to function normally alongside GTM. You can also connect Google Analytics directly through WIX's native integration <em>and</em> through a GTM tag — though if you do both, be careful not to double-count page views. For most users, the simplest approach is to use GTM to deploy Google Analytics and manage all other tracking through GTM tags.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why should I use GTM instead of adding tracking scripts directly to WIX?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Adding scripts directly to WIX (via Custom Code) works but is harder to manage as your tracking grows. With GTM, you get a <strong>centralised dashboard</strong> to manage all your tags, <strong>version control</strong> so you can roll back changes, <strong>Preview mode</strong> to test before going live, and the ability to add or update tracking without touching your WIX site settings every time. GTM is the industry standard approach for managing marketing and analytics tags on any website.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

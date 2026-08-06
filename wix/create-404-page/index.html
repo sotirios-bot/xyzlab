@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your website? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -289,81 +307,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Wix?</h3>
           <p>Book a 90-minute training session and we'll work through your Wix website together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about creating a custom 404 page in WIX Studio.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Why does the URL slug have to be exactly "error404"?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>WIX Studio is hard-coded to look for a page with the URL slug <strong>/error404</strong> when a visitor navigates to a page that doesn't exist. If you use any other slug, Wix will show its default generic 404 page instead of your custom design.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does this work on WIX Studio and regular WIX Editor?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Both WIX Studio and the classic Wix Editor support the custom 404 page via the <strong>/error404</strong> slug. The steps for setting the URL slug are the same in both editors — found under Page SEO Basics.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What should I put on my custom 404 page?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A good 404 page keeps visitors on your site instead of bouncing. Include: a clear message explaining the page wasn't found, a link back to your <strong>homepage</strong>, links to your most popular pages, a <strong>search bar</strong> if you have one, and optionally your brand's personality or a fun graphic to soften the experience.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will my custom 404 page appear in search results?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. When a visitor or Googlebot hits a URL that doesn't exist, the server correctly returns a <strong>404 HTTP status code</strong> — your custom design is what the visitor sees, but search engines know it's a 404 and will not index it. Make sure you don't accidentally noindex it or redirect away from it, as that would interfere with the 404 behaviour.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I hide the custom 404 page from my site menu?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. In WIX Studio you can hide any page from the site menu without affecting how it functions. Go to <strong>Pages</strong>, click the three-dot menu next to your 404 page, and toggle <strong>Hide from Menu</strong>. Visitors will still see it when they land on a broken URL.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to republish every time I edit my 404 page?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Like any other Wix page, changes to your 404 page only go live after you <strong>Publish</strong> your website. Edits you make in the editor are saved as drafts and won't appear to visitors until you hit the Publish button.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -421,21 +365,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your website? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about creating a custom 404 page in WIX Studio.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why does the URL slug have to be exactly "error404"?</span>
+          </div>
+          <div class="faq-answer">
+            <p>WIX Studio is hard-coded to look for a page with the URL slug <strong>/error404</strong> when a visitor navigates to a page that doesn't exist. If you use any other slug, Wix will show its default generic 404 page instead of your custom design.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does this work on WIX Studio and regular WIX Editor?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Both WIX Studio and the classic Wix Editor support the custom 404 page via the <strong>/error404</strong> slug. The steps for setting the URL slug are the same in both editors — found under Page SEO Basics.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What should I put on my custom 404 page?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A good 404 page keeps visitors on your site instead of bouncing. Include: a clear message explaining the page wasn't found, a link back to your <strong>homepage</strong>, links to your most popular pages, a <strong>search bar</strong> if you have one, and optionally your brand's personality or a fun graphic to soften the experience.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will my custom 404 page appear in search results?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. When a visitor or Googlebot hits a URL that doesn't exist, the server correctly returns a <strong>404 HTTP status code</strong> — your custom design is what the visitor sees, but search engines know it's a 404 and will not index it. Make sure you don't accidentally noindex it or redirect away from it, as that would interfere with the 404 behaviour.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I hide the custom 404 page from my site menu?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. In WIX Studio you can hide any page from the site menu without affecting how it functions. Go to <strong>Pages</strong>, click the three-dot menu next to your 404 page, and toggle <strong>Hide from Menu</strong>. Visitors will still see it when they land on a broken URL.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to republish every time I edit my 404 page?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Like any other Wix page, changes to your 404 page only go live after you <strong>Publish</strong> your website. Edits you make in the editor are saved as drafts and won't appear to visitors until you hit the Publish button.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

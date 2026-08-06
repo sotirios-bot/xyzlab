@@ -219,6 +219,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -299,81 +317,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Search Console?</h3>
           <p>Book a 90-minute training session and we'll set up and optimise your GSC account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about indexing pages via Google Search Console.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>How long does it take for a page to be indexed after requesting indexing in GSC?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>After clicking Request Indexing, most pages are crawled and indexed within a few hours to 48 hours. However, this is not guaranteed — it depends on your site's crawl budget, the quality of the page, and how busy Google's crawl queue is. High-authority sites with frequently updated content tend to get indexed faster. You can check the status at any time by running the URL through the URL Inspection tool again.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I request indexing for pages that are already on Google?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. If you have made significant changes to a page that is already indexed — such as updating the content, changing the title or meta description, or fixing an issue — you should request re-indexing so Google picks up the latest version of the page. Without requesting re-indexing, Google may not recrawl the page for days or weeks depending on your crawl schedule.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why would Google not index a page even after I request indexing?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Several factors can prevent a page from being indexed: the page may have a <code>noindex</code> meta tag or HTTP header, it could be blocked by <code>robots.txt</code>, it might have thin or duplicate content that Google considers low quality, or there could be a crawl error preventing Googlebot from accessing the page. The URL Inspection tool will usually show the reason why a page is not indexed — check the <strong>Coverage</strong> section of the report for details and fix any issues before requesting indexing again.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is there a limit to how many indexing requests I can make in Google Search Console?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Google limits indexing requests to approximately 10–12 per day per property. This means the URL Inspection indexing request tool is best used for individual high-priority pages — such as a new blog post, a landing page, or a page you have just updated — rather than trying to index an entire site all at once. For bulk indexing of many pages at once, submitting or updating your sitemap is the recommended approach.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between requesting indexing via URL Inspection and submitting a sitemap?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Requesting indexing via the <strong>URL Inspection tool</strong> sends a direct signal to Google to prioritise crawling a specific page — it is best for individual new or recently updated pages. <strong>Submitting a sitemap</strong> tells Google about all the pages on your site at once, and Google will crawl them according to its own schedule and crawl budget. For the best coverage, do both: submit your sitemap so Google knows about all your pages, and use URL Inspection for pages where you need faster indexing.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I check if my page is currently indexed by Google?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The easiest way is to use the <strong>URL Inspection tool</strong> in Google Search Console — paste the page's URL and look for the <em>"URL is on Google"</em> status. You can also do a quick check by searching <code>site:yourdomain.com/your-page-path</code> in Google — if the page appears in the results, it is indexed. Note that the <code>site:</code> operator may not be 100% reliable for recently indexed pages, so URL Inspection in GSC is the most accurate method.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -431,21 +375,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about indexing pages via Google Search Console.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How long does it take for a page to be indexed after requesting indexing in GSC?</span>
+          </div>
+          <div class="faq-answer">
+            <p>After clicking Request Indexing, most pages are crawled and indexed within a few hours to 48 hours. However, this is not guaranteed — it depends on your site's crawl budget, the quality of the page, and how busy Google's crawl queue is. High-authority sites with frequently updated content tend to get indexed faster. You can check the status at any time by running the URL through the URL Inspection tool again.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I request indexing for pages that are already on Google?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. If you have made significant changes to a page that is already indexed — such as updating the content, changing the title or meta description, or fixing an issue — you should request re-indexing so Google picks up the latest version of the page. Without requesting re-indexing, Google may not recrawl the page for days or weeks depending on your crawl schedule.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why would Google not index a page even after I request indexing?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Several factors can prevent a page from being indexed: the page may have a <code>noindex</code> meta tag or HTTP header, it could be blocked by <code>robots.txt</code>, it might have thin or duplicate content that Google considers low quality, or there could be a crawl error preventing Googlebot from accessing the page. The URL Inspection tool will usually show the reason why a page is not indexed — check the <strong>Coverage</strong> section of the report for details and fix any issues before requesting indexing again.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is there a limit to how many indexing requests I can make in Google Search Console?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Google limits indexing requests to approximately 10–12 per day per property. This means the URL Inspection indexing request tool is best used for individual high-priority pages — such as a new blog post, a landing page, or a page you have just updated — rather than trying to index an entire site all at once. For bulk indexing of many pages at once, submitting or updating your sitemap is the recommended approach.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between requesting indexing via URL Inspection and submitting a sitemap?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Requesting indexing via the <strong>URL Inspection tool</strong> sends a direct signal to Google to prioritise crawling a specific page — it is best for individual new or recently updated pages. <strong>Submitting a sitemap</strong> tells Google about all the pages on your site at once, and Google will crawl them according to its own schedule and crawl budget. For the best coverage, do both: submit your sitemap so Google knows about all your pages, and use URL Inspection for pages where you need faster indexing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I check if my page is currently indexed by Google?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The easiest way is to use the <strong>URL Inspection tool</strong> in Google Search Console — paste the page's URL and look for the <em>"URL is on Google"</em> status. You can also do a quick check by searching <code>site:yourdomain.com/your-page-path</code> in Google — if the page appears in the results, it is indexed. Note that the <code>site:</code> operator may not be 100% reliable for recently indexed pages, so URL Inspection in GSC is the most accurate method.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

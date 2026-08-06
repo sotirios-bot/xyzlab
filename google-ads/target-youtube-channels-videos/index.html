@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -280,81 +298,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about placement targeting for YouTube channels and videos in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Can I target a specific YouTube channel with Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Using <strong>placement targeting</strong> in a Display campaign, you can enter a YouTube channel URL as a placement. Your ads will then only appear on videos published by that channel. This is ideal for reaching audiences who regularly watch content from specific creators that are relevant to your product or service.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between placement targeting and audience targeting?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Placement targeting</strong> controls <em>where</em> your ads appear — specific websites, apps, YouTube channels, or individual videos. <strong>Audience targeting</strong> controls <em>who</em> sees your ads based on interests, demographics, or past behaviour. You can combine both to reach the right people in the right context, for example: a cooking audience watching a specific recipe channel.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What campaign types support YouTube placement targeting?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>YouTube placement targeting is available in <strong>Display campaigns</strong> (banner and responsive ads shown on YouTube) and <strong>Video campaigns</strong> (skippable and non-skippable video ads). For the most precise channel and video-level control, Display campaigns using the Placements section under Content are the most straightforward approach shown in this tutorial.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I exclude specific YouTube channels or videos?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Google Ads lets you <strong>exclude placements</strong> at the campaign or account level. Navigate to the same Content &gt; Placements section and use the Exclusions tab to add channels or video URLs you don't want your ads to appear on. This is useful for blocking competitor channels, irrelevant content categories, or low-performing placements.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How many placements can I add to a campaign?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google Ads allows up to <strong>65,000 placements per ad group</strong>. In practice, a focused list of 5–20 highly relevant YouTube channels or videos tends to outperform large, unfocused placement lists. Start with your top-priority placements, monitor performance, and expand or prune based on impression and conversion data.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will placement targeting restrict my reach too much?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>It can, depending on how many placements you add and how popular those channels or videos are. If reach is a concern, consider using placements as an <strong>observation</strong> layer rather than targeting — this lets you track performance on specific channels without limiting your overall reach. Switch to targeting once you've identified which placements convert best.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -412,21 +356,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about placement targeting for YouTube channels and videos in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I target a specific YouTube channel with Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Using <strong>placement targeting</strong> in a Display campaign, you can enter a YouTube channel URL as a placement. Your ads will then only appear on videos published by that channel. This is ideal for reaching audiences who regularly watch content from specific creators that are relevant to your product or service.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between placement targeting and audience targeting?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Placement targeting</strong> controls <em>where</em> your ads appear — specific websites, apps, YouTube channels, or individual videos. <strong>Audience targeting</strong> controls <em>who</em> sees your ads based on interests, demographics, or past behaviour. You can combine both to reach the right people in the right context, for example: a cooking audience watching a specific recipe channel.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What campaign types support YouTube placement targeting?</span>
+          </div>
+          <div class="faq-answer">
+            <p>YouTube placement targeting is available in <strong>Display campaigns</strong> (banner and responsive ads shown on YouTube) and <strong>Video campaigns</strong> (skippable and non-skippable video ads). For the most precise channel and video-level control, Display campaigns using the Placements section under Content are the most straightforward approach shown in this tutorial.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I exclude specific YouTube channels or videos?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Google Ads lets you <strong>exclude placements</strong> at the campaign or account level. Navigate to the same Content &gt; Placements section and use the Exclusions tab to add channels or video URLs you don't want your ads to appear on. This is useful for blocking competitor channels, irrelevant content categories, or low-performing placements.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How many placements can I add to a campaign?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google Ads allows up to <strong>65,000 placements per ad group</strong>. In practice, a focused list of 5–20 highly relevant YouTube channels or videos tends to outperform large, unfocused placement lists. Start with your top-priority placements, monitor performance, and expand or prune based on impression and conversion data.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will placement targeting restrict my reach too much?</span>
+          </div>
+          <div class="faq-answer">
+            <p>It can, depending on how many placements you add and how popular those channels or videos are. If reach is a concern, consider using placements as an <strong>observation</strong> layer rather than targeting — this lets you track performance on specific channels without limiting your overall reach. Switch to targeting once you've identified which placements convert best.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

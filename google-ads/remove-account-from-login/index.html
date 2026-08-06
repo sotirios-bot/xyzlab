@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -277,81 +295,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about removing a Google Ads account from your login list.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Why can't I remove myself from a Google Ads account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google Ads requires every account to have at least one Admin at all times. If you are the only user with Admin access, the remove option will be unavailable until another Admin is added. Invite another email address with Admin rights first, then you will be able to remove your own email from the account.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens to the account when I remove my email?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The account remains fully active — removing your email only revokes your personal access. All campaigns, budgets, billing, and historical data stay intact. The remaining users with access continue to manage the account normally. Removing yourself has no impact on ad delivery or performance.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is a "decoy" Admin email in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A decoy email is a Google account you control (such as a spare Gmail address) that you temporarily invite as Admin solely to satisfy the minimum-one-Admin requirement. Once it is added and you have removed your primary email, the decoy can remain as a backup Admin or be removed later if a permanent Admin takes over the account.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I remove someone else's access from a Google Ads account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>You need Admin access to remove other users. Go to <strong>Admin &rarr; Access &amp; Security</strong>, find the user you want to remove, and click the delete (trash) icon next to their name. You cannot remove another Admin if they are the only remaining Admin on the account.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does removing my email cancel my billing?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Removing your email from the account does not affect billing in any way. The payment method and billing settings remain tied to the account, not to individual user emails. If you want to remove a payment method, that must be done separately under <strong>Billing &amp; Payments</strong> before or after removing your access.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I get access back to a Google Ads account after removing myself?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, but only if another Admin on the account re-invites your email. Once you remove your own access, you cannot add yourself back without help from a current Admin. If there is no one else to re-invite you, you would need to contact Google Ads support with proof of account ownership.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -409,21 +353,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about removing a Google Ads account from your login list.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why can't I remove myself from a Google Ads account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google Ads requires every account to have at least one Admin at all times. If you are the only user with Admin access, the remove option will be unavailable until another Admin is added. Invite another email address with Admin rights first, then you will be able to remove your own email from the account.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens to the account when I remove my email?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The account remains fully active — removing your email only revokes your personal access. All campaigns, budgets, billing, and historical data stay intact. The remaining users with access continue to manage the account normally. Removing yourself has no impact on ad delivery or performance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a "decoy" Admin email in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A decoy email is a Google account you control (such as a spare Gmail address) that you temporarily invite as Admin solely to satisfy the minimum-one-Admin requirement. Once it is added and you have removed your primary email, the decoy can remain as a backup Admin or be removed later if a permanent Admin takes over the account.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I remove someone else's access from a Google Ads account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>You need Admin access to remove other users. Go to <strong>Admin &rarr; Access &amp; Security</strong>, find the user you want to remove, and click the delete (trash) icon next to their name. You cannot remove another Admin if they are the only remaining Admin on the account.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does removing my email cancel my billing?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Removing your email from the account does not affect billing in any way. The payment method and billing settings remain tied to the account, not to individual user emails. If you want to remove a payment method, that must be done separately under <strong>Billing &amp; Payments</strong> before or after removing your access.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I get access back to a Google Ads account after removing myself?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, but only if another Admin on the account re-invites your email. Once you remove your own access, you cannot add yourself back without help from a current Admin. If there is no one else to re-invite you, you would need to contact Google Ads support with proof of account ownership.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

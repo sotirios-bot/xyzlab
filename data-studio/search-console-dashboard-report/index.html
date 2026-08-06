@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -309,81 +327,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Looker Studio?</h3>
           <p>Book a 90-minute training session and we'll build your SEO dashboard together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about building a Google Search Console report in Looker Studio.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Can I connect Google Search Console directly to Looker Studio?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Looker Studio has a <strong>native Google Search Console connector</strong> — no third-party tool or Google Sheets export needed. When adding a data source, search for "Google Search Console", grant access, and select your property. The connector supports both <strong>Site Impression</strong> and <strong>URL Impression</strong> table types.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between Site Impression and URL Impression?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Site Impression</strong> aggregates data at the site level and lets you break it down by Query, Country, Device, or Search Type. <strong>URL Impression</strong> shows data at the individual page (URL) level and supports the same dimensions plus Landing Page. Use URL Impression when you need page-specific performance data.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How far back does the Search Console data go in Looker Studio?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The Google Search Console connector reflects the same data retention as Search Console itself — <strong>up to 16 months</strong> of historical data. Keep in mind that GSC data typically has a <strong>2–3 day lag</strong>, so the most recent days may show incomplete numbers.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I add multiple Search Console properties to the same report?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You can add multiple data sources to a single Looker Studio report — one per property. To compare properties side by side, use <strong>Blend Data</strong> to merge them, or simply add separate charts for each data source and segment the report by property.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why does my CTR show as a decimal instead of a percentage?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>By default, CTR is stored as a decimal (e.g. 0.05 = 5%). To display it as a percentage in your charts, select the CTR metric in the SET-UP panel, click the pencil icon to edit the field, and change the <strong>Type</strong> to <strong>Percent</strong>. This formats it correctly across all charts in the report.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I share the Looker Studio report with a client who doesn't have GSC access?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. When you share the report, you can choose to use <strong>Owner's credentials</strong> for the data source — this means viewers see the data using your GSC access, without needing their own. Go to <strong>Resource &gt; Manage added data sources</strong>, edit the connector, and switch credentials to <strong>Owner's credentials</strong>.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -441,21 +385,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about building a Google Search Console report in Looker Studio.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I connect Google Search Console directly to Looker Studio?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Looker Studio has a <strong>native Google Search Console connector</strong> — no third-party tool or Google Sheets export needed. When adding a data source, search for "Google Search Console", grant access, and select your property. The connector supports both <strong>Site Impression</strong> and <strong>URL Impression</strong> table types.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Site Impression and URL Impression?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Site Impression</strong> aggregates data at the site level and lets you break it down by Query, Country, Device, or Search Type. <strong>URL Impression</strong> shows data at the individual page (URL) level and supports the same dimensions plus Landing Page. Use URL Impression when you need page-specific performance data.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How far back does the Search Console data go in Looker Studio?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The Google Search Console connector reflects the same data retention as Search Console itself — <strong>up to 16 months</strong> of historical data. Keep in mind that GSC data typically has a <strong>2–3 day lag</strong>, so the most recent days may show incomplete numbers.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I add multiple Search Console properties to the same report?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can add multiple data sources to a single Looker Studio report — one per property. To compare properties side by side, use <strong>Blend Data</strong> to merge them, or simply add separate charts for each data source and segment the report by property.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why does my CTR show as a decimal instead of a percentage?</span>
+          </div>
+          <div class="faq-answer">
+            <p>By default, CTR is stored as a decimal (e.g. 0.05 = 5%). To display it as a percentage in your charts, select the CTR metric in the SET-UP panel, click the pencil icon to edit the field, and change the <strong>Type</strong> to <strong>Percent</strong>. This formats it correctly across all charts in the report.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I share the Looker Studio report with a client who doesn't have GSC access?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. When you share the report, you can choose to use <strong>Owner's credentials</strong> for the data source — this means viewers see the data using your GSC access, without needing their own. Go to <strong>Resource &gt; Manage added data sources</strong>, edit the connector, and switch credentials to <strong>Owner's credentials</strong>.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -388,81 +406,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with your Wix site?</h3>
           <p>Book a 90-minute training session and we'll set up your Wix SEO and search performance tracking together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about adding a Wix website to Bing Webmaster Tools.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Why should I add my Wix site to Bing Webmaster Tools?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Bing is the second largest search engine globally and powers search on Microsoft Edge, Yahoo, and Copilot. Adding your site to Bing Webmaster Tools lets you monitor how Bing crawls and indexes your Wix pages, see which search queries bring traffic from Bing, identify crawl errors, and submit your sitemap to speed up indexing. It's a free 10-minute setup that can meaningfully expand your organic search reach.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Which verification method is faster — importing from Google Search Console or the HTML Meta Tag?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Importing from <strong>Google Search Console</strong> is by far the fastest option — it takes about 30 seconds and also imports your sitemaps and some historical data automatically. Use the <strong>HTML Meta Tag</strong> method if you don't have Google Search Console set up yet or prefer to verify each tool independently. Both methods result in the same level of access in Bing Webmaster Tools.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need a Microsoft account to use Bing Webmaster Tools?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You need to sign in with a <strong>Microsoft account</strong> (Outlook, Hotmail, or any Microsoft 365 email) to access Bing Webmaster Tools. If you don't have one, you can create a free account at microsoft.com. Alternatively, Bing Webmaster Tools also allows sign-in via Google or Facebook accounts, so you may not need a dedicated Microsoft account.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How long does it take for Bing to start indexing my Wix site after verification?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Verification is instant, but Bing typically takes <strong>a few days to a few weeks</strong> to crawl and index your Wix pages after verification. Submitting your sitemap (go to <strong>Sitemaps → Submit a Sitemap</strong> and enter <code>yoursite.com/sitemap.xml</code>) can significantly speed up the process. If you imported from Google Search Console, your sitemap is usually imported automatically.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Should I submit a sitemap to Bing after verification?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — submitting a sitemap is highly recommended. Wix automatically generates a sitemap at <code>yoursite.com/sitemap.xml</code>. In Bing Webmaster Tools, go to <strong>Sitemaps</strong> in the left menu and submit that URL. This tells Bing exactly which pages exist on your site and helps it discover new content faster, especially for pages that don't have many external links pointing to them.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What can I do in Bing Webmaster Tools once my Wix site is verified?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Once verified, you can: view <strong>search performance data</strong> (impressions, clicks, average position on Bing), inspect individual <strong>URL indexing status</strong>, submit URLs for <strong>on-demand crawling</strong>, check for <strong>crawl errors</strong>, use the <strong>SEO analyser</strong> to find on-page issues, and monitor your <strong>backlink profile</strong>. Bing Webmaster Tools also offers an AI-powered SEO recommendations feature that suggests specific improvements for your pages.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -520,21 +464,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about adding a Wix website to Bing Webmaster Tools.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why should I add my Wix site to Bing Webmaster Tools?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Bing is the second largest search engine globally and powers search on Microsoft Edge, Yahoo, and Copilot. Adding your site to Bing Webmaster Tools lets you monitor how Bing crawls and indexes your Wix pages, see which search queries bring traffic from Bing, identify crawl errors, and submit your sitemap to speed up indexing. It's a free 10-minute setup that can meaningfully expand your organic search reach.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Which verification method is faster — importing from Google Search Console or the HTML Meta Tag?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Importing from <strong>Google Search Console</strong> is by far the fastest option — it takes about 30 seconds and also imports your sitemaps and some historical data automatically. Use the <strong>HTML Meta Tag</strong> method if you don't have Google Search Console set up yet or prefer to verify each tool independently. Both methods result in the same level of access in Bing Webmaster Tools.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a Microsoft account to use Bing Webmaster Tools?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You need to sign in with a <strong>Microsoft account</strong> (Outlook, Hotmail, or any Microsoft 365 email) to access Bing Webmaster Tools. If you don't have one, you can create a free account at microsoft.com. Alternatively, Bing Webmaster Tools also allows sign-in via Google or Facebook accounts, so you may not need a dedicated Microsoft account.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How long does it take for Bing to start indexing my Wix site after verification?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Verification is instant, but Bing typically takes <strong>a few days to a few weeks</strong> to crawl and index your Wix pages after verification. Submitting your sitemap (go to <strong>Sitemaps → Submit a Sitemap</strong> and enter <code>yoursite.com/sitemap.xml</code>) can significantly speed up the process. If you imported from Google Search Console, your sitemap is usually imported automatically.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Should I submit a sitemap to Bing after verification?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — submitting a sitemap is highly recommended. Wix automatically generates a sitemap at <code>yoursite.com/sitemap.xml</code>. In Bing Webmaster Tools, go to <strong>Sitemaps</strong> in the left menu and submit that URL. This tells Bing exactly which pages exist on your site and helps it discover new content faster, especially for pages that don't have many external links pointing to them.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What can I do in Bing Webmaster Tools once my Wix site is verified?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Once verified, you can: view <strong>search performance data</strong> (impressions, clicks, average position on Bing), inspect individual <strong>URL indexing status</strong>, submit URLs for <strong>on-demand crawling</strong>, check for <strong>crawl errors</strong>, use the <strong>SEO analyser</strong> to find on-page issues, and monitor your <strong>backlink profile</strong>. Bing Webmaster Tools also offers an AI-powered SEO recommendations feature that suggests specific improvements for your pages.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

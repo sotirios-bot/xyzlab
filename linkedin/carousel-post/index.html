@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -297,81 +315,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with LinkedIn?</h3>
           <p>Book a 90-minute training session and we'll build your LinkedIn content strategy together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about creating carousel posts on LinkedIn.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a LinkedIn carousel post?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A LinkedIn carousel is a swipeable, multi-page post that readers scroll through frame by frame — like a slideshow in the feed. LinkedIn creates it from an uploaded <strong>document (PDF)</strong>, so each page of your PDF becomes one slide of the carousel. They're great for tips, mini-guides, and storytelling because they hold attention longer than a single image.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What size should my carousel slides be?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A square <strong>1080 &times; 1080 pixels</strong> works best — it takes up the most space in the feed on both desktop and mobile. You can also use a portrait <strong>1080 &times; 1350</strong> ratio for even more vertical real estate. Set this page size <em>before</em> you start designing so nothing gets cropped.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why do I upload a PDF instead of images?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>LinkedIn turns <strong>documents</strong> into carousels, and PDF is the cleanest document format to upload. Exporting your slides as a single multi-page PDF keeps every frame in order, preserves your fonts and layout, and lets LinkedIn render the swipe experience automatically — no third-party carousel tool required.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How many slides can a LinkedIn carousel have?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>LinkedIn supports documents up to <strong>300 pages</strong> (and 100&nbsp;MB), but for engagement most high-performing carousels stay between <strong>6 and 12 slides</strong>. Enough room to tell a complete story, short enough that readers swipe all the way to your call to action.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I edit a carousel after I publish it?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>You can edit the <strong>post text</strong> after publishing, but you cannot swap out the document itself. To change the slides, delete the post and upload a corrected PDF. Because of this, it's worth proofreading your PDF carefully before you hit publish.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do carousel posts get more engagement on LinkedIn?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>They often do. Because carousels require swiping, they keep readers on your post longer — a signal LinkedIn's algorithm rewards with wider reach. A strong hook on the first slide and a clear call to action on the last slide are the two biggest levers for turning that attention into profile visits, comments, and leads.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -429,21 +373,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about creating carousel posts on LinkedIn.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a LinkedIn carousel post?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A LinkedIn carousel is a swipeable, multi-page post that readers scroll through frame by frame — like a slideshow in the feed. LinkedIn creates it from an uploaded <strong>document (PDF)</strong>, so each page of your PDF becomes one slide of the carousel. They're great for tips, mini-guides, and storytelling because they hold attention longer than a single image.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What size should my carousel slides be?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A square <strong>1080 &times; 1080 pixels</strong> works best — it takes up the most space in the feed on both desktop and mobile. You can also use a portrait <strong>1080 &times; 1350</strong> ratio for even more vertical real estate. Set this page size <em>before</em> you start designing so nothing gets cropped.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why do I upload a PDF instead of images?</span>
+          </div>
+          <div class="faq-answer">
+            <p>LinkedIn turns <strong>documents</strong> into carousels, and PDF is the cleanest document format to upload. Exporting your slides as a single multi-page PDF keeps every frame in order, preserves your fonts and layout, and lets LinkedIn render the swipe experience automatically — no third-party carousel tool required.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How many slides can a LinkedIn carousel have?</span>
+          </div>
+          <div class="faq-answer">
+            <p>LinkedIn supports documents up to <strong>300 pages</strong> (and 100&nbsp;MB), but for engagement most high-performing carousels stay between <strong>6 and 12 slides</strong>. Enough room to tell a complete story, short enough that readers swipe all the way to your call to action.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I edit a carousel after I publish it?</span>
+          </div>
+          <div class="faq-answer">
+            <p>You can edit the <strong>post text</strong> after publishing, but you cannot swap out the document itself. To change the slides, delete the post and upload a corrected PDF. Because of this, it's worth proofreading your PDF carefully before you hit publish.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do carousel posts get more engagement on LinkedIn?</span>
+          </div>
+          <div class="faq-answer">
+            <p>They often do. Because carousels require swiping, they keep readers on your post longer — a signal LinkedIn's algorithm rewards with wider reach. A strong hook on the first slide and a clear call to action on the last slide are the two biggest levers for turning that attention into profile visits, comments, and leads.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -285,81 +303,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about Audience Signals in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is an Audience Signal in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>An <strong>Audience Signal</strong> is a targeting hint you provide to Google's AI in Performance Max and Demand Gen campaigns. Unlike traditional audience targeting, it does not restrict who sees your ads — instead, it tells Google's Smart Bidding which types of users are most likely to convert, so it can find more of them faster. A well-built signal dramatically reduces the learning phase and improves campaign performance.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why should I create only ONE Audience Signal?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google recommends building <strong>one comprehensive Audience Signal</strong> that combines all relevant audience types rather than creating multiple separate signals. Consolidating everything into one signal gives Google's AI a richer, more complete picture of your ideal customer — which leads to faster learning and better conversion performance compared to scattered, thin signals.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between In-Market and Affinity audiences?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>In-Market audiences</strong> are people Google has identified as actively researching or comparing options in a specific category right now — they have high purchase intent. <strong>Affinity audiences</strong> are people with a demonstrated long-term interest or lifestyle alignment with a topic, but who may not be actively buying. For most advertisers, In-Market audiences provide the stronger conversion signal, while Affinity helps with broader brand reach.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What are Custom Audiences and how do I build a good one?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Custom Audiences let you describe your ideal customer by the <strong>search terms they use</strong>, the <strong>websites they visit</strong>, or the <strong>apps they use</strong>. To build a strong Custom Audience, enter 10–20 of your top converting keywords, your own website URL, competitor website URLs, and related industry URLs. Google uses this to identify users with similar browsing and search patterns — it is one of the most effective signal inputs for Performance Max campaigns.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does the Audience Signal restrict who sees my ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Audience Signals are <strong>guidance, not restrictions</strong>. Google's AI will still show your ads to users outside your signal if it predicts they will convert — the signal simply gives it a starting point. This is fundamentally different from audience targeting in standard campaigns, where audiences actively limit who is eligible to see your ads.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I edit or update my Audience Signal after the campaign is live?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You can edit your Audience Signal at any time by going into your campaign's asset group and updating the signal. However, be aware that significant changes to the signal may trigger a short re-learning period for the Smart Bidding algorithm. It is best to update signals gradually rather than making sweeping changes, and to avoid major edits during high-volume periods like promotions or peak seasons.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -417,21 +361,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about Audience Signals in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is an Audience Signal in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>An <strong>Audience Signal</strong> is a targeting hint you provide to Google's AI in Performance Max and Demand Gen campaigns. Unlike traditional audience targeting, it does not restrict who sees your ads — instead, it tells Google's Smart Bidding which types of users are most likely to convert, so it can find more of them faster. A well-built signal dramatically reduces the learning phase and improves campaign performance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why should I create only ONE Audience Signal?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google recommends building <strong>one comprehensive Audience Signal</strong> that combines all relevant audience types rather than creating multiple separate signals. Consolidating everything into one signal gives Google's AI a richer, more complete picture of your ideal customer — which leads to faster learning and better conversion performance compared to scattered, thin signals.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between In-Market and Affinity audiences?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>In-Market audiences</strong> are people Google has identified as actively researching or comparing options in a specific category right now — they have high purchase intent. <strong>Affinity audiences</strong> are people with a demonstrated long-term interest or lifestyle alignment with a topic, but who may not be actively buying. For most advertisers, In-Market audiences provide the stronger conversion signal, while Affinity helps with broader brand reach.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What are Custom Audiences and how do I build a good one?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Custom Audiences let you describe your ideal customer by the <strong>search terms they use</strong>, the <strong>websites they visit</strong>, or the <strong>apps they use</strong>. To build a strong Custom Audience, enter 10–20 of your top converting keywords, your own website URL, competitor website URLs, and related industry URLs. Google uses this to identify users with similar browsing and search patterns — it is one of the most effective signal inputs for Performance Max campaigns.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does the Audience Signal restrict who sees my ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Audience Signals are <strong>guidance, not restrictions</strong>. Google's AI will still show your ads to users outside your signal if it predicts they will convert — the signal simply gives it a starting point. This is fundamentally different from audience targeting in standard campaigns, where audiences actively limit who is eligible to see your ads.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I edit or update my Audience Signal after the campaign is live?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can edit your Audience Signal at any time by going into your campaign's asset group and updating the signal. However, be aware that significant changes to the signal may trigger a short re-learning period for the Smart Bidding algorithm. It is best to update signals gradually rather than making sweeping changes, and to avoid major edits during high-volume periods like promotions or peak seasons.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

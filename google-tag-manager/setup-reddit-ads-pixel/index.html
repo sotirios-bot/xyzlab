@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -321,81 +339,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Tag Manager?</h3>
           <p>Book a 90-minute training session and we'll set up your tracking together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about installing the Reddit Ads pixel with Google Tag Manager.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the Reddit Ads pixel and why do I need it?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The Reddit pixel is a snippet of JavaScript that tracks visitor behaviour on your website. It sends data back to Reddit Ads so you can <strong>measure conversions</strong> (purchases, sign-ups, leads), build <strong>retargeting audiences</strong> from people who visited your site, and optimise campaigns toward specific events. Without it, Reddit Ads cannot report on what happens after a click.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where do I find my Reddit Pixel ID?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Log in to <strong>Reddit Ads</strong>, then go to <strong>Events Manager</strong> in the left-hand navigation. Select the <strong>Google Tag Manager</strong> installation option and your Pixel ID will be displayed — it starts with a letter followed by numbers (e.g. <code>a2abc1234</code>). Copy this ID to paste into GTM.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need a Reddit Ads account before I can install the pixel?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. The pixel is tied to your Reddit Ads account, so you need to <strong>create an account first</strong> at <code>ads.reddit.com</code>. Once your account is active, the pixel is automatically generated and available in Events Manager — you don't need to be running any active campaigns to access it.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I verify the pixel is installed correctly?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Use <strong>GTM Preview mode</strong> before publishing — visit your website while in Preview mode and confirm the Reddit Pixel tag fires on the page load event. You can also install the <strong>Reddit Pixel Helper</strong> Chrome extension, which shows a green tick when the pixel is detected on a page. Within Reddit Ads, Events Manager will show <strong>Active</strong> status once it receives its first signal.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Should I use GTM or install the Reddit pixel directly in my website code?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>GTM is strongly recommended. It lets you <strong>add, update, or remove the pixel</strong> without needing developer access to your site's code. You can also fire conversion events and retargeting triggers from the same container. Direct code installation works but every change requires a code deployment — GTM gives you far more flexibility and speed.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I track specific conversion events (not just page views) with the Reddit pixel via GTM?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Once the base pixel is installed on all pages, you can create <strong>additional GTM tags</strong> that fire the Reddit pixel with a specific event type (e.g. <code>Purchase</code>, <code>Lead</code>, <code>AddToCart</code>) triggered only on relevant pages or actions — such as a thank-you page or a button click. This gives Reddit Ads the conversion data needed to optimise your campaigns and measure ROAS accurately.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -453,21 +397,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about installing the Reddit Ads pixel with Google Tag Manager.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the Reddit Ads pixel and why do I need it?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The Reddit pixel is a snippet of JavaScript that tracks visitor behaviour on your website. It sends data back to Reddit Ads so you can <strong>measure conversions</strong> (purchases, sign-ups, leads), build <strong>retargeting audiences</strong> from people who visited your site, and optimise campaigns toward specific events. Without it, Reddit Ads cannot report on what happens after a click.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where do I find my Reddit Pixel ID?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Log in to <strong>Reddit Ads</strong>, then go to <strong>Events Manager</strong> in the left-hand navigation. Select the <strong>Google Tag Manager</strong> installation option and your Pixel ID will be displayed — it starts with a letter followed by numbers (e.g. <code>a2abc1234</code>). Copy this ID to paste into GTM.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a Reddit Ads account before I can install the pixel?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. The pixel is tied to your Reddit Ads account, so you need to <strong>create an account first</strong> at <code>ads.reddit.com</code>. Once your account is active, the pixel is automatically generated and available in Events Manager — you don't need to be running any active campaigns to access it.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I verify the pixel is installed correctly?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Use <strong>GTM Preview mode</strong> before publishing — visit your website while in Preview mode and confirm the Reddit Pixel tag fires on the page load event. You can also install the <strong>Reddit Pixel Helper</strong> Chrome extension, which shows a green tick when the pixel is detected on a page. Within Reddit Ads, Events Manager will show <strong>Active</strong> status once it receives its first signal.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Should I use GTM or install the Reddit pixel directly in my website code?</span>
+          </div>
+          <div class="faq-answer">
+            <p>GTM is strongly recommended. It lets you <strong>add, update, or remove the pixel</strong> without needing developer access to your site's code. You can also fire conversion events and retargeting triggers from the same container. Direct code installation works but every change requires a code deployment — GTM gives you far more flexibility and speed.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I track specific conversion events (not just page views) with the Reddit pixel via GTM?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Once the base pixel is installed on all pages, you can create <strong>additional GTM tags</strong> that fire the Reddit pixel with a specific event type (e.g. <code>Purchase</code>, <code>Lead</code>, <code>AddToCart</code>) triggered only on relevant pages or actions — such as a thank-you page or a button click. This gives Reddit Ads the conversion data needed to optimise your campaigns and measure ROAS accurately.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -281,81 +299,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your account setup together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about the Meta Business Portfolio ID and Business Manager ID.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the Meta Business Portfolio ID?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>Meta Business Portfolio ID</strong> (formerly called Business Manager ID) is a unique numeric identifier assigned to your Meta Business account. It represents the top-level business entity that contains your ad accounts, pages, pixels, and other assets. You need this ID when connecting third-party tools, setting up API integrations, granting partner access, or contacting Meta support about your account.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between a Business Portfolio ID and an Ad Account ID?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>Business Portfolio ID</strong> identifies your overall Business Manager account — the top-level container for all your assets. The <strong>Ad Account ID</strong> (which starts with <code>act_</code>) identifies a specific ad account within that Business Manager. A single Business Manager can contain multiple ad accounts. When integrating with APIs or tools, you may need both IDs — the Business ID for account-level access and the Ad Account ID for campaign-level access.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where else can I find my Business Manager ID?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Besides the <strong>Business Info</strong> page in Business Settings, your Business Manager ID also appears in the URL when you are logged into Business Manager — look for the numeric ID in the browser address bar (e.g. <code>business.facebook.com/&lt;your-business-id&gt;/</code>). It is also displayed when you hover over your Business Manager name in the account switcher at the top of the screen.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why do I need my Business Portfolio ID?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Common use cases include: granting a <strong>partner agency</strong> access to your assets, setting up <strong>Meta API</strong> or Conversions API integrations that require your Business ID, connecting third-party tools such as CRMs or analytics platforms, and providing it to <strong>Meta support</strong> when raising a case. Some platforms (e.g. Shopify, WooCommerce) also ask for this ID during the Meta channel setup process.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I have more than one Business Manager (Business Portfolio)?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. A single personal Facebook account can be associated with multiple Business Managers. However, Meta limits the number of Business Managers you can create (typically 2 per personal account). If you manage clients, best practice is to have one Business Manager per client or to use a single agency Business Manager and request access to client Business Managers rather than creating new ones. Each Business Manager has its own unique Portfolio ID.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between Business Manager and Business Portfolio?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>There is no functional difference — <strong>Business Portfolio</strong> is simply the new name Meta has given to what was previously called <strong>Business Manager</strong>. Meta renamed it to better reflect that it is a portfolio of business assets (ad accounts, pages, pixels, etc.) rather than just a management interface. The underlying ID and functionality remain the same; only the terminology has changed in Meta's interface and documentation.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -413,21 +357,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about the Meta Business Portfolio ID and Business Manager ID.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the Meta Business Portfolio ID?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>Meta Business Portfolio ID</strong> (formerly called Business Manager ID) is a unique numeric identifier assigned to your Meta Business account. It represents the top-level business entity that contains your ad accounts, pages, pixels, and other assets. You need this ID when connecting third-party tools, setting up API integrations, granting partner access, or contacting Meta support about your account.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between a Business Portfolio ID and an Ad Account ID?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>Business Portfolio ID</strong> identifies your overall Business Manager account — the top-level container for all your assets. The <strong>Ad Account ID</strong> (which starts with <code>act_</code>) identifies a specific ad account within that Business Manager. A single Business Manager can contain multiple ad accounts. When integrating with APIs or tools, you may need both IDs — the Business ID for account-level access and the Ad Account ID for campaign-level access.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where else can I find my Business Manager ID?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Besides the <strong>Business Info</strong> page in Business Settings, your Business Manager ID also appears in the URL when you are logged into Business Manager — look for the numeric ID in the browser address bar (e.g. <code>business.facebook.com/&lt;your-business-id&gt;/</code>). It is also displayed when you hover over your Business Manager name in the account switcher at the top of the screen.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why do I need my Business Portfolio ID?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Common use cases include: granting a <strong>partner agency</strong> access to your assets, setting up <strong>Meta API</strong> or Conversions API integrations that require your Business ID, connecting third-party tools such as CRMs or analytics platforms, and providing it to <strong>Meta support</strong> when raising a case. Some platforms (e.g. Shopify, WooCommerce) also ask for this ID during the Meta channel setup process.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I have more than one Business Manager (Business Portfolio)?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. A single personal Facebook account can be associated with multiple Business Managers. However, Meta limits the number of Business Managers you can create (typically 2 per personal account). If you manage clients, best practice is to have one Business Manager per client or to use a single agency Business Manager and request access to client Business Managers rather than creating new ones. Each Business Manager has its own unique Portfolio ID.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Business Manager and Business Portfolio?</span>
+          </div>
+          <div class="faq-answer">
+            <p>There is no functional difference — <strong>Business Portfolio</strong> is simply the new name Meta has given to what was previously called <strong>Business Manager</strong>. Meta renamed it to better reflect that it is a portfolio of business assets (ad accounts, pages, pixels, etc.) rather than just a management interface. The underlying ID and functionality remain the same; only the terminology has changed in Meta's interface and documentation.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

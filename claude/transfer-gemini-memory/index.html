@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -310,81 +328,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Claude AI?</h3>
           <p>Book a 90-minute training session and we'll build your AI-powered workflow together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about transferring Gemini memory to Claude.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is Claude Memory?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Claude Memory is a feature that lets Claude <strong>remember information about you across conversations</strong> — your preferences, context, communication style, and recurring details. Instead of re-explaining your situation in every new chat, Claude recalls what it already knows about you and adjusts its responses accordingly, making interactions faster and more personalised over time.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why would I want to transfer my Gemini memory to Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>If you've been using Gemini and have built up context — your preferences, job role, interests, communication style — transferring it to Claude means you don't have to start from scratch. Claude's built-in import tool generates a structured prompt to extract that memory from Gemini, so your personalised AI context carries over rather than being lost when you switch tools.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need a paid Claude plan to use Memory?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Claude Memory availability depends on your plan. As of 2026, Memory features are available on <strong>Claude Pro and higher plans</strong>. If you do not see the Memory options under Settings → Capabilities, check whether your current plan includes the feature or upgrade to access it.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I edit or delete memories after importing from Gemini?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. After the import, you can review, edit, and delete individual memory entries from Claude's Memory settings. This lets you refine what was imported, remove outdated information, or add new preferences that weren't captured from Gemini. You have full control over what Claude remembers about you.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is my memory data stored securely?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Claude Memory is stored by Anthropic under their standard data privacy policies. You can view and delete your memory at any time from Settings. If you are concerned about what data is retained, review Anthropic's privacy policy and use the memory management tools in Settings to remove any entries you are not comfortable storing.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does this work for transferring memory from ChatGPT to Claude too?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The same general approach works for other AI tools — Claude's import tool generates a prompt you can run in <strong>any AI assistant</strong> that has a memory feature. Paste the prompt into ChatGPT, copy its structured output, and paste it back into Claude's import flow. The exact steps may vary slightly depending on how each platform formats its memory export.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -442,21 +386,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about transferring Gemini memory to Claude.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is Claude Memory?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Claude Memory is a feature that lets Claude <strong>remember information about you across conversations</strong> — your preferences, context, communication style, and recurring details. Instead of re-explaining your situation in every new chat, Claude recalls what it already knows about you and adjusts its responses accordingly, making interactions faster and more personalised over time.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why would I want to transfer my Gemini memory to Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>If you've been using Gemini and have built up context — your preferences, job role, interests, communication style — transferring it to Claude means you don't have to start from scratch. Claude's built-in import tool generates a structured prompt to extract that memory from Gemini, so your personalised AI context carries over rather than being lost when you switch tools.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a paid Claude plan to use Memory?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Claude Memory availability depends on your plan. As of 2026, Memory features are available on <strong>Claude Pro and higher plans</strong>. If you do not see the Memory options under Settings → Capabilities, check whether your current plan includes the feature or upgrade to access it.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I edit or delete memories after importing from Gemini?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. After the import, you can review, edit, and delete individual memory entries from Claude's Memory settings. This lets you refine what was imported, remove outdated information, or add new preferences that weren't captured from Gemini. You have full control over what Claude remembers about you.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is my memory data stored securely?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Claude Memory is stored by Anthropic under their standard data privacy policies. You can view and delete your memory at any time from Settings. If you are concerned about what data is retained, review Anthropic's privacy policy and use the memory management tools in Settings to remove any entries you are not comfortable storing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does this work for transferring memory from ChatGPT to Claude too?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The same general approach works for other AI tools — Claude's import tool generates a prompt you can run in <strong>any AI assistant</strong> that has a memory feature. Paste the prompt into ChatGPT, copy its structured output, and paste it back into Claude's import flow. The exact steps may vary slightly depending on how each platform formats its memory export.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

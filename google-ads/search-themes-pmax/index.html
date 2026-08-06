@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -265,81 +283,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about Search Themes in Performance Max campaigns.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What are Search Themes in Performance Max campaigns?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Search Themes are signals you provide to Google's AI within a Performance Max asset group to indicate the types of searches you want to target. Unlike keywords, they do not directly control which searches trigger your ads — instead, they inform Google's machine learning about the intent and topics most relevant to your business, helping the algorithm find more of the right customers across all of Google's inventory.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Are Search Themes the same as keywords?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Keywords in standard Search campaigns directly control which search queries can match your ads. <strong>Search Themes are signals</strong>, not hard targeting. They tell Google's AI what themes are important to you, but Google retains discretion on which searches to enter based on its broader optimisation signals. Think of them as guidance rather than constraints — they expand what Google considers relevant for your campaign.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How many Search Themes can I add per asset group?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>You can add up to <strong>25 Search Themes per asset group</strong>. It is generally better to use specific, targeted themes rather than very broad ones. If you have multiple distinct product or service themes, consider splitting them into separate asset groups — each with its own focused set of Search Themes — rather than cramming everything into one asset group.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I use Search Themes as negative keywords to block traffic?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No — Search Themes are positive signals only. They cannot be used to block unwanted traffic. To exclude irrelevant searches from your Performance Max campaigns, you need to use <strong>campaign-level negative keywords</strong>, which are managed separately. You can request access to campaign-level negative keywords for PMax through your Google Ads account or Google rep.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do Search Themes affect non-Search inventory in PMax?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Search Themes primarily influence the <strong>Search and Shopping</strong> inventory within Performance Max. They help Google understand what search intent is relevant to that asset group. For Display, YouTube, and Gmail placements, Google relies more heavily on your audience signals, creative assets, and conversion data rather than Search Themes specifically.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Should I add Search Themes to every asset group?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>It is recommended to add Search Themes to every asset group, especially when your PMax campaign is new and Google's AI has limited conversion data to learn from. Search Themes help accelerate the learning phase by giving the algorithm clear direction. As the campaign matures and gathers more data, the algorithm becomes less dependent on these signals — but keeping them in place generally maintains better targeting precision.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -397,21 +341,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about Search Themes in Performance Max campaigns.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What are Search Themes in Performance Max campaigns?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Search Themes are signals you provide to Google's AI within a Performance Max asset group to indicate the types of searches you want to target. Unlike keywords, they do not directly control which searches trigger your ads — instead, they inform Google's machine learning about the intent and topics most relevant to your business, helping the algorithm find more of the right customers across all of Google's inventory.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Are Search Themes the same as keywords?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Keywords in standard Search campaigns directly control which search queries can match your ads. <strong>Search Themes are signals</strong>, not hard targeting. They tell Google's AI what themes are important to you, but Google retains discretion on which searches to enter based on its broader optimisation signals. Think of them as guidance rather than constraints — they expand what Google considers relevant for your campaign.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How many Search Themes can I add per asset group?</span>
+          </div>
+          <div class="faq-answer">
+            <p>You can add up to <strong>25 Search Themes per asset group</strong>. It is generally better to use specific, targeted themes rather than very broad ones. If you have multiple distinct product or service themes, consider splitting them into separate asset groups — each with its own focused set of Search Themes — rather than cramming everything into one asset group.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I use Search Themes as negative keywords to block traffic?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No — Search Themes are positive signals only. They cannot be used to block unwanted traffic. To exclude irrelevant searches from your Performance Max campaigns, you need to use <strong>campaign-level negative keywords</strong>, which are managed separately. You can request access to campaign-level negative keywords for PMax through your Google Ads account or Google rep.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do Search Themes affect non-Search inventory in PMax?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Search Themes primarily influence the <strong>Search and Shopping</strong> inventory within Performance Max. They help Google understand what search intent is relevant to that asset group. For Display, YouTube, and Gmail placements, Google relies more heavily on your audience signals, creative assets, and conversion data rather than Search Themes specifically.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Should I add Search Themes to every asset group?</span>
+          </div>
+          <div class="faq-answer">
+            <p>It is recommended to add Search Themes to every asset group, especially when your PMax campaign is new and Google's AI has limited conversion data to learn from. Search Themes help accelerate the learning phase by giving the algorithm clear direction. As the campaign matures and gathers more data, the algorithm becomes less dependent on these signals — but keeping them in place generally maintains better targeting precision.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

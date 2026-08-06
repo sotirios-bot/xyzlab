@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -329,81 +347,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Meta Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about scheduling Meta Ads report delivery.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Who can receive a scheduled Meta Ads report?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Only people who already have access to your Meta Ads Manager can be selected as recipients of a scheduled report. You cannot send scheduled reports to external email addresses that do not have account access. If you need to add a recipient, grant them access via <strong>Business Settings → Users → People → Invite people</strong> first, then set up the schedule.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How often can I schedule Meta Ads reports?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Meta Ads supports three delivery frequencies: <strong>Daily</strong> (report sent each day), <strong>Weekly</strong> (sent once per week), and <strong>Monthly</strong> (sent once per month). Choose the frequency that matches how often your team reviews performance data — weekly is the most common choice for active campaigns.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What format are scheduled Meta Ads reports delivered in?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Scheduled Meta Ads reports are typically delivered as <strong>CSV or Excel file exports</strong> via email. The report contains the same data as the Ads Manager view you configured before setting up the schedule — including the columns, date range, and filters you had selected at the time of scheduling.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I edit or cancel a scheduled report after setting it up?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. To manage your scheduled reports, go to the same <strong>Export dropdown → Schedule Export</strong> area in Meta Ads Manager. You will see a list of active schedules where you can change the frequency, update the recipients, or delete the schedule entirely to stop future deliveries.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What data does a scheduled Meta Ads report include?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The scheduled export includes the <strong>same columns and filters</strong> you have set up in your current Ads Manager reporting view — impressions, clicks, spend, conversions, ROAS, and any custom metrics you've added. Before scheduling, customise your report view to show only the metrics your recipients need, then set up the schedule so it delivers that exact data automatically.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is there a limit to how many recipients or schedules I can create?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Meta does not publish a hard limit on the number of scheduled reports or recipients per schedule, but recipients must have existing account access. As a best practice, create separate schedules for different teams (e.g. one weekly summary for the client, one daily detail view for your internal team) rather than adding everyone to a single schedule with the same data.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -461,21 +405,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about scheduling Meta Ads report delivery.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Who can receive a scheduled Meta Ads report?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Only people who already have access to your Meta Ads Manager can be selected as recipients of a scheduled report. You cannot send scheduled reports to external email addresses that do not have account access. If you need to add a recipient, grant them access via <strong>Business Settings → Users → People → Invite people</strong> first, then set up the schedule.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How often can I schedule Meta Ads reports?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Meta Ads supports three delivery frequencies: <strong>Daily</strong> (report sent each day), <strong>Weekly</strong> (sent once per week), and <strong>Monthly</strong> (sent once per month). Choose the frequency that matches how often your team reviews performance data — weekly is the most common choice for active campaigns.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What format are scheduled Meta Ads reports delivered in?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Scheduled Meta Ads reports are typically delivered as <strong>CSV or Excel file exports</strong> via email. The report contains the same data as the Ads Manager view you configured before setting up the schedule — including the columns, date range, and filters you had selected at the time of scheduling.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I edit or cancel a scheduled report after setting it up?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. To manage your scheduled reports, go to the same <strong>Export dropdown → Schedule Export</strong> area in Meta Ads Manager. You will see a list of active schedules where you can change the frequency, update the recipients, or delete the schedule entirely to stop future deliveries.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What data does a scheduled Meta Ads report include?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The scheduled export includes the <strong>same columns and filters</strong> you have set up in your current Ads Manager reporting view — impressions, clicks, spend, conversions, ROAS, and any custom metrics you've added. Before scheduling, customise your report view to show only the metrics your recipients need, then set up the schedule so it delivers that exact data automatically.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is there a limit to how many recipients or schedules I can create?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Meta does not publish a hard limit on the number of scheduled reports or recipients per schedule, but recipients must have existing account access. As a best practice, create separate schedules for different teams (e.g. one weekly summary for the client, one daily detail view for your internal team) rather than adding everyone to a single schedule with the same data.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

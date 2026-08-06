@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -268,81 +286,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Meta Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about updating payment methods in Meta Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Where do I find Billing &amp; Payments in Meta Ads Manager?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Billing &amp; Payments</strong> is accessible from the left-hand navigation menu in Meta Ads Manager. If you don't see it, click the menu icon (hamburger) at the top left to expand the sidebar, then scroll down to find the Billing section.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I have multiple payment methods on one Meta Ads account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You can add multiple credit or debit cards to a single ad account. Meta will charge your <strong>primary payment method</strong> first. If the primary method fails, Meta will attempt to charge your backup payment method so your campaigns keep running without interruption.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What payment methods does Meta Ads accept?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Meta Ads accepts <strong>credit cards and debit cards</strong> (Visa, Mastercard, American Express), PayPal (in supported countries), and in some regions direct debit or local payment methods. Available options vary by country — you'll only see the payment types supported in your billing country when you go to add a new method.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens to my campaigns if my payment method fails?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>If your primary payment method fails and there is no backup, <strong>Meta will pause your campaigns</strong> and your ads will stop running. You'll receive an email notification. To resume delivery, add a valid payment method and settle any outstanding balance. Campaigns will restart once the payment is processed.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I set a different payment method for each ad account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Payment methods are managed <strong>at the ad account level</strong>, not at the Business Manager level. If you manage multiple ad accounts, each account has its own billing section and its own set of payment methods. The tutorial above shows how to select the correct ad account under "Ad Accounts" before adding or updating the card.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I remove an old payment method from Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Go to <strong>Billing &amp; Payments &gt; Payment Methods</strong>, select the ad account, and click on the payment method you want to remove. You'll see an option to delete it. Note that you cannot remove your only payment method if you have an active or paused campaign — add a replacement card first, then delete the old one.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -400,21 +344,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about updating payment methods in Meta Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where do I find Billing &amp; Payments in Meta Ads Manager?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Billing &amp; Payments</strong> is accessible from the left-hand navigation menu in Meta Ads Manager. If you don't see it, click the menu icon (hamburger) at the top left to expand the sidebar, then scroll down to find the Billing section.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I have multiple payment methods on one Meta Ads account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can add multiple credit or debit cards to a single ad account. Meta will charge your <strong>primary payment method</strong> first. If the primary method fails, Meta will attempt to charge your backup payment method so your campaigns keep running without interruption.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What payment methods does Meta Ads accept?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Meta Ads accepts <strong>credit cards and debit cards</strong> (Visa, Mastercard, American Express), PayPal (in supported countries), and in some regions direct debit or local payment methods. Available options vary by country — you'll only see the payment types supported in your billing country when you go to add a new method.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens to my campaigns if my payment method fails?</span>
+          </div>
+          <div class="faq-answer">
+            <p>If your primary payment method fails and there is no backup, <strong>Meta will pause your campaigns</strong> and your ads will stop running. You'll receive an email notification. To resume delivery, add a valid payment method and settle any outstanding balance. Campaigns will restart once the payment is processed.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I set a different payment method for each ad account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Payment methods are managed <strong>at the ad account level</strong>, not at the Business Manager level. If you manage multiple ad accounts, each account has its own billing section and its own set of payment methods. The tutorial above shows how to select the correct ad account under "Ad Accounts" before adding or updating the card.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I remove an old payment method from Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Go to <strong>Billing &amp; Payments &gt; Payment Methods</strong>, select the ad account, and click on the payment method you want to remove. You'll see an option to delete it. Note that you cannot remove your only payment method if you have an active or paused campaign — add a replacement card first, then delete the old one.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

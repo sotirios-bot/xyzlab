@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -362,81 +380,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads tracking?</h3>
           <p>Book a 90-minute training session and we'll set up your Meta Pixel and event tracking together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about Meta Pixel event tracking in Go High Level funnels.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the difference between the base Pixel code and event tracking code?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>base Pixel code</strong> (placed in the funnel's Body Tracking Code field) fires a <code>PageView</code> event on every page of the funnel — it tells Meta someone visited. <strong>Event tracking code</strong> (placed on individual funnel steps) fires a more specific event like <code>Lead</code> or <code>Purchase</code> when a visitor completes a key action. Both are needed for accurate Meta Ads optimisation.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Which funnel step should I put the Lead event on?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Place the <code>Lead</code> event code on the <strong>thank-you page</strong> (the confirmation step a visitor sees after submitting their details). This ensures the event only fires when the form has been successfully submitted — not on the opt-in page itself, which would inflate your lead count with visits rather than actual submissions.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I verify that the Meta Pixel event is firing correctly in GHL?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Install the <strong>Meta Pixel Helper</strong> Chrome extension and visit the funnel step. The extension will show which events fired on that page. You can also use <strong>Events Manager &gt; Test Events</strong> in Meta to see real-time event data from your browser as you navigate through the funnel.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I track multiple events across different funnel steps?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Repeat the event tracking setup (Steps 7–10) for each funnel step. For example, you might fire <code>ViewContent</code> on the sales page, <code>InitiateCheckout</code> on the order form, and <code>Purchase</code> on the order confirmation page. Each step gets its own event code in its own Footer Tracking field.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to create a Custom Conversion in Meta Ads after setting up the event?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Not necessarily. If you are using a <strong>Standard Event</strong> like <code>Lead</code> or <code>Purchase</code>, you can select it directly as a conversion event in your Meta Ads campaign settings without creating a Custom Conversion. Custom Conversions are useful when you want to track a subset of a standard event (e.g. only leads from a specific funnel URL) or when using non-standard event names.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will GHL's native integrations replace the need for this manual setup?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Go High Level has a built-in Meta Pixel integration (via the sub-account settings), but it typically only fires the base <code>PageView</code> event. For <strong>granular event tracking</strong> on specific funnel steps (like a Lead or Purchase event on a thank-you page), the manual code approach shown in this tutorial gives you more control and reliability than the native integration alone.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -494,21 +438,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about Meta Pixel event tracking in Go High Level funnels.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between the base Pixel code and event tracking code?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>base Pixel code</strong> (placed in the funnel's Body Tracking Code field) fires a <code>PageView</code> event on every page of the funnel — it tells Meta someone visited. <strong>Event tracking code</strong> (placed on individual funnel steps) fires a more specific event like <code>Lead</code> or <code>Purchase</code> when a visitor completes a key action. Both are needed for accurate Meta Ads optimisation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Which funnel step should I put the Lead event on?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Place the <code>Lead</code> event code on the <strong>thank-you page</strong> (the confirmation step a visitor sees after submitting their details). This ensures the event only fires when the form has been successfully submitted — not on the opt-in page itself, which would inflate your lead count with visits rather than actual submissions.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I verify that the Meta Pixel event is firing correctly in GHL?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Install the <strong>Meta Pixel Helper</strong> Chrome extension and visit the funnel step. The extension will show which events fired on that page. You can also use <strong>Events Manager &gt; Test Events</strong> in Meta to see real-time event data from your browser as you navigate through the funnel.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I track multiple events across different funnel steps?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Repeat the event tracking setup (Steps 7–10) for each funnel step. For example, you might fire <code>ViewContent</code> on the sales page, <code>InitiateCheckout</code> on the order form, and <code>Purchase</code> on the order confirmation page. Each step gets its own event code in its own Footer Tracking field.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to create a Custom Conversion in Meta Ads after setting up the event?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Not necessarily. If you are using a <strong>Standard Event</strong> like <code>Lead</code> or <code>Purchase</code>, you can select it directly as a conversion event in your Meta Ads campaign settings without creating a Custom Conversion. Custom Conversions are useful when you want to track a subset of a standard event (e.g. only leads from a specific funnel URL) or when using non-standard event names.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will GHL's native integrations replace the need for this manual setup?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Go High Level has a built-in Meta Pixel integration (via the sub-account settings), but it typically only fires the base <code>PageView</code> event. For <strong>granular event tracking</strong> on specific funnel steps (like a Lead or Purchase event on a thank-you page), the manual code approach shown in this tutorial gives you more control and reliability than the native integration alone.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -266,81 +284,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about Change History in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is Change History in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Change History is a built-in audit log in Google Ads that records every modification made to your account — including bid changes, budget edits, ad pauses, keyword additions, and more. It shows who made the change, what was changed, the old value, and the new value, along with a timestamp. It's invaluable for diagnosing sudden performance drops or unexpected account changes.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How far back does Google Ads Change History go?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google Ads stores Change History for up to <strong>2 years</strong>. You can use the date range selector within the Change History view to look back at any period within that window, making it easy to audit changes from months ago.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I see who made changes in a shared Google Ads account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Change History records the <strong>email address</strong> of the user who made each change. This is especially useful for agencies or teams managing a single account, as it lets you identify which team member updated bids, budgets, or creative without needing to ask manually.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I filter Change History by type of change?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Google Ads lets you filter the Change History log by <strong>change type</strong> — for example, you can show only budget changes, only bid adjustments, or only ad status changes. Use the filter bar at the top of the Change History page to narrow the results by type, campaign, or date range.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does Change History record automated or AI-driven changes?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Automated changes — such as those made by <strong>Smart Bidding</strong>, automated rules, or Google's recommendations that you approved — are also logged in Change History. The log will show the change source as "Automated" or list the specific rule or recommendation that triggered it, so you maintain full visibility over all account modifications.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I undo a change using Change History?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Change History is a <strong>read-only audit log</strong> — it does not have a built-in undo button for most change types. However, you can use the old and new values displayed in the log to manually revert a change. For some change types like bid adjustments or budget edits, you can simply re-enter the original value in the campaign settings.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -398,21 +342,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about Change History in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is Change History in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Change History is a built-in audit log in Google Ads that records every modification made to your account — including bid changes, budget edits, ad pauses, keyword additions, and more. It shows who made the change, what was changed, the old value, and the new value, along with a timestamp. It's invaluable for diagnosing sudden performance drops or unexpected account changes.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How far back does Google Ads Change History go?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google Ads stores Change History for up to <strong>2 years</strong>. You can use the date range selector within the Change History view to look back at any period within that window, making it easy to audit changes from months ago.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I see who made changes in a shared Google Ads account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Change History records the <strong>email address</strong> of the user who made each change. This is especially useful for agencies or teams managing a single account, as it lets you identify which team member updated bids, budgets, or creative without needing to ask manually.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I filter Change History by type of change?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Google Ads lets you filter the Change History log by <strong>change type</strong> — for example, you can show only budget changes, only bid adjustments, or only ad status changes. Use the filter bar at the top of the Change History page to narrow the results by type, campaign, or date range.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does Change History record automated or AI-driven changes?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Automated changes — such as those made by <strong>Smart Bidding</strong>, automated rules, or Google's recommendations that you approved — are also logged in Change History. The log will show the change source as "Automated" or list the specific rule or recommendation that triggered it, so you maintain full visibility over all account modifications.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I undo a change using Change History?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Change History is a <strong>read-only audit log</strong> — it does not have a built-in undo button for most change types. However, you can use the old and new values displayed in the log to manually revert a change. For some change types like bid adjustments or budget edits, you can simply re-enter the original value in the campaign settings.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

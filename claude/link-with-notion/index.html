@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your setup? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -273,81 +291,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Claude AI?</h3>
           <p>Book a 90-minute training session and we'll work through your Claude setup together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about linking Notion to Claude.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What can Claude do once Notion is connected?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Once Notion is linked, Claude can <strong>read your pages</strong>, search across your workspace, summarise notes, answer questions based on your content, and help you draft updates or new pages. You interact with your Notion data conversationally — no need to copy and paste content between apps.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can Claude write to or edit my Notion pages?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The capabilities depend on the permissions you grant during the Notion authorisation flow. At minimum, Claude can <strong>read</strong> your content. If you grant write access, Claude may also be able to create or update pages depending on the integration's current feature set. Check the Notion connector settings in Claude for the full list of enabled actions.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need a paid Claude plan to use Connectors?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Connectors (including the Notion integration) are available on <strong>Claude Pro and Team plans</strong>. Free plan users generally cannot access third-party connectors. Check Claude's current plan comparison page for the latest feature availability.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Which Notion pages does Claude have access to?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>During the authorisation flow, Notion lets you select <strong>specific pages or your entire workspace</strong> to share with Claude. You are in full control — Claude only sees the pages you explicitly grant access to. You can revoke or update this access at any time from your Notion settings under Connected apps.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I disconnect Notion from Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>To disconnect, go to <strong>Settings → Connectors</strong> in Claude and remove the Notion connection. You can also revoke access from within Notion itself by going to <strong>Settings → Connections</strong> and removing Claude from the list of connected apps. Either action will immediately cut off Claude's access to your Notion workspace.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is my Notion data safe when connected to Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Anthropic accesses your Notion data only to respond to your requests in Claude — your content is not used to train AI models. Data is handled according to Anthropic's privacy policy and Notion's API terms. For sensitive workspaces, consider granting access only to specific pages rather than your entire workspace during the authorisation step.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -405,21 +349,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your setup? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about linking Notion to Claude.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What can Claude do once Notion is connected?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Once Notion is linked, Claude can <strong>read your pages</strong>, search across your workspace, summarise notes, answer questions based on your content, and help you draft updates or new pages. You interact with your Notion data conversationally — no need to copy and paste content between apps.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can Claude write to or edit my Notion pages?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The capabilities depend on the permissions you grant during the Notion authorisation flow. At minimum, Claude can <strong>read</strong> your content. If you grant write access, Claude may also be able to create or update pages depending on the integration's current feature set. Check the Notion connector settings in Claude for the full list of enabled actions.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a paid Claude plan to use Connectors?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Connectors (including the Notion integration) are available on <strong>Claude Pro and Team plans</strong>. Free plan users generally cannot access third-party connectors. Check Claude's current plan comparison page for the latest feature availability.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Which Notion pages does Claude have access to?</span>
+          </div>
+          <div class="faq-answer">
+            <p>During the authorisation flow, Notion lets you select <strong>specific pages or your entire workspace</strong> to share with Claude. You are in full control — Claude only sees the pages you explicitly grant access to. You can revoke or update this access at any time from your Notion settings under Connected apps.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I disconnect Notion from Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>To disconnect, go to <strong>Settings → Connectors</strong> in Claude and remove the Notion connection. You can also revoke access from within Notion itself by going to <strong>Settings → Connections</strong> and removing Claude from the list of connected apps. Either action will immediately cut off Claude's access to your Notion workspace.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is my Notion data safe when connected to Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Anthropic accesses your Notion data only to respond to your requests in Claude — your content is not used to train AI models. Data is handled according to Anthropic's privacy policy and Notion's API terms. For sensitive workspaces, consider granting access only to specific pages rather than your entire workspace during the authorisation step.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

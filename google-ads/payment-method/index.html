@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -273,81 +291,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about adding a payment method in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What payment methods does Google Ads accept?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google Ads accepts <strong>credit cards</strong> (Visa, Mastercard, American Express), <strong>debit cards</strong>, <strong>bank transfers</strong>, and in some countries <strong>PayPal</strong>. The available payment options depend on your billing country. When you set up billing for the first time, Google will show you the payment methods supported in your region.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between a primary and backup payment method?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>primary payment method</strong> is charged first whenever Google Ads collects payment. The <strong>backup payment method</strong> is only charged if the primary fails — for example, if your card is declined or expired. Setting up a backup is strongly recommended for accounts running active campaigns, as a failed payment can cause your ads to pause until billing is resolved.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I have more than one payment method in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Google Ads allows you to save multiple payment methods on an account — one as the primary and one as the backup. You can switch which method is primary at any time from the Payment Methods page. However, only two cards can be active simultaneously (one primary, one backup).</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens if my Google Ads payment fails?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>If the primary payment method fails and no backup is set up, Google will retry the charge and send billing alerts to the account email. If the balance is not settled within a few days, <strong>your ads will be paused</strong> until payment is successfully collected. Once billing is resolved, ads resume automatically. This is why having a backup payment method is so important for always-on campaigns.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does Google Ads charge my card immediately when I add it?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google may place a small <strong>temporary authorisation hold</strong> (typically $1 or local equivalent) when you add a new card to verify it is valid. This hold is not a real charge and is released within a few days. Your card will only be charged for actual ad spend once your campaigns are running and reach your billing threshold.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I change the billing country after setting up my Google Ads account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. The billing country is set when you first create your Google Ads account and <strong>cannot be changed afterwards</strong>. The billing country determines which payment methods, currencies, and tax settings are available to you. If you need a different billing country, you would need to create a new Google Ads account — your existing account's history and campaigns cannot be migrated automatically.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -405,21 +349,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about adding a payment method in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What payment methods does Google Ads accept?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google Ads accepts <strong>credit cards</strong> (Visa, Mastercard, American Express), <strong>debit cards</strong>, <strong>bank transfers</strong>, and in some countries <strong>PayPal</strong>. The available payment options depend on your billing country. When you set up billing for the first time, Google will show you the payment methods supported in your region.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between a primary and backup payment method?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>primary payment method</strong> is charged first whenever Google Ads collects payment. The <strong>backup payment method</strong> is only charged if the primary fails — for example, if your card is declined or expired. Setting up a backup is strongly recommended for accounts running active campaigns, as a failed payment can cause your ads to pause until billing is resolved.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I have more than one payment method in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Google Ads allows you to save multiple payment methods on an account — one as the primary and one as the backup. You can switch which method is primary at any time from the Payment Methods page. However, only two cards can be active simultaneously (one primary, one backup).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens if my Google Ads payment fails?</span>
+          </div>
+          <div class="faq-answer">
+            <p>If the primary payment method fails and no backup is set up, Google will retry the charge and send billing alerts to the account email. If the balance is not settled within a few days, <strong>your ads will be paused</strong> until payment is successfully collected. Once billing is resolved, ads resume automatically. This is why having a backup payment method is so important for always-on campaigns.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does Google Ads charge my card immediately when I add it?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google may place a small <strong>temporary authorisation hold</strong> (typically $1 or local equivalent) when you add a new card to verify it is valid. This hold is not a real charge and is released within a few days. Your card will only be charged for actual ad spend once your campaigns are running and reach your billing threshold.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I change the billing country after setting up my Google Ads account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. The billing country is set when you first create your Google Ads account and <strong>cannot be changed afterwards</strong>. The billing country determines which payment methods, currencies, and tax settings are available to you. If you need a different billing country, you would need to create a new Google Ads account — your existing account's history and campaigns cannot be migrated automatically.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

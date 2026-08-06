@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -289,81 +307,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with your Wix site?</h3>
           <p>Book a 90-minute training session and we'll set up your Wix site and marketing together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about adding users and managing access in Wix.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the difference between a Wix collaborator and a site member?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A <strong>collaborator</strong> is someone who has access to your Wix dashboard to help manage or edit your site — like a designer, developer, or agency. A <strong>site member</strong> is a visitor who has registered on your live website (e.g. to access a members-only area). Collaborators are added via Roles &amp; Permissions; site members sign up through your front-end.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How many collaborators can I add to a Wix site?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The number of collaborators you can invite depends on your <strong>Wix plan</strong>. Free and lower-tier plans allow a limited number of collaborators, while Business and higher plans allow more. Check your current plan in Wix's billing settings to see your collaborator limit. You can always upgrade if you need to add more team members.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What roles are available in Wix by default?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Wix provides several built-in roles: <strong>Co-Owner</strong> (full access except billing), <strong>Admin</strong> (manage site and team), <strong>Back Office Manager</strong>, <strong>Content Manager</strong>, <strong>Designer</strong>, and <strong>SEO Manager</strong>. Each role has a preset combination of permissions. If none of these fit, you can create a <strong>custom role</strong> and choose exactly which dashboard areas that collaborator can access.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I restrict a collaborator to only certain parts of the Wix dashboard?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Use the <strong>Create custom role</strong> option in Roles &amp; Permissions to build a role with a tailored set of permissions. You can allow or restrict access to specific areas such as the editor, blog, store, bookings, analytics, and more. This is useful when you want to give an agency access to marketing tools without exposing billing or full admin settings.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does the person I invite need a Wix account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. The collaborator will receive an email invitation with a link to accept access. If they don't already have a Wix account, they'll need to create one using the email address you invited. Once they accept, they'll appear in your Roles &amp; Permissions list and can log in to access your site's dashboard based on their assigned role.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I remove a collaborator from my Wix site?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Go to <strong>Settings → Roles &amp; Permissions</strong> and find the collaborator in the list. Click the three-dot menu next to their name and select <strong>Remove</strong>. They will immediately lose access to your Wix dashboard. It's good practice to remove collaborators as soon as they no longer need access — especially for agencies or freelancers who have finished their work.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -421,21 +365,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about adding users and managing access in Wix.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between a Wix collaborator and a site member?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A <strong>collaborator</strong> is someone who has access to your Wix dashboard to help manage or edit your site — like a designer, developer, or agency. A <strong>site member</strong> is a visitor who has registered on your live website (e.g. to access a members-only area). Collaborators are added via Roles &amp; Permissions; site members sign up through your front-end.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How many collaborators can I add to a Wix site?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The number of collaborators you can invite depends on your <strong>Wix plan</strong>. Free and lower-tier plans allow a limited number of collaborators, while Business and higher plans allow more. Check your current plan in Wix's billing settings to see your collaborator limit. You can always upgrade if you need to add more team members.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What roles are available in Wix by default?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Wix provides several built-in roles: <strong>Co-Owner</strong> (full access except billing), <strong>Admin</strong> (manage site and team), <strong>Back Office Manager</strong>, <strong>Content Manager</strong>, <strong>Designer</strong>, and <strong>SEO Manager</strong>. Each role has a preset combination of permissions. If none of these fit, you can create a <strong>custom role</strong> and choose exactly which dashboard areas that collaborator can access.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I restrict a collaborator to only certain parts of the Wix dashboard?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Use the <strong>Create custom role</strong> option in Roles &amp; Permissions to build a role with a tailored set of permissions. You can allow or restrict access to specific areas such as the editor, blog, store, bookings, analytics, and more. This is useful when you want to give an agency access to marketing tools without exposing billing or full admin settings.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does the person I invite need a Wix account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. The collaborator will receive an email invitation with a link to accept access. If they don't already have a Wix account, they'll need to create one using the email address you invited. Once they accept, they'll appear in your Roles &amp; Permissions list and can log in to access your site's dashboard based on their assigned role.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I remove a collaborator from my Wix site?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Go to <strong>Settings → Roles &amp; Permissions</strong> and find the collaborator in the list. Click the three-dot menu next to their name and select <strong>Remove</strong>. They will immediately lose access to your Wix dashboard. It's good practice to remove collaborators as soon as they no longer need access — especially for agencies or freelancers who have finished their work.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

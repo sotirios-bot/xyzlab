@@ -219,6 +219,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -340,81 +358,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Go High Level?</h3>
           <p>Book a 90-minute training session and we'll set up and optimise your GHL account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about installing Google Tag Manager in Go High Level websites.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Does GTM apply to all pages of my GHL website automatically?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. When you paste the GTM code snippets into the website-level <strong>Header tracking code</strong> and <strong>Body tracking code</strong> fields in GHL, they are applied to every page of that website automatically. You do not need to add the code to each page individually. However, the code is website-specific in GHL, so if you have multiple websites you will need to repeat the process for each one.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between the GTM Head snippet and the Body snippet?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>Head snippet</strong> is the main JavaScript code that loads the GTM library and should be placed as high as possible in the <code>&lt;head&gt;</code> section so tags fire quickly. The <strong>Body snippet</strong> is a <code>&lt;noscript&gt;</code> iframe fallback that ensures basic GTM functionality for users who have JavaScript disabled — it goes immediately after the opening <code>&lt;body&gt;</code> tag. Both snippets are required for a complete and correct GTM installation.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I use the same GTM container for both GHL websites and funnels?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. One GTM container can be installed across multiple GHL properties — websites, funnels, or both — as long as you paste the same container code into each property's tracking code settings. Using a single container keeps all your tags, triggers, and variables in one place, which makes management much simpler. Just be mindful of any triggers that use URL conditions, as the same container fires on all pages where it is installed.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to publish my GTM container before it works on my GHL website?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. The GTM snippet you paste into GHL loads your container, but any tags inside the container only fire if you have <strong>published</strong> a version in GTM. If you have not published yet, the container will load but no tags will fire. After adding or changing tags in GTM, always click <strong>Submit</strong> and then <strong>Publish</strong> to push the changes live. You can use GTM Preview mode to test tags before publishing.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I verify that GTM is installed correctly on my GHL website?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The easiest way is to use <strong>GTM Preview mode</strong>: click <strong>Preview</strong> in GTM, enter your website's URL, and GTM will open your site with a debug panel at the bottom showing which tags and triggers are firing on each page. You can also install the <strong>Tag Assistant</strong> Chrome extension to quickly check whether GTM is present and which container ID is detected on the page.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What tracking tags can I manage through GTM on my GHL website?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Once GTM is installed, you can deploy virtually any tracking or marketing tag without touching the GHL code again. Common tags include Google Analytics 4, Google Ads conversion tracking, Meta Pixel, TikTok Pixel, LinkedIn Insight Tag, Microsoft Clarity, Hotjar, and custom event tracking scripts. GTM acts as a single container so you can add, remove, or update any tag from the GTM interface, with no need to edit your GHL website settings each time.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -472,21 +416,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about installing Google Tag Manager in Go High Level websites.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does GTM apply to all pages of my GHL website automatically?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. When you paste the GTM code snippets into the website-level <strong>Header tracking code</strong> and <strong>Body tracking code</strong> fields in GHL, they are applied to every page of that website automatically. You do not need to add the code to each page individually. However, the code is website-specific in GHL, so if you have multiple websites you will need to repeat the process for each one.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between the GTM Head snippet and the Body snippet?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>Head snippet</strong> is the main JavaScript code that loads the GTM library and should be placed as high as possible in the <code>&lt;head&gt;</code> section so tags fire quickly. The <strong>Body snippet</strong> is a <code>&lt;noscript&gt;</code> iframe fallback that ensures basic GTM functionality for users who have JavaScript disabled — it goes immediately after the opening <code>&lt;body&gt;</code> tag. Both snippets are required for a complete and correct GTM installation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I use the same GTM container for both GHL websites and funnels?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. One GTM container can be installed across multiple GHL properties — websites, funnels, or both — as long as you paste the same container code into each property's tracking code settings. Using a single container keeps all your tags, triggers, and variables in one place, which makes management much simpler. Just be mindful of any triggers that use URL conditions, as the same container fires on all pages where it is installed.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to publish my GTM container before it works on my GHL website?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. The GTM snippet you paste into GHL loads your container, but any tags inside the container only fire if you have <strong>published</strong> a version in GTM. If you have not published yet, the container will load but no tags will fire. After adding or changing tags in GTM, always click <strong>Submit</strong> and then <strong>Publish</strong> to push the changes live. You can use GTM Preview mode to test tags before publishing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I verify that GTM is installed correctly on my GHL website?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The easiest way is to use <strong>GTM Preview mode</strong>: click <strong>Preview</strong> in GTM, enter your website's URL, and GTM will open your site with a debug panel at the bottom showing which tags and triggers are firing on each page. You can also install the <strong>Tag Assistant</strong> Chrome extension to quickly check whether GTM is present and which container ID is detected on the page.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What tracking tags can I manage through GTM on my GHL website?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Once GTM is installed, you can deploy virtually any tracking or marketing tag without touching the GHL code again. Common tags include Google Analytics 4, Google Ads conversion tracking, Meta Pixel, TikTok Pixel, LinkedIn Insight Tag, Microsoft Clarity, Hotjar, and custom event tracking scripts. GTM acts as a single container so you can add, remove, or update any tag from the GTM interface, with no need to edit your GHL website settings each time.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

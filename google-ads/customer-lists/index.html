@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -310,81 +328,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about uploading Customer Lists in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a Customer List in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A Customer List (also called Customer Match) is a targeting feature in Google Ads that lets you upload your own customer data — such as email addresses, phone numbers, or postal addresses — to create a custom audience. Google matches this data against signed-in Google users so you can target or exclude your existing customers across Search, YouTube, Gmail, and Display campaigns.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What file format do I need to upload a customer list?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google Ads requires your customer data to be in a <strong>CSV file</strong>. The file should have a header row (e.g. <code>Email Address</code>) followed by one entry per row. Emails should be plain text — Google hashes the data automatically during upload. You can also include phone numbers and postal addresses in the same file using the appropriate column headers from Google's template.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How long does it take for a customer list to become active?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>After uploading, Google typically takes <strong>up to 48 hours</strong> to process and match your list. The segment status will show as "Populating" during this time and will update once matching is complete. The match rate depends on how many of your uploaded emails are associated with active Google accounts — a match rate of 30–50% is common for most lists.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the minimum list size required?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google requires a minimum of <strong>1,000 matched users</strong> before a customer list can be used for targeting. If your list matches fewer than 1,000 users, the segment will not be available for targeting (though you can still use it for bid adjustments in some cases). Upload as large a list as possible to maximise your matched audience size.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I use customer lists for both targeting and exclusions?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Customer lists can be applied as <strong>targeting segments</strong> (to show ads only to people on your list) or as <strong>exclusions</strong> (to suppress ads for existing customers). A common use case is to exclude current customers from prospecting campaigns to avoid wasted spend, while running separate retention or upsell campaigns targeting only your existing customer base.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I ensure customer data is handled safely?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google hashes all uploaded customer data (SHA-256 encryption) before matching — your raw email addresses are never stored by Google after processing. You must also comply with Google's <strong>Customer Match policy</strong>, which requires that you have permission to use the data and that you disclose its use to your customers. Always ensure your privacy policy covers the use of customer data for advertising purposes.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -442,21 +386,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about uploading Customer Lists in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a Customer List in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A Customer List (also called Customer Match) is a targeting feature in Google Ads that lets you upload your own customer data — such as email addresses, phone numbers, or postal addresses — to create a custom audience. Google matches this data against signed-in Google users so you can target or exclude your existing customers across Search, YouTube, Gmail, and Display campaigns.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What file format do I need to upload a customer list?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google Ads requires your customer data to be in a <strong>CSV file</strong>. The file should have a header row (e.g. <code>Email Address</code>) followed by one entry per row. Emails should be plain text — Google hashes the data automatically during upload. You can also include phone numbers and postal addresses in the same file using the appropriate column headers from Google's template.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How long does it take for a customer list to become active?</span>
+          </div>
+          <div class="faq-answer">
+            <p>After uploading, Google typically takes <strong>up to 48 hours</strong> to process and match your list. The segment status will show as "Populating" during this time and will update once matching is complete. The match rate depends on how many of your uploaded emails are associated with active Google accounts — a match rate of 30–50% is common for most lists.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the minimum list size required?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google requires a minimum of <strong>1,000 matched users</strong> before a customer list can be used for targeting. If your list matches fewer than 1,000 users, the segment will not be available for targeting (though you can still use it for bid adjustments in some cases). Upload as large a list as possible to maximise your matched audience size.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I use customer lists for both targeting and exclusions?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Customer lists can be applied as <strong>targeting segments</strong> (to show ads only to people on your list) or as <strong>exclusions</strong> (to suppress ads for existing customers). A common use case is to exclude current customers from prospecting campaigns to avoid wasted spend, while running separate retention or upsell campaigns targeting only your existing customer base.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I ensure customer data is handled safely?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google hashes all uploaded customer data (SHA-256 encryption) before matching — your raw email addresses are never stored by Google after processing. You must also comply with Google's <strong>Customer Match policy</strong>, which requires that you have permission to use the data and that you disclose its use to your customers. Always ensure your privacy policy covers the use of customer data for advertising purposes.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
