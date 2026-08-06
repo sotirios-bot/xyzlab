@@ -357,7 +357,7 @@ ul { list-style: none; }
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
   gap: .85rem;
   padding: 1.5rem;
   align-items: stretch;
