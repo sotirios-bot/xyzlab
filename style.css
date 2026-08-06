@@ -389,8 +389,10 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
   transition: transform var(--transition), box-shadow var(--transition);
+  text-decoration: none;
+  cursor: pointer;
 }
-.hero-card:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,.15); }
+.hero-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(0,0,0,.18); }
 
 .hero-card .card-icon { font-size: 1.6rem; margin-bottom: .4rem; }
 .hero-card p { font-weight: 700; font-size: .9rem; color: var(--dark); margin: 0; }
