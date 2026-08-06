@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -305,81 +323,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Meta Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about Meta Ads AI Enhancements and Advantage+ creative.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What are Meta Ads AI Enhancements (Advantage+ creative)?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Advantage+ creative enhancements are a set of AI-powered modifications that Meta automatically applies to your ad creative to try to improve performance. They include changes such as adjusting image brightness and contrast, cropping images for different placements, adding music to video ads, showing relevant comments below your ad, and rewriting ad text. Meta enables these by default, but you can turn off any or all of them individually.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why would I want to disable AI Enhancements?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>There are several valid reasons to turn them off. If your brand has strict visual guidelines, AI cropping or colour adjustments may produce off-brand results. If your ad copy has been carefully written and approved, AI text improvements can alter the message in unintended ways. Disabling enhancements also gives you a clearer picture of how your creative actually performs, without AI variables changing what users see.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to disable enhancements on every ad individually?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — Advantage+ creative enhancements are set at the individual ad level, not at the campaign or ad set level. You will need to edit each ad separately to disable them. When creating new ads, you can turn off the enhancements during the ad creation process before publishing, which saves having to come back and edit after the fact.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will disabling AI Enhancements hurt my ad performance?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Meta claims enhancements improve performance on average, but results vary by account and creative type. In practice, many advertisers find that well-crafted creative performs just as well — or better — without AI modifications, particularly when brand consistency is important. The safest approach is to A/B test: run one version with enhancements enabled and one with them disabled, then compare cost per result.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I disable AI Enhancements for all future ads by default?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>There is no account-level setting to permanently disable Advantage+ creative enhancements for all ads. Meta re-enables them by default each time you create a new ad. You need to manually turn them off during ad creation or editing. This is a deliberate Meta product decision — the expectation is that advertisers opt out per ad rather than at the account level.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between Advantage+ creative and Advantage+ placements?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Advantage+ creative</strong> modifies how your ad creative looks — cropping images, changing colours, adding music, rewriting text. <strong>Advantage+ placements</strong> (formerly Automatic Placements) controls <em>where</em> your ad appears — Facebook Feed, Instagram Reels, Audience Network, Messenger, etc. They are separate settings at different levels: Advantage+ creative is at the ad level, while Advantage+ placements is at the ad set level.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -437,21 +381,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about Meta Ads AI Enhancements and Advantage+ creative.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What are Meta Ads AI Enhancements (Advantage+ creative)?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Advantage+ creative enhancements are a set of AI-powered modifications that Meta automatically applies to your ad creative to try to improve performance. They include changes such as adjusting image brightness and contrast, cropping images for different placements, adding music to video ads, showing relevant comments below your ad, and rewriting ad text. Meta enables these by default, but you can turn off any or all of them individually.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why would I want to disable AI Enhancements?</span>
+          </div>
+          <div class="faq-answer">
+            <p>There are several valid reasons to turn them off. If your brand has strict visual guidelines, AI cropping or colour adjustments may produce off-brand results. If your ad copy has been carefully written and approved, AI text improvements can alter the message in unintended ways. Disabling enhancements also gives you a clearer picture of how your creative actually performs, without AI variables changing what users see.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to disable enhancements on every ad individually?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — Advantage+ creative enhancements are set at the individual ad level, not at the campaign or ad set level. You will need to edit each ad separately to disable them. When creating new ads, you can turn off the enhancements during the ad creation process before publishing, which saves having to come back and edit after the fact.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will disabling AI Enhancements hurt my ad performance?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Meta claims enhancements improve performance on average, but results vary by account and creative type. In practice, many advertisers find that well-crafted creative performs just as well — or better — without AI modifications, particularly when brand consistency is important. The safest approach is to A/B test: run one version with enhancements enabled and one with them disabled, then compare cost per result.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I disable AI Enhancements for all future ads by default?</span>
+          </div>
+          <div class="faq-answer">
+            <p>There is no account-level setting to permanently disable Advantage+ creative enhancements for all ads. Meta re-enables them by default each time you create a new ad. You need to manually turn them off during ad creation or editing. This is a deliberate Meta product decision — the expectation is that advertisers opt out per ad rather than at the account level.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Advantage+ creative and Advantage+ placements?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Advantage+ creative</strong> modifies how your ad creative looks — cropping images, changing colours, adding music, rewriting text. <strong>Advantage+ placements</strong> (formerly Automatic Placements) controls <em>where</em> your ad appears — Facebook Feed, Instagram Reels, Audience Network, Messenger, etc. They are separate settings at different levels: Advantage+ creative is at the ad level, while Advantage+ placements is at the ad set level.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -310,81 +328,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about the Target ROAS bid strategy in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is Target ROAS in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Target ROAS (Return on Ad Spend) is a Smart Bidding strategy that automatically sets bids to help you achieve a specific return on ad spend across your campaigns. Google's AI adjusts bids at auction time to maximise conversion value while hitting your ROAS target — for example, a target of 400% means you want $4 in revenue for every $1 spent.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How much conversion data do I need before using Target ROAS?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google recommends having at least <strong>15–50 conversions in the past 30 days</strong> before switching to Target ROAS, and the conversions must have associated revenue values. Without sufficient data, the algorithm has too little signal to optimise effectively and performance can become erratic.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between Target ROAS and Maximise Conversion Value?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Maximise Conversion Value</strong> spends your full budget to get the highest total revenue with no ROAS floor — it prioritises volume. <strong>Target ROAS</strong> adds a constraint by telling Google to hit a specific return target, which means it may spend less of your budget if the opportunities available don't meet your ROAS threshold. Use Target ROAS when efficiency matters more than pure volume.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens if I set my Target ROAS too high?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>If your target is set higher than your account can realistically achieve, Google will reduce bidding to only enter the most profitable auctions — leading to a significant drop in impressions, clicks, and spend. Your actual ROAS may improve but volume will fall. Start conservatively close to your recent average ROAS and gradually increase over time.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Should I set a maximum CPC bid limit with Target ROAS?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Setting a maximum CPC limit under Advanced options is optional and generally not recommended for most accounts. Capping bids can prevent Google's algorithm from winning auctions for high-value conversions, which undermines the strategy. Only use a max CPC limit if you have a strict business reason and understand it may constrain performance.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I use Target ROAS across multiple campaigns as a portfolio strategy?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Setting Target ROAS via <strong>Tools &gt; Bid strategies</strong> creates a <strong>portfolio bid strategy</strong> that can be shared across multiple campaigns. This lets Google pool conversion data from all assigned campaigns to hit your ROAS target more efficiently, which is particularly useful when individual campaigns have lower conversion volumes.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -442,21 +386,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about the Target ROAS bid strategy in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is Target ROAS in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Target ROAS (Return on Ad Spend) is a Smart Bidding strategy that automatically sets bids to help you achieve a specific return on ad spend across your campaigns. Google's AI adjusts bids at auction time to maximise conversion value while hitting your ROAS target — for example, a target of 400% means you want $4 in revenue for every $1 spent.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How much conversion data do I need before using Target ROAS?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google recommends having at least <strong>15–50 conversions in the past 30 days</strong> before switching to Target ROAS, and the conversions must have associated revenue values. Without sufficient data, the algorithm has too little signal to optimise effectively and performance can become erratic.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Target ROAS and Maximise Conversion Value?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Maximise Conversion Value</strong> spends your full budget to get the highest total revenue with no ROAS floor — it prioritises volume. <strong>Target ROAS</strong> adds a constraint by telling Google to hit a specific return target, which means it may spend less of your budget if the opportunities available don't meet your ROAS threshold. Use Target ROAS when efficiency matters more than pure volume.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens if I set my Target ROAS too high?</span>
+          </div>
+          <div class="faq-answer">
+            <p>If your target is set higher than your account can realistically achieve, Google will reduce bidding to only enter the most profitable auctions — leading to a significant drop in impressions, clicks, and spend. Your actual ROAS may improve but volume will fall. Start conservatively close to your recent average ROAS and gradually increase over time.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Should I set a maximum CPC bid limit with Target ROAS?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Setting a maximum CPC limit under Advanced options is optional and generally not recommended for most accounts. Capping bids can prevent Google's algorithm from winning auctions for high-value conversions, which undermines the strategy. Only use a max CPC limit if you have a strict business reason and understand it may constrain performance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I use Target ROAS across multiple campaigns as a portfolio strategy?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Setting Target ROAS via <strong>Tools &gt; Bid strategies</strong> creates a <strong>portfolio bid strategy</strong> that can be shared across multiple campaigns. This lets Google pool conversion data from all assigned campaigns to hit your ROAS target more efficiently, which is particularly useful when individual campaigns have lower conversion volumes.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -323,81 +341,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about installing the Google Ads Tag via Google Tag Manager.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the Google Ads Tag and why do I need it?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The Google Ads Tag (also called the global site tag) is a snippet of JavaScript that you place on your website to track visitor behaviour from your Google Ads campaigns. It serves two key purposes: <strong>building remarketing audiences</strong> (so you can re-advertise to past visitors) and <strong>recording conversions</strong> (so Google Ads knows which clicks led to valuable actions on your site). Without it, remarketing campaigns and Smart Bidding strategies have no data to work with.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between the Google Ads Tag and a Conversion Tag?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>Google Ads Tag</strong> (Google Remarketing tag) fires on every page of your website and collects general visitor data for audience building. A <strong>Conversion Tag</strong> fires only on a specific page or event (e.g. a thank-you page or button click) and records a specific conversion action. Both use your Conversion ID, but the Conversion Tag also includes a <strong>Conversion Label</strong> to identify which action was completed. You need both for a complete Google Ads tracking setup.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need the Google Ads Tag if I already have GA4 on my site?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — they serve different purposes. <strong>GA4</strong> tracks overall website analytics and user behaviour. The <strong>Google Ads Tag</strong> specifically enables Google Ads features like remarketing audiences and conversion tracking that are linked to your Google Ads account. You can import GA4 goals into Google Ads as conversions, but you still need the Google Ads Tag (or a connected Google Tag) to properly build remarketing lists.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where do I find my Conversion ID for the Google Ads Tag?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>In Google Ads, go to <strong>Tools → Audience Manager → Audience Sources → Google Ads Tag</strong>. Click <strong>Set up tag</strong> or <strong>View tag</strong>, then choose <strong>Use Google Tag Manager</strong>. Your <strong>Conversion ID</strong> will be displayed — it is a numeric string like <code>AW-123456789</code>. Copy just the numeric portion (or the full AW-XXXXXXXX string depending on the GTM tag type you select).</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why should I use GTM to install the Google Ads Tag instead of adding it directly to my website?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Using <strong>Google Tag Manager</strong> means you can add, update, or remove the tag without editing your website's source code — ideal if you don't have direct access to the codebase. It also lets you manage all your marketing tags (Google Ads, Meta Pixel, GA4, etc.) in one place, test changes before publishing, and roll back quickly if something breaks. For most advertisers, GTM is the recommended installation method.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I verify the Google Ads Tag is working correctly?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Use <strong>GTM Preview mode</strong> to confirm the Google Remarketing tag fires on every page. You can also install the <strong>Google Tag Assistant</strong> Chrome extension to see the tag firing in real-time as you browse your site. In Google Ads, go to <strong>Audience Manager → Audience Sources</strong> — the Google Ads Tag status will change from <em>Unverified</em> to <em>Active</em> within a few hours once the tag is live and recording visits.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -455,21 +399,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about installing the Google Ads Tag via Google Tag Manager.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the Google Ads Tag and why do I need it?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The Google Ads Tag (also called the global site tag) is a snippet of JavaScript that you place on your website to track visitor behaviour from your Google Ads campaigns. It serves two key purposes: <strong>building remarketing audiences</strong> (so you can re-advertise to past visitors) and <strong>recording conversions</strong> (so Google Ads knows which clicks led to valuable actions on your site). Without it, remarketing campaigns and Smart Bidding strategies have no data to work with.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between the Google Ads Tag and a Conversion Tag?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>Google Ads Tag</strong> (Google Remarketing tag) fires on every page of your website and collects general visitor data for audience building. A <strong>Conversion Tag</strong> fires only on a specific page or event (e.g. a thank-you page or button click) and records a specific conversion action. Both use your Conversion ID, but the Conversion Tag also includes a <strong>Conversion Label</strong> to identify which action was completed. You need both for a complete Google Ads tracking setup.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need the Google Ads Tag if I already have GA4 on my site?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — they serve different purposes. <strong>GA4</strong> tracks overall website analytics and user behaviour. The <strong>Google Ads Tag</strong> specifically enables Google Ads features like remarketing audiences and conversion tracking that are linked to your Google Ads account. You can import GA4 goals into Google Ads as conversions, but you still need the Google Ads Tag (or a connected Google Tag) to properly build remarketing lists.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where do I find my Conversion ID for the Google Ads Tag?</span>
+          </div>
+          <div class="faq-answer">
+            <p>In Google Ads, go to <strong>Tools → Audience Manager → Audience Sources → Google Ads Tag</strong>. Click <strong>Set up tag</strong> or <strong>View tag</strong>, then choose <strong>Use Google Tag Manager</strong>. Your <strong>Conversion ID</strong> will be displayed — it is a numeric string like <code>AW-123456789</code>. Copy just the numeric portion (or the full AW-XXXXXXXX string depending on the GTM tag type you select).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why should I use GTM to install the Google Ads Tag instead of adding it directly to my website?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Using <strong>Google Tag Manager</strong> means you can add, update, or remove the tag without editing your website's source code — ideal if you don't have direct access to the codebase. It also lets you manage all your marketing tags (Google Ads, Meta Pixel, GA4, etc.) in one place, test changes before publishing, and roll back quickly if something breaks. For most advertisers, GTM is the recommended installation method.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I verify the Google Ads Tag is working correctly?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Use <strong>GTM Preview mode</strong> to confirm the Google Remarketing tag fires on every page. You can also install the <strong>Google Tag Assistant</strong> Chrome extension to see the tag firing in real-time as you browse your site. In Google Ads, go to <strong>Audience Manager → Audience Sources</strong> — the Google Ads Tag status will change from <em>Unverified</em> to <em>Active</em> within a few hours once the tag is live and recording visits.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

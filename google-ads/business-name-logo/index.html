@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -268,81 +286,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about Business Name and Logo assets in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What are Business Name and Logo assets in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Business Name and Logo are account-level assets that display your brand identity directly within your ads. Once added, Google can automatically show your business name and logo on eligible ad formats across Search, Display, and Performance Max campaigns — helping users recognise your brand and improving click-through rates.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What image formats and sizes are accepted for the Business Logo?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google Ads accepts logos in <strong>PNG, JPG, or GIF</strong> format. For the best results, upload a <strong>square logo</strong> at minimum 128×128px (recommended 1200×1200px) and a <strong>landscape logo</strong> at minimum 512×128px (recommended 1200×300px). The file size must be under 5MB, and the background should ideally be transparent or white for clean display across different ad formats.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where does the Business Name appear in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The Business Name asset is used primarily in <strong>Performance Max</strong> and <strong>Display</strong> campaigns, where it appears as the brand identifier in responsive ad formats. For Search campaigns, the business name typically comes from your ad's display URL domain. Having the asset set up ensures Google has an approved name to use consistently across all eligible formats.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to add these assets to every campaign?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No — Business Name and Logo are <strong>account-level assets</strong>, meaning you add them once and they become available across all your campaigns. You do not need to add them individually to each campaign or ad group. Google will automatically apply them where they are eligible to improve your ad appearance.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I upload multiple logos to a Google Ads account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, you can upload multiple logo variations — for example, a square version and a landscape version. Google will select the most appropriate format depending on the ad placement. It's good practice to upload both a <strong>square logo</strong> and a <strong>horizontal/landscape logo</strong> so your brand displays correctly across all ad types and placements.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How long does it take for Google to approve Business Name and Logo assets?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google typically reviews and approves Business Name and Logo assets within <strong>1 business day</strong>, though it can sometimes take up to 3 days. During this time the asset status will show as "Under review." Once approved, the assets become active automatically and will start appearing in eligible ad formats without any further action needed.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -400,21 +344,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about Business Name and Logo assets in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What are Business Name and Logo assets in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Business Name and Logo are account-level assets that display your brand identity directly within your ads. Once added, Google can automatically show your business name and logo on eligible ad formats across Search, Display, and Performance Max campaigns — helping users recognise your brand and improving click-through rates.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What image formats and sizes are accepted for the Business Logo?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google Ads accepts logos in <strong>PNG, JPG, or GIF</strong> format. For the best results, upload a <strong>square logo</strong> at minimum 128×128px (recommended 1200×1200px) and a <strong>landscape logo</strong> at minimum 512×128px (recommended 1200×300px). The file size must be under 5MB, and the background should ideally be transparent or white for clean display across different ad formats.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where does the Business Name appear in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The Business Name asset is used primarily in <strong>Performance Max</strong> and <strong>Display</strong> campaigns, where it appears as the brand identifier in responsive ad formats. For Search campaigns, the business name typically comes from your ad's display URL domain. Having the asset set up ensures Google has an approved name to use consistently across all eligible formats.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to add these assets to every campaign?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No — Business Name and Logo are <strong>account-level assets</strong>, meaning you add them once and they become available across all your campaigns. You do not need to add them individually to each campaign or ad group. Google will automatically apply them where they are eligible to improve your ad appearance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I upload multiple logos to a Google Ads account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, you can upload multiple logo variations — for example, a square version and a landscape version. Google will select the most appropriate format depending on the ad placement. It's good practice to upload both a <strong>square logo</strong> and a <strong>horizontal/landscape logo</strong> so your brand displays correctly across all ad types and placements.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How long does it take for Google to approve Business Name and Logo assets?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google typically reviews and approves Business Name and Logo assets within <strong>1 business day</strong>, though it can sometimes take up to 3 days. During this time the asset status will show as "Under review." Once approved, the assets become active automatically and will start appearing in eligible ad formats without any further action needed.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -319,81 +337,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads Editor?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads Editor workflow together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about bulk uploading campaigns in Google Ads Editor.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What format does my spreadsheet need to be in for Google Ads Editor?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Your spreadsheet should use column headers that match Google Ads Editor's field names, such as <strong>Campaign</strong>, <strong>Ad Group</strong>, <strong>Keyword</strong>, <strong>Match Type</strong>, <strong>Max CPC</strong>, and <strong>Status</strong>. You can work in Excel or Google Sheets — simply copy the data (including headers) and paste it directly into the Make Multiple Changes dialog. Editor will attempt to auto-map the columns.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does bulk uploading via Editor push changes live immediately?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No — changes imported through the Make Multiple Changes feature are staged locally in Google Ads Editor first. You can review, adjust, or discard them before clicking <strong>Post Changes</strong> to push them live to your Google Ads account. This gives you a safety net to catch errors before they go live.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I bulk upload ads and extensions as well as keywords?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Google Ads Editor supports bulk uploads for most entity types — including <strong>responsive search ads</strong>, <strong>sitelinks</strong>, <strong>callouts</strong>, and more. Navigate to the relevant section in the left panel (e.g., Ads, Sitelinks), then use Make Multiple Changes to paste in your data. Each entity type has its own required columns.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens if Google Ads Editor can't recognise a column?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>If Editor cannot automatically map a column, it will show a dropdown in the column mapping screen where you can manually select the correct field. Columns that don't match any known field can be set to <strong>Ignore</strong> so they don't cause errors. Always review the column mapping carefully before clicking Process.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I use bulk upload to edit existing campaigns, or only create new ones?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Both. If a campaign or keyword in your spreadsheet already exists in your account (matched by name), Editor will update it with the new values. If it doesn't exist, Editor will create it. This makes bulk upload useful for both initial campaign builds and large-scale edits to existing structures.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is there a limit to how many keywords I can bulk upload at once?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google Ads Editor can handle very large uploads — accounts with hundreds of thousands of keywords are supported. However, very large pastes may take a moment to process. For best performance, break extremely large uploads (e.g., 100,000+ rows) into smaller batches and post each batch before moving to the next.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -451,21 +395,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about bulk uploading campaigns in Google Ads Editor.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What format does my spreadsheet need to be in for Google Ads Editor?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Your spreadsheet should use column headers that match Google Ads Editor's field names, such as <strong>Campaign</strong>, <strong>Ad Group</strong>, <strong>Keyword</strong>, <strong>Match Type</strong>, <strong>Max CPC</strong>, and <strong>Status</strong>. You can work in Excel or Google Sheets — simply copy the data (including headers) and paste it directly into the Make Multiple Changes dialog. Editor will attempt to auto-map the columns.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does bulk uploading via Editor push changes live immediately?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No — changes imported through the Make Multiple Changes feature are staged locally in Google Ads Editor first. You can review, adjust, or discard them before clicking <strong>Post Changes</strong> to push them live to your Google Ads account. This gives you a safety net to catch errors before they go live.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I bulk upload ads and extensions as well as keywords?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Google Ads Editor supports bulk uploads for most entity types — including <strong>responsive search ads</strong>, <strong>sitelinks</strong>, <strong>callouts</strong>, and more. Navigate to the relevant section in the left panel (e.g., Ads, Sitelinks), then use Make Multiple Changes to paste in your data. Each entity type has its own required columns.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens if Google Ads Editor can't recognise a column?</span>
+          </div>
+          <div class="faq-answer">
+            <p>If Editor cannot automatically map a column, it will show a dropdown in the column mapping screen where you can manually select the correct field. Columns that don't match any known field can be set to <strong>Ignore</strong> so they don't cause errors. Always review the column mapping carefully before clicking Process.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I use bulk upload to edit existing campaigns, or only create new ones?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Both. If a campaign or keyword in your spreadsheet already exists in your account (matched by name), Editor will update it with the new values. If it doesn't exist, Editor will create it. This makes bulk upload useful for both initial campaign builds and large-scale edits to existing structures.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is there a limit to how many keywords I can bulk upload at once?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google Ads Editor can handle very large uploads — accounts with hundreds of thousands of keywords are supported. However, very large pastes may take a moment to process. For best performance, break extremely large uploads (e.g., 100,000+ rows) into smaller batches and post each batch before moving to the next.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

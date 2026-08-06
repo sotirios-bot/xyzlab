@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your website? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -296,81 +314,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Wix?</h3>
           <p>Book a 90-minute training session and we'll build and optimise your Wix site and marketing strategy together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about FAQ schema markup in Wix blog posts.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is FAQ schema markup and why does it matter for SEO?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>FAQ schema markup is structured data in <strong>JSON-LD format</strong> that tells Google your page contains a list of questions and answers. When Google recognises it, your blog post may appear in search results with an <strong>expandable FAQ rich result</strong> beneath your listing — taking up more space, improving click-through rate, and surfacing your content to users searching for those exact questions.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where exactly do I paste the FAQ schema code in Wix?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Inside your Wix Blog Post editor, go to <strong>SEO → Advanced → Structured data markup → Add new markup</strong>. Give it a name, paste your JSON-LD code, and save. Wix injects the code into the page's <code>&lt;head&gt;</code> when the post is published — no manual code editing required.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to republish my blog post after adding the schema?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — the schema markup is only added to the live version of your page when you <strong>publish</strong> the blog post. If you add or update the markup while the post is already live, simply publish the changes again. Google will pick up the updated schema the next time it crawls your page.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How many questions should I include in my FAQ schema?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google recommends including <strong>questions that are genuinely relevant</strong> to the page content. There is no official maximum, but 3–7 well-chosen questions tend to perform best. Focus on questions your target audience actually searches for, keep answers concise (2–4 sentences), and make sure the Q&amp;A content appears on the page itself — not just in the schema.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I generate the FAQ schema JSON-LD code?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>You can generate FAQ schema JSON-LD using a free online schema generator, or ask an AI tool like <a href="../../claude/">Claude</a> or <a href="../../chatgpt/">ChatGPT</a> to write it for you. Provide your questions and answers and ask for valid <code>FAQPage</code> JSON-LD. Always validate the output using <strong>Google's Rich Results Test</strong> before publishing to confirm there are no errors.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How long does it take for Google to show the FAQ rich result?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>After publishing, Google needs to <strong>recrawl and reindex</strong> your page before the FAQ rich result appears in search. This typically takes anywhere from a few days to a few weeks depending on how frequently Google crawls your site. You can speed this up by submitting the URL for reindexing via <a href="../../google-search-console/">Google Search Console</a>. Even after indexing, Google decides whether to show the rich result based on its own quality signals.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -428,21 +372,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your website? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about FAQ schema markup in Wix blog posts.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is FAQ schema markup and why does it matter for SEO?</span>
+          </div>
+          <div class="faq-answer">
+            <p>FAQ schema markup is structured data in <strong>JSON-LD format</strong> that tells Google your page contains a list of questions and answers. When Google recognises it, your blog post may appear in search results with an <strong>expandable FAQ rich result</strong> beneath your listing — taking up more space, improving click-through rate, and surfacing your content to users searching for those exact questions.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where exactly do I paste the FAQ schema code in Wix?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Inside your Wix Blog Post editor, go to <strong>SEO → Advanced → Structured data markup → Add new markup</strong>. Give it a name, paste your JSON-LD code, and save. Wix injects the code into the page's <code>&lt;head&gt;</code> when the post is published — no manual code editing required.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to republish my blog post after adding the schema?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — the schema markup is only added to the live version of your page when you <strong>publish</strong> the blog post. If you add or update the markup while the post is already live, simply publish the changes again. Google will pick up the updated schema the next time it crawls your page.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How many questions should I include in my FAQ schema?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google recommends including <strong>questions that are genuinely relevant</strong> to the page content. There is no official maximum, but 3–7 well-chosen questions tend to perform best. Focus on questions your target audience actually searches for, keep answers concise (2–4 sentences), and make sure the Q&amp;A content appears on the page itself — not just in the schema.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I generate the FAQ schema JSON-LD code?</span>
+          </div>
+          <div class="faq-answer">
+            <p>You can generate FAQ schema JSON-LD using a free online schema generator, or ask an AI tool like <a href="../../claude/">Claude</a> or <a href="../../chatgpt/">ChatGPT</a> to write it for you. Provide your questions and answers and ask for valid <code>FAQPage</code> JSON-LD. Always validate the output using <strong>Google's Rich Results Test</strong> before publishing to confirm there are no errors.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How long does it take for Google to show the FAQ rich result?</span>
+          </div>
+          <div class="faq-answer">
+            <p>After publishing, Google needs to <strong>recrawl and reindex</strong> your page before the FAQ rich result appears in search. This typically takes anywhere from a few days to a few weeks depending on how frequently Google crawls your site. You can speed this up by submitting the URL for reindexing via <a href="../../google-search-console/">Google Search Console</a>. Even after indexing, Google decides whether to show the rich result based on its own quality signals.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your website? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -268,81 +286,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Wix?</h3>
           <p>Book a 90-minute training session and we'll work through your Wix website together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about restoring old site versions in WIX.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>How far back can I restore my Wix site?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Wix keeps a history of your site versions whenever you publish. You can browse all previous published versions in Site History — there is no fixed limit on how far back you can go, so you have access to the full publishing history of your site.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will restoring a previous version affect my live site immediately?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. When you click <strong>Restore</strong>, Wix publishes that version directly to your live site. Visitors will see the restored version immediately after the process completes. Make sure you've selected the correct version before confirming the restore.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I preview a previous version before restoring it?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. In Site History, each version entry has a <strong>Preview</strong> option that lets you see what that version looked like before you commit to restoring it. This is useful when you're unsure which version to roll back to and want to compare a few options first.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will I lose my current site if I restore an older version?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Your current version is automatically saved as an entry in Site History before the restore happens. This means you can always return to your current version if the restore doesn't give you what you expected — just go back to Site History and restore the entry you want.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does Site History save unpublished changes?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Site History only records <strong>published versions</strong> of your site. If you made changes in the editor but never hit Publish, those changes are not saved as a version in Site History. To avoid losing work, publish your site regularly — each publish creates a new restore point.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I restore a previous version if I'm using Wix Studio?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Site History is available in both <strong>WIX Studio</strong> and the classic Wix Editor. The quickest way to access it in either editor is via the <strong>search bar</strong> in the backend — simply search for "Site History" and it will appear as an option.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -400,21 +344,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your website? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about restoring old site versions in WIX.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How far back can I restore my Wix site?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Wix keeps a history of your site versions whenever you publish. You can browse all previous published versions in Site History — there is no fixed limit on how far back you can go, so you have access to the full publishing history of your site.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will restoring a previous version affect my live site immediately?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. When you click <strong>Restore</strong>, Wix publishes that version directly to your live site. Visitors will see the restored version immediately after the process completes. Make sure you've selected the correct version before confirming the restore.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I preview a previous version before restoring it?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. In Site History, each version entry has a <strong>Preview</strong> option that lets you see what that version looked like before you commit to restoring it. This is useful when you're unsure which version to roll back to and want to compare a few options first.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will I lose my current site if I restore an older version?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Your current version is automatically saved as an entry in Site History before the restore happens. This means you can always return to your current version if the restore doesn't give you what you expected — just go back to Site History and restore the entry you want.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does Site History save unpublished changes?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Site History only records <strong>published versions</strong> of your site. If you made changes in the editor but never hit Publish, those changes are not saved as a version in Site History. To avoid losing work, publish your site regularly — each publish creates a new restore point.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I restore a previous version if I'm using Wix Studio?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Site History is available in both <strong>WIX Studio</strong> and the classic Wix Editor. The quickest way to access it in either editor is via the <strong>search bar</strong> in the backend — simply search for "Site History" and it will appear as an option.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

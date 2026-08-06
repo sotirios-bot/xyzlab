@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -274,81 +292,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with LinkedIn?</h3>
           <p>Book a 90-minute training session and we'll build your LinkedIn content strategy together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about withdrawing connection requests on LinkedIn.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>How do I withdraw a connection request on LinkedIn?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Open <strong>My Network</strong> from the top menu, click <strong>Manage</strong> under the Grow section, switch to the <strong>Sent</strong> tab, and click the <strong>Withdraw</strong> button next to the person's name. The pending invitation is removed immediately.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will the person know I withdrew the request?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. LinkedIn does not send a notification when you withdraw an invitation. The request simply disappears from their pending invitations, and they are not told that it was sent and then withdrawn.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I send a new request after withdrawing one?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>If you withdraw an invitation, LinkedIn makes you wait <strong>up to three weeks</strong> before you can send that same person another connection request. This limit is in place to discourage repeated invitations to people who haven't responded.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why should I withdraw pending invitations?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>LinkedIn limits the number of outstanding invitations you can have, and too many ignored requests can hurt your account standing. Withdrawing old, unanswered invitations keeps your <strong>Sent</strong> list clean and frees you up to invite people who are more likely to accept.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where is the "Sent" tab on LinkedIn?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The Sent tab lives inside the <strong>Manage invitations</strong> screen. Go to <strong>My Network</strong>, click <strong>Manage</strong> under Grow, and you'll see <strong>Received</strong> and <strong>Sent</strong> tabs at the top — choose <strong>Sent</strong> to see invitations you've issued.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I withdraw connection requests on the mobile app?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Tap the <strong>My Network</strong> icon, open <strong>Manage</strong> (or Invitations), switch to the <strong>Sent</strong> tab, and tap <strong>Withdraw</strong> next to any name. The flow mirrors the desktop steps shown in the video.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -406,21 +350,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about withdrawing connection requests on LinkedIn.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I withdraw a connection request on LinkedIn?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Open <strong>My Network</strong> from the top menu, click <strong>Manage</strong> under the Grow section, switch to the <strong>Sent</strong> tab, and click the <strong>Withdraw</strong> button next to the person's name. The pending invitation is removed immediately.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will the person know I withdrew the request?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. LinkedIn does not send a notification when you withdraw an invitation. The request simply disappears from their pending invitations, and they are not told that it was sent and then withdrawn.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I send a new request after withdrawing one?</span>
+          </div>
+          <div class="faq-answer">
+            <p>If you withdraw an invitation, LinkedIn makes you wait <strong>up to three weeks</strong> before you can send that same person another connection request. This limit is in place to discourage repeated invitations to people who haven't responded.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why should I withdraw pending invitations?</span>
+          </div>
+          <div class="faq-answer">
+            <p>LinkedIn limits the number of outstanding invitations you can have, and too many ignored requests can hurt your account standing. Withdrawing old, unanswered invitations keeps your <strong>Sent</strong> list clean and frees you up to invite people who are more likely to accept.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where is the "Sent" tab on LinkedIn?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The Sent tab lives inside the <strong>Manage invitations</strong> screen. Go to <strong>My Network</strong>, click <strong>Manage</strong> under Grow, and you'll see <strong>Received</strong> and <strong>Sent</strong> tabs at the top — choose <strong>Sent</strong> to see invitations you've issued.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I withdraw connection requests on the mobile app?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Tap the <strong>My Network</strong> icon, open <strong>Manage</strong> (or Invitations), switch to the <strong>Sent</strong> tab, and tap <strong>Withdraw</strong> next to any name. The flow mirrors the desktop steps shown in the video.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

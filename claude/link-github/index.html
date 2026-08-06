@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -261,81 +279,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Claude AI?</h3>
           <p>Book a 90-minute training session and we'll build your AI-powered workflow together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about connecting GitHub to Claude Code.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Why do I need to connect GitHub to Claude Code?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Connecting GitHub lets Claude Code <strong>read your existing repositories</strong> and <strong>push new code and commits</strong> directly from a session. Without the GitHub connection, Claude Code can still write code in a temporary Cloud environment, but it cannot persist changes to your repositories or deploy to services like GitHub Pages. The connection is required to build and ship real projects.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What permissions does Claude Code request when I connect GitHub?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Claude Code requests OAuth access to your GitHub account to read repository contents and push commits. During the authorisation step on GitHub, you can choose to grant access to <strong>all repositories</strong> or restrict it to <strong>specific repositories</strong> only. Restricting to specific repos is recommended if you want to limit Claude Code's access to just the projects you are actively working on.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need a paid GitHub account to use Claude Code?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. A <strong>free GitHub account</strong> is sufficient to connect to Claude Code and host public repositories on GitHub Pages. Paid GitHub plans are only needed if you want private repositories (though GitHub's free tier now includes unlimited private repos) or advanced team features. For most website-building and personal projects, the free tier is all you need.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I disconnect GitHub from Claude Code later?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You can revoke Claude Code's access to GitHub at any time from two places: in Claude Code's <strong>Settings → Connectors</strong> (remove the connection), and on the GitHub side under <strong>Settings → Applications → Authorized OAuth Apps</strong> (revoke access). Either approach immediately removes Claude Code's ability to read or push to your repositories.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens if I connect GitHub to a new Claude Code session?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Once GitHub is connected at the account level in Settings, the connection is available across <strong>all your Claude Code sessions</strong>. When you start a new session and select a Cloud environment, you can choose an existing GitHub repository as the working directory. Claude Code will clone it, make changes, and push commits back to GitHub as the session progresses.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I use Claude Code with a GitHub organisation repository?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, provided the GitHub organisation allows OAuth app access. During authorisation, you will see an option to <strong>grant access to organisations</strong> you belong to. Some organisations require an admin to approve third-party OAuth apps — if access is blocked, contact your GitHub organisation admin to approve the Claude Code OAuth application.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -393,21 +337,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about connecting GitHub to Claude Code.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why do I need to connect GitHub to Claude Code?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Connecting GitHub lets Claude Code <strong>read your existing repositories</strong> and <strong>push new code and commits</strong> directly from a session. Without the GitHub connection, Claude Code can still write code in a temporary Cloud environment, but it cannot persist changes to your repositories or deploy to services like GitHub Pages. The connection is required to build and ship real projects.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What permissions does Claude Code request when I connect GitHub?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Claude Code requests OAuth access to your GitHub account to read repository contents and push commits. During the authorisation step on GitHub, you can choose to grant access to <strong>all repositories</strong> or restrict it to <strong>specific repositories</strong> only. Restricting to specific repos is recommended if you want to limit Claude Code's access to just the projects you are actively working on.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a paid GitHub account to use Claude Code?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. A <strong>free GitHub account</strong> is sufficient to connect to Claude Code and host public repositories on GitHub Pages. Paid GitHub plans are only needed if you want private repositories (though GitHub's free tier now includes unlimited private repos) or advanced team features. For most website-building and personal projects, the free tier is all you need.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I disconnect GitHub from Claude Code later?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can revoke Claude Code's access to GitHub at any time from two places: in Claude Code's <strong>Settings → Connectors</strong> (remove the connection), and on the GitHub side under <strong>Settings → Applications → Authorized OAuth Apps</strong> (revoke access). Either approach immediately removes Claude Code's ability to read or push to your repositories.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens if I connect GitHub to a new Claude Code session?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Once GitHub is connected at the account level in Settings, the connection is available across <strong>all your Claude Code sessions</strong>. When you start a new session and select a Cloud environment, you can choose an existing GitHub repository as the working directory. Claude Code will clone it, make changes, and push commits back to GitHub as the session progresses.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I use Claude Code with a GitHub organisation repository?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, provided the GitHub organisation allows OAuth app access. During authorisation, you will see an option to <strong>grant access to organisations</strong> you belong to. Some organisations require an admin to approve third-party OAuth apps — if access is blocked, contact your GitHub organisation admin to approve the Claude Code OAuth application.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

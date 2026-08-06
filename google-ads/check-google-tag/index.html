@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -329,81 +347,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about verifying the Google Ads Tag on your website.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the Google Ads Tag and why do I need to verify it?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The Google Ads Tag (also called the Google tag or gtag.js) is a snippet of code that tracks visitor activity on your website after they click your ads. It powers remarketing audiences and conversion tracking. If it's not firing correctly, Google Ads won't receive the data it needs to optimise your campaigns — so verifying it's working is a critical first step.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is Google Tag Assistant and is it free?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google Tag Assistant is a free Chrome browser extension made by Google. It detects all Google tags (Google Ads, Analytics, GTM, etc.) on any webpage you visit and shows whether each tag is firing correctly, with colour-coded indicators: green for working, red for errors. You can install it from the Chrome Web Store at no cost.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What does it mean if the tag shows a red or orange icon in Tag Assistant?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A <strong>red icon</strong> usually means the tag has a critical error — it may be misfiring or blocked. An <strong>orange icon</strong> means there are non-critical warnings, such as duplicate tags or minor configuration issues. Click on the tag in Tag Assistant to see the specific error message and what needs to be fixed.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I find my Google Tag ID to compare it?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>In Google Ads, navigate to <strong>Tools → Data Manager</strong>, then click the 3 dots next to your Google Tag and select <strong>Manage</strong>. Your Tag ID will be displayed — it starts with <strong>AW-</strong> followed by a number. Make sure this matches the ID shown in Tag Assistant or in your GTM tag configuration.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What's the difference between checking via Tag Assistant vs GTM Preview?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Tag Assistant</strong> is best when your Google tag was installed directly on your website (hardcoded into the HTML). <strong>GTM Preview mode</strong> is best when your Google tag is deployed through Google Tag Manager — it shows not just whether the tag fired, but also which GTM trigger caused it to fire, making it easier to debug trigger conditions and tag settings.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>My tag is showing as fired — does that mean conversions are being tracked?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Not necessarily. The Google Ads Tag firing means the base tag is installed and running. But <strong>conversion tracking</strong> requires a separate conversion event tag (or event snippet) that fires on specific actions — like a thank-you page load or a button click. Use <strong>Google Ads → Goals → Conversions</strong> to check your conversion actions and verify they are receiving data.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -461,21 +405,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about verifying the Google Ads Tag on your website.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the Google Ads Tag and why do I need to verify it?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The Google Ads Tag (also called the Google tag or gtag.js) is a snippet of code that tracks visitor activity on your website after they click your ads. It powers remarketing audiences and conversion tracking. If it's not firing correctly, Google Ads won't receive the data it needs to optimise your campaigns — so verifying it's working is a critical first step.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is Google Tag Assistant and is it free?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google Tag Assistant is a free Chrome browser extension made by Google. It detects all Google tags (Google Ads, Analytics, GTM, etc.) on any webpage you visit and shows whether each tag is firing correctly, with colour-coded indicators: green for working, red for errors. You can install it from the Chrome Web Store at no cost.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What does it mean if the tag shows a red or orange icon in Tag Assistant?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A <strong>red icon</strong> usually means the tag has a critical error — it may be misfiring or blocked. An <strong>orange icon</strong> means there are non-critical warnings, such as duplicate tags or minor configuration issues. Click on the tag in Tag Assistant to see the specific error message and what needs to be fixed.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I find my Google Tag ID to compare it?</span>
+          </div>
+          <div class="faq-answer">
+            <p>In Google Ads, navigate to <strong>Tools → Data Manager</strong>, then click the 3 dots next to your Google Tag and select <strong>Manage</strong>. Your Tag ID will be displayed — it starts with <strong>AW-</strong> followed by a number. Make sure this matches the ID shown in Tag Assistant or in your GTM tag configuration.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What's the difference between checking via Tag Assistant vs GTM Preview?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Tag Assistant</strong> is best when your Google tag was installed directly on your website (hardcoded into the HTML). <strong>GTM Preview mode</strong> is best when your Google tag is deployed through Google Tag Manager — it shows not just whether the tag fired, but also which GTM trigger caused it to fire, making it easier to debug trigger conditions and tag settings.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>My tag is showing as fired — does that mean conversions are being tracked?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Not necessarily. The Google Ads Tag firing means the base tag is installed and running. But <strong>conversion tracking</strong> requires a separate conversion event tag (or event snippet) that fires on specific actions — like a thank-you page load or a button click. Use <strong>Google Ads → Goals → Conversions</strong> to check your conversion actions and verify they are receiving data.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

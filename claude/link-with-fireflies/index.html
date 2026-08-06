@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your workflow? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -261,81 +279,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Claude AI?</h3>
           <p>Book a 90-minute training session and we'll build your Claude AI workflow together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about linking Fireflies with Claude.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is Fireflies.ai and what does linking it with Claude do?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Fireflies.ai is an AI meeting assistant that automatically records, transcribes, and summarises your meetings across video conferencing platforms. Linking it with Claude lets you <strong>search transcripts, retrieve meeting summaries, and extract action items</strong> directly inside Claude conversations — so you can use your meeting data to draft emails, reports, and follow-ups without switching tabs.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where do I find the Connectors option in Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Open Claude and click the <strong>Customize</strong> button (usually found in the sidebar or navigation menu). Inside the Customize panel you will see a <strong>Connectors</strong> section listing all available third-party integrations, including Fireflies.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need a paid Fireflies plan to connect it with Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>You need an active Fireflies.ai account to authorise the connection. API access for integrations may require a <strong>paid Fireflies plan</strong> — check Fireflies.ai's pricing page for the latest details on which tiers include connector and API access.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What can I do inside Claude after linking Fireflies?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Once connected, you can ask Claude to retrieve transcripts from recent meetings, summarise key discussion points, pull out action items and decisions, and use that meeting context when drafting <strong>follow-up emails, project updates, or client reports</strong> — all without leaving Claude.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is my Fireflies meeting data shared with Claude automatically?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Claude only accesses your Fireflies data <strong>when you explicitly ask it to</strong> in a conversation. The connector grants permission for Claude to query Fireflies on your behalf, but transcripts and summaries are fetched on-demand rather than synced continuously.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I disconnect Fireflies from Claude later?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Return to <strong>Customize &gt; Connectors</strong> in Claude, find Fireflies in your connected integrations, and select the option to disconnect or revoke access. You can also revoke the connection from within your Fireflies.ai account settings under connected apps or integrations.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -393,21 +337,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your workflow? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about linking Fireflies with Claude.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is Fireflies.ai and what does linking it with Claude do?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Fireflies.ai is an AI meeting assistant that automatically records, transcribes, and summarises your meetings across video conferencing platforms. Linking it with Claude lets you <strong>search transcripts, retrieve meeting summaries, and extract action items</strong> directly inside Claude conversations — so you can use your meeting data to draft emails, reports, and follow-ups without switching tabs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where do I find the Connectors option in Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Open Claude and click the <strong>Customize</strong> button (usually found in the sidebar or navigation menu). Inside the Customize panel you will see a <strong>Connectors</strong> section listing all available third-party integrations, including Fireflies.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a paid Fireflies plan to connect it with Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>You need an active Fireflies.ai account to authorise the connection. API access for integrations may require a <strong>paid Fireflies plan</strong> — check Fireflies.ai's pricing page for the latest details on which tiers include connector and API access.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What can I do inside Claude after linking Fireflies?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Once connected, you can ask Claude to retrieve transcripts from recent meetings, summarise key discussion points, pull out action items and decisions, and use that meeting context when drafting <strong>follow-up emails, project updates, or client reports</strong> — all without leaving Claude.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is my Fireflies meeting data shared with Claude automatically?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Claude only accesses your Fireflies data <strong>when you explicitly ask it to</strong> in a conversation. The connector grants permission for Claude to query Fireflies on your behalf, but transcripts and summaries are fetched on-demand rather than synced continuously.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I disconnect Fireflies from Claude later?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Return to <strong>Customize &gt; Connectors</strong> in Claude, find Fireflies in your connected integrations, and select the option to disconnect or revoke access. You can also revoke the connection from within your Fireflies.ai account settings under connected apps or integrations.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

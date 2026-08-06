@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your setup? Book a 90-minute training session and we'll configure it together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -372,81 +390,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Tag Manager?</h3>
           <p>Book a 90-minute training session and we'll work through your GTM setup together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about setting up custom events with Google Tag Manager.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a custom event in Google Tag Manager?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A <strong>custom event</strong> in GTM is an action fired by your website's code (or another tag) that GTM listens for using a <strong>Custom Event trigger</strong>. Common examples include button clicks, form submissions, video plays, or scroll depth milestones that your site pushes to the dataLayer. GTM intercepts these events and uses them to fire tags — such as sending a GA4 event to Google Analytics.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why use GTM Preview mode to find the event name?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Preview mode (via Tag Assistant) lets you see exactly which events fire on your site in real time — and their exact names as pushed to the dataLayer. This is important because the event name in your Custom Event trigger must match the dataLayer event name <strong>exactly</strong> (it is case-sensitive). Using Preview mode removes any guesswork and ensures your trigger fires correctly.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where do I find my GA4 Measurement ID?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Your GA4 Measurement ID starts with <strong>G-</strong> followed by letters and numbers. Find it in Google Analytics under <strong>Admin &gt; Data Streams &gt; Web &gt; select your stream</strong>. The Measurement ID is displayed at the top right of the stream details panel. Copy it and paste it into the GA4 Event tag configuration in GTM.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to publish the GTM container every time I make a change?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Changes in GTM (new tags, triggers, or variables) only go live after you click <strong>Submit</strong> and publish a new container version. Until you publish, changes only exist as a draft and only appear in Preview mode. It is good practice to batch multiple related changes into a single publish to keep your version history clean and easy to roll back if needed.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I fire the same custom event tag on multiple pages?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. The <strong>Custom Event trigger</strong> fires wherever the specified event name is pushed to the dataLayer — regardless of which page the user is on. If you need to restrict the trigger to specific pages, add a <strong>filter condition</strong> to the trigger (e.g., Page URL contains /checkout/) so it only fires in the right context.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How long until the custom event appears in Google Analytics after publishing?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>After publishing the GTM container, new custom events typically appear in the GA4 <strong>Realtime report</strong> within a few seconds of being triggered. Standard reports (Explorations, Events report) update within <strong>24–48 hours</strong>. Use the Realtime report immediately after publishing to confirm the event is firing and reaching GA4 correctly before checking standard reports.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -504,21 +448,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your setup? Book a 90-minute training session and we'll configure it together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about setting up custom events with Google Tag Manager.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a custom event in Google Tag Manager?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A <strong>custom event</strong> in GTM is an action fired by your website's code (or another tag) that GTM listens for using a <strong>Custom Event trigger</strong>. Common examples include button clicks, form submissions, video plays, or scroll depth milestones that your site pushes to the dataLayer. GTM intercepts these events and uses them to fire tags — such as sending a GA4 event to Google Analytics.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why use GTM Preview mode to find the event name?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Preview mode (via Tag Assistant) lets you see exactly which events fire on your site in real time — and their exact names as pushed to the dataLayer. This is important because the event name in your Custom Event trigger must match the dataLayer event name <strong>exactly</strong> (it is case-sensitive). Using Preview mode removes any guesswork and ensures your trigger fires correctly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where do I find my GA4 Measurement ID?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Your GA4 Measurement ID starts with <strong>G-</strong> followed by letters and numbers. Find it in Google Analytics under <strong>Admin &gt; Data Streams &gt; Web &gt; select your stream</strong>. The Measurement ID is displayed at the top right of the stream details panel. Copy it and paste it into the GA4 Event tag configuration in GTM.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to publish the GTM container every time I make a change?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Changes in GTM (new tags, triggers, or variables) only go live after you click <strong>Submit</strong> and publish a new container version. Until you publish, changes only exist as a draft and only appear in Preview mode. It is good practice to batch multiple related changes into a single publish to keep your version history clean and easy to roll back if needed.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I fire the same custom event tag on multiple pages?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. The <strong>Custom Event trigger</strong> fires wherever the specified event name is pushed to the dataLayer — regardless of which page the user is on. If you need to restrict the trigger to specific pages, add a <strong>filter condition</strong> to the trigger (e.g., Page URL contains /checkout/) so it only fires in the right context.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How long until the custom event appears in Google Analytics after publishing?</span>
+          </div>
+          <div class="faq-answer">
+            <p>After publishing the GTM container, new custom events typically appear in the GA4 <strong>Realtime report</strong> within a few seconds of being triggered. Standard reports (Explorations, Events report) update within <strong>24–48 hours</strong>. Use the Realtime report immediately after publishing to confirm the event is firing and reaching GA4 correctly before checking standard reports.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -337,81 +355,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about location targeting in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the difference between "Presence" and "Presence or interest"?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Presence</strong> targets only people who are physically in or regularly located in your specified area. <strong>Presence or interest</strong> also includes people who have searched for or shown interest in that location — even if they are currently elsewhere. For most local businesses, <strong>Presence</strong> is the better choice as it avoids wasted spend on users who are researching the location remotely.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I target multiple locations in the same campaign?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You can add multiple locations at different granularity levels within the same campaign — for example, targeting two cities and a radius around a third address all at once. You can also <strong>exclude</strong> specific locations to prevent your ads from showing in certain areas within your broader target.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Which geotargeting level should I use for a local business?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>For most local businesses, <strong>radius targeting</strong> or <strong>city-level</strong> targeting gives the best results. Radius targeting is ideal if you have a physical service area (e.g. delivery, home services) — set the radius to match how far you realistically serve customers. City-level works well for businesses that serve the whole metro area. Combine with the <strong>Presence</strong> location option to ensure you reach people who are actually nearby.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does location targeting affect my Quality Score or CPC?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Location targeting itself doesn't directly change Quality Score or CPC, but the <strong>competition level</strong> in your targeted area does. High-demand cities (e.g. London, New York) typically have higher CPCs than smaller towns. You can use <strong>location bid adjustments</strong> to increase or decrease bids for specific areas — useful if certain locations convert better than others.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is radius targeting and when should I use it?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Radius targeting lets you draw a circle around any address or map point and target everyone within that distance. It's the most flexible geotargeting option for businesses with a physical service area. Use it for restaurants, clinics, gyms, home-service providers, or any business where proximity to customers is critical. You can set the radius in kilometres or miles depending on your account's unit preference.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I add location bid adjustments on top of targeting?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. After setting your targeted locations, you can apply <strong>bid adjustments</strong> (from -90% to +900%) to individual locations. This lets you bid more aggressively in your best-converting areas and less in underperforming ones — without splitting them into separate campaigns. Location bid adjustments are set in the campaign's <strong>Locations</strong> tab.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -469,21 +413,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about location targeting in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between "Presence" and "Presence or interest"?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Presence</strong> targets only people who are physically in or regularly located in your specified area. <strong>Presence or interest</strong> also includes people who have searched for or shown interest in that location — even if they are currently elsewhere. For most local businesses, <strong>Presence</strong> is the better choice as it avoids wasted spend on users who are researching the location remotely.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I target multiple locations in the same campaign?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can add multiple locations at different granularity levels within the same campaign — for example, targeting two cities and a radius around a third address all at once. You can also <strong>exclude</strong> specific locations to prevent your ads from showing in certain areas within your broader target.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Which geotargeting level should I use for a local business?</span>
+          </div>
+          <div class="faq-answer">
+            <p>For most local businesses, <strong>radius targeting</strong> or <strong>city-level</strong> targeting gives the best results. Radius targeting is ideal if you have a physical service area (e.g. delivery, home services) — set the radius to match how far you realistically serve customers. City-level works well for businesses that serve the whole metro area. Combine with the <strong>Presence</strong> location option to ensure you reach people who are actually nearby.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does location targeting affect my Quality Score or CPC?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Location targeting itself doesn't directly change Quality Score or CPC, but the <strong>competition level</strong> in your targeted area does. High-demand cities (e.g. London, New York) typically have higher CPCs than smaller towns. You can use <strong>location bid adjustments</strong> to increase or decrease bids for specific areas — useful if certain locations convert better than others.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is radius targeting and when should I use it?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Radius targeting lets you draw a circle around any address or map point and target everyone within that distance. It's the most flexible geotargeting option for businesses with a physical service area. Use it for restaurants, clinics, gyms, home-service providers, or any business where proximity to customers is critical. You can set the radius in kilometres or miles depending on your account's unit preference.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I add location bid adjustments on top of targeting?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. After setting your targeted locations, you can apply <strong>bid adjustments</strong> (from -90% to +900%) to individual locations. This lets you bid more aggressively in your best-converting areas and less in underperforming ones — without splitting them into separate campaigns. Location bid adjustments are set in the campaign's <strong>Locations</strong> tab.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

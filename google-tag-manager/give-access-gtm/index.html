@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -302,81 +320,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Tag Manager?</h3>
           <p>Book a 90-minute training session and we'll set up your tracking together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about managing user access in Google Tag Manager.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the difference between account-level and container-level access in GTM?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Account-level access</strong> grants permissions across all containers within that GTM account. <strong>Container-level access</strong> restricts the user to a single container only. If you are sharing access with an agency or contractor who should only work on one website, use container-level access to limit their reach. Account administrators can see and manage every container in the account.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What permissions should I give to an agency or freelancer?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>For most agency or freelancer scenarios, grant <strong>container-level Edit</strong> access. This allows them to create and modify tags, triggers, and variables, but they cannot publish changes to your live site — your team retains final control over what goes live. If you trust them to publish independently, upgrade to <strong>Publish</strong> access. Avoid giving full account-level Administrator access unless absolutely necessary.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does the user need a Google account to be added to GTM?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. GTM access is tied to a <strong>Google account</strong>. The email address you enter must be a Google account (Gmail or a Google Workspace email). If the person you are inviting does not have a Google account, they will need to create one before they can accept the invitation and log in.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I remove a user from Google Tag Manager?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Go to <strong>Admin → User Management</strong> (at either the account or container level), find the user in the list, click on their name, and select <strong>Remove user</strong>. This immediately revokes their access — they will no longer be able to log in to your GTM account or container. It is good practice to remove users promptly when they no longer need access.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I have multiple users with Publish access?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, there is no limit on the number of users with Publish access. However, it is best practice to <strong>limit Publish access to a small number of trusted team members</strong>, since publishing a container immediately affects your live website. Use the <strong>Approve</strong> permission level for users who should be able to submit changes for review but not publish directly.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will the user receive a notification when I add them?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>GTM does not send an automatic email invitation — the user is granted access immediately upon saving. You will need to <strong>notify them manually</strong> (by email or message) and share the account or container name so they can navigate to it. They can access it by logging into <strong>tagmanager.google.com</strong> with the Google account you added.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -434,21 +378,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about managing user access in Google Tag Manager.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between account-level and container-level access in GTM?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Account-level access</strong> grants permissions across all containers within that GTM account. <strong>Container-level access</strong> restricts the user to a single container only. If you are sharing access with an agency or contractor who should only work on one website, use container-level access to limit their reach. Account administrators can see and manage every container in the account.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What permissions should I give to an agency or freelancer?</span>
+          </div>
+          <div class="faq-answer">
+            <p>For most agency or freelancer scenarios, grant <strong>container-level Edit</strong> access. This allows them to create and modify tags, triggers, and variables, but they cannot publish changes to your live site — your team retains final control over what goes live. If you trust them to publish independently, upgrade to <strong>Publish</strong> access. Avoid giving full account-level Administrator access unless absolutely necessary.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does the user need a Google account to be added to GTM?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. GTM access is tied to a <strong>Google account</strong>. The email address you enter must be a Google account (Gmail or a Google Workspace email). If the person you are inviting does not have a Google account, they will need to create one before they can accept the invitation and log in.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I remove a user from Google Tag Manager?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Go to <strong>Admin → User Management</strong> (at either the account or container level), find the user in the list, click on their name, and select <strong>Remove user</strong>. This immediately revokes their access — they will no longer be able to log in to your GTM account or container. It is good practice to remove users promptly when they no longer need access.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I have multiple users with Publish access?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, there is no limit on the number of users with Publish access. However, it is best practice to <strong>limit Publish access to a small number of trusted team members</strong>, since publishing a container immediately affects your live website. Use the <strong>Approve</strong> permission level for users who should be able to submit changes for review but not publish directly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will the user receive a notification when I add them?</span>
+          </div>
+          <div class="faq-answer">
+            <p>GTM does not send an automatic email invitation — the user is granted access immediately upon saving. You will need to <strong>notify them manually</strong> (by email or message) and share the account or container name so they can navigate to it. They can access it by logging into <strong>tagmanager.google.com</strong> with the Google account you added.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

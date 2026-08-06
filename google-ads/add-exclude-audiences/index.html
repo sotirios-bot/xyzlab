@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -297,81 +315,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about audience segments in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the difference between targeting and observation for audience segments?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Targeting</strong> restricts your ads to only show to users in the selected audience segment — narrowing your reach but increasing relevance. <strong>Observation</strong> keeps your full existing reach unchanged but lets you collect performance data for that segment and apply bid adjustments. Start with observation to gather data before committing to targeting.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I add multiple audience segments to one campaign?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You can add as many audience segments as you need within a single campaign or ad group. When using <strong>Targeting</strong> mode, Google will show your ads to users who match any of the selected segments (OR logic). This gives you flexibility to layer different audience types such as remarketing lists, customer lists, and in-market segments together.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What types of audiences can I add in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google Ads supports several audience types: <strong>Your data segments</strong> (website visitors, customer lists, app users), <strong>Custom segments</strong> (based on search behaviour or interests), <strong>In-market segments</strong> (users actively researching a product), <strong>Affinity segments</strong> (long-term interests), <strong>Detailed demographics</strong> (life events, education, etc.), and <strong>Combined segments</strong> (audience combinations you build).</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Should I apply audience segments at campaign or ad group level?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Apply at the <strong>campaign level</strong> when you want the same audience targeting across all ad groups, which is simpler to manage. Use <strong>ad group level</strong> when different ad groups need different audience strategies — for example, one ad group targeting new users and another targeting past visitors with tailored messaging. Ad group settings override campaign-level settings.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why would I exclude an audience segment?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Excluding audiences prevents your ads from showing to people who are unlikely to convert or who you don't want to target. Common exclusions include <strong>existing customers</strong> (if you only want new customers), <strong>recent converters</strong> (to avoid showing the same ad after a purchase), or specific <strong>demographic groups</strong> that historically underperform. Exclusions help improve efficiency and reduce wasted spend.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will adding audience targeting reduce my reach significantly?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — switching from observation to targeting will limit your reach to only matched users. If your audience segments are small, this can significantly reduce traffic. For Search campaigns especially, it is generally recommended to start with <strong>observation mode</strong> to collect data and apply bid adjustments first, then only switch to targeting once you've confirmed the segment performs well and is large enough to sustain your goals.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -429,21 +373,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about audience segments in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between targeting and observation for audience segments?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Targeting</strong> restricts your ads to only show to users in the selected audience segment — narrowing your reach but increasing relevance. <strong>Observation</strong> keeps your full existing reach unchanged but lets you collect performance data for that segment and apply bid adjustments. Start with observation to gather data before committing to targeting.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I add multiple audience segments to one campaign?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can add as many audience segments as you need within a single campaign or ad group. When using <strong>Targeting</strong> mode, Google will show your ads to users who match any of the selected segments (OR logic). This gives you flexibility to layer different audience types such as remarketing lists, customer lists, and in-market segments together.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What types of audiences can I add in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google Ads supports several audience types: <strong>Your data segments</strong> (website visitors, customer lists, app users), <strong>Custom segments</strong> (based on search behaviour or interests), <strong>In-market segments</strong> (users actively researching a product), <strong>Affinity segments</strong> (long-term interests), <strong>Detailed demographics</strong> (life events, education, etc.), and <strong>Combined segments</strong> (audience combinations you build).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Should I apply audience segments at campaign or ad group level?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Apply at the <strong>campaign level</strong> when you want the same audience targeting across all ad groups, which is simpler to manage. Use <strong>ad group level</strong> when different ad groups need different audience strategies — for example, one ad group targeting new users and another targeting past visitors with tailored messaging. Ad group settings override campaign-level settings.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why would I exclude an audience segment?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Excluding audiences prevents your ads from showing to people who are unlikely to convert or who you don't want to target. Common exclusions include <strong>existing customers</strong> (if you only want new customers), <strong>recent converters</strong> (to avoid showing the same ad after a purchase), or specific <strong>demographic groups</strong> that historically underperform. Exclusions help improve efficiency and reduce wasted spend.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will adding audience targeting reduce my reach significantly?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — switching from observation to targeting will limit your reach to only matched users. If your audience segments are small, this can significantly reduce traffic. For Search campaigns especially, it is generally recommended to start with <strong>observation mode</strong> to collect data and apply bid adjustments first, then only switch to targeting once you've confirmed the segment performs well and is large enough to sustain your goals.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

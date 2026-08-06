@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -295,81 +313,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads Editor?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads Editor workflow together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about syncing changes in Google Ads Editor.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Why do I need to sync before making changes in Editor?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google Ads Editor works on a local copy of your account data. If you or a team member made changes directly in the Google Ads web interface since you last synced, those changes won't be reflected in Editor until you sync. Making edits on outdated data risks <strong>overwriting recent changes</strong> or creating conflicts when you post. Always sync first to ensure you're working with the latest account state.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between "Get Recent Changes" and "More Data"?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Get Recent Changes</strong> downloads only items that have been modified since your last sync — it's fast but may miss entities that haven't changed recently. <strong>More Data</strong> lets you choose a broader scope: selecting All campaigns and All item types forces a full download of every entity in the account. Use More Data when you're doing a major edit or haven't synced in a while.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What does "All item types" include?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>All item types downloads every entity type in your account, including <strong>campaigns, ad groups, keywords, ads (RSAs, DSAs, etc.), bid adjustments, audiences, ad schedules, location targeting, sitelinks, callouts, structured snippets, call extensions</strong>, and more. Downloading all item types takes longer but ensures you have a complete and accurate local copy to work from.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens if I post changes without syncing first?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>If your local data is outdated, posting changes can cause <strong>conflicts</strong> — for example, you might overwrite a bid or status change that was made in the web interface after your last sync. In some cases Editor will flag conflicts and ask you to resolve them before posting. To avoid this entirely, make syncing the first step every time you open Editor for a new editing session.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How often should I sync my account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Best practice is to sync <strong>every time you open Editor</strong> before making changes. If you're working in a team where multiple people access the account, sync even more frequently to avoid conflicts. For solo accounts that are only managed through Editor, you can get away with syncing at the start of each editing session.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why is my account taking a long time to sync?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Sync time depends on account size and your internet connection. Large accounts with hundreds of campaigns, thousands of ad groups, and millions of keywords will take significantly longer to download than small accounts. Selecting <strong>All item types</strong> also increases download time compared to downloading only recent changes. If syncing is consistently slow, try narrowing the scope to specific campaigns rather than the entire account.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -427,21 +371,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about syncing changes in Google Ads Editor.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why do I need to sync before making changes in Editor?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google Ads Editor works on a local copy of your account data. If you or a team member made changes directly in the Google Ads web interface since you last synced, those changes won't be reflected in Editor until you sync. Making edits on outdated data risks <strong>overwriting recent changes</strong> or creating conflicts when you post. Always sync first to ensure you're working with the latest account state.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between "Get Recent Changes" and "More Data"?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Get Recent Changes</strong> downloads only items that have been modified since your last sync — it's fast but may miss entities that haven't changed recently. <strong>More Data</strong> lets you choose a broader scope: selecting All campaigns and All item types forces a full download of every entity in the account. Use More Data when you're doing a major edit or haven't synced in a while.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What does "All item types" include?</span>
+          </div>
+          <div class="faq-answer">
+            <p>All item types downloads every entity type in your account, including <strong>campaigns, ad groups, keywords, ads (RSAs, DSAs, etc.), bid adjustments, audiences, ad schedules, location targeting, sitelinks, callouts, structured snippets, call extensions</strong>, and more. Downloading all item types takes longer but ensures you have a complete and accurate local copy to work from.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens if I post changes without syncing first?</span>
+          </div>
+          <div class="faq-answer">
+            <p>If your local data is outdated, posting changes can cause <strong>conflicts</strong> — for example, you might overwrite a bid or status change that was made in the web interface after your last sync. In some cases Editor will flag conflicts and ask you to resolve them before posting. To avoid this entirely, make syncing the first step every time you open Editor for a new editing session.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How often should I sync my account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Best practice is to sync <strong>every time you open Editor</strong> before making changes. If you're working in a team where multiple people access the account, sync even more frequently to avoid conflicts. For solo accounts that are only managed through Editor, you can get away with syncing at the start of each editing session.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why is my account taking a long time to sync?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Sync time depends on account size and your internet connection. Large accounts with hundreds of campaigns, thousands of ad groups, and millions of keywords will take significantly longer to download than small accounts. Selecting <strong>All item types</strong> also increases download time compared to downloading only recent changes. If syncing is consistently slow, try narrowing the scope to specific campaigns rather than the entire account.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

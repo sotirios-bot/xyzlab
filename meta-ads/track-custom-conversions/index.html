@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -285,81 +303,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Meta Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about custom conversions in Meta Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a custom conversion in Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A <strong>custom conversion</strong> is a conversion event you define based on a URL rule — for example, anyone who visits your "Thank You" page after a form submission counts as a lead. Unlike standard Pixel events, custom conversions don't require any additional code changes; you simply specify the URL pattern in Events Manager and Meta tracks it automatically.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between a standard event and a custom conversion?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Standard events</strong> (e.g. Lead, Purchase, ViewContent) are fired by code snippets or the Event Setup Tool on specific user actions. <strong>Custom conversions</strong> are URL-based rules — no additional code required. Custom conversions are quicker to set up and ideal when you have a dedicated confirmation or "thank you" page URL that only loads after the desired action is completed.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need the Meta Pixel installed before creating a custom conversion?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. The Meta Pixel must be <strong>installed on your website</strong> before custom conversions can work. The Pixel fires a PageView event on every page load, and custom conversions use that PageView data combined with your URL rule to identify when the conversion has occurred. Without the Pixel, no data is collected.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What URL conditions can I use for a custom conversion?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Meta offers several URL match types: <strong>URL contains</strong> (matches any URL with the specified string), <strong>URL equals</strong> (exact match only), <strong>URL starts with</strong>, and <strong>URL ends with</strong>. For most "thank you" pages, "URL contains" with the unique path segment (e.g. <code>/thank-you</code>) is the simplest and most reliable option.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I use a custom conversion as a campaign optimisation goal?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>After creating the custom conversion, go to your <strong>ad set settings</strong> and set the conversion event to your newly created custom conversion. Meta will then optimise delivery to show your ads to people most likely to complete that specific URL-based action. You'll also see the conversion count in your Ads Manager reporting columns.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How many custom conversions can I create in Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Each Meta Business Manager account can have up to <strong>100 custom conversions</strong>. If you reach the limit, you'll need to delete unused custom conversions before creating new ones. It's good practice to regularly audit and remove outdated custom conversions to keep your Events Manager tidy and within limits.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -417,21 +361,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about custom conversions in Meta Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a custom conversion in Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A <strong>custom conversion</strong> is a conversion event you define based on a URL rule — for example, anyone who visits your "Thank You" page after a form submission counts as a lead. Unlike standard Pixel events, custom conversions don't require any additional code changes; you simply specify the URL pattern in Events Manager and Meta tracks it automatically.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between a standard event and a custom conversion?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Standard events</strong> (e.g. Lead, Purchase, ViewContent) are fired by code snippets or the Event Setup Tool on specific user actions. <strong>Custom conversions</strong> are URL-based rules — no additional code required. Custom conversions are quicker to set up and ideal when you have a dedicated confirmation or "thank you" page URL that only loads after the desired action is completed.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need the Meta Pixel installed before creating a custom conversion?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. The Meta Pixel must be <strong>installed on your website</strong> before custom conversions can work. The Pixel fires a PageView event on every page load, and custom conversions use that PageView data combined with your URL rule to identify when the conversion has occurred. Without the Pixel, no data is collected.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What URL conditions can I use for a custom conversion?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Meta offers several URL match types: <strong>URL contains</strong> (matches any URL with the specified string), <strong>URL equals</strong> (exact match only), <strong>URL starts with</strong>, and <strong>URL ends with</strong>. For most "thank you" pages, "URL contains" with the unique path segment (e.g. <code>/thank-you</code>) is the simplest and most reliable option.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I use a custom conversion as a campaign optimisation goal?</span>
+          </div>
+          <div class="faq-answer">
+            <p>After creating the custom conversion, go to your <strong>ad set settings</strong> and set the conversion event to your newly created custom conversion. Meta will then optimise delivery to show your ads to people most likely to complete that specific URL-based action. You'll also see the conversion count in your Ads Manager reporting columns.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How many custom conversions can I create in Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Each Meta Business Manager account can have up to <strong>100 custom conversions</strong>. If you reach the limit, you'll need to delete unused custom conversions before creating new ones. It's good practice to regularly audit and remove outdated custom conversions to keep your Events Manager tidy and within limits.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -268,81 +286,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about the Google Ads Developer Token and API Center.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a Google Ads Developer Token?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A Developer Token is a unique credential issued by Google that authorises your application to access the <strong>Google Ads API</strong>. It is required whenever you want to programmatically read or write data in Google Ads accounts — for example, to build scripts, automate reporting, or integrate third-party tools that connect to the API.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why do I need a Manager Account to get a Developer Token?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Developer Tokens are issued at the <strong>Manager Account (MCC) level</strong>, not at individual advertiser account level. Google requires a Manager Account because the token is intended to manage API access across multiple accounts. If you only have a standard advertiser account, you'll need to create a Manager Account first before you can apply.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between a test and a production Developer Token?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>When you first apply, Google issues a <strong>test token</strong> that only works against test accounts and has limited API call quotas. Once you submit your application for review and Google approves it, your token is upgraded to a <strong>production token</strong> that can access real accounts with full quota limits. Most basic integrations only need the test token to get started.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How long does it take to get a Developer Token approved?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A <strong>basic access (test) token</strong> is available immediately after filling in the form — no approval wait time required. Upgrading to <strong>standard access</strong> for production use requires a Google review, which typically takes a few business days. Google may ask for additional information about your intended use case during this review.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where exactly is the API Center in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Log in to your <strong>Manager Account</strong>, click on <strong>Admin</strong> in the left-hand navigation, then select <strong>API Center</strong>. This option is only visible inside Manager Accounts — it will not appear in standard advertiser accounts. From there you can view your Developer Token, check its access level, and submit an upgrade request.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I use one Developer Token across multiple client accounts?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. A single Developer Token issued to your Manager Account can be used to access <strong>all client accounts linked under that Manager Account</strong>. You reference the specific client account via a <code>login-customer-id</code> header in your API calls. This means you only need one token to manage your entire portfolio of accounts programmatically.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -400,21 +344,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about the Google Ads Developer Token and API Center.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a Google Ads Developer Token?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A Developer Token is a unique credential issued by Google that authorises your application to access the <strong>Google Ads API</strong>. It is required whenever you want to programmatically read or write data in Google Ads accounts — for example, to build scripts, automate reporting, or integrate third-party tools that connect to the API.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why do I need a Manager Account to get a Developer Token?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Developer Tokens are issued at the <strong>Manager Account (MCC) level</strong>, not at individual advertiser account level. Google requires a Manager Account because the token is intended to manage API access across multiple accounts. If you only have a standard advertiser account, you'll need to create a Manager Account first before you can apply.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between a test and a production Developer Token?</span>
+          </div>
+          <div class="faq-answer">
+            <p>When you first apply, Google issues a <strong>test token</strong> that only works against test accounts and has limited API call quotas. Once you submit your application for review and Google approves it, your token is upgraded to a <strong>production token</strong> that can access real accounts with full quota limits. Most basic integrations only need the test token to get started.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How long does it take to get a Developer Token approved?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A <strong>basic access (test) token</strong> is available immediately after filling in the form — no approval wait time required. Upgrading to <strong>standard access</strong> for production use requires a Google review, which typically takes a few business days. Google may ask for additional information about your intended use case during this review.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where exactly is the API Center in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Log in to your <strong>Manager Account</strong>, click on <strong>Admin</strong> in the left-hand navigation, then select <strong>API Center</strong>. This option is only visible inside Manager Accounts — it will not appear in standard advertiser accounts. From there you can view your Developer Token, check its access level, and submit an upgrade request.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I use one Developer Token across multiple client accounts?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. A single Developer Token issued to your Manager Account can be used to access <strong>all client accounts linked under that Manager Account</strong>. You reference the specific client account via a <code>login-customer-id</code> header in your API calls. This means you only need one token to manage your entire portfolio of accounts programmatically.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

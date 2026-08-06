@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -286,81 +304,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Analytics?</h3>
           <p>Book a 90-minute training session and we'll work through your analytics setup together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about finding and understanding ChatGPT traffic in Google Analytics.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Does ChatGPT send trackable referral traffic to websites?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. When ChatGPT includes a link to your website in a response and a user clicks it, the visit is tracked in Google Analytics as referral traffic from <strong>chatgpt.com</strong>. This is sometimes called "AI referral traffic" and is growing as more people use ChatGPT for research and recommendations. The amount varies by industry and how often your site appears in ChatGPT responses.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What does ChatGPT traffic appear as in Google Analytics?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>ChatGPT referral traffic typically appears as <strong>chatgpt.com / referral</strong> in the Session source / medium dimension. You may also see variations such as <strong>chat.openai.com / referral</strong> (from older ChatGPT URLs). In the default channel group view, this traffic falls under the <strong>Referral</strong> channel.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why don't I see any ChatGPT traffic in my reports?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>There are a few reasons: your site may not yet appear in ChatGPT responses for relevant queries, your date range may be too short to capture any visits, or the volume of AI referral clicks to your site may still be very low. ChatGPT traffic tends to be higher for informational, how-to, and product content that ChatGPT is likely to cite. Check a longer date range (last 90 days) to get a more accurate picture.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between Session Source and Session Source / Medium?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Session source</strong> shows just the origin of the traffic (e.g. <code>chatgpt.com</code>). <strong>Session source / medium</strong> combines both the source and the traffic type (e.g. <code>chatgpt.com / referral</code>), giving you more context about how the visitor arrived. Using <strong>Session source / medium</strong> is recommended because it helps distinguish between different types of traffic from the same domain — for example, if a site sends both referral and email traffic.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I track other AI chatbot traffic — Perplexity, Claude, Gemini?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Use the same method — Traffic Acquisition → Session source / medium — and search for each AI tool by name: <strong>perplexity.ai</strong>, <strong>claude.ai</strong>, <strong>gemini.google.com</strong>, <strong>copilot.microsoft.com</strong>, etc. Not all AI tools send referral traffic (some strip referrer headers), but those that link directly to external pages will show up as referral sources in GA4.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I monitor ChatGPT traffic over time?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8594;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Create a <strong>Comparison</strong> in GA4 to segment ChatGPT traffic and track it separately from other sources. You can also build a custom <strong>Looker Studio (Data Studio) report</strong> that filters for chatgpt.com as a source, giving you a dedicated dashboard to monitor AI referral traffic trends over time. For ongoing monitoring, check the Traffic Acquisition report monthly and compare period-over-period growth.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -418,21 +362,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about finding and understanding ChatGPT traffic in Google Analytics.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does ChatGPT send trackable referral traffic to websites?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. When ChatGPT includes a link to your website in a response and a user clicks it, the visit is tracked in Google Analytics as referral traffic from <strong>chatgpt.com</strong>. This is sometimes called "AI referral traffic" and is growing as more people use ChatGPT for research and recommendations. The amount varies by industry and how often your site appears in ChatGPT responses.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What does ChatGPT traffic appear as in Google Analytics?</span>
+          </div>
+          <div class="faq-answer">
+            <p>ChatGPT referral traffic typically appears as <strong>chatgpt.com / referral</strong> in the Session source / medium dimension. You may also see variations such as <strong>chat.openai.com / referral</strong> (from older ChatGPT URLs). In the default channel group view, this traffic falls under the <strong>Referral</strong> channel.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why don't I see any ChatGPT traffic in my reports?</span>
+          </div>
+          <div class="faq-answer">
+            <p>There are a few reasons: your site may not yet appear in ChatGPT responses for relevant queries, your date range may be too short to capture any visits, or the volume of AI referral clicks to your site may still be very low. ChatGPT traffic tends to be higher for informational, how-to, and product content that ChatGPT is likely to cite. Check a longer date range (last 90 days) to get a more accurate picture.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Session Source and Session Source / Medium?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Session source</strong> shows just the origin of the traffic (e.g. <code>chatgpt.com</code>). <strong>Session source / medium</strong> combines both the source and the traffic type (e.g. <code>chatgpt.com / referral</code>), giving you more context about how the visitor arrived. Using <strong>Session source / medium</strong> is recommended because it helps distinguish between different types of traffic from the same domain — for example, if a site sends both referral and email traffic.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I track other AI chatbot traffic — Perplexity, Claude, Gemini?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Use the same method — Traffic Acquisition → Session source / medium — and search for each AI tool by name: <strong>perplexity.ai</strong>, <strong>claude.ai</strong>, <strong>gemini.google.com</strong>, <strong>copilot.microsoft.com</strong>, etc. Not all AI tools send referral traffic (some strip referrer headers), but those that link directly to external pages will show up as referral sources in GA4.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I monitor ChatGPT traffic over time?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Create a <strong>Comparison</strong> in GA4 to segment ChatGPT traffic and track it separately from other sources. You can also build a custom <strong>Looker Studio (Data Studio) report</strong> that filters for chatgpt.com as a source, giving you a dedicated dashboard to monitor AI referral traffic trends over time. For ongoing monitoring, check the Traffic Acquisition report monthly and compare period-over-period growth.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

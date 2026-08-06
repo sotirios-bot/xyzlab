@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -316,81 +334,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with TikTok Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your TikTok Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about adding users and managing access in TikTok Ads Manager.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Why do I need to use TikTok Business Center to add users — can't I do it in Ads Manager?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>TikTok's user and permission management is centralised in <strong>TikTok Business Center</strong>, not inside TikTok Ads Manager. Business Center acts as the top-level account that houses your ad accounts, pixels, and other assets. All member invitations and access assignments must be handled there. TikTok Ads Manager itself only handles campaign creation and management — it does not have a built-in user management section.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between Operator and Analyst access in TikTok Ads Manager?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Operator</strong> access gives full campaign management capabilities — the user can create, edit, pause, and launch campaigns, ad groups, and ads. <strong>Analyst</strong> access is read-only — the user can view campaign performance data and reports but cannot make any changes to the account. Grant Operator access to agency managers or in-house advertisers who need to run campaigns, and Analyst access to clients or stakeholders who only need to view results.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens after I send the invitation?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The invited user will receive an <strong>email from TikTok</strong> with a link to accept the invitation. They must click the link and log in (or create a TikTok Business Center account if they don't have one) to complete the process. Until they accept, their status will show as <strong>Pending</strong> in your Members list. Access is only granted after the invitation is accepted.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I give an agency access to TikTok Ads without sharing my login credentials?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — this is exactly what the member invitation flow is designed for. By inviting an agency via their email address through TikTok Business Center, each person logs in with their own TikTok account credentials. You never need to share your password. You can also control exactly which ad accounts they have access to and at what permission level, and you can remove their access at any time from the Members section.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I remove a user's access to TikTok Ads Manager?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Go to <strong>TikTok Business Center → Users → Members</strong>, find the member you want to remove, and click the options menu next to their name. You can either <strong>remove them from a specific ad account</strong> (to revoke access to just that account while keeping them as a Business Center member) or <strong>remove them from the Business Center entirely</strong> (which revokes all access). Changes take effect immediately.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I add a user to multiple TikTok Ads accounts at once?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. During the invitation flow, after selecting TikTok Ads Manager as the asset type, you can select <strong>multiple ad accounts</strong> and assign an access level to each. This is useful for agencies managing several clients under the same Business Center — you can grant a team member access to all relevant accounts in a single invitation rather than inviting them separately for each account.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -448,21 +392,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about adding users and managing access in TikTok Ads Manager.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why do I need to use TikTok Business Center to add users — can't I do it in Ads Manager?</span>
+          </div>
+          <div class="faq-answer">
+            <p>TikTok's user and permission management is centralised in <strong>TikTok Business Center</strong>, not inside TikTok Ads Manager. Business Center acts as the top-level account that houses your ad accounts, pixels, and other assets. All member invitations and access assignments must be handled there. TikTok Ads Manager itself only handles campaign creation and management — it does not have a built-in user management section.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Operator and Analyst access in TikTok Ads Manager?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Operator</strong> access gives full campaign management capabilities — the user can create, edit, pause, and launch campaigns, ad groups, and ads. <strong>Analyst</strong> access is read-only — the user can view campaign performance data and reports but cannot make any changes to the account. Grant Operator access to agency managers or in-house advertisers who need to run campaigns, and Analyst access to clients or stakeholders who only need to view results.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens after I send the invitation?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The invited user will receive an <strong>email from TikTok</strong> with a link to accept the invitation. They must click the link and log in (or create a TikTok Business Center account if they don't have one) to complete the process. Until they accept, their status will show as <strong>Pending</strong> in your Members list. Access is only granted after the invitation is accepted.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I give an agency access to TikTok Ads without sharing my login credentials?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — this is exactly what the member invitation flow is designed for. By inviting an agency via their email address through TikTok Business Center, each person logs in with their own TikTok account credentials. You never need to share your password. You can also control exactly which ad accounts they have access to and at what permission level, and you can remove their access at any time from the Members section.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I remove a user's access to TikTok Ads Manager?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Go to <strong>TikTok Business Center → Users → Members</strong>, find the member you want to remove, and click the options menu next to their name. You can either <strong>remove them from a specific ad account</strong> (to revoke access to just that account while keeping them as a Business Center member) or <strong>remove them from the Business Center entirely</strong> (which revokes all access). Changes take effect immediately.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I add a user to multiple TikTok Ads accounts at once?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. During the invitation flow, after selecting TikTok Ads Manager as the asset type, you can select <strong>multiple ad accounts</strong> and assign an access level to each. This is useful for agencies managing several clients under the same Business Center — you can grant a team member access to all relevant accounts in a single invitation rather than inviting them separately for each account.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

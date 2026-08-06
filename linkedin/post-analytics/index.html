@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -271,81 +289,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with LinkedIn?</h3>
           <p>Book a 90-minute training session and we'll build your LinkedIn content strategy together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about viewing post analytics on LinkedIn.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>How do I see analytics for my LinkedIn posts?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Open your <strong>profile</strong>, go to the <strong>Activity</strong> section, click <strong>Show all posts</strong>, then click <strong>View analytics</strong> beneath any post. This shows impressions, engagement, and audience data for that individual post.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What metrics does LinkedIn post analytics show?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>You'll see <strong>impressions</strong> (how many times the post was shown), <strong>members reached</strong>, and <strong>engagement</strong> such as reactions, comments, reposts, and clicks. For many posts you also get audience breakdowns like job titles, companies, locations, and industries.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why don't I see "View analytics" under a post?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Analytics are only available on <strong>your own posts</strong>, and there can be a short delay after publishing before data appears. Very old posts created before LinkedIn rolled out analytics may also not show the link.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I see analytics on the LinkedIn mobile app?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Open your profile, scroll to <strong>Activity</strong>, tap <strong>Show all posts</strong>, and tap <strong>View analytics</strong> (or the bar-chart icon) under any post. The data matches what you see on desktop.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What's the difference between impressions and reach?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Impressions</strong> count every time your post is displayed, including repeat views by the same person. <strong>Members reached</strong> counts the number of unique people who saw it. A high impression-to-reach ratio means people are seeing your post more than once.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I export my LinkedIn post analytics?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Individual post analytics are mostly view-only, but if you manage a <strong>Company Page</strong> you can export content and post analytics to a spreadsheet from the page's Analytics tab. For personal profiles, your creator analytics dashboard offers a broader summary over time.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -403,21 +347,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about viewing post analytics on LinkedIn.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I see analytics for my LinkedIn posts?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Open your <strong>profile</strong>, go to the <strong>Activity</strong> section, click <strong>Show all posts</strong>, then click <strong>View analytics</strong> beneath any post. This shows impressions, engagement, and audience data for that individual post.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What metrics does LinkedIn post analytics show?</span>
+          </div>
+          <div class="faq-answer">
+            <p>You'll see <strong>impressions</strong> (how many times the post was shown), <strong>members reached</strong>, and <strong>engagement</strong> such as reactions, comments, reposts, and clicks. For many posts you also get audience breakdowns like job titles, companies, locations, and industries.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why don't I see "View analytics" under a post?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Analytics are only available on <strong>your own posts</strong>, and there can be a short delay after publishing before data appears. Very old posts created before LinkedIn rolled out analytics may also not show the link.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I see analytics on the LinkedIn mobile app?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Open your profile, scroll to <strong>Activity</strong>, tap <strong>Show all posts</strong>, and tap <strong>View analytics</strong> (or the bar-chart icon) under any post. The data matches what you see on desktop.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What's the difference between impressions and reach?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Impressions</strong> count every time your post is displayed, including repeat views by the same person. <strong>Members reached</strong> counts the number of unique people who saw it. A high impression-to-reach ratio means people are seeing your post more than once.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I export my LinkedIn post analytics?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Individual post analytics are mostly view-only, but if you manage a <strong>Company Page</strong> you can export content and post analytics to a spreadsheet from the page's Analytics tab. For personal profiles, your creator analytics dashboard offers a broader summary over time.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

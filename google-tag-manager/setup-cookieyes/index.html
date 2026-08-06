@@ -219,6 +219,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -370,81 +388,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Tag Manager?</h3>
           <p>Book a 90-minute training session and we'll set up and optimise your GTM account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about installing CookieYes with Google Tag Manager.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Why do I need a cookie consent banner like CookieYes?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Privacy laws like <strong>GDPR</strong> (EU), <strong>CCPA</strong> (California), and <strong>LGPD</strong> (Brazil) require websites to obtain explicit user consent before placing non-essential cookies — such as analytics and advertising cookies — on a visitor's device. A cookie consent banner handles this by presenting users with a clear accept or decline option, recording their consent, and integrating with tools like GTM to block or allow tracking scripts based on that choice. Failing to comply can result in significant fines.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the "Consent Initialization — All Pages" trigger in GTM?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>Consent Initialization — All Pages</strong> trigger is a special GTM trigger that fires before the standard Page View trigger and before any other tags load. This ensures that the CookieYes consent state is established first, so that when GTM later checks whether it has permission to fire analytics or advertising tags, the correct consent signal is already in place. Using any other trigger (like All Pages) would risk firing before consent is set, which defeats the purpose of a consent management platform.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why should I set all Default Consent Settings to "Denied"?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Setting all consent types to <strong>Denied</strong> by default implements the principle of <em>consent by default</em> — no tracking occurs until the user actively accepts cookies. This is the GDPR-compliant approach. The CookieYes banner will then update the consent state to "Granted" for categories the user accepts, and GTM's Consent Mode will allow the relevant tags to fire. If you set defaults to Granted, tracking would begin before the user has given consent, which is illegal under GDPR for non-essential cookies.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to publish the GTM container after setting up the CookieYes tag?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Changes in GTM only go live when you <strong>Submit</strong> and <strong>Publish</strong> a new container version. Until you publish, the CookieYes tag exists only in your workspace and will not appear on your live website. After saving the tag, click <strong>Submit</strong> in the top right of GTM, add a version name and description, then click <strong>Publish</strong> to push the changes to production.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will CookieYes block my Google Analytics and Google Ads tags automatically?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>CookieYes works with GTM's <strong>Consent Mode</strong> to control when tags fire. For this to work, your Google Analytics and Google Ads tags must be configured with the appropriate consent checks in GTM — for example, requiring <code>analytics_storage</code> consent before the GA4 tag fires. Most modern GA4 and Google Ads tag templates in GTM support Consent Mode natively. You will need to review each tag's consent settings to ensure it respects the signals sent by CookieYes.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between the free and paid CookieYes plans?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>free plan</strong> covers one website and provides basic cookie consent functionality including automatic cookie scanning, a customisable banner, and GTM integration — sufficient for most small websites. <strong>Paid plans</strong> add features such as multiple domains, advanced banner customisation, geo-targeting (showing the banner only to visitors from specific regions), consent logs for audit purposes, and support for Google Consent Mode v2. If you need to comply with GDPR across multiple websites or require detailed consent records, a paid plan may be necessary.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -502,21 +446,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about installing CookieYes with Google Tag Manager.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why do I need a cookie consent banner like CookieYes?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Privacy laws like <strong>GDPR</strong> (EU), <strong>CCPA</strong> (California), and <strong>LGPD</strong> (Brazil) require websites to obtain explicit user consent before placing non-essential cookies — such as analytics and advertising cookies — on a visitor's device. A cookie consent banner handles this by presenting users with a clear accept or decline option, recording their consent, and integrating with tools like GTM to block or allow tracking scripts based on that choice. Failing to comply can result in significant fines.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the "Consent Initialization — All Pages" trigger in GTM?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>Consent Initialization — All Pages</strong> trigger is a special GTM trigger that fires before the standard Page View trigger and before any other tags load. This ensures that the CookieYes consent state is established first, so that when GTM later checks whether it has permission to fire analytics or advertising tags, the correct consent signal is already in place. Using any other trigger (like All Pages) would risk firing before consent is set, which defeats the purpose of a consent management platform.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why should I set all Default Consent Settings to "Denied"?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Setting all consent types to <strong>Denied</strong> by default implements the principle of <em>consent by default</em> — no tracking occurs until the user actively accepts cookies. This is the GDPR-compliant approach. The CookieYes banner will then update the consent state to "Granted" for categories the user accepts, and GTM's Consent Mode will allow the relevant tags to fire. If you set defaults to Granted, tracking would begin before the user has given consent, which is illegal under GDPR for non-essential cookies.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to publish the GTM container after setting up the CookieYes tag?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Changes in GTM only go live when you <strong>Submit</strong> and <strong>Publish</strong> a new container version. Until you publish, the CookieYes tag exists only in your workspace and will not appear on your live website. After saving the tag, click <strong>Submit</strong> in the top right of GTM, add a version name and description, then click <strong>Publish</strong> to push the changes to production.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will CookieYes block my Google Analytics and Google Ads tags automatically?</span>
+          </div>
+          <div class="faq-answer">
+            <p>CookieYes works with GTM's <strong>Consent Mode</strong> to control when tags fire. For this to work, your Google Analytics and Google Ads tags must be configured with the appropriate consent checks in GTM — for example, requiring <code>analytics_storage</code> consent before the GA4 tag fires. Most modern GA4 and Google Ads tag templates in GTM support Consent Mode natively. You will need to review each tag's consent settings to ensure it respects the signals sent by CookieYes.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between the free and paid CookieYes plans?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>free plan</strong> covers one website and provides basic cookie consent functionality including automatic cookie scanning, a customisable banner, and GTM integration — sufficient for most small websites. <strong>Paid plans</strong> add features such as multiple domains, advanced banner customisation, geo-targeting (showing the banner only to visitors from specific regions), consent logs for audit purposes, and support for Google Consent Mode v2. If you need to comply with GDPR across multiple websites or require detailed consent records, a paid plan may be necessary.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

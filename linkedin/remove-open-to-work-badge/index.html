@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -260,81 +278,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with LinkedIn?</h3>
           <p>Book a 90-minute training session and we'll build your LinkedIn content strategy together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about the Open to Work badge on LinkedIn.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the Open to Work badge on LinkedIn?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Open to Work is a LinkedIn feature that signals you're looking for new roles. When you enable the public version, LinkedIn adds a green <strong>#OpenToWork</strong> frame around your profile photo so recruiters and your network can see you're available.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I remove the green #OpenToWork photo frame?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>On your profile, click the <strong>edit pencil</strong> next to the Open to Work card, scroll to the bottom of the settings, and click <strong>Delete</strong>. The badge and the green photo frame are removed immediately.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will recruiters still know I'm open after I remove the badge?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Only if you keep the <strong>private</strong> version enabled. LinkedIn offers two modes: the public green badge that everyone sees, and a private setting that shares your status only with recruiters using LinkedIn Recruiter. Deleting the Open to Work preference turns off both — so if you only want to hide the green frame, choose the recruiters-only visibility instead of deleting.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I hide the badge without telling my current employer?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Switching Open to Work visibility to <strong>"Recruiters only"</strong> keeps the green public badge off your photo, so colleagues and your employer won't see it, while recruiters can still find you. LinkedIn also takes steps to avoid showing your status to people at your current company, though it can't guarantee it.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does removing the badge delete my job preferences?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Clicking <strong>Delete</strong> removes the Open to Work status and its visibility setting. Your saved job titles, locations, and other preferences may be cleared, so you'll want to re-enter them if you turn Open to Work back on later.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I turn Open to Work back on after removing it?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Absolutely. Just open the <strong>Open to Work</strong> option on your profile again, set your preferences, and choose whether to show the public badge or share with recruiters only. You can toggle it on and off as often as you like.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -392,21 +336,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about the Open to Work badge on LinkedIn.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the Open to Work badge on LinkedIn?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Open to Work is a LinkedIn feature that signals you're looking for new roles. When you enable the public version, LinkedIn adds a green <strong>#OpenToWork</strong> frame around your profile photo so recruiters and your network can see you're available.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I remove the green #OpenToWork photo frame?</span>
+          </div>
+          <div class="faq-answer">
+            <p>On your profile, click the <strong>edit pencil</strong> next to the Open to Work card, scroll to the bottom of the settings, and click <strong>Delete</strong>. The badge and the green photo frame are removed immediately.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will recruiters still know I'm open after I remove the badge?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Only if you keep the <strong>private</strong> version enabled. LinkedIn offers two modes: the public green badge that everyone sees, and a private setting that shares your status only with recruiters using LinkedIn Recruiter. Deleting the Open to Work preference turns off both — so if you only want to hide the green frame, choose the recruiters-only visibility instead of deleting.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I hide the badge without telling my current employer?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Switching Open to Work visibility to <strong>"Recruiters only"</strong> keeps the green public badge off your photo, so colleagues and your employer won't see it, while recruiters can still find you. LinkedIn also takes steps to avoid showing your status to people at your current company, though it can't guarantee it.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does removing the badge delete my job preferences?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Clicking <strong>Delete</strong> removes the Open to Work status and its visibility setting. Your saved job titles, locations, and other preferences may be cleared, so you'll want to re-enter them if you turn Open to Work back on later.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I turn Open to Work back on after removing it?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely. Just open the <strong>Open to Work</strong> option on your profile again, set your preferences, and choose whether to show the public badge or share with recruiters only. You can toggle it on and off as often as you like.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

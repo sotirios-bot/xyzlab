@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -282,81 +300,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with TikTok Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your TikTok Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about finding and downloading invoices in TikTok Ads Manager.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Where exactly are invoices located in TikTok Ads Manager?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Invoices are found under <strong>Tools → Finance</strong> in TikTok Ads Manager. The Finance section contains your billing history, including all charges made to your ad account, payment records, and downloadable invoice documents. Note that <strong>Finance</strong> appears under the <em>Settings</em> group within the Tools menu — scroll down if you don't see it immediately.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I filter invoices by date range in TikTok Ads Manager?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. The Finance section includes a <strong>date filter</strong> that lets you select a specific time period to view. This is useful when you need invoices for a particular month, quarter, or fiscal year for accounting purposes. Select your desired date range and the list will update to show only the billing records within that period.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What format are TikTok Ads invoices downloaded in?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>TikTok Ads invoices are downloaded as <strong>PDF files</strong>. Each invoice includes the billing period, ad account name and ID, itemised charges, total amount billed, and TikTok's company details. These PDF invoices are suitable for submitting to accountants, inclusion in expense reports, or VAT reclaim purposes.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why are there no invoices showing in my TikTok Ads Finance section?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>There are a few common reasons: your account may be on a <strong>prepaid (top-up) billing model</strong> rather than postpaid invoicing, in which case you may see payment receipts instead of formal invoices. Alternatively, your ad account may not have incurred any charges yet, or the date range you have selected doesn't include any billing activity. Check that the date filter is set to a period when your campaigns were active and spending.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I access invoices for multiple TikTok Ads accounts in one place?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Invoices are account-specific — you need to access the Finance section <strong>within each individual ad account</strong>. If you manage multiple accounts, switch between them using the account selector at the top of TikTok Ads Manager and navigate to Tools → Finance for each one. There is currently no consolidated view that shows invoices across all accounts in a single screen.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Who can access the Finance section and download invoices?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Access to the Finance section depends on the user's <strong>permission level</strong> within TikTok Ads Manager. Account <strong>Operators</strong> (full access) can typically view and download invoices. <strong>Analysts</strong> (read-only access) may have limited or no access to billing information. If you are a team member who cannot see the Finance section, ask the account admin to check and update your access level in TikTok Business Center.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -414,21 +358,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about finding and downloading invoices in TikTok Ads Manager.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where exactly are invoices located in TikTok Ads Manager?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Invoices are found under <strong>Tools → Finance</strong> in TikTok Ads Manager. The Finance section contains your billing history, including all charges made to your ad account, payment records, and downloadable invoice documents. Note that <strong>Finance</strong> appears under the <em>Settings</em> group within the Tools menu — scroll down if you don't see it immediately.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I filter invoices by date range in TikTok Ads Manager?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. The Finance section includes a <strong>date filter</strong> that lets you select a specific time period to view. This is useful when you need invoices for a particular month, quarter, or fiscal year for accounting purposes. Select your desired date range and the list will update to show only the billing records within that period.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What format are TikTok Ads invoices downloaded in?</span>
+          </div>
+          <div class="faq-answer">
+            <p>TikTok Ads invoices are downloaded as <strong>PDF files</strong>. Each invoice includes the billing period, ad account name and ID, itemised charges, total amount billed, and TikTok's company details. These PDF invoices are suitable for submitting to accountants, inclusion in expense reports, or VAT reclaim purposes.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why are there no invoices showing in my TikTok Ads Finance section?</span>
+          </div>
+          <div class="faq-answer">
+            <p>There are a few common reasons: your account may be on a <strong>prepaid (top-up) billing model</strong> rather than postpaid invoicing, in which case you may see payment receipts instead of formal invoices. Alternatively, your ad account may not have incurred any charges yet, or the date range you have selected doesn't include any billing activity. Check that the date filter is set to a period when your campaigns were active and spending.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I access invoices for multiple TikTok Ads accounts in one place?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Invoices are account-specific — you need to access the Finance section <strong>within each individual ad account</strong>. If you manage multiple accounts, switch between them using the account selector at the top of TikTok Ads Manager and navigate to Tools → Finance for each one. There is currently no consolidated view that shows invoices across all accounts in a single screen.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Who can access the Finance section and download invoices?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Access to the Finance section depends on the user's <strong>permission level</strong> within TikTok Ads Manager. Account <strong>Operators</strong> (full access) can typically view and download invoices. <strong>Analysts</strong> (read-only access) may have limited or no access to billing information. If you are a team member who cannot see the Finance section, ask the account admin to check and update your access level in TikTok Business Center.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -317,81 +335,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Meta Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about uploading Customer Lists to Meta Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a Customer List Custom Audience in Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A Customer List Custom Audience lets you upload a list of contacts — typically email addresses, phone numbers, or names — from your CRM or email marketing tool. Meta hashes and matches those identifiers against its user database so you can show ads specifically to people already in your customer or prospect list on Facebook and Instagram.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What data can I upload in a Customer List?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Meta accepts several identifiers including <strong>email addresses</strong>, <strong>phone numbers</strong>, <strong>first and last names</strong>, city, country, date of birth, gender, and mobile advertiser IDs. The more identifiers you include per contact, the higher your match rate will be. Email addresses are the most commonly used and typically yield the best match rates.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How many contacts do I need for a Customer List audience to work?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Meta requires a minimum matched audience size of <strong>100 people</strong> for the audience to be usable in a campaign. In practice, you should aim for at least a few hundred matched contacts for meaningful targeting. Match rates typically range from 40% to 70% depending on the quality and freshness of your data, so upload more contacts than the minimum to ensure you clear the threshold.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is my customer data secure when I upload it to Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Meta hashes all personally identifiable information (PII) before it is sent to their servers, meaning your raw contact data is never stored by Meta. The hashing is done locally in your browser before transmission. You should still ensure you have the appropriate legal basis (e.g., consent) to use your contacts' data for advertising purposes in accordance with GDPR, CCPA, and other applicable privacy laws.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I create a Lookalike Audience from my Customer List?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — this is one of the most powerful uses of a Customer List. Once your Custom Audience is created and has enough matched users, you can click <strong>Create Lookalike Audience</strong> from the Audiences dashboard. Meta will find new users on Facebook and Instagram who share similar characteristics to your existing customers, letting you expand your reach to high-quality cold audiences.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the "Customer Value" option during upload?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>If you select <strong>Yes</strong> to Customer Value, Meta will prompt you to include a monetary value column in your upload (e.g., lifetime revenue per customer). This enables you to create a <strong>Value-Based Lookalike Audience</strong>, where Meta prioritises finding users who resemble your highest-value customers rather than just any customer. Select <strong>No</strong> if your list is a simple email export without revenue data.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -449,21 +393,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about uploading Customer Lists to Meta Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a Customer List Custom Audience in Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A Customer List Custom Audience lets you upload a list of contacts — typically email addresses, phone numbers, or names — from your CRM or email marketing tool. Meta hashes and matches those identifiers against its user database so you can show ads specifically to people already in your customer or prospect list on Facebook and Instagram.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What data can I upload in a Customer List?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Meta accepts several identifiers including <strong>email addresses</strong>, <strong>phone numbers</strong>, <strong>first and last names</strong>, city, country, date of birth, gender, and mobile advertiser IDs. The more identifiers you include per contact, the higher your match rate will be. Email addresses are the most commonly used and typically yield the best match rates.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How many contacts do I need for a Customer List audience to work?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Meta requires a minimum matched audience size of <strong>100 people</strong> for the audience to be usable in a campaign. In practice, you should aim for at least a few hundred matched contacts for meaningful targeting. Match rates typically range from 40% to 70% depending on the quality and freshness of your data, so upload more contacts than the minimum to ensure you clear the threshold.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is my customer data secure when I upload it to Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Meta hashes all personally identifiable information (PII) before it is sent to their servers, meaning your raw contact data is never stored by Meta. The hashing is done locally in your browser before transmission. You should still ensure you have the appropriate legal basis (e.g., consent) to use your contacts' data for advertising purposes in accordance with GDPR, CCPA, and other applicable privacy laws.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I create a Lookalike Audience from my Customer List?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — this is one of the most powerful uses of a Customer List. Once your Custom Audience is created and has enough matched users, you can click <strong>Create Lookalike Audience</strong> from the Audiences dashboard. Meta will find new users on Facebook and Instagram who share similar characteristics to your existing customers, letting you expand your reach to high-quality cold audiences.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the "Customer Value" option during upload?</span>
+          </div>
+          <div class="faq-answer">
+            <p>If you select <strong>Yes</strong> to Customer Value, Meta will prompt you to include a monetary value column in your upload (e.g., lifetime revenue per customer). This enables you to create a <strong>Value-Based Lookalike Audience</strong>, where Meta prioritises finding users who resemble your highest-value customers rather than just any customer. Select <strong>No</strong> if your list is a simple email export without revenue data.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

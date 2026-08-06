@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -346,81 +364,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with TikTok Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your TikTok Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about connecting TikTok accounts to TikTok Ads Manager.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Why do I need to connect a TikTok account to run ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Connecting a TikTok organic account to your Ads Manager allows you to run <strong>Spark Ads</strong> — a TikTok ad format that boosts existing organic posts or other creators' content. This is important for brands and agencies running In-Feed ads that appear native to the platform. Without a linked TikTok account, you can still run standard non-Spark ads, but you won't be able to use your organic content or the account's identity in paid campaigns.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between "Request Access" and linking my own account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Request Access</strong> is used when you are an agency or advertiser who wants to connect a TikTok account you do not own (e.g. a client's brand account). The account owner must approve the request via QR code. If you own the TikTok account yourself and are logged in with the same credentials, TikTok may allow a more direct linking flow. The QR code method is the most common approach for agencies connecting client accounts.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>The QR code expired before the account owner could scan it — what should I do?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Simply repeat the <strong>Request Access</strong> flow to generate a new QR code. TikTok's QR codes are time-limited for security reasons. If the owner is not immediately available, consider screenshotting the QR code and sending it via a messaging app — but make sure they scan it quickly. Coordinate with the account owner before starting the flow so they are ready to scan as soon as you generate the code.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I connect multiple TikTok accounts to one Business Center?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You can connect multiple TikTok organic accounts to a single Business Center. This is useful for agencies managing several client brands — each brand's TikTok account can be linked and then assigned to the relevant ad account within the Business Center. When creating a campaign, you can select which connected TikTok account to use as the identity for your ads.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What access does my Business Center get after connecting a TikTok account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>After the account owner approves the request, your Business Center gains <strong>advertising access</strong> to use that TikTok account in campaigns — specifically to run Spark Ads using the account's posts. You do not get access to post content, respond to comments, or manage the organic profile. The account owner retains full control of their TikTok account and can revoke your access at any time from their TikTok app settings.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I disconnect a TikTok account from Business Center?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Go to <strong>TikTok Business Center → Accounts → TikTok Accounts</strong>, find the account you want to remove, and click the options menu to disconnect it. Note that the TikTok account owner can also revoke access independently from within the TikTok app (Settings → Privacy → Authorised Apps). Once disconnected, the account will no longer be available to use in new ad campaigns, though existing campaigns using that account's identity may be affected.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -478,21 +422,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about connecting TikTok accounts to TikTok Ads Manager.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why do I need to connect a TikTok account to run ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Connecting a TikTok organic account to your Ads Manager allows you to run <strong>Spark Ads</strong> — a TikTok ad format that boosts existing organic posts or other creators' content. This is important for brands and agencies running In-Feed ads that appear native to the platform. Without a linked TikTok account, you can still run standard non-Spark ads, but you won't be able to use your organic content or the account's identity in paid campaigns.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between "Request Access" and linking my own account?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Request Access</strong> is used when you are an agency or advertiser who wants to connect a TikTok account you do not own (e.g. a client's brand account). The account owner must approve the request via QR code. If you own the TikTok account yourself and are logged in with the same credentials, TikTok may allow a more direct linking flow. The QR code method is the most common approach for agencies connecting client accounts.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>The QR code expired before the account owner could scan it — what should I do?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Simply repeat the <strong>Request Access</strong> flow to generate a new QR code. TikTok's QR codes are time-limited for security reasons. If the owner is not immediately available, consider screenshotting the QR code and sending it via a messaging app — but make sure they scan it quickly. Coordinate with the account owner before starting the flow so they are ready to scan as soon as you generate the code.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I connect multiple TikTok accounts to one Business Center?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can connect multiple TikTok organic accounts to a single Business Center. This is useful for agencies managing several client brands — each brand's TikTok account can be linked and then assigned to the relevant ad account within the Business Center. When creating a campaign, you can select which connected TikTok account to use as the identity for your ads.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What access does my Business Center get after connecting a TikTok account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>After the account owner approves the request, your Business Center gains <strong>advertising access</strong> to use that TikTok account in campaigns — specifically to run Spark Ads using the account's posts. You do not get access to post content, respond to comments, or manage the organic profile. The account owner retains full control of their TikTok account and can revoke your access at any time from their TikTok app settings.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I disconnect a TikTok account from Business Center?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Go to <strong>TikTok Business Center → Accounts → TikTok Accounts</strong>, find the account you want to remove, and click the options menu to disconnect it. Note that the TikTok account owner can also revoke access independently from within the TikTok app (Settings → Privacy → Authorised Apps). Once disconnected, the account will no longer be available to use in new ad campaigns, though existing campaigns using that account's identity may be affected.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

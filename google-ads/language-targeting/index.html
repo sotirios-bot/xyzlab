@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -267,81 +285,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about language targeting in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is language targeting in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Language targeting controls which users see your ads based on the <strong>language settings of their Google interface or browser</strong>. For example, targeting English means your ads can show to users who have set their Google account or browser to English. It does not detect the language of the user's search query itself — it is based on their language preference settings.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How does Google determine which language a user speaks?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google infers language preference from a combination of signals: the <strong>language set in the user's Google account</strong>, their <strong>browser language settings</strong>, and the <strong>language of their recent Google searches</strong>. This means a user in France who searches in English with an English-language browser could be eligible for English-targeted campaigns even though they're in France.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Should I create separate campaigns for each language?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>For most advertisers, <strong>yes — separate campaigns per language is the recommended approach</strong>. It gives you cleaner performance reporting, the ability to set different budgets and bids per language, and makes it easier to match ads and landing pages to the correct language. Mixing languages in one campaign makes it harder to diagnose performance issues and optimise effectively.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens if my landing page language doesn't match my campaign language?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A mismatch between your campaign language and landing page language creates a <strong>poor user experience</strong> — users click your ad in their language and arrive at a page they can't read, leading to high bounce rates and low conversion rates. Google may also lower your Ad Rank if it detects a poor landing page experience. Always ensure the language setting matches the language of your destination page.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I target multiple languages in the same campaign?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, Google Ads allows you to add multiple languages to a single campaign. This is appropriate when your landing page is genuinely multilingual — for example, a page with both English and French content. However, if you're targeting multiple distinct languages because you serve different markets, separate campaigns will give you better control over messaging, bids, and performance analysis.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does language targeting work differently for Search vs Display campaigns?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. For <strong>Search campaigns</strong>, Google matches the language of the user's search query and their Google interface language against your targeting. For <strong>Display campaigns</strong>, Google looks at the language of the websites in its network and matches them to your language setting — so your ads appear on pages written in your targeted language. Both use the same language setting in Campaign Settings, but the underlying matching logic differs.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -399,21 +343,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about language targeting in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is language targeting in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Language targeting controls which users see your ads based on the <strong>language settings of their Google interface or browser</strong>. For example, targeting English means your ads can show to users who have set their Google account or browser to English. It does not detect the language of the user's search query itself — it is based on their language preference settings.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How does Google determine which language a user speaks?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google infers language preference from a combination of signals: the <strong>language set in the user's Google account</strong>, their <strong>browser language settings</strong>, and the <strong>language of their recent Google searches</strong>. This means a user in France who searches in English with an English-language browser could be eligible for English-targeted campaigns even though they're in France.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Should I create separate campaigns for each language?</span>
+          </div>
+          <div class="faq-answer">
+            <p>For most advertisers, <strong>yes — separate campaigns per language is the recommended approach</strong>. It gives you cleaner performance reporting, the ability to set different budgets and bids per language, and makes it easier to match ads and landing pages to the correct language. Mixing languages in one campaign makes it harder to diagnose performance issues and optimise effectively.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens if my landing page language doesn't match my campaign language?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A mismatch between your campaign language and landing page language creates a <strong>poor user experience</strong> — users click your ad in their language and arrive at a page they can't read, leading to high bounce rates and low conversion rates. Google may also lower your Ad Rank if it detects a poor landing page experience. Always ensure the language setting matches the language of your destination page.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I target multiple languages in the same campaign?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, Google Ads allows you to add multiple languages to a single campaign. This is appropriate when your landing page is genuinely multilingual — for example, a page with both English and French content. However, if you're targeting multiple distinct languages because you serve different markets, separate campaigns will give you better control over messaging, bids, and performance analysis.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does language targeting work differently for Search vs Display campaigns?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. For <strong>Search campaigns</strong>, Google matches the language of the user's search query and their Google interface language against your targeting. For <strong>Display campaigns</strong>, Google looks at the language of the websites in its network and matches them to your language setting — so your ads appear on pages written in your targeted language. Both use the same language setting in Campaign Settings, but the underlying matching logic differs.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

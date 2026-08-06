@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -287,81 +305,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Data Studio?</h3>
           <p>Book a 90-minute training session and we'll build your Data Studio dashboard together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about scorecard comparison indicators in Data Studio (Looker Studio).</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a scorecard comparison in Data Studio?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A scorecard comparison adds a <strong>secondary value and a percentage change indicator</strong> below the main metric on a scorecard. It lets viewers immediately see whether a metric is up or down compared to a previous period, a target, or another metric — without needing to cross-reference a separate chart or table.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What comparison date range options are available?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Data Studio offers several built-in comparison date ranges including <strong>Previous period</strong> (same duration, immediately before), <strong>Previous year</strong> (same dates one year ago), and <strong>Same period last year</strong>. The most commonly used is Previous period, which automatically adjusts to match whatever date range the report's date control is set to.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I compare a metric against a target or budget instead of a date period?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>In the Setup panel under <strong>Other comparison options</strong>, select <strong>Value</strong> and enter your target number. This is useful for KPI scorecards where you want to show how actual performance compares to a fixed goal — for example, showing that 1,200 leads were generated against a target of 1,000.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I reverse the colour logic so that a decrease shows as green?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. In the Style panel under <strong>Comparison fields</strong>, there is a toggle to <strong>reverse the colour direction</strong>. This is essential for cost metrics like CPA or CPC — a decrease in cost is a positive result, so you want it to display in green even though the value went down.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between showing percentage change and absolute difference?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Percentage change</strong> shows how much a metric moved relative to the comparison value (e.g. +15%). <strong>Absolute difference</strong> shows the raw numerical change (e.g. +180 conversions). You can display both simultaneously in Data Studio. Absolute difference is often more meaningful for stakeholders who think in units rather than percentages.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does the comparison update automatically when the date range filter changes?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. When you use <strong>Previous period</strong> as the comparison type, it automatically recalculates whenever the report's date range control is adjusted. So if a viewer changes the date filter from "last 7 days" to "last 30 days", the comparison value updates to reflect the prior 30-day period automatically — no manual reconfiguration needed.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -419,21 +363,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about scorecard comparison indicators in Data Studio (Looker Studio).</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a scorecard comparison in Data Studio?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A scorecard comparison adds a <strong>secondary value and a percentage change indicator</strong> below the main metric on a scorecard. It lets viewers immediately see whether a metric is up or down compared to a previous period, a target, or another metric — without needing to cross-reference a separate chart or table.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What comparison date range options are available?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Data Studio offers several built-in comparison date ranges including <strong>Previous period</strong> (same duration, immediately before), <strong>Previous year</strong> (same dates one year ago), and <strong>Same period last year</strong>. The most commonly used is Previous period, which automatically adjusts to match whatever date range the report's date control is set to.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I compare a metric against a target or budget instead of a date period?</span>
+          </div>
+          <div class="faq-answer">
+            <p>In the Setup panel under <strong>Other comparison options</strong>, select <strong>Value</strong> and enter your target number. This is useful for KPI scorecards where you want to show how actual performance compares to a fixed goal — for example, showing that 1,200 leads were generated against a target of 1,000.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I reverse the colour logic so that a decrease shows as green?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. In the Style panel under <strong>Comparison fields</strong>, there is a toggle to <strong>reverse the colour direction</strong>. This is essential for cost metrics like CPA or CPC — a decrease in cost is a positive result, so you want it to display in green even though the value went down.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between showing percentage change and absolute difference?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Percentage change</strong> shows how much a metric moved relative to the comparison value (e.g. +15%). <strong>Absolute difference</strong> shows the raw numerical change (e.g. +180 conversions). You can display both simultaneously in Data Studio. Absolute difference is often more meaningful for stakeholders who think in units rather than percentages.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does the comparison update automatically when the date range filter changes?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. When you use <strong>Previous period</strong> as the comparison type, it automatically recalculates whenever the report's date range control is adjusted. So if a viewer changes the date filter from "last 7 days" to "last 30 days", the comparison value updates to reflect the prior 30-day period automatically — no manual reconfiguration needed.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

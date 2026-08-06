@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -282,81 +300,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about AI Generated Sitelinks and automated assets in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What are AI Generated Sitelinks in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>AI Generated Sitelinks are automatically created sitelink extensions that Google's AI adds to your ads without your input. Google crawls your website, identifies pages it considers relevant, and appends them as sitelinks to boost click-through rates. While this can help in some cases, the AI-generated links may not match your messaging, brand guidelines, or campaign goals — making it important to review and potentially disable them.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why would I want to turn off AI Generated Sitelinks?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>There are several reasons to disable them: the AI may link to pages that are <strong>irrelevant to your campaign</strong>, the sitelink text may not match your <strong>brand voice or messaging</strong>, automated sitelinks can appear alongside your manually created ones and <strong>dilute your curated links</strong>, or you may simply want full control over what appears in your ads. Disabling ensures only your approved sitelinks show.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will turning off AI Generated Sitelinks affect my manually created sitelinks?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Disabling AI Generated Sitelinks only stops Google from automatically creating and serving new automated sitelinks. Any <strong>sitelinks you have manually created</strong> at the account, campaign, or ad group level will continue to serve as normal. This setting only affects the AI-generated automated assets, not your own.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I disable AI Generated Sitelinks for a specific campaign only?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The setting is found under <strong>Account-level automated assets</strong>, which means it applies to the entire account. There is no campaign-level toggle specifically for AI Generated Sitelinks. If you want to control sitelinks at the campaign level, the recommended approach is to disable them at the account level and then manually create the sitelinks you want on specific campaigns.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What other AI-generated assets can I turn off in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>In the same <strong>Account-level automated assets → Advanced settings</strong> area, you can also disable other automated asset types such as <strong>AI Generated Images, Longer Ad Headlines, Seller Ratings</strong>, and more. Each asset type has its own toggle so you can selectively turn off only the automated formats you don't want while keeping others active. Review each option to decide what fits your brand's needs.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where can I see which AI-generated sitelinks Google has created for my account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Go to <strong>Assets</strong> in the left-hand menu, then filter the assets table by type — automated sitelinks will be labelled as <strong>Automatically created</strong> or show an AI/auto badge. You can review the URLs and text Google has generated, and from the same <strong>More → Account-level automated assets</strong> menu you can see a preview of current automated assets before deciding whether to disable them.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -414,21 +358,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about AI Generated Sitelinks and automated assets in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What are AI Generated Sitelinks in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>AI Generated Sitelinks are automatically created sitelink extensions that Google's AI adds to your ads without your input. Google crawls your website, identifies pages it considers relevant, and appends them as sitelinks to boost click-through rates. While this can help in some cases, the AI-generated links may not match your messaging, brand guidelines, or campaign goals — making it important to review and potentially disable them.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why would I want to turn off AI Generated Sitelinks?</span>
+          </div>
+          <div class="faq-answer">
+            <p>There are several reasons to disable them: the AI may link to pages that are <strong>irrelevant to your campaign</strong>, the sitelink text may not match your <strong>brand voice or messaging</strong>, automated sitelinks can appear alongside your manually created ones and <strong>dilute your curated links</strong>, or you may simply want full control over what appears in your ads. Disabling ensures only your approved sitelinks show.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will turning off AI Generated Sitelinks affect my manually created sitelinks?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Disabling AI Generated Sitelinks only stops Google from automatically creating and serving new automated sitelinks. Any <strong>sitelinks you have manually created</strong> at the account, campaign, or ad group level will continue to serve as normal. This setting only affects the AI-generated automated assets, not your own.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I disable AI Generated Sitelinks for a specific campaign only?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The setting is found under <strong>Account-level automated assets</strong>, which means it applies to the entire account. There is no campaign-level toggle specifically for AI Generated Sitelinks. If you want to control sitelinks at the campaign level, the recommended approach is to disable them at the account level and then manually create the sitelinks you want on specific campaigns.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What other AI-generated assets can I turn off in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>In the same <strong>Account-level automated assets → Advanced settings</strong> area, you can also disable other automated asset types such as <strong>AI Generated Images, Longer Ad Headlines, Seller Ratings</strong>, and more. Each asset type has its own toggle so you can selectively turn off only the automated formats you don't want while keeping others active. Review each option to decide what fits your brand's needs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where can I see which AI-generated sitelinks Google has created for my account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Go to <strong>Assets</strong> in the left-hand menu, then filter the assets table by type — automated sitelinks will be labelled as <strong>Automatically created</strong> or show an AI/auto badge. You can review the URLs and text Google has generated, and from the same <strong>More → Account-level automated assets</strong> menu you can see a preview of current automated assets before deciding whether to disable them.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

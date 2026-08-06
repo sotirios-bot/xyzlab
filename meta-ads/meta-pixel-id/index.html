@@ -219,6 +219,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -286,81 +304,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll set up and optimise your Meta Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about finding and using your Meta Pixel ID.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Where exactly do I find my Meta Pixel ID in Events Manager?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>In Events Manager, your Pixel ID appears in two places: (1) directly below the dataset name on the main Events Manager overview screen — it is the short numeric code shown in smaller text beneath your Pixel's name; and (2) inside the dataset, under <strong>Settings</strong>, where the full Pixel ID is displayed alongside the install instructions. The ID is the same in both locations — it is a 15–16 digit number unique to your Pixel.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is the Meta Pixel ID the same as the Dataset ID?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Meta rebranded the Pixel as a <strong>Dataset</strong> in Events Manager as part of their push toward server-side tracking and the Conversions API. The Pixel ID and the Dataset ID refer to the same unique identifier — the numeric code that links your tracking data to your Meta Business account. Whether you see it labelled "Pixel ID" or "Dataset ID" depends on your interface version, but the number is the same.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I have more than one Meta Pixel ID for the same business?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You can create multiple Pixels (Datasets) within the same Meta Business account — for example, one Pixel per website or one per brand. However, Meta recommends using a <strong>single Pixel per website</strong> and tracking multiple event types through that one Pixel, rather than installing multiple Pixels on the same site. Using multiple Pixels on one site can cause duplicate event reporting and make campaign optimisation less effective.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What do I need the Pixel ID for?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Your Pixel ID is required in several scenarios: installing the Meta Pixel base code manually on your website, connecting it to a third-party platform (such as Shopify, Wix, or Go High Level), setting up the <strong>Conversions API</strong> for server-side tracking, assigning the Pixel to an ad account in Meta Ads Manager, and configuring tracking tools like Google Tag Manager or CookieYes. Any time a platform asks for your "Pixel ID" or "Facebook Pixel ID", this is the number you provide.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What if I cannot find my Pixel in Events Manager?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>If your Pixel does not appear in Events Manager, there are a few possible reasons: you may be logged into the wrong Business account (check the Business account selector at the top), the Pixel may not have been created yet (click <strong>Connect data sources</strong> to create one), or you may not have the correct permissions to view it (ask the Business account owner to grant you access). You can also search for your Pixel by entering your website URL in the Events Manager search bar.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I use the same Pixel ID across multiple ad accounts?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. A single Pixel can be assigned to multiple ad accounts, which is useful when an agency manages ads on behalf of a business — the Pixel lives in the business's account and is shared with the agency's ad account. To assign a Pixel to an ad account, go to <strong>Events Manager &gt; Your Pixel &gt; Settings</strong> and use the <strong>Ad accounts</strong> section to add or remove ad accounts that have access to the Pixel's data.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -418,21 +362,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about finding and using your Meta Pixel ID.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where exactly do I find my Meta Pixel ID in Events Manager?</span>
+          </div>
+          <div class="faq-answer">
+            <p>In Events Manager, your Pixel ID appears in two places: (1) directly below the dataset name on the main Events Manager overview screen — it is the short numeric code shown in smaller text beneath your Pixel's name; and (2) inside the dataset, under <strong>Settings</strong>, where the full Pixel ID is displayed alongside the install instructions. The ID is the same in both locations — it is a 15–16 digit number unique to your Pixel.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is the Meta Pixel ID the same as the Dataset ID?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Meta rebranded the Pixel as a <strong>Dataset</strong> in Events Manager as part of their push toward server-side tracking and the Conversions API. The Pixel ID and the Dataset ID refer to the same unique identifier — the numeric code that links your tracking data to your Meta Business account. Whether you see it labelled "Pixel ID" or "Dataset ID" depends on your interface version, but the number is the same.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I have more than one Meta Pixel ID for the same business?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can create multiple Pixels (Datasets) within the same Meta Business account — for example, one Pixel per website or one per brand. However, Meta recommends using a <strong>single Pixel per website</strong> and tracking multiple event types through that one Pixel, rather than installing multiple Pixels on the same site. Using multiple Pixels on one site can cause duplicate event reporting and make campaign optimisation less effective.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What do I need the Pixel ID for?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Your Pixel ID is required in several scenarios: installing the Meta Pixel base code manually on your website, connecting it to a third-party platform (such as Shopify, Wix, or Go High Level), setting up the <strong>Conversions API</strong> for server-side tracking, assigning the Pixel to an ad account in Meta Ads Manager, and configuring tracking tools like Google Tag Manager or CookieYes. Any time a platform asks for your "Pixel ID" or "Facebook Pixel ID", this is the number you provide.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What if I cannot find my Pixel in Events Manager?</span>
+          </div>
+          <div class="faq-answer">
+            <p>If your Pixel does not appear in Events Manager, there are a few possible reasons: you may be logged into the wrong Business account (check the Business account selector at the top), the Pixel may not have been created yet (click <strong>Connect data sources</strong> to create one), or you may not have the correct permissions to view it (ask the Business account owner to grant you access). You can also search for your Pixel by entering your website URL in the Events Manager search bar.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I use the same Pixel ID across multiple ad accounts?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. A single Pixel can be assigned to multiple ad accounts, which is useful when an agency manages ads on behalf of a business — the Pixel lives in the business's account and is shared with the agency's ad account. To assign a Pixel to an ad account, go to <strong>Events Manager &gt; Your Pixel &gt; Settings</strong> and use the <strong>Ad accounts</strong> section to add or remove ad accounts that have access to the Pixel's data.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

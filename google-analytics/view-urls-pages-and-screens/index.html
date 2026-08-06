@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -272,81 +290,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Analytics?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Analytics setup together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about viewing URLs in the Google Analytics Pages and Screens report.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Why does Google Analytics show page titles instead of URLs by default?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>GA4's Pages and Screens report defaults to the <strong>Page title and screen class</strong> dimension because page titles are typically more readable than raw URL paths. However, titles are not always unique — two different pages can share the same title — so switching to <strong>Page path and screen class</strong> gives you more precise, URL-level data for analysis.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between "Page path" and "Page path + query string"?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Page path and screen class</strong> shows only the path portion of the URL (e.g. <code>/products/shoes/</code>), stripping query parameters. <strong>Page path + query string</strong> includes any URL parameters (e.g. <code>/products/shoes/?color=red</code>). Use page path for a clean, consolidated view; use page path + query string when you need to analyse the impact of URL parameters such as campaign tags or filter selections.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I make "Page path and screen class" the default view for this report?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>GA4 does not currently save the dimension selection as a persistent default for standard reports. You will need to switch the dimension each time you open the report, or use the <strong>Explore</strong> section to build a custom exploration that defaults to the dimension and metrics you prefer — which you can save and reuse.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why do some page paths show "(not set)"?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>(not set)</strong> appears when GA4 receives an event without a valid page path value — this can happen with app screen views, server-side events, or misconfigured tracking. Check your GA4 implementation to ensure the <code>page_location</code> parameter is being sent with every page view event, and verify that your Google Tag or gtag.js snippet is firing correctly across all pages.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I see both the page title and URL in the same report?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — in the <strong>Explore</strong> section you can add both <strong>Page title</strong> and <strong>Page path and screen class</strong> as dimensions in a free-form exploration, letting you see titles and URLs side by side. In the standard Pages and Screens report you can only display one primary dimension at a time.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does switching the dimension affect the metrics shown?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No — the metrics (views, users, sessions, engagement rate, etc.) stay the same. Switching the dimension only changes <em>how</em> the data is grouped and labelled. If multiple page titles map to a single URL path, you may see the numbers consolidate slightly when switching from title to path view, since what was previously split across titles is now grouped under a single URL.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -404,21 +348,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about viewing URLs in the Google Analytics Pages and Screens report.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why does Google Analytics show page titles instead of URLs by default?</span>
+          </div>
+          <div class="faq-answer">
+            <p>GA4's Pages and Screens report defaults to the <strong>Page title and screen class</strong> dimension because page titles are typically more readable than raw URL paths. However, titles are not always unique — two different pages can share the same title — so switching to <strong>Page path and screen class</strong> gives you more precise, URL-level data for analysis.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between "Page path" and "Page path + query string"?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Page path and screen class</strong> shows only the path portion of the URL (e.g. <code>/products/shoes/</code>), stripping query parameters. <strong>Page path + query string</strong> includes any URL parameters (e.g. <code>/products/shoes/?color=red</code>). Use page path for a clean, consolidated view; use page path + query string when you need to analyse the impact of URL parameters such as campaign tags or filter selections.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I make "Page path and screen class" the default view for this report?</span>
+          </div>
+          <div class="faq-answer">
+            <p>GA4 does not currently save the dimension selection as a persistent default for standard reports. You will need to switch the dimension each time you open the report, or use the <strong>Explore</strong> section to build a custom exploration that defaults to the dimension and metrics you prefer — which you can save and reuse.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why do some page paths show "(not set)"?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>(not set)</strong> appears when GA4 receives an event without a valid page path value — this can happen with app screen views, server-side events, or misconfigured tracking. Check your GA4 implementation to ensure the <code>page_location</code> parameter is being sent with every page view event, and verify that your Google Tag or gtag.js snippet is firing correctly across all pages.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I see both the page title and URL in the same report?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — in the <strong>Explore</strong> section you can add both <strong>Page title</strong> and <strong>Page path and screen class</strong> as dimensions in a free-form exploration, letting you see titles and URLs side by side. In the standard Pages and Screens report you can only display one primary dimension at a time.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does switching the dimension affect the metrics shown?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No — the metrics (views, users, sessions, engagement rate, etc.) stay the same. Switching the dimension only changes <em>how</em> the data is grouped and labelled. If multiple page titles map to a single URL path, you may see the numbers consolidate slightly when switching from title to path view, since what was previously split across titles is now grouped under a single URL.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -313,81 +331,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about running Gmail campaigns in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a Gmail campaign in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A Gmail campaign delivers ads directly inside users' Gmail inboxes. Ads appear at the top of the Promotions or Social tabs and expand into a full email-like experience when clicked. In Google Ads, Gmail is a channel within the <strong>Demand Gen</strong> campaign type, alongside YouTube and Google Discover.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why use Demand Gen to run Gmail campaigns?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Demand Gen replaced the legacy Gmail Ads (formerly Gmail Sponsored Promotions) and Discovery campaign types. It is now the <strong>only campaign type in Google Ads</strong> that includes Gmail as a delivery channel. By selecting "Let me choose" inside the ad group, you can restrict delivery to Gmail only and treat it as a standalone email-style campaign.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What ad formats work in Gmail campaigns?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Gmail supports <strong>image ads</strong> and <strong>product ads</strong> (for e-commerce) within Demand Gen. When a user clicks the collapsed ad in their inbox, it expands into a full-screen Gmail Ad unit — similar to an email — that can include images, a headline, a description, and a call-to-action button linking to your landing page.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I target the right audience in a Gmail campaign?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Demand Gen campaigns use Google's audience targeting, including <strong>custom audiences</strong> (people who searched for specific keywords or visited competitor sites), <strong>in-market audiences</strong>, <strong>affinity audiences</strong>, <strong>customer match</strong> lists, and <strong>lookalike segments</strong>. For Gmail specifically, customer match (uploading your email list) and competitor keyword custom audiences tend to perform very well.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What budget and bidding strategy should I use for Gmail campaigns?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>For Gmail-only campaigns, start with <strong>Maximise clicks</strong> or <strong>Maximise conversions</strong> bidding while the campaign gathers data. Gmail tends to have lower CPCs than YouTube or Discover. A daily budget of $10–$30 is sufficient to test performance. Once you have conversion data, switch to <strong>Target CPA</strong> for more efficient lead generation.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I measure the performance of my Gmail campaign?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>In Google Ads, navigate to your Demand Gen campaign and check the <strong>Segments</strong> column — you can break down performance by channel to see Gmail-specific clicks, impressions, and conversions. Key metrics to track are <strong>Gmail clicks</strong> (ad opens), <strong>click-to-open rate</strong>, <strong>CTR to site</strong>, and <strong>conversions</strong>. Connect your campaign to Google Analytics for deeper funnel reporting.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -445,21 +389,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about running Gmail campaigns in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a Gmail campaign in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A Gmail campaign delivers ads directly inside users' Gmail inboxes. Ads appear at the top of the Promotions or Social tabs and expand into a full email-like experience when clicked. In Google Ads, Gmail is a channel within the <strong>Demand Gen</strong> campaign type, alongside YouTube and Google Discover.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why use Demand Gen to run Gmail campaigns?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Demand Gen replaced the legacy Gmail Ads (formerly Gmail Sponsored Promotions) and Discovery campaign types. It is now the <strong>only campaign type in Google Ads</strong> that includes Gmail as a delivery channel. By selecting "Let me choose" inside the ad group, you can restrict delivery to Gmail only and treat it as a standalone email-style campaign.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What ad formats work in Gmail campaigns?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Gmail supports <strong>image ads</strong> and <strong>product ads</strong> (for e-commerce) within Demand Gen. When a user clicks the collapsed ad in their inbox, it expands into a full-screen Gmail Ad unit — similar to an email — that can include images, a headline, a description, and a call-to-action button linking to your landing page.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I target the right audience in a Gmail campaign?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Demand Gen campaigns use Google's audience targeting, including <strong>custom audiences</strong> (people who searched for specific keywords or visited competitor sites), <strong>in-market audiences</strong>, <strong>affinity audiences</strong>, <strong>customer match</strong> lists, and <strong>lookalike segments</strong>. For Gmail specifically, customer match (uploading your email list) and competitor keyword custom audiences tend to perform very well.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What budget and bidding strategy should I use for Gmail campaigns?</span>
+          </div>
+          <div class="faq-answer">
+            <p>For Gmail-only campaigns, start with <strong>Maximise clicks</strong> or <strong>Maximise conversions</strong> bidding while the campaign gathers data. Gmail tends to have lower CPCs than YouTube or Discover. A daily budget of $10–$30 is sufficient to test performance. Once you have conversion data, switch to <strong>Target CPA</strong> for more efficient lead generation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I measure the performance of my Gmail campaign?</span>
+          </div>
+          <div class="faq-answer">
+            <p>In Google Ads, navigate to your Demand Gen campaign and check the <strong>Segments</strong> column — you can break down performance by channel to see Gmail-specific clicks, impressions, and conversions. Key metrics to track are <strong>Gmail clicks</strong> (ad opens), <strong>click-to-open rate</strong>, <strong>CTR to site</strong>, and <strong>conversions</strong>. Connect your campaign to Google Analytics for deeper funnel reporting.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

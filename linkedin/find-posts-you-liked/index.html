@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -272,81 +290,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with LinkedIn?</h3>
           <p>Book a 90-minute training session and we'll build your LinkedIn content strategy together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about finding posts you've liked on LinkedIn.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Where do I find posts I've liked on LinkedIn?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Open your own <strong>profile</strong>, scroll down to the <strong>Activity</strong> section, click <strong>Show all posts</strong>, then use the <strong>More</strong> dropdown and choose <strong>Reactions</strong>. This view lists every post you've liked or reacted to, with the most recent at the top.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I see all my reactions, not just likes?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. The <strong>Reactions</strong> filter covers every reaction type — Like, Celebrate, Support, Love, Insightful, and Funny — not only the standard "Like". They all appear together in one chronological list.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does this work on the LinkedIn mobile app?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. The steps are identical on the mobile app and on desktop: tap your profile photo to open your profile, scroll to <strong>Activity</strong>, tap <strong>Show all posts</strong>, then filter by <strong>Reactions</strong>.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can other people see the posts I've reacted to?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Your reactions are generally <strong>public activity</strong> — when you react to a post it can appear in your activity feed and may be shown to your connections. The Reactions filter on your profile is simply the easiest way for <em>you</em> to scroll back through that history.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why can't I find a post I liked a long time ago?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The activity list loads in reverse chronological order, so older reactions require scrolling further down to load more results. If a post still doesn't appear, it may have been <strong>deleted by the author</strong> or the author may have removed or restricted it, which takes it out of your activity view.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I remove a reaction from a post?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Open the post from your Reactions list and tap the highlighted reaction button again (for example, click <strong>Like</strong> when it's already active). That toggles your reaction off and removes the post from your reaction history.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -404,21 +348,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about finding posts you've liked on LinkedIn.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where do I find posts I've liked on LinkedIn?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Open your own <strong>profile</strong>, scroll down to the <strong>Activity</strong> section, click <strong>Show all posts</strong>, then use the <strong>More</strong> dropdown and choose <strong>Reactions</strong>. This view lists every post you've liked or reacted to, with the most recent at the top.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I see all my reactions, not just likes?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. The <strong>Reactions</strong> filter covers every reaction type — Like, Celebrate, Support, Love, Insightful, and Funny — not only the standard "Like". They all appear together in one chronological list.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does this work on the LinkedIn mobile app?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. The steps are identical on the mobile app and on desktop: tap your profile photo to open your profile, scroll to <strong>Activity</strong>, tap <strong>Show all posts</strong>, then filter by <strong>Reactions</strong>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can other people see the posts I've reacted to?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Your reactions are generally <strong>public activity</strong> — when you react to a post it can appear in your activity feed and may be shown to your connections. The Reactions filter on your profile is simply the easiest way for <em>you</em> to scroll back through that history.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why can't I find a post I liked a long time ago?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The activity list loads in reverse chronological order, so older reactions require scrolling further down to load more results. If a post still doesn't appear, it may have been <strong>deleted by the author</strong> or the author may have removed or restricted it, which takes it out of your activity view.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I remove a reaction from a post?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Open the post from your Reactions list and tap the highlighted reaction button again (for example, click <strong>Like</strong> when it's already active). That toggles your reaction off and removes the post from your reaction history.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

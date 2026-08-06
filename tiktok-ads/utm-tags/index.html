@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -290,81 +308,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with TikTok Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your TikTok Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about adding UTM tracking to TikTok Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the Auto-attach UTM feature in TikTok Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Auto-attach</strong> is a TikTok Ads feature that automatically appends UTM parameters to your ad's destination URL every time a user clicks your ad. Instead of manually editing each URL, you enable a single toggle per ad and TikTok handles the parameter injection dynamically — ensuring accurate, consistent UTM data reaches your analytics tool without the risk of manual errors.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What UTM parameters does TikTok Ads Auto-attach add?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>TikTok's Auto-attach typically adds the following parameters: <code>utm_source=tiktok</code>, <code>utm_medium=paid</code>, and dynamic values for <code>utm_campaign</code> (campaign name), <code>utm_content</code> (ad group name), and <code>utm_term</code> (ad name). These are automatically populated with the actual names from your Ads Manager, so every click is tagged with the correct campaign context.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where can I see TikTok UTM data in Google Analytics?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>In <strong>Google Analytics 4</strong>, go to <strong>Reports › Acquisition › Traffic Acquisition</strong> and filter by <em>Session source / medium</em>. TikTok traffic tagged with UTM parameters will appear under <strong>tiktok / paid</strong>. You can further break down performance by campaign, ad group, and ad name using secondary dimensions or the Campaign reports section.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I manually add custom UTM parameters to TikTok Ads instead?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. If you prefer full control over your UTM structure, you can manually append parameters directly to the destination URL in the URL address bar — for example: <code>https://yoursite.com/?utm_source=tiktok&amp;utm_medium=paid&amp;utm_campaign=brand</code>. This is useful when you need custom values or want to use a specific naming convention. However, Auto-attach is faster and eliminates the risk of typos or inconsistent naming across ads.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does enabling UTM tracking affect my TikTok Ads performance?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Adding UTM parameters — whether via Auto-attach or manually — does <strong>not</strong> affect your ad delivery, bidding, or performance metrics within TikTok Ads Manager. UTM parameters are purely for attribution tracking on your own analytics platform and are invisible to TikTok's algorithm. Your final destination URL and landing page experience remain identical for users.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why isn't my TikTok UTM data showing up in Google Analytics?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>If UTM data isn't appearing in Google Analytics, check the following: (1) verify the <strong>GA4 tag is installed</strong> correctly on your landing page, (2) confirm Auto-attach is saved and the ad is active, (3) check that your landing page does not <strong>strip URL parameters</strong> on load (common in some CMS or redirect setups), and (4) allow up to 24 hours for data to appear in GA4 reports. You can also use the <strong>GA4 DebugView</strong> to test in real time.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -422,21 +366,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about adding UTM tracking to TikTok Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the Auto-attach UTM feature in TikTok Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Auto-attach</strong> is a TikTok Ads feature that automatically appends UTM parameters to your ad's destination URL every time a user clicks your ad. Instead of manually editing each URL, you enable a single toggle per ad and TikTok handles the parameter injection dynamically — ensuring accurate, consistent UTM data reaches your analytics tool without the risk of manual errors.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What UTM parameters does TikTok Ads Auto-attach add?</span>
+          </div>
+          <div class="faq-answer">
+            <p>TikTok's Auto-attach typically adds the following parameters: <code>utm_source=tiktok</code>, <code>utm_medium=paid</code>, and dynamic values for <code>utm_campaign</code> (campaign name), <code>utm_content</code> (ad group name), and <code>utm_term</code> (ad name). These are automatically populated with the actual names from your Ads Manager, so every click is tagged with the correct campaign context.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where can I see TikTok UTM data in Google Analytics?</span>
+          </div>
+          <div class="faq-answer">
+            <p>In <strong>Google Analytics 4</strong>, go to <strong>Reports › Acquisition › Traffic Acquisition</strong> and filter by <em>Session source / medium</em>. TikTok traffic tagged with UTM parameters will appear under <strong>tiktok / paid</strong>. You can further break down performance by campaign, ad group, and ad name using secondary dimensions or the Campaign reports section.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I manually add custom UTM parameters to TikTok Ads instead?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. If you prefer full control over your UTM structure, you can manually append parameters directly to the destination URL in the URL address bar — for example: <code>https://yoursite.com/?utm_source=tiktok&amp;utm_medium=paid&amp;utm_campaign=brand</code>. This is useful when you need custom values or want to use a specific naming convention. However, Auto-attach is faster and eliminates the risk of typos or inconsistent naming across ads.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does enabling UTM tracking affect my TikTok Ads performance?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Adding UTM parameters — whether via Auto-attach or manually — does <strong>not</strong> affect your ad delivery, bidding, or performance metrics within TikTok Ads Manager. UTM parameters are purely for attribution tracking on your own analytics platform and are invisible to TikTok's algorithm. Your final destination URL and landing page experience remain identical for users.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why isn't my TikTok UTM data showing up in Google Analytics?</span>
+          </div>
+          <div class="faq-answer">
+            <p>If UTM data isn't appearing in Google Analytics, check the following: (1) verify the <strong>GA4 tag is installed</strong> correctly on your landing page, (2) confirm Auto-attach is saved and the ad is active, (3) check that your landing page does not <strong>strip URL parameters</strong> on load (common in some CMS or redirect setups), and (4) allow up to 24 hours for data to appear in GA4 reports. You can also use the <strong>GA4 DebugView</strong> to test in real time.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

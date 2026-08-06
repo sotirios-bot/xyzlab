@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -289,81 +307,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with your Wix site?</h3>
           <p>Book a 90-minute training session and we'll set up your Wix tracking and Meta Ads together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about installing the Meta Pixel on a Wix website.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the Meta Pixel and why do I need it on my Wix site?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The Meta Pixel is a snippet of code (or in Wix's case, a native integration) that tracks visitor actions on your website — such as page views, button clicks, purchases, and form submissions. It sends this data back to Meta Ads so you can measure the performance of your Facebook and Instagram ad campaigns, build custom audiences for retargeting, and enable conversion-optimised bidding strategies.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between the Meta Pixel and the Conversions API (CAPI)?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>Meta Pixel</strong> fires in the browser (client-side), which means it can be blocked by ad blockers or browser privacy settings. The <strong>Conversions API (CAPI)</strong> sends event data directly from Wix's server to Meta, bypassing the browser entirely. Using both together gives you more complete and accurate tracking. Wix's native integration connects both simultaneously when you use the Marketing Integrations method.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Which events does Wix track automatically after connecting the Meta Pixel?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>After connecting via Marketing Integrations, Wix automatically fires standard Meta events including <strong>PageView</strong>, <strong>ViewContent</strong>, <strong>AddToCart</strong>, <strong>InitiateCheckout</strong>, and <strong>Purchase</strong> for ecommerce stores. Lead and contact form submissions can also be tracked. You do not need to add any custom code — Wix handles the event mapping based on your site's activity.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I verify that the Meta Pixel is firing correctly on my Wix site?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Install the <strong>Meta Pixel Helper</strong> Chrome extension and visit your live Wix website. The extension will show you which Pixel is firing and which events are being triggered on each page. You can also check the <strong>Events Manager</strong> in Meta Business Suite — look for recent activity on your Pixel to confirm events are coming through correctly after connecting via Wix.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need a Meta Business Manager account to connect the Pixel to Wix?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. The Pixel must be created inside a <strong>Meta Business Portfolio</strong> (formerly Business Manager) and linked to an ad account. When you authorise Wix during the connection process, you will need to log in with a Facebook account that has admin access to the Business Portfolio containing your Pixel. If your Pixel is only under a personal ad account, you may need to migrate it to a Business Portfolio first.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Should I use the Wix native integration or Google Tag Manager to install the Meta Pixel?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>Wix native integration</strong> is the simplest option — it requires no code, automatically includes CAPI, and maps standard ecommerce events out of the box. Use <strong>Google Tag Manager</strong> instead if you need custom event tracking, want a single tag management layer for multiple tools, or need more granular control over what fires and when. For most Wix users, the native integration is the fastest and most reliable starting point.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -421,21 +365,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about installing the Meta Pixel on a Wix website.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the Meta Pixel and why do I need it on my Wix site?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The Meta Pixel is a snippet of code (or in Wix's case, a native integration) that tracks visitor actions on your website — such as page views, button clicks, purchases, and form submissions. It sends this data back to Meta Ads so you can measure the performance of your Facebook and Instagram ad campaigns, build custom audiences for retargeting, and enable conversion-optimised bidding strategies.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between the Meta Pixel and the Conversions API (CAPI)?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>Meta Pixel</strong> fires in the browser (client-side), which means it can be blocked by ad blockers or browser privacy settings. The <strong>Conversions API (CAPI)</strong> sends event data directly from Wix's server to Meta, bypassing the browser entirely. Using both together gives you more complete and accurate tracking. Wix's native integration connects both simultaneously when you use the Marketing Integrations method.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Which events does Wix track automatically after connecting the Meta Pixel?</span>
+          </div>
+          <div class="faq-answer">
+            <p>After connecting via Marketing Integrations, Wix automatically fires standard Meta events including <strong>PageView</strong>, <strong>ViewContent</strong>, <strong>AddToCart</strong>, <strong>InitiateCheckout</strong>, and <strong>Purchase</strong> for ecommerce stores. Lead and contact form submissions can also be tracked. You do not need to add any custom code — Wix handles the event mapping based on your site's activity.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I verify that the Meta Pixel is firing correctly on my Wix site?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Install the <strong>Meta Pixel Helper</strong> Chrome extension and visit your live Wix website. The extension will show you which Pixel is firing and which events are being triggered on each page. You can also check the <strong>Events Manager</strong> in Meta Business Suite — look for recent activity on your Pixel to confirm events are coming through correctly after connecting via Wix.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a Meta Business Manager account to connect the Pixel to Wix?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. The Pixel must be created inside a <strong>Meta Business Portfolio</strong> (formerly Business Manager) and linked to an ad account. When you authorise Wix during the connection process, you will need to log in with a Facebook account that has admin access to the Business Portfolio containing your Pixel. If your Pixel is only under a personal ad account, you may need to migrate it to a Business Portfolio first.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Should I use the Wix native integration or Google Tag Manager to install the Meta Pixel?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>Wix native integration</strong> is the simplest option — it requires no code, automatically includes CAPI, and maps standard ecommerce events out of the box. Use <strong>Google Tag Manager</strong> instead if you need custom event tracking, want a single tag management layer for multiple tools, or need more granular control over what fires and when. For most Wix users, the native integration is the fastest and most reliable starting point.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

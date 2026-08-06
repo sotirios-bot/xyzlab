@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -304,81 +322,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with LinkedIn Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your LinkedIn Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about giving users access to LinkedIn Campaign Manager.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the difference between Business Manager access and Paid Media Admin access?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>LinkedIn Business Manager</strong> is the central hub for managing ad accounts, people, and assets across your organisation. Inviting someone through Business Manager gives them access to your Campaign Manager ad account directly. <strong>Paid Media Admin</strong> is a role set at the LinkedIn Page level — it allows the person to create Sponsored Content and boosted posts that are associated with your Page, which is a slightly different permission model focused on page-linked campaigns.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I add an agency or freelancer to LinkedIn Campaign Manager?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. To give an external agency or freelancer access, invite them via <strong>LinkedIn Business Manager</strong> using their email address. Assign them the appropriate role — typically <strong>Campaign Manager</strong> for full ad management access. They will receive an email invite and must accept to gain access. If you don't have Business Manager set up, you can alternatively add them as a Paid Media Admin through your LinkedIn Page settings, though this grants a more limited scope of access.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What roles are available in LinkedIn Campaign Manager?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>LinkedIn Campaign Manager offers several access roles: <strong>Account Manager</strong> (full access to create, edit, and manage campaigns), <strong>Campaign Manager</strong> (can manage campaigns but has limited account settings access), <strong>Creative Manager</strong> (can manage creatives only), <strong>Viewer</strong> (read-only access to reporting), and <strong>Billing Admin</strong> (manages payment methods and billing). Choose the role that matches the level of access your collaborator needs.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does the person I invite need a LinkedIn account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. To access LinkedIn Campaign Manager, the invited person must have an active <strong>LinkedIn personal profile</strong>. For Business Manager invitations, LinkedIn will send an email to the address you enter — if the person does not yet have a LinkedIn account, they will be prompted to create one before accepting the invitation.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I remove a user from LinkedIn Campaign Manager?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8594;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>To remove a user via Business Manager, go to <strong>business.linkedin.com/marketing-solutions/business-manager</strong>, navigate to <strong>People</strong>, find the user and select <strong>Remove</strong>. To remove a Paid Media Admin via your LinkedIn Page, go to <strong>Page Settings › Manage Admins › Paid media admins</strong> and remove them from the list. Always revoke access promptly when an agency relationship ends.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why can't I find the person when adding a Paid Media Admin?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>To add someone as a Paid Media Admin through your LinkedIn Page, the person must be a <strong>1st-degree connection</strong> on LinkedIn — you need to be connected with them on the platform first. If they don't appear in the search, send them a connection request and wait for them to accept before trying again. Alternatively, use the Business Manager route which works via email address and does not require an existing connection.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -436,21 +380,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about giving users access to LinkedIn Campaign Manager.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Business Manager access and Paid Media Admin access?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>LinkedIn Business Manager</strong> is the central hub for managing ad accounts, people, and assets across your organisation. Inviting someone through Business Manager gives them access to your Campaign Manager ad account directly. <strong>Paid Media Admin</strong> is a role set at the LinkedIn Page level — it allows the person to create Sponsored Content and boosted posts that are associated with your Page, which is a slightly different permission model focused on page-linked campaigns.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I add an agency or freelancer to LinkedIn Campaign Manager?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. To give an external agency or freelancer access, invite them via <strong>LinkedIn Business Manager</strong> using their email address. Assign them the appropriate role — typically <strong>Campaign Manager</strong> for full ad management access. They will receive an email invite and must accept to gain access. If you don't have Business Manager set up, you can alternatively add them as a Paid Media Admin through your LinkedIn Page settings, though this grants a more limited scope of access.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What roles are available in LinkedIn Campaign Manager?</span>
+          </div>
+          <div class="faq-answer">
+            <p>LinkedIn Campaign Manager offers several access roles: <strong>Account Manager</strong> (full access to create, edit, and manage campaigns), <strong>Campaign Manager</strong> (can manage campaigns but has limited account settings access), <strong>Creative Manager</strong> (can manage creatives only), <strong>Viewer</strong> (read-only access to reporting), and <strong>Billing Admin</strong> (manages payment methods and billing). Choose the role that matches the level of access your collaborator needs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does the person I invite need a LinkedIn account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. To access LinkedIn Campaign Manager, the invited person must have an active <strong>LinkedIn personal profile</strong>. For Business Manager invitations, LinkedIn will send an email to the address you enter — if the person does not yet have a LinkedIn account, they will be prompted to create one before accepting the invitation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I remove a user from LinkedIn Campaign Manager?</span>
+          </div>
+          <div class="faq-answer">
+            <p>To remove a user via Business Manager, go to <strong>business.linkedin.com/marketing-solutions/business-manager</strong>, navigate to <strong>People</strong>, find the user and select <strong>Remove</strong>. To remove a Paid Media Admin via your LinkedIn Page, go to <strong>Page Settings › Manage Admins › Paid media admins</strong> and remove them from the list. Always revoke access promptly when an agency relationship ends.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why can't I find the person when adding a Paid Media Admin?</span>
+          </div>
+          <div class="faq-answer">
+            <p>To add someone as a Paid Media Admin through your LinkedIn Page, the person must be a <strong>1st-degree connection</strong> on LinkedIn — you need to be connected with them on the platform first. If they don't appear in the search, send them a connection request and wait for them to accept before trying again. Alternatively, use the Business Manager route which works via email address and does not require an existing connection.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

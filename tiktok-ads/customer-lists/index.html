@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -306,81 +324,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with TikTok Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your TikTok Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about uploading Customer Lists to TikTok Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What format should my customer list be in for TikTok Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>TikTok Ads accepts <strong>CSV or TXT</strong> files for customer list uploads. The recommended approach is to use TikTok's official upload template, which ensures your data columns (such as email, phone, IDFA/GAID) are formatted correctly. Email addresses are the most commonly used identifier and typically yield the highest match rates.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How many contacts do I need to upload a customer list to TikTok Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>TikTok requires a minimum of <strong>1,000 email addresses</strong> in your upload file to create a Customer File audience. However, for effective ad delivery you typically need at least <strong>1,000 matched users</strong> after TikTok processes the file. If your matched audience falls below this threshold, enable <strong>Audience Enhancement</strong> to let TikTok expand the audience with similar users.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is Audience Enhancement in TikTok Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Audience Enhancement</strong> is a TikTok feature that automatically expands your uploaded customer audience by finding additional users who share similar characteristics. It is particularly useful when your customer list produces a matched audience smaller than 5,000 people, which would otherwise limit ad delivery. Toggle it on during the audience creation step to unlock better reach without changing your targeting intent.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How does TikTok match my customer list to users?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>TikTok hashes your uploaded identifiers (email addresses, phone numbers, etc.) locally before transmitting them to its servers. The hashed values are then compared against TikTok's user database to find matches. Your raw data is never stored by TikTok. Match rates typically range from 20% to 50% depending on the quality of your data and how many of your contacts have TikTok accounts.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I create a Lookalike Audience from my Customer List on TikTok Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Once your Custom Audience is created and has enough matched users, you can use it as a <strong>source audience</strong> for a TikTok Lookalike Audience. Go to <strong>Audience Manager › Create Audience › Lookalike Audience</strong> and select your customer list as the source. TikTok will identify new users on the platform who closely resemble your existing customers, helping you scale to high-quality cold audiences.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How long does it take for a TikTok Ads Customer Audience to be ready?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>TikTok typically processes a customer list upload within <strong>30 minutes to a few hours</strong>, though it can occasionally take up to 24 hours for large files. The audience will show a status of <em>Populating</em> during processing and will switch to <em>Ready</em> once it can be used in campaigns. You will receive a notification in Ads Manager when the audience is available.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -438,21 +382,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about uploading Customer Lists to TikTok Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What format should my customer list be in for TikTok Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>TikTok Ads accepts <strong>CSV or TXT</strong> files for customer list uploads. The recommended approach is to use TikTok's official upload template, which ensures your data columns (such as email, phone, IDFA/GAID) are formatted correctly. Email addresses are the most commonly used identifier and typically yield the highest match rates.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How many contacts do I need to upload a customer list to TikTok Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>TikTok requires a minimum of <strong>1,000 email addresses</strong> in your upload file to create a Customer File audience. However, for effective ad delivery you typically need at least <strong>1,000 matched users</strong> after TikTok processes the file. If your matched audience falls below this threshold, enable <strong>Audience Enhancement</strong> to let TikTok expand the audience with similar users.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is Audience Enhancement in TikTok Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Audience Enhancement</strong> is a TikTok feature that automatically expands your uploaded customer audience by finding additional users who share similar characteristics. It is particularly useful when your customer list produces a matched audience smaller than 5,000 people, which would otherwise limit ad delivery. Toggle it on during the audience creation step to unlock better reach without changing your targeting intent.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How does TikTok match my customer list to users?</span>
+          </div>
+          <div class="faq-answer">
+            <p>TikTok hashes your uploaded identifiers (email addresses, phone numbers, etc.) locally before transmitting them to its servers. The hashed values are then compared against TikTok's user database to find matches. Your raw data is never stored by TikTok. Match rates typically range from 20% to 50% depending on the quality of your data and how many of your contacts have TikTok accounts.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I create a Lookalike Audience from my Customer List on TikTok Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Once your Custom Audience is created and has enough matched users, you can use it as a <strong>source audience</strong> for a TikTok Lookalike Audience. Go to <strong>Audience Manager › Create Audience › Lookalike Audience</strong> and select your customer list as the source. TikTok will identify new users on the platform who closely resemble your existing customers, helping you scale to high-quality cold audiences.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How long does it take for a TikTok Ads Customer Audience to be ready?</span>
+          </div>
+          <div class="faq-answer">
+            <p>TikTok typically processes a customer list upload within <strong>30 minutes to a few hours</strong>, though it can occasionally take up to 24 hours for large files. The audience will show a status of <em>Populating</em> during processing and will switch to <em>Ready</em> once it can be used in campaigns. You will receive a notification in Ads Manager when the audience is available.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

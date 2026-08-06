@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -272,81 +290,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Meta Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about change history in Meta Ads Manager.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What does change history show in Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Change history is a <strong>full audit log</strong> of every edit made to a campaign, ad set, or ad. It records the <strong>date and time</strong> of the change, the <strong>user account</strong> that made it, and the <strong>before and after values</strong> for each modified field — such as budget changes, bid strategy updates, audience edits, ad creative swaps, and status changes (paused/active).</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How far back does Meta Ads change history go?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Meta Ads change history typically retains data for up to <strong>90 days</strong>. Changes older than that are no longer visible in the history panel. For this reason, it is good practice to document significant campaign changes (such as budget restructures or creative refreshes) in a separate log if you need a long-term record.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I undo a change using Meta Ads change history?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Meta Ads change history is <strong>read-only</strong> — it shows you what was changed but does not offer an undo or revert button. To reverse a change, you need to manually edit the campaign, ad set, or ad back to its previous values. The history log tells you exactly what those previous values were, making it straightforward to restore the original settings.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I see who made a specific change in Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Each entry in the change history panel shows the <strong>name of the user or system</strong> that made the edit. This is especially useful in team or agency accounts where multiple people have access — you can quickly identify which team member paused a campaign, changed a budget, or modified an audience, and when they did it.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I filter or search the change history?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Within the change history panel you can <strong>filter by date range</strong> to narrow down the entries to a specific period. You can also scroll through the log chronologically. For a more comprehensive view of changes across your entire ad account (not just a single item), use the <strong>Account History</strong> option available in the Ads Manager navigation, which aggregates all changes account-wide.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does Meta Ads track automated or system-generated changes in history?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Automated changes — such as those made by <strong>Meta's Advantage campaign budget optimisation</strong>, automated rules, or API integrations — are also logged in change history and attributed to the system or integration that triggered them. This makes it possible to distinguish between manual edits made by your team and automatic adjustments made by Meta's algorithms or third-party tools.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -404,21 +348,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about change history in Meta Ads Manager.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What does change history show in Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Change history is a <strong>full audit log</strong> of every edit made to a campaign, ad set, or ad. It records the <strong>date and time</strong> of the change, the <strong>user account</strong> that made it, and the <strong>before and after values</strong> for each modified field — such as budget changes, bid strategy updates, audience edits, ad creative swaps, and status changes (paused/active).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How far back does Meta Ads change history go?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Meta Ads change history typically retains data for up to <strong>90 days</strong>. Changes older than that are no longer visible in the history panel. For this reason, it is good practice to document significant campaign changes (such as budget restructures or creative refreshes) in a separate log if you need a long-term record.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I undo a change using Meta Ads change history?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Meta Ads change history is <strong>read-only</strong> — it shows you what was changed but does not offer an undo or revert button. To reverse a change, you need to manually edit the campaign, ad set, or ad back to its previous values. The history log tells you exactly what those previous values were, making it straightforward to restore the original settings.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I see who made a specific change in Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Each entry in the change history panel shows the <strong>name of the user or system</strong> that made the edit. This is especially useful in team or agency accounts where multiple people have access — you can quickly identify which team member paused a campaign, changed a budget, or modified an audience, and when they did it.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I filter or search the change history?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Within the change history panel you can <strong>filter by date range</strong> to narrow down the entries to a specific period. You can also scroll through the log chronologically. For a more comprehensive view of changes across your entire ad account (not just a single item), use the <strong>Account History</strong> option available in the Ads Manager navigation, which aggregates all changes account-wide.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does Meta Ads track automated or system-generated changes in history?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Automated changes — such as those made by <strong>Meta's Advantage campaign budget optimisation</strong>, automated rules, or API integrations — are also logged in change history and attributed to the system or integration that triggered them. This makes it possible to distinguish between manual edits made by your team and automatic adjustments made by Meta's algorithms or third-party tools.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

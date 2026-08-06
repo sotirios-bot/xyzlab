@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -325,81 +343,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Meta Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about Meta Audience Network and placement controls.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is Meta Audience Network?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Meta Audience Network is a collection of third-party mobile apps, games, and websites where Meta can show your ads outside of Facebook and Instagram. Publishers in the Audience Network integrate Meta's ad SDK, and Meta uses its targeting data to show relevant ads to users across those external apps. While it can increase reach at lower CPMs, the quality and viewability of Audience Network traffic is generally considered lower than Facebook and Instagram placements.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why would I want to exclude Audience Network?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Common reasons to exclude Audience Network include: lower-quality traffic with higher bounce rates, accidental clicks in mobile apps (especially games), difficulty verifying where your ads actually appeared, and brand safety concerns about appearing on unknown third-party apps. If you're running direct-response campaigns and tracking conversions carefully, excluding Audience Network often improves your cost per result from higher-intent placements.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will excluding Audience Network increase my CPM?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — Audience Network typically has lower CPMs than Facebook and Instagram because it serves ads on cheaper third-party inventory. Removing it from your placements reduces your available impression volume, which can push your CPM slightly higher on the remaining placements. However, many advertisers find that the improvement in traffic quality and conversion rate more than offsets the higher CPM, resulting in a lower overall cost per conversion.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does this setting apply to all campaigns or just one ad set?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Placement controls are set at the <strong>ad set level</strong>, so you need to apply them individually to each ad set. There is no account-level setting to exclude Audience Network globally. If you have multiple ad sets across multiple campaigns, you will need to edit each one separately. When creating new ad sets, remember to add the exclusion before publishing.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between Advantage+ placements and Manual placements?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Advantage+ placements</strong> (formerly Automatic Placements) lets Meta's algorithm choose the best placements to show your ads for the lowest cost — including Audience Network. <strong>Manual placements</strong> lets you hand-pick exactly which platforms and placements are eligible. Using Placement controls within Advantage+ placements is a middle ground: you keep Meta's optimisation but exclude specific placement types like Audience Network apps and sites.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I exclude specific apps or websites within Audience Network instead of all of them?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Meta offers a <strong>Block list</strong> feature in Business Settings where you can upload a list of specific domains and app bundle IDs you want to exclude from Audience Network. This is useful if you want to keep Audience Network active but prevent your ads from showing on specific low-quality or brand-unsafe publishers. Go to <strong>Business Settings &gt; Brand safety &gt; Blocklists</strong> to set this up.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -457,21 +401,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about Meta Audience Network and placement controls.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is Meta Audience Network?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Meta Audience Network is a collection of third-party mobile apps, games, and websites where Meta can show your ads outside of Facebook and Instagram. Publishers in the Audience Network integrate Meta's ad SDK, and Meta uses its targeting data to show relevant ads to users across those external apps. While it can increase reach at lower CPMs, the quality and viewability of Audience Network traffic is generally considered lower than Facebook and Instagram placements.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why would I want to exclude Audience Network?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Common reasons to exclude Audience Network include: lower-quality traffic with higher bounce rates, accidental clicks in mobile apps (especially games), difficulty verifying where your ads actually appeared, and brand safety concerns about appearing on unknown third-party apps. If you're running direct-response campaigns and tracking conversions carefully, excluding Audience Network often improves your cost per result from higher-intent placements.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will excluding Audience Network increase my CPM?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — Audience Network typically has lower CPMs than Facebook and Instagram because it serves ads on cheaper third-party inventory. Removing it from your placements reduces your available impression volume, which can push your CPM slightly higher on the remaining placements. However, many advertisers find that the improvement in traffic quality and conversion rate more than offsets the higher CPM, resulting in a lower overall cost per conversion.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does this setting apply to all campaigns or just one ad set?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Placement controls are set at the <strong>ad set level</strong>, so you need to apply them individually to each ad set. There is no account-level setting to exclude Audience Network globally. If you have multiple ad sets across multiple campaigns, you will need to edit each one separately. When creating new ad sets, remember to add the exclusion before publishing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Advantage+ placements and Manual placements?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Advantage+ placements</strong> (formerly Automatic Placements) lets Meta's algorithm choose the best placements to show your ads for the lowest cost — including Audience Network. <strong>Manual placements</strong> lets you hand-pick exactly which platforms and placements are eligible. Using Placement controls within Advantage+ placements is a middle ground: you keep Meta's optimisation but exclude specific placement types like Audience Network apps and sites.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I exclude specific apps or websites within Audience Network instead of all of them?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Meta offers a <strong>Block list</strong> feature in Business Settings where you can upload a list of specific domains and app bundle IDs you want to exclude from Audience Network. This is useful if you want to keep Audience Network active but prevent your ads from showing on specific low-quality or brand-unsafe publishers. Go to <strong>Business Settings &gt; Brand safety &gt; Blocklists</strong> to set this up.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

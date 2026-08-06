@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -283,81 +301,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll set up your Meta Ads campaigns together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about connecting WhatsApp to Meta Ads via Business Manager.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Why should I connect WhatsApp to Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Connecting WhatsApp to Meta Ads lets you run <strong>click-to-WhatsApp ads</strong> on Facebook and Instagram. When a user clicks your ad, a WhatsApp conversation opens instantly — making it ideal for lead generation, customer support, and sales in markets where WhatsApp is the primary communication channel. These ads often have higher engagement rates than landing page campaigns because the barrier to starting a conversation is very low.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I connect a personal WhatsApp number, or does it need to be WhatsApp Business?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>You can connect either a <strong>personal WhatsApp</strong> number or a <strong>WhatsApp Business</strong> number to Meta Business Manager. However, using the <strong>WhatsApp Business app</strong> or <strong>WhatsApp Business API</strong> is strongly recommended — it gives you a business profile, automated greeting messages, quick replies, and better scalability for handling leads from ads at volume.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens to my existing WhatsApp account when I connect it to Business Manager?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Connecting your WhatsApp number to Business Manager does <strong>not</strong> affect your ability to use WhatsApp normally. Your messages, contacts, and chat history remain intact. The connection simply grants Meta Ads permission to use that number as a <strong>call-to-action destination</strong> in your ad campaigns — users who click your ads will open a chat with that number.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I create a click-to-WhatsApp ad after connecting my number?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>In <strong>Meta Ads Manager</strong>, create a new campaign and select the <strong>Engagement</strong> or <strong>Leads</strong> objective. At the ad set level, choose <strong>Messaging apps</strong> as the conversion location, then select <strong>WhatsApp</strong>. At the ad level, your connected WhatsApp number will appear as a destination. You can also set a pre-filled opening message that automatically populates when a user starts a chat from your ad.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I connect multiple WhatsApp numbers to one Business Manager?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You can add <strong>multiple WhatsApp accounts</strong> to a single Business Manager — useful if you run ads for different brands, locations, or markets that each have their own WhatsApp number. Each number goes through the same verification process. When creating an ad, you simply select which WhatsApp number to use as the destination.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I track how many conversations my ads generated?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Meta Ads reports <strong>messaging conversations started</strong> as a metric for click-to-WhatsApp campaigns, so you can see how many users initiated a chat from each ad. For deeper conversion tracking — such as knowing which conversations turned into sales — you can set up the <strong>Meta pixel</strong> or <strong>Conversions API</strong> to track downstream events on your website, or use a CRM integration to connect ad leads to outcomes.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -415,21 +359,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about connecting WhatsApp to Meta Ads via Business Manager.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why should I connect WhatsApp to Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Connecting WhatsApp to Meta Ads lets you run <strong>click-to-WhatsApp ads</strong> on Facebook and Instagram. When a user clicks your ad, a WhatsApp conversation opens instantly — making it ideal for lead generation, customer support, and sales in markets where WhatsApp is the primary communication channel. These ads often have higher engagement rates than landing page campaigns because the barrier to starting a conversation is very low.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I connect a personal WhatsApp number, or does it need to be WhatsApp Business?</span>
+          </div>
+          <div class="faq-answer">
+            <p>You can connect either a <strong>personal WhatsApp</strong> number or a <strong>WhatsApp Business</strong> number to Meta Business Manager. However, using the <strong>WhatsApp Business app</strong> or <strong>WhatsApp Business API</strong> is strongly recommended — it gives you a business profile, automated greeting messages, quick replies, and better scalability for handling leads from ads at volume.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens to my existing WhatsApp account when I connect it to Business Manager?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Connecting your WhatsApp number to Business Manager does <strong>not</strong> affect your ability to use WhatsApp normally. Your messages, contacts, and chat history remain intact. The connection simply grants Meta Ads permission to use that number as a <strong>call-to-action destination</strong> in your ad campaigns — users who click your ads will open a chat with that number.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I create a click-to-WhatsApp ad after connecting my number?</span>
+          </div>
+          <div class="faq-answer">
+            <p>In <strong>Meta Ads Manager</strong>, create a new campaign and select the <strong>Engagement</strong> or <strong>Leads</strong> objective. At the ad set level, choose <strong>Messaging apps</strong> as the conversion location, then select <strong>WhatsApp</strong>. At the ad level, your connected WhatsApp number will appear as a destination. You can also set a pre-filled opening message that automatically populates when a user starts a chat from your ad.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I connect multiple WhatsApp numbers to one Business Manager?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can add <strong>multiple WhatsApp accounts</strong> to a single Business Manager — useful if you run ads for different brands, locations, or markets that each have their own WhatsApp number. Each number goes through the same verification process. When creating an ad, you simply select which WhatsApp number to use as the destination.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I track how many conversations my ads generated?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Meta Ads reports <strong>messaging conversations started</strong> as a metric for click-to-WhatsApp campaigns, so you can see how many users initiated a chat from each ad. For deeper conversion tracking — such as knowing which conversations turned into sales — you can set up the <strong>Meta pixel</strong> or <strong>Conversions API</strong> to track downstream events on your website, or use a CRM integration to connect ad leads to outcomes.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

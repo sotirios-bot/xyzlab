@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -302,81 +320,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about location extensions (location assets) in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What are location extensions in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Location extensions (now called <strong>location assets</strong> in Google Ads) display your business address, phone number, and a map pin beneath your ads. They help local businesses drive foot traffic by making it easy for nearby searchers to find and navigate to your location. Location assets are shown at Google's discretion based on relevance and ad rank.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do location extensions cost extra?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Location assets are <strong>free to add</strong> — you only pay when someone clicks on your ad as usual. However, if a user clicks the directions or map link within the location asset (on mobile), that click is also charged at the same CPC as a regular ad click.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why aren't my location extensions showing on my ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google shows location assets when they are likely to improve ad performance and the ad ranks high enough. Common reasons they don't appear: your <strong>ad rank is too low</strong>, the search query isn't geographically relevant, the user's location doesn't match your targeted area, or there is a <strong>policy issue</strong> with your Business Profile. Make sure your Business Profile is verified and in good standing.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I add location extensions at the campaign or ad group level?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Location assets can be added at the <strong>account, campaign, or ad group level</strong>. Account-level assets apply across all campaigns by default. If you have multiple locations or want to show different addresses for different campaigns, apply the asset at the campaign level to override the account setting.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between location extensions and affiliate location extensions?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Location extensions</strong> display your own business's address from your Google Business Profile. <strong>Affiliate location extensions</strong> (affiliate location assets) are used by brands or manufacturers to display the addresses of third-party retailers that carry their products — for example, a brand showing nearby stores where customers can buy their product.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need a verified Google Business Profile to use location extensions?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Your <strong>Google Business Profile must be verified</strong> before Google will display it in your ads. An unverified or suspended profile cannot be linked as a location asset. If you haven't verified your profile yet, complete the verification process in Google Business Profile Manager before setting up location extensions in Google Ads.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -434,21 +378,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about location extensions (location assets) in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What are location extensions in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Location extensions (now called <strong>location assets</strong> in Google Ads) display your business address, phone number, and a map pin beneath your ads. They help local businesses drive foot traffic by making it easy for nearby searchers to find and navigate to your location. Location assets are shown at Google's discretion based on relevance and ad rank.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do location extensions cost extra?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Location assets are <strong>free to add</strong> — you only pay when someone clicks on your ad as usual. However, if a user clicks the directions or map link within the location asset (on mobile), that click is also charged at the same CPC as a regular ad click.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why aren't my location extensions showing on my ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google shows location assets when they are likely to improve ad performance and the ad ranks high enough. Common reasons they don't appear: your <strong>ad rank is too low</strong>, the search query isn't geographically relevant, the user's location doesn't match your targeted area, or there is a <strong>policy issue</strong> with your Business Profile. Make sure your Business Profile is verified and in good standing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I add location extensions at the campaign or ad group level?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Location assets can be added at the <strong>account, campaign, or ad group level</strong>. Account-level assets apply across all campaigns by default. If you have multiple locations or want to show different addresses for different campaigns, apply the asset at the campaign level to override the account setting.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between location extensions and affiliate location extensions?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Location extensions</strong> display your own business's address from your Google Business Profile. <strong>Affiliate location extensions</strong> (affiliate location assets) are used by brands or manufacturers to display the addresses of third-party retailers that carry their products — for example, a brand showing nearby stores where customers can buy their product.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a verified Google Business Profile to use location extensions?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Your <strong>Google Business Profile must be verified</strong> before Google will display it in your ads. An unverified or suspended profile cannot be linked as a location asset. If you haven't verified your profile yet, complete the verification process in Google Business Profile Manager before setting up location extensions in Google Ads.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -219,6 +219,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -291,81 +309,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Search Console?</h3>
           <p>Book a 90-minute training session and we'll set up and optimise your GSC account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about adding users and managing access in Google Search Console.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the difference between Full and Restricted access in Google Search Console?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Full</strong> access gives the user the ability to view all data, use all available tools (including the URL Inspection tool and Change of Address), and manage other users — including adding and removing them. <strong>Restricted</strong> access lets the user view most performance and indexing reports and use basic tools, but they cannot manage users, submit reconsideration requests, or use some advanced features. For agencies or contractors who only need to read data and pull reports, Restricted access is usually sufficient.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to be an Owner to add users in Google Search Console?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Only users with <strong>Owner</strong> level access can add, remove, or change permission levels for other users. In GSC there are two types of Owner: <strong>Verified owner</strong> (someone who completed the property verification process) and <strong>Delegated owner</strong> (someone granted owner-level access by a verified owner). If you only have Full or Restricted user access, the Users and permissions panel will be visible but the Add User button will not be available to you.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does the person I invite need to accept the invitation before they can access GSC?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Unlike some other platforms, Google Search Console grants access immediately when you add a user — there is no invitation email that requires acceptance. The user simply needs to log in to search.google.com/search-console with the Google account email address you used, and the property will appear in their property list right away. They will receive a notification email informing them they have been granted access.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I add someone who does not have a Gmail address to Google Search Console?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, as long as the email address is linked to a Google account. Non-Gmail addresses (e.g. a work email like <code>name@agency.com</code>) can be used to sign in to Google if the person has created a Google account with that email address. If they have not, they will need to create a Google account at <a href="https://accounts.google.com/signup" target="_blank" rel="noopener">accounts.google.com/signup</a> using their existing email, then you can add that email to GSC.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I remove a user from Google Search Console?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Go to <strong>Settings &gt; Users and permissions</strong>, find the user you want to remove, click the three-dot menu (⋮) next to their name, and select <strong>Remove access</strong>. Their access is revoked immediately. Note that you can remove users and delegated owners, but you cannot remove a verified owner — verified owners must revoke their own verification from the property settings.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is there a limit to how many users I can add to a Google Search Console property?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google does not publicly document a strict limit on the number of users per property, and in practice most teams add as many users as they need without hitting a cap. However, as a general best practice, only give access to people who genuinely need it and remove users when they no longer need access — especially for agencies or contractors once a project ends — to keep your account secure.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -423,21 +367,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about adding users and managing access in Google Search Console.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Full and Restricted access in Google Search Console?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Full</strong> access gives the user the ability to view all data, use all available tools (including the URL Inspection tool and Change of Address), and manage other users — including adding and removing them. <strong>Restricted</strong> access lets the user view most performance and indexing reports and use basic tools, but they cannot manage users, submit reconsideration requests, or use some advanced features. For agencies or contractors who only need to read data and pull reports, Restricted access is usually sufficient.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to be an Owner to add users in Google Search Console?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Only users with <strong>Owner</strong> level access can add, remove, or change permission levels for other users. In GSC there are two types of Owner: <strong>Verified owner</strong> (someone who completed the property verification process) and <strong>Delegated owner</strong> (someone granted owner-level access by a verified owner). If you only have Full or Restricted user access, the Users and permissions panel will be visible but the Add User button will not be available to you.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does the person I invite need to accept the invitation before they can access GSC?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Unlike some other platforms, Google Search Console grants access immediately when you add a user — there is no invitation email that requires acceptance. The user simply needs to log in to search.google.com/search-console with the Google account email address you used, and the property will appear in their property list right away. They will receive a notification email informing them they have been granted access.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I add someone who does not have a Gmail address to Google Search Console?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, as long as the email address is linked to a Google account. Non-Gmail addresses (e.g. a work email like <code>name@agency.com</code>) can be used to sign in to Google if the person has created a Google account with that email address. If they have not, they will need to create a Google account at <a href="https://accounts.google.com/signup" target="_blank" rel="noopener">accounts.google.com/signup</a> using their existing email, then you can add that email to GSC.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I remove a user from Google Search Console?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Go to <strong>Settings &gt; Users and permissions</strong>, find the user you want to remove, click the three-dot menu (⋮) next to their name, and select <strong>Remove access</strong>. Their access is revoked immediately. Note that you can remove users and delegated owners, but you cannot remove a verified owner — verified owners must revoke their own verification from the property settings.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is there a limit to how many users I can add to a Google Search Console property?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google does not publicly document a strict limit on the number of users per property, and in practice most teams add as many users as they need without hitting a cap. However, as a general best practice, only give access to people who genuinely need it and remove users when they no longer need access — especially for agencies or contractors once a project ends — to keep your account secure.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

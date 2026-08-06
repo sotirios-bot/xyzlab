@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -345,81 +363,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads tracking?</h3>
           <p>Book a 90-minute training session and we'll set up your Meta Pixel and events together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about setting up Meta Pixel via Google Tag Manager.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Why use the GTM Meta Pixel Template instead of installing the base code manually?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>GTM Meta Pixel Template</strong> lets you install and manage your Pixel entirely within Google Tag Manager — no direct access to your website's code is needed. It also makes it easier to update the Pixel in the future and keeps all your tracking in one place, alongside your Google tags, consent settings, and other third-party scripts.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where do I find my Meta Pixel ID?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Go to <strong>Meta Business Suite &gt; Events Manager &gt; Datasets</strong>. Click on your Pixel — the Pixel ID is the number displayed next to the Pixel name (e.g. 1234567890123). If you manage multiple ad accounts, make sure you are viewing the correct account before copying the ID.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does the Meta Pixel Template support event tracking?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. The template supports both the <strong>PageView</strong> base event (fired on All Pages) and standard events such as <strong>ViewContent</strong>, <strong>AddToCart</strong>, <strong>Lead</strong>, and <strong>Purchase</strong>. You can create additional tags using the same template, each with a different event type and a more specific trigger (e.g. a thank-you page URL for Purchase events).</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I verify that the Meta Pixel is firing correctly?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Install the <strong>Meta Pixel Helper</strong> Chrome extension. Visit your website after publishing the GTM container — the extension will show a green pixel icon if the Pixel is firing correctly on the page. You can also check <strong>Events Manager &gt; Test Events</strong> in Meta to see real-time events coming through from your browser.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I use the same Meta Pixel on multiple websites?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, technically — but it is <strong>not recommended</strong>. Using one Pixel across multiple domains mixes audience and conversion data, making it harder to optimise campaigns for each website separately. Best practice is to create a separate Pixel (Dataset) for each website so your ad account audiences and conversion events remain clean and accurate.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does the Meta Pixel fire even without the Conversions API?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. The browser-side Pixel (via GTM) fires independently of the Conversions API (CAPI). However, because browser tracking is increasingly blocked by ad blockers and iOS privacy restrictions, <strong>Meta recommends using both</strong> together for maximum signal coverage. The browser Pixel alone is still a valid starting point before adding server-side tracking.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -477,21 +421,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about setting up Meta Pixel via Google Tag Manager.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why use the GTM Meta Pixel Template instead of installing the base code manually?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>GTM Meta Pixel Template</strong> lets you install and manage your Pixel entirely within Google Tag Manager — no direct access to your website's code is needed. It also makes it easier to update the Pixel in the future and keeps all your tracking in one place, alongside your Google tags, consent settings, and other third-party scripts.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where do I find my Meta Pixel ID?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Go to <strong>Meta Business Suite &gt; Events Manager &gt; Datasets</strong>. Click on your Pixel — the Pixel ID is the number displayed next to the Pixel name (e.g. 1234567890123). If you manage multiple ad accounts, make sure you are viewing the correct account before copying the ID.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does the Meta Pixel Template support event tracking?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. The template supports both the <strong>PageView</strong> base event (fired on All Pages) and standard events such as <strong>ViewContent</strong>, <strong>AddToCart</strong>, <strong>Lead</strong>, and <strong>Purchase</strong>. You can create additional tags using the same template, each with a different event type and a more specific trigger (e.g. a thank-you page URL for Purchase events).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I verify that the Meta Pixel is firing correctly?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Install the <strong>Meta Pixel Helper</strong> Chrome extension. Visit your website after publishing the GTM container — the extension will show a green pixel icon if the Pixel is firing correctly on the page. You can also check <strong>Events Manager &gt; Test Events</strong> in Meta to see real-time events coming through from your browser.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I use the same Meta Pixel on multiple websites?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, technically — but it is <strong>not recommended</strong>. Using one Pixel across multiple domains mixes audience and conversion data, making it harder to optimise campaigns for each website separately. Best practice is to create a separate Pixel (Dataset) for each website so your ad account audiences and conversion events remain clean and accurate.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does the Meta Pixel fire even without the Conversions API?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. The browser-side Pixel (via GTM) fires independently of the Conversions API (CAPI). However, because browser tracking is increasingly blocked by ad blockers and iOS privacy restrictions, <strong>Meta recommends using both</strong> together for maximum signal coverage. The browser Pixel alone is still a valid starting point before adding server-side tracking.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -322,81 +340,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Meta Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about custom questions in Meta Ads lead forms.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the difference between Higher Intent and More Volume form types?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>More volume</strong> is optimised for maximum lead quantity — the form pre-fills user details and submits with one tap, so there's minimal friction. <strong>Higher intent</strong> adds a review step where users confirm their information before submitting, and it unlocks custom questions. Higher intent typically generates fewer but better-qualified leads, making it the right choice when lead quality matters more than raw volume.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How many custom questions can I add to a Meta lead form?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Meta allows up to <strong>15 questions</strong> in a single lead form, including both pre-filled fields (like name, email, phone) and custom questions. Keep in mind that every extra question adds friction — more questions typically mean fewer submissions. A good rule of thumb is to ask only the questions you genuinely need to qualify or follow up with a lead.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What types of custom questions can I add?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Meta supports four custom question formats: <strong>Short answer</strong> (open text), <strong>Multiple choice</strong> (user selects one option from a list you define), <strong>Conditional</strong> (follow-up questions that appear based on a previous answer), and <strong>Appointment request</strong> (lets users pick a date and time). Multiple choice and conditional questions are useful for qualifying leads based on budget, timeline, or interest area.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where do I see the answers to my custom questions?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Lead responses — including custom question answers — can be downloaded as a CSV from <strong>Meta Ads Manager &gt; Ads &gt; your ad &gt; Download leads</strong>. You can also connect your lead form to a CRM (like HubSpot, Salesforce, or Mailchimp) via Meta's native integrations in <strong>Business Settings &gt; Integrations &gt; Leads Access</strong>, so responses are sent to your CRM automatically in real time.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I edit a lead form after it has already received submissions?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Once a lead form has received at least one submission, Meta locks it and you cannot edit the questions or form structure. If you need to make changes, you must duplicate the existing form, edit the copy, and then swap the new form into your ad. This prevents historical lead data from becoming inconsistent with a changed form structure.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do custom questions affect ad performance or delivery?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — adding custom questions increases form friction, which typically lowers your conversion rate (fewer people complete the form) but improves lead quality. Meta's algorithm optimises for form completions, so a higher-friction form may also see a slight increase in cost per lead. The trade-off is usually worth it when you need qualified leads rather than a high volume of unqualified submissions.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -454,21 +398,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about custom questions in Meta Ads lead forms.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Higher Intent and More Volume form types?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>More volume</strong> is optimised for maximum lead quantity — the form pre-fills user details and submits with one tap, so there's minimal friction. <strong>Higher intent</strong> adds a review step where users confirm their information before submitting, and it unlocks custom questions. Higher intent typically generates fewer but better-qualified leads, making it the right choice when lead quality matters more than raw volume.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How many custom questions can I add to a Meta lead form?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Meta allows up to <strong>15 questions</strong> in a single lead form, including both pre-filled fields (like name, email, phone) and custom questions. Keep in mind that every extra question adds friction — more questions typically mean fewer submissions. A good rule of thumb is to ask only the questions you genuinely need to qualify or follow up with a lead.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What types of custom questions can I add?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Meta supports four custom question formats: <strong>Short answer</strong> (open text), <strong>Multiple choice</strong> (user selects one option from a list you define), <strong>Conditional</strong> (follow-up questions that appear based on a previous answer), and <strong>Appointment request</strong> (lets users pick a date and time). Multiple choice and conditional questions are useful for qualifying leads based on budget, timeline, or interest area.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where do I see the answers to my custom questions?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Lead responses — including custom question answers — can be downloaded as a CSV from <strong>Meta Ads Manager &gt; Ads &gt; your ad &gt; Download leads</strong>. You can also connect your lead form to a CRM (like HubSpot, Salesforce, or Mailchimp) via Meta's native integrations in <strong>Business Settings &gt; Integrations &gt; Leads Access</strong>, so responses are sent to your CRM automatically in real time.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I edit a lead form after it has already received submissions?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Once a lead form has received at least one submission, Meta locks it and you cannot edit the questions or form structure. If you need to make changes, you must duplicate the existing form, edit the copy, and then swap the new form into your ad. This prevents historical lead data from becoming inconsistent with a changed form structure.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do custom questions affect ad performance or delivery?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — adding custom questions increases form friction, which typically lowers your conversion rate (fewer people complete the form) but improves lead quality. Meta's algorithm optimises for form completions, so a higher-friction form may also see a slight increase in cost per lead. The trade-off is usually worth it when you need qualified leads rather than a high volume of unqualified submissions.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

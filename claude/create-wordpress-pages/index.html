@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your workflow? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -266,81 +284,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Claude AI for marketing?</h3>
           <p>Book a 90-minute training session and we'll build your Claude AI marketing workflow together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about creating WordPress pages with Claude Code.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is Claude Code?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Claude Code is Anthropic's AI-powered coding assistant that runs in your terminal or IDE. It can read, write, and edit code files, run commands, and build entire projects from natural language instructions. For WordPress, you can use it to generate HTML, CSS, PHP, or WordPress block markup that you then paste directly into your site.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the WordPress Code Editor?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>Code Editor</strong> is a built-in view inside the WordPress block editor (Gutenberg) that lets you see and edit the raw block markup of a page. You access it via the three-dot menu in the top-right corner of the editor. It is different from the Theme File Editor — it is specifically for editing the content of a single page or post.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need coding experience to use Claude Code for WordPress?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. You describe what you want in plain English and Claude Code generates the code for you. Basic familiarity with copying and pasting into WordPress is all you need. The more specific your description — layout, colours, sections, content — the more accurate the output will be.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What types of pages can I create with Claude Code in WordPress?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>You can create any page type: landing pages, service pages, about pages, contact pages, pricing pages, and more. Claude Code can generate WordPress block markup (compatible with Gutenberg), plain HTML wrapped in a Custom HTML block, or PHP templates if you are comfortable adding them to your theme files.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is Claude Code free to use?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Claude Code requires an Anthropic API key and usage is billed based on the number of tokens processed. There is no free tier for Claude Code specifically, but costs are typically very low for building individual pages. You can set a spending limit in your Anthropic account to control usage.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I use Claude Code to edit existing WordPress pages?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Copy the existing code from the WordPress Code Editor, paste it into Claude Code with instructions for what to change, and Claude will return the updated version. This works well for redesigning sections, adding new content blocks, or fixing layout issues without starting from scratch.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -398,21 +342,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your workflow? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about creating WordPress pages with Claude Code.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is Claude Code?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Claude Code is Anthropic's AI-powered coding assistant that runs in your terminal or IDE. It can read, write, and edit code files, run commands, and build entire projects from natural language instructions. For WordPress, you can use it to generate HTML, CSS, PHP, or WordPress block markup that you then paste directly into your site.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the WordPress Code Editor?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>Code Editor</strong> is a built-in view inside the WordPress block editor (Gutenberg) that lets you see and edit the raw block markup of a page. You access it via the three-dot menu in the top-right corner of the editor. It is different from the Theme File Editor — it is specifically for editing the content of a single page or post.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need coding experience to use Claude Code for WordPress?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. You describe what you want in plain English and Claude Code generates the code for you. Basic familiarity with copying and pasting into WordPress is all you need. The more specific your description — layout, colours, sections, content — the more accurate the output will be.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What types of pages can I create with Claude Code in WordPress?</span>
+          </div>
+          <div class="faq-answer">
+            <p>You can create any page type: landing pages, service pages, about pages, contact pages, pricing pages, and more. Claude Code can generate WordPress block markup (compatible with Gutenberg), plain HTML wrapped in a Custom HTML block, or PHP templates if you are comfortable adding them to your theme files.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is Claude Code free to use?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Claude Code requires an Anthropic API key and usage is billed based on the number of tokens processed. There is no free tier for Claude Code specifically, but costs are typically very low for building individual pages. You can set a spending limit in your Anthropic account to control usage.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I use Claude Code to edit existing WordPress pages?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Copy the existing code from the WordPress Code Editor, paste it into Claude Code with instructions for what to change, and Claude will return the updated version. This works well for redesigning sections, adding new content blocks, or fixing layout issues without starting from scratch.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

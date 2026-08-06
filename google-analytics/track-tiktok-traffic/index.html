@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -286,81 +304,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Analytics?</h3>
           <p>Book a 90-minute training session and we'll work through your analytics setup together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about finding and understanding TikTok traffic in Google Analytics.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>How does TikTok traffic appear in Google Analytics?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>TikTok traffic typically appears as <strong>tiktok.com / referral</strong> or <strong>l.tiktok.com / referral</strong> in the Session source / medium dimension. The <code>l.tiktok.com</code> domain is TikTok's link redirector — clicks from TikTok bio links or in-app links often route through it. In the default channel group view, this traffic falls under the <strong>Referral</strong> channel rather than a dedicated Social channel, unless you customise your channel groupings.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why is my TikTok traffic showing as Direct or Unassigned in GA4?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>TikTok's in-app browser sometimes strips referrer information when a user opens a link, which means GA4 cannot identify the traffic source and assigns it to <strong>Direct</strong> or <strong>Unassigned</strong> instead. To fix this, add UTM parameters (<code>utm_source=tiktok&utm_medium=social</code>) to any links you place in your TikTok bio or ads. This ensures GA4 always correctly attributes the session to TikTok regardless of how the link was opened.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between TikTok organic traffic and TikTok Ads traffic in GA4?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Organic TikTok traffic (clicks from your profile bio link or video links) appears as <strong>tiktok.com / referral</strong>. TikTok Ads traffic tracked via UTM parameters will show the values you configured in your ad URLs — for example <code>tiktok / cpc</code> if you used <code>utm_source=tiktok&utm_medium=cpc</code>. TikTok's own pixel can also send data to GA4 via integrations, but the Traffic Acquisition report specifically reflects what GA4 collects from page visits.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why don't I see any TikTok traffic in my reports?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>If no TikTok traffic appears, the most common reasons are: you don't have a clickable link in your TikTok profile or content, your date range is too short, or TikTok's in-app browser is stripping referrer data and the traffic is appearing under Direct instead. Try extending the date range to the last 90 days and also searching for <strong>l.tiktok</strong> (the link redirector domain) in the same report to catch all variations.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I add TikTok as a social channel in GA4?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>GA4's default channel groupings may classify TikTok referral traffic under <strong>Referral</strong> rather than <strong>Organic Social</strong>. To fix this, go to <strong>Admin → Data display → Channel groups</strong> and edit the <strong>Organic Social</strong> channel rule to include <code>tiktok.com</code> and <code>l.tiktok.com</code> as matching source domains. This ensures TikTok organic traffic is correctly grouped alongside other social platforms.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I track TikTok traffic alongside Instagram and other social platforms?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Use the Traffic Acquisition report with the <strong>Session source / medium</strong> dimension and search for each platform individually — <code>tiktok</code>, <code>instagram</code>, <code>facebook</code>, <code>linkedin</code> — or remove the search filter entirely to see all sources ranked by sessions. You can also build a custom <strong>Looker Studio (Data Studio) report</strong> that segments all your social traffic sources in one view for easy comparison.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -418,21 +362,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about finding and understanding TikTok traffic in Google Analytics.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How does TikTok traffic appear in Google Analytics?</span>
+          </div>
+          <div class="faq-answer">
+            <p>TikTok traffic typically appears as <strong>tiktok.com / referral</strong> or <strong>l.tiktok.com / referral</strong> in the Session source / medium dimension. The <code>l.tiktok.com</code> domain is TikTok's link redirector — clicks from TikTok bio links or in-app links often route through it. In the default channel group view, this traffic falls under the <strong>Referral</strong> channel rather than a dedicated Social channel, unless you customise your channel groupings.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why is my TikTok traffic showing as Direct or Unassigned in GA4?</span>
+          </div>
+          <div class="faq-answer">
+            <p>TikTok's in-app browser sometimes strips referrer information when a user opens a link, which means GA4 cannot identify the traffic source and assigns it to <strong>Direct</strong> or <strong>Unassigned</strong> instead. To fix this, add UTM parameters (<code>utm_source=tiktok&utm_medium=social</code>) to any links you place in your TikTok bio or ads. This ensures GA4 always correctly attributes the session to TikTok regardless of how the link was opened.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between TikTok organic traffic and TikTok Ads traffic in GA4?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Organic TikTok traffic (clicks from your profile bio link or video links) appears as <strong>tiktok.com / referral</strong>. TikTok Ads traffic tracked via UTM parameters will show the values you configured in your ad URLs — for example <code>tiktok / cpc</code> if you used <code>utm_source=tiktok&utm_medium=cpc</code>. TikTok's own pixel can also send data to GA4 via integrations, but the Traffic Acquisition report specifically reflects what GA4 collects from page visits.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why don't I see any TikTok traffic in my reports?</span>
+          </div>
+          <div class="faq-answer">
+            <p>If no TikTok traffic appears, the most common reasons are: you don't have a clickable link in your TikTok profile or content, your date range is too short, or TikTok's in-app browser is stripping referrer data and the traffic is appearing under Direct instead. Try extending the date range to the last 90 days and also searching for <strong>l.tiktok</strong> (the link redirector domain) in the same report to catch all variations.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I add TikTok as a social channel in GA4?</span>
+          </div>
+          <div class="faq-answer">
+            <p>GA4's default channel groupings may classify TikTok referral traffic under <strong>Referral</strong> rather than <strong>Organic Social</strong>. To fix this, go to <strong>Admin → Data display → Channel groups</strong> and edit the <strong>Organic Social</strong> channel rule to include <code>tiktok.com</code> and <code>l.tiktok.com</code> as matching source domains. This ensures TikTok organic traffic is correctly grouped alongside other social platforms.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I track TikTok traffic alongside Instagram and other social platforms?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Use the Traffic Acquisition report with the <strong>Session source / medium</strong> dimension and search for each platform individually — <code>tiktok</code>, <code>instagram</code>, <code>facebook</code>, <code>linkedin</code> — or remove the search filter entirely to see all sources ranked by sessions. You can also build a custom <strong>Looker Studio (Data Studio) report</strong> that segments all your social traffic sources in one view for easy comparison.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

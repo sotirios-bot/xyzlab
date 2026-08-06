@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -291,81 +309,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with your Wix site?</h3>
           <p>Book a 90-minute training session and we'll optimise your Wix SEO and marketing strategy together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about updating page titles, URLs and meta descriptions in Wix.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a page title and why does it matter for SEO?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>page title</strong> (also called the SEO title or title tag) is one of the most important on-page SEO elements. It appears as the blue clickable headline in Google search results and in the browser tab. A well-written title that includes your target keyword clearly signals to Google what the page is about — and to users whether it's worth clicking. Aim for 50–60 characters so it doesn't get cut off in search results.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does the meta description affect my Google ranking?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The meta description is <strong>not a direct ranking factor</strong>, but it significantly affects your <strong>click-through rate (CTR)</strong> — which does influence rankings indirectly. A compelling meta description that summarises the page clearly and includes a call to action can increase the number of people who click your result in Google. Keep it between 150–160 characters and make it relevant to the page content.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Should I include keywords in the page URL?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. A clean, keyword-rich URL helps both Google and users understand what the page is about before they visit it. Best practices: use lowercase letters, separate words with hyphens (not underscores), keep it short, and include your primary keyword. For example, <code>/wix-seo-guide</code> is better than <code>/page-1</code> or <code>/wix_seo_guide</code>.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will changing my page URL in Wix break existing links or rankings?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Changing a URL can affect existing rankings and break any links pointing to the old URL. To mitigate this, set up a <strong>301 redirect</strong> from the old URL to the new one — Wix has a built-in redirect tool under <strong>SEO Tools → URL Redirects</strong>. This passes link equity from the old URL to the new one and prevents visitors or search engines from hitting a dead page.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How long does it take for changes to appear in Google search results?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>After saving your changes in Wix, Google needs to <strong>re-crawl and re-index</strong> your page before the new title or description appears in search results. This typically takes anywhere from a few days to a few weeks depending on how frequently Google crawls your site. You can speed up the process by submitting the URL for indexing in <strong>Google Search Console → URL Inspection → Request Indexing</strong>.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I set different titles and meta descriptions for each page in Wix?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — and you should. Each page should have a <strong>unique page title and meta description</strong> that accurately reflects its specific content and targets a different keyword. Duplicate titles and descriptions across pages can confuse Google about which page to rank for a given query. Wix lets you set individual SEO basics for every page, blog post, product, and dynamic collection item on your site.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -423,21 +367,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about updating page titles, URLs and meta descriptions in Wix.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a page title and why does it matter for SEO?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>page title</strong> (also called the SEO title or title tag) is one of the most important on-page SEO elements. It appears as the blue clickable headline in Google search results and in the browser tab. A well-written title that includes your target keyword clearly signals to Google what the page is about — and to users whether it's worth clicking. Aim for 50–60 characters so it doesn't get cut off in search results.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does the meta description affect my Google ranking?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The meta description is <strong>not a direct ranking factor</strong>, but it significantly affects your <strong>click-through rate (CTR)</strong> — which does influence rankings indirectly. A compelling meta description that summarises the page clearly and includes a call to action can increase the number of people who click your result in Google. Keep it between 150–160 characters and make it relevant to the page content.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Should I include keywords in the page URL?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. A clean, keyword-rich URL helps both Google and users understand what the page is about before they visit it. Best practices: use lowercase letters, separate words with hyphens (not underscores), keep it short, and include your primary keyword. For example, <code>/wix-seo-guide</code> is better than <code>/page-1</code> or <code>/wix_seo_guide</code>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will changing my page URL in Wix break existing links or rankings?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Changing a URL can affect existing rankings and break any links pointing to the old URL. To mitigate this, set up a <strong>301 redirect</strong> from the old URL to the new one — Wix has a built-in redirect tool under <strong>SEO Tools → URL Redirects</strong>. This passes link equity from the old URL to the new one and prevents visitors or search engines from hitting a dead page.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How long does it take for changes to appear in Google search results?</span>
+          </div>
+          <div class="faq-answer">
+            <p>After saving your changes in Wix, Google needs to <strong>re-crawl and re-index</strong> your page before the new title or description appears in search results. This typically takes anywhere from a few days to a few weeks depending on how frequently Google crawls your site. You can speed up the process by submitting the URL for indexing in <strong>Google Search Console → URL Inspection → Request Indexing</strong>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I set different titles and meta descriptions for each page in Wix?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — and you should. Each page should have a <strong>unique page title and meta description</strong> that accurately reflects its specific content and targets a different keyword. Duplicate titles and descriptions across pages can confuse Google about which page to rank for a given query. Wix lets you set individual SEO basics for every page, blog post, product, and dynamic collection item on your site.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

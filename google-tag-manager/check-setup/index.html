@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -284,81 +302,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Tag Manager?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Tag Manager setup together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about checking if Google Tag Manager is installed correctly.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is GTM Preview mode?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>GTM Preview mode is a debugging tool built into Google Tag Manager. When you click <strong>Preview</strong>, it launches <strong>Tag Assistant</strong> — a companion tool that connects to your website in a special debug session. It lets you see in real time which tags are firing, which triggers are activating, and what data layer values are present, without affecting what live users see on your site.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What does "Tag Assistant connected" mean?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>"Tag Assistant connected" means that GTM has successfully established a debug session with your website. It confirms that the <strong>GTM snippet is present and loading</strong> on the page you entered. If you see this message, the base GTM installation is working — you can then check inside Tag Assistant to confirm your individual tags and triggers are firing as expected.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why is Tag Assistant not connecting to my website?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>If Tag Assistant fails to connect, the most common causes are: (1) <strong>GTM is not installed</strong> on the page — the snippet may be missing or only on some pages; (2) a <strong>browser extension</strong> (ad blocker, privacy tool) is blocking the GTM script — try in an incognito window with extensions disabled; (3) the page is behind a <strong>login or firewall</strong> that Tag Assistant cannot access; (4) the GTM snippet is placed incorrectly — it should appear immediately after the opening <code>&lt;body&gt;</code> tag.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I find and verify my GTM container ID?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Your GTM container ID is displayed in the <strong>top-right corner of your GTM workspace</strong> and looks like <code>GTM-XXXXXXX</code>. In Tag Assistant, the container ID is shown in the summary panel once connected. If the IDs don't match, the wrong GTM snippet has been pasted into the site — the site may be loading a different account's container. Copy the correct snippet from <strong>Admin &gt; Install Google Tag Manager</strong> in your GTM account and replace the one on the site.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What should I check inside Tag Assistant after connecting?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Once connected, check: (1) <strong>Container ID</strong> — confirm it matches your GTM account; (2) <strong>Page View event</strong> — this should always appear in the activity log on load; (3) <strong>Tags fired</strong> — any tags set to fire on "All Pages" should appear as fired (green); (4) <strong>Tags not fired</strong> — investigate these to understand why their trigger conditions were not met; (5) <strong>Data Layer</strong> — check that the expected variables are present if you are using custom events or eCommerce tracking.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does GTM Preview mode affect live website visitors?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. GTM Preview mode only affects <strong>your own browser session</strong> — it uses a special debug cookie that is not present for regular visitors. Live users will not see the Tag Assistant panel, and any unpublished container changes you are testing in Preview will not be visible to them. Preview mode is completely safe to use on a live production website.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -416,21 +360,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about checking if Google Tag Manager is installed correctly.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is GTM Preview mode?</span>
+          </div>
+          <div class="faq-answer">
+            <p>GTM Preview mode is a debugging tool built into Google Tag Manager. When you click <strong>Preview</strong>, it launches <strong>Tag Assistant</strong> — a companion tool that connects to your website in a special debug session. It lets you see in real time which tags are firing, which triggers are activating, and what data layer values are present, without affecting what live users see on your site.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What does "Tag Assistant connected" mean?</span>
+          </div>
+          <div class="faq-answer">
+            <p>"Tag Assistant connected" means that GTM has successfully established a debug session with your website. It confirms that the <strong>GTM snippet is present and loading</strong> on the page you entered. If you see this message, the base GTM installation is working — you can then check inside Tag Assistant to confirm your individual tags and triggers are firing as expected.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why is Tag Assistant not connecting to my website?</span>
+          </div>
+          <div class="faq-answer">
+            <p>If Tag Assistant fails to connect, the most common causes are: (1) <strong>GTM is not installed</strong> on the page — the snippet may be missing or only on some pages; (2) a <strong>browser extension</strong> (ad blocker, privacy tool) is blocking the GTM script — try in an incognito window with extensions disabled; (3) the page is behind a <strong>login or firewall</strong> that Tag Assistant cannot access; (4) the GTM snippet is placed incorrectly — it should appear immediately after the opening <code>&lt;body&gt;</code> tag.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I find and verify my GTM container ID?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Your GTM container ID is displayed in the <strong>top-right corner of your GTM workspace</strong> and looks like <code>GTM-XXXXXXX</code>. In Tag Assistant, the container ID is shown in the summary panel once connected. If the IDs don't match, the wrong GTM snippet has been pasted into the site — the site may be loading a different account's container. Copy the correct snippet from <strong>Admin &gt; Install Google Tag Manager</strong> in your GTM account and replace the one on the site.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What should I check inside Tag Assistant after connecting?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Once connected, check: (1) <strong>Container ID</strong> — confirm it matches your GTM account; (2) <strong>Page View event</strong> — this should always appear in the activity log on load; (3) <strong>Tags fired</strong> — any tags set to fire on "All Pages" should appear as fired (green); (4) <strong>Tags not fired</strong> — investigate these to understand why their trigger conditions were not met; (5) <strong>Data Layer</strong> — check that the expected variables are present if you are using custom events or eCommerce tracking.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does GTM Preview mode affect live website visitors?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. GTM Preview mode only affects <strong>your own browser session</strong> — it uses a special debug cookie that is not present for regular visitors. Live users will not see the Tag Assistant panel, and any unpublished container changes you are testing in Preview will not be visible to them. Preview mode is completely safe to use on a live production website.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

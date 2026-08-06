@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -272,81 +290,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about Sitelinks in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What are Sitelinks in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Sitelinks are additional links that appear below your main ad text, directing users to specific pages on your website. They expand your ad's footprint on the search results page and give users more relevant destinations to click — such as a pricing page, contact page, or specific product category. Sitelinks can significantly improve click-through rates by matching user intent more precisely.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How many Sitelinks can I add in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>You can add up to <strong>20 Sitelinks</strong> per account, campaign, or ad group. Google will automatically select and display the most relevant sitelinks depending on the user's search query and the context of the ad. Having more sitelinks gives Google more options to choose from, which can improve performance over time.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I assign Sitelinks to specific campaigns or ad groups?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Sitelinks can be added at three levels: <strong>Account, Campaign, or Ad Group</strong>. Account-level sitelinks apply across all campaigns by default. Campaign-level sitelinks override account-level ones for that specific campaign. Ad group-level sitelinks are the most granular and take priority when that ad group serves. This hierarchy lets you show highly relevant links tailored to each level of your campaign structure.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do Sitelinks cost extra to add?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No — adding Sitelinks is free. You only pay when someone clicks on them, at the same cost-per-click as your main ad. There is no additional charge for having sitelinks show alongside your ad. Since they increase the total clickable area of your ad, they typically improve overall campaign performance at no extra setup cost.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How many Sitelinks will Google show on my ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google typically shows between <strong>2 and 6 Sitelinks</strong> per ad depending on the device and search context. On desktop, you may see up to 6 sitelinks displayed in two rows of three. On mobile, Google usually shows 2–4. Google's system selects which sitelinks to show based on relevance to the query, predicted click-through rate, and available ad space.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What makes a good Sitelink?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Effective sitelinks are <strong>specific, action-oriented, and link to unique pages</strong> — not the same URL as your main ad. Good examples include: "Get a Free Quote", "See Pricing", "View Case Studies", or "Book a Demo." Each sitelink should cover a different user intent. Avoid vague labels like "Click Here" or duplicating your homepage. You can also add 2-line descriptions to each sitelink to provide more context and improve quality score.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -404,21 +348,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about Sitelinks in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What are Sitelinks in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Sitelinks are additional links that appear below your main ad text, directing users to specific pages on your website. They expand your ad's footprint on the search results page and give users more relevant destinations to click — such as a pricing page, contact page, or specific product category. Sitelinks can significantly improve click-through rates by matching user intent more precisely.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How many Sitelinks can I add in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>You can add up to <strong>20 Sitelinks</strong> per account, campaign, or ad group. Google will automatically select and display the most relevant sitelinks depending on the user's search query and the context of the ad. Having more sitelinks gives Google more options to choose from, which can improve performance over time.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I assign Sitelinks to specific campaigns or ad groups?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Sitelinks can be added at three levels: <strong>Account, Campaign, or Ad Group</strong>. Account-level sitelinks apply across all campaigns by default. Campaign-level sitelinks override account-level ones for that specific campaign. Ad group-level sitelinks are the most granular and take priority when that ad group serves. This hierarchy lets you show highly relevant links tailored to each level of your campaign structure.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do Sitelinks cost extra to add?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No — adding Sitelinks is free. You only pay when someone clicks on them, at the same cost-per-click as your main ad. There is no additional charge for having sitelinks show alongside your ad. Since they increase the total clickable area of your ad, they typically improve overall campaign performance at no extra setup cost.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How many Sitelinks will Google show on my ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google typically shows between <strong>2 and 6 Sitelinks</strong> per ad depending on the device and search context. On desktop, you may see up to 6 sitelinks displayed in two rows of three. On mobile, Google usually shows 2–4. Google's system selects which sitelinks to show based on relevance to the query, predicted click-through rate, and available ad space.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What makes a good Sitelink?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Effective sitelinks are <strong>specific, action-oriented, and link to unique pages</strong> — not the same URL as your main ad. Good examples include: "Get a Free Quote", "See Pricing", "View Case Studies", or "Book a Demo." Each sitelink should cover a different user intent. Avoid vague labels like "Click Here" or duplicating your homepage. You can also add 2-line descriptions to each sitelink to provide more context and improve quality score.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

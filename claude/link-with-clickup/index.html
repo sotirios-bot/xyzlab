@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your workflow? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -267,81 +285,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Claude AI?</h3>
           <p>Book a 90-minute training session and we'll build your AI workflows together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about connecting ClickUp to Claude.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What can I do after linking ClickUp to Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Once connected, Claude can read and interact with your ClickUp workspace directly from the conversation window. You can ask Claude to <strong>create tasks, update statuses, list overdue items, summarise project progress</strong>, and generate reports — without leaving Claude. This lets you use AI to plan, prioritise, and organise your work in ClickUp alongside everything else you do in Claude.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where is the Connectors menu in Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Go to <strong>Settings</strong> in your Claude account (accessible from the sidebar or profile menu at claude.ai), then look for the <strong>Connectors</strong> section. This is where all third-party integrations are managed, including ClickUp, Asana, GitHub, Canva, and others.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does the ClickUp integration work with free ClickUp accounts?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, you can connect a free ClickUp account to Claude. The integration works through ClickUp's standard OAuth authentication. However, the tasks and workspaces you can access via Claude will be limited to what your ClickUp plan allows — features such as advanced automations, goals, and dashboards are only available on paid ClickUp tiers.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can Claude create and assign ClickUp tasks on my behalf?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Once authorised, Claude can <strong>create new tasks, set due dates, assign them to team members, and add them to lists or folders</strong> in ClickUp. You can simply describe what you need in natural language — for example, "Create a task called 'Review campaign brief' in the Marketing space, due this Friday, assigned to Sarah" — and Claude will handle it.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I disconnect ClickUp from Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Go back to <strong>Settings → Connectors</strong> in Claude and find ClickUp in your connected integrations. Click the disconnect or revoke option to remove access. You can also revoke Claude's access directly from your ClickUp account under <strong>Settings → Integrations</strong>, where all connected third-party apps are listed.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is the ClickUp connector available on the free Claude plan?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Connector availability in Claude depends on your plan and region. If ClickUp appears in your <strong>Settings → Connectors</strong> list, it is available for your account. Claude Pro subscribers generally have access to more connectors and higher usage limits for integrated tools. Check the Connectors section in your account to see what is currently available.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -399,21 +343,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your workflow? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about connecting ClickUp to Claude.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What can I do after linking ClickUp to Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Once connected, Claude can read and interact with your ClickUp workspace directly from the conversation window. You can ask Claude to <strong>create tasks, update statuses, list overdue items, summarise project progress</strong>, and generate reports — without leaving Claude. This lets you use AI to plan, prioritise, and organise your work in ClickUp alongside everything else you do in Claude.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where is the Connectors menu in Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Go to <strong>Settings</strong> in your Claude account (accessible from the sidebar or profile menu at claude.ai), then look for the <strong>Connectors</strong> section. This is where all third-party integrations are managed, including ClickUp, Asana, GitHub, Canva, and others.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does the ClickUp integration work with free ClickUp accounts?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, you can connect a free ClickUp account to Claude. The integration works through ClickUp's standard OAuth authentication. However, the tasks and workspaces you can access via Claude will be limited to what your ClickUp plan allows — features such as advanced automations, goals, and dashboards are only available on paid ClickUp tiers.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can Claude create and assign ClickUp tasks on my behalf?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Once authorised, Claude can <strong>create new tasks, set due dates, assign them to team members, and add them to lists or folders</strong> in ClickUp. You can simply describe what you need in natural language — for example, "Create a task called 'Review campaign brief' in the Marketing space, due this Friday, assigned to Sarah" — and Claude will handle it.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I disconnect ClickUp from Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Go back to <strong>Settings → Connectors</strong> in Claude and find ClickUp in your connected integrations. Click the disconnect or revoke option to remove access. You can also revoke Claude's access directly from your ClickUp account under <strong>Settings → Integrations</strong>, where all connected third-party apps are listed.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is the ClickUp connector available on the free Claude plan?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Connector availability in Claude depends on your plan and region. If ClickUp appears in your <strong>Settings → Connectors</strong> list, it is available for your account. Claude Pro subscribers generally have access to more connectors and higher usage limits for integrated tools. Check the Connectors section in your account to see what is currently available.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

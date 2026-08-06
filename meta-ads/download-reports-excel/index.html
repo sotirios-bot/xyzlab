@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -272,81 +290,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Meta Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about downloading Meta Ads reports in Excel and CSV format.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Can I export Meta Ads reports in Excel format?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Meta Ads Manager lets you export reports as either <strong>.csv</strong> (comma-separated values) or <strong>.xlsx</strong> (native Excel format). Both options are available via the Export dropdown in Ads Manager. Use .xlsx if you want the file to open directly in Microsoft Excel with formatting intact, or .csv for maximum compatibility with other tools like Google Sheets.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What data is included in a Meta Ads export?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The export includes the <strong>columns currently visible in your Ads Manager view</strong> for the selected level (Campaigns, Ad Sets, or Ads). To export specific metrics, customise your column set in Ads Manager before exporting. This lets you include data like impressions, clicks, cost, conversions, CPM, CPC, and more.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I export data for a specific date range?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Set your desired date range using the <strong>date picker</strong> in Ads Manager before clicking Export. The downloaded file will only contain data for the selected time period. This works for any date range — last 7 days, last 30 days, a custom range, or lifetime.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I export data for multiple campaigns at once?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. If you are viewing the Campaigns level in Ads Manager, the export will include <strong>all campaigns</strong> shown in the current view. You can filter by campaign status or use the search bar to narrow down campaigns before exporting if you only need a subset.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between CSV and XLSX in Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>CSV</strong> is a plain-text format that works with virtually any spreadsheet tool — Excel, Google Sheets, Looker Studio, Python, etc. <strong>XLSX</strong> is Microsoft Excel's native format and may preserve column widths and formatting better when opened directly in Excel. For reporting workflows or data pipelines, CSV is usually the more flexible choice.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I schedule automatic report exports instead of downloading manually?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Meta Ads Manager has a <strong>Schedule Export</strong> feature that lets you automatically send reports to your email on a daily, weekly, or monthly basis. See the <a href="../schedule-report/">Schedule Meta Ads Report Delivery</a> tutorial for a step-by-step walkthrough.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -404,21 +348,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about downloading Meta Ads reports in Excel and CSV format.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I export Meta Ads reports in Excel format?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Meta Ads Manager lets you export reports as either <strong>.csv</strong> (comma-separated values) or <strong>.xlsx</strong> (native Excel format). Both options are available via the Export dropdown in Ads Manager. Use .xlsx if you want the file to open directly in Microsoft Excel with formatting intact, or .csv for maximum compatibility with other tools like Google Sheets.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What data is included in a Meta Ads export?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The export includes the <strong>columns currently visible in your Ads Manager view</strong> for the selected level (Campaigns, Ad Sets, or Ads). To export specific metrics, customise your column set in Ads Manager before exporting. This lets you include data like impressions, clicks, cost, conversions, CPM, CPC, and more.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I export data for a specific date range?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Set your desired date range using the <strong>date picker</strong> in Ads Manager before clicking Export. The downloaded file will only contain data for the selected time period. This works for any date range — last 7 days, last 30 days, a custom range, or lifetime.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I export data for multiple campaigns at once?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. If you are viewing the Campaigns level in Ads Manager, the export will include <strong>all campaigns</strong> shown in the current view. You can filter by campaign status or use the search bar to narrow down campaigns before exporting if you only need a subset.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between CSV and XLSX in Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>CSV</strong> is a plain-text format that works with virtually any spreadsheet tool — Excel, Google Sheets, Looker Studio, Python, etc. <strong>XLSX</strong> is Microsoft Excel's native format and may preserve column widths and formatting better when opened directly in Excel. For reporting workflows or data pipelines, CSV is usually the more flexible choice.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I schedule automatic report exports instead of downloading manually?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Meta Ads Manager has a <strong>Schedule Export</strong> feature that lets you automatically send reports to your email on a daily, weekly, or monthly basis. See the <a href="../schedule-report/">Schedule Meta Ads Report Delivery</a> tutorial for a step-by-step walkthrough.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

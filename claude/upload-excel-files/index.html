@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your workflow? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -289,81 +307,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Claude AI?</h3>
           <p>Book a 90-minute training session and we'll build your AI workflows together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about uploading and analysing Excel files in Claude.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Why do I need to save as CSV instead of uploading the Excel file directly?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Claude reads data most reliably from <strong>plain text formats like CSV</strong>. Excel files (.xlsx) can contain multiple sheets, formatting, formulas, and merged cells that Claude may not interpret correctly. Saving as CSV UTF-8 strips out the formatting and gives Claude clean, flat data that it can read, analyse, and reason about accurately. If your Excel file has multiple sheets, save each one as a separate CSV.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What kinds of analysis can Claude do with my spreadsheet data?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Claude can <strong>summarise data, calculate totals and averages, identify top and bottom performers, spot trends over time, compare segments, flag anomalies</strong>, and answer specific questions about your dataset. For example: "What is the average order value by region?" or "Which product had the highest growth month-over-month?" Claude works best when your column names clearly describe what each column contains.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How large a CSV file can I upload to Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Claude can handle reasonably large CSV files, but very large datasets (tens of thousands of rows or more) may exceed Claude's context window. For best results, <strong>filter or summarise your data before uploading</strong> — for example, upload only the date range or product category you want to analyse. Claude Pro subscribers have larger context windows and can handle bigger files than the free plan.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What does "CSV UTF-8 comma delimited" mean and why does it matter?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>CSV</strong> stands for Comma-Separated Values — a simple text format where each row is on a new line and each column is separated by a comma. <strong>UTF-8</strong> is a text encoding that correctly handles international characters, accented letters, and special symbols. Using CSV UTF-8 ensures Claude reads your data without garbled characters, especially if your file contains names, currencies, or text in languages other than English.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can Claude edit or write data back to my spreadsheet?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Claude cannot directly edit your original file, but it can <strong>generate new data, create transformed tables, and produce output you can copy back into Excel</strong>. For example, you can ask Claude to calculate a new column, reformat data, or produce a summary table — then copy the result back into your spreadsheet. If you have Google Drive connected to Claude, you may also be able to work with Sheets directly.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is my data safe when I upload a CSV to Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Anthropic processes uploaded files as part of your conversation. By default, Claude does not retain file contents between separate conversations. However, if you are uploading sensitive or confidential data, check Anthropic's privacy policy and your organisation's data handling guidelines before uploading. For sensitive datasets, consider anonymising or redacting personally identifiable information before sharing with any AI tool.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -421,21 +365,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your workflow? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about uploading and analysing Excel files in Claude.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why do I need to save as CSV instead of uploading the Excel file directly?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Claude reads data most reliably from <strong>plain text formats like CSV</strong>. Excel files (.xlsx) can contain multiple sheets, formatting, formulas, and merged cells that Claude may not interpret correctly. Saving as CSV UTF-8 strips out the formatting and gives Claude clean, flat data that it can read, analyse, and reason about accurately. If your Excel file has multiple sheets, save each one as a separate CSV.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What kinds of analysis can Claude do with my spreadsheet data?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Claude can <strong>summarise data, calculate totals and averages, identify top and bottom performers, spot trends over time, compare segments, flag anomalies</strong>, and answer specific questions about your dataset. For example: "What is the average order value by region?" or "Which product had the highest growth month-over-month?" Claude works best when your column names clearly describe what each column contains.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How large a CSV file can I upload to Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Claude can handle reasonably large CSV files, but very large datasets (tens of thousands of rows or more) may exceed Claude's context window. For best results, <strong>filter or summarise your data before uploading</strong> — for example, upload only the date range or product category you want to analyse. Claude Pro subscribers have larger context windows and can handle bigger files than the free plan.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What does "CSV UTF-8 comma delimited" mean and why does it matter?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>CSV</strong> stands for Comma-Separated Values — a simple text format where each row is on a new line and each column is separated by a comma. <strong>UTF-8</strong> is a text encoding that correctly handles international characters, accented letters, and special symbols. Using CSV UTF-8 ensures Claude reads your data without garbled characters, especially if your file contains names, currencies, or text in languages other than English.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can Claude edit or write data back to my spreadsheet?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Claude cannot directly edit your original file, but it can <strong>generate new data, create transformed tables, and produce output you can copy back into Excel</strong>. For example, you can ask Claude to calculate a new column, reformat data, or produce a summary table — then copy the result back into your spreadsheet. If you have Google Drive connected to Claude, you may also be able to work with Sheets directly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is my data safe when I upload a CSV to Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Anthropic processes uploaded files as part of your conversation. By default, Claude does not retain file contents between separate conversations. However, if you are uploading sensitive or confidential data, check Anthropic's privacy policy and your organisation's data handling guidelines before uploading. For sensitive datasets, consider anonymising or redacting personally identifiable information before sharing with any AI tool.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

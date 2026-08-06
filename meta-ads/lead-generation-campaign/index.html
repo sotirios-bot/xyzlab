@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -290,81 +308,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Meta Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about lead generation campaigns in Meta Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a lead generation campaign in Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A Meta Ads lead generation campaign uses the <strong>Leads objective</strong> to collect contact information from potential customers without requiring them to leave Facebook or Instagram. When someone clicks your ad, a pre-filled <strong>Instant Form</strong> opens natively within the app — with their name and contact details already populated from their profile — making it extremely easy to submit.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between More Volume, Higher Intent, and Rich Creative forms?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>More Volume</strong> is optimised for maximum submissions — it's short, frictionless, and pre-fills as much as possible. <strong>Higher Intent</strong> adds a review step where the user must confirm their details before submitting, which reduces accidental submissions and improves lead quality. <strong>Rich Creative</strong> gives you space to present your offer in detail (how it works, testimonials, products, incentives) before the user sees the form — best for higher-consideration products or services.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need a website or landing page to run lead generation ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Instant Forms open <strong>directly within Facebook or Instagram</strong> — no website or landing page is required for the form itself. You will, however, need a URL for your privacy policy (a page on your website) and optionally a website link for the final CTA button. If you don't yet have a website, you can use a simple free privacy policy page from a third-party generator.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I download the leads collected from my Meta Ads form?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>You can download leads from <strong>Meta Ads Manager &gt; Ads &gt; your ad &gt; Results &gt; On-Facebook Leads</strong> or directly from the Forms Library in your Meta Business Suite. You can also connect your CRM (e.g. HubSpot, Salesforce, Mailchimp) via Meta's native integrations or Zapier to receive leads automatically in real time without manual downloads.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I improve the quality of leads from Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Several strategies help improve lead quality: use the <strong>Higher Intent</strong> form type to add a confirmation step; add <strong>custom qualifying questions</strong> that filter out unqualified prospects; be specific in your ad copy about who the offer is for; use <strong>lookalike audiences</strong> based on existing customers rather than broad interest targeting; and add a disqualifying detail to your form (e.g. a minimum budget or requirement) so only genuinely interested people submit.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I use the same instant form across multiple ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Once a form is created, it is saved in the <strong>Forms Library</strong> and can be reused across multiple ads and campaigns. When creating or editing an ad, you can select an existing form instead of creating a new one. This is useful for A/B testing different creatives with the same form, or running multiple campaigns that all feed leads into the same form.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -422,21 +366,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about lead generation campaigns in Meta Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a lead generation campaign in Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A Meta Ads lead generation campaign uses the <strong>Leads objective</strong> to collect contact information from potential customers without requiring them to leave Facebook or Instagram. When someone clicks your ad, a pre-filled <strong>Instant Form</strong> opens natively within the app — with their name and contact details already populated from their profile — making it extremely easy to submit.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between More Volume, Higher Intent, and Rich Creative forms?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>More Volume</strong> is optimised for maximum submissions — it's short, frictionless, and pre-fills as much as possible. <strong>Higher Intent</strong> adds a review step where the user must confirm their details before submitting, which reduces accidental submissions and improves lead quality. <strong>Rich Creative</strong> gives you space to present your offer in detail (how it works, testimonials, products, incentives) before the user sees the form — best for higher-consideration products or services.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a website or landing page to run lead generation ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Instant Forms open <strong>directly within Facebook or Instagram</strong> — no website or landing page is required for the form itself. You will, however, need a URL for your privacy policy (a page on your website) and optionally a website link for the final CTA button. If you don't yet have a website, you can use a simple free privacy policy page from a third-party generator.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I download the leads collected from my Meta Ads form?</span>
+          </div>
+          <div class="faq-answer">
+            <p>You can download leads from <strong>Meta Ads Manager &gt; Ads &gt; your ad &gt; Results &gt; On-Facebook Leads</strong> or directly from the Forms Library in your Meta Business Suite. You can also connect your CRM (e.g. HubSpot, Salesforce, Mailchimp) via Meta's native integrations or Zapier to receive leads automatically in real time without manual downloads.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I improve the quality of leads from Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Several strategies help improve lead quality: use the <strong>Higher Intent</strong> form type to add a confirmation step; add <strong>custom qualifying questions</strong> that filter out unqualified prospects; be specific in your ad copy about who the offer is for; use <strong>lookalike audiences</strong> based on existing customers rather than broad interest targeting; and add a disqualifying detail to your form (e.g. a minimum budget or requirement) so only genuinely interested people submit.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I use the same instant form across multiple ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Once a form is created, it is saved in the <strong>Forms Library</strong> and can be reused across multiple ads and campaigns. When creating or editing an ad, you can select an existing form instead of creating a new one. This is useful for A/B testing different creatives with the same form, or running multiple campaigns that all feed leads into the same form.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

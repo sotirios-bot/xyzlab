@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -292,81 +310,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Meta Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about finding and managing comments on Meta Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Can I reply to comments on my Meta Ads directly from Ads Manager?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Not directly from Ads Manager. Once you click <strong>Facebook post with comments</strong> or <strong>Instagram post with comments</strong>, you are taken to the live post on Facebook or Instagram where you can <strong>reply, like, or hide comments</strong> just like any organic post. You can also manage ad comments through <strong>Meta Business Suite &gt; Inbox</strong>, which consolidates comments from all your posts and ads.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why should I monitor comments on my Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Ad comments are public and visible to everyone who sees your ad — including potential customers. <strong>Negative or unanswered comments</strong> can reduce trust and hurt ad performance. Regularly checking comments lets you respond to questions, address complaints quickly, hide spam, and gather feedback on your offer and creative.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do ad comments disappear when I pause or stop an ad?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Comments are tied to the underlying Facebook or Instagram post, not the ad campaign itself. If you pause or stop the ad, the post and its comments remain. However, if you <strong>delete the ad</strong> and it uses a unique post, the post — and its comments — may also be removed. To preserve comment history, use <strong>existing posts</strong> as your ad creative rather than single-use ad posts.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I hide or delete negative comments on Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Once you open the post via <strong>Facebook post with comments</strong>, you can hover over any comment and choose to <strong>Hide</strong> (visible only to the commenter and their friends) or <strong>Delete</strong> it entirely. Hiding is generally preferred over deleting for negative comments as it looks less aggressive and the commenter will not know their comment was hidden.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is there a way to get notified of new comments on my ads automatically?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. In <strong>Meta Business Suite</strong>, go to <strong>Settings &gt; Notifications</strong> and enable notifications for comments and messages. You can receive email or mobile push alerts whenever someone comments on one of your ads. You can also set up <strong>automated responses</strong> in Meta Business Suite to instantly acknowledge new comments or messages while you review them manually.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do Facebook and Instagram ad comments count separately?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Facebook and Instagram are separate placements, each with their own comment thread. An ad running on both platforms will have <strong>separate comment sections</strong> — comments on the Facebook version are not visible on Instagram, and vice versa. Use the <strong>Facebook post with comments</strong> and <strong>Instagram post with comments</strong> options separately to view each platform's comments.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -424,21 +368,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about finding and managing comments on Meta Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I reply to comments on my Meta Ads directly from Ads Manager?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Not directly from Ads Manager. Once you click <strong>Facebook post with comments</strong> or <strong>Instagram post with comments</strong>, you are taken to the live post on Facebook or Instagram where you can <strong>reply, like, or hide comments</strong> just like any organic post. You can also manage ad comments through <strong>Meta Business Suite &gt; Inbox</strong>, which consolidates comments from all your posts and ads.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why should I monitor comments on my Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Ad comments are public and visible to everyone who sees your ad — including potential customers. <strong>Negative or unanswered comments</strong> can reduce trust and hurt ad performance. Regularly checking comments lets you respond to questions, address complaints quickly, hide spam, and gather feedback on your offer and creative.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do ad comments disappear when I pause or stop an ad?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Comments are tied to the underlying Facebook or Instagram post, not the ad campaign itself. If you pause or stop the ad, the post and its comments remain. However, if you <strong>delete the ad</strong> and it uses a unique post, the post — and its comments — may also be removed. To preserve comment history, use <strong>existing posts</strong> as your ad creative rather than single-use ad posts.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I hide or delete negative comments on Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Once you open the post via <strong>Facebook post with comments</strong>, you can hover over any comment and choose to <strong>Hide</strong> (visible only to the commenter and their friends) or <strong>Delete</strong> it entirely. Hiding is generally preferred over deleting for negative comments as it looks less aggressive and the commenter will not know their comment was hidden.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is there a way to get notified of new comments on my ads automatically?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. In <strong>Meta Business Suite</strong>, go to <strong>Settings &gt; Notifications</strong> and enable notifications for comments and messages. You can receive email or mobile push alerts whenever someone comments on one of your ads. You can also set up <strong>automated responses</strong> in Meta Business Suite to instantly acknowledge new comments or messages while you review them manually.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do Facebook and Instagram ad comments count separately?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Facebook and Instagram are separate placements, each with their own comment thread. An ad running on both platforms will have <strong>separate comment sections</strong> — comments on the Facebook version are not visible on Instagram, and vice versa. Use the <strong>Facebook post with comments</strong> and <strong>Instagram post with comments</strong> options separately to view each platform's comments.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

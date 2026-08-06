@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -350,81 +368,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about campaign-specific conversion goals in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the difference between Account Default and Campaign Specific goals?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Account Default</strong> means the campaign uses whatever conversion actions are set as primary at the account level — all such campaigns share the same goals and Smart Bidding optimises toward all of them. <strong>Campaign Specific</strong> lets you override the account defaults for a single campaign and choose exactly which conversion actions that campaign should optimise toward. This is essential when different campaigns have different objectives (e.g., one campaign targets leads while another targets purchases).</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why would I use campaign-specific goals instead of account defaults?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Account defaults work fine when all your campaigns share the same conversion objective. But if you run campaigns for different products, services, or funnel stages, you'll want each campaign to optimise toward its own specific conversion. For example, a top-of-funnel awareness campaign might optimise for video views, while a bottom-of-funnel campaign optimises for purchases. Campaign-specific goals make Smart Bidding far more precise in these situations.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will changing to campaign-specific goals affect my bidding strategy?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Smart Bidding strategies (Target CPA, Target ROAS, Maximise Conversions, etc.) optimise toward whichever conversion actions are set as primary for the campaign. When you switch to Campaign Specific and select different goals, the algorithm will begin optimising toward those new actions. You may see a learning period as Google recalibrates its bidding model for the updated objective.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I switch back to Account Default after setting Campaign Specific goals?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You can revert a campaign to Account Default at any time by going to <strong>Campaign Settings → Conversion goals</strong> and changing the setting back to Account Default. This will re-apply the account-level primary conversion actions to that campaign immediately.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is a "Custom Conversion Action Goal" in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A Custom Conversion Action Goal is a conversion action you've created in Google Ads — such as a purchase, lead form submission, phone call, or imported GA4 key event. When setting campaign-specific goals, you select one or more of these custom actions to tell Google exactly what this campaign should be optimising for. Only actions set as <strong>primary</strong> conversions influence Smart Bidding; secondary conversions are tracked but not optimised toward.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I apply campaign-specific goals to multiple campaigns at once?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, using <strong>Option 1</strong> (the Edit menu approach). In the Campaigns list, check the boxes next to multiple campaigns at once, then click <strong>Edit → Update conversion goals</strong>. This applies the same campaign-specific goal setting to all selected campaigns simultaneously — useful when you need to update a large number of campaigns quickly.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -482,21 +426,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about campaign-specific conversion goals in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Account Default and Campaign Specific goals?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Account Default</strong> means the campaign uses whatever conversion actions are set as primary at the account level — all such campaigns share the same goals and Smart Bidding optimises toward all of them. <strong>Campaign Specific</strong> lets you override the account defaults for a single campaign and choose exactly which conversion actions that campaign should optimise toward. This is essential when different campaigns have different objectives (e.g., one campaign targets leads while another targets purchases).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why would I use campaign-specific goals instead of account defaults?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Account defaults work fine when all your campaigns share the same conversion objective. But if you run campaigns for different products, services, or funnel stages, you'll want each campaign to optimise toward its own specific conversion. For example, a top-of-funnel awareness campaign might optimise for video views, while a bottom-of-funnel campaign optimises for purchases. Campaign-specific goals make Smart Bidding far more precise in these situations.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will changing to campaign-specific goals affect my bidding strategy?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Smart Bidding strategies (Target CPA, Target ROAS, Maximise Conversions, etc.) optimise toward whichever conversion actions are set as primary for the campaign. When you switch to Campaign Specific and select different goals, the algorithm will begin optimising toward those new actions. You may see a learning period as Google recalibrates its bidding model for the updated objective.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I switch back to Account Default after setting Campaign Specific goals?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can revert a campaign to Account Default at any time by going to <strong>Campaign Settings → Conversion goals</strong> and changing the setting back to Account Default. This will re-apply the account-level primary conversion actions to that campaign immediately.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a "Custom Conversion Action Goal" in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A Custom Conversion Action Goal is a conversion action you've created in Google Ads — such as a purchase, lead form submission, phone call, or imported GA4 key event. When setting campaign-specific goals, you select one or more of these custom actions to tell Google exactly what this campaign should be optimising for. Only actions set as <strong>primary</strong> conversions influence Smart Bidding; secondary conversions are tracked but not optimised toward.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I apply campaign-specific goals to multiple campaigns at once?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, using <strong>Option 1</strong> (the Edit menu approach). In the Campaigns list, check the boxes next to multiple campaigns at once, then click <strong>Edit → Update conversion goals</strong>. This applies the same campaign-specific goal setting to all selected campaigns simultaneously — useful when you need to update a large number of campaigns quickly.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

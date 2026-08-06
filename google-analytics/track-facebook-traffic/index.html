@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -274,81 +292,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Analytics?</h3>
           <p>Book a 90-minute training session and we'll work through your analytics setup together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about tracking and understanding Facebook traffic in Google Analytics.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>How does Facebook traffic appear in Google Analytics?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Facebook organic traffic typically appears as <strong>facebook.com / referral</strong> or <strong>l.facebook.com / referral</strong> in the Session source / medium dimension. The <code>l.facebook.com</code> domain is Facebook's link shortener and click tracker — many in-app link clicks route through it. In GA4's default channel groupings, Facebook traffic may appear under <strong>Referral</strong> or <strong>Organic Social</strong> depending on your channel group rules.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why is my Facebook traffic showing as Direct in GA4?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Facebook's in-app browser frequently strips the referrer header, so GA4 cannot identify Facebook as the source and falls back to <strong>Direct</strong>. This is a very common issue. To fix it, always add UTM parameters to any links you share on Facebook: <code>utm_source=facebook&utm_medium=social</code> for organic posts, or <code>utm_source=facebook&utm_medium=cpc</code> for paid ads. With UTM tags in place, GA4 correctly attributes the session regardless of how the link was opened.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between Facebook organic and Facebook Ads traffic in GA4?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Without UTM parameters, both organic and paid Facebook traffic appear as <strong>facebook.com / referral</strong>, making them indistinguishable. Meta Ads Manager has an auto-tagging option that appends UTM parameters to your ad URLs automatically — enable it under <strong>Ads Manager → Settings → Tracking</strong>. For organic posts, add UTMs manually. Once in place, paid traffic will show as a separate row (e.g. <code>facebook / cpc</code>) in the Traffic Acquisition report.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I add Facebook to the Organic Social channel in GA4?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>If Facebook referral traffic is appearing under <strong>Referral</strong> instead of <strong>Organic Social</strong>, go to <strong>Admin → Data display → Channel groups</strong> and edit the <strong>Organic Social</strong> channel rule to include <code>facebook.com</code> and <code>l.facebook.com</code> as matching source domains. GA4 should already include Facebook by default, but custom rules may override this — check your channel group configuration to confirm.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I compare Facebook traffic against other social platforms?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. In the Traffic Acquisition report with the <strong>Session source / medium</strong> dimension, remove the search filter to see all sources ranked by sessions. You can compare Facebook, Instagram, TikTok, Pinterest, and LinkedIn side by side. For a dedicated social media dashboard, build a custom <strong>Looker Studio (Data Studio) report</strong> that segments each platform into its own chart or table.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Should I track Facebook traffic differently for Facebook Ads vs organic posts?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — keeping paid and organic Facebook traffic separate is important for accurate attribution. Use <code>utm_medium=cpc</code> (or <code>paid-social</code>) for ad traffic and <code>utm_medium=social</code> for organic posts. This way GA4 reports them on separate rows and you can clearly see the return from your ad spend versus your organic social activity. Consistent UTM naming conventions across all social channels will make cross-platform comparison much easier.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -406,21 +350,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about tracking and understanding Facebook traffic in Google Analytics.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How does Facebook traffic appear in Google Analytics?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Facebook organic traffic typically appears as <strong>facebook.com / referral</strong> or <strong>l.facebook.com / referral</strong> in the Session source / medium dimension. The <code>l.facebook.com</code> domain is Facebook's link shortener and click tracker — many in-app link clicks route through it. In GA4's default channel groupings, Facebook traffic may appear under <strong>Referral</strong> or <strong>Organic Social</strong> depending on your channel group rules.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why is my Facebook traffic showing as Direct in GA4?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Facebook's in-app browser frequently strips the referrer header, so GA4 cannot identify Facebook as the source and falls back to <strong>Direct</strong>. This is a very common issue. To fix it, always add UTM parameters to any links you share on Facebook: <code>utm_source=facebook&utm_medium=social</code> for organic posts, or <code>utm_source=facebook&utm_medium=cpc</code> for paid ads. With UTM tags in place, GA4 correctly attributes the session regardless of how the link was opened.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Facebook organic and Facebook Ads traffic in GA4?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Without UTM parameters, both organic and paid Facebook traffic appear as <strong>facebook.com / referral</strong>, making them indistinguishable. Meta Ads Manager has an auto-tagging option that appends UTM parameters to your ad URLs automatically — enable it under <strong>Ads Manager → Settings → Tracking</strong>. For organic posts, add UTMs manually. Once in place, paid traffic will show as a separate row (e.g. <code>facebook / cpc</code>) in the Traffic Acquisition report.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I add Facebook to the Organic Social channel in GA4?</span>
+          </div>
+          <div class="faq-answer">
+            <p>If Facebook referral traffic is appearing under <strong>Referral</strong> instead of <strong>Organic Social</strong>, go to <strong>Admin → Data display → Channel groups</strong> and edit the <strong>Organic Social</strong> channel rule to include <code>facebook.com</code> and <code>l.facebook.com</code> as matching source domains. GA4 should already include Facebook by default, but custom rules may override this — check your channel group configuration to confirm.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I compare Facebook traffic against other social platforms?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. In the Traffic Acquisition report with the <strong>Session source / medium</strong> dimension, remove the search filter to see all sources ranked by sessions. You can compare Facebook, Instagram, TikTok, Pinterest, and LinkedIn side by side. For a dedicated social media dashboard, build a custom <strong>Looker Studio (Data Studio) report</strong> that segments each platform into its own chart or table.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Should I track Facebook traffic differently for Facebook Ads vs organic posts?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — keeping paid and organic Facebook traffic separate is important for accurate attribution. Use <code>utm_medium=cpc</code> (or <code>paid-social</code>) for ad traffic and <code>utm_medium=social</code> for organic posts. This way GA4 reports them on separate rows and you can clearly see the return from your ad spend versus your organic social activity. Consistent UTM naming conventions across all social channels will make cross-platform comparison much easier.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -336,81 +354,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with your Wix site?</h3>
           <p>Book a 90-minute training session and we'll build your Wix Studio dynamic pages together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about dynamic pages and the CMS in Wix Studio.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a dynamic page in Wix Studio?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A dynamic page is a single page template that automatically generates multiple individual pages based on items in a CMS collection. Instead of building 50 separate pages for 50 products or team members, you design the template once and Wix renders a unique page for each item in your collection. Each page gets its own URL, making it fully SEO-indexable.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between Wix CMS and a regular Wix page?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A <strong>regular Wix page</strong> is static — you manually add and edit every piece of content directly on the page. A <strong>CMS-powered dynamic page</strong> is template-driven — the content comes from a collection (database), and the page layout stays consistent while the data changes per item. CMS pages are ideal for any repeating content type: blog posts, listings, team members, portfolios, or FAQs at scale.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Are dynamic pages in Wix Studio good for SEO?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Each dynamic page gets its own unique URL and can have its own meta title, meta description, and structured content — all pulled from CMS fields you define. You can even create a dedicated SEO field in your collection to control the meta description per item. This makes dynamic pages an efficient way to build large content libraries (e.g. local landing pages, product pages) that rank in Google without manually creating each page.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What types of fields can I add to a Wix CMS collection?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Wix CMS supports a wide range of field types including: <strong>Text</strong>, <strong>Rich Text</strong>, <strong>Number</strong>, <strong>Date &amp; Time</strong>, <strong>Image</strong>, <strong>Video</strong>, <strong>Boolean (Yes/No)</strong>, <strong>URL</strong>, <strong>Email</strong>, <strong>Address</strong>, and <strong>Reference</strong> (to link items across collections). You can mix and match field types to model almost any content structure — from simple team bios to complex product catalogues.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I show a list of dynamic pages on another page?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — this is called a <strong>dynamic list page</strong>. In addition to the item template (which shows one item's detail), you can create a list page that displays all items in your collection as a grid or list. Each item in the list links to its individual dynamic page. This is the standard pattern for blogs (index page → article page), team directories (team page → person page), or property listings (all listings → individual listing).</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is the CMS available on all Wix plans?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The Wix CMS is available on most paid plans, but the number of items you can store and the ability to use dynamic pages with custom collections may be limited on lower-tier plans. Wix Studio (aimed at agencies and professional developers) has full CMS access. Check your current plan in Wix's billing settings if you're unsure — upgrading to a Business or Studio plan unlocks the full CMS feature set.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -468,21 +412,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about dynamic pages and the CMS in Wix Studio.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a dynamic page in Wix Studio?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A dynamic page is a single page template that automatically generates multiple individual pages based on items in a CMS collection. Instead of building 50 separate pages for 50 products or team members, you design the template once and Wix renders a unique page for each item in your collection. Each page gets its own URL, making it fully SEO-indexable.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between Wix CMS and a regular Wix page?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A <strong>regular Wix page</strong> is static — you manually add and edit every piece of content directly on the page. A <strong>CMS-powered dynamic page</strong> is template-driven — the content comes from a collection (database), and the page layout stays consistent while the data changes per item. CMS pages are ideal for any repeating content type: blog posts, listings, team members, portfolios, or FAQs at scale.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Are dynamic pages in Wix Studio good for SEO?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Each dynamic page gets its own unique URL and can have its own meta title, meta description, and structured content — all pulled from CMS fields you define. You can even create a dedicated SEO field in your collection to control the meta description per item. This makes dynamic pages an efficient way to build large content libraries (e.g. local landing pages, product pages) that rank in Google without manually creating each page.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What types of fields can I add to a Wix CMS collection?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Wix CMS supports a wide range of field types including: <strong>Text</strong>, <strong>Rich Text</strong>, <strong>Number</strong>, <strong>Date &amp; Time</strong>, <strong>Image</strong>, <strong>Video</strong>, <strong>Boolean (Yes/No)</strong>, <strong>URL</strong>, <strong>Email</strong>, <strong>Address</strong>, and <strong>Reference</strong> (to link items across collections). You can mix and match field types to model almost any content structure — from simple team bios to complex product catalogues.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I show a list of dynamic pages on another page?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — this is called a <strong>dynamic list page</strong>. In addition to the item template (which shows one item's detail), you can create a list page that displays all items in your collection as a grid or list. Each item in the list links to its individual dynamic page. This is the standard pattern for blogs (index page → article page), team directories (team page → person page), or property listings (all listings → individual listing).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is the CMS available on all Wix plans?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The Wix CMS is available on most paid plans, but the number of items you can store and the ability to use dynamic pages with custom collections may be limited on lower-tier plans. Wix Studio (aimed at agencies and professional developers) has full CMS access. Check your current plan in Wix's billing settings if you're unsure — upgrading to a Business or Studio plan unlocks the full CMS feature set.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

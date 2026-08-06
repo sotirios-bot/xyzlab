@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -402,81 +420,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Analytics?</h3>
           <p>Book a 90-minute training session and we'll set up your GA4 events and tracking together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about tracking WhatsApp clicks in Google Analytics.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Why do I need to enable Click Variables before setting up the trigger?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>GTM's built-in Click Variables (Click URL, Click Text, Click Classes, etc.) are <strong>disabled by default</strong>. The Just Links trigger uses the <strong>Click URL</strong> variable to compare each link click against your WhatsApp URL condition. Without enabling Click Variables first, GTM can't read the URL of the clicked link, so your trigger condition will never match and the tag won't fire.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What WhatsApp URL format should I use in the trigger?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The most common WhatsApp link formats are <code>https://wa.me/PHONENUMBER</code> and <code>https://api.whatsapp.com/send?phone=PHONENUMBER</code>. The easiest approach is to set the trigger condition to <strong>Click URL contains wa.me</strong> — this will match any WhatsApp link on your site regardless of the phone number or extra parameters. If you have multiple WhatsApp numbers and want to track them separately, use the exact full URL for each.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why use "Just Links" instead of "All Elements" as the trigger type?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Just Links</strong> fires only when an <code>&lt;a href&gt;</code> anchor tag is clicked, which is the correct element type for outbound links like WhatsApp. It also waits for the link navigation to register before sending the tag — important for outbound links that open WhatsApp. <strong>All Elements</strong> fires for any click on any element and may miss outbound link navigation timing. Use Just Links for all outbound link tracking.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I verify the event is arriving in GA4 after publishing?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>After publishing your GTM container, click the WhatsApp link on your live website from a browser where you have GA4 open. Check <strong>GA4 &rarr; Reports &rarr; Realtime</strong> to see the event appear within a few seconds, or go to <strong>Admin &rarr; DebugView</strong> for a detailed view of events firing from your device. The event will appear under the name you set (e.g. <code>whatsapp_click</code>).</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I use the WhatsApp click event as a conversion in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Once the WhatsApp click event is appearing in GA4, go to <strong>GA4 &rarr; Admin &rarr; Events</strong> and toggle <strong>Mark as conversion</strong> next to your event. Then in <strong>Google Ads &rarr; Tools &rarr; Conversions</strong>, import the conversion from Google Analytics. This lets Google Ads smart bidding optimise for WhatsApp contacts as a conversion action.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>My tag isn't firing in Tag Assistant — what should I check?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The most common causes are: (1) <strong>Click Variables not enabled</strong> — go back and enable them, then republish; (2) <strong>URL mismatch</strong> — check the exact Click URL value shown in Tag Assistant for your link click and compare it to your trigger condition; (3) <strong>Link opens in a new tab</strong> — enable the <strong>Check Validation</strong> option in your Just Links trigger to handle new-tab links; (4) <strong>Container not published</strong> after enabling Click Variables.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -534,21 +478,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about tracking WhatsApp clicks in Google Analytics.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why do I need to enable Click Variables before setting up the trigger?</span>
+          </div>
+          <div class="faq-answer">
+            <p>GTM's built-in Click Variables (Click URL, Click Text, Click Classes, etc.) are <strong>disabled by default</strong>. The Just Links trigger uses the <strong>Click URL</strong> variable to compare each link click against your WhatsApp URL condition. Without enabling Click Variables first, GTM can't read the URL of the clicked link, so your trigger condition will never match and the tag won't fire.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What WhatsApp URL format should I use in the trigger?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The most common WhatsApp link formats are <code>https://wa.me/PHONENUMBER</code> and <code>https://api.whatsapp.com/send?phone=PHONENUMBER</code>. The easiest approach is to set the trigger condition to <strong>Click URL contains wa.me</strong> — this will match any WhatsApp link on your site regardless of the phone number or extra parameters. If you have multiple WhatsApp numbers and want to track them separately, use the exact full URL for each.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why use "Just Links" instead of "All Elements" as the trigger type?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Just Links</strong> fires only when an <code>&lt;a href&gt;</code> anchor tag is clicked, which is the correct element type for outbound links like WhatsApp. It also waits for the link navigation to register before sending the tag — important for outbound links that open WhatsApp. <strong>All Elements</strong> fires for any click on any element and may miss outbound link navigation timing. Use Just Links for all outbound link tracking.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I verify the event is arriving in GA4 after publishing?</span>
+          </div>
+          <div class="faq-answer">
+            <p>After publishing your GTM container, click the WhatsApp link on your live website from a browser where you have GA4 open. Check <strong>GA4 &rarr; Reports &rarr; Realtime</strong> to see the event appear within a few seconds, or go to <strong>Admin &rarr; DebugView</strong> for a detailed view of events firing from your device. The event will appear under the name you set (e.g. <code>whatsapp_click</code>).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I use the WhatsApp click event as a conversion in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Once the WhatsApp click event is appearing in GA4, go to <strong>GA4 &rarr; Admin &rarr; Events</strong> and toggle <strong>Mark as conversion</strong> next to your event. Then in <strong>Google Ads &rarr; Tools &rarr; Conversions</strong>, import the conversion from Google Analytics. This lets Google Ads smart bidding optimise for WhatsApp contacts as a conversion action.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>My tag isn't firing in Tag Assistant — what should I check?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The most common causes are: (1) <strong>Click Variables not enabled</strong> — go back and enable them, then republish; (2) <strong>URL mismatch</strong> — check the exact Click URL value shown in Tag Assistant for your link click and compare it to your trigger condition; (3) <strong>Link opens in a new tab</strong> — enable the <strong>Check Validation</strong> option in your Just Links trigger to handle new-tab links; (4) <strong>Container not published</strong> after enabling Click Variables.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

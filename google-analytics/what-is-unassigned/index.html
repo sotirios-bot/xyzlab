@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -276,81 +294,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Analytics?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Analytics setup together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about Unassigned traffic in Google Analytics.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Is Unassigned traffic a problem?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>It depends on the volume. A small amount of Unassigned traffic is normal — some traffic genuinely can't be classified. But if Unassigned accounts for a significant percentage of your sessions, it indicates a <strong>tracking or UTM tagging issue</strong> that is hiding real channel performance from your reports. Paid campaigns showing as Unassigned means you can't accurately measure their ROI, so it's worth investigating and fixing.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How is Unassigned different from (not set)?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Unassigned</strong> appears in the channel group dimension and means GA4 received source/medium data but it didn't match any channel rule. <strong>(not set)</strong> appears in other dimensions (like landing page or keyword) and means GA4 received no data at all for that dimension — the value was simply absent. They signal different problems: Unassigned = wrong UTM values; (not set) = missing data.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does Unassigned include bot or spam traffic?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Possibly. GA4 filters out known bot traffic automatically, but unknown bots or crawlers that send unusual source/medium combinations may end up in Unassigned. When investigating Unassigned traffic, look for sessions with <strong>zero engagement time</strong>, unusually high bounce rates, or suspicious source names — these are signals that the traffic may not be from real users.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What UTM medium values does GA4 recognise for each channel?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>GA4's default channel definitions match specific <code>utm_medium</code> values. Key examples: <strong>Paid Search</strong> uses <code>cpc</code>, <code>ppc</code>, <code>paidsearch</code>; <strong>Email</strong> uses <code>email</code>, <code>e-mail</code>, <code>e_mail</code>; <strong>Paid Social</strong> uses <code>paid_social</code>, <code>paidsocial</code>; <strong>Organic Social</strong> uses <code>social</code>, <code>social-network</code>, <code>social_network</code>. Using a value outside these definitions — even a slight variation like <code>social_paid</code> — will result in Unassigned. Always refer to Google's official channel definitions to confirm the exact values.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I create custom channel groups to reduce Unassigned traffic?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. In GA4 Admin → <strong>Data display</strong> → <strong>Channel groups</strong>, you can create custom channel group rules that match your specific source/medium combinations. For example, if you use <code>utm_medium=newsletter</code> and it shows as Unassigned, you can create an <strong>Email</strong> rule that matches medium <em>contains</em> <code>newsletter</code>. Custom channel group rules apply retroactively to historical data, so fixing them once reclassifies all past Unassigned sessions that match the new rules.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I find out which specific sources are causing Unassigned traffic?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Navigate to <strong>Reports → Acquisition → Traffic acquisition</strong>, add a filter for <em>Session default channel group exactly matches Unassigned</em>, then change the primary dimension to <strong>Session source / medium</strong>. This reveals every source/medium combination currently being classified as Unassigned, so you can prioritise which ones to fix first. See the full walkthrough in our <a href="../unassigned-traffic/">Check What Goes to Unassigned Traffic</a> tutorial.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -408,21 +352,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about Unassigned traffic in Google Analytics.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is Unassigned traffic a problem?</span>
+          </div>
+          <div class="faq-answer">
+            <p>It depends on the volume. A small amount of Unassigned traffic is normal — some traffic genuinely can't be classified. But if Unassigned accounts for a significant percentage of your sessions, it indicates a <strong>tracking or UTM tagging issue</strong> that is hiding real channel performance from your reports. Paid campaigns showing as Unassigned means you can't accurately measure their ROI, so it's worth investigating and fixing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How is Unassigned different from (not set)?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Unassigned</strong> appears in the channel group dimension and means GA4 received source/medium data but it didn't match any channel rule. <strong>(not set)</strong> appears in other dimensions (like landing page or keyword) and means GA4 received no data at all for that dimension — the value was simply absent. They signal different problems: Unassigned = wrong UTM values; (not set) = missing data.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does Unassigned include bot or spam traffic?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Possibly. GA4 filters out known bot traffic automatically, but unknown bots or crawlers that send unusual source/medium combinations may end up in Unassigned. When investigating Unassigned traffic, look for sessions with <strong>zero engagement time</strong>, unusually high bounce rates, or suspicious source names — these are signals that the traffic may not be from real users.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What UTM medium values does GA4 recognise for each channel?</span>
+          </div>
+          <div class="faq-answer">
+            <p>GA4's default channel definitions match specific <code>utm_medium</code> values. Key examples: <strong>Paid Search</strong> uses <code>cpc</code>, <code>ppc</code>, <code>paidsearch</code>; <strong>Email</strong> uses <code>email</code>, <code>e-mail</code>, <code>e_mail</code>; <strong>Paid Social</strong> uses <code>paid_social</code>, <code>paidsocial</code>; <strong>Organic Social</strong> uses <code>social</code>, <code>social-network</code>, <code>social_network</code>. Using a value outside these definitions — even a slight variation like <code>social_paid</code> — will result in Unassigned. Always refer to Google's official channel definitions to confirm the exact values.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I create custom channel groups to reduce Unassigned traffic?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. In GA4 Admin → <strong>Data display</strong> → <strong>Channel groups</strong>, you can create custom channel group rules that match your specific source/medium combinations. For example, if you use <code>utm_medium=newsletter</code> and it shows as Unassigned, you can create an <strong>Email</strong> rule that matches medium <em>contains</em> <code>newsletter</code>. Custom channel group rules apply retroactively to historical data, so fixing them once reclassifies all past Unassigned sessions that match the new rules.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I find out which specific sources are causing Unassigned traffic?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Navigate to <strong>Reports → Acquisition → Traffic acquisition</strong>, add a filter for <em>Session default channel group exactly matches Unassigned</em>, then change the primary dimension to <strong>Session source / medium</strong>. This reveals every source/medium combination currently being classified as Unassigned, so you can prioritise which ones to fix first. See the full walkthrough in our <a href="../unassigned-traffic/">Check What Goes to Unassigned Traffic</a> tutorial.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

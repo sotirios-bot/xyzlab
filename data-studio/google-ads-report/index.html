@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -339,81 +357,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Data Studio?</h3>
           <p>Book a 90-minute training session and we'll build your Looker Studio report together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about creating Google Ads reports in Looker Studio (Data Studio).</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What data can I pull into a Google Ads report in Looker Studio?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Looker Studio's native Google Ads connector gives you access to a wide range of dimensions and metrics including <strong>Clicks, Impressions, Cost, CTR, Average CPC, Conversions, Conversion Rate, Cost per Conversion, ROAS</strong>, and breakdowns by Campaign, Ad Group, Ad, Keyword, Device, and more. You can combine multiple metrics on the same chart to create rich, actionable dashboards.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need a special connector for Google Ads in Looker Studio?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Looker Studio includes a <strong>native Google Ads connector</strong> at no cost — just select it from the data source panel and authorize access to your account. There are also third-party connectors (e.g. Supermetrics, Porter Metrics) that offer additional features like multi-account blending or historical data beyond Google's default limits, but the native connector is sufficient for most standard reports.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What are the most important metrics to include in a Google Ads report?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The core metrics for most Google Ads reports are: <strong>Impressions</strong> (reach), <strong>Clicks</strong> (traffic), <strong>CTR</strong> (ad relevance), <strong>Average CPC</strong> (cost efficiency), <strong>Cost</strong> (spend), <strong>Conversions</strong> (results), and <strong>Cost per Conversion</strong> (ROI). For ecommerce accounts, also include <strong>Conversion Value</strong> and <strong>ROAS</strong>. Displaying these as scorecards at the top and a time series chart below gives a clear overview at a glance.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I create a Google Ads report for multiple accounts?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. If you have a <strong>Manager Account (MCC)</strong>, you can connect it as the data source and then use a filter or a dropdown control to switch between individual sub-accounts. Alternatively, you can add multiple Google Ads data sources to the same report and use blended data or separate pages per account.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I add a comparison period to my Google Ads report?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>On any scorecard or chart, open the <strong>Style</strong> panel and enable <strong>Show comparison</strong>. You can compare to the previous period, the same period last year, or a custom date range. The date range control on your report also has a built-in <strong>comparison date range</strong> option that applies to the entire report when enabled.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I share my Looker Studio Google Ads report with clients?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Click <strong>Share</strong> in the top-right corner and invite clients by email as <strong>Viewers</strong>. Alternatively, generate a <strong>shareable link</strong> that anyone with the link can view — no Google account required if you set access to "Anyone with the link." You can also schedule automated <strong>email delivery</strong> so clients receive a PDF snapshot of the report on a regular cadence.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -471,21 +415,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about creating Google Ads reports in Looker Studio (Data Studio).</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What data can I pull into a Google Ads report in Looker Studio?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Looker Studio's native Google Ads connector gives you access to a wide range of dimensions and metrics including <strong>Clicks, Impressions, Cost, CTR, Average CPC, Conversions, Conversion Rate, Cost per Conversion, ROAS</strong>, and breakdowns by Campaign, Ad Group, Ad, Keyword, Device, and more. You can combine multiple metrics on the same chart to create rich, actionable dashboards.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a special connector for Google Ads in Looker Studio?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Looker Studio includes a <strong>native Google Ads connector</strong> at no cost — just select it from the data source panel and authorize access to your account. There are also third-party connectors (e.g. Supermetrics, Porter Metrics) that offer additional features like multi-account blending or historical data beyond Google's default limits, but the native connector is sufficient for most standard reports.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What are the most important metrics to include in a Google Ads report?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The core metrics for most Google Ads reports are: <strong>Impressions</strong> (reach), <strong>Clicks</strong> (traffic), <strong>CTR</strong> (ad relevance), <strong>Average CPC</strong> (cost efficiency), <strong>Cost</strong> (spend), <strong>Conversions</strong> (results), and <strong>Cost per Conversion</strong> (ROI). For ecommerce accounts, also include <strong>Conversion Value</strong> and <strong>ROAS</strong>. Displaying these as scorecards at the top and a time series chart below gives a clear overview at a glance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I create a Google Ads report for multiple accounts?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. If you have a <strong>Manager Account (MCC)</strong>, you can connect it as the data source and then use a filter or a dropdown control to switch between individual sub-accounts. Alternatively, you can add multiple Google Ads data sources to the same report and use blended data or separate pages per account.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I add a comparison period to my Google Ads report?</span>
+          </div>
+          <div class="faq-answer">
+            <p>On any scorecard or chart, open the <strong>Style</strong> panel and enable <strong>Show comparison</strong>. You can compare to the previous period, the same period last year, or a custom date range. The date range control on your report also has a built-in <strong>comparison date range</strong> option that applies to the entire report when enabled.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I share my Looker Studio Google Ads report with clients?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Click <strong>Share</strong> in the top-right corner and invite clients by email as <strong>Viewers</strong>. Alternatively, generate a <strong>shareable link</strong> that anyone with the link can view — no Google account required if you set access to "Anyone with the link." You can also schedule automated <strong>email delivery</strong> so clients receive a PDF snapshot of the report on a regular cadence.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

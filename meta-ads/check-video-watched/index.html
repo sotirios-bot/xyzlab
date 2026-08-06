@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -292,81 +310,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your account setup together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about video watch percentage metrics in Meta Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What does Video Plays at 25%, 50%, 75%, 95%, and 100% mean in Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>These columns show the number of times your video ad was played to each milestone point. <strong>Video Plays at 25%</strong> counts viewers who watched at least the first quarter of your video; <strong>50%</strong> is the halfway point; <strong>75%</strong> means three-quarters; <strong>95%</strong> means nearly all the way through; and <strong>100%</strong> counts viewers who watched the entire video. By comparing these numbers you can identify exactly where viewers are dropping off and use that to improve your creative.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why do the Video Plays numbers drop off at each percentage milestone?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>It is normal for viewer numbers to decrease at each milestone — this is called the <strong>drop-off curve</strong>. Most viewers decide within the first few seconds whether to keep watching. A sharp drop between 25% and 50% usually signals that your hook is not strong enough or the content becomes less relevant quickly. If you see a big drop between 75% and 100%, your video may be slightly too long — consider tightening the ending or moving your call to action earlier.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is a good Video Plays at 100% rate for Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>There is no single benchmark, as completion rates vary by video length, format, and audience. Short videos (under 15 seconds) typically achieve higher 100% completion rates than longer ones. As a general rule, a <strong>25–40% completion rate</strong> (Video Plays at 100% divided by total video plays) is considered solid for a 15–30 second ad. For longer videos (60+ seconds), even a 10–20% completion rate can be acceptable. Always compare against your own historical performance rather than industry averages.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is ThruPlay in Meta Ads and how does it relate to video watch percentage?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>ThruPlay</strong> is a Meta metric that counts the number of times your video was played to completion, or for at least 15 seconds — whichever comes first. For videos under 15 seconds, ThruPlay equals Video Plays at 100%. For videos longer than 15 seconds, ThruPlay counts viewers who reached the 15-second mark, regardless of whether they watched to the end. ThruPlay is useful as a campaign objective when you want to optimise for engaged viewers, while the video percentage columns give you more granular data on how far into your video people are watching.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I save this column view as a preset in Meta Ads Manager?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. After customising your columns, click <strong>Save as Preset</strong> in the column selector before clicking Apply. Give the preset a name (e.g. "Video Performance") and it will be available in your Columns dropdown for quick access in future sessions. This saves time when you regularly report on video ad performance.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do the video watch percentage columns work for all Meta ad formats?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The Video Plays columns only populate for <strong>ad sets and ads that contain video creatives</strong>. They will show zero or be empty for image ads, carousel ads without video, or collection ads without a video cover. If you run both video and image ads in the same ad set, the columns will reflect only the video plays. For the most accurate analysis, filter your report to show only your video ad campaigns or ads.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -424,21 +368,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about video watch percentage metrics in Meta Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What does Video Plays at 25%, 50%, 75%, 95%, and 100% mean in Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>These columns show the number of times your video ad was played to each milestone point. <strong>Video Plays at 25%</strong> counts viewers who watched at least the first quarter of your video; <strong>50%</strong> is the halfway point; <strong>75%</strong> means three-quarters; <strong>95%</strong> means nearly all the way through; and <strong>100%</strong> counts viewers who watched the entire video. By comparing these numbers you can identify exactly where viewers are dropping off and use that to improve your creative.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why do the Video Plays numbers drop off at each percentage milestone?</span>
+          </div>
+          <div class="faq-answer">
+            <p>It is normal for viewer numbers to decrease at each milestone — this is called the <strong>drop-off curve</strong>. Most viewers decide within the first few seconds whether to keep watching. A sharp drop between 25% and 50% usually signals that your hook is not strong enough or the content becomes less relevant quickly. If you see a big drop between 75% and 100%, your video may be slightly too long — consider tightening the ending or moving your call to action earlier.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a good Video Plays at 100% rate for Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>There is no single benchmark, as completion rates vary by video length, format, and audience. Short videos (under 15 seconds) typically achieve higher 100% completion rates than longer ones. As a general rule, a <strong>25–40% completion rate</strong> (Video Plays at 100% divided by total video plays) is considered solid for a 15–30 second ad. For longer videos (60+ seconds), even a 10–20% completion rate can be acceptable. Always compare against your own historical performance rather than industry averages.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is ThruPlay in Meta Ads and how does it relate to video watch percentage?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>ThruPlay</strong> is a Meta metric that counts the number of times your video was played to completion, or for at least 15 seconds — whichever comes first. For videos under 15 seconds, ThruPlay equals Video Plays at 100%. For videos longer than 15 seconds, ThruPlay counts viewers who reached the 15-second mark, regardless of whether they watched to the end. ThruPlay is useful as a campaign objective when you want to optimise for engaged viewers, while the video percentage columns give you more granular data on how far into your video people are watching.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I save this column view as a preset in Meta Ads Manager?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. After customising your columns, click <strong>Save as Preset</strong> in the column selector before clicking Apply. Give the preset a name (e.g. "Video Performance") and it will be available in your Columns dropdown for quick access in future sessions. This saves time when you regularly report on video ad performance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do the video watch percentage columns work for all Meta ad formats?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The Video Plays columns only populate for <strong>ad sets and ads that contain video creatives</strong>. They will show zero or be empty for image ads, carousel ads without video, or collection ads without a video cover. If you run both video and image ads in the same ad set, the columns will reflect only the video plays. For the most accurate analysis, filter your report to show only your video ad campaigns or ads.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

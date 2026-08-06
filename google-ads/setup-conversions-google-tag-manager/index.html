@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -369,81 +387,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about setting up Google Ads conversions with Google Tag Manager.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a Google Ads conversion action?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A conversion action is a specific customer activity you want to track — such as a form submission, phone call, purchase, or thank-you page visit. When someone completes that action after clicking your ad, Google Ads records it as a conversion. This data powers Smart Bidding strategies like Target CPA and Target ROAS, so accurate conversion tracking is essential for campaign performance.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need Google Tag Manager to set up conversions?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No — you can also install the conversion snippet directly on your website. However, using <strong>Google Tag Manager</strong> is recommended because it lets you deploy and update tags without touching your website code. It also makes it easier to manage multiple tracking tags (Google Ads, Meta Pixel, GA4) from one place.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where do I find my Conversion ID and Conversion Label?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>After creating your conversion action in Google Ads, navigate to <strong>Goals → Conversions → Summary</strong>, click on your conversion action, then select <strong>Tag setup → Use Google Tag Manager</strong>. Google Ads will display both your <strong>Conversion ID</strong> (a number like <code>123456789</code>) and your <strong>Conversion Label</strong> (a short alphanumeric string). Copy both into your GTM tag configuration.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What trigger should I use in Google Tag Manager?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The trigger should fire at the moment the conversion happens. Common setups include: a <strong>Page View trigger</strong> filtered to your thank-you or confirmation URL (e.g. <code>/thank-you</code>), a <strong>Click trigger</strong> on a button or phone number, or a <strong>Form Submission trigger</strong>. Choose the trigger type that matches how your conversion is defined.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I verify that my Google Ads conversion is tracking correctly?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Use <strong>GTM Preview mode</strong> to simulate a conversion and confirm your tag fires on the correct trigger. You can also install the <strong>Google Tag Assistant</strong> Chrome extension to see conversion tags firing in real-time. In Google Ads, the conversion status will change from <em>Unverified</em> to <em>Recording</em> within 24–48 hours once a real conversion is tracked.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I track multiple conversion actions in the same account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You can create as many conversion actions as needed — for example, separate actions for form submissions, phone calls, and purchases. Each conversion action gets its own Conversion ID/Label pair, and you create a separate GTM tag for each one. You can then control which conversions are used for Smart Bidding at the campaign level using <strong>Campaign Conversion Goals</strong>.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -501,21 +445,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about setting up Google Ads conversions with Google Tag Manager.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a Google Ads conversion action?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A conversion action is a specific customer activity you want to track — such as a form submission, phone call, purchase, or thank-you page visit. When someone completes that action after clicking your ad, Google Ads records it as a conversion. This data powers Smart Bidding strategies like Target CPA and Target ROAS, so accurate conversion tracking is essential for campaign performance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need Google Tag Manager to set up conversions?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No — you can also install the conversion snippet directly on your website. However, using <strong>Google Tag Manager</strong> is recommended because it lets you deploy and update tags without touching your website code. It also makes it easier to manage multiple tracking tags (Google Ads, Meta Pixel, GA4) from one place.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where do I find my Conversion ID and Conversion Label?</span>
+          </div>
+          <div class="faq-answer">
+            <p>After creating your conversion action in Google Ads, navigate to <strong>Goals → Conversions → Summary</strong>, click on your conversion action, then select <strong>Tag setup → Use Google Tag Manager</strong>. Google Ads will display both your <strong>Conversion ID</strong> (a number like <code>123456789</code>) and your <strong>Conversion Label</strong> (a short alphanumeric string). Copy both into your GTM tag configuration.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What trigger should I use in Google Tag Manager?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The trigger should fire at the moment the conversion happens. Common setups include: a <strong>Page View trigger</strong> filtered to your thank-you or confirmation URL (e.g. <code>/thank-you</code>), a <strong>Click trigger</strong> on a button or phone number, or a <strong>Form Submission trigger</strong>. Choose the trigger type that matches how your conversion is defined.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I verify that my Google Ads conversion is tracking correctly?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Use <strong>GTM Preview mode</strong> to simulate a conversion and confirm your tag fires on the correct trigger. You can also install the <strong>Google Tag Assistant</strong> Chrome extension to see conversion tags firing in real-time. In Google Ads, the conversion status will change from <em>Unverified</em> to <em>Recording</em> within 24–48 hours once a real conversion is tracked.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I track multiple conversion actions in the same account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can create as many conversion actions as needed — for example, separate actions for form submissions, phone calls, and purchases. Each conversion action gets its own Conversion ID/Label pair, and you create a separate GTM tag for each one. You can then control which conversions are used for Smart Bidding at the campaign level using <strong>Campaign Conversion Goals</strong>.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

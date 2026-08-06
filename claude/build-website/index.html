@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -285,81 +303,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Claude AI?</h3>
           <p>Book a 90-minute training session and we'll build your AI-powered workflow together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about building websites with Claude Code and GitHub Pages.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is Claude Code and how is it different from Claude.ai?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Claude Code</strong> is Anthropic's agentic coding tool that can read, write, edit, and run code directly in your project environment. Unlike Claude.ai (the chat interface), Claude Code connects to your file system and tools like GitHub — it doesn't just suggest code, it <strong>builds and deploys it</strong>. This makes it ideal for building real websites end-to-end without manual copy-pasting.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need coding experience to use Claude Code?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Claude Code is designed to let non-developers build real projects using natural language. You describe what you want and Claude Code writes, tests, and deploys the code for you. Basic familiarity with concepts like files and GitHub is helpful, but you do not need to write a single line of code yourself.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is GitHub Pages free to use?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. <strong>GitHub Pages</strong> is a free static site hosting service provided by GitHub. It hosts your HTML, CSS, and JavaScript files directly from a GitHub repository at a free <code>username.github.io</code> subdomain. You can also connect a custom domain (e.g. <code>yourbrand.com</code>) at no additional cost from GitHub.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I add a custom domain to my GitHub Pages site?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Once your site is live on GitHub Pages, go to your repository <strong>Settings → Pages</strong> and enter your custom domain. Then update your domain registrar's DNS settings: add a <strong>CNAME record</strong> pointing to <code>username.github.io</code> (for subdomains) or configure <strong>A records</strong> pointing to GitHub's IP addresses (for apex domains). Claude Code can generate the exact DNS instructions for your specific domain registrar.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What types of websites can I build with Claude Code?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Claude Code works best for <strong>static websites</strong> — marketing sites, landing pages, portfolios, tutorial sites, documentation, and small business sites. Since GitHub Pages serves static files, sites that require a backend database or server-side logic need additional infrastructure (though Claude Code can help you set that up too with services like Supabase or serverless functions).</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can Claude Code help with ongoing website updates after launch?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Because Claude Code connects directly to your GitHub repository, you can open a new session at any time to add pages, update content, fix bugs, or redesign sections. Claude Code remembers your project structure and pushes changes to GitHub automatically — your site updates as soon as the push completes.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -417,21 +361,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about building websites with Claude Code and GitHub Pages.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is Claude Code and how is it different from Claude.ai?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Claude Code</strong> is Anthropic's agentic coding tool that can read, write, edit, and run code directly in your project environment. Unlike Claude.ai (the chat interface), Claude Code connects to your file system and tools like GitHub — it doesn't just suggest code, it <strong>builds and deploys it</strong>. This makes it ideal for building real websites end-to-end without manual copy-pasting.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need coding experience to use Claude Code?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Claude Code is designed to let non-developers build real projects using natural language. You describe what you want and Claude Code writes, tests, and deploys the code for you. Basic familiarity with concepts like files and GitHub is helpful, but you do not need to write a single line of code yourself.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is GitHub Pages free to use?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. <strong>GitHub Pages</strong> is a free static site hosting service provided by GitHub. It hosts your HTML, CSS, and JavaScript files directly from a GitHub repository at a free <code>username.github.io</code> subdomain. You can also connect a custom domain (e.g. <code>yourbrand.com</code>) at no additional cost from GitHub.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I add a custom domain to my GitHub Pages site?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Once your site is live on GitHub Pages, go to your repository <strong>Settings → Pages</strong> and enter your custom domain. Then update your domain registrar's DNS settings: add a <strong>CNAME record</strong> pointing to <code>username.github.io</code> (for subdomains) or configure <strong>A records</strong> pointing to GitHub's IP addresses (for apex domains). Claude Code can generate the exact DNS instructions for your specific domain registrar.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What types of websites can I build with Claude Code?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Claude Code works best for <strong>static websites</strong> — marketing sites, landing pages, portfolios, tutorial sites, documentation, and small business sites. Since GitHub Pages serves static files, sites that require a backend database or server-side logic need additional infrastructure (though Claude Code can help you set that up too with services like Supabase or serverless functions).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can Claude Code help with ongoing website updates after launch?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Because Claude Code connects directly to your GitHub repository, you can open a new session at any time to add pages, update content, fix bugs, or redesign sections. Claude Code remembers your project structure and pushes changes to GitHub automatically — your site updates as soon as the push completes.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

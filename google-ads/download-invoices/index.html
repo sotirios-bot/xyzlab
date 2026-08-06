@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -276,81 +294,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about Google Ads invoices and billing documents.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Where can I find my Google Ads invoices?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Go to <strong>Billing → Documents</strong> in the left-hand menu of your Google Ads account. All invoices, statements, and billing summaries are listed there. You can filter by date range to find documents from a specific month or period.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>In what format are Google Ads invoices downloaded?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google Ads invoices are downloaded as <strong>PDF files</strong>. Each invoice includes the billing period, account name, charges, tax details, and payment method. PDFs are ready to send to your finance team or attach to expense reports.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How far back do Google Ads invoices go?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google Ads stores billing documents for a significant period — typically several years. Use the date range filter in the <strong>Documents</strong> section to search for invoices from older billing periods. If you cannot find a very old invoice, contact Google Ads support for assistance.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I download multiple invoices at once?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. In the Documents section, tick the checkboxes next to multiple invoices, then click the <strong>Download</strong> button. Google will bundle the selected documents for download. This is useful when you need to submit invoices for a full quarter or financial year.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why don't I have access to the Billing section?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Access to the Billing section is restricted to users with <strong>Admin</strong> or <strong>Billing</strong> access on the account. If you are a Standard user or have read-only access, the Billing option will not appear in your menu. Ask the account admin to grant you the appropriate access level or to download the invoices on your behalf.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between an invoice and a billing summary in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>An <strong>invoice</strong> is a formal billing document issued to accounts on monthly invoicing (typically larger advertisers with a credit line). A <strong>billing summary</strong> or statement is available for accounts on automatic payments (credit/debit card), showing charges for a given period. Most small-to-medium accounts use automatic payments and will see billing summaries rather than formal invoices.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -408,21 +352,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about Google Ads invoices and billing documents.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where can I find my Google Ads invoices?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Go to <strong>Billing → Documents</strong> in the left-hand menu of your Google Ads account. All invoices, statements, and billing summaries are listed there. You can filter by date range to find documents from a specific month or period.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>In what format are Google Ads invoices downloaded?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google Ads invoices are downloaded as <strong>PDF files</strong>. Each invoice includes the billing period, account name, charges, tax details, and payment method. PDFs are ready to send to your finance team or attach to expense reports.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How far back do Google Ads invoices go?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google Ads stores billing documents for a significant period — typically several years. Use the date range filter in the <strong>Documents</strong> section to search for invoices from older billing periods. If you cannot find a very old invoice, contact Google Ads support for assistance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I download multiple invoices at once?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. In the Documents section, tick the checkboxes next to multiple invoices, then click the <strong>Download</strong> button. Google will bundle the selected documents for download. This is useful when you need to submit invoices for a full quarter or financial year.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why don't I have access to the Billing section?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Access to the Billing section is restricted to users with <strong>Admin</strong> or <strong>Billing</strong> access on the account. If you are a Standard user or have read-only access, the Billing option will not appear in your menu. Ask the account admin to grant you the appropriate access level or to download the invoices on your behalf.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between an invoice and a billing summary in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>An <strong>invoice</strong> is a formal billing document issued to accounts on monthly invoicing (typically larger advertisers with a credit line). A <strong>billing summary</strong> or statement is available for accounts on automatic payments (credit/debit card), showing charges for a given period. Most small-to-medium accounts use automatic payments and will see billing summaries rather than formal invoices.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

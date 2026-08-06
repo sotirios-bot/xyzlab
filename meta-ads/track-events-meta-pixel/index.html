@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -393,81 +411,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll set up your tracking and campaigns together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about tracking events and custom conversions with the Meta pixel.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the difference between a Meta pixel event and a custom conversion?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A <strong>pixel event</strong> (e.g. Lead, Purchase, ViewContent) is a standardised action tracked directly on your website using the Meta pixel or the Event Setup Tool. A <strong>custom conversion</strong> is a rule you define in Events Manager — typically based on a URL visit — that groups or filters pixel data into a specific conversion you care about. Custom conversions are useful when you want to track thank-you pages or specific URL paths without touching any code.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to install the Meta pixel before using the Event Setup Tool?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. The Meta pixel base code must already be installed on the page before the Event Setup Tool can work. The tool loads a live preview of your page and injects event tracking by identifying clickable elements — it requires the pixel to be present to fire the events correctly. If the pixel is not installed, use Meta's <strong>Partner Integrations</strong> (such as Google Tag Manager) to install it first.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Which event type should I use — Lead, Contact, or a custom event?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Use Meta's <strong>standard event types</strong> whenever possible, as they are recognised by Meta's algorithm for campaign optimisation. Use <strong>Lead</strong> for form submissions or enquiries, <strong>Contact</strong> for contact button clicks (phone, WhatsApp), <strong>Purchase</strong> for completed transactions, and <strong>CompleteRegistration</strong> for sign-ups. Custom events are available for non-standard actions but may have limited optimisation support.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I verify that my Meta pixel event is firing correctly?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Install the <strong>Meta Pixel Helper</strong> Chrome extension, then visit the page where your event is set up and trigger the action (e.g. click the button). The extension will show a green tick and the event name if it fires correctly. You can also check <strong>Events Manager → Test Events</strong> to see real-time event activity from your browser session.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I use a custom conversion as a campaign optimisation goal?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Once created, your custom conversion will appear as an option in the <strong>Conversion event</strong> field when setting up a Conversions campaign in Meta Ads Manager. Meta will then optimise your ad delivery to show ads to people most likely to complete that specific action. For best performance, ensure your custom conversion has received at least <strong>50 events in the past 7 days</strong> before optimising toward it.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the iOS 14 impact on Meta pixel tracking?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Apple's iOS 14+ App Tracking Transparency framework allows users to opt out of cross-site tracking, which limits how the Meta pixel can track conversions from iOS users. To mitigate this, Meta introduced the <strong>Conversions API (CAPI)</strong>, which sends event data server-side rather than relying solely on the browser. Setting up <strong>domain verification</strong> and <strong>aggregated event measurement</strong> in Events Manager is also recommended to maximise the data you can receive and use for optimisation.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -525,21 +469,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about tracking events and custom conversions with the Meta pixel.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between a Meta pixel event and a custom conversion?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A <strong>pixel event</strong> (e.g. Lead, Purchase, ViewContent) is a standardised action tracked directly on your website using the Meta pixel or the Event Setup Tool. A <strong>custom conversion</strong> is a rule you define in Events Manager — typically based on a URL visit — that groups or filters pixel data into a specific conversion you care about. Custom conversions are useful when you want to track thank-you pages or specific URL paths without touching any code.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to install the Meta pixel before using the Event Setup Tool?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. The Meta pixel base code must already be installed on the page before the Event Setup Tool can work. The tool loads a live preview of your page and injects event tracking by identifying clickable elements — it requires the pixel to be present to fire the events correctly. If the pixel is not installed, use Meta's <strong>Partner Integrations</strong> (such as Google Tag Manager) to install it first.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Which event type should I use — Lead, Contact, or a custom event?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Use Meta's <strong>standard event types</strong> whenever possible, as they are recognised by Meta's algorithm for campaign optimisation. Use <strong>Lead</strong> for form submissions or enquiries, <strong>Contact</strong> for contact button clicks (phone, WhatsApp), <strong>Purchase</strong> for completed transactions, and <strong>CompleteRegistration</strong> for sign-ups. Custom events are available for non-standard actions but may have limited optimisation support.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I verify that my Meta pixel event is firing correctly?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Install the <strong>Meta Pixel Helper</strong> Chrome extension, then visit the page where your event is set up and trigger the action (e.g. click the button). The extension will show a green tick and the event name if it fires correctly. You can also check <strong>Events Manager → Test Events</strong> to see real-time event activity from your browser session.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I use a custom conversion as a campaign optimisation goal?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Once created, your custom conversion will appear as an option in the <strong>Conversion event</strong> field when setting up a Conversions campaign in Meta Ads Manager. Meta will then optimise your ad delivery to show ads to people most likely to complete that specific action. For best performance, ensure your custom conversion has received at least <strong>50 events in the past 7 days</strong> before optimising toward it.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the iOS 14 impact on Meta pixel tracking?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Apple's iOS 14+ App Tracking Transparency framework allows users to opt out of cross-site tracking, which limits how the Meta pixel can track conversions from iOS users. To mitigate this, Meta introduced the <strong>Conversions API (CAPI)</strong>, which sends event data server-side rather than relying solely on the browser. Setting up <strong>domain verification</strong> and <strong>aggregated event measurement</strong> in Events Manager is also recommended to maximise the data you can receive and use for optimisation.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

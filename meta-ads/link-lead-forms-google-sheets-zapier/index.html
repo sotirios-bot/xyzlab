@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -346,81 +364,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Meta Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about connecting Meta Ads lead forms to Google Sheets via Zapier.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Do I need a paid Zapier plan to connect Meta Ads to Google Sheets?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. The <strong>Facebook Lead Ads trigger</strong> in Zapier requires a paid subscription — it is not available on the free plan. You will need at minimum a Zapier Starter plan. Google Sheets actions are available on paid plans as well. Check Zapier's current pricing for the most up-to-date plan details.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How long does it take for a new lead to appear in Google Sheets?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Once your Zap is live, new leads typically appear in Google Sheets within <strong>1–5 minutes</strong> of the form being submitted. Zapier checks for new leads at a regular polling interval, so there may be a short delay. On higher-tier Zapier plans, you can reduce this interval for near-instant delivery.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will the Zap capture leads that came in before I set it up?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Zapier only captures leads that are submitted <strong>after the Zap is published and turned on</strong>. Historical leads that were collected before the Zap was activated will not be sent to Google Sheets automatically. To import past leads, download them manually from Meta Ads Manager and paste them into your spreadsheet.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I send leads to multiple Google Sheets at once?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, but you would need a <strong>separate Zap for each sheet</strong>. Each Zap handles one trigger-action pair. If you want to send the same lead data to two different spreadsheets or tabs, create two Zaps with the same Facebook Lead Ads trigger but different Google Sheets actions. This counts as two tasks per lead submission.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens if I edit the Meta Ads lead form after setting up the Zap?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>If you add or remove fields from your lead form, the <strong>column mapping in your Zap may break</strong>. Zapier stores the field mapping based on the form structure at the time of setup. After editing the form, go back into your Zap, re-test the trigger to load the new fields, and update the Google Sheets column mapping to match the updated form fields.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I connect Meta Ads leads to a CRM instead of Google Sheets?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8594;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Zapier supports connections to popular CRMs including <strong>HubSpot, Salesforce, Pipedrive, and many others</strong>. The setup process is similar — select your CRM as the Action app instead of Google Sheets, then map the lead form fields to the corresponding CRM fields. Meta also has native integrations with some CRMs via its own Leads Centre.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -478,21 +422,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about connecting Meta Ads lead forms to Google Sheets via Zapier.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a paid Zapier plan to connect Meta Ads to Google Sheets?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. The <strong>Facebook Lead Ads trigger</strong> in Zapier requires a paid subscription — it is not available on the free plan. You will need at minimum a Zapier Starter plan. Google Sheets actions are available on paid plans as well. Check Zapier's current pricing for the most up-to-date plan details.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How long does it take for a new lead to appear in Google Sheets?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Once your Zap is live, new leads typically appear in Google Sheets within <strong>1–5 minutes</strong> of the form being submitted. Zapier checks for new leads at a regular polling interval, so there may be a short delay. On higher-tier Zapier plans, you can reduce this interval for near-instant delivery.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will the Zap capture leads that came in before I set it up?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Zapier only captures leads that are submitted <strong>after the Zap is published and turned on</strong>. Historical leads that were collected before the Zap was activated will not be sent to Google Sheets automatically. To import past leads, download them manually from Meta Ads Manager and paste them into your spreadsheet.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I send leads to multiple Google Sheets at once?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, but you would need a <strong>separate Zap for each sheet</strong>. Each Zap handles one trigger-action pair. If you want to send the same lead data to two different spreadsheets or tabs, create two Zaps with the same Facebook Lead Ads trigger but different Google Sheets actions. This counts as two tasks per lead submission.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens if I edit the Meta Ads lead form after setting up the Zap?</span>
+          </div>
+          <div class="faq-answer">
+            <p>If you add or remove fields from your lead form, the <strong>column mapping in your Zap may break</strong>. Zapier stores the field mapping based on the form structure at the time of setup. After editing the form, go back into your Zap, re-test the trigger to load the new fields, and update the Google Sheets column mapping to match the updated form fields.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I connect Meta Ads leads to a CRM instead of Google Sheets?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Zapier supports connections to popular CRMs including <strong>HubSpot, Salesforce, Pipedrive, and many others</strong>. The setup process is similar — select your CRM as the Action app instead of Google Sheets, then map the lead form fields to the corresponding CRM fields. Meta also has native integrations with some CRMs via its own Leads Centre.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -272,81 +290,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads Editor?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads Editor workflow together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about adding accounts in Google Ads Editor.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Can I add multiple Google Ads accounts to Google Ads Editor?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Google Ads Editor supports multiple accounts simultaneously. After signing in, you can select as many accounts as you have access to and open them all. You can then switch between accounts from the account panel on the left-hand side of the interface.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need a separate Google login for each account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No — as long as your Google account has access to multiple Google Ads accounts (for example, through a Google Ads Manager Account / MCC), you can add all of them in a single sign-in step. If the accounts belong to different Google logins, you will need to sign in separately for each one.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens after I add an account — does it download everything automatically?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Once you select and open an account, Google Ads Editor immediately downloads the latest campaign data from Google's servers. This includes campaigns, ad groups, ads, keywords, and extensions. For large accounts this can take a few minutes. Going forward, you can use <strong>Get recent changes</strong> to sync any updates made online.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I add a Google Ads Manager Account (MCC) to Google Ads Editor?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. When you sign in with a Google account linked to a Manager Account, Google Ads Editor will list all the client accounts under that MCC. You can then choose which individual accounts to open, making it easy to manage many client accounts from one place without switching logins.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What should I do if my account doesn't appear after signing in?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Check that you signed in with the correct Google account that has access to the Google Ads account. Also verify that the account is active and not suspended in Google Ads. If you recently gained access, try refreshing the account list. You can also try signing out and signing back in to force a refresh of your account permissions.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I remove an account from Google Ads Editor?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Right-click the account name in the left-hand account panel and select <strong>Remove account</strong>. This only removes the account from your local Google Ads Editor installation — it does not affect the actual Google Ads account or any live campaigns. You can re-add the account at any time using the Add button.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -404,21 +348,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about adding accounts in Google Ads Editor.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I add multiple Google Ads accounts to Google Ads Editor?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Google Ads Editor supports multiple accounts simultaneously. After signing in, you can select as many accounts as you have access to and open them all. You can then switch between accounts from the account panel on the left-hand side of the interface.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a separate Google login for each account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No — as long as your Google account has access to multiple Google Ads accounts (for example, through a Google Ads Manager Account / MCC), you can add all of them in a single sign-in step. If the accounts belong to different Google logins, you will need to sign in separately for each one.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens after I add an account — does it download everything automatically?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Once you select and open an account, Google Ads Editor immediately downloads the latest campaign data from Google's servers. This includes campaigns, ad groups, ads, keywords, and extensions. For large accounts this can take a few minutes. Going forward, you can use <strong>Get recent changes</strong> to sync any updates made online.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I add a Google Ads Manager Account (MCC) to Google Ads Editor?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. When you sign in with a Google account linked to a Manager Account, Google Ads Editor will list all the client accounts under that MCC. You can then choose which individual accounts to open, making it easy to manage many client accounts from one place without switching logins.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What should I do if my account doesn't appear after signing in?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Check that you signed in with the correct Google account that has access to the Google Ads account. Also verify that the account is active and not suspended in Google Ads. If you recently gained access, try refreshing the account list. You can also try signing out and signing back in to force a refresh of your account permissions.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I remove an account from Google Ads Editor?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Right-click the account name in the left-hand account panel and select <strong>Remove account</strong>. This only removes the account from your local Google Ads Editor installation — it does not affect the actual Google Ads account or any live campaigns. You can re-add the account at any time using the Add button.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

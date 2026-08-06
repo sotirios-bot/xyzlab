@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -285,81 +303,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Pinterest Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Pinterest Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about adding users and managing access in Pinterest Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the difference between giving Ads Manager access and Profile access?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Ads Manager access</strong> lets the user create, manage, and report on ad campaigns within Pinterest Ads. <strong>Profile access</strong> gives the user permission to manage the Pinterest business profile — including Pins, boards, and organic content. When inviting a team member to manage ads, you typically grant both so they can link campaigns to the correct profile.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to share my login details to give someone access?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. The invitation system in Pinterest Business Manager sends the user an email invite. They accept it and access the account using their own Pinterest login — you never need to share passwords or personal credentials.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does the invited user need an existing Pinterest account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. To accept an invitation to Pinterest Business Manager, the invitee must have a Pinterest account. If they don't already have one, they will need to create a personal or business Pinterest account before they can accept the invite and access Pinterest Ads.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I grant access to multiple Ads Managers at once?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>During the invitation flow, after selecting <strong>Ads Manager</strong>, you are shown a list of available Ads Manager accounts. You can check multiple accounts if you manage several, granting the employee access to all selected accounts in a single invite. The same applies for Profile access.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I remove a user from my Pinterest Ads account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Go to <strong>Pinterest Business Manager → Members → Employees</strong>, find the user, and remove or revoke their access. This immediately prevents them from accessing the Ads Manager or Profile. Any campaigns or content they created remain in the account and are not deleted.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens if the invited user does not receive the email?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Ask the invitee to check their spam or junk folder first. If the email is not found, you can resend the invitation from the <strong>Employees</strong> section of Pinterest Business Manager. Make sure the email address entered matches the one associated with their Pinterest account, as mismatches will prevent delivery.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -417,21 +361,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about adding users and managing access in Pinterest Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between giving Ads Manager access and Profile access?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Ads Manager access</strong> lets the user create, manage, and report on ad campaigns within Pinterest Ads. <strong>Profile access</strong> gives the user permission to manage the Pinterest business profile — including Pins, boards, and organic content. When inviting a team member to manage ads, you typically grant both so they can link campaigns to the correct profile.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to share my login details to give someone access?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. The invitation system in Pinterest Business Manager sends the user an email invite. They accept it and access the account using their own Pinterest login — you never need to share passwords or personal credentials.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does the invited user need an existing Pinterest account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. To accept an invitation to Pinterest Business Manager, the invitee must have a Pinterest account. If they don't already have one, they will need to create a personal or business Pinterest account before they can accept the invite and access Pinterest Ads.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I grant access to multiple Ads Managers at once?</span>
+          </div>
+          <div class="faq-answer">
+            <p>During the invitation flow, after selecting <strong>Ads Manager</strong>, you are shown a list of available Ads Manager accounts. You can check multiple accounts if you manage several, granting the employee access to all selected accounts in a single invite. The same applies for Profile access.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I remove a user from my Pinterest Ads account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Go to <strong>Pinterest Business Manager → Members → Employees</strong>, find the user, and remove or revoke their access. This immediately prevents them from accessing the Ads Manager or Profile. Any campaigns or content they created remain in the account and are not deleted.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens if the invited user does not receive the email?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Ask the invitee to check their spam or junk folder first. If the email is not found, you can resend the invitation from the <strong>Employees</strong> section of Pinterest Business Manager. Make sure the email address entered matches the one associated with their Pinterest account, as mismatches will prevent delivery.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -323,81 +341,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about gender and age group targeting in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Can I target specific genders and age groups in all Google Ads campaign types?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Not in the same way across all types. For <strong>Search, Display, Shopping, and Video (optimised for views)</strong> campaigns, you can directly edit Demographics to include or exclude specific genders and age groups — this is hard targeting. For <strong>Performance Max, Demand Gen, and Video (optimised for conversions)</strong> campaigns, you can only set an <strong>Audience Signal</strong>, which is a recommendation rather than a strict filter.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between targeting and Audience Signal?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Targeting</strong> (via Demographics) strictly limits who sees your ads — if a gender or age group is excluded, they will not see your ad. <strong>Audience Signal</strong> is a hint to Google's AI about who is most likely to convert. The algorithm uses it as a starting point but will expand beyond the signal if it finds higher-converting users outside those demographics. You cannot force PMax or Demand Gen campaigns to ignore entire audience segments.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What age groups are available for targeting in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google Ads offers the following age brackets: <strong>18–24, 25–34, 35–44, 45–54, 55–64, 65+</strong>, and <strong>Unknown</strong>. You can include or exclude any combination. Note that a large proportion of users may fall into the "Unknown" category — excluding it can significantly reduce your reach, so only do so if you have a strong reason.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Should I exclude the "Unknown" gender and age group?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Generally, <strong>no</strong>. The "Unknown" category can represent a significant volume of traffic — these are users Google hasn't been able to categorise. Excluding them can dramatically reduce your impressions without necessarily improving quality. Unless your product is strictly for a specific demographic (e.g., a legal requirement to only target adults), it's usually best to leave "Unknown" included.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I apply bid adjustments to specific genders or age groups instead of excluding them?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Rather than excluding demographics entirely, you can apply <strong>bid adjustments</strong> — increase bids for high-performing groups and decrease bids for lower-performing ones. This gives Google more flexibility to serve ads across all groups while prioritising your best audiences. Bid adjustments are available for Search, Display, and Shopping campaigns under Demographics.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where can I see how different genders and age groups are performing in my campaigns?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>In your campaign, go to <strong>Audiences, keywords and content → Audiences → Demographics</strong> tab. You'll see a breakdown of impressions, clicks, conversions, and cost by gender and age group. Use this data to identify which demographics drive the best results before making exclusions or bid adjustments.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -455,21 +399,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about gender and age group targeting in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I target specific genders and age groups in all Google Ads campaign types?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Not in the same way across all types. For <strong>Search, Display, Shopping, and Video (optimised for views)</strong> campaigns, you can directly edit Demographics to include or exclude specific genders and age groups — this is hard targeting. For <strong>Performance Max, Demand Gen, and Video (optimised for conversions)</strong> campaigns, you can only set an <strong>Audience Signal</strong>, which is a recommendation rather than a strict filter.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between targeting and Audience Signal?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Targeting</strong> (via Demographics) strictly limits who sees your ads — if a gender or age group is excluded, they will not see your ad. <strong>Audience Signal</strong> is a hint to Google's AI about who is most likely to convert. The algorithm uses it as a starting point but will expand beyond the signal if it finds higher-converting users outside those demographics. You cannot force PMax or Demand Gen campaigns to ignore entire audience segments.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What age groups are available for targeting in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google Ads offers the following age brackets: <strong>18–24, 25–34, 35–44, 45–54, 55–64, 65+</strong>, and <strong>Unknown</strong>. You can include or exclude any combination. Note that a large proportion of users may fall into the "Unknown" category — excluding it can significantly reduce your reach, so only do so if you have a strong reason.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Should I exclude the "Unknown" gender and age group?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Generally, <strong>no</strong>. The "Unknown" category can represent a significant volume of traffic — these are users Google hasn't been able to categorise. Excluding them can dramatically reduce your impressions without necessarily improving quality. Unless your product is strictly for a specific demographic (e.g., a legal requirement to only target adults), it's usually best to leave "Unknown" included.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I apply bid adjustments to specific genders or age groups instead of excluding them?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Rather than excluding demographics entirely, you can apply <strong>bid adjustments</strong> — increase bids for high-performing groups and decrease bids for lower-performing ones. This gives Google more flexibility to serve ads across all groups while prioritising your best audiences. Bid adjustments are available for Search, Display, and Shopping campaigns under Demographics.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where can I see how different genders and age groups are performing in my campaigns?</span>
+          </div>
+          <div class="faq-answer">
+            <p>In your campaign, go to <strong>Audiences, keywords and content → Audiences → Demographics</strong> tab. You'll see a breakdown of impressions, clicks, conversions, and cost by gender and age group. Use this data to identify which demographics drive the best results before making exclusions or bid adjustments.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

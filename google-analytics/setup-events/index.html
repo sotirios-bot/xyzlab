@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -352,81 +370,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Analytics?</h3>
           <p>Book a 90-minute training session and we'll set up your GA4 events and tracking together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about setting up events in Google Analytics GA4.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is the difference between automatic events and custom events in GA4?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>GA4 automatically collects a set of <strong>standard events</strong> (like <code>page_view</code>, <code>session_start</code>, and <code>first_visit</code>) without any configuration. <strong>Enhanced measurement</strong> can automatically track scrolls, outbound clicks, file downloads, and video engagement. <strong>Custom events</strong> — set up via GTM or gtag.js — let you track any user interaction that GA4 doesn't capture automatically, such as button clicks, form submissions, or specific page interactions.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why can't I use spaces in GA4 event names?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>GA4 event names must follow specific naming rules: they can only contain letters, numbers, and underscores, and must start with a letter. Spaces are not allowed. Using underscores instead of spaces (e.g. <code>button_click</code> instead of <code>button click</code>) keeps your event names consistent and compatible with GA4's reporting and BigQuery export. Event names are also <strong>case-sensitive</strong> — <code>Button_Click</code> and <code>button_click</code> would appear as two separate events.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Where do I find my GA4 Measurement ID?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>In Google Analytics, go to <strong>Admin</strong> (bottom-left gear icon) &rarr; <strong>Data Streams</strong> (under your property) &rarr; click your web data stream &rarr; your <strong>Measurement ID</strong> appears in the top-right corner in the format <code>G-XXXXXXXXXX</code>. Copy this and paste it into the GA4 Event tag in Google Tag Manager.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I verify my GA4 events are firing correctly?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Use two tools: <strong>GTM Preview mode</strong> (click Preview in GTM before publishing) to confirm your tag fires on the correct trigger, and <strong>GA4 DebugView</strong> (Admin &rarr; DebugView) to see events arriving in real-time from your browser. You can also check the GA4 <strong>Realtime report</strong> to see events populating within a few seconds of them firing.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to mark GA4 events as conversions?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Not all events need to be conversions — only the ones that represent meaningful business actions (e.g. form submissions, purchases, phone clicks). In GA4, go to <strong>Admin &rarr; Events</strong> and toggle <strong>Mark as conversion</strong> next to any event you want to count as a conversion. Conversion events can then be imported into Google Ads for smart bidding optimisation.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens if I forget to publish my GTM container?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>If you save your tag and trigger in GTM but don't publish the container, the changes only exist in your GTM workspace — they are <strong>not live on your website</strong>. Your GA4 property won't receive the new events. Always click <strong>Submit &rarr; Publish</strong> after saving your tags to push them to your live site. You can use Preview mode first to test without going live.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -484,21 +428,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about setting up events in Google Analytics GA4.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between automatic events and custom events in GA4?</span>
+          </div>
+          <div class="faq-answer">
+            <p>GA4 automatically collects a set of <strong>standard events</strong> (like <code>page_view</code>, <code>session_start</code>, and <code>first_visit</code>) without any configuration. <strong>Enhanced measurement</strong> can automatically track scrolls, outbound clicks, file downloads, and video engagement. <strong>Custom events</strong> — set up via GTM or gtag.js — let you track any user interaction that GA4 doesn't capture automatically, such as button clicks, form submissions, or specific page interactions.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why can't I use spaces in GA4 event names?</span>
+          </div>
+          <div class="faq-answer">
+            <p>GA4 event names must follow specific naming rules: they can only contain letters, numbers, and underscores, and must start with a letter. Spaces are not allowed. Using underscores instead of spaces (e.g. <code>button_click</code> instead of <code>button click</code>) keeps your event names consistent and compatible with GA4's reporting and BigQuery export. Event names are also <strong>case-sensitive</strong> — <code>Button_Click</code> and <code>button_click</code> would appear as two separate events.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Where do I find my GA4 Measurement ID?</span>
+          </div>
+          <div class="faq-answer">
+            <p>In Google Analytics, go to <strong>Admin</strong> (bottom-left gear icon) &rarr; <strong>Data Streams</strong> (under your property) &rarr; click your web data stream &rarr; your <strong>Measurement ID</strong> appears in the top-right corner in the format <code>G-XXXXXXXXXX</code>. Copy this and paste it into the GA4 Event tag in Google Tag Manager.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I verify my GA4 events are firing correctly?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Use two tools: <strong>GTM Preview mode</strong> (click Preview in GTM before publishing) to confirm your tag fires on the correct trigger, and <strong>GA4 DebugView</strong> (Admin &rarr; DebugView) to see events arriving in real-time from your browser. You can also check the GA4 <strong>Realtime report</strong> to see events populating within a few seconds of them firing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to mark GA4 events as conversions?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Not all events need to be conversions — only the ones that represent meaningful business actions (e.g. form submissions, purchases, phone clicks). In GA4, go to <strong>Admin &rarr; Events</strong> and toggle <strong>Mark as conversion</strong> next to any event you want to count as a conversion. Conversion events can then be imported into Google Ads for smart bidding optimisation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens if I forget to publish my GTM container?</span>
+          </div>
+          <div class="faq-answer">
+            <p>If you save your tag and trigger in GTM but don't publish the container, the changes only exist in your GTM workspace — they are <strong>not live on your website</strong>. Your GA4 property won't receive the new events. Always click <strong>Submit &rarr; Publish</strong> after saving your tags to push them to your live site. You can use Preview mode first to test without going live.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

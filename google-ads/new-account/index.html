@@ -219,6 +219,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -340,81 +358,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll set up and optimise your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about creating a new Google Ads account.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Can I change my time zone or currency after creating my Google Ads account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Your account's <strong>time zone and currency are permanent</strong> and cannot be changed after the account is created. This is one of the most important decisions to get right during setup. If you make a mistake, you will need to create a brand new account — your billing history and campaign data do not carry over. Choose the time zone that matches your business operations and the currency that matches your billing method.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Why does Google force me into the campaign creation wizard when I sign up?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google's default onboarding flow is designed for beginners and pushes new users to create a Smart Campaign immediately. This is called "Smart Mode" — it simplifies ad creation but limits your control. By dismissing the pop-up and selecting <strong>Leave campaign creation</strong> or <strong>Switch to Expert Mode</strong>, you access the full Google Ads interface where you have control over all campaign settings, bidding strategies, and targeting options.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need a credit card to create a Google Ads account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google requires a valid payment method to activate your account, but ads will only start spending once you create and launch a campaign. You can set up the account with a credit card, debit card, or in some countries a bank account. The card is not charged during account creation — you are only billed once your campaigns go live and accrue spend. You can also set up <strong>manual payments</strong> (prepay) instead of the default automatic billing by looking for the payment settings option during account setup.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I have multiple Google Ads accounts under one Google login?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. If you are managing ads for multiple businesses, the recommended approach is to use a <strong>Google Ads Manager Account (MCC)</strong> — a parent account that lets you manage multiple Google Ads accounts from a single login. From your MCC you can create child accounts for each business, switch between them easily, and consolidate billing. To create an MCC, visit <a href="https://ads.google.com/home/tools/manager-accounts/" target="_blank" rel="noopener">ads.google.com/home/tools/manager-accounts/</a>.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How long does it take for a new Google Ads account to be approved?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The account itself is created instantly. However, when you create your first ad campaign and submit it, Google reviews your ads before they go live — this typically takes a few hours but can take up to 1 business day. New accounts may also undergo additional verification for certain ad categories (financial services, healthcare, political ads) which can take longer. Your billing method may also require verification before spending can begin.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the minimum budget for Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google Ads has no official minimum budget — you can technically set a daily budget as low as $1. However, very low budgets often result in limited data, few impressions, and poor campaign performance because your ads cannot compete effectively in the auction. In most competitive markets, a practical starting budget is at least $15–$30 per day per campaign to gather enough data to optimise. The right budget depends on your industry, keywords, and goals.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -472,21 +416,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about creating a new Google Ads account.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I change my time zone or currency after creating my Google Ads account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Your account's <strong>time zone and currency are permanent</strong> and cannot be changed after the account is created. This is one of the most important decisions to get right during setup. If you make a mistake, you will need to create a brand new account — your billing history and campaign data do not carry over. Choose the time zone that matches your business operations and the currency that matches your billing method.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why does Google force me into the campaign creation wizard when I sign up?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google's default onboarding flow is designed for beginners and pushes new users to create a Smart Campaign immediately. This is called "Smart Mode" — it simplifies ad creation but limits your control. By dismissing the pop-up and selecting <strong>Leave campaign creation</strong> or <strong>Switch to Expert Mode</strong>, you access the full Google Ads interface where you have control over all campaign settings, bidding strategies, and targeting options.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a credit card to create a Google Ads account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google requires a valid payment method to activate your account, but ads will only start spending once you create and launch a campaign. You can set up the account with a credit card, debit card, or in some countries a bank account. The card is not charged during account creation — you are only billed once your campaigns go live and accrue spend. You can also set up <strong>manual payments</strong> (prepay) instead of the default automatic billing by looking for the payment settings option during account setup.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I have multiple Google Ads accounts under one Google login?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. If you are managing ads for multiple businesses, the recommended approach is to use a <strong>Google Ads Manager Account (MCC)</strong> — a parent account that lets you manage multiple Google Ads accounts from a single login. From your MCC you can create child accounts for each business, switch between them easily, and consolidate billing. To create an MCC, visit <a href="https://ads.google.com/home/tools/manager-accounts/" target="_blank" rel="noopener">ads.google.com/home/tools/manager-accounts/</a>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How long does it take for a new Google Ads account to be approved?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The account itself is created instantly. However, when you create your first ad campaign and submit it, Google reviews your ads before they go live — this typically takes a few hours but can take up to 1 business day. New accounts may also undergo additional verification for certain ad categories (financial services, healthcare, political ads) which can take longer. Your billing method may also require verification before spending can begin.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the minimum budget for Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google Ads has no official minimum budget — you can technically set a daily budget as low as $1. However, very low budgets often result in limited data, few impressions, and poor campaign performance because your ads cannot compete effectively in the auction. In most competitive markets, a practical starting budget is at least $15–$30 per day per campaign to gather enough data to optimise. The right budget depends on your industry, keywords, and goals.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

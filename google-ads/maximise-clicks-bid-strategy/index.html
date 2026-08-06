@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -293,81 +311,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about the Maximise Clicks bid strategy in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What does Maximise Clicks do in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Maximise Clicks</strong> is an automated bid strategy that sets your bids to get as many clicks as possible within your campaign budget. Google Ads automatically adjusts your CPC bids in each auction to maximise the total number of clicks — useful when your primary goal is traffic volume rather than specific conversion actions.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between a portfolio bid strategy and a campaign-level bid strategy?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A <strong>portfolio bid strategy</strong> is created under Tools &gt; Bid Strategies and can be shared across multiple campaigns simultaneously — Google optimises bids across all assigned campaigns as a group. A <strong>campaign-level</strong> bid strategy is set directly within a single campaign's Settings and applies only to that campaign. Portfolio strategies are better for pooling data across related campaigns.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Should I set a maximum CPC bid limit with Maximise Clicks?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>It depends. Setting a <strong>maximum CPC limit</strong> protects you from paying excessively for individual clicks, but if the limit is too low it can restrict Google's ability to compete in auctions and reduce your impression share. A common approach is to start without a limit, monitor your average CPC over a few weeks, then set a cap at roughly 2–3× your average CPC to guard against outliers without restricting volume.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>When should I switch from Maximise Clicks to a Smart Bidding strategy?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Once your campaign has enough conversion data — generally <strong>30–50 conversions per month</strong> — you can switch to a Smart Bidding strategy like <strong>Maximise Conversions</strong>, <strong>Target CPA</strong>, or <strong>Target ROAS</strong>. These strategies use conversion signals to optimise bids for business outcomes rather than just traffic, which typically delivers much better ROI than Maximise Clicks once you have sufficient data.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does Maximise Clicks work without conversion tracking?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — Maximise Clicks does <strong>not</strong> require conversion tracking, which makes it one of the few Google Ads bid strategies that works effectively on a new account or campaign with no historical data. However, you should set up conversion tracking as soon as possible so you can eventually move to a conversion-focused strategy.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I assign one Maximise Clicks portfolio strategy to multiple campaigns?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. When you create the portfolio bid strategy under <strong>Tools &gt; Budgets and bidding &gt; Bid strategies</strong>, you can select multiple campaigns during setup, or add and remove campaigns later by editing the strategy. All assigned campaigns share the same bid optimisation pool, which is useful when you want Google to balance clicks efficiently across a set of related campaigns.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -425,21 +369,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about the Maximise Clicks bid strategy in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What does Maximise Clicks do in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Maximise Clicks</strong> is an automated bid strategy that sets your bids to get as many clicks as possible within your campaign budget. Google Ads automatically adjusts your CPC bids in each auction to maximise the total number of clicks — useful when your primary goal is traffic volume rather than specific conversion actions.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between a portfolio bid strategy and a campaign-level bid strategy?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A <strong>portfolio bid strategy</strong> is created under Tools &gt; Bid Strategies and can be shared across multiple campaigns simultaneously — Google optimises bids across all assigned campaigns as a group. A <strong>campaign-level</strong> bid strategy is set directly within a single campaign's Settings and applies only to that campaign. Portfolio strategies are better for pooling data across related campaigns.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Should I set a maximum CPC bid limit with Maximise Clicks?</span>
+          </div>
+          <div class="faq-answer">
+            <p>It depends. Setting a <strong>maximum CPC limit</strong> protects you from paying excessively for individual clicks, but if the limit is too low it can restrict Google's ability to compete in auctions and reduce your impression share. A common approach is to start without a limit, monitor your average CPC over a few weeks, then set a cap at roughly 2–3× your average CPC to guard against outliers without restricting volume.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>When should I switch from Maximise Clicks to a Smart Bidding strategy?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Once your campaign has enough conversion data — generally <strong>30–50 conversions per month</strong> — you can switch to a Smart Bidding strategy like <strong>Maximise Conversions</strong>, <strong>Target CPA</strong>, or <strong>Target ROAS</strong>. These strategies use conversion signals to optimise bids for business outcomes rather than just traffic, which typically delivers much better ROI than Maximise Clicks once you have sufficient data.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does Maximise Clicks work without conversion tracking?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — Maximise Clicks does <strong>not</strong> require conversion tracking, which makes it one of the few Google Ads bid strategies that works effectively on a new account or campaign with no historical data. However, you should set up conversion tracking as soon as possible so you can eventually move to a conversion-focused strategy.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I assign one Maximise Clicks portfolio strategy to multiple campaigns?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. When you create the portfolio bid strategy under <strong>Tools &gt; Budgets and bidding &gt; Bid strategies</strong>, you can select multiple campaigns during setup, or add and remove campaigns later by editing the strategy. All assigned campaigns share the same bid optimisation pool, which is useful when you want Google to balance clicks efficiently across a set of related campaigns.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

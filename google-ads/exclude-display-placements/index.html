@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -311,81 +329,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about excluding display placements in Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a display placement in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A <strong>display placement</strong> is a specific website, app, or YouTube channel where your Google Display ads appear. Google's Display Network (GDN) encompasses millions of sites and apps across the internet. By default, Google automatically selects placements based on your targeting settings — but this means your ads can appear on low-quality or irrelevant sites that waste budget without driving results.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How do I find the "Where ads showed" report in Google Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Inside your Display campaign, click <strong>Insights and reports</strong> in the left-hand navigation menu. Then select <strong>When and where ads showed</strong>, followed by <strong>Where ads showed</strong>. This opens the placement report showing every website and app where your ads have been served, along with performance data like impressions, clicks, cost, and conversions for each placement.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Which placements should I exclude first?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Start with placements that have <strong>high impressions, zero clicks, and zero conversions</strong> — these are consuming your budget with no engagement or return. A quick way to find them is to filter the placement report to show only rows with fewer than 1 conversion, then sort by impressions in descending order. Also look for apps (especially mobile games), parked domain pages, and irrelevant news sites as common sources of wasted spend.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between excluding at campaign level and account level?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p><strong>Campaign-level exclusions</strong> apply only to the specific campaign you are editing. <strong>Account-level placement exclusions</strong> (found under <em>Tools &amp; Settings → Shared library → Placement exclusion lists</em>) apply across all campaigns in your account. If you have placements that are universally irrelevant (e.g., children's apps, low-quality content sites), add them to a shared exclusion list so they are blocked automatically in every campaign.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How often should I review and exclude display placements?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>For active Display campaigns, review placements <strong>at least once a month</strong>. New sites and apps are continuously added to the Display Network, so exclusions from last month may not cover everything appearing this month. If your campaign is running a large daily budget, weekly reviews are more appropriate to prevent significant wasted spend from accumulating.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will excluding placements hurt my campaign's reach?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Excluding poor placements typically <strong>improves</strong> your campaign's effective reach by redirecting budget to sites that actually convert. While your total impression count may decrease, your quality impressions — on relevant, high-converting placements — will increase as a share of spend. Think of placement exclusions as a way to raise the average quality of where your ads appear, not a way to reduce volume.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -443,21 +387,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about excluding display placements in Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a display placement in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A <strong>display placement</strong> is a specific website, app, or YouTube channel where your Google Display ads appear. Google's Display Network (GDN) encompasses millions of sites and apps across the internet. By default, Google automatically selects placements based on your targeting settings — but this means your ads can appear on low-quality or irrelevant sites that waste budget without driving results.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I find the "Where ads showed" report in Google Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Inside your Display campaign, click <strong>Insights and reports</strong> in the left-hand navigation menu. Then select <strong>When and where ads showed</strong>, followed by <strong>Where ads showed</strong>. This opens the placement report showing every website and app where your ads have been served, along with performance data like impressions, clicks, cost, and conversions for each placement.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Which placements should I exclude first?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Start with placements that have <strong>high impressions, zero clicks, and zero conversions</strong> — these are consuming your budget with no engagement or return. A quick way to find them is to filter the placement report to show only rows with fewer than 1 conversion, then sort by impressions in descending order. Also look for apps (especially mobile games), parked domain pages, and irrelevant news sites as common sources of wasted spend.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between excluding at campaign level and account level?</span>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Campaign-level exclusions</strong> apply only to the specific campaign you are editing. <strong>Account-level placement exclusions</strong> (found under <em>Tools &amp; Settings → Shared library → Placement exclusion lists</em>) apply across all campaigns in your account. If you have placements that are universally irrelevant (e.g., children's apps, low-quality content sites), add them to a shared exclusion list so they are blocked automatically in every campaign.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How often should I review and exclude display placements?</span>
+          </div>
+          <div class="faq-answer">
+            <p>For active Display campaigns, review placements <strong>at least once a month</strong>. New sites and apps are continuously added to the Display Network, so exclusions from last month may not cover everything appearing this month. If your campaign is running a large daily budget, weekly reviews are more appropriate to prevent significant wasted spend from accumulating.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will excluding placements hurt my campaign's reach?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Excluding poor placements typically <strong>improves</strong> your campaign's effective reach by redirecting budget to sites that actually convert. While your total impression count may decrease, your quality impressions — on relevant, high-converting placements — will increase as a share of spend. Think of placement exclusions as a way to raise the average quality of where your ads appear, not a way to reduce volume.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

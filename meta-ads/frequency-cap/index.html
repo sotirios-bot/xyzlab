@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -281,81 +299,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Meta Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Meta Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about frequency caps in Meta Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What is a frequency cap in Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A <strong>frequency cap</strong> is a setting that limits how many times a single person can see your ad within a defined time window. For example, setting a cap of 5 impressions per 7 days means no individual user will see your ad more than 5 times in a week. This helps prevent ad fatigue, protects your brand experience, and keeps your budget focused on new exposures rather than repeatedly reaching the same people.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Which campaign objectives allow frequency capping in Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Frequency caps are <strong>only available on Awareness campaigns</strong>. If you are running Traffic, Engagement, Leads, App Promotion, or Sales campaigns, the frequency cap option will not appear in your Ad Set settings. For those objectives, Meta manages frequency dynamically as part of its delivery optimisation.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the optimal frequency cap for Meta Ads?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A commonly recommended starting point is <strong>at least 5 impressions per 7 days</strong>. Research on brand recall suggests that repeated exposure is necessary for awareness to stick — one impression is rarely enough. However, the right number depends on your campaign goal, creative, and audience size. Monitor your frequency metric in Ads Manager and watch for declining click-through rates or rising costs, which signal ad fatigue.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will setting a frequency cap reduce my reach?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Setting a frequency cap can <strong>reduce total impressions</strong> but may improve the efficiency of your reach. By capping how often each person sees your ad, Meta is forced to spread impressions across a wider audience rather than repeatedly showing the ad to the same users. This can result in a broader reach for the same budget — though the total impression count may be lower.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I set different frequency caps for different ad sets?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Frequency caps are set at the <strong>ad set level</strong>, so you can apply different caps to different ad sets within the same Awareness campaign. This is useful if you want to test different frequency levels across audience segments or give certain placements higher or lower exposure limits.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens when someone reaches the frequency cap?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Once a user has seen your ad the maximum number of times defined by your cap within the set time window, Meta will <strong>stop showing them that ad</strong> for the remainder of that period. After the time window resets (e.g. after 7 days), the counter resets and they become eligible to see the ad again.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -413,21 +357,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about frequency caps in Meta Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is a frequency cap in Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A <strong>frequency cap</strong> is a setting that limits how many times a single person can see your ad within a defined time window. For example, setting a cap of 5 impressions per 7 days means no individual user will see your ad more than 5 times in a week. This helps prevent ad fatigue, protects your brand experience, and keeps your budget focused on new exposures rather than repeatedly reaching the same people.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Which campaign objectives allow frequency capping in Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Frequency caps are <strong>only available on Awareness campaigns</strong>. If you are running Traffic, Engagement, Leads, App Promotion, or Sales campaigns, the frequency cap option will not appear in your Ad Set settings. For those objectives, Meta manages frequency dynamically as part of its delivery optimisation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the optimal frequency cap for Meta Ads?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A commonly recommended starting point is <strong>at least 5 impressions per 7 days</strong>. Research on brand recall suggests that repeated exposure is necessary for awareness to stick — one impression is rarely enough. However, the right number depends on your campaign goal, creative, and audience size. Monitor your frequency metric in Ads Manager and watch for declining click-through rates or rising costs, which signal ad fatigue.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will setting a frequency cap reduce my reach?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Setting a frequency cap can <strong>reduce total impressions</strong> but may improve the efficiency of your reach. By capping how often each person sees your ad, Meta is forced to spread impressions across a wider audience rather than repeatedly showing the ad to the same users. This can result in a broader reach for the same budget — though the total impression count may be lower.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I set different frequency caps for different ad sets?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Frequency caps are set at the <strong>ad set level</strong>, so you can apply different caps to different ad sets within the same Awareness campaign. This is useful if you want to test different frequency levels across audience segments or give certain placements higher or lower exposure limits.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens when someone reaches the frequency cap?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Once a user has seen your ad the maximum number of times defined by your cap within the set time window, Meta will <strong>stop showing them that ad</strong> for the remainder of that period. After the time window resets (e.g. after 7 days), the counter resets and they become eligible to see the ad again.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

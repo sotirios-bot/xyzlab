@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -330,81 +348,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with your Wix site?</h3>
           <p>Book a 90-minute training session and we'll set up your Wix marketing and tracking together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about adding a Wix website to Google Search Console.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Why do I need to add my Wix site to Google Search Console?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google Search Console gives you direct insight into how Google sees and ranks your site. You can see which search queries bring visitors to your site, identify indexing issues, check for manual penalties, and submit your sitemap to speed up how quickly Google crawls new pages. Without it, you're flying blind on your SEO performance.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the HTML tag verification method?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The HTML tag method works by adding a <code>&lt;meta&gt;</code> tag with a unique verification code to your site's <code>&lt;head&gt;</code>. When you click Verify in Search Console, Google visits your site and checks that the tag is present. Wix's <strong>Site Verification</strong> tool under Marketing Integrations handles the insertion automatically — you don't need to edit any code manually.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Should I use URL Prefix or Domain for my Wix site?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The <strong>URL Prefix</strong> method is simpler and works well for most Wix users. It verifies the specific URL you enter (and all pages under it). The <strong>Domain</strong> method covers all subdomains and protocols but requires DNS access — which can be more complex to set up with Wix. URL Prefix is the recommended starting point.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>How long does it take for data to appear in Google Search Console after verification?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Verification is instant, but meaningful performance data (impressions, clicks, average position) typically starts appearing within <strong>2–4 days</strong> as Google begins crawling and indexing your pages. It can take up to 28 days before you see a full picture of your search performance. Submitting your sitemap after verification can speed up the process.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need to submit a sitemap after verifying my Wix site?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes — submitting your sitemap is highly recommended. Wix automatically generates a sitemap for your site at <code>yoursite.com/sitemap.xml</code>. In Google Search Console, go to <strong>Sitemaps</strong> and submit that URL. This helps Google discover all your pages faster and ensures new content gets indexed promptly.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What if the verification fails?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>If verification fails, check that you saved the HTML tag correctly in Wix's Site Verification settings and that your site is published (not in draft mode). Also confirm you're verifying the same URL you entered in Search Console, including whether it starts with <code>https://www.</code> or <code>https://</code> — these are treated as different properties. Try clicking Verify again after confirming the tag is live on your site.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -462,21 +406,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about adding a Wix website to Google Search Console.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why do I need to add my Wix site to Google Search Console?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google Search Console gives you direct insight into how Google sees and ranks your site. You can see which search queries bring visitors to your site, identify indexing issues, check for manual penalties, and submit your sitemap to speed up how quickly Google crawls new pages. Without it, you're flying blind on your SEO performance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the HTML tag verification method?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The HTML tag method works by adding a <code>&lt;meta&gt;</code> tag with a unique verification code to your site's <code>&lt;head&gt;</code>. When you click Verify in Search Console, Google visits your site and checks that the tag is present. Wix's <strong>Site Verification</strong> tool under Marketing Integrations handles the insertion automatically — you don't need to edit any code manually.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Should I use URL Prefix or Domain for my Wix site?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The <strong>URL Prefix</strong> method is simpler and works well for most Wix users. It verifies the specific URL you enter (and all pages under it). The <strong>Domain</strong> method covers all subdomains and protocols but requires DNS access — which can be more complex to set up with Wix. URL Prefix is the recommended starting point.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How long does it take for data to appear in Google Search Console after verification?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Verification is instant, but meaningful performance data (impressions, clicks, average position) typically starts appearing within <strong>2–4 days</strong> as Google begins crawling and indexing your pages. It can take up to 28 days before you see a full picture of your search performance. Submitting your sitemap after verification can speed up the process.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to submit a sitemap after verifying my Wix site?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes — submitting your sitemap is highly recommended. Wix automatically generates a sitemap for your site at <code>yoursite.com/sitemap.xml</code>. In Google Search Console, go to <strong>Sitemaps</strong> and submit that URL. This helps Google discover all your pages faster and ensures new content gets indexed promptly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What if the verification fails?</span>
+          </div>
+          <div class="faq-answer">
+            <p>If verification fails, check that you saved the HTML tag correctly in Wix's Site Verification settings and that your site is published (not in draft mode). Also confirm you're verifying the same URL you entered in Search Console, including whether it starts with <code>https://www.</code> or <code>https://</code> — these are treated as different properties. Try clicking Verify again after confirming the tag is live on your site.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

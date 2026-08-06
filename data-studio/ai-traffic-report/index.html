@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -333,81 +351,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Data Studio?</h3>
           <p>Book a 90-minute training session and we'll build your analytics report together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about tracking AI referral traffic in Looker Studio (Data Studio).</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Why use a RegExp filter to track AI traffic in Data Studio?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>AI referral traffic comes from many different sources — ChatGPT, Perplexity, Gemini, Claude, DeepSeek, and others. Rather than creating a separate filter for each one, a single <strong>RegExp (regular expression)</strong> filter lets you match all of them at once using the <code>|</code> (OR) operator. This means one filter covers your entire AI traffic footprint and can be reused across every chart in your report.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What is the difference between a standalone filter and a page-level filter in Data Studio?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A <strong>standalone filter</strong> is applied to a single visualisation — only that chart or scorecard will show filtered data. A <strong>page-level filter</strong> is applied via "Current page settings" and affects every visualisation on that page simultaneously. Use a standalone filter when you want one AI-specific widget alongside other unfiltered charts. Use a page-level filter when you want an entire dedicated AI Traffic page where all data is scoped to AI sources.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I add more AI sources to the RegExp formula?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Simply edit the filter and append the new source name with a <code>|</code> separator. For example, to add a new tool called "searchai": <code>chatgpt|perplexity|gemini|claude|deepseek|...|searchai</code>. The match is case-insensitive by default in Data Studio's RegExp Contains mode, so you don't need to worry about capitalisation. Update the filter in one place and it will apply everywhere you've used it.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Which dimension should I use for the AI traffic filter?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Use <strong>Session Source / Medium</strong> as the filter dimension. This is the GA4 dimension that combines both the traffic source (e.g. <code>chatgpt.com</code>) and the medium (e.g. <code>referral</code>). Filtering on this dimension ensures you catch all AI referral sessions regardless of slight variations in how each tool passes its source information to GA4.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I reuse the same AI Traffic filter across multiple reports?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Filters in Looker Studio are scoped to a single report — they cannot be shared directly between reports. However, you can copy a report (<strong>File → Make a copy</strong>) to duplicate both the visualisations and filters. Alternatively, note down the RegExp formula and recreate the filter in each new report. For consistency, keep the same filter name (e.g. "AI Traffic") and formula across all your reports.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What metrics should I include in an AI traffic report?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>A useful AI traffic report typically includes: <strong>Sessions</strong> (volume of AI-referred visits), <strong>Session source / medium</strong> (breakdown by individual AI tool), <strong>Engaged sessions</strong> and <strong>Engagement rate</strong> (quality of AI traffic), <strong>Conversions</strong> or key events (business impact), and a <strong>time-series chart</strong> showing AI traffic growth over time. Add a date range comparison to track month-over-month growth as AI referral traffic continues to increase.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -465,21 +409,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about tracking AI referral traffic in Looker Studio (Data Studio).</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Why use a RegExp filter to track AI traffic in Data Studio?</span>
+          </div>
+          <div class="faq-answer">
+            <p>AI referral traffic comes from many different sources — ChatGPT, Perplexity, Gemini, Claude, DeepSeek, and others. Rather than creating a separate filter for each one, a single <strong>RegExp (regular expression)</strong> filter lets you match all of them at once using the <code>|</code> (OR) operator. This means one filter covers your entire AI traffic footprint and can be reused across every chart in your report.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between a standalone filter and a page-level filter in Data Studio?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A <strong>standalone filter</strong> is applied to a single visualisation — only that chart or scorecard will show filtered data. A <strong>page-level filter</strong> is applied via "Current page settings" and affects every visualisation on that page simultaneously. Use a standalone filter when you want one AI-specific widget alongside other unfiltered charts. Use a page-level filter when you want an entire dedicated AI Traffic page where all data is scoped to AI sources.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I add more AI sources to the RegExp formula?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Simply edit the filter and append the new source name with a <code>|</code> separator. For example, to add a new tool called "searchai": <code>chatgpt|perplexity|gemini|claude|deepseek|...|searchai</code>. The match is case-insensitive by default in Data Studio's RegExp Contains mode, so you don't need to worry about capitalisation. Update the filter in one place and it will apply everywhere you've used it.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Which dimension should I use for the AI traffic filter?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Use <strong>Session Source / Medium</strong> as the filter dimension. This is the GA4 dimension that combines both the traffic source (e.g. <code>chatgpt.com</code>) and the medium (e.g. <code>referral</code>). Filtering on this dimension ensures you catch all AI referral sessions regardless of slight variations in how each tool passes its source information to GA4.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I reuse the same AI Traffic filter across multiple reports?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Filters in Looker Studio are scoped to a single report — they cannot be shared directly between reports. However, you can copy a report (<strong>File → Make a copy</strong>) to duplicate both the visualisations and filters. Alternatively, note down the RegExp formula and recreate the filter in each new report. For consistency, keep the same filter name (e.g. "AI Traffic") and formula across all your reports.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What metrics should I include in an AI traffic report?</span>
+          </div>
+          <div class="faq-answer">
+            <p>A useful AI traffic report typically includes: <strong>Sessions</strong> (volume of AI-referred visits), <strong>Session source / medium</strong> (breakdown by individual AI tool), <strong>Engaged sessions</strong> and <strong>Engagement rate</strong> (quality of AI traffic), <strong>Conversions</strong> or key events (business impact), and a <strong>time-series chart</strong> showing AI traffic growth over time. Add a date range comparison to track month-over-month growth as AI referral traffic continues to increase.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

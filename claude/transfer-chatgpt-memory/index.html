@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your setup? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -330,81 +348,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Claude AI?</h3>
           <p>Book a 90-minute training session and we'll work through your Claude setup together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about transferring ChatGPT memory to Claude.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Can I really transfer my ChatGPT memory to Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Claude has a built-in <strong>memory import</strong> feature under Settings → Capabilities. It generates a prompt you run in ChatGPT, which returns a structured export of your stored memories. You then paste that output back into Claude to complete the transfer — no third-party tools required.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will all my ChatGPT memories transfer perfectly to Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The import transfers the <strong>content</strong> of your saved memories — your preferences, context, and stored facts. The formatting may differ slightly since Claude and ChatGPT store memories differently, but all meaningful information should carry over. Review your Claude memories after the import to confirm everything looks correct.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Do I need a paid Claude plan to use memory import?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The Memory feature in Claude is generally available to <strong>Claude Pro and Team plan</strong> subscribers. Free plan users may have limited or no access to memory features. Check Claude's current plan comparison page for the most up-to-date availability details.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What happens to my existing Claude memories when I import from ChatGPT?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Importing from ChatGPT <strong>adds</strong> to your existing Claude memories rather than replacing them. If there are any conflicts or duplicates, Claude will merge the information intelligently. You can review and manage all memories in Settings → Capabilities after the import is complete.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I also transfer my Gemini memory to Claude?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. Claude supports memory imports from both ChatGPT and Gemini. The process is identical — enable Memory in Capabilities, click Start Import, copy the generated prompt, run it in Gemini, then paste the output back into Claude. See our <a href="../transfer-gemini-memory/">Transfer Gemini Memory to Claude</a> tutorial for the full walkthrough.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is my ChatGPT memory data safe when I use this import method?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The transfer happens entirely within your own browser sessions — you copy text from ChatGPT and paste it into Claude. No data is sent to any third-party service or tool. Both Anthropic (Claude) and OpenAI (ChatGPT) handle your data according to their own privacy policies, which govern how each platform stores and processes your memories.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -462,21 +406,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your setup? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about transferring ChatGPT memory to Claude.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I really transfer my ChatGPT memory to Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Claude has a built-in <strong>memory import</strong> feature under Settings → Capabilities. It generates a prompt you run in ChatGPT, which returns a structured export of your stored memories. You then paste that output back into Claude to complete the transfer — no third-party tools required.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will all my ChatGPT memories transfer perfectly to Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The import transfers the <strong>content</strong> of your saved memories — your preferences, context, and stored facts. The formatting may differ slightly since Claude and ChatGPT store memories differently, but all meaningful information should carry over. Review your Claude memories after the import to confirm everything looks correct.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need a paid Claude plan to use memory import?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The Memory feature in Claude is generally available to <strong>Claude Pro and Team plan</strong> subscribers. Free plan users may have limited or no access to memory features. Check Claude's current plan comparison page for the most up-to-date availability details.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What happens to my existing Claude memories when I import from ChatGPT?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Importing from ChatGPT <strong>adds</strong> to your existing Claude memories rather than replacing them. If there are any conflicts or duplicates, Claude will merge the information intelligently. You can review and manage all memories in Settings → Capabilities after the import is complete.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I also transfer my Gemini memory to Claude?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Claude supports memory imports from both ChatGPT and Gemini. The process is identical — enable Memory in Capabilities, click Start Import, copy the generated prompt, run it in Gemini, then paste the output back into Claude. See our <a href="../transfer-gemini-memory/">Transfer Gemini Memory to Claude</a> tutorial for the full walkthrough.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is my ChatGPT memory data safe when I use this import method?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The transfer happens entirely within your own browser sessions — you copy text from ChatGPT and paste it into Claude. No data is sent to any third-party service or tool. Both Anthropic (Claude) and OpenAI (ChatGPT) handle your data according to their own privacy policies, which govern how each platform stores and processes your memories.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

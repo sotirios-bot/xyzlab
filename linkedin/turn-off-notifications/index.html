@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -267,81 +285,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with LinkedIn?</h3>
           <p>Book a 90-minute training session and we'll build your LinkedIn content strategy together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about turning off LinkedIn notifications.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>How do I turn off notifications on LinkedIn?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Click your <strong>profile icon</strong> in the top-right, open your <strong>Notifications</strong> settings, then go through each category one at a time and toggle off the notification types you don't want. Your changes save automatically.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I turn off only certain types of notifications?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. LinkedIn groups notifications into categories such as <strong>Searching for a job</strong>, <strong>Posting and commenting</strong>, <strong>Network</strong>, and <strong>Messaging</strong>. Open any category to switch individual notification types on or off without disabling everything.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does turning off notifications stop emails too?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Not always. In-app notifications and <strong>email notifications</strong> are controlled separately. To stop emails, also visit the <strong>Email frequency</strong> settings under Communications and adjust which messages LinkedIn is allowed to email you.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I turn off LinkedIn notifications on mobile?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. In the app, tap your profile photo, open <strong>Settings</strong>, then <strong>Notifications</strong>, and toggle off the categories you want. You can also silence <strong>push notifications</strong> entirely from your phone's system settings for the LinkedIn app.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Will people know I turned off notifications?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No. Notification preferences are completely private. Turning them off only changes what <em>you</em> receive — it does not affect or notify anyone else, and people can still interact with your content as normal.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I turn notifications back on later?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Absolutely. Return to the same <strong>Notifications</strong> settings at any time and toggle any category back on. Changes take effect immediately, so you can fine-tune what you receive whenever you like.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -399,21 +343,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about turning off LinkedIn notifications.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do I turn off notifications on LinkedIn?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Click your <strong>profile icon</strong> in the top-right, open your <strong>Notifications</strong> settings, then go through each category one at a time and toggle off the notification types you don't want. Your changes save automatically.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I turn off only certain types of notifications?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. LinkedIn groups notifications into categories such as <strong>Searching for a job</strong>, <strong>Posting and commenting</strong>, <strong>Network</strong>, and <strong>Messaging</strong>. Open any category to switch individual notification types on or off without disabling everything.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does turning off notifications stop emails too?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Not always. In-app notifications and <strong>email notifications</strong> are controlled separately. To stop emails, also visit the <strong>Email frequency</strong> settings under Communications and adjust which messages LinkedIn is allowed to email you.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I turn off LinkedIn notifications on mobile?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. In the app, tap your profile photo, open <strong>Settings</strong>, then <strong>Notifications</strong>, and toggle off the categories you want. You can also silence <strong>push notifications</strong> entirely from your phone's system settings for the LinkedIn app.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Will people know I turned off notifications?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. Notification preferences are completely private. Turning them off only changes what <em>you</em> receive — it does not affect or notify anyone else, and people can still interact with your content as normal.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I turn notifications back on later?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely. Return to the same <strong>Notifications</strong> settings at any time and toggle any category back on. Changes take effect immediately, so you can fine-tune what you receive whenever you like.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

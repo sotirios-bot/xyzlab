@@ -218,6 +218,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
+  <!-- COACHING / TALLY -->
+  <section class="coaching-section" id="coaching">
+    <div class="container coaching-inner">
+      <div class="section-header">
+        <div class="badge badge-secondary">Book a Training Session</div>
+        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
+        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+      </div>
+      <div id="cal-booking" style="min-height:600px;"></div>
+      <script type="text/javascript">
+      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      </script>
+    </div>
+  </section>
+
   <!-- STEPS -->
   <section class="outcomes" id="steps">
     <div class="container">
@@ -303,81 +321,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <h3>Need 1-on-1 help with Google Ads?</h3>
           <p>Book a 90-minute training session and we'll work through your Google Ads account together!</p>
         </div>
-        <a href="#coaching" class="btn btn-primary">Book a Coaching Session</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">FAQ</div>
-        <h2>Frequently Asked Questions</h2>
-        <p>Common questions about adding WhatsApp to Google Ads.</p>
-      </div>
-      <div class="faq-list">
-
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>Can I add WhatsApp to any Google Ads campaign type?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>WhatsApp Message Assets are currently supported on <strong>Search campaigns</strong>. They are not available for Performance Max, Display, or Video campaigns. You can apply them at the account, campaign, or ad group level.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Does my WhatsApp number need to be a Business account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>No — you can use a regular WhatsApp number. However, using a <strong>WhatsApp Business account</strong> is recommended as it lets you set auto-replies, business hours, and a professional profile, which improves the experience for people who message you.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What should I write in the Starter message?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>The Starter message is pre-filled text that appears in the user's WhatsApp compose box when they tap the button. Keep it short and relevant — for example: <em>"Hi, I'd like to get a quote for [your service]"</em> or <em>"Hi, I saw your Google ad and have a question."</em> This lowers friction and helps you qualify leads faster.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Is there an extra cost to use WhatsApp Message Assets?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Adding Message Assets is free — there's no additional setup cost. You pay only when a user <strong>clicks the WhatsApp button</strong>, which is billed as a standard click on your campaign. Message Assets don't charge per message received.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What Call-to-action options are available?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Google Ads provides several CTA options for Message Assets, including <strong>Message, Chat, Text, WhatsApp</strong>, and others. Choose the one that best matches your brand language and the action you want users to take. "WhatsApp" is the clearest choice if your audience is already familiar with the platform.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can I add multiple WhatsApp numbers to the same account?</span>
-            <span class="faq-chevron" aria-hidden="true">&#8964;</span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes. You can create multiple Message Assets with different numbers and assign them at different levels — for example, one number for the whole account and a different number for a specific campaign targeting a different region or product line. The most specific level (ad group &gt; campaign &gt; account) takes priority.</p>
-          </div>
-        </details>
-
+        <a href="#coaching" class="btn btn-primary">Book a Training Session</a>
       </div>
     </div>
   </section>
@@ -435,21 +379,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- COACHING / TALLY -->
-  <section class="coaching-section" id="coaching">
-    <div class="container coaching-inner">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
       <div class="section-header">
-        <div class="badge badge-secondary">Book a Training Session</div>
-        <h2>Book a <span class="highlight">1-on-1 Training Session</span></h2>
-        <p>Need a hands-on walkthrough tailored to your account? Book a 90-minute training session and we'll set it up together.</p>
+        <div class="badge">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about adding WhatsApp to Google Ads.</p>
       </div>
-      <div id="cal-booking" style="min-height:600px;"></div>
-      <script type="text/javascript">
-      (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init",{origin:"https://cal.com"});
-      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
-      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
-      </script>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I add WhatsApp to any Google Ads campaign type?</span>
+          </div>
+          <div class="faq-answer">
+            <p>WhatsApp Message Assets are currently supported on <strong>Search campaigns</strong>. They are not available for Performance Max, Display, or Video campaigns. You can apply them at the account, campaign, or ad group level.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Does my WhatsApp number need to be a Business account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>No — you can use a regular WhatsApp number. However, using a <strong>WhatsApp Business account</strong> is recommended as it lets you set auto-replies, business hours, and a professional profile, which improves the experience for people who message you.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What should I write in the Starter message?</span>
+          </div>
+          <div class="faq-answer">
+            <p>The Starter message is pre-filled text that appears in the user's WhatsApp compose box when they tap the button. Keep it short and relevant — for example: <em>"Hi, I'd like to get a quote for [your service]"</em> or <em>"Hi, I saw your Google ad and have a question."</em> This lowers friction and helps you qualify leads faster.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is there an extra cost to use WhatsApp Message Assets?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Adding Message Assets is free — there's no additional setup cost. You pay only when a user <strong>clicks the WhatsApp button</strong>, which is billed as a standard click on your campaign. Message Assets don't charge per message received.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What Call-to-action options are available?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Google Ads provides several CTA options for Message Assets, including <strong>Message, Chat, Text, WhatsApp</strong>, and others. Choose the one that best matches your brand language and the action you want users to take. "WhatsApp" is the clearest choice if your audience is already familiar with the platform.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I add multiple WhatsApp numbers to the same account?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can create multiple Message Assets with different numbers and assign them at different levels — for example, one number for the whole account and a different number for a specific campaign targeting a different region or product line. The most specific level (ad group &gt; campaign &gt; account) takes priority.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
