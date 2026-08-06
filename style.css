@@ -768,7 +768,10 @@ a.course-icon:hover {
   .why-cards { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 600px) {
-  .trusted-stats { gap: 1rem; padding: 0 .5rem; }
+  .trusted-stats { flex-direction: column; gap: 1.75rem; padding: 0 1rem; }
+  .trusted-stat { flex: none; width: 100%; }
+  .trusted-stat-number { font-size: 2.5rem; }
+  .trusted-stat-label { font-size: .85rem; white-space: normal; }
   .inst-stat-num { font-size: 1.8rem; }
   .instructor-strip { gap: 1rem; }
   .instructor-strip .btn-sm { width: 100%; text-align: center; justify-content: center; }
