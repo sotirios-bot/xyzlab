@@ -426,27 +426,30 @@ ul { list-style: none; }
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  flex-wrap: wrap;
 }
 
 .trusted-stat {
   text-align: center;
+  flex: 1;
+  min-width: 0;
 }
 
 .trusted-stat-number {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.5rem, 5vw, 3rem);
   font-weight: 900;
   color: var(--white);
   line-height: 1;
   margin-bottom: .35rem;
+  white-space: nowrap;
 }
 
 .trusted-stat-label {
-  font-size: .9rem;
+  font-size: clamp(.72rem, 2vw, .9rem);
   font-weight: 600;
   color: rgba(255,255,255,.75);
   text-transform: uppercase;
   letter-spacing: .06em;
+  white-space: nowrap;
 }
 
 /* keep old classes for fallback */
@@ -764,6 +767,7 @@ a.course-icon:hover {
   .why-cards { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 600px) {
+  .trusted-stats { gap: 1rem; padding: 0 .5rem; }
   .inst-stat-num { font-size: 1.8rem; }
   .instructor-strip { gap: 1rem; }
   .instructor-strip .btn-sm { width: 100%; text-align: center; justify-content: center; }
