@@ -222,9 +222,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div id="cal-booking" style="min-height:600px;"></div>
       <script type="text/javascript">
       (function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],ar);p(cal,[L,ns,ar[2]])}else{p(cal,ar)}return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
-      Cal("init","training",{origin:"https://cal.com"});
-      Cal.ns.training("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",layout:"month_view"});
-      Cal.ns.training("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      Cal("init",{origin:"https://cal.com"});
+      Cal("inline",{elementOrSelector:"#cal-booking",calLink:"sotirios-seridis/digital-marketing-training",config:{layout:"month_view",theme:"light"}});
+      Cal("ui",{"styles":{"branding":{"brandColor":"#08bfad"}},"hideEventTypeDetails":false,"layout":"month_view"});
       </script>
     </div>
   </section>
@@ -545,13 +545,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- NEWSLETTER -->
   <section class="newsletter-section" id="newsletter">
     <div class="container">
-      <div class="newsletter-inner">
-        <div class="newsletter-text">
-          <div class="badge badge-newsletter">Free Daily Newsletter</div>
-          <h2>The <span style="color:var(--secondary);">Walkthrough</span></h2>
-          <p>Digital marketing tutorials you can actually follow, click by click. Every day. Free! &#128640;</p>
-        </div>
-        <a href="https://xyzlab.beehiiv.com/" target="_blank" rel="noopener" class="btn btn-white">Subscribe Free &rarr;</a>
+      <p class="newsletter-eyebrow">Every Day</p>
+      <h2 class="newsletter-title">The <span style="color:var(--secondary);">Walkthrough</span></h2>
+      <p class="newsletter-sub">Digital marketing tutorials you can actually follow, click by click. Every day. Free! &#128640;</p>
+      <div class="newsletter-cta">
+        <a href="https://xyzlab.beehiiv.com/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Subscribe &mdash; it&#8217;s free</a>
+        <p class="newsletter-footnote">No spam. Unsubscribe any time.</p>
       </div>
     </div>
   </section>
