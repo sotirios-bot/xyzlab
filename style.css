@@ -83,12 +83,10 @@ ul { list-style: none; }
 .btn-outline:hover { background: var(--primary-light); }
 
 /* Outline button on dark backgrounds */
-.hero .btn-outline,
 .video-tutorial-hero .btn-outline {
   color: var(--white);
   border-color: rgba(255,255,255,.4);
 }
-.hero .btn-outline:hover,
 .video-tutorial-hero .btn-outline:hover {
   background: rgba(255,255,255,.1);
   border-color: var(--white);
@@ -315,9 +313,10 @@ ul { list-style: none; }
    HERO
    ============================================================ */
 .hero {
-  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%);
+  background: var(--white);
   padding: 6rem 0 5rem;
   overflow: hidden;
+  border-bottom: 1px solid var(--border);
 }
 
 .hero-inner {
@@ -333,7 +332,7 @@ ul { list-style: none; }
   line-height: 1.1;
   letter-spacing: -.03em;
   margin-bottom: 1.25rem;
-  color: var(--white);
+  color: var(--dark);
 }
 .highlight {
   color: var(--primary);
@@ -354,7 +353,7 @@ ul { list-style: none; }
 
 .hero-sub {
   font-size: 1.1rem;
-  color: rgba(255,255,255,.7);
+  color: var(--mid);
   max-width: 500px;
   margin-bottom: 2rem;
 }
@@ -410,8 +409,6 @@ ul { list-style: none; }
 .hero-card .card-icon { font-size: 1.6rem; margin-bottom: .4rem; }
 .hero-card p { font-weight: 700; font-size: .9rem; color: var(--dark); margin: 0; }
 .hero-card span { font-size: .78rem; color: var(--mid); font-weight: 500; }
-/* Hero nav badge on dark bg */
-.hero-actions .badge { background: rgba(255,255,255,.12); color: var(--white); }
 
 /* blob is absolutely positioned, no grid column needed */
 
@@ -419,9 +416,9 @@ ul { list-style: none; }
    TRUSTED BY
    ============================================================ */
 .trusted {
-  background: var(--light);
+  background: var(--dark);
   padding: 3.5rem 0;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid rgba(255,255,255,.07);
 }
 
 .trusted-stats {
@@ -447,7 +444,7 @@ ul { list-style: none; }
 .trusted-stat-label {
   font-size: .9rem;
   font-weight: 600;
-  color: var(--mid);
+  color: rgba(255,255,255,.55);
   text-transform: uppercase;
   letter-spacing: .06em;
 }
@@ -640,14 +637,10 @@ a.course-icon:hover {
   width: 96px;
   height: 96px;
   border-radius: 50%;
-  background: var(--primary);
-  color: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.9rem;
-  font-weight: 900;
-  box-shadow: 0 0 0 6px rgba(8,191,173,.2), 0 0 0 12px rgba(8,191,173,.08);
+  object-fit: cover;
+  box-shadow: 0 0 0 4px rgba(8,191,173,.35), 0 0 0 10px rgba(8,191,173,.12);
+  display: block;
+  flex-shrink: 0;
 }
 .instructor-name {
   font-size: clamp(1.5rem, 2.5vw, 2rem);
@@ -736,13 +729,9 @@ a.course-icon:hover {
   height: 56px;
   min-width: 56px;
   border-radius: 50%;
-  background: var(--primary);
-  color: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  font-weight: 900;
+  object-fit: cover;
+  box-shadow: 0 0 0 3px rgba(8,191,173,.4);
+  display: block;
   flex-shrink: 0;
 }
 .instructor-strip-body { flex: 1; min-width: 0; }
@@ -1736,8 +1725,6 @@ a.course-icon:hover {
 .floating-btn svg { flex-shrink: 0; }
 
 .floating-btn--booking  { background: var(--primary); }
-.floating-btn--whatsapp { background: #25d366; }
-.floating-btn--youtube  { background: #ff0000; }
 
 @media (max-width: 600px) {
   .floating-btns { right: .75rem; bottom: 1.25rem; }
