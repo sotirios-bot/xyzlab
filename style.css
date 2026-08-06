@@ -1142,40 +1142,47 @@ a.course-icon:hover {
 .newsletter-section {
   padding: 5rem 0;
   background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%);
+  text-align: center;
+  color: var(--white);
 }
-.newsletter-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2.5rem;
-  flex-wrap: wrap;
+.newsletter-eyebrow {
+  font-size: .85rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: .75rem;
 }
-.newsletter-text {
-  flex: 1;
-  min-width: 260px;
-}
-.newsletter-text h2 {
-  font-size: clamp(1.9rem, 3vw, 2.8rem);
+.newsletter-title {
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
   color: var(--white);
-  margin-bottom: .75rem;
+  margin-bottom: 1rem;
   letter-spacing: -.02em;
 }
-.newsletter-text p {
+.newsletter-sub {
   color: rgba(255,255,255,.75);
   font-size: 1.05rem;
-  max-width: 500px;
+  max-width: 560px;
+  margin: 0 auto 2rem;
 }
-.badge-newsletter {
-  background: rgba(8,191,173,.18);
-  color: var(--primary);
-  border: 1px solid rgba(8,191,173,.3);
-  margin-bottom: 1rem;
+.newsletter-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .75rem;
+}
+.newsletter-footnote {
+  font-size: .8rem;
+  color: rgba(255,255,255,.55);
+  margin: 0;
+}
+.btn-lg {
+  padding: .9rem 2.25rem;
+  font-size: 1rem;
 }
 @media (max-width: 680px) {
   .newsletter-section { padding: 3.5rem 0; }
-  .newsletter-inner { flex-direction: column; text-align: center; }
-  .newsletter-text p { max-width: 100%; }
 }
 
 /* Tally coaching section */
