@@ -157,10 +157,9 @@ ul { list-style: none; }
   width: auto;
   display: block;
 }
-/* Nav logo on dark bg — transparent PNG blends into nav */
+/* Nav logo — slightly taller in the dark nav */
 .nav-wrapper .logo-img {
   height: 46px;
-  content: url('/xyz-lab-logo.png');
 }
 /* Fallback text (hidden when image loads) */
 .logo-xyz { color: var(--primary); display: none; }
