@@ -1415,18 +1415,14 @@ a.course-icon:hover {
 
 /* ---------- Programme session card ---------- */
 .programme-session {
-  background: var(--white);
-  border: 1px solid var(--border);
+  background: var(--dark);
   border-radius: 16px;
   overflow: hidden;
   margin-top: 2rem;
 }
 .programme-session-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.25rem 1.5rem;
-  background: var(--dark);
+  padding: 1.5rem 1.75rem 1.25rem;
+  border-bottom: 1px solid rgba(255,255,255,.1);
 }
 .programme-session-header h3 {
   font-size: 1rem;
@@ -1437,21 +1433,21 @@ a.course-icon:hover {
 }
 .programme-session-body { display: block; }
 .programme-item {
-  padding: 1.25rem 1.5rem;
-  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 1.75rem;
+  border-bottom: 1px solid rgba(255,255,255,.08);
 }
 .programme-item:last-child { border-bottom: none; }
 .programme-item-header {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 0.65rem;
+  gap: 0.85rem;
+  margin-bottom: 0.75rem;
 }
 .programme-item-num {
-  width: 26px;
-  height: 26px;
+  width: 28px;
+  height: 28px;
   background: var(--primary);
-  color: #fff;
+  color: var(--dark);
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -1462,25 +1458,25 @@ a.course-icon:hover {
   flex-shrink: 0;
 }
 .programme-item h4 {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 700;
-  color: var(--dark);
+  color: var(--white);
   margin: 0;
   text-transform: uppercase;
-  letter-spacing: .04em;
+  letter-spacing: .05em;
 }
 .programme-item-list {
   list-style: none;
-  padding: 0 0 0 calc(26px + 0.75rem);
+  padding: 0 0 0 calc(28px + 0.85rem);
   margin: 0;
 }
 .programme-item-list li {
-  font-size: 0.83rem;
-  color: var(--mid);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,.78);
   padding-left: 1rem;
   position: relative;
-  line-height: 1.5;
-  margin-bottom: 0.25rem;
+  line-height: 1.55;
+  margin-bottom: 0.3rem;
 }
 .programme-item-list li::before {
   content: '›';
@@ -1488,6 +1484,15 @@ a.course-icon:hover {
   left: 0;
   color: var(--primary);
   font-weight: 700;
+}
+
+/* Mobile: programme section */
+@media (max-width: 600px) {
+  .programme-session-header { padding: 1.25rem 1.25rem 1rem; }
+  .programme-item { padding: 1rem 1.25rem; }
+  .programme-item h4 { font-size: 0.85rem; }
+  .programme-item-list li { font-size: 0.86rem; }
+  .programme-item-list { padding-left: calc(28px + 0.75rem); }
 }
 
 /* ---------- Programme guarantee (below card) ---------- */
@@ -1943,8 +1948,11 @@ a.course-icon:hover {
    ============================================================ */
 .testimonials {
   padding: 6rem 0;
-  background: var(--light);
+  background: var(--dark);
 }
+.testimonials .section-header h2 { color: var(--white); }
+.testimonials .section-header p { color: rgba(255,255,255,.75); }
+.testimonials .badge { background: rgba(8,191,173,.2); color: var(--primary); }
 
 .testimonials-grid {
   display: grid;
@@ -1953,8 +1961,8 @@ a.course-icon:hover {
 }
 
 .testimonial-card {
-  background: var(--white);
-  border: 1.5px solid var(--border);
+  background: rgba(255,255,255,.06);
+  border: 1.5px solid rgba(255,255,255,.1);
   border-radius: var(--radius-lg);
   padding: 2rem;
   display: flex;
@@ -1963,7 +1971,6 @@ a.course-icon:hover {
   transition: box-shadow var(--transition), border-color var(--transition), transform var(--transition);
 }
 .testimonial-card:hover {
-  box-shadow: var(--shadow-lg);
   border-color: var(--primary);
   transform: translateY(-3px);
 }
@@ -1972,7 +1979,7 @@ a.course-icon:hover {
 
 .testimonial-text {
   font-size: .95rem;
-  color: var(--dark-2);
+  color: rgba(255,255,255,.88);
   line-height: 1.7;
   flex: 1;
   font-style: italic;
@@ -1985,31 +1992,31 @@ a.course-icon:hover {
   align-items: center;
   gap: .85rem;
   padding-top: .75rem;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid rgba(255,255,255,.12);
 }
 .testimonial-avatar {
   width: 42px;
   height: 42px;
   min-width: 42px;
   border-radius: 50%;
-  background: var(--primary-light);
+  background: rgba(8,191,173,.25);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
   font-size: .85rem;
-  color: var(--primary-dark);
+  color: var(--primary);
 }
 .testimonial-name {
   display: block;
   font-size: .9rem;
   font-weight: 700;
-  color: var(--dark);
+  color: var(--white);
 }
 .testimonial-role {
   display: block;
   font-size: .78rem;
-  color: var(--mid);
+  color: rgba(255,255,255,.6);
   margin-top: .1rem;
 }
 
