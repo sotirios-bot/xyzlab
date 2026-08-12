@@ -1374,12 +1374,192 @@ a.course-icon:hover {
   margin: 0 auto;
 }
 
+/* ---------- Programme Info ---------- */
+.programme-info {
+  margin: 2rem 0 2.5rem;
+}
+.programme-meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.programme-meta-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  flex: 1;
+  min-width: 160px;
+}
+.pm-icon {
+  font-size: 1.3rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.programme-meta-item strong {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.3;
+}
+.programme-meta-item span {
+  font-size: 0.8rem;
+  color: var(--mid);
+  line-height: 1.45;
+}
+.pm-guarantee { flex: 2; min-width: 220px; }
+.programme-session {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.programme-session-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.5rem;
+  background: var(--dark);
+}
+.session-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  border-radius: 6px;
+  padding: 4px 10px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.programme-session-header h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--white);
+  margin: 0;
+  line-height: 1.3;
+}
+.programme-session-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.programme-agenda,
+.programme-outcome {
+  padding: 1.5rem;
+}
+.programme-agenda { border-right: 1px solid var(--border); }
+.programme-agenda h4,
+.programme-outcome h4 {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin: 0 0 1rem;
+}
+.agenda-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: agenda;
+}
+.agenda-list > li {
+  counter-increment: agenda;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+.agenda-list > li::before {
+  content: counter(agenda);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 19px;
+  height: 19px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.agenda-list > li > strong {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 0.35rem;
+  line-height: 1.4;
+}
+.agenda-list > li > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.agenda-list > li > ul > li {
+  font-size: 0.8rem;
+  color: var(--mid);
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.5;
+  margin-bottom: 0.2rem;
+}
+.agenda-list > li > ul > li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700;
+}
+.programme-outcome > p {
+  font-size: 0.82rem;
+  color: var(--mid);
+  margin-bottom: 0.75rem;
+}
+.outcome-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.outcome-list li {
+  font-size: 0.83rem;
+  color: var(--dark);
+  padding-left: 1.4rem;
+  position: relative;
+  line-height: 1.5;
+  margin-bottom: 0.4rem;
+}
+.outcome-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
 @media (max-width: 700px) {
   .pillar-hero { padding: 3rem 0 2.5rem; }
   .playlist-section { padding: 4rem 0; }
   .coaching-cta-inner { flex-direction: column; text-align: center; padding: 1.75rem 1.5rem; gap: 1.25rem; }
   .coaching-cta { padding: 3rem 0 0; }
   .coaching-section { padding: 4rem 0; }
+  .programme-session-body { grid-template-columns: 1fr; }
+  .programme-agenda { border-right: none; border-bottom: 1px solid var(--border); }
+  .pm-guarantee { min-width: 100%; }
 }
 
 /* ============================================================
