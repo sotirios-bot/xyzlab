@@ -1968,9 +1968,11 @@ a.course-icon:hover {
 }
 .floating-btn svg { flex-shrink: 0; }
 
-.floating-btn--booking  { background: var(--primary); }
-.floating-btn--whatsapp { background: #25d366; }
-.floating-btn--youtube  { background: #ff0000; }
+.floating-btn--booking    { background: var(--primary); }
+.floating-btn--whatsapp  { background: #25d366; }
+.floating-btn--youtube   { background: #ff0000; }
+.floating-btn--newsletter { background: var(--secondary); color: var(--dark) !important; }
+.floating-btn--newsletter:hover { color: var(--dark) !important; }
 
 @media (max-width: 600px) {
   .floating-btns { right: .75rem; bottom: 1.25rem; }
