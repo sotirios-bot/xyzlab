@@ -503,18 +503,38 @@
     }
     .pb-final-cta .pb-secondary-link:hover { color: var(--white); }
 
-    /* ── STICKY MOBILE BAR ── */
-    .pb-sticky-bar {
-      display: none;
+    /* ── FLOATING BUY BUTTON ── */
+    .pb-floating {
       position: fixed;
-      bottom: 0; left: 0; right: 0;
-      z-index: 200;
-      background: var(--dark);
-      border-top: 1px solid rgba(255,255,255,.1);
-      padding: .85rem 1.25rem;
-      box-shadow: 0 -4px 20px rgba(0,0,0,.3);
+      right: 1.5rem;
+      bottom: 2rem;
+      z-index: 999;
     }
-    .pb-sticky-bar a { width: 100%; font-size: 1rem; }
+    .pb-floating a {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .65rem 1.1rem;
+      background: var(--secondary);
+      color: var(--dark);
+      font-size: .88rem;
+      font-weight: 700;
+      border-radius: 50px;
+      white-space: nowrap;
+      box-shadow: 0 4px 20px rgba(0,0,0,.28);
+      transition: transform .2s, box-shadow .2s;
+      text-decoration: none;
+    }
+    .pb-floating a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(0,0,0,.36);
+      color: var(--dark);
+    }
+    @media (max-width: 600px) {
+      .pb-floating { right: .75rem; bottom: 1.25rem; }
+      .pb-floating a { padding: .65rem; border-radius: 50%; }
+      .pb-floating a span { display: none; }
+    }
 
     /* ── SECTION HEADER overrides ── */
     .pb-hero .section-header,
@@ -532,8 +552,6 @@
       .pb-hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
       .pb-hero { padding-top: 4rem; }
       .pb-guarantee-card { padding: 2rem 1.5rem; }
-      .pb-sticky-bar { display: block; }
-      body { padding-bottom: 78px; }
     }
     @media (max-width: 480px) {
       .pb-screenshots { grid-template-columns: 1fr 1fr; }
@@ -619,6 +637,7 @@
         </li>
         <li><a href="/#newsletter">Newsletter</a></li>
         <li><a href="/#contact">Contact</a></li>
+                <li><a href="/playbook/">Playbook</a></li>
         <li><a href="/" class="btn btn-primary btn-sm">Book Training</a></li>
       </ul>
     </nav>
@@ -998,6 +1017,7 @@
         <div class="footer-col">
           <h4>Company</h4>
           <ul>
+            <li><a href="/playbook/">Playbook</a></li>
             <li><a href="/#contact">Contact</a></li>
             <li><a href="mailto:hello@xyzlab.com">hello@xyzlab.com</a></li>
           </ul>
@@ -1012,9 +1032,12 @@
     </div>
   </footer>
 
-  <!-- STICKY MOBILE BAR -->
-  <div class="pb-sticky-bar">
-    <a href="#checkout" class="btn btn-amber btn-full checkout-link">Get the Playbook — $19</a>
+  <!-- FLOATING BUY BUTTON -->
+  <div class="pb-floating">
+    <a href="#checkout" class="checkout-link">
+      <span>Get the Playbook — $19</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+    </a>
   </div>
 
   <script src="../main.js"></script>
