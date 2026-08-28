@@ -749,8 +749,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       'pinterest-ads': { label: 'Pinterest Ads', href: '/pinterest-ads/' }
     };
 
+    // ── Encode / decode answers for shareable URL ─────────────────────────────
+    function encodeAnswers() {
+      var data = { c: S.answers.channels || [], q: {} };
+      QUESTIONS.forEach(function (q) {
+        if (q.scored && S.answers[q.id]) data.q[q.id] = S.answers[q.id];
+      });
+      try { return btoa(JSON.stringify(data)); } catch (e) { return ''; }
+    }
+
+    function decodeAnswers(str) {
+      try {
+        var data = JSON.parse(atob(str));
+        if (data.c) S.answers.channels = data.c;
+        if (data.q) Object.keys(data.q).forEach(function (k) { S.answers[k] = data.q[k]; });
+        return true;
+      } catch (e) { return false; }
+    }
+
     // ── State ──────────────────────────────────────────────────────────────────
-    var S = { qIndex: 0, answers: {}, email: '', score: 0, tier: '' };
+    var S = { qIndex: 0, answers: {}, email: '', score: 0, tier: '', isShared: false };
     var wrap = document.getElementById('quiz-wrap');
 
     function r(html) {
@@ -909,6 +927,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       var offset = CIRC - (CIRC * pct / 100);
       var pctile = getPercentile(pct);
 
+      // Encode answers into URL so this results page is shareable
+      var encoded = encodeAnswers();
+      if (encoded) history.replaceState(null, '', '#d=' + encoded);
+
       var recsHtml = '';
       if (recs.length === 0) {
         recsHtml = '<p style="text-align:center;color:var(--mid);padding:1.25rem 0;font-style:italic;">No significant gaps — outstanding setup!</p>';
@@ -927,6 +949,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       }
 
       r('<div class="quiz-results ' + t.cls + '">' +
+
+        // Shared-view banner
+        (S.isShared ?
+          '<div style="background:rgba(8,191,173,.08);border:1px solid rgba(8,191,173,.25);border-radius:.75rem;padding:.85rem 1.1rem;margin-bottom:1.5rem;font-size:.9rem;color:var(--mid);text-align:center;">' +
+            '📊 A colleague shared their campaign score with you. ' +
+            '<button style="background:none;border:none;color:var(--primary);font-weight:600;cursor:pointer;font-size:.9rem;font-family:inherit;padding:0;" onclick="Q.retake()">Take the quiz yourself →</button>' +
+          '</div>' : '') +
 
         // Score circle
         '<div class="quiz-score-wrap">' +
@@ -1036,11 +1065,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       start: function () { S.qIndex = 0; showQuestion(); },
       back: function () { if (S.qIndex > 0) { S.qIndex--; } showQuestion(); },
       backToLastQ: function () { S.qIndex = QUESTIONS.length - 1; showQuestion(); },
-      goIntro: function () { showIntro(); },
-      retake: function () { S = { qIndex: 0, answers: {}, email: '', score: 0, tier: '' }; showIntro(); },
+      goIntro: function () { history.replaceState(null, '', window.location.pathname); showIntro(); },
+      retake: function () { S = { qIndex: 0, answers: {}, email: '', score: 0, tier: '', isShared: false }; history.replaceState(null, '', window.location.pathname); showIntro(); },
       share: function () {
         var btn = document.getElementById('shareBtn');
-        navigator.clipboard.writeText('https://xyzlab.com/campaign-score/').then(function () {
+        navigator.clipboard.writeText(window.location.href).then(function () {
           if (btn) {
             var orig = btn.innerHTML;
             btn.innerHTML = '✅ Link copied!';
@@ -1068,7 +1097,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       }
     };
 
-    showIntro();
+    // On load: check for shared results encoded in URL hash
+    (function () {
+      var m = window.location.hash.match(/d=([A-Za-z0-9+/=]+)/);
+      if (m && decodeAnswers(m[1])) {
+        S.isShared = true;
+        showResults();
+      } else {
+        showIntro();
+      }
+    }());
   }());
   </script>
 </body>
