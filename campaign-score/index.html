@@ -757,11 +757,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         if (kv[0]) p[decodeURIComponent(kv[0])] = decodeURIComponent(kv[1] || '');
       });
       return {
-        source:   p.utm_source   || '',
-        medium:   p.utm_medium   || '',
-        campaign: p.utm_campaign || '',
-        content:  p.utm_content  || '',
-        term:     p.utm_term     || ''
+        source:  p.utm_source  || 'score-quiz',
+        medium:  p.utm_medium  || '',
+        content: p.utm_content || '',
+        term:    p.utm_term    || ''
       };
     }());
 
@@ -1073,11 +1072,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           email: email, score: S.score, tier: S.tier,
           channels: S.answers.channels || [],
           answers: ans,
-          utm_source:   UTM.source,
-          utm_medium:   UTM.medium,
-          utm_campaign: UTM.campaign || 'score-quiz',
-          utm_content:  UTM.content,
-          utm_term:     UTM.term,
+          utm_source:  UTM.source,
+          utm_medium:  UTM.medium,
+          utm_content: UTM.content,
+          utm_term:    UTM.term,
           referrer:     document.referrer || '',
           timestamp:    new Date().toISOString()
         })
