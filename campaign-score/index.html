@@ -145,10 +145,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       stroke-dasharray: 530.14; stroke-dashoffset: 530.14; /* 2π×84.4 */
       transition: stroke-dashoffset 1.5s cubic-bezier(.35,0,.15,1);
     }
-    .sfill-optimised  { stroke: #059669; }
-    .sfill-good       { stroke: var(--primary); }
-    .sfill-developing { stroke: #f59e0b; }
-    .sfill-risk       { stroke: #ef4444; }
+    .sfill-excellent { stroke: #059669; }
+    .sfill-improve   { stroke: #f59e0b; }
+    .sfill-urgent    { stroke: #ef4444; }
     .quiz-score-num {
       position: absolute; inset: 0; display: flex; flex-direction: column;
       align-items: center; justify-content: center;
@@ -162,10 +161,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       padding: .4rem 1.2rem; border-radius: 2rem;
       font-size: .9rem; font-weight: 700; letter-spacing: .02em; margin-bottom: 1rem;
     }
-    .tier-optimised  .quiz-tier-badge { background: rgba(5,150,105,.12);  color: #059669; }
-    .tier-good       .quiz-tier-badge { background: rgba(8,191,173,.13);  color: var(--primary); }
-    .tier-developing .quiz-tier-badge { background: rgba(245,158,11,.15); color: #b45309; }
-    .tier-risk       .quiz-tier-badge { background: rgba(239,68,68,.11);  color: #c42020; }
+    .tier-excellent .quiz-tier-badge { background: rgba(5,150,105,.12);  color: #059669; }
+    .tier-improve   .quiz-tier-badge { background: rgba(245,158,11,.15); color: #b45309; }
+    .tier-urgent    .quiz-tier-badge { background: rgba(239,68,68,.11);  color: #c42020; }
 
     .quiz-results-intro {
       font-size: .97rem; color: var(--mid); max-width: 500px;
@@ -891,18 +889,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
 
     function tierData(pct) {
-      if (pct >= 90) return { cls: 'tier-optimised',  fillCls: 'sfill-optimised',  fillColor: '#059669',
-        label: '⭐ Optimised',
-        intro: 'Your setup is best-in-class. Focus on the remaining gaps below to maintain your edge.' };
-      if (pct >= 70) return { cls: 'tier-good',       fillCls: 'sfill-good',       fillColor: 'var(--primary)',
-        label: '✅ Good Setup',
-        intro: 'Solid foundation. A few gaps remain — close them and you\'ll be operating at the top level.' };
-      if (pct >= 40) return { cls: 'tier-developing', fillCls: 'sfill-developing', fillColor: '#f59e0b',
-        label: '⚠️ Developing',
-        intro: 'The basics are in place, but clear gaps are costing you performance. Fix these before scaling.' };
-      return { cls: 'tier-risk',       fillCls: 'sfill-risk',       fillColor: '#ef4444',
-        label: '🔴 At Risk',
-        intro: 'Significant issues are causing budget waste. Address these urgently before increasing spend.' };
+      if (pct >= 75) return { cls: 'tier-excellent', fillCls: 'sfill-excellent', fillColor: '#059669',
+        label: '✅ Excellent',
+        intro: 'Strong setup. Address the remaining gaps below to fully optimise performance and protect your budget.' };
+      if (pct >= 40) return { cls: 'tier-improve',  fillCls: 'sfill-improve',  fillColor: '#f59e0b',
+        label: '⚠️ Room for Improvement',
+        intro: 'Some good foundations, but clear gaps are costing you performance. Fix these before scaling spend.' };
+      return { cls: 'tier-urgent',    fillCls: 'sfill-urgent',    fillColor: '#ef4444',
+        label: '🔴 Urgent Action Needed',
+        intro: 'Significant issues are causing budget waste right now. Address these urgently before increasing spend.' };
     }
 
     function showResults() {
@@ -1044,20 +1039,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       goIntro: function () { showIntro(); },
       retake: function () { S = { qIndex: 0, answers: {}, email: '', score: 0, tier: '' }; showIntro(); },
       share: function () {
-        var text = 'I scored ' + S.score + '% on the Campaign Score quiz — ' + S.tier + '. Test your digital marketing setup for free: https://xyzlab.com/campaign-score/';
-        if (navigator.share) {
-          navigator.share({ title: 'My Campaign Score', text: text, url: 'https://xyzlab.com/campaign-score/' }).catch(function () {});
-        } else {
-          navigator.clipboard.writeText(text).then(function () {
-            var btn = document.getElementById('shareBtn');
-            if (btn) {
-              var orig = btn.innerHTML;
-              btn.innerHTML = '✅ Copied to clipboard!';
-              btn.classList.add('quiz-share-copied');
-              setTimeout(function () { btn.innerHTML = orig; btn.classList.remove('quiz-share-copied'); }, 2500);
-            }
-          }).catch(function () {});
-        }
+        var btn = document.getElementById('shareBtn');
+        navigator.clipboard.writeText('https://xyzlab.com/campaign-score/').then(function () {
+          if (btn) {
+            var orig = btn.innerHTML;
+            btn.innerHTML = '✅ Link copied!';
+            btn.classList.add('quiz-share-copied');
+            setTimeout(function () { btn.innerHTML = orig; btn.classList.remove('quiz-share-copied'); }, 2500);
+          }
+        }).catch(function () {});
       },
       next: function () {
         var q = QUESTIONS[S.qIndex];
