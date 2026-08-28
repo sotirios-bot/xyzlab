@@ -259,6 +259,78 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .quiz-score-num { font-size: 2rem; }
       .quiz-bench { padding: 1rem; }
     }
+
+    /* Score breakdown */
+    .quiz-breakdown {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 1rem; padding: 1.25rem 1.5rem;
+      margin: 0 0 1.5rem; text-align: left;
+    }
+    .quiz-breakdown-title {
+      font-size: .78rem; font-weight: 700; color: var(--mid);
+      text-transform: uppercase; letter-spacing: .06em; margin-bottom: .85rem;
+    }
+    .quiz-breakdown-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: .45rem .75rem;
+    }
+    .quiz-breakdown-item {
+      display: flex; align-items: center; gap: .5rem;
+      font-size: .875rem; color: var(--dark);
+    }
+    .quiz-breakdown-icon { font-size: .85rem; flex-shrink: 0; }
+    @media (max-width: 500px) { .quiz-breakdown-grid { grid-template-columns: 1fr; } }
+
+    /* Channel tags in results */
+    .quiz-result-channels {
+      display: flex; gap: .4rem; justify-content: center; flex-wrap: wrap;
+      margin: .5rem 0 1.25rem;
+    }
+    .quiz-result-channel-tag {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: .35rem; padding: .2rem .65rem;
+      font-size: .78rem; font-weight: 600; color: var(--mid);
+    }
+
+    /* Channel resources */
+    .quiz-resources {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 1rem; padding: 1.25rem 1.5rem;
+      margin: 0 0 1.5rem; text-align: left;
+    }
+    .quiz-resources-title {
+      font-size: .78rem; font-weight: 700; color: var(--mid);
+      text-transform: uppercase; letter-spacing: .06em; margin-bottom: .75rem;
+    }
+    .quiz-resources-chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .quiz-resource-chip {
+      display: inline-flex; align-items: center; gap: .35rem;
+      padding: .35rem .85rem; background: rgba(8,191,173,.08);
+      border: 1px solid rgba(8,191,173,.25); border-radius: .45rem;
+      font-size: .85rem; font-weight: 600; color: var(--primary);
+      text-decoration: none; transition: background .15s;
+    }
+    .quiz-resource-chip:hover { background: rgba(8,191,173,.18); }
+
+    /* Back button */
+    .quiz-back {
+      background: none; border: none; color: var(--mid);
+      font-size: .83rem; cursor: pointer; padding: 0 0 .6rem;
+      font-family: inherit; display: inline-flex; align-items: center;
+      gap: .3rem; transition: color .15s;
+    }
+    .quiz-back:hover { color: var(--dark); }
+
+    /* Share / retake buttons */
+    .quiz-share-btn {
+      display: inline-flex; align-items: center; gap: .45rem;
+      padding: .82rem 2rem; background: transparent;
+      border: 2px solid var(--border); border-radius: .6rem;
+      font-size: .95rem; font-weight: 600; cursor: pointer;
+      transition: border-color .15s, background .15s; font-family: inherit;
+      color: var(--dark);
+    }
+    .quiz-share-btn:hover { border-color: var(--primary); background: rgba(8,191,173,.04); }
+    .quiz-share-copied { border-color: #059669 !important; color: #059669 !important; }
   </style>
 </head>
 <body>
@@ -657,6 +729,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       }
     ];
 
+    // ── Labels & maps ──────────────────────────────────────────────────────────
+    var BREAKDOWN_LABELS = {
+      tracking:        'Conversion tracking',
+      review_freq:     'Review frequency',
+      weekly_report:   'Weekly reporting',
+      underperforming: 'Acting on underperformers',
+      creative_testing:'Creative testing',
+      target_cpa_roas: 'CPA / ROAS targets',
+      pause_decision:  'Pause decisions',
+      scale_up:        'Budget scaling',
+      landing_page:    'Landing page'
+    };
+
+    var CHANNEL_LINKS = {
+      'google-ads':    { label: 'Google Ads',   href: '/google-ads/' },
+      'meta-ads':      { label: 'Meta Ads',      href: '/meta-ads/' },
+      'tiktok-ads':    { label: 'TikTok Ads',    href: '/tiktok-ads/' },
+      'linkedin-ads':  { label: 'LinkedIn Ads',  href: '/linkedin-ads/' },
+      'microsoft-ads': { label: 'Microsoft Ads', href: '/microsoft-ads/' },
+      'pinterest-ads': { label: 'Pinterest Ads', href: '/pinterest-ads/' }
+    };
+
     // ── State ──────────────────────────────────────────────────────────────────
     var S = { qIndex: 0, answers: {}, email: '', score: 0, tier: '' };
     var wrap = document.getElementById('quiz-wrap');
@@ -713,7 +807,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       var noSel = isMulti ? saved.length === 0 : !saved;
       var isLast = S.qIndex === QUESTIONS.length - 1;
 
-      r(progressHtml(S.qIndex, 'Question ' + (S.qIndex + 1) + ' of ' + QUESTIONS.length) +
+      var backTarget = S.qIndex === 0 ? 'Q.goIntro()' : 'Q.back()';
+      r('<button class="quiz-back" onclick="' + backTarget + '">← Back</button>' +
+        progressHtml(S.qIndex, 'Question ' + (S.qIndex + 1) + ' of ' + QUESTIONS.length) +
         '<div class="quiz-card">' +
           '<div class="quiz-q-num">Q' + q.num + '</div>' +
           '<div class="quiz-q-text">' + q.text + '</div>' +
@@ -754,7 +850,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
 
     function showEmail() {
-      r(progressHtml(QUESTIONS.length, 'Almost there!') +
+      r('<button class="quiz-back" onclick="Q.backToLastQ()">← Back</button>' +
+        progressHtml(QUESTIONS.length, 'Almost there!') +
         '<div class="quiz-email-card">' +
           '<div style="font-size:2.2rem;margin-bottom:.6rem;">📊</div>' +
           '<h2>Your score is ready</h2>' +
@@ -846,8 +943,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           '<div class="quiz-score-num">' + pct + '%<span>Your Score</span></div>' +
         '</div>' +
 
-        // Tier badge
+        // Tier badge + channel tags
         '<div class="quiz-tier-badge">' + t.label + '</div>' +
+        (S.answers.channels && S.answers.channels.length > 0 ?
+          '<div class="quiz-result-channels">' +
+            S.answers.channels.map(function (c) {
+              var ch = CHANNEL_LINKS[c];
+              return ch ? '<span class="quiz-result-channel-tag">' + ch.label + '</span>' : '';
+            }).join('') +
+          '</div>' : '') +
         '<p class="quiz-results-intro">' + t.intro + '</p>' +
 
         // Benchmark
@@ -862,7 +966,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           '<p class="quiz-bench-stat">You scored better than <strong>' + pctile + '%</strong> of digital marketers who took this assessment.</p>' +
         '</div>' +
 
+        // Score breakdown by area
+        '<div class="quiz-breakdown">' +
+          '<div class="quiz-breakdown-title">Your score by area</div>' +
+          '<div class="quiz-breakdown-grid">' +
+          QUESTIONS.filter(function (q) { return q.scored; }).map(function (q) {
+            var a = S.answers[q.id];
+            var o = q.options.filter(function (x) { return x.value === a; })[0];
+            var sc = o ? o.score : 0;
+            var icon = sc >= 7 ? '✅' : sc >= 4 ? '⚠️' : '🔴';
+            return '<div class="quiz-breakdown-item"><span class="quiz-breakdown-icon">' + icon + '</span><span>' + BREAKDOWN_LABELS[q.id] + '</span></div>';
+          }).join('') +
+          '</div>' +
+        '</div>' +
+
         recsHtml +
+
+        // Channel resources
+        (S.answers.channels && S.answers.channels.length > 0 ?
+          '<div class="quiz-resources">' +
+            '<div class="quiz-resources-title">Tutorials for your channels</div>' +
+            '<div class="quiz-resources-chips">' +
+            S.answers.channels.map(function (c) {
+              var ch = CHANNEL_LINKS[c];
+              return ch ? '<a href="' + ch.href + '" class="quiz-resource-chip">→ ' + ch.label + '</a>' : '';
+            }).join('') +
+            '</div>' +
+          '</div>' : '') +
+
+        // Share + retake
+        '<div style="display:flex;gap:.75rem;justify-content:center;margin:0 0 1.5rem;flex-wrap:wrap;">' +
+          '<button class="quiz-share-btn" id="shareBtn" onclick="Q.share()">📤 Share my score</button>' +
+          '<button class="quiz-share-btn" onclick="Q.retake()">↺ Retake</button>' +
+        '</div>' +
 
         // CTAs
         '<div class="quiz-result-cta-block">' +
@@ -904,6 +1040,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     // ── Public API ─────────────────────────────────────────────────────────────
     window.Q = {
       start: function () { S.qIndex = 0; showQuestion(); },
+      back: function () { if (S.qIndex > 0) { S.qIndex--; } showQuestion(); },
+      backToLastQ: function () { S.qIndex = QUESTIONS.length - 1; showQuestion(); },
+      goIntro: function () { showIntro(); },
+      retake: function () { S = { qIndex: 0, answers: {}, email: '', score: 0, tier: '' }; showIntro(); },
+      share: function () {
+        var text = 'I scored ' + S.score + '% on the Campaign Score quiz — ' + S.tier + '. Test your digital marketing setup for free: https://xyzlab.com/campaign-score/';
+        if (navigator.share) {
+          navigator.share({ title: 'My Campaign Score', text: text, url: 'https://xyzlab.com/campaign-score/' }).catch(function () {});
+        } else {
+          navigator.clipboard.writeText(text).then(function () {
+            var btn = document.getElementById('shareBtn');
+            if (btn) {
+              var orig = btn.innerHTML;
+              btn.innerHTML = '✅ Copied to clipboard!';
+              btn.classList.add('quiz-share-copied');
+              setTimeout(function () { btn.innerHTML = orig; btn.classList.remove('quiz-share-copied'); }, 2500);
+            }
+          }).catch(function () {});
+        }
+      },
       next: function () {
         var q = QUESTIONS[S.qIndex];
         var a = S.answers[q.id];
