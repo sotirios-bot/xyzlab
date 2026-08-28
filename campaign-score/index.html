@@ -102,7 +102,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .quiz-option-label {
       font-size: .93rem; color: var(--dark); font-weight: 500; line-height: 1.35;
     }
-    .quiz-next { margin-top: 1.5rem; display: flex; justify-content: flex-end; }
+    .quiz-next { margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; }
     .quiz-btn {
       display: inline-flex; align-items: center; gap: .4rem;
       padding: .68rem 1.65rem; background: var(--primary); color: #fff;
@@ -314,7 +314,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     /* Back button */
     .quiz-back {
       background: none; border: none; color: var(--mid);
-      font-size: .83rem; cursor: pointer; padding: 0 0 .6rem;
+      font-size: .83rem; cursor: pointer; padding: 0;
       font-family: inherit; display: inline-flex; align-items: center;
       gap: .3rem; transition: color .15s;
     }
@@ -808,13 +808,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       var isLast = S.qIndex === QUESTIONS.length - 1;
 
       var backTarget = S.qIndex === 0 ? 'Q.goIntro()' : 'Q.back()';
-      r('<button class="quiz-back" onclick="' + backTarget + '">← Back</button>' +
-        progressHtml(S.qIndex, 'Question ' + (S.qIndex + 1) + ' of ' + QUESTIONS.length) +
+      r(progressHtml(S.qIndex, 'Question ' + (S.qIndex + 1) + ' of ' + QUESTIONS.length) +
         '<div class="quiz-card">' +
           '<div class="quiz-q-num">Q' + q.num + '</div>' +
           '<div class="quiz-q-text">' + q.text + '</div>' +
           '<div class="quiz-options">' + opts + '</div>' +
           '<div class="quiz-next">' +
+            '<button class="quiz-back" onclick="' + backTarget + '">← Back</button>' +
             '<button class="quiz-btn" id="qnxt"' + (noSel ? ' disabled' : '') + ' onclick="Q.next();">' +
               (isLast ? 'See My Results →' : 'Next →') +
             '</button>' +
@@ -843,7 +843,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             label.classList.add('selected');
             S.answers[q.id] = inp.value;
             document.getElementById('qnxt').disabled = false;
-            setTimeout(Q.next, 260);
           }
         });
       });
