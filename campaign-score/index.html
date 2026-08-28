@@ -1067,7 +1067,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       QUESTIONS.forEach(function (q) { ans[q.id] = S.answers[q.id] || null; });
       fetch(ZAPIER_WEBHOOK, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain' },
         body: JSON.stringify({
           email: email, score: S.score, tier: S.tier,
           channels: S.answers.channels || [],
