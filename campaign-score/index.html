@@ -563,7 +563,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           { value: 'tiktok-ads',    label: '<strong>TikTok Ads</strong>' },
           { value: 'linkedin-ads',  label: '<strong>LinkedIn Ads</strong>' },
           { value: 'microsoft-ads', label: '<strong>Microsoft Ads</strong>' },
-          { value: 'pinterest-ads', label: '<strong>Pinterest Ads</strong>' }
+          { value: 'pinterest-ads', label: '<strong>Pinterest Ads</strong>' },
+          { value: 'reddit-ads',    label: '<strong>Reddit Ads</strong>' },
+          { value: 'chatgpt-ads',   label: '<strong>ChatGPT Ads</strong>' },
+          { value: 'other', isOther: true, label: '<strong>Other</strong>' }
         ]
       },
       {
@@ -578,7 +581,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           { value: 'no',      score: 0,  label: '<strong>No</strong> — I rely on platform-reported data',
             rec: { urgency: 'urgent',
               issue: 'Without conversion tracking, your algorithms optimise blind and you cannot measure true ROI.',
-              action: 'Set up conversion tracking for every key goal in your ad platform before running another campaign.' } }
+              action: 'Set up conversion tracking for every key goal in your ad platform before running another campaign.' } },
+          { value: 'unknown', score: 0,  label: '<strong>I don\'t know</strong> — not sure if it\'s set up correctly',
+            rec: { urgency: 'urgent',
+              issue: 'Not knowing whether conversion tracking is working means your spend decisions may be based on completely wrong data.',
+              action: 'Check now: go to your ad platform\'s conversion section and verify every key action is tracking and firing correctly. Use Tag Assistant or the platform\'s built-in debugger.' } }
         ]
       },
       {
@@ -617,26 +624,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       },
       {
         id: 'underperforming', num: 5, scored: true, type: 'single',
-        text: 'When you spot an <strong>underperforming</strong> campaign or ad — what do you do?',
+        text: 'How do you <strong>optimise</strong> underperforming campaigns and ads?',
         options: [
-          { value: 'thresholds', score: 10, label: '<strong>Clear thresholds</strong> I always act on' },
-          { value: 'notice',     score: 5,  label: '<strong>Adjust</strong> when something looks off',
+          { value: 'systematic', score: 10, label: '<strong>Systematically</strong> — clear rules for what to change and when' },
+          { value: 'adjust',     score: 5,  label: '<strong>Adjust</strong> when something looks off',
             rec: { urgency: 'important',
-              issue: '"Looks off" is subjective — it leads to inconsistent decisions and missed problems.',
-              action: 'Define what "looks off" as a number: e.g. "If CPA is 40%+ above target, I act." Write it down and apply it every review.' } },
-          { value: 'rarely',     score: 2,  label: '<strong>Rarely</strong> — unless it\'s obviously broken',
+              issue: 'Making changes without clear criteria leads to inconsistent results and makes it hard to learn what actually works.',
+              action: 'Define what "underperforming" means as a number — e.g. "CPA 40%+ above target after $500 spend." Always act on that number, not instinct.' } },
+          { value: 'pause',      score: 2,  label: '<strong>Pause</strong> poor performers, rarely analyse why',
             rec: { urgency: 'important',
-              issue: 'Only acting when campaigns are obviously broken means catching problems late and expensive.',
-              action: 'Set a specific pause threshold for every active campaign this week — e.g. "Pause if CPA exceeds target by 50% after $500 spend."' } },
-          { value: 'run',        score: 0,  label: '<strong>Let them run</strong> and see what happens',
+              issue: 'Pausing without understanding why means you\'ll repeat the same mistakes in future campaigns.',
+              action: 'When you pause a campaign, spend 10 minutes documenting why: which metric failed and what caused it. Use that to improve the next launch.' } },
+          { value: 'run',        score: 0,  label: '<strong>Let them run</strong> — things usually improve',
             rec: { urgency: 'urgent',
-              issue: 'Letting underperformers run is the single biggest cause of silent budget waste.',
-              action: 'Before your next campaign, write one pause rule: "If CPA exceeds target by 50% after $X spend, I pause it." Then enforce it.' } }
+              issue: 'Underperforming campaigns rarely self-correct. Letting them run is the most common cause of silent budget waste.',
+              action: 'This week: review every active campaign. Pause any that has missed its CPA or ROAS target for 2+ weeks with sufficient spend data.' } }
         ]
       },
       {
         id: 'creative_testing', num: 6, scored: true, type: 'single',
-        text: 'How do you <strong>test</strong> creatives and ad copy?',
+        text: 'Do you <strong>test</strong> creatives and ad copies?',
         options: [
           { value: 'structured', score: 10, label: '<strong>Structured A/B tests</strong> — one variable at a time' },
           { value: 'launch_see', score: 5,  label: '<strong>Launch and see</strong> what performs',
@@ -655,7 +662,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       },
       {
         id: 'target_cpa_roas', num: 7, scored: true, type: 'single',
-        text: 'Do you have a defined <strong>target CPA or ROAS</strong> — and use it to guide decisions?',
+        text: 'Do you have a <strong>target CPA or ROAS</strong> — and use it to guide decisions?',
         options: [
           { value: 'yes',   score: 10, label: '<strong>Yes</strong> — exact targets drive all decisions' },
           { value: 'rough', score: 5,  label: '<strong>Rough numbers</strong> in my head',
@@ -665,7 +672,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           { value: 'no',    score: 0,  label: '<strong>No defined target</strong>',
             rec: { urgency: 'urgent',
               issue: 'Without a target, there is no way to know if a campaign is succeeding or failing.',
-              action: 'Define your target CPA or ROAS before your next campaign launches. Work backwards from your profit margin or customer LTV.' } }
+              action: 'Define your target CPA or ROAS before your next campaign launches. Work backwards from your profit margin or customer LTV.' } },
+          { value: 'unknown', score: 0, label: '<strong>I don\'t know</strong> — not sure what these are',
+            rec: { urgency: 'urgent',
+              issue: 'CPA (cost per acquisition) and ROAS (return on ad spend) are the two most important benchmarks for any paid campaign. Without them you cannot tell if a campaign is profitable.',
+              action: 'This week: calculate your target CPA from your profit margin, or your target ROAS from your revenue goals. Enter it in your ad platform and use it as your primary decision metric.' } }
         ]
       },
       {
@@ -692,7 +703,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         text: 'When do you <strong>increase budget</strong> on a campaign?',
         options: [
           { value: 'data_based',       score: 10, label: '<strong>2+ consecutive weeks</strong> hitting target CPA/ROAS' },
-          { value: 'looks_good',       score: 5,  label: '<strong>When it looks good</strong>',
+          { value: 'looks_good',       score: 5,  label: '<strong>When performance looks good</strong>',
             rec: { urgency: 'important',
               issue: '"Looks good" is vague — it leads to premature or delayed scaling.',
               action: 'Define a specific scale rule: "When CPA/ROAS hits target for 2 consecutive weeks with 30+ conversions, increase budget by 20–30%."' } },
@@ -732,7 +743,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       tracking:        'Conversion tracking',
       review_freq:     'Review frequency',
       weekly_report:   'Weekly reporting',
-      underperforming: 'Acting on underperformers',
+      underperforming: 'Optimising underperformers',
       creative_testing:'Creative testing',
       target_cpa_roas: 'CPA / ROAS targets',
       pause_decision:  'Pause decisions',
@@ -746,7 +757,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       'tiktok-ads':    { label: 'TikTok Ads',    href: '/tiktok-ads/' },
       'linkedin-ads':  { label: 'LinkedIn Ads',  href: '/linkedin-ads/' },
       'microsoft-ads': { label: 'Microsoft Ads', href: '/microsoft-ads/' },
-      'pinterest-ads': { label: 'Pinterest Ads', href: '/pinterest-ads/' }
+      'pinterest-ads': { label: 'Pinterest Ads', href: '/pinterest-ads/' },
+      'reddit-ads':    { label: 'Reddit Ads',    href: '/reddit-ads/' },
+      'chatgpt-ads':   { label: 'ChatGPT Ads',   href: '/chatgpt/' }
     };
 
     // ── Capture UTM params from URL on page load ───────────────────────────────
@@ -766,7 +779,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     // ── Encode / decode answers for shareable URL ─────────────────────────────
     function encodeAnswers() {
-      var data = { c: S.answers.channels || [], q: {} };
+      var data = { c: S.answers.channels || [], co: S.answers.channels_other || '', q: {} };
       QUESTIONS.forEach(function (q) {
         if (q.scored && S.answers[q.id]) data.q[q.id] = S.answers[q.id];
       });
@@ -777,6 +790,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       try {
         var data = JSON.parse(atob(str));
         if (data.c) S.answers.channels = data.c;
+        if (data.co) S.answers.channels_other = data.co;
         if (data.q) Object.keys(data.q).forEach(function (k) { S.answers[k] = data.q[k]; });
         return true;
       } catch (e) { return false; }
@@ -810,6 +824,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           '<span class="quiz-channel-pill">LinkedIn Ads</span>' +
           '<span class="quiz-channel-pill">Microsoft Ads</span>' +
           '<span class="quiz-channel-pill">Pinterest Ads</span>' +
+          '<span class="quiz-channel-pill">Reddit Ads</span>' +
+          '<span class="quiz-channel-pill">ChatGPT Ads</span>' +
         '</div>' +
         '<div class="quiz-pills">' +
           '<span class="quiz-pill">📊 Instant score</span>' +
@@ -829,9 +845,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       var opts = '';
       q.options.forEach(function (o) {
         var sel = isMulti ? saved.indexOf(o.value) !== -1 : saved === o.value;
+        var extra = '';
+        if (o.isOther) {
+          var otherVal = (S.answers.channels_other || '').replace(/"/g, '&quot;');
+          extra = '<input type="text" id="other-ch-input" placeholder="e.g. Snapchat Ads" ' +
+            'style="display:' + (sel ? 'block' : 'none') + ';margin-top:.5rem;padding:.3rem .6rem;' +
+            'border:1px solid var(--border);border-radius:.4rem;font-size:.85rem;' +
+            'width:100%;box-sizing:border-box;font-family:inherit;background:var(--bg);color:var(--dark);" ' +
+            'value="' + otherVal + '" />';
+        }
         opts += '<label class="quiz-option' + (sel ? ' selected' : '') + '">' +
           '<input type="' + (isMulti ? 'checkbox' : 'radio') + '" name="' + iname + '" value="' + o.value + '"' + (sel ? ' checked' : '') + ' />' +
-          '<span class="quiz-option-label">' + o.label + '</span>' +
+          '<span class="quiz-option-label"' + (o.isOther ? ' style="flex:1;"' : '') + '>' + o.label + extra + '</span>' +
         '</label>';
       });
 
@@ -869,6 +894,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             }
             S.answers[q.id] = arr;
             document.getElementById('qnxt').disabled = arr.length === 0;
+            if (inp.value === 'other') {
+              var ti = document.getElementById('other-ch-input');
+              if (ti) {
+                ti.style.display = inp.checked ? 'block' : 'none';
+                if (inp.checked) setTimeout(function () { ti.focus(); }, 50);
+              }
+            }
           } else {
             labels.forEach(function (l) { l.classList.remove('selected'); });
             label.classList.add('selected');
@@ -877,6 +909,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           }
         });
       });
+
+      var otherInput = document.getElementById('other-ch-input');
+      if (otherInput) {
+        otherInput.addEventListener('input', function () { S.answers.channels_other = this.value; });
+        otherInput.addEventListener('click', function (e) { e.stopPropagation(); });
+      }
     }
 
     function showEmail() {
@@ -1071,6 +1109,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         body: JSON.stringify({
           email: email, score: S.score, tier: S.tier,
           channels: S.answers.channels || [],
+          channels_other: S.answers.channels_other || '',
           answers: ans,
           utm_source:  UTM.source,
           utm_medium:  UTM.medium,
