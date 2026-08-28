@@ -749,6 +749,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       'pinterest-ads': { label: 'Pinterest Ads', href: '/pinterest-ads/' }
     };
 
+    // ── Capture UTM params from URL on page load ───────────────────────────────
+    var UTM = (function () {
+      var p = {}, qs = window.location.search.slice(1);
+      if (qs) qs.split('&').forEach(function (pair) {
+        var kv = pair.split('=');
+        if (kv[0]) p[decodeURIComponent(kv[0])] = decodeURIComponent(kv[1] || '');
+      });
+      return {
+        source:   p.utm_source   || '',
+        medium:   p.utm_medium   || '',
+        campaign: p.utm_campaign || '',
+        content:  p.utm_content  || '',
+        term:     p.utm_term     || ''
+      };
+    }());
+
     // ── Encode / decode answers for shareable URL ─────────────────────────────
     function encodeAnswers() {
       var data = { c: S.answers.channels || [], q: {} };
@@ -1055,7 +1071,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         body: JSON.stringify({
           email: email, score: S.score, tier: S.tier,
           channels: S.answers.channels || [],
-          answers: ans, timestamp: new Date().toISOString()
+          answers: ans,
+          utm_source:   UTM.source,
+          utm_medium:   UTM.medium,
+          utm_campaign: UTM.campaign,
+          utm_content:  UTM.content,
+          utm_term:     UTM.term,
+          referrer:     document.referrer || '',
+          timestamp:    new Date().toISOString()
         })
       }).catch(function () {});
     }
