@@ -10,173 +10,245 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
   <link rel="icon" type="image/png" href="../favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Score your paid media campaigns in 2 minutes. Find out where budget is leaking and get personalised fixes — free." />
+  <meta name="description" content="Score your digital marketing campaigns in under 2 minutes. Find out where budget is leaking and get personalised fixes — free." />
   <link rel="canonical" href="https://xyzlab.com/campaign-score/" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://xyzlab.com/campaign-score/" />
-  <meta property="og:title" content="Campaign Score — Rate Your Paid Media Setup | XYZ Lab" />
-  <meta property="og:description" content="Score your paid media campaigns in 2 minutes. Find out where budget is leaking and get personalised fixes — free." />
+  <meta property="og:title" content="Campaign Score — Rate Your Digital Marketing Setup | XYZ Lab" />
+  <meta property="og:description" content="Score your digital marketing campaigns in under 2 minutes. Find out where budget is leaking and get personalised fixes — free." />
   <meta property="og:image" content="https://xyzlab.com/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Campaign Score — Rate Your Paid Media Setup | XYZ Lab" />
-  <meta name="twitter:description" content="Score your paid media campaigns in 2 minutes. Find out where budget is leaking and get personalised fixes — free." />
+  <meta name="twitter:title" content="Campaign Score — Rate Your Digital Marketing Setup | XYZ Lab" />
+  <meta name="twitter:description" content="Score your digital marketing campaigns in under 2 minutes. Find out where budget is leaking and get personalised fixes — free." />
   <meta name="twitter:image" content="https://xyzlab.com/og-image.jpg" />
-  <title>Campaign Score — Rate Your Paid Media Setup | XYZ Lab</title>
+  <title>Campaign Score — Rate Your Digital Marketing Setup | XYZ Lab</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../style.css" />
   <style>
     .quiz-section {
-      padding: 4.5rem 0 7rem;
+      padding: 4rem 0 7rem;
       min-height: 72vh;
       display: flex;
       align-items: flex-start;
     }
-    .quiz-wrap {
-      max-width: 680px;
-      margin: 0 auto;
-      width: 100%;
-    }
-    /* Intro */
+    .quiz-wrap { max-width: 680px; margin: 0 auto; width: 100%; }
+
+    /* ── Intro ── */
     .quiz-intro { text-align: center; }
-    .quiz-intro h1 { font-size: clamp(1.9rem, 5vw, 2.8rem); margin-bottom: 1rem; }
-    .quiz-intro-sub { color: var(--mid); font-size: 1.05rem; max-width: 480px; margin: 0 auto 1.5rem; }
+    .quiz-intro h1 { font-size: clamp(1.8rem, 5vw, 2.7rem); margin-bottom: .75rem; line-height: 1.2; }
+    .quiz-intro-sub { color: var(--mid); font-size: 1.1rem; margin: 0 auto .5rem; }
+    .quiz-channels {
+      display: flex; gap: .45rem; justify-content: center; flex-wrap: wrap;
+      margin: 1rem 0 1.75rem;
+    }
+    .quiz-channel-pill {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: .35rem; padding: .22rem .65rem;
+      font-size: .78rem; font-weight: 600; color: var(--mid);
+    }
     .quiz-pills {
-      display: flex; gap: .6rem; justify-content: center; flex-wrap: wrap;
-      margin: 0 0 2.25rem;
+      display: flex; gap: .5rem; justify-content: center; flex-wrap: wrap;
+      margin: 0 0 2rem;
     }
     .quiz-pill {
       background: var(--surface); border: 1px solid var(--border);
-      border-radius: 2rem; padding: .3rem .9rem;
-      font-size: .82rem; color: var(--mid);
+      border-radius: 2rem; padding: .28rem .85rem;
+      font-size: .8rem; color: var(--mid);
     }
-    /* Progress */
-    .quiz-progress { margin-bottom: 2rem; }
-    .quiz-progress-bar-wrap {
-      background: var(--border); border-radius: 2rem; height: 6px; overflow: hidden;
-    }
+
+    /* ── Progress ── */
+    .quiz-progress { margin-bottom: 1.75rem; }
+    .quiz-progress-bar-wrap { background: var(--border); border-radius: 2rem; height: 5px; overflow: hidden; }
     .quiz-progress-bar {
       height: 100%;
       background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
       border-radius: 2rem; transition: width .5s ease;
     }
-    .quiz-progress-label {
-      font-size: .78rem; color: var(--mid); margin-top: .45rem; text-align: right;
-    }
-    /* Question card */
+    .quiz-progress-label { font-size: .75rem; color: var(--mid); margin-top: .4rem; text-align: right; }
+
+    /* ── Question card ── */
     .quiz-card {
       background: var(--surface); border: 1px solid var(--border);
-      border-radius: 1.25rem; padding: 2.25rem;
+      border-radius: 1.25rem; padding: 2rem;
     }
     .quiz-q-num {
-      font-size: .75rem; font-weight: 700; color: var(--primary);
-      text-transform: uppercase; letter-spacing: .07em; margin-bottom: .6rem;
+      font-size: .72rem; font-weight: 700; color: var(--primary);
+      text-transform: uppercase; letter-spacing: .07em; margin-bottom: .5rem;
     }
     .quiz-q-text {
-      font-size: 1.2rem; font-weight: 700; color: var(--dark);
-      margin-bottom: 1.5rem; line-height: 1.45;
+      font-size: 1.15rem; font-weight: 700; color: var(--dark);
+      margin-bottom: 1.4rem; line-height: 1.4;
     }
-    .quiz-options { display: flex; flex-direction: column; gap: .65rem; }
+    .quiz-options { display: flex; flex-direction: column; gap: .55rem; }
+
+    /* Option: full label is the click target */
     .quiz-option {
-      display: flex; align-items: center; gap: .85rem;
-      padding: .8rem 1.1rem; border: 2px solid var(--border);
+      display: flex; align-items: center; gap: .8rem;
+      padding: .75rem 1rem; border: 2px solid var(--border);
       border-radius: .75rem; cursor: pointer;
       transition: border-color .15s, background .15s;
       background: var(--bg); user-select: none;
     }
     .quiz-option:hover { border-color: var(--primary); background: rgba(8,191,173,.04); }
-    .quiz-option.selected { border-color: var(--primary); background: rgba(8,191,173,.08); }
-    .quiz-option input { accent-color: var(--primary); width: 17px; height: 17px; flex-shrink: 0; cursor: pointer; }
-    .quiz-option-label { font-size: .97rem; color: var(--dark); font-weight: 500; cursor: pointer; }
-    .quiz-next { margin-top: 1.75rem; display: flex; justify-content: flex-end; }
+    .quiz-option.selected { border-color: var(--primary); background: rgba(8,191,173,.09); }
+    /* Hide the actual input visually — label is the full target */
+    .quiz-option input {
+      accent-color: var(--primary);
+      width: 16px; height: 16px; flex-shrink: 0;
+      cursor: pointer; pointer-events: none; /* let label handle all clicks */
+    }
+    .quiz-option-label {
+      font-size: .93rem; color: var(--dark); font-weight: 500; line-height: 1.35;
+    }
+    .quiz-next { margin-top: 1.5rem; display: flex; justify-content: flex-end; }
     .quiz-btn {
-      display: inline-flex; align-items: center; gap: .45rem;
-      padding: .7rem 1.75rem; background: var(--primary); color: #fff;
-      border: none; border-radius: .6rem; font-size: .97rem;
+      display: inline-flex; align-items: center; gap: .4rem;
+      padding: .68rem 1.65rem; background: var(--primary); color: #fff;
+      border: none; border-radius: .6rem; font-size: .95rem;
       font-weight: 600; cursor: pointer; transition: opacity .15s; font-family: inherit;
     }
     .quiz-btn:hover { opacity: .88; }
-    .quiz-btn:disabled { opacity: .38; cursor: not-allowed; }
-    /* Email gate */
+    .quiz-btn:disabled { opacity: .35; cursor: not-allowed; }
+
+    /* ── Email gate ── */
     .quiz-email-card {
       background: var(--surface); border: 1px solid var(--border);
       border-radius: 1.25rem; padding: 2.5rem; text-align: center;
     }
-    .quiz-email-card h2 { font-size: 1.55rem; margin-bottom: .65rem; }
-    .quiz-email-card p { color: var(--mid); margin-bottom: 1.75rem; font-size: 1rem; }
+    .quiz-email-card h2 { font-size: 1.5rem; margin-bottom: .6rem; }
+    .quiz-email-card p { color: var(--mid); margin-bottom: 1.6rem; font-size: .97rem; }
     .quiz-email-form {
-      display: flex; gap: .65rem; max-width: 460px;
+      display: flex; gap: .6rem; max-width: 460px;
       margin: 0 auto; flex-wrap: wrap;
     }
     .quiz-email-input {
       flex: 1; min-width: 200px;
-      padding: .78rem 1rem; border: 2px solid var(--border);
-      border-radius: .6rem; font-size: .97rem;
+      padding: .75rem 1rem; border: 2px solid var(--border);
+      border-radius: .6rem; font-size: .95rem;
       background: var(--bg); color: var(--dark);
       transition: border-color .15s; font-family: inherit;
     }
     .quiz-email-input:focus { outline: none; border-color: var(--primary); }
-    .quiz-privacy { font-size: .75rem; color: var(--mid); opacity: .65; margin-top: .9rem; }
-    /* Results */
+    .quiz-privacy { font-size: .73rem; color: var(--mid); opacity: .6; margin-top: .85rem; }
+
+    /* ── Results ── */
     .quiz-results { text-align: center; }
     .quiz-score-wrap {
-      position: relative; width: 180px; height: 180px; margin: 0 auto 1.5rem;
+      position: relative; width: 190px; height: 190px; margin: 0 auto 1.1rem;
     }
-    .quiz-score-svg { transform: rotate(-90deg); width: 180px; height: 180px; display: block; }
-    .quiz-score-track { fill: none; stroke: var(--border); stroke-width: 12; }
+    .quiz-score-svg { transform: rotate(-90deg); width: 190px; height: 190px; display: block; }
+    .quiz-score-track { fill: none; stroke: var(--border); stroke-width: 14; }
     .quiz-score-fill {
-      fill: none; stroke-width: 12; stroke-linecap: round;
-      stroke-dasharray: 502.65; stroke-dashoffset: 502.65;
+      fill: none; stroke-width: 14; stroke-linecap: round;
+      stroke-dasharray: 530.14; stroke-dashoffset: 530.14; /* 2π×84.4 */
       transition: stroke-dashoffset 1.5s cubic-bezier(.35,0,.15,1);
     }
-    .score-fill-strong { stroke: var(--primary); }
-    .score-fill-leaking { stroke: var(--secondary); }
-    .score-fill-risk { stroke: #ef4444; }
+    .sfill-optimised  { stroke: #059669; }
+    .sfill-good       { stroke: var(--primary); }
+    .sfill-developing { stroke: #f59e0b; }
+    .sfill-risk       { stroke: #ef4444; }
     .quiz-score-num {
       position: absolute; inset: 0; display: flex; flex-direction: column;
       align-items: center; justify-content: center;
-      font-size: 2.25rem; font-weight: 900; color: var(--dark); line-height: 1;
+      font-size: 2.4rem; font-weight: 900; color: var(--dark); line-height: 1;
     }
-    .quiz-score-num span { font-size: .85rem; font-weight: 500; color: var(--mid); margin-top: .2rem; }
+    .quiz-score-num span { font-size: .8rem; font-weight: 500; color: var(--mid); margin-top: .25rem; }
+
+    /* Tier badge */
     .quiz-tier-badge {
-      display: inline-block; padding: .38rem 1.2rem; border-radius: 2rem;
-      font-size: .88rem; font-weight: 700; letter-spacing: .03em; margin-bottom: 1.25rem;
+      display: inline-flex; align-items: center; gap: .45rem;
+      padding: .4rem 1.2rem; border-radius: 2rem;
+      font-size: .9rem; font-weight: 700; letter-spacing: .02em; margin-bottom: 1rem;
     }
-    .tier-strong .quiz-tier-badge { background: rgba(8,191,173,.14); color: var(--primary); }
-    .tier-leaking .quiz-tier-badge { background: rgba(254,197,92,.22); color: #8a6600; }
-    .tier-risk .quiz-tier-badge { background: rgba(239,68,68,.12); color: #c42020; }
+    .tier-optimised  .quiz-tier-badge { background: rgba(5,150,105,.12);  color: #059669; }
+    .tier-good       .quiz-tier-badge { background: rgba(8,191,173,.13);  color: var(--primary); }
+    .tier-developing .quiz-tier-badge { background: rgba(245,158,11,.15); color: #b45309; }
+    .tier-risk       .quiz-tier-badge { background: rgba(239,68,68,.11);  color: #c42020; }
+
     .quiz-results-intro {
-      font-size: 1rem; color: var(--mid); max-width: 520px;
-      margin: 0 auto 2.25rem; line-height: 1.65;
+      font-size: .97rem; color: var(--mid); max-width: 500px;
+      margin: 0 auto 1.75rem; line-height: 1.65;
     }
+
+    /* Benchmark */
+    .quiz-bench {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 1rem; padding: 1.25rem 1.5rem;
+      margin: 0 0 2rem; text-align: left;
+    }
+    .quiz-bench-label {
+      font-size: .78rem; font-weight: 600; color: var(--mid);
+      text-transform: uppercase; letter-spacing: .06em; margin-bottom: .75rem;
+    }
+    .quiz-bench-bar-outer {
+      position: relative; height: 8px;
+      background: var(--border); border-radius: 4px;
+      margin-bottom: 1.1rem;
+    }
+    .quiz-bench-bar-fill {
+      position: absolute; left: 0; top: 0; bottom: 0;
+      border-radius: 4px; width: 0;
+      transition: width 1.5s cubic-bezier(.35,0,.15,1);
+    }
+    .quiz-bench-avg-line {
+      position: absolute; top: -5px; bottom: -5px;
+      width: 2px; background: var(--mid); border-radius: 1px;
+      transform: translateX(-1px);
+    }
+    .quiz-bench-avg-tip {
+      position: absolute; top: 12px; left: 50%;
+      transform: translateX(-50%);
+      font-size: .68rem; font-weight: 600; color: var(--mid);
+      white-space: nowrap;
+    }
+    .quiz-bench-stat {
+      font-size: .97rem; color: var(--dark); font-weight: 500; text-align: center;
+    }
+    .quiz-bench-stat strong { font-weight: 800; }
+
     /* Recommendations */
-    .quiz-recs { text-align: left; margin-bottom: 2rem; }
-    .quiz-recs h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 1rem; }
+    .quiz-recs { text-align: left; margin-bottom: 1.75rem; }
+    .quiz-recs-title {
+      font-size: 1rem; font-weight: 700; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: .5rem;
+    }
     .quiz-rec-item {
-      border-left: 4px solid var(--border); padding: .9rem 1.1rem;
-      background: var(--surface); border-radius: 0 .6rem .6rem 0;
-      margin-bottom: .75rem;
+      border-left: 4px solid var(--border);
+      padding: 1rem 1.1rem; background: var(--surface);
+      border-radius: 0 .75rem .75rem 0; margin-bottom: .75rem;
     }
-    .rec-urgent { border-left-color: #ef4444; }
-    .rec-important { border-left-color: var(--secondary); }
-    .rec-nice { border-left-color: var(--primary); }
+    .rec-urgent   { border-left-color: #ef4444; }
+    .rec-important{ border-left-color: #f59e0b; }
+    .rec-nice     { border-left-color: var(--primary); }
     .quiz-rec-tag {
-      font-size: .7rem; font-weight: 700; text-transform: uppercase;
-      letter-spacing: .07em; margin-bottom: .3rem;
+      font-size: .68rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .07em; margin-bottom: .35rem;
     }
-    .rec-urgent .quiz-rec-tag { color: #c42020; }
-    .rec-important .quiz-rec-tag { color: #8a6600; }
-    .rec-nice .quiz-rec-tag { color: var(--primary); }
-    .quiz-rec-text { font-size: .93rem; color: var(--dark); line-height: 1.6; }
-    /* Result CTAs */
+    .rec-urgent   .quiz-rec-tag { color: #c42020; }
+    .rec-important .quiz-rec-tag { color: #92400e; }
+    .rec-nice     .quiz-rec-tag { color: var(--primary); }
+    .quiz-rec-issue {
+      font-size: .9rem; color: var(--mid); line-height: 1.55; margin-bottom: .55rem;
+    }
+    .quiz-rec-action {
+      font-size: .91rem; color: var(--dark); font-weight: 600;
+      line-height: 1.5; padding: .55rem .75rem;
+      background: rgba(8,191,173,.07); border-radius: .45rem;
+    }
+    .rec-urgent   .quiz-rec-action { background: rgba(239,68,68,.06); }
+    .rec-important .quiz-rec-action { background: rgba(245,158,11,.07); }
+
+    /* CTAs */
     .quiz-result-cta-block {
-      border-top: 1px solid var(--border); padding-top: 2rem; margin-top: .5rem;
+      border-top: 1px solid var(--border); padding-top: 1.75rem; margin-top: .25rem;
     }
     .quiz-result-cta-label { font-size: .9rem; color: var(--mid); margin-bottom: 1rem; }
     .quiz-result-ctas { display: flex; gap: .875rem; justify-content: center; flex-wrap: wrap; }
+
     /* Fade in */
-    .quiz-screen { animation: qFade .3s ease forwards; }
+    .quiz-screen { animation: qFade .28s ease forwards; }
     @keyframes qFade {
       from { opacity: 0; transform: translateY(10px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -184,7 +256,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     @media (max-width: 600px) {
       .quiz-card, .quiz-email-card { padding: 1.4rem; }
       .quiz-q-text { font-size: 1.05rem; }
-      .quiz-score-num { font-size: 1.9rem; }
+      .quiz-score-num { font-size: 2rem; }
+      .quiz-bench { padding: 1rem; }
     }
   </style>
 </head>
@@ -392,186 +465,230 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
   <script src="../main.js"></script>
-
   <script>
   (function () {
     var ZAPIER_WEBHOOK = 'YOUR_ZAPIER_WEBHOOK_URL';
-    var CIRC = 502.65; // 2 * π * 80
+    var CIRC = 530.14;   // 2 * π * 84.4 (r=84.4 inside stroke-width 14)
+    var AVG  = 52;       // simulated benchmark average
 
+    function getPercentile(pct) {
+      if (pct >= 90) return 94;
+      if (pct >= 80) return 85;
+      if (pct >= 70) return 73;
+      if (pct >= 60) return 60;
+      if (pct >= 52) return 52;
+      if (pct >= 40) return 37;
+      if (pct >= 30) return 22;
+      return 10;
+    }
+
+    // ── Questions ─────────────────────────────────────────────────────────────
     var QUESTIONS = [
       {
-        id: 'channels',
-        num: 1,
-        text: 'Which channels are you running? (Select ALL that apply)',
-        type: 'multi',
-        scored: false,
+        id: 'channels', num: 1, scored: false, type: 'multi',
+        text: 'Which <strong>channels</strong> are you running? (Select all that apply)',
         options: [
-          { value: 'google-ads',    label: 'Google Ads' },
-          { value: 'meta-ads',      label: 'Meta Ads' },
-          { value: 'tiktok-ads',    label: 'TikTok Ads' },
-          { value: 'linkedin-ads',  label: 'LinkedIn Ads' },
-          { value: 'microsoft-ads', label: 'Microsoft Ads' },
-          { value: 'pinterest-ads', label: 'Pinterest Ads' }
+          { value: 'google-ads',    label: '<strong>Google Ads</strong>' },
+          { value: 'meta-ads',      label: '<strong>Meta Ads</strong>' },
+          { value: 'tiktok-ads',    label: '<strong>TikTok Ads</strong>' },
+          { value: 'linkedin-ads',  label: '<strong>LinkedIn Ads</strong>' },
+          { value: 'microsoft-ads', label: '<strong>Microsoft Ads</strong>' },
+          { value: 'pinterest-ads', label: '<strong>Pinterest Ads</strong>' }
         ]
       },
       {
-        id: 'tracking',
-        num: 2,
-        text: 'Are you tracking conversions — sales, leads, hard KPIs?',
-        type: 'single', scored: true,
+        id: 'tracking', num: 2, scored: true, type: 'single',
+        text: 'Are you tracking <strong>conversions</strong> — sales, leads, hard KPIs?',
         options: [
-          { value: 'yes',     label: 'Yes, fully tracked — every key action fires correctly', score: 10 },
-          { value: 'partial', label: 'Partially — some events tracked, some missing', score: 5,
-            rec: { urgency: 'important', text: 'Your <strong>partial tracking creates a distorted picture</strong>. Platforms optimise toward the signals they receive — incomplete data means algorithms are learning from incomplete results. Audit every key action and ensure all hard KPIs fire correctly.' } },
-          { value: 'no',      label: 'No — I rely on platform-reported data only', score: 0,
-            rec: { urgency: 'urgent', text: '<strong>No conversion tracking is your biggest leak.</strong> Without it, your platform algorithms have nothing real to optimise toward and you cannot measure true ROI. This must be fixed before any other optimisation.' } }
+          { value: 'yes',     score: 10, label: '<strong>Yes</strong> — every key action is tracked correctly' },
+          { value: 'partial', score: 5,  label: '<strong>Partially</strong> — some conversions are missing',
+            rec: { urgency: 'important',
+              issue: 'Partial tracking skews your data and sends algorithms the wrong signals.',
+              action: 'List every key action (purchase, lead, sign-up) and verify each fires correctly in your ad platform. Fix the gaps this week.' } },
+          { value: 'no',      score: 0,  label: '<strong>No</strong> — I rely on platform-reported data',
+            rec: { urgency: 'urgent',
+              issue: 'Without conversion tracking, your algorithms optimise blind and you cannot measure true ROI.',
+              action: 'Set up conversion tracking for every key goal in your ad platform before running another campaign.' } }
         ]
       },
       {
-        id: 'review_freq',
-        num: 3,
-        text: 'How often do you review campaign performance?',
-        type: 'single', scored: true,
+        id: 'review_freq', num: 3, scored: true, type: 'single',
+        text: 'How often do you <strong>review</strong> campaign performance?',
         options: [
-          { value: 'weekly',   label: 'Weekly — fixed review schedule', score: 10 },
-          { value: 'monthly',  label: 'Monthly', score: 5,
-            rec: { urgency: 'important', text: '<strong>Monthly reviews are too slow for paid media.</strong> Algorithms shift, auctions change, and creative fatigue sets in within days. Move to a fixed weekly review to stay ahead.' } },
-          { value: 'reactive', label: 'When something goes wrong', score: 2,
-            rec: { urgency: 'important', text: 'Reviewing only <strong>when something goes wrong</strong> means you\'re always reacting, never optimising. A weekly check catches issues before they become expensive.' } },
-          { value: 'none',     label: 'No set routine', score: 0,
-            rec: { urgency: 'urgent', text: 'With <strong>no review routine</strong>, problems compound in silence. A campaign bleeding budget can go unnoticed for weeks. Set a fixed weekly calendar block and stick to it.' } }
+          { value: 'weekly',   score: 10, label: '<strong>Weekly</strong> — fixed review schedule' },
+          { value: 'monthly',  score: 5,  label: '<strong>Monthly</strong>',
+            rec: { urgency: 'important',
+              issue: 'A month is too long — algorithms shift and costs spike within days.',
+              action: 'Move to weekly reviews. Block 30 minutes every Monday in your calendar now.' } },
+          { value: 'reactive', score: 2,  label: '<strong>Only</strong> when something goes wrong',
+            rec: { urgency: 'important',
+              issue: 'Reactive reviews mean you always catch problems after they\'ve cost you money.',
+              action: 'Set a recurring weekly review in your calendar. Treat it as a non-negotiable business meeting.' } },
+          { value: 'none',     score: 0,  label: '<strong>No</strong> routine',
+            rec: { urgency: 'urgent',
+              issue: 'Without a review routine, budget leaks go undetected for weeks.',
+              action: 'Block 30 minutes every Monday to review campaign performance. Do it now — it takes 10 seconds to set up the calendar event.' } }
         ]
       },
       {
-        id: 'weekly_report',
-        num: 4,
-        text: 'Do you have a weekly report tracking all key metrics?',
-        type: 'single', scored: true,
+        id: 'weekly_report', num: 4, scored: true, type: 'single',
+        text: 'Do you have a <strong>weekly report</strong> tracking all key metrics?',
         options: [
-          { value: 'yes',     label: 'Yes — structured report covering all KPIs', score: 10 },
-          { value: 'partial', label: 'Partially — I track some but not all metrics', score: 5,
-            rec: { urgency: 'important', text: 'A <strong>partial report leaves blind spots</strong>. Ensure your dashboard covers all active channels, all key KPIs — spend, conversions, CPA/ROAS — and week-over-week comparisons.' } },
-          { value: 'no',      label: 'No regular report', score: 0,
-            rec: { urgency: 'urgent', text: 'Without a <strong>structured weekly report</strong>, key signals are invisible. Build a consistent view of spend, conversions, CPA/ROAS, and trends across all campaigns — every single week.' } }
+          { value: 'yes',     score: 10, label: '<strong>Yes</strong> — full report covering all KPIs' },
+          { value: 'partial', score: 5,  label: '<strong>Partially</strong> — some metrics, not all',
+            rec: { urgency: 'important',
+              issue: 'A partial report leaves blind spots you can\'t see until they\'re expensive.',
+              action: 'Add the missing KPIs to your report: spend, conversions, CPA/ROAS, and week-on-week change for every active channel.' } },
+          { value: 'no',      score: 0,  label: '<strong>No</strong> regular report',
+            rec: { urgency: 'urgent',
+              issue: 'Without a report, key signals are invisible every single week.',
+              action: 'Build a one-page weekly report this week: spend, conversions, CPA/ROAS, and WoW % change for each campaign.' } }
         ]
       },
       {
-        id: 'underperforming',
-        num: 5,
-        text: 'When you spot an underperforming campaign, ad group or ad — what do you do?',
-        type: 'single', scored: true,
+        id: 'underperforming', num: 5, scored: true, type: 'single',
+        text: 'When you spot an <strong>underperforming</strong> campaign or ad — what do you do?',
         options: [
-          { value: 'thresholds', label: 'I have clear thresholds — e.g. pause if CPA is 50% above target after set spend', score: 10 },
-          { value: 'notice',     label: 'I adjust things when I notice something looks off', score: 5,
-            rec: { urgency: 'important', text: 'Making adjustments when things "<strong>look off</strong>" is subjective and inconsistent. Replace gut feel with data thresholds so every decision is repeatable and defensible.' } },
-          { value: 'rarely',     label: 'I rarely make changes unless it\'s obviously broken', score: 2,
-            rec: { urgency: 'important', text: 'Only acting when campaigns are <strong>obviously broken</strong> means catching problems late and expensive. Build a decision framework with defined performance thresholds.' } },
-          { value: 'run',        label: 'I let them run and see what happens', score: 0,
-            rec: { urgency: 'urgent', text: 'Letting underperforming campaigns <strong>run without action</strong> is silent budget waste. Define a clear threshold — e.g. "pause if CPA exceeds target by 50% after $500 spend" — and act on it every time.' } }
+          { value: 'thresholds', score: 10, label: '<strong>Clear thresholds</strong> I always act on' },
+          { value: 'notice',     score: 5,  label: '<strong>Adjust</strong> when something looks off',
+            rec: { urgency: 'important',
+              issue: '"Looks off" is subjective — it leads to inconsistent decisions and missed problems.',
+              action: 'Define what "looks off" as a number: e.g. "If CPA is 40%+ above target, I act." Write it down and apply it every review.' } },
+          { value: 'rarely',     score: 2,  label: '<strong>Rarely</strong> — unless it\'s obviously broken',
+            rec: { urgency: 'important',
+              issue: 'Only acting when campaigns are obviously broken means catching problems late and expensive.',
+              action: 'Set a specific pause threshold for every active campaign this week — e.g. "Pause if CPA exceeds target by 50% after $500 spend."' } },
+          { value: 'run',        score: 0,  label: '<strong>Let them run</strong> and see what happens',
+            rec: { urgency: 'urgent',
+              issue: 'Letting underperformers run is the single biggest cause of silent budget waste.',
+              action: 'Before your next campaign, write one pause rule: "If CPA exceeds target by 50% after $X spend, I pause it." Then enforce it.' } }
         ]
       },
       {
-        id: 'creative_testing',
-        num: 6,
-        text: 'How do you test creatives and ad copy?',
-        type: 'single', scored: true,
+        id: 'creative_testing', num: 6, scored: true, type: 'single',
+        text: 'How do you <strong>test</strong> creatives and ad copy?',
         options: [
-          { value: 'structured',  label: 'Structured tests — one variable at a time, measured against a baseline', score: 10 },
-          { value: 'launch_see',  label: 'Launch and see what performs', score: 5,
-            rec: { urgency: 'important', text: 'Launching ads and "<strong>seeing what happens</strong>" generates noise, not insight. Define what you\'re testing, set a hypothesis, and measure results against a baseline.' } },
-          { value: 'rarely',      label: 'Rarely — I mostly run what works', score: 2,
-            rec: { urgency: 'important', text: 'Testing creatives <strong>rarely</strong> means most spend goes to unvalidated assumptions. Set up at least one structured creative test per month.' } },
-          { value: 'no_process',  label: 'No process — I go by instinct', score: 0,
-            rec: { urgency: 'urgent', text: 'With <strong>no creative testing process</strong>, you\'ll never know what\'s actually working. Creative is often the biggest performance lever — and right now, yours is untested.' } }
+          { value: 'structured', score: 10, label: '<strong>Structured A/B tests</strong> — one variable at a time' },
+          { value: 'launch_see', score: 5,  label: '<strong>Launch and see</strong> what performs',
+            rec: { urgency: 'important',
+              issue: 'Launching without a hypothesis generates noise, not insight.',
+              action: 'For your next launch, write this first: "I believe [X change] will improve [Y metric] because [reason]." Then measure it.' } },
+          { value: 'rarely',     score: 2,  label: '<strong>Rarely</strong> — I run what I know works',
+            rec: { urgency: 'important',
+              issue: 'Running the same creatives without testing leads to declining performance over time.',
+              action: 'Add one creative test to your calendar every month. Even one test a month compounds to 12 data points a year.' } },
+          { value: 'no_process', score: 0,  label: '<strong>No process</strong> — I go by instinct',
+            rec: { urgency: 'urgent',
+              issue: 'Without testing, you\'re spending on assumptions. Creative is often the biggest performance lever.',
+              action: 'Plan one A/B test for your next campaign: change one thing (headline, image, or CTA), run both, pick the winner after 7–14 days.' } }
         ]
       },
       {
-        id: 'target_cpa_roas',
-        num: 7,
-        text: 'Do you have a defined target CPA or ROAS — and do you use it to guide decisions?',
-        type: 'single', scored: true,
+        id: 'target_cpa_roas', num: 7, scored: true, type: 'single',
+        text: 'Do you have a defined <strong>target CPA or ROAS</strong> — and use it to guide decisions?',
         options: [
-          { value: 'yes',   label: 'Yes — clear targets that guide all bidding and budget decisions', score: 10 },
-          { value: 'rough', label: 'Rough numbers — I have a sense of what\'s acceptable', score: 5,
-            rec: { urgency: 'important', text: 'Having <strong>rough numbers in your head</strong> is not enough. Bidding strategies and budget decisions need exact targets. Set formal CPA or ROAS targets and review them monthly.' } },
-          { value: 'no',    label: 'No defined target', score: 0,
-            rec: { urgency: 'urgent', text: 'Without a <strong>target CPA or ROAS</strong>, every optimisation decision is subjective. You have no benchmark for success. Define your targets before the next campaign launches.' } }
+          { value: 'yes',   score: 10, label: '<strong>Yes</strong> — exact targets drive all decisions' },
+          { value: 'rough', score: 5,  label: '<strong>Rough numbers</strong> in my head',
+            rec: { urgency: 'important',
+              issue: 'Rough estimates lead to inconsistent decisions and missed optimisation opportunities.',
+              action: 'Formalise your targets: enter your CPA or ROAS target in the platform, and document it in your weekly report.' } },
+          { value: 'no',    score: 0,  label: '<strong>No defined target</strong>',
+            rec: { urgency: 'urgent',
+              issue: 'Without a target, there is no way to know if a campaign is succeeding or failing.',
+              action: 'Define your target CPA or ROAS before your next campaign launches. Work backwards from your profit margin or customer LTV.' } }
         ]
       },
       {
-        id: 'pause_decision',
-        num: 8,
-        text: 'How do you decide which campaigns, ad groups or ads to pause?',
-        type: 'single', scored: true,
+        id: 'pause_decision', num: 8, scored: true, type: 'single',
+        text: 'How do you decide which campaigns or ads to <strong>pause</strong>?',
         options: [
-          { value: 'thresholds', label: 'Clear data-based thresholds — defined before the campaign starts', score: 10 },
-          { value: 'cpa_roas',   label: 'When CPA or ROAS misses target consistently', score: 7,
-            rec: { urgency: 'nice', text: 'Using <strong>CPA/ROAS misses as your trigger</strong> is a solid start. Strengthen this by factoring in statistical significance and a minimum spend threshold before pausing — avoid cutting campaigns before they\'ve had enough data.' } },
-          { value: 'judgment',   label: 'Judgment calls — it just feels right to pause', score: 3,
-            rec: { urgency: 'important', text: 'Pause decisions based on <strong>gut feeling</strong> lead to inconsistent outcomes — acting too early or too late. Replace judgment calls with documented, data-based criteria.' } },
-          { value: 'rarely',     label: 'I rarely pause campaigns', score: 0,
-            rec: { urgency: 'urgent', text: 'If you <strong>rarely pause campaigns</strong>, you\'re almost certainly wasting budget on underperformers. Pausing is not failure — it\'s optimisation. Define clear exit criteria before every campaign goes live.' } }
+          { value: 'thresholds', score: 10, label: '<strong>Defined thresholds</strong> before every campaign' },
+          { value: 'cpa_roas',   score: 7,  label: '<strong>When CPA or ROAS</strong> consistently misses target',
+            rec: { urgency: 'nice',
+              issue: 'Good trigger — just make sure you wait for enough data before acting.',
+              action: 'Add a minimum spend threshold to your pause rule to avoid cutting campaigns before they have enough data to judge.' } },
+          { value: 'judgment',   score: 3,  label: '<strong>Judgment calls</strong> — feels right to pause',
+            rec: { urgency: 'important',
+              issue: 'Gut-based pausing leads to inconsistent outcomes — acting too early or too late.',
+              action: 'Before your next review, write one pause rule: "Pause if CPA > 2× target after $X spend." Apply it uniformly.' } },
+          { value: 'rarely',     score: 0,  label: '<strong>I rarely pause</strong> campaigns',
+            rec: { urgency: 'urgent',
+              issue: 'Rarely pausing almost certainly means you\'re funding campaigns that aren\'t working.',
+              action: 'Review every active campaign now. Pause any that has missed CPA/ROAS target for 2+ weeks with sufficient data.' } }
         ]
       },
       {
-        id: 'scale_up',
-        num: 9,
-        text: 'When do you increase budget on a campaign?',
-        type: 'single', scored: true,
+        id: 'scale_up', num: 9, scored: true, type: 'single',
+        text: 'When do you <strong>increase budget</strong> on a campaign?',
         options: [
-          { value: 'data_based',       label: 'After 2+ consecutive weeks hitting target CPA/ROAS with enough volume', score: 10 },
-          { value: 'looks_good',       label: 'When the campaign looks good', score: 5,
-            rec: { urgency: 'important', text: 'Scaling when it "<strong>looks good</strong>" is vague. Define what good means in hard numbers — e.g. "CPA below target for 2 consecutive weeks with 30+ conversions" — then scale with confidence.' } },
-          { value: 'budget_available', label: 'When budget becomes available', score: 2,
-            rec: { urgency: 'important', text: 'Scaling because <strong>budget is available</strong> — not because performance justifies it — often kills what was working. Always tie budget increases to performance evidence.' } },
-          { value: 'no_process',       label: 'No set process for scaling', score: 0,
-            rec: { urgency: 'urgent', text: 'With <strong>no scaling process</strong>, good campaigns may never reach their full potential. Define criteria for when a campaign earns more budget — then act on them consistently.' } }
+          { value: 'data_based',       score: 10, label: '<strong>2+ consecutive weeks</strong> hitting target CPA/ROAS' },
+          { value: 'looks_good',       score: 5,  label: '<strong>When it looks good</strong>',
+            rec: { urgency: 'important',
+              issue: '"Looks good" is vague — it leads to premature or delayed scaling.',
+              action: 'Define a specific scale rule: "When CPA/ROAS hits target for 2 consecutive weeks with 30+ conversions, increase budget by 20–30%."' } },
+          { value: 'budget_available', score: 2,  label: '<strong>When budget becomes available</strong>',
+            rec: { urgency: 'important',
+              issue: 'Budget-driven scaling often breaks campaigns that were working.',
+              action: 'Only scale after 2+ consecutive weeks hitting your CPA/ROAS target. Budget availability is never enough on its own.' } },
+          { value: 'no_process',       score: 0,  label: '<strong>No set process</strong> for scaling',
+            rec: { urgency: 'urgent',
+              issue: 'Without a scaling process, good campaigns never reach their full potential.',
+              action: 'Define your scale trigger: "When [metric] hits [target] for 2 consecutive weeks with [X] conversions, increase budget by 20%."' } }
         ]
       },
       {
-        id: 'landing_page',
-        num: 10,
-        text: 'How optimised is the landing page your paid traffic is sent to?',
-        type: 'single', scored: true,
+        id: 'landing_page', num: 10, scored: true, type: 'single',
+        text: 'How optimised is your <strong>landing page</strong>?',
         options: [
-          { value: 'tested',   label: 'Actively tested — dedicated landing page with recent A/B test results', score: 10 },
-          { value: 'decent',   label: 'Decent — dedicated page, but not tested recently', score: 5,
-            rec: { urgency: 'important', text: 'A "<strong>decent</strong>" landing page is leaving performance on the table. Even well-designed pages have room to improve. Run at least one A/B test — headline, CTA, or form length — every quarter.' } },
-          { value: 'homepage', label: 'Homepage or generic page', score: 2,
-            rec: { urgency: 'urgent', text: 'Sending paid traffic to your <strong>homepage</strong> is a major conversion leak. Homepages are designed for exploration, not action. Create dedicated landing pages matched to each campaign.' } },
-          { value: 'never',    label: 'Never thought about it', score: 0,
-            rec: { urgency: 'urgent', text: 'You\'ve <strong>never optimised your landing page</strong>. A conversion rate improvement from 2% to 3% delivers the same result as a 33% reduction in CPA — at zero extra ad spend. This is your biggest untapped lever.' } }
+          { value: 'tested',   score: 10, label: '<strong>Actively tested</strong> — dedicated page, recent results' },
+          { value: 'decent',   score: 5,  label: '<strong>Dedicated page</strong>, not tested recently',
+            rec: { urgency: 'important',
+              issue: 'A decent untested page is leaving conversions on the table.',
+              action: 'Run one A/B test this quarter — test the headline first. It typically has the biggest impact on conversion rate.' } },
+          { value: 'homepage', score: 2,  label: '<strong>Homepage</strong> or generic page',
+            rec: { urgency: 'urgent',
+              issue: 'A homepage is built for exploration, not conversion — paid traffic sent there performs poorly.',
+              action: 'Create one dedicated landing page for your top campaign this month. Mirror the ad\'s message, one CTA, nothing else.' } },
+          { value: 'never',    score: 0,  label: '<strong>Never</strong> thought about it',
+            rec: { urgency: 'urgent',
+              issue: 'Your landing page is likely the biggest unaddressed drag on campaign performance.',
+              action: 'This week: create a dedicated landing page for your top campaign — match the ad headline, one clear CTA, remove all distractions.' } }
         ]
       }
     ];
 
-    // ── State ─────────────────────────────────────────────────────────────────
+    // ── State ──────────────────────────────────────────────────────────────────
     var S = { qIndex: 0, answers: {}, email: '', score: 0, tier: '' };
     var wrap = document.getElementById('quiz-wrap');
 
-    // ── Render ────────────────────────────────────────────────────────────────
     function r(html) {
       wrap.innerHTML = '<div class="quiz-screen">' + html + '</div>';
     }
 
     function progressHtml(step, label) {
-      var pct = (step / QUESTIONS.length) * 100;
       return '<div class="quiz-progress">' +
-        '<div class="quiz-progress-bar-wrap"><div class="quiz-progress-bar" style="width:' + pct + '%;"></div></div>' +
+        '<div class="quiz-progress-bar-wrap"><div class="quiz-progress-bar" style="width:' + (step / QUESTIONS.length * 100) + '%;"></div></div>' +
         '<div class="quiz-progress-label">' + label + '</div>' +
       '</div>';
     }
 
-    // ── Screens ───────────────────────────────────────────────────────────────
+    // ── Screens ────────────────────────────────────────────────────────────────
     function showIntro() {
       r('<div class="quiz-intro">' +
-        '<div class="badge" style="margin-bottom:1.1rem;">Free Assessment</div>' +
-        '<h1>Score Your <span class="highlight">Campaign Setup</span></h1>' +
-        '<p class="quiz-intro-sub">10 questions. 2 minutes. Find out where your budget is leaking — and get personalised fixes.</p>' +
+        '<div class="badge" style="margin-bottom:1rem;">Free Assessment</div>' +
+        '<h1>Score Your <span class="highlight">Digital Marketing Campaigns</span></h1>' +
+        '<p class="quiz-intro-sub">10 questions. Less than 2 minutes.</p>' +
+        '<div class="quiz-channels">' +
+          '<span class="quiz-channel-pill">Google Ads</span>' +
+          '<span class="quiz-channel-pill">Meta Ads</span>' +
+          '<span class="quiz-channel-pill">TikTok Ads</span>' +
+          '<span class="quiz-channel-pill">LinkedIn Ads</span>' +
+          '<span class="quiz-channel-pill">Microsoft Ads</span>' +
+          '<span class="quiz-channel-pill">Pinterest Ads</span>' +
+        '</div>' +
         '<div class="quiz-pills">' +
-          '<span class="quiz-pill">⚡ 2 minutes</span>' +
-          '<span class="quiz-pill">🎯 10 questions</span>' +
           '<span class="quiz-pill">📊 Instant score</span>' +
+          '<span class="quiz-pill">🎯 Personalised fixes</span>' +
           '<span class="quiz-pill">🔒 100% free</span>' +
         '</div>' +
         '<button class="btn btn-primary" style="font-size:1rem;padding:.9rem 2.5rem;" onclick="Q.start()">Start My Free Score →</button>' +
@@ -582,12 +699,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       var q = QUESTIONS[S.qIndex];
       var isMulti = q.type === 'multi';
       var saved = S.answers[q.id] || (isMulti ? [] : null);
+      var iname = 'q' + S.qIndex;
 
       var opts = '';
       q.options.forEach(function (o) {
         var sel = isMulti ? saved.indexOf(o.value) !== -1 : saved === o.value;
-        opts += '<label class="quiz-option' + (sel ? ' selected' : '') + '" data-val="' + o.value + '">' +
-          '<input type="' + (isMulti ? 'checkbox' : 'radio') + '" value="' + o.value + '"' + (sel ? ' checked' : '') + ' />' +
+        opts += '<label class="quiz-option' + (sel ? ' selected' : '') + '">' +
+          '<input type="' + (isMulti ? 'checkbox' : 'radio') + '" name="' + iname + '" value="' + o.value + '"' + (sel ? ' checked' : '') + ' />' +
           '<span class="quiz-option-label">' + o.label + '</span>' +
         '</label>';
       });
@@ -599,33 +717,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         '<div class="quiz-card">' +
           '<div class="quiz-q-num">Q' + q.num + '</div>' +
           '<div class="quiz-q-text">' + q.text + '</div>' +
-          '<div class="quiz-options" id="qopts">' + opts + '</div>' +
+          '<div class="quiz-options">' + opts + '</div>' +
           '<div class="quiz-next">' +
-            '<button class="quiz-btn" id="qnxt"' + (noSel ? ' disabled' : '') + ' onclick="Q.next()">' +
+            '<button class="quiz-btn" id="qnxt"' + (noSel ? ' disabled' : '') + ' onclick="Q.next();">' +
               (isLast ? 'See My Results →' : 'Next →') +
             '</button>' +
           '</div>' +
         '</div>');
 
-      wrap.querySelectorAll('.quiz-option').forEach(function (el) {
-        el.addEventListener('click', function () {
-          var val = el.getAttribute('data-val');
-          var inp = el.querySelector('input');
+      var labels = wrap.querySelectorAll('.quiz-option');
+
+      // Use change events on inputs — avoids the double-toggle issue with click on labels
+      wrap.querySelectorAll('.quiz-option input').forEach(function (inp) {
+        inp.addEventListener('change', function () {
+          var label = inp.parentElement;
           if (isMulti) {
             var arr = S.answers[q.id] || [];
-            var idx = arr.indexOf(val);
-            if (idx === -1) { arr.push(val); el.classList.add('selected'); inp.checked = true; }
-            else            { arr.splice(idx, 1); el.classList.remove('selected'); inp.checked = false; }
+            if (inp.checked) {
+              if (arr.indexOf(inp.value) === -1) arr.push(inp.value);
+              label.classList.add('selected');
+            } else {
+              arr = arr.filter(function (v) { return v !== inp.value; });
+              label.classList.remove('selected');
+            }
             S.answers[q.id] = arr;
             document.getElementById('qnxt').disabled = arr.length === 0;
           } else {
-            wrap.querySelectorAll('.quiz-option').forEach(function (x) {
-              x.classList.remove('selected'); x.querySelector('input').checked = false;
-            });
-            el.classList.add('selected'); inp.checked = true;
-            S.answers[q.id] = val;
+            labels.forEach(function (l) { l.classList.remove('selected'); });
+            label.classList.add('selected');
+            S.answers[q.id] = inp.value;
             document.getElementById('qnxt').disabled = false;
-            setTimeout(Q.next, 280);
+            setTimeout(Q.next, 260);
           }
         });
       });
@@ -634,7 +756,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     function showEmail() {
       r(progressHtml(QUESTIONS.length, 'Almost there!') +
         '<div class="quiz-email-card">' +
-          '<div style="font-size:2.4rem;margin-bottom:.65rem;">📊</div>' +
+          '<div style="font-size:2.2rem;margin-bottom:.6rem;">📊</div>' +
           '<h2>Your score is ready</h2>' +
           '<p>Enter your email to reveal your campaign score and personalised recommendations.</p>' +
           '<form class="quiz-email-form" onsubmit="Q.submit(event)">' +
@@ -673,18 +795,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
 
     function tierData(pct) {
-      if (pct >= 70) return {
-        cls: 'tier-strong', fillCls: 'score-fill-strong', label: 'Strong Foundation',
-        intro: 'Your setup is solid. The recommendations below will help you close the remaining gaps and go from good to exceptional.'
-      };
-      if (pct >= 40) return {
-        cls: 'tier-leaking', fillCls: 'score-fill-leaking', label: 'Leaking Budget',
-        intro: 'You have the basics in place, but there are clear gaps where budget and performance are slipping through. Fix these first before scaling.'
-      };
-      return {
-        cls: 'tier-risk', fillCls: 'score-fill-risk', label: 'High Risk',
-        intro: 'Your campaigns are at high risk of wasted spend. The issues below are urgent — address them before increasing any budget.'
-      };
+      if (pct >= 90) return { cls: 'tier-optimised',  fillCls: 'sfill-optimised',  fillColor: '#059669',
+        label: '⭐ Optimised',
+        intro: 'Your setup is best-in-class. Focus on the remaining gaps below to maintain your edge.' };
+      if (pct >= 70) return { cls: 'tier-good',       fillCls: 'sfill-good',       fillColor: 'var(--primary)',
+        label: '✅ Good Setup',
+        intro: 'Solid foundation. A few gaps remain — close them and you\'ll be operating at the top level.' };
+      if (pct >= 40) return { cls: 'tier-developing', fillCls: 'sfill-developing', fillColor: '#f59e0b',
+        label: '⚠️ Developing',
+        intro: 'The basics are in place, but clear gaps are costing you performance. Fix these before scaling.' };
+      return { cls: 'tier-risk',       fillCls: 'sfill-risk',       fillColor: '#ef4444',
+        label: '🔴 At Risk',
+        intro: 'Significant issues are causing budget waste. Address these urgently before increasing spend.' };
     }
 
     function showResults() {
@@ -694,45 +816,70 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       S.tier = t.label;
       var recs = buildRecs();
       var offset = CIRC - (CIRC * pct / 100);
+      var pctile = getPercentile(pct);
 
       var recsHtml = '';
       if (recs.length === 0) {
-        recsHtml = '<p style="text-align:center;color:var(--mid);padding:1rem 0;">No major gaps detected — outstanding setup. Keep optimising!</p>';
+        recsHtml = '<p style="text-align:center;color:var(--mid);padding:1.25rem 0;font-style:italic;">No significant gaps — outstanding setup!</p>';
       } else {
-        recsHtml = '<div class="quiz-recs"><h3>Where to focus next</h3>';
-        var tagMap = { urgent: 'Fix urgently', important: 'Important', nice: 'Nice to have' };
+        var tagMap = { urgent: '🔴 Fix urgently', important: '🟡 Important', nice: '🟢 Nice to have' };
+        recsHtml = '<div class="quiz-recs">' +
+          '<div class="quiz-recs-title">Where to focus next</div>';
         recs.forEach(function (rec) {
           recsHtml += '<div class="quiz-rec-item rec-' + rec.urgency + '">' +
             '<div class="quiz-rec-tag">' + tagMap[rec.urgency] + '</div>' +
-            '<div class="quiz-rec-text">' + rec.text + '</div>' +
+            '<div class="quiz-rec-issue">' + rec.issue + '</div>' +
+            '<div class="quiz-rec-action">→ ' + rec.action + '</div>' +
           '</div>';
         });
         recsHtml += '</div>';
       }
 
       r('<div class="quiz-results ' + t.cls + '">' +
-          '<div class="quiz-score-wrap">' +
-            '<svg class="quiz-score-svg" viewBox="0 0 180 180">' +
-              '<circle class="quiz-score-track" cx="90" cy="90" r="80"/>' +
-              '<circle class="quiz-score-fill ' + t.fillCls + '" cx="90" cy="90" r="80" id="sfill"/>' +
-            '</svg>' +
-            '<div class="quiz-score-num">' + pct + '%<span>Campaign Score</span></div>' +
-          '</div>' +
-          '<div class="quiz-tier-badge">' + t.label + '</div>' +
-          '<p class="quiz-results-intro">' + t.intro + '</p>' +
-          recsHtml +
-          '<div class="quiz-result-cta-block">' +
-            '<p class="quiz-result-cta-label">Ready to fix this — faster — with expert help?</p>' +
-            '<div class="quiz-result-ctas">' +
-              '<a href="/#coaching" class="btn btn-primary" style="padding:.82rem 2rem;">Book a Training Session</a>' +
-              '<a href="/campaign-optimisation-playbook/" class="btn btn-outline" style="color:var(--dark);border-color:var(--border);padding:.82rem 2rem;">Get the Playbook — $19</a>' +
+
+        // Score circle
+        '<div class="quiz-score-wrap">' +
+          '<svg class="quiz-score-svg" viewBox="0 0 190 190">' +
+            '<circle class="quiz-score-track" cx="95" cy="95" r="84.4"/>' +
+            '<circle class="quiz-score-fill ' + t.fillCls + '" cx="95" cy="95" r="84.4" id="sfill"/>' +
+          '</svg>' +
+          '<div class="quiz-score-num">' + pct + '%<span>Your Score</span></div>' +
+        '</div>' +
+
+        // Tier badge
+        '<div class="quiz-tier-badge">' + t.label + '</div>' +
+        '<p class="quiz-results-intro">' + t.intro + '</p>' +
+
+        // Benchmark
+        '<div class="quiz-bench">' +
+          '<div class="quiz-bench-label">How you compare</div>' +
+          '<div class="quiz-bench-bar-outer">' +
+            '<div class="quiz-bench-bar-fill" id="benchfill" style="background:' + t.fillColor + ';"></div>' +
+            '<div class="quiz-bench-avg-line" style="left:' + AVG + '%;">' +
+              '<div class="quiz-bench-avg-tip">Avg ' + AVG + '%</div>' +
             '</div>' +
           '</div>' +
-        '</div>');
+          '<p class="quiz-bench-stat">You scored better than <strong>' + pctile + '%</strong> of digital marketers who took this assessment.</p>' +
+        '</div>' +
 
+        recsHtml +
+
+        // CTAs
+        '<div class="quiz-result-cta-block">' +
+          '<p class="quiz-result-cta-label">Ready to fix these gaps faster with expert help?</p>' +
+          '<div class="quiz-result-ctas">' +
+            '<a href="/#coaching" class="btn btn-primary" style="padding:.82rem 2rem;">Book a Training Session</a>' +
+            '<a href="/campaign-optimisation-playbook/" class="btn btn-outline" style="color:var(--dark);border-color:var(--border);padding:.82rem 2rem;">Get the Playbook — $19</a>' +
+          '</div>' +
+        '</div>' +
+      '</div>');
+
+      // Animate score circle
       setTimeout(function () {
-        var el = document.getElementById('sfill');
-        if (el) el.style.strokeDashoffset = offset;
+        var sf = document.getElementById('sfill');
+        if (sf) sf.style.strokeDashoffset = offset;
+        var bf = document.getElementById('benchfill');
+        if (bf) bf.style.width = pct + '%';
       }, 80);
 
       window.dataLayer = window.dataLayer || [];
@@ -741,23 +888,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     function postZapier(email) {
       if (!ZAPIER_WEBHOOK || ZAPIER_WEBHOOK === 'YOUR_ZAPIER_WEBHOOK_URL') return;
-      var answerMap = {};
-      QUESTIONS.forEach(function (q) { answerMap[q.id] = S.answers[q.id] || null; });
+      var ans = {};
+      QUESTIONS.forEach(function (q) { ans[q.id] = S.answers[q.id] || null; });
       fetch(ZAPIER_WEBHOOK, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          email: email,
-          score: S.score,
-          tier: S.tier,
+          email: email, score: S.score, tier: S.tier,
           channels: S.answers.channels || [],
-          answers: answerMap,
-          timestamp: new Date().toISOString()
+          answers: ans, timestamp: new Date().toISOString()
         })
       }).catch(function () {});
     }
 
-    // ── Public API ────────────────────────────────────────────────────────────
+    // ── Public API ─────────────────────────────────────────────────────────────
     window.Q = {
       start: function () { S.qIndex = 0; showQuestion(); },
       next: function () {
@@ -766,8 +910,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         if (q.type === 'multi' && (!a || a.length === 0)) return;
         if (q.type === 'single' && !a) return;
         S.qIndex++;
-        if (S.qIndex < QUESTIONS.length) showQuestion();
-        else showEmail();
+        if (S.qIndex < QUESTIONS.length) showQuestion(); else showEmail();
       },
       submit: function (e) {
         e.preventDefault();
