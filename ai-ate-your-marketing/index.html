@@ -418,6 +418,10 @@
       padding: 2.5rem 2rem 2rem;
       margin-top: 0;
       box-shadow: 0 8px 40px rgba(0,0,0,.25);
+      overflow: visible;
+      position: relative;
+      z-index: 1;
+      min-height: 160px;
     }
 
     /* ── AUTHOR ── */
@@ -589,9 +593,15 @@
     @media (max-width: 700px) {
       .pb-hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
       .pb-hero { padding-top: 4rem; }
+      .pb-download { padding-bottom: 8rem; }
+      .pb-stats-grid { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 480px) {
       .pb-stat-grid { grid-template-columns: 1fr 1fr; }
+      .pb-embed-wrap {
+        padding: 1.5rem 0 1.25rem;
+        border-radius: 12px;
+      }
     }
   </style>
 </head>
