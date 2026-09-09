@@ -251,7 +251,7 @@
     /* ── WHAT'S INSIDE (chapters) ── */
     .pb-inside {
       padding: 6rem 0;
-      background: var(--white);
+      background: #f7fafb;
     }
     .pb-cards {
       display: grid;
@@ -322,7 +322,7 @@
     /* ── WHAT GOT VALUABLE / WORTHLESS ── */
     .pb-shift {
       padding: 6rem 0;
-      background: #f7fafb;
+      background: var(--white);
     }
     .pb-shift-grid {
       display: grid;
@@ -483,10 +483,18 @@
       border-radius: 50px;
     }
 
-    /* ── TESTIMONIALS ── */
-    .pb-testimonials { background: var(--dark); }
-    .pb-testimonials .section-header h2 { color: var(--white); }
-    .pb-testimonials .badge { background: rgba(8,191,173,.2); color: var(--primary); }
+    /* ── TESTIMONIALS (light theme for guide page) ── */
+    .pb-testimonials { background: #f7fafb; }
+    .pb-testimonials .section-header h2 { color: var(--dark); }
+    .pb-testimonials .badge { background: rgba(8,191,173,.12); color: var(--primary); }
+    .pb-testimonials .testimonial-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+    .pb-testimonials .testimonial-text { color: var(--mid); }
+    .pb-testimonials .testimonial-name { color: var(--dark); }
+    .pb-testimonials .testimonial-role { color: var(--mid); }
 
     /* ── FAQ ── */
     .pb-faq {
@@ -600,15 +608,13 @@
       <div class="pb-hero-text">
         <div class="pb-kicker">XYZ LAB · NO BS BRIEFING · 2026 EDITION</div>
         <h1>AI Ate<br />Your Marketing.</h1>
-        <p class="pb-hero-sub">AI just rewrote the digital marketing playbook without asking. Here's exactly what changed, what still works — and the seven things worth doing about it.</p>
+        <p class="pb-hero-sub">AI just rewrote the digital marketing playbook without asking. Here's exactly <strong>what changed, what still works — and the seven things worth doing about it.</strong></p>
         <a href="#download" class="btn btn-primary btn-lg">Download Free Guide</a>
         <p class="pb-under-cta">Free download &nbsp;·&nbsp; No credit card</p>
       </div>
       <div class="pb-hero-screenshots">
         <img src="screenshot-1.png" alt="What just got valuable. What just became worthless." class="pb-screenshot-front" loading="eager" />
         <img src="screenshot-2.png" alt="Three things happened. Nobody sent an email." class="pb-screenshot-back" loading="eager" />
-      </div>
-    </div>
       </div>
     </div>
     <div class="pb-trust-strip">
@@ -734,12 +740,12 @@
             <span>↑</span> Got More Valuable
           </div>
           <div class="pb-shift-list">
-            <div class="pb-shift-item pb-shift-item--up">Brand — the only thing AI can't commoditise</div>
-            <div class="pb-shift-item pb-shift-item--up">First-party data — your email list, your CRM, your pixel</div>
-            <div class="pb-shift-item pb-shift-item--up">Creative quality — humans still decide what stops the scroll</div>
-            <div class="pb-shift-item pb-shift-item--up">Offer strength — AI amplifies what's already working</div>
-            <div class="pb-shift-item pb-shift-item--up">Landing page conversion rate — traffic is too expensive to waste</div>
-            <div class="pb-shift-item pb-shift-item--up">Strategic thinking — what to do, not how to do it</div>
+            <div class="pb-shift-item pb-shift-item--up"><strong>Brand</strong> — the only thing AI can't commoditise</div>
+            <div class="pb-shift-item pb-shift-item--up"><strong>First-party data</strong> — your email list, your CRM, your pixel</div>
+            <div class="pb-shift-item pb-shift-item--up"><strong>Creative quality</strong> — humans still decide what stops the scroll</div>
+            <div class="pb-shift-item pb-shift-item--up"><strong>Offer strength</strong> — AI amplifies what's already working</div>
+            <div class="pb-shift-item pb-shift-item--up"><strong>Landing page conversion rate</strong> — traffic is too expensive to waste</div>
+            <div class="pb-shift-item pb-shift-item--up"><strong>Strategic thinking</strong> — what to do, not how to do it</div>
           </div>
         </div>
         <div class="pb-shift-col pb-shift-col--down">
@@ -747,12 +753,12 @@
             <span>↓</span> Became Worthless
           </div>
           <div class="pb-shift-list">
-            <div class="pb-shift-item pb-shift-item--down">Keyword tricks and match-type manipulation</div>
-            <div class="pb-shift-item pb-shift-item--down">Granular demographic targeting</div>
-            <div class="pb-shift-item pb-shift-item--down">Organic reach as a free traffic strategy</div>
-            <div class="pb-shift-item pb-shift-item--down">Vanity metrics: impressions, reach, follower counts</div>
-            <div class="pb-shift-item pb-shift-item--down">Generic AI-written content with no point of view</div>
-            <div class="pb-shift-item pb-shift-item--down">Chasing algorithm hacks instead of building fundamentals</div>
+            <div class="pb-shift-item pb-shift-item--down"><strong>Keyword tricks</strong> and match-type manipulation</div>
+            <div class="pb-shift-item pb-shift-item--down"><strong>Granular demographic targeting</strong></div>
+            <div class="pb-shift-item pb-shift-item--down"><strong>Organic reach</strong> as a free traffic strategy</div>
+            <div class="pb-shift-item pb-shift-item--down"><strong>Vanity metrics:</strong> impressions, reach, follower counts</div>
+            <div class="pb-shift-item pb-shift-item--down"><strong>Generic AI-written content</strong> with no point of view</div>
+            <div class="pb-shift-item pb-shift-item--down"><strong>Chasing algorithm hacks</strong> instead of building fundamentals</div>
           </div>
         </div>
       </div>
