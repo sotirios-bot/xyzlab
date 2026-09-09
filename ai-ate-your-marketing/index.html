@@ -413,10 +413,11 @@
       font-weight: 900;
     }
     .pb-embed-wrap {
-      background: rgba(255,255,255,.04);
-      border: 1px solid rgba(255,255,255,.1);
-      border-radius: 14px;
-      padding: 2.5rem 2rem;
+      background: #fff;
+      border-radius: 16px;
+      padding: 2.5rem 2rem 2rem;
+      margin-top: 0;
+      box-shadow: 0 8px 40px rgba(0,0,0,.25);
     }
 
     /* ── AUTHOR ── */
@@ -545,18 +546,18 @@
     /* ── FINAL CTA ── */
     .pb-final-cta {
       padding: 6rem 0;
-      background: var(--dark);
+      background: var(--white);
       text-align: center;
     }
     .pb-final-cta h2 {
       font-size: clamp(1.75rem, 4vw, 2.6rem);
       font-weight: 900;
-      color: var(--white);
+      color: var(--dark);
       margin-bottom: .75rem;
       line-height: 1.2;
     }
     .pb-final-cta p {
-      color: rgba(255,255,255,.65);
+      color: var(--mid);
       margin-bottom: 2.5rem;
       font-size: 1rem;
     }
@@ -568,7 +569,7 @@
       text-decoration: underline;
       text-underline-offset: 3px;
     }
-    .pb-final-cta .pb-secondary-link:hover { color: var(--white); }
+    .pb-final-cta .pb-secondary-link:hover { color: var(--dark); }
 
     /* Floating download button */
     .floating-btn--guide {
@@ -781,7 +782,7 @@
   </section>
 
   <!-- FINAL CTA -->
-  <section class="pb-final-cta" style="background:#0d1b2a">
+  <section class="pb-final-cta">
     <div class="container">
       <h2>Get the guide. It's free.<br />No catch.</h2>
       <p>The honest version of what AI actually changed — and what to do about it.</p>
