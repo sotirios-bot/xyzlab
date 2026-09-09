@@ -48,6 +48,39 @@
     /* ── Guide-specific styles (reuse pb- classes from playbook) ── */
 
     .btn-lg { padding: 1rem 2.25rem; font-size: 1.05rem; }
+    /* ── HERO SCREENSHOTS ── */
+    .pb-hero-screenshots {
+      position: relative;
+      aspect-ratio: 3/4;
+      max-height: 500px;
+    }
+    .pb-screenshot-front {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 78%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-lg);
+      z-index: 2;
+    }
+    .pb-screenshot-back {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 72%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      filter: blur(2.5px);
+      opacity: 0.72;
+      z-index: 1;
+    }
+
 
     /* ── HERO ── */
     .pb-hero {
@@ -545,7 +578,7 @@
   <header class="nav-wrapper">
     <nav class="nav container">
       <a href="/" class="logo">
-        <img src="/XYZLab.gif" alt="XYZ Lab" class="logo-img" />
+        <img src="../xyz-lab-logo.png" alt="XYZ Lab" class="logo-img" />
       </a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -571,15 +604,11 @@
         <a href="#download" class="btn btn-primary btn-lg">Download Free Guide</a>
         <p class="pb-under-cta">Free download &nbsp;·&nbsp; No credit card</p>
       </div>
-      <div class="pb-hero-cover">
-        <img src="cover.png" alt="AI Ate Your Marketing — XYZ Lab Guide"
-             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-        <div class="pb-cover-placeholder" style="display:none;">
-          <div class="cover-eyebrow">XYZ Lab · No BS Briefing</div>
-          <div class="cover-title">AI Ate Your Marketing</div>
-          <div class="cover-sub">2026 Edition</div>
-          <div class="cover-badge">Free Download</div>
-        </div>
+      <div class="pb-hero-screenshots">
+        <img src="screenshot-1.png" alt="What just got valuable. What just became worthless." class="pb-screenshot-front" loading="eager" />
+        <img src="screenshot-2.png" alt="Three things happened. Nobody sent an email." class="pb-screenshot-back" loading="eager" />
+      </div>
+    </div>
       </div>
     </div>
     <div class="pb-trust-strip">
@@ -614,6 +643,19 @@
           <div class="pb-stat-big-num">Free</div>
           <div class="pb-stat-big-desc">No cost.<br/>No catch.</div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD FORM -->
+  <section class="pb-download" id="download">
+    <div class="container">
+      <div class="pb-download-inner">
+        <div class="section-header">
+          <div class="badge">Get the Guide</div>
+          <h2>Free. Straight to your inbox.</h2>
+        </div>
+        <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="39af27d7-9a2a-414d-9d0c-8598c39b31ea"></script>
       </div>
     </div>
   </section>
@@ -717,18 +759,6 @@
     </div>
   </section>
 
-  <!-- DOWNLOAD FORM -->
-  <section class="pb-download" id="download">
-    <div class="container">
-      <div class="pb-download-inner">
-        <div class="section-header">
-          <div class="badge">Get the Guide</div>
-          <h2>Free. Straight to your inbox.</h2>
-        </div>
-        <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="39af27d7-9a2a-414d-9d0c-8598c39b31ea"></script>
-      </div>
-    </div>
-  </section>
 
   <!-- AUTHOR -->
   <section class="pb-author">
