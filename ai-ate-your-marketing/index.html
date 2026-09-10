@@ -251,73 +251,75 @@
     /* ── WHAT'S INSIDE (chapters) ── */
     .pb-inside {
       padding: 6rem 0;
-      background: #f7fafb;
+      background: #f4f7fa;
     }
-    .pb-cards {
+    .pb-chapter-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.5rem;
-      margin-top: 3rem;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      margin-top: 3.5rem;
     }
-    .pb-card {
+    .pb-chap {
       background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-sm);
-      padding: 2rem 1.75rem;
+      border-radius: 14px;
+      padding: 2.25rem 1.75rem 2.25rem;
       display: flex;
       flex-direction: column;
-      gap: 1.25rem;
+      box-shadow: 0 2px 16px rgba(0,0,0,.07);
+      position: relative;
+      overflow: hidden;
+      min-height: 260px;
     }
-    .pb-card-badge {
-      display: inline-block;
-      padding: .3rem .9rem;
-      border-radius: 50px;
-      font-size: .75rem;
+    .pb-chap::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+    }
+    .pb-chap--1::before { background: #08bfad; }
+    .pb-chap--2::before { background: #1a3a5c; }
+    .pb-chap--3::before { background: #e6980a; }
+    .pb-chap--4::before { background: #e05c4b; }
+    .pb-chap-label {
+      font-size: .7rem;
       font-weight: 700;
-      letter-spacing: .05em;
+      letter-spacing: .1em;
       text-transform: uppercase;
+      margin-bottom: 1rem;
     }
-    .pb-card-badge--teal { background: rgba(8,191,173,.12); color: var(--primary); }
-    .pb-card-badge--navy { background: rgba(13,27,42,.1); color: var(--dark); }
-    .pb-card-badge--amber { background: rgba(254,197,92,.2); color: #b8820d; }
-    .pb-card-badge--red { background: rgba(224,92,75,.12); color: #c0392b; }
-    .pb-card h3 {
-      font-size: 1.1rem;
+    .pb-chap--1 .pb-chap-label { color: #08bfad; }
+    .pb-chap--2 .pb-chap-label { color: #1a3a5c; }
+    .pb-chap--3 .pb-chap-label { color: #c07800; }
+    .pb-chap--4 .pb-chap-label { color: #c0392b; }
+    .pb-chap h3 {
+      font-size: 1.05rem;
       font-weight: 800;
       color: var(--dark);
-      line-height: 1.35;
+      line-height: 1.3;
+      margin: 0 0 .75rem;
+      text-wrap: balance;
+    }
+    .pb-chap p {
+      font-size: .85rem;
+      color: var(--mid);
+      line-height: 1.65;
       margin: 0;
     }
-    .pb-card-accent {
-      height: 3px;
-      border-radius: 2px;
-      margin: -.25rem 0;
-    }
-    .pb-card-accent--teal { background: var(--primary); }
-    .pb-card-accent--navy { background: var(--dark-2); }
-    .pb-card-accent--amber { background: var(--secondary); }
-    .pb-card-accent--red { background: #e05c4b; }
-    .pb-card ul {
-      display: flex;
-      flex-direction: column;
-      gap: .6rem;
-    }
-    .pb-card ul li {
-      font-size: .92rem;
-      color: var(--mid);
-      line-height: 1.5;
-      padding-left: 1.4rem;
-      position: relative;
-    }
-    .pb-card ul li::before {
-      content: '✓';
+    .pb-chap-num {
       position: absolute;
-      left: 0;
-      color: var(--primary);
-      font-weight: 700;
-      font-size: .85rem;
+      bottom: -.75rem;
+      right: 1rem;
+      font-size: clamp(5rem, 7vw, 7.5rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -.04em;
+      pointer-events: none;
+      user-select: none;
     }
+    .pb-chap--1 .pb-chap-num { color: rgba(8,191,173,.13); }
+    .pb-chap--2 .pb-chap-num { color: rgba(26,58,92,.1); }
+    .pb-chap--3 .pb-chap-num { color: rgba(230,152,10,.13); }
+    .pb-chap--4 .pb-chap-num { color: rgba(224,92,75,.13); }
 
     /* ── WHAT GOT VALUABLE / WORTHLESS ── */
     .pb-shift {
@@ -583,12 +585,16 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 960px) {
-      .pb-cards { grid-template-columns: 1fr; }
+      .pb-chapter-grid { grid-template-columns: repeat(2, 1fr); }
       .pb-shift-grid { grid-template-columns: 1fr; }
       .pb-author-inner { grid-template-columns: 1fr; }
       .pb-author-photo, .pb-author-photo-placeholder { margin-bottom: 1rem; }
       .pb-stat-grid { grid-template-columns: repeat(2, 1fr); }
       .pb-stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .pb-chapter-grid { grid-template-columns: 1fr; gap: 1rem; }
+      .pb-chap { min-height: auto; }
     }
     @media (max-width: 700px) {
       .pb-hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
@@ -709,34 +715,34 @@
         <div class="badge">What's Inside</div>
         <h2>Four chapters. No fluff.<br />Only what actually changed.</h2>
       </div>
-      <div class="pb-cards">
+      <div class="pb-chapter-grid">
 
-        <div class="pb-card">
-          <div class="pb-card-badge pb-card-badge--teal">Chapter 1</div>
-          <div class="pb-card-accent pb-card-accent--teal"></div>
+        <div class="pb-chap pb-chap--1">
+          <span class="pb-chap-label">Chapter 1</span>
           <h3>Organic Traffic Has Collapsed</h3>
-          <p style="font-size:.95rem;color:var(--mid);line-height:1.6;margin:0;">What happened to your clicks — even when your rankings didn't move.</p>
+          <p>What happened to your clicks — even when your rankings didn't move.</p>
+          <span class="pb-chap-num" aria-hidden="true">1</span>
         </div>
 
-        <div class="pb-card">
-          <div class="pb-card-badge pb-card-badge--navy">Chapter 2</div>
-          <div class="pb-card-accent pb-card-accent--navy"></div>
+        <div class="pb-chap pb-chap--2">
+          <span class="pb-chap-label">Chapter 2</span>
           <h3>Targeting Is Going Away</h3>
-          <p style="font-size:.95rem;color:var(--mid);line-height:1.6;margin:0;">How the platforms took over the decisions you thought were yours to make.</p>
+          <p>How the platforms took over the decisions you thought were yours to make.</p>
+          <span class="pb-chap-num" aria-hidden="true">2</span>
         </div>
 
-        <div class="pb-card">
-          <div class="pb-card-badge pb-card-badge--amber">Chapter 3</div>
-          <div class="pb-card-accent pb-card-accent--amber"></div>
+        <div class="pb-chap pb-chap--3">
+          <span class="pb-chap-label">Chapter 3</span>
           <h3>What Got Valuable. What Became Worthless.</h3>
-          <p style="font-size:.95rem;color:var(--mid);line-height:1.6;margin:0;">Two lists. Everything you need to stop doing — and start doing instead.</p>
+          <p>Two lists. Everything you need to stop doing — and start doing instead.</p>
+          <span class="pb-chap-num" aria-hidden="true">3</span>
         </div>
 
-        <div class="pb-card">
-          <div class="pb-card-badge pb-card-badge--red">Chapter 4</div>
-          <div class="pb-card-accent pb-card-accent--red"></div>
+        <div class="pb-chap pb-chap--4">
+          <span class="pb-chap-label">Chapter 4</span>
           <h3>What to Do About It</h3>
-          <p style="font-size:.95rem;color:var(--mid);line-height:1.6;margin:0;">Five rules — and one new channel most marketers are ignoring.</p>
+          <p>Five rules — and one new channel most marketers are ignoring.</p>
+          <span class="pb-chap-num" aria-hidden="true">4</span>
         </div>
 
       </div>
