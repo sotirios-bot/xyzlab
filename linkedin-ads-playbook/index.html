@@ -11,18 +11,18 @@
   <!-- End Google Tag Manager -->
   <link rel="icon" type="image/png" href="/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="The complete LinkedIn Ads playbook — objectives, targeting, ad formats, lead gen forms, benchmarks and the 10 rules that make every campaign work. 2026 Edition." />
+  <meta name="description" content="The complete LinkedIn Ads playbook — objectives, targeting, ad formats, lead gen forms, benchmarks and the 10 rules that make every campaign work." />
   <link rel="canonical" href="https://xyzlab.com/linkedin-ads-playbook/" />
   <meta property="og:type" content="product" />
   <meta property="og:url" content="https://xyzlab.com/linkedin-ads-playbook/" />
-  <meta property="og:title" content="LinkedIn Ads Playbook — 2026 Edition | XYZ Lab" />
+  <meta property="og:title" content="LinkedIn Ads Playbook | XYZ Lab" />
   <meta property="og:description" content="Reach the people who sign the cheques — without burning your budget to find them. Setup · Objectives · Budget · Targeting · Ad formats · Lead Gen Forms · Benchmarks." />
   <meta property="og:image" content="https://xyzlab.com/linkedin-ads-playbook/screenshot-1.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="LinkedIn Ads Playbook — 2026 Edition | XYZ Lab" />
+  <meta name="twitter:title" content="LinkedIn Ads Playbook | XYZ Lab" />
   <meta name="twitter:description" content="Reach the people who sign the cheques — without burning your budget to find them." />
   <meta name="twitter:image" content="https://xyzlab.com/linkedin-ads-playbook/screenshot-1.png" />
-  <title>LinkedIn Ads Playbook — 2026 Edition | XYZ Lab</title>
+  <title>LinkedIn Ads Playbook | XYZ Lab</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -31,7 +31,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "LinkedIn Ads Playbook — 2026 Edition",
+    "name": "LinkedIn Ads Playbook",
     "description": "The complete LinkedIn Ads playbook covering setup, objectives, targeting, ad formats, lead gen forms, optimisation and benchmarks across 11 world regions.",
     "image": "https://xyzlab.com/linkedin-ads-playbook/screenshot-1.png",
     "offers": {
@@ -529,21 +529,39 @@
       margin: 0;
     }
 
+    /* ── GET SECTION (embed after stats) ── */
+    .pb-get {
+      padding: 5rem 0 5.5rem;
+      background: var(--white);
+    }
+    .pb-get-inner {
+      max-width: 560px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .pb-get .pb-download-meta { margin: 1.25rem 0 2.5rem; }
+    .pb-get .pb-download-meta span { color: var(--mid); }
+    .pb-get .pb-download-meta span::before { color: var(--primary); }
+    .pb-get .pb-or-divider { color: var(--mid); }
+    .pb-get .pb-or-divider::before,
+    .pb-get .pb-or-divider::after { background: var(--border); }
+
     /* ── FINAL CTA ── */
     .pb-final-cta {
       padding: 6rem 0;
-      background: var(--dark);
+      background: var(--white);
       text-align: center;
+      border-top: 1px solid var(--border);
     }
     .pb-final-cta h2 {
       font-size: clamp(1.75rem, 4vw, 2.6rem);
       font-weight: 900;
-      color: var(--white);
+      color: var(--dark);
       margin-bottom: 1rem;
       line-height: 1.2;
     }
     .pb-final-cta p {
-      color: rgba(255,255,255,.6);
+      color: var(--mid);
       margin-bottom: 2rem;
     }
 
@@ -610,7 +628,7 @@
     <div class="pb-stripe"></div>
     <div class="container pb-hero-inner">
       <div class="pb-hero-text">
-        <div class="pb-kicker">XYZ LAB · LINKEDIN ADS · 2026 EDITION</div>
+        <div class="pb-kicker">XYZ LAB · LINKEDIN ADS</div>
         <h1>Reach the People<br />Who Sign the Cheques</h1>
         <p class="pb-hero-sub">The complete LinkedIn Ads system — from account setup to weekly optimisation. Setup, objectives, targeting, creative, lead gen forms, benchmarks across 11 regions. <strong>Everything you need, nothing you don't.</strong></p>
         <a href="#download" class="btn btn-li btn-lg">Get the Playbook</a>
@@ -651,8 +669,30 @@
         </div>
         <div>
           <div class="pb-stat-big-num">11</div>
-          <div class="pb-stat-big-desc">World regions<br/>of CPC &amp; CPM benchmarks</div>
+          <div class="pb-stat-big-desc">Regions with CPC, CPM<br/>&amp; lead cost data</div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET THE PLAYBOOK (embed) -->
+  <section class="pb-get" id="download">
+    <div class="container">
+      <div class="pb-get-inner">
+        <div class="section-header" style="margin-bottom:1.5rem;">
+          <div class="badge">Get the Playbook</div>
+          <h2>The complete LinkedIn Ads system.<br/>Start reading in minutes.</h2>
+        </div>
+        <div class="pb-download-meta">
+          <span>52 pages</span>
+          <span>11 sections</span>
+          <span>Instant download</span>
+        </div>
+        <div class="pb-embed-wrap">
+          <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="414c675e-c36c-4404-a13e-1aa61c1a1fa4"></script>
+        </div>
+        <div class="pb-or-divider">or</div>
+        <a href="https://xyzlab.beehiiv.com/products/linkedin-playbook" class="btn btn-li btn-lg" target="_blank" rel="noopener" style="display:inline-block;">Get it directly →</a>
       </div>
     </div>
   </section>
@@ -826,27 +866,6 @@
     </div>
   </section>
 
-  <!-- DOWNLOAD -->
-  <section class="pb-download" id="download">
-    <div class="container">
-      <div class="pb-download-inner">
-        <div class="section-header">
-          <div class="badge">Get the Playbook</div>
-          <h2>52 pages. Straight to<br />your inbox.</h2>
-        </div>
-        <div class="pb-download-meta">
-          <span>11 sections</span>
-          <span>10 rules + checklist</span>
-          <span>Instant download</span>
-        </div>
-        <div class="pb-embed-wrap">
-          <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="414c675e-c36c-4404-a13e-1aa61c1a1fa4"></script>
-        </div>
-        <div class="pb-or-divider">or</div>
-        <a href="https://xyzlab.beehiiv.com/products/linkedin-playbook" class="btn btn-li btn-lg" target="_blank" rel="noopener" style="display:inline-block;">Get it directly →</a>
-      </div>
-    </div>
-  </section>
 
   <!-- FAQ -->
   <section class="pb-faq" id="faq">
@@ -859,27 +878,27 @@
 
         <div class="pb-faq-item">
           <h3 class="pb-faq-question">Who is this for?</h3>
-          <p class="pb-faq-answer">Anyone running or planning to run LinkedIn Ads — B2B companies, consultants, agencies and founders who want to reach decision-makers without guessing. Beginner-friendly enough to follow from day one, and detailed enough to be useful for experienced marketers who want a second opinion on their setup.</p>
+          <p class="pb-faq-answer">Anyone running or planning to run LinkedIn Ads — B2B companies, consultants, agencies and founders who want to reach decision-makers without guessing. <strong>Beginner-friendly enough to follow from day one, and detailed enough to be useful for experienced marketers</strong> who want a second opinion on their setup.</p>
         </div>
 
         <div class="pb-faq-item">
           <h3 class="pb-faq-question">How much should I be spending to use this?</h3>
-          <p class="pb-faq-answer">The playbook recommends starting at $30/day — that's the practical minimum for LinkedIn's algorithm to learn who converts. At less than that, you get one or two clicks a day and no useful data. You don't need a big budget to start, but you need enough of it — and the patience to let it work for at least two weeks.</p>
+          <p class="pb-faq-answer">The playbook recommends starting at <strong>$30/day — that's the practical minimum</strong> for LinkedIn's algorithm to learn who converts. At less than that, you get one or two clicks a day and no useful data. You don't need a big budget to start, but you need enough of it — and the patience to let it work for <strong>at least two weeks</strong>.</p>
         </div>
 
         <div class="pb-faq-item">
           <h3 class="pb-faq-question">I'm already running LinkedIn Ads. Will I still learn something?</h3>
-          <p class="pb-faq-answer">Almost certainly. The most common issues in existing LinkedIn accounts are Audience Expansion being left on, the wrong objective selected, and no clear cost-per-qualified-lead target. The playbook covers all three, plus the weekly optimisation routine and 10 rules most experienced advertisers haven't systematised.</p>
+          <p class="pb-faq-answer">Almost certainly. The most common issues in existing LinkedIn accounts are <strong>Audience Expansion being left on, the wrong objective selected, and no clear cost-per-qualified-lead target</strong>. The playbook covers all three, plus the <strong>weekly optimisation routine</strong> and 10 rules most experienced advertisers haven't systematised.</p>
         </div>
 
         <div class="pb-faq-item">
           <h3 class="pb-faq-question">Is it up to date?</h3>
-          <p class="pb-faq-answer">Yes — this is the 2026 Edition, updated to reflect current Campaign Manager settings, objectives, ad formats and LinkedIn's latest recommendations. The benchmarks cover CPC, CPM and cost per lead across 11 world regions with 2026 data.</p>
+          <p class="pb-faq-answer">Yes — updated to reflect <strong>current Campaign Manager settings, objectives, ad formats</strong> and LinkedIn's latest recommendations. The benchmarks cover <strong>CPC, CPM and cost per lead across 11 world regions</strong>.</p>
         </div>
 
         <div class="pb-faq-item">
           <h3 class="pb-faq-question">Does it include creative guidance?</h3>
-          <p class="pb-faq-answer">Yes — Section 06 covers every ad format (what works, what to avoid), creative specs, the Thought Leader Ads strategy, single image best practices with a worked example, copy rules and 5 fill-in-the-blank hook formulas. Section 07 covers Lead Gen Forms and the 5–7 email follow-up sequence.</p>
+          <p class="pb-faq-answer">Yes — Section 06 covers every ad format (what works, what to avoid), creative specs, the Thought Leader Ads strategy, single image best practices with a worked example, copy rules and <strong>5 fill-in-the-blank hook formulas</strong>. Section 07 covers <strong>Lead Gen Forms and the 5–7 email follow-up sequence</strong>.</p>
         </div>
 
       </div>
