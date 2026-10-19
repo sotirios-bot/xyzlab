@@ -11,109 +11,94 @@
   <!-- End Google Tag Manager -->
   <link rel="icon" type="image/png" href="/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="150 verified GCC employers, 18 recruitment agencies, 33 LinkedIn recruiters and 41 job sites for media, digital marketing and tech careers in the UAE, Saudi Arabia, Qatar and Bahrain." />
+  <meta name="description" content="150 verified GCC employers, 18 recruitment agencies, 33 LinkedIn recruiters and 38 job sites for media, digital marketing and tech careers in the UAE, Saudi Arabia, Qatar and Bahrain." />
   <link rel="canonical" href="https://xyzlab.com/uae-gcc-digital-marketing-tech-jobs/" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://xyzlab.com/uae-gcc-digital-marketing-tech-jobs/" />
   <meta property="og:title" content="GCC Career Access List 2026 | XYZ Lab" />
-  <meta property="og:description" content="150 verified employers, 18 recruitment agencies, 33 LinkedIn recruiters and 41 job sites for media, digital marketing and tech careers in the UAE, KSA, Qatar and Bahrain." />
+  <meta property="og:description" content="150 verified employers, 18 recruitment agencies, 33 LinkedIn recruiters and 38 job sites for media, digital marketing and tech careers in the UAE, KSA, Qatar and Bahrain." />
   <meta property="og:image" content="https://xyzlab.com/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="GCC Career Access List 2026 | XYZ Lab" />
-  <meta name="twitter:description" content="150 verified employers, 18 recruitment agencies, 33 LinkedIn recruiters and 41 job sites for media, digital marketing and tech careers in the UAE, KSA, Qatar and Bahrain." />
+  <meta name="twitter:description" content="150 verified employers, 18 recruitment agencies, 33 LinkedIn recruiters and 38 job sites for media, digital marketing and tech careers in the UAE, KSA, Qatar and Bahrain." />
   <title>GCC Career Access List 2026 | XYZ Lab</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../style.css" />
   <style>
-    /* ── GCC Career List accent ── */
     :root { --gcc: #1B55DB; --gcc-dark: #1347C0; --gcc-light: rgba(27,85,219,.08); }
 
-    /* ── HEADER ── */
-    .gcc-header {
-      position: sticky; top: 0; z-index: 100;
-      background: #fff;
-      border-bottom: 1px solid var(--border);
-      padding: .9rem 0;
+    /* ── STICKY GET CTA ── */
+    .gcc-sticky {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+      background: #fff; border-top: 1px solid var(--border);
+      padding: .85rem 1rem;
+      display: flex; align-items: center; justify-content: center; gap: 1rem;
+      box-shadow: 0 -4px 24px rgba(0,0,0,.10);
+      transform: translateY(100%);
+      transition: transform .3s ease;
     }
-    .gcc-header-inner {
-      display: flex; align-items: center; justify-content: space-between;
+    .gcc-sticky.visible { transform: translateY(0); }
+    .gcc-sticky p {
+      font-size: .88rem; color: var(--mid); margin: 0;
+      display: none;
     }
-    .gcc-logo { display: flex; align-items: center; }
-    .gcc-logo img { height: 32px; width: auto; display: block; }
-    .btn-gcc {
-      background: var(--gcc); color: #fff; font-weight: 700;
-      padding: .6rem 1.4rem; border-radius: .5rem;
-      font-size: .9rem; text-decoration: none;
-      transition: background .15s, box-shadow .15s;
-      white-space: nowrap;
-    }
-    .btn-gcc:hover { background: var(--gcc-dark); box-shadow: 0 4px 18px rgba(27,85,219,.35); color: #fff; }
-    .btn-gcc-lg {
-      padding: 1rem 2.25rem; font-size: 1.05rem; border-radius: .6rem;
-      display: inline-block;
+    .gcc-sticky .btn-gcc { white-space: nowrap; padding: .75rem 1.75rem; }
+    @media (min-width: 560px) {
+      .gcc-sticky p { display: block; }
     }
 
     /* ── HERO ── */
     .gcc-hero {
-      padding: 5.5rem 0 5rem;
+      padding: 5rem 0 4.5rem;
       text-align: center;
       background: #fff;
     }
     .gcc-hero h1 {
-      font-size: clamp(2rem, 5vw, 3.1rem);
+      font-size: clamp(1.85rem, 5vw, 3.1rem);
       font-weight: 900; line-height: 1.15; color: var(--dark);
       margin-bottom: 1.25rem; text-wrap: balance;
     }
     .gcc-hero h1 em { font-style: normal; color: var(--gcc); }
     .gcc-hero-sub {
-      font-size: 1.15rem; color: var(--mid); line-height: 1.7;
-      max-width: 640px; margin: 0 auto 2.25rem;
+      font-size: 1.1rem; color: var(--mid); line-height: 1.75;
+      max-width: 600px; margin: 0 auto 2.25rem;
     }
-    .gcc-hero-cta { display: flex; flex-direction: column; align-items: center; gap: .65rem; }
-    .gcc-delivery { font-size: .82rem; color: var(--mid); letter-spacing: .02em; }
+    .gcc-hero-actions { display: flex; flex-direction: column; align-items: center; gap: .65rem; }
+    .gcc-delivery { font-size: .82rem; color: var(--mid); letter-spacing: .01em; }
+    .btn-gcc {
+      background: var(--gcc); color: #fff; font-weight: 700;
+      padding: .85rem 2.25rem; border-radius: .5rem;
+      font-size: 1rem; text-decoration: none; display: inline-block;
+      transition: background .15s, box-shadow .15s;
+    }
+    .btn-gcc:hover { background: var(--gcc-dark); box-shadow: 0 4px 20px rgba(27,85,219,.38); color: #fff; }
 
     /* ── STATS ── */
-    .gcc-stats {
-      background: #0D1527; padding: 3rem 0;
-    }
+    .gcc-stats { background: #0D1527; padding: 3rem 0; }
     .gcc-stats-grid {
       display: grid; grid-template-columns: repeat(5, 1fr);
       gap: 1rem; text-align: center;
     }
     .gcc-stat-num {
-      font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 900;
+      font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 900;
       color: var(--gcc); line-height: 1; margin-bottom: .4rem;
-      font-variant-numeric: tabular-nums;
     }
-    .gcc-stat-desc { font-size: .82rem; color: rgba(255,255,255,.6); line-height: 1.4; }
+    .gcc-stat-desc { font-size: .8rem; color: rgba(255,255,255,.6); line-height: 1.45; }
 
     /* ── PREVIEW ── */
-    .gcc-preview { padding: 6rem 0; background: #f8faff; }
-    .gcc-table-wrap { position: relative; margin-top: 2.75rem; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 4px 24px rgba(0,0,0,.06); }
-    .gcc-table { width: 100%; border-collapse: collapse; background: #fff; font-size: .9rem; }
-    .gcc-table th {
-      background: #0D1527; color: rgba(255,255,255,.75);
-      font-size: .72rem; font-weight: 700; letter-spacing: .08em;
-      text-transform: uppercase; padding: .85rem 1.25rem; text-align: left;
+    .gcc-preview { padding: 5.5rem 0; background: #f8faff; }
+    .gcc-sheet-wrap {
+      position: relative; margin-top: 2.75rem;
+      border-radius: 12px; overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 8px 40px rgba(0,0,0,.1);
     }
-    .gcc-table td { padding: .85rem 1.25rem; border-bottom: 1px solid #f0f4fa; color: var(--dark); }
-    .gcc-table tr:last-child td { border-bottom: none; }
-    .gcc-table tr:hover td { background: #f8faff; }
-    .gcc-table .gcc-cat {
-      display: inline-block; padding: .2rem .65rem;
-      background: var(--gcc-light); color: var(--gcc);
-      border-radius: 50px; font-size: .75rem; font-weight: 600;
-    }
-    .gcc-table a { color: var(--gcc); text-decoration: none; font-size: .85rem; }
-    .gcc-table a:hover { text-decoration: underline; }
-
-    /* Blur overlay */
-    .gcc-table-blur {
-      position: absolute; bottom: 0; left: 0; right: 0;
-      height: 180px;
-      background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,.97) 60%, #fff 100%);
+    .gcc-sheet-img { width: 100%; display: block; }
+    .gcc-sheet-fade {
+      position: absolute; bottom: 0; left: 0; right: 0; height: 55%;
+      background: linear-gradient(to bottom, rgba(248,250,255,0) 0%, rgba(248,250,255,.96) 65%, #f8faff 100%);
       display: flex; align-items: flex-end; justify-content: center;
       padding-bottom: 2rem; pointer-events: none;
     }
@@ -125,37 +110,57 @@
       font-size: .88rem; font-weight: 600; color: var(--mid);
       box-shadow: 0 2px 12px rgba(0,0,0,.1);
     }
-    .gcc-lock-tag svg { flex-shrink: 0; }
     .gcc-preview-cta { text-align: center; margin-top: 2.25rem; }
 
+    /* ── WHAT'S IN IT ── */
+    .gcc-contents-section { padding: 5.5rem 0; background: #fff; }
+    .gcc-contents-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 1rem; margin-top: 2.75rem;
+    }
+    .gcc-content-card {
+      background: #f8faff; border: 1px solid var(--border);
+      border-radius: 14px; padding: 1.75rem;
+      border-left: 4px solid var(--gcc);
+    }
+    .gcc-content-card-num {
+      font-size: 2rem; font-weight: 900; color: var(--gcc);
+      line-height: 1; margin-bottom: .4rem;
+    }
+    .gcc-content-card h3 {
+      font-size: .95rem; font-weight: 800; color: var(--dark);
+      margin: 0 0 .5rem; line-height: 1.3;
+    }
+    .gcc-content-card p { font-size: .88rem; color: var(--mid); line-height: 1.6; margin: 0; }
+
     /* ── SECTORS ── */
-    .gcc-sectors { padding: 6rem 0; background: #fff; }
+    .gcc-sectors { padding: 5.5rem 0; background: #f8faff; }
     .gcc-sectors-grid {
-      display: flex; flex-wrap: wrap; gap: .65rem;
+      display: flex; flex-wrap: wrap; gap: .6rem;
       justify-content: center; margin-top: 2.5rem;
     }
     .gcc-sector-pill {
-      padding: .55rem 1.2rem; border-radius: 50px;
+      padding: .5rem 1.1rem; border-radius: 50px;
       border: 1.5px solid var(--border);
-      font-size: .9rem; font-weight: 500; color: var(--dark);
+      font-size: .88rem; font-weight: 500; color: var(--dark);
       background: #fff; transition: border-color .15s, color .15s, background .15s;
     }
     .gcc-sector-pill:hover { border-color: var(--gcc); color: var(--gcc); background: var(--gcc-light); }
 
     /* ── WHO IT'S FOR ── */
-    .gcc-who { padding: 6rem 0; background: #f8faff; }
+    .gcc-who { padding: 5.5rem 0; background: #fff; }
     .gcc-who-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.75rem; }
     .gcc-who-card {
-      background: #fff; border: 1px solid var(--border);
+      background: #f8faff; border: 1px solid var(--border);
       border-radius: 14px; padding: 2rem 1.75rem;
       border-top: 3px solid var(--gcc);
     }
     .gcc-who-card-num {
       font-size: .72rem; font-weight: 700; letter-spacing: .1em;
-      text-transform: uppercase; color: var(--gcc); margin-bottom: 1rem;
+      text-transform: uppercase; color: var(--gcc); margin-bottom: .9rem;
     }
-    .gcc-who-card h3 { font-size: 1.05rem; font-weight: 800; color: var(--dark); margin: 0 0 .6rem; line-height: 1.3; }
-    .gcc-who-card p { font-size: .9rem; color: var(--mid); line-height: 1.65; margin: 0; }
+    .gcc-who-card h3 { font-size: 1rem; font-weight: 800; color: var(--dark); margin: 0 0 .6rem; line-height: 1.3; }
+    .gcc-who-card p { font-size: .88rem; color: var(--mid); line-height: 1.65; margin: 0; }
 
     /* ── VERIFIED ── */
     .gcc-verify {
@@ -164,104 +169,44 @@
     }
     .gcc-verify-inner { max-width: 620px; margin: 0 auto; text-align: center; }
     .gcc-verify-inner h3 { font-size: 1.1rem; font-weight: 800; color: var(--dark); margin-bottom: .75rem; }
-    .gcc-verify-inner p { font-size: .97rem; color: var(--mid); line-height: 1.7; margin: 0; }
+    .gcc-verify-inner p { font-size: .95rem; color: var(--mid); line-height: 1.7; margin: 0; }
 
-    /* ── PRICING ── */
-    .gcc-pricing { padding: 6rem 0; background: #0D1527; }
-    .gcc-pricing-card {
-      max-width: 520px; margin: 0 auto;
-      background: #fff; border-radius: 20px;
-      padding: 2.5rem 2.5rem 2.25rem;
-      box-shadow: 0 20px 60px rgba(0,0,0,.3);
+    /* ── CTA BAND ── */
+    .gcc-cta-band { padding: 6rem 0; background: #0D1527; text-align: center; }
+    .gcc-cta-band h2 {
+      font-size: clamp(1.65rem, 4vw, 2.5rem); font-weight: 900;
+      color: #fff; margin-bottom: 1rem; line-height: 1.2;
     }
-    .gcc-pricing-card .badge { margin-bottom: 1rem; }
-    .gcc-price-display {
-      font-size: 2.8rem; font-weight: 900; color: var(--dark);
-      line-height: 1; margin-bottom: 1.75rem;
+    .gcc-cta-band p {
+      color: rgba(255,255,255,.65); font-size: 1rem; line-height: 1.75;
+      max-width: 540px; margin: 0 auto 2.25rem;
     }
-    .gcc-price-display sup {
-      font-size: 1.1rem; font-weight: 700; vertical-align: top;
-      margin-top: .45rem; display: inline-block;
+    .gcc-check-list {
+      list-style: none; padding: 0; margin: 0 auto 2.5rem;
+      max-width: 400px; text-align: left;
+      display: flex; flex-direction: column; gap: .5rem;
     }
-    .gcc-price-display small {
-      font-size: .85rem; font-weight: 500; color: var(--mid);
-      display: block; margin-top: .35rem;
+    .gcc-check-list li {
+      display: flex; align-items: flex-start; gap: .7rem;
+      font-size: .95rem; color: rgba(255,255,255,.8);
     }
-    .gcc-contents-list {
-      list-style: none; padding: 0; margin: 0 0 2rem;
-      display: flex; flex-direction: column; gap: .55rem;
-    }
-    .gcc-contents-list li {
-      display: flex; align-items: center; gap: .7rem;
-      font-size: .92rem; color: var(--dark);
-    }
-    .gcc-contents-list li::before {
+    .gcc-check-list li::before {
       content: '';
-      width: 18px; height: 18px; border-radius: 50%;
-      background: var(--gcc-light); border: 1.5px solid var(--gcc);
-      flex-shrink: 0;
-      display: flex; align-items: center; justify-content: center;
+      width: 18px; height: 18px; border-radius: 50%; flex-shrink: 0; margin-top: .1rem;
+      background-color: rgba(27,85,219,.3);
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath d='M2 5l2.5 2.5L8 3' stroke='%231B55DB' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
       background-repeat: no-repeat; background-position: center; background-size: 10px;
     }
-    .gcc-divider { height: 1px; background: var(--border); margin: 1.75rem 0; }
-    .gcc-field { margin-bottom: 1rem; }
-    .gcc-field label {
-      display: block; font-size: .82rem; font-weight: 600;
-      color: var(--dark); margin-bottom: .4rem;
-    }
-    .gcc-field input, .gcc-field select {
-      width: 100%; padding: .75rem 1rem;
-      border: 1.5px solid var(--border); border-radius: .55rem;
-      font-size: .95rem; color: var(--dark); background: #fff;
-      font-family: inherit; transition: border-color .15s;
-      appearance: none; -webkit-appearance: none;
-    }
-    .gcc-field select {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234A5568' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
-      background-repeat: no-repeat; background-position: right 1rem center;
-      padding-right: 2.5rem;
-    }
-    .gcc-field input:focus, .gcc-field select:focus {
-      outline: none; border-color: var(--gcc);
-      box-shadow: 0 0 0 3px rgba(27,85,219,.12);
-    }
-    .gcc-field input.error, .gcc-field select.error { border-color: #e05c4b; }
-    .gcc-terms-row {
-      display: flex; align-items: flex-start; gap: .65rem;
-      margin-bottom: 1.5rem;
-    }
-    .gcc-terms-row input[type="checkbox"] {
-      width: 17px; height: 17px; margin-top: .15rem;
-      flex-shrink: 0; cursor: pointer;
-      accent-color: var(--gcc);
-    }
-    .gcc-terms-row label {
-      font-size: .82rem; color: var(--mid); line-height: 1.5; cursor: pointer;
-    }
-    .gcc-terms-row a { color: var(--gcc); text-decoration: underline; }
-    .gcc-buy-btn {
-      width: 100%; padding: 1rem; font-size: 1.05rem; font-weight: 700;
-      background: var(--gcc); color: #fff; border: none;
-      border-radius: .6rem; cursor: pointer; font-family: inherit;
-      transition: background .15s, box-shadow .15s;
-    }
-    .gcc-buy-btn:hover { background: var(--gcc-dark); box-shadow: 0 6px 24px rgba(27,85,219,.4); }
-    .gcc-delivery-note {
-      text-align: center; font-size: .8rem; color: var(--mid);
-      margin-top: .9rem; margin-bottom: 0;
-    }
+    .gcc-cta-band .gcc-delivery { color: rgba(255,255,255,.4); margin-top: .75rem; display: block; }
 
     /* ── FAQ ── */
-    .gcc-faq { padding: 6rem 0; background: #fff; }
+    .gcc-faq { padding: 5.5rem 0; background: #fff; }
     .gcc-faq-list { max-width: 720px; margin: 3rem auto 0; }
-    .gcc-faq-item {
-      border-bottom: 1px solid var(--border);
-    }
+    .gcc-faq-item { border-bottom: 1px solid var(--border); }
     .gcc-faq-item:first-child { border-top: 1px solid var(--border); }
     .gcc-faq-q {
       width: 100%; background: none; border: none;
-      text-align: left; padding: 1.5rem 0;
+      text-align: left; padding: 1.35rem 0;
       display: flex; align-items: center; justify-content: space-between; gap: 1rem;
       font-family: inherit; font-size: 1rem; font-weight: 700; color: var(--dark);
       cursor: pointer; line-height: 1.4;
@@ -271,40 +216,25 @@
     .gcc-faq-item.open .gcc-faq-q svg { transform: rotate(180deg); }
     .gcc-faq-item.open .gcc-faq-q { color: var(--gcc); }
     .gcc-faq-a {
-      display: none; padding: 0 0 1.5rem;
-      font-size: .97rem; color: var(--mid); line-height: 1.75;
+      display: none; padding: 0 0 1.35rem;
+      font-size: .95rem; color: var(--mid); line-height: 1.75;
     }
     .gcc-faq-item.open .gcc-faq-a { display: block; }
-
-    /* ── FOOTER ── */
-    .gcc-footer {
-      background: #0D1527; padding: 2.5rem 0;
-      text-align: center;
-    }
-    .gcc-footer p {
-      font-size: .82rem; color: rgba(255,255,255,.4); margin: 0;
-    }
-    .gcc-footer a { color: rgba(255,255,255,.55); text-decoration: none; }
-    .gcc-footer a:hover { color: #fff; }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       .gcc-stats-grid { grid-template-columns: repeat(3, 1fr); }
-      .gcc-who-grid { grid-template-columns: 1fr; gap: 1rem; }
+      .gcc-who-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+      .gcc-contents-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 640px) {
-      .gcc-stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .gcc-stats-grid { grid-template-columns: repeat(3, 1fr); }
       .gcc-hero { padding: 3.5rem 0 3rem; }
-      .gcc-pricing-card { padding: 1.75rem 1.25rem; }
-      .gcc-table-wrap { border-radius: 8px; }
-      .gcc-table th, .gcc-table td { padding: .7rem .85rem; }
+      .gcc-who-grid { grid-template-columns: 1fr; }
+      .gcc-contents-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 420px) {
-      .gcc-stats-grid { grid-template-columns: 1fr 1fr; }
-    }
-    /* Hide LinkedIn column on small screens */
-    @media (max-width: 580px) {
-      .gcc-table .col-li { display: none; }
+      .gcc-stats-grid { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
 </head>
@@ -314,14 +244,21 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <!-- HEADER -->
-  <header class="gcc-header">
-    <div class="container gcc-header-inner">
-      <a href="/" class="gcc-logo">
-        <img src="/xyz-lab-logo.png" alt="XYZ Lab" />
+  <!-- NAV -->
+  <header class="nav-wrapper">
+    <nav class="nav container">
+      <a href="/" class="logo">
+        <img src="/xyz-lab-logo.png" alt="XYZ Lab" class="logo-img" />
       </a>
-      <a href="#buy" class="btn-gcc">Get the list</a>
-    </div>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/#newsletter">Newsletter</a></li>
+        <li><a href="/#contact">Contact</a></li>
+        <li><a href="/#coaching" class="btn btn-primary btn-sm">Book Training</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- HERO -->
@@ -329,16 +266,15 @@
     <div class="container">
       <div class="badge badge-secondary" style="margin-bottom:1.25rem;">GCC Career Access List · 2026</div>
       <h1>Every GCC employer, recruiter<br/>and job site, <em>in one list</em></h1>
-      <p class="gcc-hero-sub">150 verified employers, 33 LinkedIn recruiters and 41 job sites for media, digital marketing and tech careers across the <strong>UAE, KSA, Qatar and Bahrain</strong>.</p>
-      <div class="gcc-hero-cta">
-        <!-- UPDATE: replace SGD 49 with your price -->
-        <a href="#buy" class="btn-gcc btn-gcc-lg">Get the list – SGD 49</a>
-        <span class="gcc-delivery">Delivered to your inbox.</span>
+      <p class="gcc-hero-sub">Stop searching. 150 verified employers, 18 recruitment agencies, 33 LinkedIn recruiters and 38 job sites for <strong>media, digital marketing and tech careers</strong> across the UAE, KSA, Qatar and Bahrain.</p>
+      <div class="gcc-hero-actions">
+        <a href="https://xyzlab.beehiiv.com/products/gcc-media-tech-digital-marketing-recruitment" target="_blank" rel="noopener" class="btn-gcc" id="hero-cta">Get the list</a>
+        <span class="gcc-delivery">Delivered to your inbox instantly.</span>
       </div>
     </div>
   </section>
 
-  <!-- WHAT'S INSIDE -->
+  <!-- STATS -->
   <section class="gcc-stats">
     <div class="container">
       <div class="gcc-stats-grid">
@@ -355,7 +291,7 @@
           <div class="gcc-stat-desc">LinkedIn<br/>recruiters</div>
         </div>
         <div>
-          <div class="gcc-stat-num">16</div>
+          <div class="gcc-stat-num">13</div>
           <div class="gcc-stat-desc">GCC<br/>job sites</div>
         </div>
         <div>
@@ -374,71 +310,49 @@
         <h2>See what's inside</h2>
         <p style="color:var(--mid);margin-top:.5rem;font-size:.97rem;">A snapshot of the employers section.</p>
       </div>
-      <div class="gcc-table-wrap">
-        <table class="gcc-table">
-          <thead>
-            <tr>
-              <th>Company</th>
-              <th>Category</th>
-              <th>Website</th>
-              <th class="col-li">LinkedIn</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>GroupM MENA</strong></td>
-              <td><span class="gcc-cat">Media Agency</span></td>
-              <td><a href="https://www.groupm.com" target="_blank" rel="noopener">groupm.com</a></td>
-              <td class="col-li"><a href="https://www.linkedin.com/company/groupm" target="_blank" rel="noopener">View →</a></td>
-            </tr>
-            <tr>
-              <td><strong>Publicis Groupe</strong></td>
-              <td><span class="gcc-cat">Media Agency</span></td>
-              <td><a href="https://www.publicisgroupe.com" target="_blank" rel="noopener">publicisgroupe.com</a></td>
-              <td class="col-li"><a href="https://www.linkedin.com/company/publicis-groupe" target="_blank" rel="noopener">View →</a></td>
-            </tr>
-            <tr>
-              <td><strong>Google</strong></td>
-              <td><span class="gcc-cat">Big Tech</span></td>
-              <td><a href="https://careers.google.com" target="_blank" rel="noopener">google.com</a></td>
-              <td class="col-li"><a href="https://www.linkedin.com/company/google" target="_blank" rel="noopener">View →</a></td>
-            </tr>
-            <tr>
-              <td><strong>Careem</strong></td>
-              <td><span class="gcc-cat">Regional Tech</span></td>
-              <td><a href="https://www.careem.com" target="_blank" rel="noopener">careem.com</a></td>
-              <td class="col-li"><a href="https://www.linkedin.com/company/careem" target="_blank" rel="noopener">View →</a></td>
-            </tr>
-            <tr>
-              <td><strong>e& (Etisalat)</strong></td>
-              <td><span class="gcc-cat">Telecoms</span></td>
-              <td><a href="https://www.eand.com" target="_blank" rel="noopener">eand.com</a></td>
-              <td class="col-li"><a href="https://www.linkedin.com/company/etisalat" target="_blank" rel="noopener">View →</a></td>
-            </tr>
-            <!-- intentionally spare rows for blur effect -->
-            <tr aria-hidden="true" style="filter:blur(4px);pointer-events:none;user-select:none;">
-              <td><strong>████████████</strong></td>
-              <td><span class="gcc-cat">████████</span></td>
-              <td>██████████</td>
-              <td class="col-li">View →</td>
-            </tr>
-            <tr aria-hidden="true" style="filter:blur(5px);pointer-events:none;user-select:none;">
-              <td><strong>████████████████</strong></td>
-              <td><span class="gcc-cat">██████████</span></td>
-              <td>████████████</td>
-              <td class="col-li">View →</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="gcc-table-blur">
+      <div class="gcc-sheet-wrap">
+        <img src="sheet-preview.jpg" alt="GCC Career Access List spreadsheet preview" class="gcc-sheet-img" loading="lazy" />
+        <div class="gcc-sheet-fade">
           <div class="gcc-lock-tag">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            145 more employers inside
+            145 more entries inside
           </div>
         </div>
       </div>
       <div class="gcc-preview-cta">
-        <a href="#buy" class="btn-gcc btn-gcc-lg">Get the full list</a>
+        <a href="https://xyzlab.beehiiv.com/products/gcc-media-tech-digital-marketing-recruitment" target="_blank" rel="noopener" class="btn-gcc">Get the full list</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT'S IN IT -->
+  <section class="gcc-contents-section">
+    <div class="container">
+      <div class="section-header" style="text-align:center;">
+        <div class="badge badge-secondary">What's Inside</div>
+        <h2>Four tabs. Every contact you need.</h2>
+      </div>
+      <div class="gcc-contents-grid">
+        <div class="gcc-content-card">
+          <div class="gcc-content-card-num">150</div>
+          <h3>Verified employers</h3>
+          <p>Media agencies, Big Tech, regional tech, telecoms, real estate, retail, banks, airlines and hospitality — all active in the GCC.</p>
+        </div>
+        <div class="gcc-content-card">
+          <div class="gcc-content-card-num">18</div>
+          <h3>Recruitment agencies</h3>
+          <p>Agencies placing digital marketing and tech roles in the GCC — with website and contact links to reach the right desk directly.</p>
+        </div>
+        <div class="gcc-content-card">
+          <div class="gcc-content-card-num">33</div>
+          <h3>LinkedIn recruiters</h3>
+          <p>Talent acquisition leads and recruiters actively filling roles in the region — with direct LinkedIn profile links.</p>
+        </div>
+        <div class="gcc-content-card">
+          <div class="gcc-content-card-num">38</div>
+          <h3>Job sites</h3>
+          <p>13 GCC job sites (regional and country-specific) plus 25 remote job sites and freelance platforms to cover every search angle.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -447,7 +361,7 @@
   <section class="gcc-sectors">
     <div class="container">
       <div class="section-header" style="text-align:center;">
-        <div class="badge badge-secondary">Sectors Covered</div>
+        <div class="badge">Sectors Covered</div>
         <h2>9 sectors. One search done.</h2>
       </div>
       <div class="gcc-sectors-grid">
@@ -468,7 +382,7 @@
   <section class="gcc-who">
     <div class="container">
       <div class="section-header" style="text-align:center;">
-        <div class="badge">Who It&#8217;s For</div>
+        <div class="badge badge-secondary">Who It&#8217;s For</div>
         <h2>Built for three types of people</h2>
       </div>
       <div class="gcc-who-grid">
@@ -485,84 +399,36 @@
         <div class="gcc-who-card">
           <div class="gcc-who-card-num">03</div>
           <h3>Freelancers looking for clients</h3>
-          <p>Find agencies, brands and remote-friendly employers actively working in the GCC — and the 25 remote job sites that bridge the gap from wherever you are.</p>
+          <p>Find agencies, brands and remote-friendly employers working in the GCC — and the 25 remote job sites and freelance platforms that bridge the gap from wherever you are.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- HOW IT WAS VERIFIED -->
+  <!-- VERIFIED -->
   <section class="gcc-verify">
     <div class="container">
       <div class="gcc-verify-inner">
         <h3>How the list was verified</h3>
-        <p>Every company's website and LinkedIn page was checked in October 2026 to confirm they are active and hiring in the region. The list covers the UAE, Saudi Arabia, Qatar and Bahrain — the four markets that account for the largest share of media, marketing and tech roles in the GCC.</p>
+        <p>Every company's website and LinkedIn page was checked in October 2026 to confirm they are active in the region. The list covers the UAE, Saudi Arabia, Qatar and Bahrain — the four markets that account for the largest share of media, marketing and tech roles in the GCC.</p>
       </div>
     </div>
   </section>
 
-  <!-- PRICING + ORDER FORM -->
-  <section class="gcc-pricing" id="buy">
+  <!-- CTA BAND -->
+  <section class="gcc-cta-band" id="get">
     <div class="container">
-      <div class="gcc-pricing-card">
-        <div class="badge" style="margin-bottom:.75rem;">GCC Career Access List · 2026</div>
-        <!-- UPDATE: replace 49 with your price -->
-        <div class="gcc-price-display">
-          <sup>SGD</sup>49
-          <small>One-time. Delivered by email.</small>
-        </div>
-        <ul class="gcc-contents-list">
-          <li>150 verified employers (9 sectors)</li>
-          <li>18 recruitment agencies</li>
-          <li>33 LinkedIn recruiters to follow</li>
-          <li>16 GCC job sites</li>
-          <li>25 remote job sites</li>
-        </ul>
-        <div class="gcc-divider"></div>
-        <form id="gcc-form" novalidate>
-          <div class="gcc-field">
-            <label for="gcc-name">Full name</label>
-            <input type="text" id="gcc-name" name="name" placeholder="Your name" autocomplete="name" required />
-          </div>
-          <div class="gcc-field">
-            <label for="gcc-email">Email address</label>
-            <input type="email" id="gcc-email" name="email" placeholder="you@example.com" autocomplete="email" required />
-          </div>
-          <div class="gcc-field">
-            <label for="gcc-country">Country</label>
-            <select id="gcc-country" name="country" required>
-              <option value="">Select your country…</option>
-              <optgroup label="GCC">
-                <option value="AE">United Arab Emirates</option>
-                <option value="SA">Saudi Arabia</option>
-                <option value="QA">Qatar</option>
-                <option value="BH">Bahrain</option>
-                <option value="KW">Kuwait</option>
-                <option value="OM">Oman</option>
-              </optgroup>
-              <optgroup label="Other">
-                <option value="SG">Singapore</option>
-                <option value="IN">India</option>
-                <option value="PK">Pakistan</option>
-                <option value="EG">Egypt</option>
-                <option value="GB">United Kingdom</option>
-                <option value="AU">Australia</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="PH">Philippines</option>
-                <option value="Other">Other</option>
-              </optgroup>
-            </select>
-          </div>
-          <div class="gcc-terms-row">
-            <input type="checkbox" id="gcc-terms" name="terms" required />
-            <label for="gcc-terms">I agree to the <a href="/#contact">terms and conditions</a>. I understand this is a verified directory — it does not list open vacancies.</label>
-          </div>
-          <!-- UPDATE: replace PAYMENT_LINK_HERE with your Stripe/Gumroad payment link -->
-          <button type="submit" class="gcc-buy-btn">Buy now – SGD 49</button>
-        </form>
-        <p class="gcc-delivery-note">You'll receive the list by email within minutes.</p>
-      </div>
+      <h2>Stop searching.<br/>Start applying.</h2>
+      <p>Everything you need to run a targeted GCC job search — employers, agencies, recruiters and job sites — in one verified spreadsheet, delivered to your inbox.</p>
+      <ul class="gcc-check-list">
+        <li>150 verified employers across 9 sectors</li>
+        <li>18 recruitment agencies placing digital marketing and tech roles</li>
+        <li>33 LinkedIn recruiters and talent acquisition leads, with profile links</li>
+        <li>13 GCC job sites: regional and country-specific job boards</li>
+        <li>25 remote job sites and freelance platforms</li>
+      </ul>
+      <a href="https://xyzlab.beehiiv.com/products/gcc-media-tech-digital-marketing-recruitment" target="_blank" rel="noopener" class="btn-gcc" style="font-size:1.05rem;padding:1rem 2.75rem;">Get the list</a>
+      <span class="gcc-delivery">Delivered to your inbox instantly.</span>
     </div>
   </section>
 
@@ -570,7 +436,7 @@
   <section class="gcc-faq">
     <div class="container">
       <div class="section-header" style="text-align:center;">
-        <div class="badge badge-secondary">FAQs</div>
+        <div class="badge">FAQs</div>
         <h2>Questions</h2>
       </div>
       <div class="gcc-faq-list">
@@ -591,7 +457,7 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="gcc-faq-a">
-            <strong>By email, within minutes of payment.</strong> Once your order is confirmed, the file is sent to the email address you provided. If it doesn't arrive within 10 minutes, check your spam folder or contact us at hello@xyzlab.com.
+            <strong>By email, within minutes of purchase.</strong> The file is sent to the email address you use at checkout. If it doesn't arrive within 10 minutes, check your spam folder or contact us at hello@xyzlab.com.
           </div>
         </div>
 
@@ -601,7 +467,7 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="gcc-faq-a">
-            <strong>No.</strong> The list covers employers, recruitment agencies, LinkedIn recruiters and job sites — not live job postings. It gives you the organisations to target and the channels to monitor, so you can run a systematic search rather than rely on what happens to surface in your feed.
+            <strong>No.</strong> The list covers employers, recruitment agencies, LinkedIn recruiters and job sites — not live job postings. It gives you the organisations to target and the channels to monitor so you can run a systematic search, rather than rely on what surfaces in your feed.
           </div>
         </div>
 
@@ -611,7 +477,7 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="gcc-faq-a">
-            This is the <strong>October 2026 edition</strong>, verified against current websites and LinkedIn pages. The list will be updated annually. Customers who purchase now will be notified when the next edition is available.
+            This is the <strong>October 2026 edition</strong>, verified against current websites and LinkedIn pages. The list will be updated annually. Customers who purchase will be notified when the next edition is available.
           </div>
         </div>
 
@@ -621,7 +487,7 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="gcc-faq-a">
-            Because the list is a digital file delivered immediately after purchase, <strong>we do not offer refunds</strong> once the file has been sent. If there is an issue with your order — you didn't receive the file or received the wrong one — contact us at hello@xyzlab.com and we'll resolve it promptly.
+            Because the list is a digital file delivered immediately after purchase, <strong>we do not offer refunds</strong> once the file has been sent. If there is an issue with your order, contact us at hello@xyzlab.com and we'll resolve it promptly.
           </div>
         </div>
 
@@ -630,15 +496,62 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="gcc-footer">
-    <div class="container">
-      <p>&copy; <span id="gcc-year"></span> XYZ Lab Pte. Ltd. &nbsp;·&nbsp; <a href="/">xyzlab.com</a> &nbsp;·&nbsp; <a href="mailto:hello@xyzlab.com">hello@xyzlab.com</a></p>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p>Hands-on, practical digital marketing training. We help companies and digital marketing professionals solve real problems and move the needle where it matters the most!</p>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <ul>
+          <li><a href="https://xyzlab.beehiiv.com/" target="_blank" rel="noopener">The Walkthrough</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/#contact">Contact</a></li>
+          <li><a href="mailto:hello@xyzlab.com">hello@xyzlab.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> XYZ Lab Pte. Ltd. All rights reserved.</p>
+        <p style="margin-top:.35rem;font-size:.78rem;opacity:.6;">XYZ LAB PTE. LTD. &nbsp;&middot;&nbsp; 160 Robinson Road, #14-04, Singapore Business Federation Center, Singapore (068914) &nbsp;&middot;&nbsp; <a href="mailto:hello@xyzlab.com" style="color:inherit;">hello@xyzlab.com</a></p>
+      </div>
     </div>
   </footer>
 
+  <!-- STICKY CTA -->
+  <div class="gcc-sticky" id="gcc-sticky" role="complementary" aria-label="Get the list">
+    <p>150 verified GCC employers, recruiters &amp; job sites.</p>
+    <a href="https://xyzlab.beehiiv.com/products/gcc-media-tech-digital-marketing-recruitment" target="_blank" rel="noopener" class="btn-gcc">Get the list</a>
+  </div>
+
+  <script src="../main.js"></script>
+  <!-- FLOATING BUTTONS -->
+  <div class="floating-btns">
+    <a class="floating-btn floating-btn--booking" href="/#coaching">
+      <span>Book Training</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    </a>
+    <a class="floating-btn floating-btn--whatsapp" href="https://wa.me/6594260742" target="_blank" rel="noopener">
+      <span>WhatsApp</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <a class="floating-btn floating-btn--youtube" href="https://www.youtube.com/@xyzl" target="_blank" rel="noopener">
+      <span>YouTube</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+    </a>
+    <a class="floating-btn floating-btn--newsletter" href="https://xyzlab.beehiiv.com/" target="_blank" rel="noopener">
+      <span>Newsletter</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+    </a>
+  </div>
+
   <script>
-    // Year
-    document.getElementById('gcc-year').textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
 
     // FAQ accordion
     document.querySelectorAll('.gcc-faq-q').forEach(btn => {
@@ -654,38 +567,16 @@
       });
     });
 
-    // Order form
-    // UPDATE: replace the PAYMENT_LINK below with your Stripe Payment Link or Gumroad URL
-    var PAYMENT_LINK = 'PAYMENT_LINK_HERE';
-
-    document.getElementById('gcc-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      var name    = this.querySelector('#gcc-name');
-      var email   = this.querySelector('#gcc-email');
-      var country = this.querySelector('#gcc-country');
-      var terms   = this.querySelector('#gcc-terms');
-      var valid   = true;
-
-      [name, email, country].forEach(function(el) {
-        if (!el.value.trim()) { el.classList.add('error'); valid = false; }
-        else el.classList.remove('error');
-      });
-      if (!terms.checked) { valid = false; terms.closest('.gcc-terms-row').style.outline = '2px solid #e05c4b'; }
-      else terms.closest('.gcc-terms-row').style.outline = '';
-
-      if (!valid) return;
-
-      // Pass prefilled email to payment processor if supported
-      var url = PAYMENT_LINK;
-      if (url && url !== 'PAYMENT_LINK_HERE') {
-        var sep = url.includes('?') ? '&' : '?';
-        url += sep + 'prefilled_email=' + encodeURIComponent(email.value);
-        window.location.href = url;
-      } else {
-        // Fallback: show alert if payment link not configured
-        alert('Payment link not configured yet. Please contact hello@xyzlab.com to complete your order.');
-      }
-    });
+    // Sticky CTA — show after hero scrolls out of view
+    (function() {
+      var hero = document.querySelector('.gcc-hero');
+      var sticky = document.getElementById('gcc-sticky');
+      if (!hero || !sticky) return;
+      var obs = new IntersectionObserver(function(entries) {
+        sticky.classList.toggle('visible', !entries[0].isIntersecting);
+      }, { threshold: 0 });
+      obs.observe(hero);
+    })();
   </script>
 </body>
 </html>
