@@ -334,6 +334,19 @@
     .cta .sub-form input::placeholder { color: rgba(255,255,255,.3); }
     .cta .sub-form input:focus { border-color: var(--primary); }
 
+    /* ── SUBSCRIBE SUCCESS ── */
+    .sub-success {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .6rem;
+      color: var(--primary);
+      font-size: .97rem;
+      font-weight: 600;
+      padding: .9rem 0;
+    }
+    .cta .sub-success { color: #fff; }
+
     /* ── PAGE FOOT ── */
     .page-foot {
       background: var(--dark);
@@ -534,16 +547,34 @@
     document.getElementById('yr').textContent = new Date().getFullYear();
 
     // Subscribe
-    function subscribe(emailId) {
-      const v = document.getElementById(emailId).value.trim();
-      if (!v) return;
-      window.location.href = 'https://xyzlab.beehiiv.com/subscribe?email=' + encodeURIComponent(v);
+    const ZAPIER = 'https://hooks.zapier.com/hooks/catch/6107620/491i6l1/';
+
+    function subscribe(formId, emailId) {
+      const form = document.getElementById(formId);
+      const email = document.getElementById(emailId).value.trim();
+      if (!email) return;
+
+      // GTM / GA4 event
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'newsletter_subscribe', email: email });
+
+      // Send to Zapier → Beehiiv
+      fetch(ZAPIER, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: 'email=' + encodeURIComponent(email)
+      }).catch(function() {});
+
+      // Show success state
+      form.innerHTML = '<div class="sub-success"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg><span>You\'re in! Check your inbox for the first issue.</span></div>';
     }
+
     document.getElementById('form-hero').addEventListener('submit', function(e) {
-      e.preventDefault(); subscribe('email-hero');
+      e.preventDefault(); subscribe('form-hero', 'email-hero');
     });
     document.getElementById('form-cta').addEventListener('submit', function(e) {
-      e.preventDefault(); subscribe('email-cta');
+      e.preventDefault(); subscribe('form-cta', 'email-cta');
     });
 
     // Rotating quotes
