@@ -363,33 +363,42 @@
       padding: .25rem;
     }
     .modal-close:hover { color: var(--mid); }
-    .modal-check {
-      width: 56px; height: 56px;
-      background: rgba(8,191,173,.1);
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      margin: 0 auto 1.1rem;
-      color: var(--primary);
+    .modal-emoji {
+      font-size: 2.4rem; line-height: 1;
+      margin-bottom: .85rem;
     }
     .modal h3 {
-      font-size: 1.35rem; font-weight: 800;
-      color: var(--dark); letter-spacing: -.02em;
-      margin-bottom: .45rem;
+      font-size: 1.5rem; font-weight: 900;
+      color: var(--dark); letter-spacing: -.03em;
+      line-height: 1.2;
+      margin-bottom: .75rem;
     }
     .modal p {
       font-size: .93rem; color: var(--mid);
-      line-height: 1.6; margin-bottom: 1.4rem;
+      line-height: 1.65; margin-bottom: 1.4rem;
     }
+    .modal p strong { color: var(--dark); }
     .modal-btn {
       display: inline-block;
       background: var(--primary); color: #fff;
       border: none; border-radius: 10px;
-      padding: .75rem 1.75rem;
-      font-size: .95rem; font-weight: 700;
+      padding: .85rem 2rem;
+      font-size: .97rem; font-weight: 700;
       font-family: inherit; cursor: pointer;
-      transition: background .18s;
+      transition: background .18s, transform .15s, box-shadow .18s;
+      margin-bottom: 1rem;
     }
-    .modal-btn:hover { background: var(--primary-dark); }
+    .modal-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 5px 18px rgba(8,191,173,.35);
+    }
+    .modal-tip {
+      font-size: .78rem !important;
+      color: #aab4c0 !important;
+      margin-bottom: 0 !important;
+    }
+    .modal-tip strong { color: var(--mid) !important; font-weight: 600; }
 
     /* ── PAGE FOOT ── */
     .page-foot {
@@ -586,12 +595,11 @@
   <div class="modal-overlay" id="modal">
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
       <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
-      <div class="modal-check">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-      </div>
-      <h3 id="modal-title">You're subscribed!</h3>
-      <p>Welcome to The Walkthrough. Check your inbox — the first issue is on its way.</p>
-      <button class="modal-btn" id="modal-btn">Got it</button>
+      <div class="modal-emoji">🎉</div>
+      <h3 id="modal-title">You're in. Welcome to<br />The Walkthrough.</h3>
+      <p>Your welcome email is already on its way — <strong>open it now</strong>, it's worth it. Every issue is packed with what's actually working in digital marketing this week.</p>
+      <button class="modal-btn" id="modal-btn">Check my inbox &rarr;</button>
+      <p class="modal-tip">Add <strong>hello@xyzlab.com</strong> to your contacts so we never land in spam.</p>
     </div>
   </div>
 
