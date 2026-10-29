@@ -18,10 +18,11 @@
   <meta property="og:url" content="https://xyzlab.com/newsletter/" />
   <meta property="og:title" content="The Walkthrough — Free Digital Marketing Newsletter" />
   <meta property="og:description" content="Practical digital marketing tutorials on Google Ads, Meta Ads, TikTok Ads, LinkedIn, AI and more. Free. Twice a week." />
-  <meta property="og:image" content="https://xyzlab.com/og-image.jpg" />
+  <meta property="og:image" content="https://xyzlab.com/newsletter/newsletter-og.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="The Walkthrough — Free Digital Marketing Newsletter" />
   <meta name="twitter:description" content="Practical digital marketing tutorials. Free. Twice a week." />
+  <meta name="twitter:image" content="https://xyzlab.com/newsletter/newsletter-og.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -46,7 +47,7 @@
     a { color: inherit; text-decoration: none; }
     .container { max-width: 820px; margin: 0 auto; padding: 0 1.25rem; }
 
-    /* ── TOPBAR ──────────────────────────────────── */
+    /* ── TOPBAR ── */
     .topbar {
       border-bottom: 1px solid var(--border);
       padding: .9rem 1.25rem;
@@ -56,10 +57,10 @@
     }
     .topbar img { height: 26px; width: auto; }
 
-    /* ── HERO ────────────────────────────────────── */
+    /* ── HERO ── */
     .hero {
       background: #fff;
-      padding: 3.5rem 1.25rem 3rem;
+      padding: 3.25rem 1.25rem 2.75rem;
       text-align: center;
       border-bottom: 1px solid var(--border);
     }
@@ -71,12 +72,12 @@
       color: var(--primary);
       border: 1px solid rgba(8,191,173,.25);
       border-radius: 100px;
-      font-size: .73rem;
+      font-size: .72rem;
       font-weight: 700;
       letter-spacing: .07em;
       text-transform: uppercase;
       padding: .35rem .95rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
     }
     .pulse-dot {
       width: 6px; height: 6px;
@@ -84,24 +85,32 @@
       border-radius: 50%;
       animation: blink 2s ease-in-out infinite;
     }
-    @keyframes blink {
-      0%,100% { opacity:1; } 50% { opacity:.25; }
-    }
+    @keyframes blink { 0%,100% { opacity:1; } 50% { opacity:.25; } }
+
     .hero h1 {
-      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-size: clamp(1.9rem, 4.5vw, 3.1rem);
       font-weight: 900;
       color: var(--dark);
       letter-spacing: -.03em;
       line-height: 1.15;
       max-width: 680px;
-      margin: 0 auto .9rem;
+      margin: 0 auto .75rem;
     }
     .hero h1 .teal { color: var(--primary); }
-    .hero-sub {
-      font-size: 1.05rem;
+
+    .social-proof-line {
+      font-size: .88rem;
+      font-weight: 600;
       color: var(--mid);
-      max-width: 540px;
-      margin: 0 auto 2rem;
+      margin-bottom: .85rem;
+    }
+    .social-proof-line strong { color: var(--dark); }
+
+    .hero-sub {
+      font-size: 1.02rem;
+      color: var(--mid);
+      max-width: 520px;
+      margin: 0 auto 1.75rem;
       line-height: 1.65;
     }
     .hero-sub strong { color: var(--dark); font-weight: 600; }
@@ -112,7 +121,7 @@
       gap: .5rem;
       max-width: 460px;
       width: 100%;
-      margin: 0 auto .9rem;
+      margin: 0 auto .85rem;
     }
     .sub-form input[type="email"] {
       flex: 1;
@@ -147,6 +156,7 @@
       transform: translateY(-1px);
       box-shadow: 0 5px 18px rgba(8,191,173,.35);
     }
+
     .trust-row {
       display: flex;
       align-items: center;
@@ -159,82 +169,149 @@
     .trust-row span { display: flex; align-items: center; gap: .3rem; }
     .trust-row svg { color: var(--primary); }
 
-    /* ── BENEFITS ────────────────────────────────── */
+    /* ── BENEFITS ── */
     .benefits {
-      padding: 3rem 1.25rem;
+      padding: 2.75rem 1.25rem;
       background: var(--light);
       border-bottom: 1px solid var(--border);
     }
     .benefits-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 1.25rem;
+      gap: 1.1rem;
     }
     .benefit {
       background: #fff;
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 1.4rem 1.25rem;
+      padding: 1.35rem 1.2rem;
     }
-    .benefit-icon { font-size: 1.5rem; margin-bottom: .6rem; line-height: 1; }
-    .benefit h3 { font-size: .95rem; font-weight: 700; color: var(--dark); margin-bottom: .3rem; }
-    .benefit p { font-size: .85rem; color: var(--mid); line-height: 1.6; }
+    .benefit-icon { font-size: 1.4rem; margin-bottom: .55rem; line-height: 1; }
+    .benefit h3 { font-size: .93rem; font-weight: 700; color: var(--dark); margin-bottom: .28rem; }
+    .benefit p { font-size: .83rem; color: var(--mid); line-height: 1.6; }
 
-    /* ── TOPICS STRIP ────────────────────────────── */
-    .topics {
-      padding: 2.25rem 1.25rem;
+    /* ── QUOTES ── */
+    .quotes {
+      padding: 2.75rem 1.25rem;
       background: #fff;
       border-bottom: 1px solid var(--border);
-    }
-    .topics-label {
       text-align: center;
+    }
+    .quotes-eyebrow {
       font-size: .72rem;
       font-weight: 700;
       letter-spacing: .09em;
       text-transform: uppercase;
       color: var(--mid);
-      margin-bottom: 1rem;
-      opacity: .7;
+      opacity: .6;
+      margin-bottom: 1.5rem;
     }
-    .chips {
+    .quote-display {
+      max-width: 600px;
+      margin: 0 auto;
+      min-height: 110px;
       display: flex;
-      flex-wrap: wrap;
-      gap: .55rem;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
     }
-    .chip {
-      display: inline-flex;
-      align-items: center;
-      gap: .4rem;
-      background: var(--light);
-      border: 1px solid var(--border);
-      border-radius: 100px;
-      padding: .4rem .9rem;
-      font-size: .83rem;
-      font-weight: 600;
-      color: var(--mid);
+    .quote-text {
+      font-size: 1.07rem;
+      color: var(--dark);
+      font-weight: 500;
+      line-height: 1.6;
+      font-style: italic;
+      margin-bottom: .75rem;
+      transition: opacity .4s ease;
     }
-    .chip-icon { font-size: .85rem; line-height: 1; }
+    .quote-text::before { content: '\201C'; }
+    .quote-text::after  { content: '\201D'; }
+    .quote-author {
+      font-size: .8rem;
+      font-weight: 700;
+      color: var(--mid);
+      transition: opacity .4s ease;
+    }
+    .quote-author span { color: var(--primary); }
+    .quote-dots {
+      display: flex;
+      gap: .45rem;
+      justify-content: center;
+      margin-top: 1.25rem;
+    }
+    .quote-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--border);
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .quote-dot.active { background: var(--primary); }
 
-    /* ── CTA ─────────────────────────────────────── */
+    /* ── TOPICS ── */
+    .topics {
+      padding: 2.5rem 1.25rem;
+      background: var(--light);
+      border-bottom: 1px solid var(--border);
+    }
+    .topics-head {
+      text-align: center;
+      font-size: clamp(1.05rem, 2.5vw, 1.3rem);
+      font-weight: 800;
+      color: var(--dark);
+      letter-spacing: -.02em;
+      margin-bottom: 1.25rem;
+    }
+    .topics-head .teal { color: var(--primary); }
+    .topics-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: .55rem;
+      max-width: 620px;
+      margin: 0 auto;
+    }
+    .topic-row {
+      display: flex;
+      align-items: center;
+      gap: .65rem;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: .65rem .9rem;
+    }
+    .topic-icon { font-size: 1rem; flex-shrink: 0; }
+    .topic-name { font-size: .88rem; font-weight: 700; color: var(--dark); }
+    .topic-desc { font-size: .75rem; color: var(--mid); margin-top: .05rem; }
+
+    /* ── FINAL CTA ── */
     .cta {
       background: var(--dark);
-      padding: 4rem 1.25rem;
+      padding: 3.75rem 1.25rem;
       text-align: center;
     }
     .cta h2 {
-      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-size: clamp(1.5rem, 3.5vw, 2.4rem);
       font-weight: 900;
       color: #fff;
       letter-spacing: -.03em;
       line-height: 1.2;
-      margin-bottom: .55rem;
+      margin-bottom: .5rem;
     }
     .cta h2 .teal { color: var(--primary); }
-    .cta > p {
+    .cta-sub {
       color: rgba(255,255,255,.5);
       font-size: .97rem;
-      margin-bottom: 1.75rem;
+      margin-bottom: 1.6rem;
+      max-width: 440px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+    .cta-guarantee {
+      margin-top: 1rem;
+      font-size: .8rem;
+      color: rgba(255,255,255,.3);
+      font-style: italic;
     }
     .cta .sub-form input[type="email"] {
       background: rgba(255,255,255,.08);
@@ -243,9 +320,8 @@
     }
     .cta .sub-form input::placeholder { color: rgba(255,255,255,.3); }
     .cta .sub-form input:focus { border-color: var(--primary); }
-    .cta .trust-row { color: rgba(255,255,255,.3); }
 
-    /* ── PAGE FOOT ───────────────────────────────── */
+    /* ── PAGE FOOT ── */
     .page-foot {
       background: var(--dark);
       border-top: 1px solid rgba(255,255,255,.07);
@@ -257,11 +333,12 @@
     .page-foot a { color: rgba(255,255,255,.4); transition: color .18s; }
     .page-foot a:hover { color: var(--primary); }
 
-    /* ── RESPONSIVE ──────────────────────────────── */
+    /* ── RESPONSIVE ── */
     @media (max-width: 640px) {
       .sub-form { flex-direction: column; }
       .sub-form button { width: 100%; }
       .benefits-grid { grid-template-columns: 1fr; }
+      .topics-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 820px) {
       .benefits-grid { grid-template-columns: 1fr 1fr; }
@@ -286,10 +363,12 @@
   <section class="hero">
     <div class="nl-label">
       <span class="pulse-dot"></span>
-      Free Newsletter &nbsp;·&nbsp; 2&times; / week
+      Free Newsletter &nbsp;·&nbsp; 2&times; / week &nbsp;·&nbsp; 5-min read
     </div>
 
     <h1>The digital marketing newsletter<br /><span class="teal">you'll actually read.</span></h1>
+
+    <p class="social-proof-line">Join <strong>5,000+ digital marketers</strong> reading The Walkthrough</p>
 
     <p class="hero-sub">
       <strong>The Walkthrough</strong> delivers practical tutorials, platform updates and AI tools straight to your inbox — covering Google Ads, Meta Ads, TikTok Ads, LinkedIn Ads, Analytics and more.
@@ -307,11 +386,7 @@
       </span>
       <span>
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        Click-by-click tutorials
-      </span>
-      <span>
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        Real campaign examples
+        Straight to the point
       </span>
     </div>
   </section>
@@ -339,48 +414,93 @@
     </div>
   </section>
 
+  <!-- QUOTES -->
+  <section class="quotes">
+    <div class="container">
+      <p class="quotes-eyebrow">What readers say</p>
+      <div class="quote-display">
+        <p class="quote-text" id="qt"></p>
+        <p class="quote-author" id="qa"></p>
+      </div>
+      <div class="quote-dots" id="qdots"></div>
+    </div>
+  </section>
+
   <!-- TOPICS -->
   <section class="topics">
     <div class="container">
-      <p class="topics-label">Channels &amp; tools covered</p>
-      <div class="chips">
-        <div class="chip"><span class="chip-icon">&#128200;</span> Google Ads</div>
-        <div class="chip"><span class="chip-icon">&#128227;</span> Meta Ads</div>
-        <div class="chip"><span class="chip-icon">&#127925;</span> TikTok Ads</div>
-        <div class="chip"><span class="chip-icon">&#128188;</span> LinkedIn Ads</div>
-        <div class="chip"><span class="chip-icon">&#128202;</span> Google Analytics</div>
-        <div class="chip"><span class="chip-icon">&#127991;</span> Google Tag Manager</div>
-        <div class="chip"><span class="chip-icon">&#129302;</span> ChatGPT &amp; AI</div>
-        <div class="chip"><span class="chip-icon">&#128269;</span> SEO</div>
-        <div class="chip"><span class="chip-icon">&#128203;</span> Data Studio</div>
-        <div class="chip"><span class="chip-icon">&#9889;</span> Industry News</div>
+      <h2 class="topics-head">Stay ahead of <span class="teal">digital marketing trends</span></h2>
+      <div class="topics-grid">
+        <div class="topic-row">
+          <span class="topic-icon">&#128200;</span>
+          <div>
+            <div class="topic-name">Google Ads</div>
+            <div class="topic-desc">Campaigns, bidding, scripts &amp; Performance Max</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <span class="topic-icon">&#128227;</span>
+          <div>
+            <div class="topic-name">Meta Ads</div>
+            <div class="topic-desc">Creative strategy, Advantage+ &amp; attribution</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <span class="topic-icon">&#127925;</span>
+          <div>
+            <div class="topic-name">TikTok Ads</div>
+            <div class="topic-desc">Formats, targeting &amp; creative that converts</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <span class="topic-icon">&#128188;</span>
+          <div>
+            <div class="topic-name">LinkedIn Ads</div>
+            <div class="topic-desc">B2B campaigns, lead gen &amp; content ads</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <span class="topic-icon">&#128202;</span>
+          <div>
+            <div class="topic-name">Google Analytics &amp; GTM</div>
+            <div class="topic-desc">Tracking, events &amp; data that actually means something</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <span class="topic-icon">&#129302;</span>
+          <div>
+            <div class="topic-name">ChatGPT &amp; AI Tools</div>
+            <div class="topic-desc">Prompts, workflows &amp; tools that save you hours</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <span class="topic-icon">&#128269;</span>
+          <div>
+            <div class="topic-name">SEO</div>
+            <div class="topic-desc">Organic search, content strategy &amp; technical fixes</div>
+          </div>
+        </div>
+        <div class="topic-row">
+          <span class="topic-icon">&#9889;</span>
+          <div>
+            <div class="topic-name">Industry News</div>
+            <div class="topic-desc">What's changing &amp; what it means for your work</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- FINAL CTA -->
   <section class="cta">
     <div class="container">
-      <h2>Your inbox. <span class="teal">Smarter.</span></h2>
-      <p>No fluff. No recycled tips. Just the stuff that actually makes you better.</p>
-      <form class="sub-form" id="form-cta" style="margin:0 auto .9rem;">
+      <h2>Try one issue.<br /><span class="teal">Then decide.</span></h2>
+      <p class="cta-sub">Subscribe, read one email, and if it doesn't make you better at your job — unsubscribe instantly. One click. No questions asked.</p>
+      <form class="sub-form" id="form-cta" style="margin:0 auto .85rem;">
         <input type="email" id="email-cta" placeholder="Your email address" required autocomplete="email" />
         <button type="submit">Subscribe free &rarr;</button>
       </form>
-      <div class="trust-row">
-        <span>
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          Free forever
-        </span>
-        <span>
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          No spam
-        </span>
-        <span>
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          Unsubscribe anytime
-        </span>
-      </div>
+      <p class="cta-guarantee">Free forever &nbsp;&middot;&nbsp; 5-minute read &nbsp;&middot;&nbsp; 2&times; a week</p>
     </div>
   </section>
 
@@ -391,6 +511,8 @@
 
   <script>
     document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // Subscribe
     function subscribe(emailId) {
       const v = document.getElementById(emailId).value.trim();
       if (!v) return;
@@ -402,6 +524,47 @@
     document.getElementById('form-cta').addEventListener('submit', function(e) {
       e.preventDefault(); subscribe('email-cta');
     });
+
+    // Rotating quotes
+    const quotes = [
+      { text: "He communicates complex concepts and processes in a simple and useful way. Our teams find his workshops dynamic, enjoyable and directly relevant for their work.", author: "Hernan Sanchez Neira", role: "Business Transformation Executive & AI Expert" },
+      { text: "What I like most is that it is very straight to the point, easy to understand and practical — something we have always found lacking in the field.", author: "Amy Chen", role: "Global Marketing, Häagen-Dazs / General Mills" },
+      { text: "It's not every day that you come across an instructor who is also an excellent coach. Any learner would be fortunate to have a mentor like Sotirios.", author: "Geetha Boyani", role: "Strategic Performance Marketing, ACLP Certified Trainer" },
+      { text: "He took the fear and mystery out of digital marketing with his calm, patient approach. I'd recommend any startup team to kick off their digital marketing journey with Sotirios.", author: "Jingjin Liu", role: "Founder & CEO, TEDx Speaker" }
+    ];
+
+    let current = 0;
+    const qtEl = document.getElementById('qt');
+    const qaEl = document.getElementById('qa');
+    const dotsEl = document.getElementById('qdots');
+
+    function buildDots() {
+      quotes.forEach((_, i) => {
+        const d = document.createElement('div');
+        d.className = 'quote-dot' + (i === 0 ? ' active' : '');
+        d.addEventListener('click', () => showQuote(i));
+        dotsEl.appendChild(d);
+      });
+    }
+
+    function showQuote(idx) {
+      qtEl.style.opacity = '0';
+      qaEl.style.opacity = '0';
+      setTimeout(() => {
+        current = idx;
+        qtEl.textContent = quotes[idx].text;
+        qaEl.innerHTML = quotes[idx].author + ' &nbsp;<span>· ' + quotes[idx].role + '</span>';
+        qtEl.style.opacity = '1';
+        qaEl.style.opacity = '1';
+        document.querySelectorAll('.quote-dot').forEach((d, i) => {
+          d.classList.toggle('active', i === idx);
+        });
+      }, 350);
+    }
+
+    buildDots();
+    showQuote(0);
+    setInterval(() => showQuote((current + 1) % quotes.length), 5000);
   </script>
 
 </body>
