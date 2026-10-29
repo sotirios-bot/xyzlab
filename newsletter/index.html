@@ -206,33 +206,46 @@
       opacity: .6;
       margin-bottom: 1.5rem;
     }
-    .quote-display {
+    .quote-track {
       max-width: 600px;
       margin: 0 auto;
-      min-height: 110px;
+      min-height: 130px;
+      position: relative;
+    }
+    .quote-slide {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+    .quote-slide.active { display: flex; }
+    .quote-slide.fade-out { animation: qout .35s ease forwards; }
+    .quote-slide.fade-in  { animation: qin  .35s ease forwards; }
+    @keyframes qout { from { opacity:1; } to { opacity:0; } }
+    @keyframes qin  { from { opacity:0; } to { opacity:1; } }
+    .quote-text {
+      font-size: 1.1rem;
+      color: var(--dark);
+      font-weight: 500;
+      line-height: 1.65;
+      font-style: italic;
+      margin-bottom: .85rem;
+    }
+    .quote-author {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      gap: .2rem;
     }
-    .quote-text {
-      font-size: 1.07rem;
-      color: var(--dark);
-      font-weight: 500;
-      line-height: 1.6;
-      font-style: italic;
-      margin-bottom: .75rem;
-      transition: opacity .4s ease;
-    }
-    .quote-text::before { content: '\201C'; }
-    .quote-text::after  { content: '\201D'; }
-    .quote-author {
-      font-size: .8rem;
+    .quote-author strong {
+      font-size: .9rem;
       font-weight: 700;
-      color: var(--mid);
-      transition: opacity .4s ease;
+      color: var(--dark);
     }
-    .quote-author span { color: var(--primary); }
+    .quote-author span {
+      font-size: .78rem;
+      color: var(--primary);
+      font-weight: 500;
+    }
     .quote-dots {
       display: flex;
       gap: .45rem;
@@ -418,9 +431,15 @@
   <section class="quotes">
     <div class="container">
       <p class="quotes-eyebrow">What readers say</p>
-      <div class="quote-display">
-        <p class="quote-text" id="qt"></p>
-        <p class="quote-author" id="qa"></p>
+      <div class="quote-track" id="qtrack">
+        <div class="quote-slide active">
+          <p class="quote-text">"Very straight to the point, easy to understand and practical — something we have always found lacking in the field."</p>
+          <div class="quote-author"><strong>Amy Chen</strong><span>Global Marketing, Häagen-Dazs / General Mills</span></div>
+        </div>
+        <div class="quote-slide">
+          <p class="quote-text">"He took the fear and mystery out of digital marketing. I'd recommend any startup team to kick off their digital marketing journey with Sotirios."</p>
+          <div class="quote-author"><strong>Jingjin Liu</strong><span>Founder &amp; CEO &nbsp;·&nbsp; TEDx Speaker</span></div>
+        </div>
       </div>
       <div class="quote-dots" id="qdots"></div>
     </div>
@@ -494,8 +513,8 @@
   <!-- FINAL CTA -->
   <section class="cta">
     <div class="container">
-      <h2>Try one issue.<br /><span class="teal">Then decide.</span></h2>
-      <p class="cta-sub">Subscribe, read one email, and if it doesn't make you better at your job — unsubscribe instantly. One click. No questions asked.</p>
+      <h2>Digital marketing moves fast.<br /><span class="teal">Stay ahead of it.</span></h2>
+      <p class="cta-sub">Google Ads updates. Meta algorithm changes. New AI tools. Platform shifts. Every week, The Walkthrough breaks it all down — so you always know what's changed and what to do next.</p>
       <form class="sub-form" id="form-cta" style="margin:0 auto .85rem;">
         <input type="email" id="email-cta" placeholder="Your email address" required autocomplete="email" />
         <button type="submit">Subscribe free &rarr;</button>
@@ -526,45 +545,35 @@
     });
 
     // Rotating quotes
-    const quotes = [
-      { text: "He communicates complex concepts and processes in a simple and useful way. Our teams find his workshops dynamic, enjoyable and directly relevant for their work.", author: "Hernan Sanchez Neira", role: "Business Transformation Executive & AI Expert" },
-      { text: "What I like most is that it is very straight to the point, easy to understand and practical — something we have always found lacking in the field.", author: "Amy Chen", role: "Global Marketing, Häagen-Dazs / General Mills" },
-      { text: "It's not every day that you come across an instructor who is also an excellent coach. Any learner would be fortunate to have a mentor like Sotirios.", author: "Geetha Boyani", role: "Strategic Performance Marketing, ACLP Certified Trainer" },
-      { text: "He took the fear and mystery out of digital marketing with his calm, patient approach. I'd recommend any startup team to kick off their digital marketing journey with Sotirios.", author: "Jingjin Liu", role: "Founder & CEO, TEDx Speaker" }
-    ];
-
-    let current = 0;
-    const qtEl = document.getElementById('qt');
-    const qaEl = document.getElementById('qa');
+    const slides = Array.from(document.querySelectorAll('.quote-slide'));
     const dotsEl = document.getElementById('qdots');
+    let cur = 0, timer;
 
-    function buildDots() {
-      quotes.forEach((_, i) => {
-        const d = document.createElement('div');
-        d.className = 'quote-dot' + (i === 0 ? ' active' : '');
-        d.addEventListener('click', () => showQuote(i));
-        dotsEl.appendChild(d);
-      });
-    }
+    slides.forEach((_, i) => {
+      const d = document.createElement('div');
+      d.className = 'quote-dot' + (i === 0 ? ' active' : '');
+      d.addEventListener('click', () => { clearInterval(timer); goTo(i); startTimer(); });
+      dotsEl.appendChild(d);
+    });
 
-    function showQuote(idx) {
-      qtEl.style.opacity = '0';
-      qaEl.style.opacity = '0';
+    function goTo(next) {
+      const prev = cur;
+      if (next === prev) return;
+      slides[prev].classList.add('fade-out');
       setTimeout(() => {
-        current = idx;
-        qtEl.textContent = quotes[idx].text;
-        qaEl.innerHTML = quotes[idx].author + ' &nbsp;<span>· ' + quotes[idx].role + '</span>';
-        qtEl.style.opacity = '1';
-        qaEl.style.opacity = '1';
-        document.querySelectorAll('.quote-dot').forEach((d, i) => {
-          d.classList.toggle('active', i === idx);
-        });
+        slides[prev].classList.remove('active', 'fade-out');
+        cur = next;
+        slides[cur].classList.add('active', 'fade-in');
+        setTimeout(() => slides[cur].classList.remove('fade-in'), 360);
+        document.querySelectorAll('.quote-dot').forEach((d, i) => d.classList.toggle('active', i === cur));
       }, 350);
     }
 
-    buildDots();
-    showQuote(0);
-    setInterval(() => showQuote((current + 1) % quotes.length), 5000);
+    function startTimer() {
+      timer = setInterval(() => goTo((cur + 1) % slides.length), 5000);
+    }
+
+    startTimer();
   </script>
 
 </body>
