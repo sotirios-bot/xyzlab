@@ -169,6 +169,18 @@
     .trust-row span { display: flex; align-items: center; gap: .3rem; }
     .trust-row svg { color: var(--primary); }
 
+    /* ── SUBSCRIBE BOX ── */
+    .sub-box {
+      background: #fff;
+      border: 2px solid rgba(8,191,173,.35);
+      border-radius: 16px;
+      padding: 1.6rem 1.5rem 1.3rem;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 0 4px 32px rgba(8,191,173,.15), 0 1px 4px rgba(0,0,0,.04);
+    }
+    .sub-box .sub-form { margin-bottom: .75rem; }
+
     /* ── BENEFITS ── */
     .benefits {
       padding: 2.75rem 1.25rem;
@@ -431,12 +443,13 @@
       <strong>The Walkthrough</strong> delivers practical tutorials, platform updates and AI tools straight to your inbox. Google Ads, Meta Ads, TikTok Ads, LinkedIn Ads, Analytics and more.
     </p>
 
-    <form class="sub-form" id="form-hero">
-      <input type="email" id="email-hero" placeholder="Your email address" required autocomplete="email" />
-      <button type="submit">Subscribe free &rarr;</button>
-    </form>
+    <div class="sub-box">
+      <form class="sub-form" id="form-hero">
+        <input type="email" id="email-hero" placeholder="Your email address" required autocomplete="email" />
+        <button type="submit">Subscribe free &rarr;</button>
+      </form>
 
-    <div class="trust-row">
+      <div class="trust-row">
       <span>
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
         Free forever
@@ -446,6 +459,7 @@
         Straight to the point
       </span>
     </div>
+    </div><!-- /sub-box -->
   </section>
 
   <!-- BENEFITS -->
