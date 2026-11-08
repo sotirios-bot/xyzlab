@@ -8,6 +8,7 @@
     <priority>1.0</priority>
   </url>
   <url><loc>https://xyzlab.com/newsletter/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xyzlab.com/request-tutorial/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
 
 </urlset>
