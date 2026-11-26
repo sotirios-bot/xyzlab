@@ -11,13 +11,13 @@
   <url><loc>https://xyzlab.com/request-tutorial/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Templates & Tools -->
-  <url><loc>https://xyzlab.com/google-ads/report-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://xyzlab.com/google-ads/reporting-dashboard-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://xyzlab.com/meta-ads/report-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://xyzlab.com/google-analytics/report-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://xyzlab.com/ai/search-visibility-audit-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://xyzlab.com/ai/traffic-tracking-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://xyzlab.com/tools/utm-builder/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xyzlab.com/google-ads-report-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xyzlab.com/google-ads-reporting-dashboard-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xyzlab.com/meta-ads-report-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xyzlab.com/google-analytics-report-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xyzlab.com/ai-search-visibility-audit-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xyzlab.com/ai-traffic-tracking-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://xyzlab.com/utm-builder/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Legal -->
   <url><loc>https://xyzlab.com/terms/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
