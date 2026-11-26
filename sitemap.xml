@@ -10,5 +10,11 @@
   <url><loc>https://xyzlab.com/newsletter/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://xyzlab.com/request-tutorial/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
+  <!-- Templates -->
+  <url><loc>https://xyzlab.com/google-ads/report-template/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Legal -->
+  <url><loc>https://xyzlab.com/terms/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
 
 </urlset>
