@@ -284,6 +284,16 @@
 
 ## Report Templates
 
+- [Google Ads Report Template](https://xyzlab.com/google-ads-report-template/): Free Google Ads report template to track campaign performance, spend, conversions and ROAS.
+- [Google Ads Reporting Dashboard](https://xyzlab.com/google-ads-reporting-dashboard-template/): Free Looker Studio dashboard template for Google Ads reporting with live data connection.
+- [Meta Ads Report Template](https://xyzlab.com/meta-ads-report-template/): Free Meta Ads reporting dashboard for Facebook and Instagram campaign performance.
+- [Google Analytics Report Template](https://xyzlab.com/google-analytics-report-template/): Free GA4 reporting dashboard template built in Looker Studio with traffic and behaviour metrics.
+- [AI Search Visibility Audit Template](https://xyzlab.com/ai-search-visibility-audit-template/): Free template to audit how well your website appears in AI-generated search results and answer engines.
+- [AI Traffic Tracking Template](https://xyzlab.com/ai-traffic-tracking-template/): Free GA4 setup template to track and segment traffic from ChatGPT, Perplexity, Gemini and other AI tools.
+
+## Tools
+
+- [UTM Builder](https://xyzlab.com/utm-builder/): Free UTM parameter builder to create and manage campaign tracking links for any marketing channel.
 
 ## For Startups
 

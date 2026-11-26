@@ -35,6 +35,15 @@ Allow: /
 User-agent: DuckAssistBot
 Allow: /
 
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
 User-agent: Googlebot
 Allow: /
 

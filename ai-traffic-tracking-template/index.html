@@ -56,6 +56,14 @@
       { "@type": "Question", "name": "Do I need Google Tag Manager?", "acceptedAnswer": { "@type": "Answer", "text": "No. The core setup works in GA4 alone. Google Tag Manager is only needed for advanced event tracking." } },
       { "@type": "Question", "name": "Is the template free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. It includes the GA4 setup steps, the regex rule and a monthly AI traffic report sheet." } }
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://xyzlab.com/" },
+      { "@type": "ListItem", "position": 2, "name": "AI Traffic Tracking Template", "item": "https://xyzlab.com/ai-traffic-tracking-template/" }
+    ]
   }
   ]
   </script>
@@ -170,7 +178,7 @@
 
   <div class="page-wrap">
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Home</a><span>›</span><a href="#">AI</a><span>›</span>AI Traffic Tracking Template
+      <a href="/">Home</a><span>›</span>AI Traffic Tracking Template
     </nav>
 
     <section class="tmpl-hero">
@@ -235,6 +243,30 @@
         <div class="how-step"><div class="how-step-num">3</div><div class="how-step-body"><h3>Verify the setup</h3><p>In GA4, go to Reports &gt; Acquisition &gt; Traffic acquisition and switch the dimension to Session default channel group. If set up correctly, AI Assistants will appear as a row once you have AI traffic.</p></div></div>
         <div class="how-step"><div class="how-step-num">4</div><div class="how-step-body"><h3>Track monthly in the report sheet</h3><p>Copy your AI Assistants data from GA4 each month and paste it into the Monthly Report Sheet. The sheet tracks trends and flags months where AI traffic grows or drops sharply.</p></div></div>
       </div>
+    </section>
+
+    <section class="content-section" aria-label="Who this template is for">
+      <h2>Who is this AI traffic tracking template for?</h2>
+      <p>This template is for digital marketers, SEOs and analysts who want to measure how much traffic their website is receiving from AI assistants and AI search tools — and track whether that number is growing over time. As AI tools increasingly link to external sources, the ability to measure AI-referred traffic is becoming a standard part of digital reporting.</p>
+      <ul>
+        <li><strong>SEOs and content marketers</strong> who want to measure the impact of AEO efforts on referral traffic</li>
+        <li><strong>Analytics practitioners</strong> who want a clean GA4 setup for AI traffic without building the channel group from scratch</li>
+        <li><strong>Digital agencies</strong> adding AI traffic as a channel to monthly client reports</li>
+        <li><strong>Marketing leads</strong> who need to report on AI-referred traffic to leadership alongside traditional channels</li>
+      </ul>
+    </section>
+
+    <section class="content-section" aria-label="What a good AI traffic tracking setup should include">
+      <h2>What should a good AI traffic tracking setup include?</h2>
+      <p>Tracking AI traffic reliably in GA4 requires more than just checking the referrals report. Here's what a complete setup looks like:</p>
+      <ul>
+        <li><strong>Custom channel group</strong> — An "AI Assistants" channel group in GA4 Admin that separates AI traffic from generic referral</li>
+        <li><strong>Regex rule</strong> — A source filter that captures all major AI referral domains with a single rule</li>
+        <li><strong>UTM parameter recognition</strong> — Handling of utm_source=chatgpt.com and similar UTM-tagged AI links</li>
+        <li><strong>Monthly tracking sheet</strong> — A structured log of AI traffic by month so you can spot trends over time</li>
+        <li><strong>Quality metrics</strong> — Engaged sessions, engagement rate and conversion rate from AI traffic, not just raw sessions</li>
+        <li><strong>Landing page breakdown</strong> — Which pages AI tools are sending traffic to, and how those visitors behave</li>
+      </ul>
     </section>
 
     <section class="content-section">

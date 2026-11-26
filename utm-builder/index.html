@@ -28,6 +28,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
   <script type="application/ld+json">
+  [
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
@@ -37,8 +38,31 @@
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-    "author": { "@type": "Organization", "name": "XYZ Lab", "url": "https://xyzlab.com" }
+    "author": { "@type": "Person", "name": "Sotirios Seridis", "jobTitle": "Founder, XYZ Lab", "url": "https://xyzlab.com" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What is a UTM parameter?", "acceptedAnswer": { "@type": "Answer", "text": "A UTM parameter is a tag added to a URL that tells Google Analytics 4 where a visitor came from. The five parameters are utm_source (e.g. google), utm_medium (e.g. cpc), utm_campaign (the campaign name), utm_term (keyword) and utm_content (ad variant). When someone clicks a tagged link, GA4 records the values against their session." } },
+      { "@type": "Question", "name": "What are the five UTM parameters?", "acceptedAnswer": { "@type": "Answer", "text": "The five UTM parameters are: utm_source (where traffic comes from, e.g. google or newsletter), utm_medium (the channel type, e.g. cpc or email), utm_campaign (the campaign name), utm_term (the paid search keyword, optional) and utm_content (the ad variant, optional). Only the first three are required." } },
+      { "@type": "Question", "name": "Do UTM parameters affect SEO?", "acceptedAnswer": { "@type": "Answer", "text": "UTM parameters do not directly affect your search rankings, but they do affect how Google sees your URLs. If UTM-tagged pages are indexed, it can create duplicate content. Add a canonical tag pointing to the clean URL, or use the URL parameters tool in Google Search Console to tell Google to ignore them." } },
+      { "@type": "Question", "name": "Should UTM values be lowercase?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. UTM parameter values are case-sensitive in Google Analytics 4. 'Google' and 'google' are recorded as two separate sources. Always use lowercase and use hyphens instead of spaces or underscores for readability." } },
+      { "@type": "Question", "name": "Can I use UTM parameters on internal links?", "acceptedAnswer": { "@type": "Answer", "text": "No. Adding UTM parameters to links within your own website resets the session source in GA4, overwriting the original acquisition data. Only use UTM parameters on external links — in ads, emails, social posts and other off-site placements." } },
+      { "@type": "Question", "name": "What is the difference between utm_source and utm_medium?", "acceptedAnswer": { "@type": "Answer", "text": "utm_source is the specific origin of traffic (e.g. google, meta, your-newsletter-name). utm_medium is the category of channel (e.g. cpc, email, organic-social). GA4 uses utm_medium to map sessions to default channel groups like Paid Search, Email and Organic Social." } },
+      { "@type": "Question", "name": "How do I track UTM traffic in GA4?", "acceptedAnswer": { "@type": "Answer", "text": "In GA4, go to Reports > Acquisition > Traffic acquisition. Change the dimension to Session source/medium or Session campaign. All sessions from UTM-tagged links appear here, broken down by the values you used." } },
+      { "@type": "Question", "name": "Is this UTM builder free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The UTM builder is completely free and requires no sign-up. Your last 10 generated URLs are saved in your browser's local storage for quick reference." } }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://xyzlab.com/" },
+      { "@type": "ListItem", "position": 2, "name": "UTM Builder", "item": "https://xyzlab.com/utm-builder/" }
+    ]
   }
+  ]
   </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -113,6 +137,21 @@
     .utm-params-table tr:nth-child(even) td { background: var(--light); }
     .utm-params-table code { font-family: 'Courier New', monospace; font-size: .85em; background: rgba(8,191,173,.1); padding: .1rem .35rem; border-radius: 3px; color: var(--dark); }
     @media (max-width: 600px) { .utm-grid { grid-template-columns: 1fr; } .utm-field.full { grid-column: 1; } .copy-row { flex-direction: column; align-items: flex-start; } }
+
+    .author-section { display: flex; gap: 1.25rem; padding: 2rem 0; border-top: 1px solid var(--border); align-items: flex-start; }
+    .author-avatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+    .author-info h3 { font-size: 1rem; font-weight: 800; color: var(--dark); margin-bottom: .2rem; }
+    .author-title { font-size: .82rem; color: var(--primary); font-weight: 600; margin-bottom: .5rem; }
+    .author-info p { font-size: .92rem; color: var(--mid); line-height: 1.65; }
+    .faq-list { display: flex; flex-direction: column; gap: .75rem; margin-top: 1rem; }
+    .faq-item { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+    .faq-q { font-size: .97rem; font-weight: 700; color: var(--dark); padding: .9rem 1.1rem; cursor: pointer; }
+    .faq-a { font-size: .93rem; color: var(--mid); padding: 0 1.1rem .9rem; line-height: 1.65; }
+    .bottom-cta { background: var(--dark); color: #fff; padding: 3.5rem 1.25rem; text-align: center; }
+    .bottom-cta h2 { font-size: 1.6rem; font-weight: 900; margin-bottom: .6rem; }
+    .bottom-cta p { font-size: 1.05rem; opacity: .75; margin-bottom: 1.5rem; }
+    .dl-btn { display: inline-block; background: var(--primary); color: #fff; border: none; border-radius: 8px; padding: .85rem 2rem; font-size: 1rem; font-weight: 700; font-family: inherit; cursor: pointer; text-decoration: none; }
+    .dl-btn:hover { background: var(--primary-dark); text-decoration: none; }
   </style>
 </head>
 <body>
@@ -145,7 +184,7 @@
 
   <div class="page-wrap">
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Home</a><span>›</span><a href="#">Tools</a><span>›</span>UTM Builder
+      <a href="/">Home</a><span>›</span>UTM Builder
     </nav>
 
     <section class="tool-hero">
@@ -264,7 +303,38 @@
       <p><strong>Email newsletter:</strong> source=<code>newsletter</code> · medium=<code>email</code> · campaign=<code>november-2025</code> · content=<code>cta-top</code></p>
       <p><strong>Organic social (LinkedIn, Instagram, etc.):</strong> source=<code>linkedin</code> · medium=<code>organic-social</code> · campaign=<code>post-topic</code></p>
     </section>
+
+    <div class="author-section">
+      <img src="/instructor.png" alt="Sotirios Seridis" class="author-avatar" />
+      <div class="author-info">
+        <h3>Sotirios Seridis</h3>
+        <div class="author-title">Founder, XYZ Lab &nbsp;·&nbsp; Digital Marketing Practitioner</div>
+        <p>Sotirios is a digital marketing practitioner with hands-on experience across Google Ads, Meta Ads, SEO and analytics. He built this UTM builder to give marketers a fast, no-friction way to generate tracking links that work correctly with GA4 — without the guesswork around naming conventions.</p>
+      </div>
+    </div>
+
+    <section class="content-section" aria-label="FAQ">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item"><div class="faq-q">What is a UTM parameter?</div><div class="faq-a">A UTM parameter is a tag added to a URL that tells Google Analytics 4 where a visitor came from. The five parameters are utm_source (e.g. google), utm_medium (e.g. cpc), utm_campaign (the campaign name), utm_term (keyword) and utm_content (ad variant). When someone clicks a tagged link, GA4 records the values against their session.</div></div>
+        <div class="faq-item"><div class="faq-q">What are the five UTM parameters?</div><div class="faq-a">The five UTM parameters are: utm_source (where traffic comes from, e.g. google or newsletter), utm_medium (the channel type, e.g. cpc or email), utm_campaign (the campaign name), utm_term (the paid search keyword, optional) and utm_content (the ad variant, optional). Only the first three are required.</div></div>
+        <div class="faq-item"><div class="faq-q">Do UTM parameters affect SEO?</div><div class="faq-a">UTM parameters do not directly affect your search rankings, but they do affect how Google sees your URLs. If UTM-tagged pages are indexed, it can create duplicate content. Add a canonical tag pointing to the clean URL, or use the URL parameters tool in Google Search Console to tell Google to ignore them.</div></div>
+        <div class="faq-item"><div class="faq-q">Should UTM values be lowercase?</div><div class="faq-a">Yes. UTM parameter values are case-sensitive in Google Analytics 4. "Google" and "google" are recorded as two separate sources. Always use lowercase and use hyphens instead of spaces or underscores for readability.</div></div>
+        <div class="faq-item"><div class="faq-q">Can I use UTM parameters on internal links?</div><div class="faq-a">No. Adding UTM parameters to links within your own website resets the session source in GA4, overwriting the original acquisition data. Only use UTM parameters on external links — in ads, emails, social posts and other off-site placements.</div></div>
+        <div class="faq-item"><div class="faq-q">What is the difference between utm_source and utm_medium?</div><div class="faq-a">utm_source is the specific origin of traffic (e.g. google, meta, your-newsletter-name). utm_medium is the category of channel (e.g. cpc, email, organic-social). GA4 uses utm_medium to map sessions to default channel groups like Paid Search, Email and Organic Social.</div></div>
+        <div class="faq-item"><div class="faq-q">How do I track UTM traffic in GA4?</div><div class="faq-a">In GA4, go to Reports > Acquisition > Traffic acquisition. Change the dimension to Session source/medium or Session campaign. All sessions from UTM-tagged links appear here, broken down by the values you used.</div></div>
+        <div class="faq-item"><div class="faq-q">Is this UTM builder free?</div><div class="faq-a">Yes. The UTM builder is completely free and requires no sign-up. Your last 10 generated URLs are saved in your browser's local storage for quick reference.</div></div>
+      </div>
+    </section>
   </div>
+
+  <section class="bottom-cta">
+    <div class="page-wrap">
+      <h2>Get The Walkthrough — free weekly marketing newsletter</h2>
+      <p>Practical breakdowns of what's working in paid ads, SEO and analytics. No fluff, unsubscribe any time.</p>
+      <a href="https://xyzlab.beehiiv.com/" target="_blank" rel="noopener" class="dl-btn">Subscribe Free →</a>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container footer-inner">
