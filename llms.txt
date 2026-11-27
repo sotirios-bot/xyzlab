@@ -296,6 +296,11 @@
 ## Tools
 
 - [UTM Builder](https://xyzlab.com/utm-builder/): Free UTM parameter builder to create and manage campaign tracking links for any marketing channel.
+- [Google Ads Preview](https://xyzlab.com/google-ads-preview/): Live Google Ads preview tool — test headlines, descriptions and display URLs in a real SERP mock before launching.
+- [Meta Ads Preview](https://xyzlab.com/meta-ads-preview/): Preview Meta ads across Facebook Feed, Instagram Feed and Facebook Story placements in real time.
+- [LinkedIn Ads Preview](https://xyzlab.com/linkedin-ads-preview/): See how your LinkedIn sponsored content ad will look in the feed before publishing.
+- [ChatGPT Ads Preview](https://xyzlab.com/chatgpt-ads-preview/): Preview ChatGPT-style sponsored ads with brand name, headline, body copy and CTA.
+- [QR Code Generator](https://xyzlab.com/qr-code-generator/): Free QR code generator — enter any URL and download a PNG QR code instantly, no sign-up required.
 
 ## For Startups
 
