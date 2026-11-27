@@ -35,8 +35,6 @@
     "name": "Free Campaign UTM Builder",
     "description": "Free UTM parameter generator for digital marketing campaigns. Build GA4-compatible UTM-tagged URLs for Google Ads, Meta Ads, email and social campaigns.",
     "url": "https://xyzlab.com/utm-builder/",
-    "datePublished": "2026-11-26",
-    "dateModified": "2026-11-26",
     "author": { "@type": "Person", "name": "Sotirios Seridis", "jobTitle": "Founder, XYZ Lab", "url": "https://xyzlab.com" },
     "publisher": { "@type": "Organization", "name": "XYZ Lab", "url": "https://xyzlab.com" }
   },
@@ -89,14 +87,12 @@
     .breadcrumb span { margin: 0 .4rem; opacity: .5; }
 
     /* Tool area */
-    .tool-hero { padding: 2.25rem 0 2rem; border-bottom: 1px solid var(--border); }
-    .tmpl-badge { display: inline-flex; align-items: center; gap: .4rem; background: rgba(8,191,173,.1); color: var(--primary); border: 1px solid rgba(8,191,173,.25); border-radius: 100px; font-size: .7rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; padding: .3rem .9rem; margin-bottom: 1rem; }
+    .tool-hero { padding: 2.25rem 0 2rem; border-bottom: 1px solid var(--border); text-align: center; }
     .tool-hero h1 { font-size: clamp(1.75rem, 4vw, 2.6rem); font-weight: 900; color: var(--dark); line-height: 1.18; margin-bottom: .7rem; }
     .tool-hero h1 .highlight { color: var(--primary); }
-    .tmpl-meta { font-size: .78rem; color: var(--mid); margin-bottom: .9rem; opacity: .9; }
-    .tool-hero p { font-size: 1.05rem; color: var(--mid); line-height: 1.6; max-width: 600px; }
+    .tool-hero p { font-size: 1.05rem; color: var(--mid); line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto; }
 
-    .utm-tool { background: var(--light); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; margin: 2rem 0; }
+    .utm-tool { background: var(--light); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; max-width: 640px; margin: 2rem auto; }
     .utm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.5rem; }
     .utm-field { display: flex; flex-direction: column; gap: .3rem; }
     .utm-field.full { grid-column: 1 / -1; }
@@ -149,6 +145,11 @@
     .utm-params-table tr:nth-child(even) td { background: var(--light); }
     .utm-params-table code { font-family: 'Courier New', monospace; font-size: .85em; background: rgba(8,191,173,.1); padding: .1rem .35rem; border-radius: 3px; color: var(--dark); }
     @media (max-width: 600px) { .utm-grid { grid-template-columns: 1fr; } .utm-field.full { grid-column: 1; } .copy-row { flex-direction: column; align-items: flex-start; } }
+    .includes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1.1rem; }
+    .include-card { background: var(--light); border: 1px solid var(--border); border-radius: 10px; padding: 1.1rem 1.2rem; }
+    .include-card .ic-icon { font-size: 1.5rem; margin-bottom: .5rem; }
+    .include-card h3 { font-size: .92rem; font-weight: 700; color: var(--dark); margin-bottom: .3rem; }
+    .include-card p { font-size: .82rem; color: var(--mid); line-height: 1.5; margin: 0; }
 
     .author-section { display: flex; gap: 1.25rem; padding: 2rem 0; border-top: 1px solid var(--border); align-items: flex-start; }
     .author-avatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
@@ -200,10 +201,8 @@
     </nav>
 
     <section class="tool-hero">
-      <div class="tmpl-badge">Free Tool — No Sign-Up</div>
       <h1>Campaign <span class="highlight">UTM Builder</span></h1>
-      <p class="tmpl-meta">Free tool · Used by digital marketers worldwide</p>
-      <p>Generate UTM-tagged URLs for any campaign. Build, copy and track in Google Analytics 4 — no sign-up required. Your last 10 URLs are saved locally in your browser.</p>
+      <p>Generate <strong>UTM-tagged URLs for any campaign</strong> in seconds. No sign-up required — build, copy and track in Google Analytics 4 instantly.</p>
     </section>
 
     <div class="utm-tool" id="utm-tool">
@@ -217,13 +216,13 @@
 
           <div class="utm-field">
             <label for="utm-source">utm_source <span class="req">*</span></label>
-            <input type="text" id="utm-source" placeholder="google / meta / newsletter" autocomplete="off" />
+            <input type="text" id="utm-source" placeholder="google / meta / newsletter" autocomplete="off" list="source-list" />
             <span class="hint">Where traffic comes from.</span>
           </div>
 
           <div class="utm-field">
             <label for="utm-medium">utm_medium <span class="req">*</span></label>
-            <input type="text" id="utm-medium" placeholder="cpc / email / social" autocomplete="off" />
+            <input type="text" id="utm-medium" placeholder="cpc / email / social" autocomplete="off" list="medium-list" />
             <span class="hint">The marketing channel type.</span>
           </div>
 
@@ -250,6 +249,33 @@
           <button type="submit" class="btn-build">Build UTM URL →</button>
           <button type="button" class="btn-clear" id="btn-clear-form">Clear</button>
         </div>
+        <datalist id="source-list">
+          <option value="google">
+          <option value="meta">
+          <option value="linkedin">
+          <option value="tiktok">
+          <option value="reddit">
+          <option value="newsletter">
+          <option value="email">
+          <option value="bing">
+          <option value="youtube">
+          <option value="twitter">
+          <option value="pinterest">
+          <option value="organic">
+        </datalist>
+        <datalist id="medium-list">
+          <option value="cpc">
+          <option value="email">
+          <option value="organic">
+          <option value="referral">
+          <option value="social">
+          <option value="display">
+          <option value="affiliate">
+          <option value="video">
+          <option value="banner">
+          <option value="cpm">
+          <option value="newsletter">
+        </datalist>
       </form>
 
       <div class="output-box" id="output-box">
@@ -300,14 +326,12 @@
 
     <section class="content-section">
       <h2>UTM Best Practices</h2>
-      <ul>
-        <li><strong>Use lowercase only.</strong> UTM values are case-sensitive in GA4. <code>Google</code> and <code>google</code> appear as two separate sources.</li>
-        <li><strong>Use hyphens, not spaces or underscores.</strong> Spaces in URLs become <code>%20</code> and underscores are harder to scan. Hyphens keep URLs readable.</li>
-        <li><strong>Be consistent with medium values.</strong> Decide on a naming convention (e.g. <code>cpc</code> not <code>paid</code>) and stick to it. Inconsistent mediums break channel grouping in GA4.</li>
-        <li><strong>Don't use UTMs on internal links.</strong> Adding UTM parameters to links within your own site resets the session source and attribution in GA4 — it only belongs on external links.</li>
-        <li><strong>Use utm_content to A/B test ads.</strong> If you have two versions of the same ad, give each a different <code>utm_content</code> value. You'll see which creative drives more conversions in GA4.</li>
-        <li><strong>Store your UTM links.</strong> Keep a master log of your tagged URLs so you can maintain naming consistency across campaigns. Use the history below as a quick reference.</li>
-      </ul>
+      <div class="includes-grid">
+        <div class="include-card"><div class="ic-icon">🔡</div><h3>Use lowercase only</h3><p>UTM values are case-sensitive in GA4. <code>Google</code> and <code>google</code> appear as two separate sources.</p></div>
+        <div class="include-card"><div class="ic-icon">🔗</div><h3>Use hyphens, not spaces</h3><p>Hyphens keep URLs readable. Spaces become <code>%20</code> and underscores are harder to scan at a glance.</p></div>
+        <div class="include-card"><div class="ic-icon">🔄</div><h3>Be consistent with mediums</h3><p>Decide on a convention (e.g. <code>cpc</code> not <code>paid</code>) and stick to it. Inconsistent mediums break GA4 channel grouping.</p></div>
+        <div class="include-card"><div class="ic-icon">🚫</div><h3>Don't UTM internal links</h3><p>Adding UTMs to links within your own site resets session attribution in GA4. Use only on external links.</p></div>
+      </div>
     </section>
 
     <section class="content-section">
@@ -321,14 +345,14 @@
     <div class="author-section">
       <img src="/instructor.png" alt="Sotirios Seridis" class="author-avatar" />
       <div class="author-info">
-        <h3>Sotirios Seridis</h3>
-        <div class="author-title">Founder, XYZ Lab &nbsp;·&nbsp; Digital Marketing Practitioner</div>
-        <p>Sotirios is a digital marketing practitioner with hands-on experience across Google Ads, Meta Ads, SEO and analytics. He built this UTM builder to give marketers a fast, no-friction way to generate tracking links that work correctly with GA4 — without the guesswork around naming conventions.</p>
+        <h3><a href="https://www.linkedin.com/in/sotirios-seridis/" target="_blank" rel="noopener">Sotirios Seridis</a></h3>
+        <div class="author-title">Founder, XYZ Lab</div>
+        <p>Sotirios Seridis is the creator of this tool.</p>
       </div>
     </div>
 
     <section class="content-section" aria-label="Related templates">
-      <h2>More free templates</h2>
+      <h2>Digital marketing templates</h2>
       <div class="includes-grid">
         <div class="include-card"><div class="ic-icon">🤖</div><h3><a href="/ai-traffic-tracking-template/">AI Traffic Tracking</a></h3><p>Measure visits from ChatGPT, Perplexity and Gemini in GA4 with a custom channel group and monthly report.</p></div>
         <div class="include-card"><div class="ic-icon">📈</div><h3><a href="/google-analytics-report-template/">GA4 Reporting Dashboard</a></h3><p>Sessions, engaged sessions, channel breakdowns and conversion tracking — built for GA4 from scratch.</p></div>
@@ -337,27 +361,19 @@
     </section>
 
     <section class="content-section" aria-label="FAQ">
-      <h2>Frequently Asked Questions</h2>
+      <h2>Frequently asked questions on UTM tags</h2>
       <div class="faq-list">
-        <div class="faq-item"><div class="faq-q">What is a UTM parameter?</div><div class="faq-a">A UTM parameter is a tag added to a URL that tells Google Analytics 4 where a visitor came from. The five parameters are utm_source (e.g. google), utm_medium (e.g. cpc), utm_campaign (the campaign name), utm_term (keyword) and utm_content (ad variant). When someone clicks a tagged link, GA4 records the values against their session.</div></div>
-        <div class="faq-item"><div class="faq-q">What are the five UTM parameters?</div><div class="faq-a">The five UTM parameters are: utm_source (where traffic comes from, e.g. google or newsletter), utm_medium (the channel type, e.g. cpc or email), utm_campaign (the campaign name), utm_term (the paid search keyword, optional) and utm_content (the ad variant, optional). Only the first three are required.</div></div>
-        <div class="faq-item"><div class="faq-q">Do UTM parameters affect SEO?</div><div class="faq-a">UTM parameters do not directly affect your search rankings, but they do affect how Google sees your URLs. If UTM-tagged pages are indexed, it can create duplicate content. Add a canonical tag pointing to the clean URL, or use the URL parameters tool in Google Search Console to tell Google to ignore them.</div></div>
-        <div class="faq-item"><div class="faq-q">Should UTM values be lowercase?</div><div class="faq-a">Yes. UTM parameter values are case-sensitive in Google Analytics 4. "Google" and "google" are recorded as two separate sources. Always use lowercase and use hyphens instead of spaces or underscores for readability.</div></div>
-        <div class="faq-item"><div class="faq-q">Can I use UTM parameters on internal links?</div><div class="faq-a">No. Adding UTM parameters to links within your own website resets the session source in GA4, overwriting the original acquisition data. Only use UTM parameters on external links — in ads, emails, social posts and other off-site placements.</div></div>
-        <div class="faq-item"><div class="faq-q">What is the difference between utm_source and utm_medium?</div><div class="faq-a">utm_source is the specific origin of traffic (e.g. google, meta, your-newsletter-name). utm_medium is the category of channel (e.g. cpc, email, organic-social). GA4 uses utm_medium to map sessions to default channel groups like Paid Search, Email and Organic Social.</div></div>
-        <div class="faq-item"><div class="faq-q">How do I track UTM traffic in GA4?</div><div class="faq-a">In GA4, go to Reports > Acquisition > Traffic acquisition. Change the dimension to Session source/medium or Session campaign. All sessions from UTM-tagged links appear here, broken down by the values you used.</div></div>
-        <div class="faq-item"><div class="faq-q">Is this UTM builder free?</div><div class="faq-a">Yes. The UTM builder is completely free and requires no sign-up. Your last 10 generated URLs are saved in your browser's local storage for quick reference.</div></div>
+        <div class="faq-item"><div class="faq-q">What is a UTM parameter?</div><div class="faq-a">A UTM parameter is a tag added to a URL that tells <strong>Google Analytics 4 where a visitor came from</strong>. The five parameters are utm_source, utm_medium, utm_campaign, utm_term and utm_content. When someone clicks a tagged link, GA4 records the values against their session.</div></div>
+        <div class="faq-item"><div class="faq-q">What are the five UTM parameters?</div><div class="faq-a"><strong>utm_source</strong> (where traffic comes from), <strong>utm_medium</strong> (the channel type), utm_campaign (the campaign name), utm_term (the paid search keyword) and utm_content (the ad variant). Only the first three are required.</div></div>
+        <div class="faq-item"><div class="faq-q">Do UTM parameters affect SEO?</div><div class="faq-a">UTM parameters do not directly affect your search rankings, but <strong>they do affect how Google sees your URLs</strong>. If UTM-tagged pages are indexed, it can create duplicate content. Add a canonical tag pointing to the clean URL to prevent this.</div></div>
+        <div class="faq-item"><div class="faq-q">Should UTM values be lowercase?</div><div class="faq-a">Yes. <strong>UTM parameter values are case-sensitive in Google Analytics 4.</strong> "Google" and "google" are recorded as two separate sources. Always use lowercase and hyphens for readability.</div></div>
+        <div class="faq-item"><div class="faq-q">Can I use UTM parameters on internal links?</div><div class="faq-a">No. <strong>Adding UTM parameters to links within your own website resets the session source in GA4</strong>, overwriting the original acquisition data. Only use UTMs on external links — in ads, emails and social posts.</div></div>
+        <div class="faq-item"><div class="faq-q">What is the difference between utm_source and utm_medium?</div><div class="faq-a"><strong>utm_source</strong> is the specific origin of traffic (e.g. google, meta, your-newsletter-name). <strong>utm_medium</strong> is the category of channel (e.g. cpc, email, organic-social). GA4 uses utm_medium to map sessions to default channel groups like Paid Search and Email.</div></div>
+        <div class="faq-item"><div class="faq-q">How do I track UTM traffic in GA4?</div><div class="faq-a">In GA4, go to <strong>Reports &gt; Acquisition &gt; Traffic acquisition</strong>. Change the dimension to Session source/medium or Session campaign. All sessions from UTM-tagged links appear here, broken down by the values you used.</div></div>
+        <div class="faq-item"><div class="faq-q">Is this UTM builder free?</div><div class="faq-a">Yes. <strong>The UTM builder is completely free and requires no sign-up.</strong> Your last 10 generated URLs are saved in your browser's local storage for quick reference.</div></div>
       </div>
     </section>
   </div>
-
-  <section class="bottom-cta">
-    <div class="page-wrap">
-      <h2>Get The Walkthrough — free weekly marketing newsletter</h2>
-      <p>Practical breakdowns of what's working in paid ads, SEO and analytics. No fluff, unsubscribe any time.</p>
-      <a href="https://xyzlab.beehiiv.com/" target="_blank" rel="noopener" class="dl-btn">Subscribe Free →</a>
-    </div>
-  </section>
 
   <footer class="footer">
     <div class="container footer-inner">
@@ -380,6 +396,26 @@
     </div>
     <div class="footer-bottom"><div class="container"><p>&copy; <span id="year"></span> XYZ Lab Pte. Ltd. All rights reserved.</p><p style="margin-top:.35rem;font-size:.78rem;opacity:.6;">XYZ LAB PTE. LTD. &nbsp;&middot;&nbsp; 160 Robinson Road, #14-04, Singapore Business Federation Center, Singapore (068914) &nbsp;&middot;&nbsp; <a href="mailto:hello@xyzlab.com" style="color:inherit;">hello@xyzlab.com</a></p></div></div>
   </footer>
+
+  <!-- FLOATING BUTTONS -->
+  <div class="floating-btns">
+    <a class="floating-btn floating-btn--booking" href="/#contact">
+      <span>Let&#8217;s Talk</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    </a>
+    <a class="floating-btn floating-btn--whatsapp" href="https://wa.me/6594260742" target="_blank" rel="noopener">
+      <span>WhatsApp</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <a class="floating-btn floating-btn--youtube" href="https://www.youtube.com/@xyzl" target="_blank" rel="noopener">
+      <span>YouTube</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+    </a>
+    <a class="floating-btn floating-btn--newsletter" href="https://xyzlab.beehiiv.com/" target="_blank" rel="noopener">
+      <span>Newsletter</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+    </a>
+  </div>
 
   <script src="/main.js"></script>
   <script>
