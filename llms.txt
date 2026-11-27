@@ -286,6 +286,7 @@
 
 - [Google Ads Report Template](https://xyzlab.com/google-ads-report-template/): Free Google Ads report template to track campaign performance, spend, conversions and ROAS.
 - [ChatGPT Ads Report Template](https://xyzlab.com/chatgpt-ads-report-template/): Free ChatGPT Ads report template to track sponsored placement performance, impressions, clicks, conversions and CPR.
+- [LinkedIn Ads Report Template](https://xyzlab.com/linkedin-ads-report-template/): Free LinkedIn Ads report template to track sponsored content performance, impressions, clicks, leads, CPL and CPC.
 - [Meta Ads Report Template](https://xyzlab.com/meta-ads-report-template/): Free Meta Ads reporting dashboard for Facebook and Instagram campaign performance.
 - [Google Analytics Report Template](https://xyzlab.com/google-analytics-report-template/): Free GA4 reporting dashboard template built in Looker Studio with traffic and behaviour metrics.
 - [AI Search Visibility Audit Template](https://xyzlab.com/ai-search-visibility-audit-template/): Free template to audit how well your website appears in AI-generated search results and answer engines.
