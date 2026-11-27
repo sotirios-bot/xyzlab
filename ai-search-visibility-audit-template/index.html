@@ -34,8 +34,6 @@
     "@type": "Article",
     "headline": "AI Search Visibility Audit Template | Free AEO Checklist",
     "description": "Check if your brand appears in ChatGPT, Claude, Perplexity and Gemini answers. Free AI search visibility audit template with scoring and fix list.",
-    "datePublished": "2026-11-26",
-    "dateModified": "2026-11-26",
     "author": { "@type": "Person", "name": "Sotirios Seridis", "jobTitle": "Founder, XYZ Lab", "url": "https://xyzlab.com" },
     "publisher": { "@type": "Organization", "name": "XYZ Lab", "url": "https://xyzlab.com" }
   },
@@ -90,12 +88,10 @@
     .breadcrumb a:hover { color: var(--primary); text-decoration: none; }
     .breadcrumb span { margin: 0 .4rem; opacity: .5; }
     .tmpl-hero { padding: 2.25rem 0 2.75rem; border-bottom: 1px solid var(--border); }
-    .tmpl-badge { display: inline-flex; align-items: center; gap: .4rem; background: rgba(8,191,173,.1); color: var(--primary); border: 1px solid rgba(8,191,173,.25); border-radius: 100px; font-size: .7rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; padding: .3rem .9rem; margin-bottom: 1rem; }
     .tmpl-hero h1 { font-size: clamp(1.75rem, 4vw, 2.6rem); font-weight: 900; color: var(--dark); line-height: 1.18; margin-bottom: .9rem; }
     .tmpl-hero h1 .highlight { color: var(--primary); }
     .tmpl-answer { font-size: 1.08rem; color: var(--mid); line-height: 1.65; max-width: 640px; margin-bottom: 1.75rem; }
-    .tmpl-meta { font-size: .78rem; color: var(--mid); margin-bottom: .9rem; opacity: .9; }
-    .download-box { background: var(--light); border: 1px solid var(--border); border-radius: 14px; padding: 1.75rem; max-width: 520px; }
+    .download-box { background: var(--light); border: 1px solid var(--border); border-radius: 14px; padding: 2rem 2.25rem; max-width: 600px; margin-left: auto; margin-right: auto; }
     .download-box h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: .2rem; color: var(--dark); }
     .download-box .dl-sub { font-size: .85rem; color: var(--mid); margin-bottom: 1.1rem; }
     .dl-field { display: flex; flex-direction: column; gap: .35rem; margin-bottom: .9rem; }
@@ -111,7 +107,7 @@
     .dl-btn:disabled { opacity: .6; cursor: default; }
     .dl-note { font-size: .75rem; color: var(--mid); margin-top: .65rem; text-align: center; }
     .takeaways { background: rgba(8,191,173,.07); border-left: 4px solid var(--primary); border-radius: 0 10px 10px 0; padding: 1.4rem 1.6rem; margin: 2.5rem 0; }
-    .takeaways h2 { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--primary); margin-bottom: .9rem; }
+    .takeaways h2 { font-size: 1.05rem; font-weight: 700; color: var(--primary); margin-bottom: .9rem; }
     .takeaways ul { list-style: none; display: flex; flex-direction: column; gap: .55rem; }
     .takeaways li { display: flex; align-items: flex-start; gap: .6rem; font-size: .95rem; color: var(--dark); line-height: 1.5; }
     .takeaways li::before { content: '✓'; color: var(--primary); font-weight: 700; flex-shrink: 0; margin-top: .05rem; }
@@ -132,6 +128,11 @@
     .how-step-num { width: 32px; height: 32px; background: var(--primary); color: #fff; border-radius: 50%; font-size: .85rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: .1rem; }
     .how-step-body h3 { font-size: .97rem; font-weight: 700; color: var(--dark); margin-bottom: .3rem; }
     .how-step-body p { font-size: .9rem; color: var(--mid); line-height: 1.6; margin: 0; }
+    .steps-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 1.1rem; }
+    .step-card { background: var(--light); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem 1.3rem; }
+    .step-num { width: 32px; height: 32px; background: var(--primary); color: #fff; border-radius: 50%; font-size: .85rem; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-bottom: .75rem; }
+    .step-card h3 { font-size: .97rem; font-weight: 700; color: var(--dark); margin-bottom: .35rem; }
+    .step-card p { font-size: .88rem; color: var(--mid); line-height: 1.6; margin: 0; }
     .author-section { background: var(--light); border: 1px solid var(--border); border-radius: 14px; padding: 1.5rem; display: flex; gap: 1.25rem; align-items: flex-start; margin: 2.5rem 0; }
     .author-avatar { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid var(--border); }
     .author-info h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: .2rem; }
@@ -156,7 +157,7 @@
     .modal p strong { color: var(--dark); }
     .modal-btn { display: inline-block; background: var(--primary); color: #fff; border-radius: 8px; padding: .7rem 1.5rem; font-size: .92rem; font-weight: 700; text-decoration: none; margin-bottom: .6rem; }
     .modal-spam { font-size: .78rem; color: var(--mid); opacity: .7; }
-    @media (max-width: 540px) { .author-section { flex-direction: column; gap: .9rem; } .download-box { padding: 1.25rem; } .includes-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 540px) { .author-section { flex-direction: column; gap: .9rem; } .download-box { padding: 1.25rem; } .includes-grid { grid-template-columns: 1fr; } .steps-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -196,10 +197,8 @@
     </nav>
 
     <section class="tmpl-hero">
-      <div class="tmpl-badge">Free AEO Template</div>
       <h1>AI Search Visibility <span class="highlight">Audit Template</span></h1>
-      <p class="tmpl-meta">Free download · Used by digital marketers worldwide</p>
-      <p class="tmpl-answer">This free AI search visibility audit template helps you track whether your brand appears — accurately and prominently — in AI-generated answers from ChatGPT, Claude, Perplexity, Gemini and Google AI Overviews. Download it, run your first audit in under an hour, and know exactly where you stand in the new AI search landscape.</p>
+      <p class="tmpl-answer">See how your brand appears — or doesn't — in <strong>ChatGPT, Claude, Perplexity and Gemini answers</strong>. Download this free audit template, run your first test in under an hour, and get a prioritised fix list.</p>
 
       <div class="download-box" id="download-form">
         <h2>Download the free template</h2>
@@ -220,13 +219,13 @@
     </section>
 
     <div class="takeaways">
-      <h2>Key takeaways</h2>
+      <h2>What you'll love in the AI Search Visibility Audit Template</h2>
       <ul>
-        <li>Covers six AI platforms: ChatGPT, Claude, Perplexity, Gemini, Google AI Overviews and Microsoft Copilot</li>
-        <li>30 ready-made test prompts across brand, category and comparison groups</li>
-        <li>Scoring system: visibility score out of 100 per platform</li>
-        <li>Prioritised fix checklist based on your audit results</li>
-        <li>Free to download — no account, no login required</li>
+        <li>Covers <strong>six AI platforms</strong>: ChatGPT, Claude, Perplexity, Gemini, Google AI Overviews and Microsoft Copilot</li>
+        <li><strong>30 ready-made test prompts</strong> across brand, category and comparison groups</li>
+        <li><strong>Scoring system</strong>: visibility score out of 100 per platform</li>
+        <li><strong>Prioritised fix checklist</strong> based on your audit results</li>
+        <li>Free to download — <strong>no account, no login required</strong></li>
       </ul>
     </div>
 
@@ -253,23 +252,31 @@
 
     <section class="content-section" aria-label="How to run the audit">
       <h2>How to Run Your AI Visibility Audit (Step by Step)</h2>
-      <div class="how-steps">
-        <div class="how-step"><div class="how-step-num">1</div><div class="how-step-body"><h3>Download and open the template</h3><p>Make a copy in Google Sheets. You'll see four tabs: Audit Tracker, Scoring Sheet, Prompt Library and Fix Checklist.</p></div></div>
-        <div class="how-step"><div class="how-step-num">2</div><div class="how-step-body"><h3>Run the prompts</h3><p>Open each AI platform and test your 20–30 prompts. For each one, record whether your brand was mentioned, where it appeared and whether your website was cited.</p></div></div>
-        <div class="how-step"><div class="how-step-num">3</div><div class="how-step-body"><h3>Score your visibility</h3><p>The Scoring Sheet turns your tracker data into a visibility score per platform. A score above 70 is strong. Below 40 means immediate action is needed.</p></div></div>
-        <div class="how-step"><div class="how-step-num">4</div><div class="how-step-body"><h3>Work through the fix checklist</h3><p>Use the results to prioritise your AEO improvements: crawlability, structured answers, entity clarity and third-party mentions.</p></div></div>
+      <div class="steps-grid">
+        <div class="step-card"><div class="step-num">1</div><h3>Download and open the template</h3><p>Make a copy in Google Sheets. You'll see four tabs: Audit Tracker, Scoring Sheet, Prompt Library and Fix Checklist.</p></div>
+        <div class="step-card"><div class="step-num">2</div><h3>Run the prompts</h3><p>Open each AI platform and test your 20–30 prompts. Record whether your brand was mentioned, where it appeared and whether your website was cited.</p></div>
+        <div class="step-card"><div class="step-num">3</div><h3>Score your visibility</h3><p>The Scoring Sheet turns your tracker data into a visibility score per platform. A score above 70 is strong. Below 40 means immediate action is needed.</p></div>
+        <div class="step-card"><div class="step-num">4</div><h3>Work through the fix checklist</h3><p>Use the results to prioritise your AEO improvements: crawlability, structured answers, entity clarity and third-party mentions.</p></div>
+      </div>
+    </section>
+
+    <section class="content-section" aria-label="Use AI with this template">
+      <h2>How to use AI with this template</h2>
+      <div class="includes-grid">
+        <div class="include-card"><div class="ic-icon">🤖</div><h3>Generate test prompts</h3><p>Use ChatGPT or Claude to build your 30-prompt library for brand, category and comparison testing.</p></div>
+        <div class="include-card"><div class="ic-icon">📊</div><h3>Analyse your scores</h3><p>Paste your audit results into an AI and ask it to identify your lowest-scoring platforms and suggest fixes.</p></div>
+        <div class="include-card"><div class="ic-icon">✍️</div><h3>Draft improvement content</h3><p>Ask AI to write answer-style content that directly targets the prompts where your brand isn't appearing.</p></div>
       </div>
     </section>
 
     <section class="content-section" aria-label="Who this template is for">
       <h2>Who is this AI visibility audit template for?</h2>
-      <p>This template is built for marketers, SEOs and brand strategists who want to understand — and improve — how their brand appears in AI-generated answers. If your audience uses AI assistants to research products, services or topics in your space, your AI visibility is becoming as important as your organic search rankings.</p>
-      <ul>
-        <li><strong>SEO and content teams</strong> expanding into AEO (Answer Engine Optimisation)</li>
-        <li><strong>Brand managers</strong> who want to monitor how AI describes their company</li>
-        <li><strong>Digital agencies</strong> who need a structured AI visibility audit for clients</li>
-        <li><strong>Founders and marketing leads</strong> who want to know if AI recommends their business in relevant searches</li>
-      </ul>
+      <div class="includes-grid">
+        <div class="include-card"><div class="ic-icon">🔍</div><h3>SEO &amp; Content Teams</h3><p>Expanding into AEO (Answer Engine Optimisation) and need a structured way to measure AI visibility.</p></div>
+        <div class="include-card"><div class="ic-icon">🏷️</div><h3>Brand Managers</h3><p>Monitor how AI describes your company and flag inaccurate or missing information across platforms.</p></div>
+        <div class="include-card"><div class="ic-icon">🏢</div><h3>Digital Agencies</h3><p>Run structured AI visibility audits for clients and present findings with a clear scoring system.</p></div>
+        <div class="include-card"><div class="ic-icon">🚀</div><h3>Founders &amp; Marketing Leads</h3><p>Find out if AI recommends your business in the searches your audience is already running.</p></div>
+      </div>
     </section>
 
     <section class="content-section" aria-label="What a good AI visibility audit should include">
@@ -310,14 +317,14 @@
     <div class="author-section">
       <img src="/instructor.png" alt="Sotirios Seridis" class="author-avatar" />
       <div class="author-info">
-        <h3>Sotirios Seridis</h3>
-        <div class="author-title">Founder, XYZ Lab &nbsp;·&nbsp; Digital Marketing Professional</div>
-        <p>Sotirios tracks AI search visibility across brands in multiple industries and has built AEO frameworks used by digital marketing teams throughout Southeast Asia. This template is the same system he uses with clients adapting to AI-first search behaviour.</p>
+        <h3><a href="https://www.linkedin.com/in/sotirios-seridis/" target="_blank" rel="noopener">Sotirios Seridis</a></h3>
+        <div class="author-title">Founder, XYZ Lab</div>
+        <p>Sotirios Seridis is the author of this template.</p>
       </div>
     </div>
 
     <section class="content-section" aria-label="Related templates">
-      <h2>More free templates</h2>
+      <h2>Digital marketing templates</h2>
       <div class="includes-grid">
         <div class="include-card"><div class="ic-icon">🤖</div><h3><a href="/ai-traffic-tracking-template/">AI Traffic Tracking</a></h3><p>Measure visits from ChatGPT, Perplexity and Gemini in GA4 with a custom channel group and monthly report.</p></div>
         <div class="include-card"><div class="ic-icon">📈</div><h3><a href="/google-analytics-report-template/">GA4 Reporting Dashboard</a></h3><p>Sessions, engaged sessions, channel breakdowns and conversion tracking — built for GA4 from scratch.</p></div>
@@ -330,39 +337,39 @@
       <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
         <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <div class="faq-q" itemprop="name">What is AI search visibility?</div>
-          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">AI search visibility is how often, and how accurately, your brand, products or content appear in answers from AI assistants such as ChatGPT, Claude, Perplexity, Gemini and Google AI Overviews.</span></div>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">AI search visibility is <strong>how often, and how accurately, your brand appears in answers from AI assistants</strong> such as ChatGPT, Claude, Perplexity, Gemini and Google AI Overviews.</span></div>
         </div>
         <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <div class="faq-q" itemprop="name">What is the difference between SEO and AEO?</div>
-          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">SEO (Search Engine Optimisation) focuses on ranking pages in search results. AEO (Answer Engine Optimisation) focuses on being cited or recommended inside AI-generated answers. AEO builds on SEO foundations such as crawlability, authority and clear content. It also adds entity clarity, structured answers and third-party mentions.</span></div>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">SEO focuses on ranking pages in search results. <strong>AEO (Answer Engine Optimisation)</strong> focuses on being cited or recommended inside AI-generated answers. AEO builds on SEO foundations such as crawlability, authority and clear content. It also adds entity clarity, structured answers and third-party mentions.</span></div>
         </div>
         <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <div class="faq-q" itemprop="name">Which AI platforms does the template cover?</div>
-          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">ChatGPT, Claude, Perplexity, Google Gemini, Google AI Overviews and Microsoft Copilot. You can add columns for any other platform your audience uses.</span></div>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text"><strong>ChatGPT, Claude, Perplexity, Google Gemini, Google AI Overviews and Microsoft Copilot.</strong> You can add columns for any other platform your audience uses.</span></div>
         </div>
         <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <div class="faq-q" itemprop="name">How many prompts should I test?</div>
-          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Start with 20–30 prompts across three groups: brand prompts ("What is [brand]?"), category prompts ("Best [category] for [use case]") and comparison prompts ("[Brand] vs [competitor]"). Re-test the same set monthly to track change.</span></div>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Start with <strong>20–30 prompts across three groups</strong>: brand prompts ("What is [brand]?"), category prompts ("Best [category] for [use case]") and comparison prompts ("[Brand] vs [competitor]"). Re-test the same set monthly to track change.</span></div>
         </div>
         <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <div class="faq-q" itemprop="name">How do I score my AI visibility?</div>
-          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">For each prompt, record whether your brand is mentioned, its position in the answer, whether your site is cited as a source, and whether the description is accurate. The template turns these into a visibility score out of 100 per platform.</span></div>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">For each prompt, record whether your brand is mentioned, its position in the answer, whether your site is cited as a source, and whether the description is accurate. <strong>The template turns these into a visibility score out of 100 per platform.</strong></span></div>
         </div>
         <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <div class="faq-q" itemprop="name">Why do AI answers change every time I ask?</div>
-          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">AI models generate answers from probability, and some pull live web results. Run each prompt more than once and record the share of runs your brand appears in, rather than relying on a single result.</span></div>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">AI models generate answers from probability, and some pull live web results. <strong>Run each prompt more than once</strong> and record the share of runs your brand appears in, rather than relying on a single result.</span></div>
         </div>
         <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <div class="faq-q" itemprop="name">How often should I run an AI visibility audit?</div>
-          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Monthly for active brands, and after any major content, PR or website change.</span></div>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text"><strong>Monthly</strong> for active brands, and after any major content, PR or website change.</span></div>
         </div>
         <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <div class="faq-q" itemprop="name">How can I improve my AI search visibility?</div>
-          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Make sure AI crawlers can access your site, publish clear answer-style content, add structured data, keep brand information consistent across the web, and earn mentions on trusted third-party sites, review platforms and forums.</span></div>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Make sure <strong>AI crawlers can access your site</strong>, publish clear answer-style content, add structured data, keep brand information consistent across the web, and earn mentions on trusted third-party sites, review platforms and forums.</span></div>
         </div>
         <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
           <div class="faq-q" itemprop="name">Is the template free?</div>
-          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Yes. Download it, make a copy, and start your first audit in under an hour.</span></div>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Yes. Download it, make a copy, and <strong>start your first audit in under an hour</strong>.</span></div>
         </div>
       </div>
     </section>
@@ -407,6 +414,26 @@
       <a href="https://mail.google.com/mail/u/0/#search/from:xyzlab.com" class="modal-btn" id="modal-inbox-btn">Open my inbox →</a>
       <p class="modal-spam">Can't find it? Check your spam folder and mark it as "Not spam".</p>
     </div>
+  </div>
+
+  <!-- FLOATING BUTTONS -->
+  <div class="floating-btns">
+    <a class="floating-btn floating-btn--booking" href="/#contact">
+      <span>Let&#8217;s Talk</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    </a>
+    <a class="floating-btn floating-btn--whatsapp" href="https://wa.me/6594260742" target="_blank" rel="noopener">
+      <span>WhatsApp</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <a class="floating-btn floating-btn--youtube" href="https://www.youtube.com/@xyzl" target="_blank" rel="noopener">
+      <span>YouTube</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+    </a>
+    <a class="floating-btn floating-btn--newsletter" href="https://xyzlab.beehiiv.com/" target="_blank" rel="noopener">
+      <span>Newsletter</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+    </a>
   </div>
 
   <script src="/main.js"></script>
