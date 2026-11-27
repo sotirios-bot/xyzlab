@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WXGTNNN');</script>
+  <!-- End Google Tag Manager -->
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChatGPT Ads Preview Tool — Free | XYZ Lab</title>
+  <meta name="description" content="Preview your ChatGPT sponsored placement copy before it goes live. See your headline, body text and brand name in a realistic ChatGPT interface mock — free." />
+  <link rel="canonical" href="https://xyzlab.com/chatgpt-ads-preview/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://xyzlab.com/chatgpt-ads-preview/" />
+  <meta property="og:title" content="ChatGPT Ads Preview Tool — Free | XYZ Lab" />
+  <meta property="og:description" content="Preview your ChatGPT sponsored placement copy before it goes live. See your headline, body text and brand name in a realistic ChatGPT interface mock — free." />
+  <meta property="og:image" content="https://xyzlab.com/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ChatGPT Ads Preview Tool — Free | XYZ Lab" />
+  <meta name="twitter:description" content="Preview your ChatGPT sponsored placement copy before it goes live. See your headline, body text and brand name in a realistic ChatGPT interface mock — free." />
+  <meta name="twitter:image" content="https://xyzlab.com/og-image.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  <script type="application/ld+json">
+  [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "ChatGPT Ads Preview Tool — Free",
+    "description": "Preview your ChatGPT sponsored placement copy before it goes live. See your headline, body text and brand name in a realistic ChatGPT interface mock — free.",
+    "author": { "@type": "Person", "name": "Sotirios Seridis", "jobTitle": "Founder, XYZ Lab", "url": "https://xyzlab.com" },
+    "publisher": { "@type": "Organization", "name": "XYZ Lab", "url": "https://xyzlab.com" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://xyzlab.com/"},
+      {"@type":"ListItem","position":2,"name":"ChatGPT Ads Preview Tool","item":"https://xyzlab.com/chatgpt-ads-preview/"}
+    ]
+  }
+  ]
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #08bfad;
+      --primary-dark: #069e8e;
+      --secondary: #fec55c;
+      --dark: #0d1b2a;
+      --mid: #4a5568;
+      --border: #e2e8f0;
+      --light: #f8fafc;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #fff;
+      color: var(--dark);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .page-wrap { max-width: 820px; margin: 0 auto; padding: 0 1.25rem; }
+
+    .breadcrumb {
+      font-size: .78rem; color: var(--mid); padding: 1rem 0 .5rem;
+    }
+    .breadcrumb a { color: var(--mid); }
+    .breadcrumb a:hover { color: var(--primary); text-decoration: none; }
+    .breadcrumb span { margin: 0 .4rem; opacity: .5; }
+
+    /* ── HERO ── */
+    .tmpl-hero {
+      padding: 2.25rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .tmpl-hero h1 {
+      font-size: clamp(1.75rem, 4vw, 2.6rem);
+      font-weight: 900;
+      color: var(--dark);
+      line-height: 1.18;
+      margin-bottom: .9rem;
+    }
+    .tmpl-hero h1 .highlight { color: var(--primary); }
+    .tmpl-answer {
+      font-size: 1.08rem;
+      color: var(--mid);
+      line-height: 1.65;
+      max-width: 640px;
+    }
+
+    /* ── TOOL LAYOUT ── */
+    .tool-wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem;
+    }
+    .tool-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    /* ── INPUT PANEL ── */
+    .input-panel {
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+    }
+    .input-panel h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 1.2rem;
+    }
+    .field-group {
+      margin-bottom: 1rem;
+    }
+    .field-group label {
+      display: block;
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: .3rem;
+    }
+    .field-group input,
+    .field-group textarea {
+      width: 100%;
+      padding: .6rem .85rem;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      font-size: .92rem;
+      font-family: inherit;
+      color: var(--dark);
+      background: #fff;
+      outline: none;
+      transition: border-color .2s;
+      resize: vertical;
+    }
+    .field-group input:focus,
+    .field-group textarea:focus {
+      border-color: var(--primary);
+    }
+    .field-group textarea { min-height: 72px; }
+    .char-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: .25rem;
+    }
+    .char-hint { font-size: .75rem; color: var(--mid); }
+    .char-count { font-size: .75rem; font-weight: 600; color: var(--mid); }
+    .char-count.warn { color: #d97706; }
+    .char-count.over { color: #dc2626; }
+
+    /* ── PREVIEW PANEL ── */
+    .preview-panel {
+      position: sticky;
+      top: 90px;
+    }
+    .preview-panel h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: .9rem;
+    }
+
+    /* ── CHATGPT MOCK ── */
+    .chatgpt-mock {
+      background: #212121;
+      border-radius: 12px;
+      padding: 20px;
+      font-family: 'Inter', sans-serif;
+    }
+    .mock-header {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #333;
+    }
+    .mock-header-logo {
+      width: 24px;
+      height: 24px;
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 800;
+      color: #212121;
+      flex-shrink: 0;
+    }
+    .mock-header-title {
+      font-size: .82rem;
+      color: #aaa;
+    }
+    .mock-query {
+      font-size: .88rem;
+      color: #fff;
+      background: #2d2d2d;
+      border-radius: 18px;
+      padding: 10px 14px;
+      display: inline-block;
+      margin-bottom: 16px;
+      max-width: 90%;
+    }
+    /* Sponsored card */
+    .sponsored-card {
+      background: #2d2d2d;
+      border: 1px solid #444;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+    }
+    .sponsored-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      color: #aaa;
+      letter-spacing: .05em;
+      margin-bottom: 6px;
+    }
+    .sponsored-divider {
+      border: none;
+      border-top: 1px solid #444;
+      margin-bottom: 8px;
+    }
+    .sponsored-meta {
+      font-size: 13px;
+      color: #aaa;
+      margin-bottom: 6px;
+    }
+    .sponsored-headline {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.35;
+      margin-bottom: 6px;
+    }
+    .sponsored-body {
+      font-size: 14px;
+      color: #ccc;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+    .sponsored-footer {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .sponsored-cta {
+      background: #fff;
+      color: #212121;
+      border: none;
+      border-radius: 6px;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: default;
+    }
+    /* Mock response text */
+    .mock-response {
+      padding-top: 4px;
+    }
+    .mock-response-line {
+      height: 10px;
+      background: #333;
+      border-radius: 5px;
+      margin-bottom: 8px;
+    }
+    .mock-response-line:last-child { width: 60%; }
+
+    /* ── CONTENT SECTIONS ── */
+    .content-section {
+      padding: 2rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .content-section:last-of-type { border-bottom: none; }
+    .content-section h2 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: .9rem;
+      line-height: 1.3;
+    }
+    .content-section p {
+      font-size: .97rem;
+      color: var(--mid);
+      line-height: 1.7;
+      margin-bottom: .9rem;
+    }
+    .content-section p:last-child { margin-bottom: 0; }
+
+    /* ── INCLUDES GRID ── */
+    .includes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1.1rem;
+    }
+    .include-card {
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.2rem;
+    }
+    .include-card .ic-icon { font-size: 1.5rem; margin-bottom: .5rem; }
+    .include-card h3 {
+      font-size: .92rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: .3rem;
+    }
+    .include-card p {
+      font-size: .82rem;
+      color: var(--mid);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* ── DISCLAIMER ── */
+    .disclaimer-note {
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: 8px;
+      padding: .9rem 1.1rem;
+      font-size: .85rem;
+      color: #92400e;
+      line-height: 1.5;
+      margin: 1.5rem 0;
+    }
+
+    /* ── AUTHOR ── */
+    .author-section {
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      margin: 2.5rem 0;
+    }
+    .author-avatar {
+      width: 64px; height: 64px;
+      border-radius: 50%; object-fit: cover;
+      flex-shrink: 0; border: 2px solid var(--border);
+    }
+    .author-info h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: .2rem; }
+    .author-info .author-title { font-size: .82rem; color: var(--primary); font-weight: 600; margin-bottom: .5rem; }
+    .author-info p { font-size: .88rem; color: var(--mid); line-height: 1.6; margin: 0; }
+
+    /* ── FAQ ── */
+    .faq-list { display: flex; flex-direction: column; gap: 0; margin-top: 1.1rem; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 1.1rem 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: .97rem; font-weight: 700; color: var(--dark); margin-bottom: .5rem; }
+    .faq-a { font-size: .92rem; color: var(--mid); line-height: 1.65; }
+
+    /* ── BOTTOM CTA ── */
+    .bottom-cta {
+      background: var(--dark); color: #fff;
+      padding: 3rem 1.25rem; text-align: center;
+    }
+    .bottom-cta h2 { font-size: 1.5rem; font-weight: 800; margin-bottom: .6rem; }
+    .bottom-cta p { font-size: .97rem; opacity: .75; margin-bottom: 1.5rem; }
+    .cta-btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 8px;
+      padding: .8rem 2rem;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .cta-btn:hover { background: var(--primary-dark); text-decoration: none; }
+
+    @media (max-width: 720px) {
+      .tool-grid { grid-template-columns: 1fr; }
+      .preview-panel { position: static; }
+      .author-section { flex-direction: column; gap: .9rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXGTNNN"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- NAV -->
+  <header class="nav-wrapper">
+    <nav class="nav container">
+      <a href="/" class="logo">
+        <img src="/xyz-lab-logo.png" alt="XYZ Lab" class="logo-img" />
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/newsletter/">Newsletter</a></li>
+        <li><a href="/request-tutorial/">Request Tutorial</a></li>
+        <li class="nav-has-dropdown">
+          <a href="#" onclick="return false;" style="cursor:default;">Templates <span class="nav-caret">▾</span></a>
+          <ul class="nav-dropdown">
+            <li><a href="/google-ads-report-template/">Google Ads Report Template</a></li>
+            <li><a href="/chatgpt-ads-report-template/">ChatGPT Ads Report Template</a></li>
+            <li><a href="/linkedin-ads-report-template/">LinkedIn Ads Report Template</a></li>
+            <li><a href="/meta-ads-report-template/">Meta Ads Dashboard</a></li>
+            <li><a href="/google-analytics-report-template/">GA4 Dashboard</a></li>
+            <li><a href="/ai-search-visibility-audit-template/">AI Visibility Audit</a></li>
+            <li><a href="/ai-traffic-tracking-template/">AI Traffic Tracking</a></li>
+          </ul>
+        </li>
+        <li class="nav-has-dropdown">
+          <a href="#" onclick="return false;" style="cursor:default;">Tools <span class="nav-caret">▾</span></a>
+          <ul class="nav-dropdown">
+            <li><a href="/utm-builder/">UTM Builder</a></li>
+            <li><a href="/google-ads-preview/">Google Ads Preview</a></li>
+            <li><a href="/meta-ads-preview/">Meta Ads Preview</a></li>
+            <li><a href="/linkedin-ads-preview/">LinkedIn Ads Preview</a></li>
+            <li><a href="/chatgpt-ads-preview/">ChatGPT Ads Preview</a></li>
+            <li><a href="/qr-code-generator/">QR Code Generator</a></li>
+          </ul>
+        </li>
+        <li><a href="/#contact">Contact</a></li>
+        <li><a href="/#contact" class="btn btn-primary btn-sm">Book Training</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a><span>›</span>ChatGPT Ads Preview Tool
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <div class="page-wrap">
+    <section class="tmpl-hero">
+      <h1>ChatGPT Ads <span class="highlight">Preview Tool</span></h1>
+      <p class="tmpl-answer">See how your <strong>sponsored placement headline and body text</strong> will look inside ChatGPT — before you go live.</p>
+    </section>
+  </div>
+
+  <!-- TOOL -->
+  <div class="tool-wrap">
+    <div class="tool-grid">
+
+      <!-- INPUT PANEL -->
+      <div class="input-panel">
+        <h2>Your ad copy</h2>
+
+        <div class="field-group">
+          <label for="inp-brand">Brand / Company name</label>
+          <input type="text" id="inp-brand" placeholder="Your Brand" maxlength="40" />
+          <div class="char-row">
+            <span class="char-hint">Max 40 chars</span>
+            <span class="char-count" id="cnt-brand">0/40</span>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="inp-domain">Display domain</label>
+          <input type="text" id="inp-domain" placeholder="yourbrand.com" />
+        </div>
+
+        <div class="field-group">
+          <label for="inp-headline">Headline</label>
+          <input type="text" id="inp-headline" placeholder="Your strongest value proposition" maxlength="60" />
+          <div class="char-row">
+            <span class="char-hint">Max 60 chars</span>
+            <span class="char-count" id="cnt-headline">0/60</span>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="inp-body">Body text</label>
+          <textarea id="inp-body" placeholder="Describe your offer concisely — what it is and why it matters" maxlength="150"></textarea>
+          <div class="char-row">
+            <span class="char-hint">Max 150 chars</span>
+            <span class="char-count" id="cnt-body">0/150</span>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="inp-cta">CTA label</label>
+          <input type="text" id="inp-cta" placeholder="Learn more" maxlength="25" />
+          <div class="char-row">
+            <span class="char-hint">Max 25 chars</span>
+            <span class="char-count" id="cnt-cta">0/25</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PREVIEW PANEL -->
+      <div class="preview-panel">
+        <h2>Live preview</h2>
+        <div class="chatgpt-mock">
+          <!-- Mock header -->
+          <div class="mock-header">
+            <div class="mock-header-logo">G</div>
+            <span class="mock-header-title">ChatGPT</span>
+          </div>
+          <!-- Simulated user query -->
+          <div class="mock-query">What's the best tool for managing Google Ads campaigns?</div>
+          <!-- Sponsored card -->
+          <div class="sponsored-card">
+            <div class="sponsored-label">Sponsored</div>
+            <hr class="sponsored-divider" />
+            <div class="sponsored-meta" id="prev-meta">Your Brand &nbsp;·&nbsp; yourbrand.com</div>
+            <div class="sponsored-headline" id="prev-headline">Your headline will appear here</div>
+            <div class="sponsored-body" id="prev-body">Your body text will appear here — keep it concise and relevant to the user's intent.</div>
+            <div class="sponsored-footer">
+              <button class="sponsored-cta" id="prev-cta">Learn more</button>
+            </div>
+          </div>
+          <!-- Simulated ChatGPT response -->
+          <div class="mock-response">
+            <div class="mock-response-line" style="width:95%"></div>
+            <div class="mock-response-line" style="width:88%"></div>
+            <div class="mock-response-line" style="width:92%"></div>
+            <div class="mock-response-line"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- REST OF CONTENT -->
+  <div class="page-wrap">
+
+    <div class="disclaimer-note">
+      ⚠️ ChatGPT Ads is an emerging ad format. Specs and appearance may change as OpenAI rolls out the product. This preview is based on publicly available information.
+    </div>
+
+    <!-- TIPS -->
+    <section class="content-section" aria-label="Tips">
+      <h2>Tips for ChatGPT sponsored placements</h2>
+      <div class="includes-grid">
+        <div class="include-card">
+          <div class="ic-icon">🎯</div>
+          <h3>Lead with your strongest value prop</h3>
+          <p>Users are in a task-focused mindset — your headline has less than a second to earn attention.</p>
+        </div>
+        <div class="include-card">
+          <div class="ic-icon">📏</div>
+          <h3>Keep body text under 100 chars</h3>
+          <p>Concise, specific copy tends to outperform in conversational contexts. Say more with less.</p>
+        </div>
+        <div class="include-card">
+          <div class="ic-icon">🔗</div>
+          <h3>Use a clear, specific CTA</h3>
+          <p>"Get a free quote", "See pricing" or "Start free" outperform generic "Learn more" in intent-driven placements.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUTHOR -->
+    <div class="author-section">
+      <img src="/instructor.png" alt="Sotirios Seridis" class="author-avatar" />
+      <div class="author-info">
+        <h3><a href="https://www.linkedin.com/in/seridis/" target="_blank" rel="noopener">Sotirios Seridis</a></h3>
+        <div class="author-title">Founder, XYZ Lab</div>
+        <p>Sotirios Seridis is the creator of this tool. He tracks emerging AI advertising platforms and built this preview tool to help marketers prepare for ChatGPT Ads.</p>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <section class="content-section" aria-label="FAQ">
+      <h2>Frequently asked questions</h2>
+      <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <div class="faq-q" itemprop="name">What are the official ChatGPT Ads specs?</div>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <span itemprop="text">OpenAI has not published full technical specifications for ChatGPT Ads publicly. <strong>This tool uses specs based on publicly reported information</strong> and may be updated as more details become available.</span>
+          </div>
+        </div>
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <div class="faq-q" itemprop="name">Who can run ChatGPT Ads?</div>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <span itemprop="text">ChatGPT Ads is currently in limited rollout. <strong>Access is being granted to select advertisers</strong> through OpenAI's early access programme. Check openai.com for the latest availability updates.</span>
+          </div>
+        </div>
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <div class="faq-q" itemprop="name">What makes a good ChatGPT sponsored placement?</div>
+          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <span itemprop="text">Focus on <strong>relevance to the user's query</strong>. Unlike social ads, users in ChatGPT are actively seeking information — match your ad to their intent and lead with a clear, specific benefit.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELATED TOOLS -->
+    <section class="content-section" aria-label="Related tools">
+      <h2>More free tools</h2>
+      <div class="includes-grid">
+        <div class="include-card">
+          <div class="ic-icon">🔗</div>
+          <h3><a href="/utm-builder/">UTM Builder</a></h3>
+          <p>Build GA4-compatible UTM parameters in seconds with auto-formatted previews and best-practice suggestions.</p>
+        </div>
+        <div class="include-card">
+          <div class="ic-icon">🔍</div>
+          <h3><a href="/google-ads-preview/">Google Ads Preview</a></h3>
+          <p>Preview your RSA headlines and descriptions in a realistic Google search result mock before going live.</p>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-wrap -->
+
+  <!-- BOTTOM CTA -->
+  <section class="bottom-cta">
+    <div class="page-wrap">
+      <h2>More free tools</h2>
+      <p>Check the full XYZ Lab toolkit.</p>
+      <a href="/utm-builder/" class="cta-btn">View all tools →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p>Practical digital marketing training on Performance Marketing, SEO, AEO, Analytics and AI. Check our free digital marketing tutorials on our <a href="https://www.youtube.com/@xyzl" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">YouTube channel</a>!</p>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <ul>
+          <li><a href="https://xyzlab.beehiiv.com/" target="_blank" rel="noopener">The Walkthrough</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Tutorials</h4>
+        <ul>
+          <li><a href="/request-tutorial/">Request a Tutorial</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Templates</h4>
+        <ul>
+          <li><a href="/google-ads-report-template/">Google Ads Report Template</a></li>
+          <li><a href="/chatgpt-ads-report-template/">ChatGPT Ads Report Template</a></li>
+          <li><a href="/linkedin-ads-report-template/">LinkedIn Ads Report Template</a></li>
+          <li><a href="/meta-ads-report-template/">Meta Ads Dashboard</a></li>
+          <li><a href="/google-analytics-report-template/">GA4 Dashboard</a></li>
+          <li><a href="/ai-search-visibility-audit-template/">AI Visibility Audit</a></li>
+          <li><a href="/ai-traffic-tracking-template/">AI Traffic Tracking</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="/utm-builder/">UTM Builder</a></li>
+          <li><a href="/google-ads-preview/">Google Ads Preview</a></li>
+          <li><a href="/meta-ads-preview/">Meta Ads Preview</a></li>
+          <li><a href="/linkedin-ads-preview/">LinkedIn Ads Preview</a></li>
+          <li><a href="/chatgpt-ads-preview/">ChatGPT Ads Preview</a></li>
+          <li><a href="/qr-code-generator/">QR Code Generator</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/#contact">Contact</a></li>
+          <li><a href="mailto:hello@xyzlab.com">hello@xyzlab.com</a></li>
+          <li><a href="/terms/">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> XYZ Lab Pte. Ltd. All rights reserved.</p>
+        <p style="margin-top:.35rem;font-size:.78rem;opacity:.6;">XYZ LAB PTE. LTD. &nbsp;&middot;&nbsp; 160 Robinson Road, #14-04, Singapore Business Federation Center, Singapore (068914) &nbsp;&middot;&nbsp; <a href="mailto:hello@xyzlab.com" style="color:inherit;">hello@xyzlab.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BUTTONS -->
+  <div class="floating-btns">
+    <a class="floating-btn floating-btn--booking" href="/#contact">
+      <span>Let&#8217;s Talk</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    </a>
+    <a class="floating-btn floating-btn--whatsapp" href="https://wa.me/6594260742" target="_blank" rel="noopener">
+      <span>WhatsApp</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <a class="floating-btn floating-btn--youtube" href="https://www.youtube.com/@xyzl" target="_blank" rel="noopener">
+      <span>YouTube</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+    </a>
+    <a class="floating-btn floating-btn--newsletter" href="https://xyzlab.beehiiv.com/" target="_blank" rel="noopener">
+      <span>Newsletter</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+    </a>
+  </div>
+
+  <script src="/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function updateCount(inputId, countId, max) {
+      var el = document.getElementById(inputId);
+      var cnt = document.getElementById(countId);
+      if (!el || !cnt) return;
+      el.addEventListener('input', function() {
+        var len = el.value.length;
+        cnt.textContent = len + '/' + max;
+        cnt.className = 'char-count';
+        if (len >= max) cnt.classList.add('over');
+        else if (len >= Math.floor(max * 0.8)) cnt.classList.add('warn');
+      });
+    }
+
+    updateCount('inp-brand', 'cnt-brand', 40);
+    updateCount('inp-headline', 'cnt-headline', 60);
+    updateCount('inp-body', 'cnt-body', 150);
+    updateCount('inp-cta', 'cnt-cta', 25);
+
+    function getVal(id, fallback) {
+      var v = document.getElementById(id).value.trim();
+      return v || fallback;
+    }
+
+    function updatePreview() {
+      var brand = getVal('inp-brand', 'Your Brand');
+      var domain = getVal('inp-domain', 'yourbrand.com');
+      var headline = getVal('inp-headline', 'Your headline will appear here');
+      var body = getVal('inp-body', 'Your body text will appear here — keep it concise and relevant to the user\'s intent.');
+      var cta = getVal('inp-cta', 'Learn more');
+
+      document.getElementById('prev-meta').textContent = brand + ' · ' + domain;
+      document.getElementById('prev-headline').textContent = headline;
+      document.getElementById('prev-body').textContent = body;
+      document.getElementById('prev-cta').textContent = cta;
+    }
+
+    ['inp-brand','inp-domain','inp-headline','inp-body','inp-cta'].forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) el.addEventListener('input', updatePreview);
+    });
+  </script>
+</body>
+</html>
